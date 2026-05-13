@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Pulse Medical</title>
+  <link rel="icon" href="image/pulse-logo.png">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, sans-serif; color: #0a1e40; background: #ffffff; line-height: 1.6; }
+    .page-nav { background: #0a1e40; padding: 18px 5%; display: flex; align-items: center; justify-content: space-between; }
+    .page-nav img { height: 32px; }
+    .page-nav a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; }
+
+    .page-hero { background: linear-gradient(135deg, #0a1e40 0%, #1a3a7a 100%); color: #fff; padding: 100px 5% 80px; text-align: center; }
+    .page-hero h1 { font-size: clamp(40px, 5vw, 64px); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 16px; }
+    .page-hero p { font-size: 17px; opacity: 0.85; max-width: 700px; margin: 0 auto; }
+
+    .page-section { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+    .page-section.alt { background: #f9fafb; max-width: 100%; padding: 80px 5%; }
+    .page-section.alt .inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    @media (max-width: 900px) { .section-grid { grid-template-columns: 1fr; gap: 32px; } }
+
+    .section-grid h2 { font-size: clamp(28px, 3.5vw, 42px); font-weight: 700; letter-spacing: -0.02em; color: #0a1e40; margin-bottom: 18px; line-height: 1.15; }
+    .section-grid p { font-size: 16px; line-height: 1.75; color: #1f2937; }
+    .section-grid img { width: 100%; border-radius: 12px; box-shadow: 0 20px 50px rgba(10, 30, 64, 0.12); }
+
+    .mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+    @media (max-width: 700px) { .mv-grid { grid-template-columns: 1fr; } }
+    .mv-card { background: #fff; padding: 36px 32px; border-radius: 12px; border: 1px solid #e5e7eb; }
+    .mv-card h3 { font-size: 22px; font-weight: 700; color: #0a1e40; margin-bottom: 12px; }
+    .mv-card p { font-size: 15px; line-height: 1.65; color: #4b5563; }
+
+    .values-list { list-style: none; padding: 0; margin-top: 32px; display: grid; gap: 20px; }
+    .values-list li { padding: 20px 24px; background: #fff; border-left: 3px solid #E63946; border-radius: 6px; font-size: 16px; line-height: 1.6; }
+    .values-list li strong { color: #0a1e40; }
+
+    .page-footer { background: #0a1e40; color: rgba(255,255,255,0.85); text-align: center; padding: 28px 5%; font-size: 13px; }
+    .page-footer a { color: #fff; text-decoration: none; font-weight: 600; }
+  </style>
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <nav class="page-nav">
+    <a href="index.html"><img src="image/pulse-logo.png" alt="Pulse"></a>
+    <a href="index.html">← Back to Home</a>
+  </nav>
+
+  <section class="page-hero">
+    <h1>About Pulse</h1>
+    <p>Transforming the future of healthcare with innovation, precision, and compassion at the core of everything we do.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="section-grid">
+      <div>
+        <h2>Engineering India's MedTech Future</h2>
+        <p>Founded in 2025, PULSE stands as a forward-thinking medical device manufacturer committed to creating advanced, reliable, and cost-effective solutions designed to meet real clinical challenges.</p>
+        <br>
+        <p>As healthcare advances and patient expectations rise, we are redefining how technology supports care. By blending cutting-edge engineering with a patient-first approach, we bridge the gap between global healthcare needs and India's expanding MedTech capabilities.</p>
+        <br>
+        <p>Our mission is clear and impactful — to enhance the quality of life through affordable and accessible medical technologies that empower healthcare professionals and improve outcomes for patients across the world.</p>
+      </div>
+      <img src="image/Banner/Ventilator Homepage 1.jpg" alt="Pulse manufacturing">
+    </div>
+  </section>
+
+  <section class="page-section alt">
+    <div class="inner">
+      <div class="mv-grid">
+        <div class="mv-card">
+          <h3>Our Mission</h3>
+          <p>To improve quality of life by delivering world-class medical devices that combine innovation, affordability, and accessibility.</p>
+        </div>
+        <div class="mv-card">
+          <h3>Our Vision</h3>
+          <p>To be at the forefront of India's MedTech revolution, delivering accessible, affordable, and high-performance medical devices that improve patient outcomes and shape the future of healthcare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <h2 style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 700; letter-spacing: -0.02em; color: #0a1e40; margin-bottom: 18px;">Our Core Values</h2>
+    <p style="font-size: 16px; color: #4b5563; max-width: 700px;">Every device we build, every decision we make, is anchored in these five principles.</p>
+
+    <ul class="values-list">
+      <li><strong>Patient Safety First</strong> — Every device we build is engineered with the highest priority on patient well-being.</li>
+      <li><strong>Innovation with Purpose</strong> — Technology is only meaningful when it solves real healthcare challenges.</li>
+      <li><strong>Regulatory Excellence</strong> — We uphold global standards to ensure uncompromised safety and efficacy.</li>
+      <li><strong>Sustainability</strong> — Ethical and eco-conscious manufacturing is embedded in our DNA.</li>
+      <li><strong>Customer Commitment</strong> — Our relationship doesn't end at product delivery — we are partners in progress.</li>
+    </ul>
+  </section>
+
+  <section class="page-section alt">
+    <div class="inner section-grid">
+      <img src="image/Design to delivery/Manufacturing.jpg" alt="Pulse facility">
+      <div>
+        <h2>Our Legacy</h2>
+        <p>Though young, PULSE is built on strong foundations. Established in 2025, we represent India's commitment to becoming self-reliant in healthcare technology, reducing dependency on imports, and empowering medical professionals with reliable, homegrown solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    © 2025 Pulse Medical. HSR Layout, Bangalore. <a href="mailto:Info@pulseio.in">Info@pulseio.in</a> · +91 90711 01108
+  </footer>
+
+</body>
+</html>

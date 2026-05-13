@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Medical | Integrated Value-Engineered On-Demand</title>
+<meta name="description" content="Pulse integrates design, sourcing, manufacturing, and service into one full-stack medical equipment model.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--hero-from:#1a2a6c;--hero-mid:#2046b0;--hero-to:#5b8de0;--nav-bg:#1c2b5e;--ann-bg:#1e2f6b;--body:#fff;--body-alt:#f7f8fc;--ink:#1a1a2e;--ink-mid:#4a4f70;--ink-light:#8a8fab;--accent:#5b6bcc;--accent-lt:#7b8de0;--accent-pale:#8a96d9;--accent-dim:rgba(91,107,204,.10);--border:#e4e7f2;--border-dark:#2a3a7a;--white:#fff}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--body);color:var(--ink);overflow-x:hidden}
+
+/* ANN BAR */
+.ann-bar{background:var(--ann-bg);color:rgba(255,255,255,.75);text-align:center;padding:9px 20px;font-size:.76rem;letter-spacing:.05em;position:relative;z-index:101;overflow:hidden}
+.ann-track{display:inline-flex;animation:annScroll 20s linear infinite;white-space:nowrap}
+.ann-item{padding:0 60px}.ann-sep{color:rgba(255,255,255,.3)}
+@keyframes annScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:68px;background:var(--nav-bg);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.25)}
+.nav-logo{font-size:1.25rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center}
+.nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.88rem;font-weight:400;transition:color .2s}
+.nav-links a:hover{color:var(--white)}
+.nav-sep{width:1px;height:24px;background:rgba(255,255,255,.2)}
+.nav-cta{color:var(--white)!important;border:1.5px solid rgba(255,255,255,.5)!important;padding:8px 20px;border-radius:6px;font-size:.85rem!important;font-weight:500!important;transition:all .2s!important}
+.nav-cta:hover{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.8)!important}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;          /* not min-height — fixes overflow push */
+  width: 100%;
+  overflow: hidden;       /* contains absolute children */
+  color: #fff;
+  isolation: isolate;     /* creates new stacking context */
+}
+
+.hero-rotator { position: absolute; inset: 0; z-index: 0; }
+.hero-content { position: relative; z-index: 2; padding: 0 5%; max-width: 720px; }   /* heading + sub + buttons wrapper */
+.hero-explore { position: absolute; bottom: 0; left: 0; right: 0; z-index: 3; display:grid; grid-template-columns:repeat(3,1fr); gap:0; padding:24px 5%; border-top:1px solid rgba(255,255,255,.15); }
+.hero-dots    { position: absolute; top: 24px; right: 32px; z-index: 4; display:flex; gap:10px; }
+
+/* 1 – Stacked headline */
+.hero-title span{display:block;font-size:clamp(48px,7vw,110px);line-height:1.05;letter-spacing:-.02em}
+.thin{font-weight:300}
+.bold{font-weight:800}
+
+/* 2 – Sub paragraph */
+.hero-sub{max-width:560px;font-size:17px;line-height:1.55;opacity:.85;margin-top:20px}
+
+/* 3 – Explore buttons */
+.explore-item{text-decoration:none;display:block}
+.explore-item small{display:block;font-size:11px;letter-spacing:1.5px;color:rgba(255,255,255,.6);margin-bottom:6px}
+.explore-item span{font-size:18px;font-weight:600;color:#fff}
+.explore-item i{display:inline-flex;width:22px;height:22px;border-radius:50%;background:#E63946;color:#fff;font-style:normal;align-items:center;justify-content:center;font-size:12px;margin-left:8px;transition:transform .2s}
+.explore-item:hover i{transform:translateX(3px)}
+
+/* 4 – Banner rotator */
+.hero-bg{position:absolute;inset:0;opacity:0;transition:opacity 800ms ease}
+.hero-bg.active{opacity:1}
+.hero-bg img,.hero-bg video{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.55) 0%,rgba(0,0,0,.2) 60%,transparent 100%);z-index:1}
+.dot{width:10px;height:10px;border-radius:50%;border:1px solid #fff;background:transparent;cursor:pointer;padding:0;transition:background .2s}
+.dot.active{background:#fff}
+
+/* Subsequent Sections */
+.section-why-pulse,
+.section-portfolio,
+.section-numbers,
+.section-quality,
+.section-faq {
+  position: relative;
+  z-index: 1;
+  background: #fff;       /* or the original section bg */
+}
+
+/* FOOTER (minimal) */
+.site-footer{background:var(--nav-bg);border-top:1px solid var(--border-dark);padding:40px 60px;text-align:center;color:rgba(255,255,255,.4);font-size:.85rem}
+.site-footer a{color:rgba(255,255,255,.6);text-decoration:none}
+
+@media(max-width:768px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .hero-explore{grid-template-columns:1fr;gap:20px}
+  .hero-content{padding:0 20px}
+}
+</style>
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar"><div class="ann-track">
+  <span class="ann-item">Pulse is now serving pan-India facilities — book a demo today</span><span class="ann-sep">·</span>
+  <span class="ann-item">Full-stack medical equipment: Design → Source → Manufacture → Deliver → Service</span><span class="ann-sep">·</span>
+  <span class="ann-item">Pulse is now serving pan-India facilities — book a demo today</span><span class="ann-sep">·</span>
+  <span class="ann-item">Full-stack medical equipment: Design → Source → Manufacture → Deliver → Service</span><span class="ann-sep">·</span>
+</div></div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="image/pulse-logo.png" alt="Pulse" style="height:42px;width:auto;object-fit:contain;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="why-pulse.html">Why Pulse</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="categories.html">Categories</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="quality.html">Quality</a></li>
+    <div class="nav-sep"></div>
+    <li><a href="mailto:hello@pulse.in" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO SECTION ═══ -->
+<section class="hero" id="hero">
+
+  <!-- 4: Banner rotator -->
+  <div class="hero-rotator">
+    <div class="hero-bg active"><img src="image/Banner/Ventilator Homepage 1.jpg" alt="Ventilator"></div>
+    <div class="hero-bg"><video src="image/Banner/Earth video 1.mp4" autoplay muted loop playsinline></video></div>
+    <div class="hero-bg"><img src="image/Banner/Aesthetics Banner 2.jpg" alt="Aesthetics"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <!-- Dots -->
+  <div class="hero-dots">
+    <button class="dot active" data-i="0"></button>
+    <button class="dot" data-i="1"></button>
+    <button class="dot" data-i="2"></button>
+  </div>
+
+  <!-- Content -->
+  <div class="hero-content">
+    <!-- 1: Stacked headline -->
+    <h1 class="hero-title">
+      <span class="thin">Integrated</span>
+      <span class="bold">Value-Engineered</span>
+      <span class="thin">On-Demand</span>
+    </h1>
+    <!-- 2: Sub paragraph -->
+    <p class="hero-sub">Medical equipment across key categories — reliable, consistent, and backed by strong service. Pulse integrates design, sourcing, manufacturing, and service into one full-stack model.</p>
+  </div>
+
+  <!-- 3: Explore buttons -->
+  <div class="hero-explore">
+    <a href="categories.html" class="explore-item">
+      <small>BROWSE PRODUCTS</small>
+      <span>Explore Categories <i>→</i></span>
+    </a>
+    <a href="how-it-works.html" class="explore-item">
+      <small>OUR PROCESS</small>
+      <span>Explore How It Works <i>→</i></span>
+    </a>
+    <a href="why-pulse.html" class="explore-item">
+      <small>OUR APPROACH</small>
+      <span>Explore Why Pulse <i>→</i></span>
+    </a>
+  </div>
+
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee" style="position:relative; z-index:1; background:#fff; padding:40px 0; border-bottom:1px solid #eee; text-align:center;">
+  <p style="color:#666; font-size:14px; letter-spacing:1px;">[ MARQUEE SECTION — RESTORE CONTENT FROM GIT ]</p>
+</section>
+
+<!-- WHY PULSE -->
+<section class="section-why-pulse">
+  <!-- [ RESTORE CONTENT FROM GIT ] -->
+  <div style="padding:100px 5%; text-align:center; color:#999;">
+    <h2>Why Pulse Performs</h2>
+    <p>Please restore the 6 pillar cards from git.</p>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section-portfolio">
+  <!-- [ RESTORE CONTENT FROM GIT ] -->
+  <div style="padding:100px 5%; text-align:center; color:#999; background:#f9f9f9;">
+    <h2>Our Portfolio</h2>
+    <p>Please restore the 6 category cards from git.</p>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="section-numbers">
+  <!-- [ RESTORE CONTENT FROM GIT ] -->
+  <div style="padding:100px 5%; text-align:center; color:#999;">
+    <h2>By the Numbers</h2>
+  </div>
+</section>
+
+<!-- QUALITY -->
+<section class="section-quality">
+  <!-- [ RESTORE CONTENT FROM GIT ] -->
+  <div style="padding:100px 5%; text-align:center; color:#999; background:#f9f9f9;">
+    <h2>Built to the Highest Standards</h2>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-faq">
+  <!-- [ RESTORE CONTENT FROM GIT ] -->
+  <div style="padding:100px 5%; text-align:center; color:#999;">
+    <h2>Frequently Asked Questions</h2>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2025 Pulse Medical. HSR Layout, Bangalore. All rights reserved. · <a href="mailto:hello@pulse.in">hello@pulse.in</a> · +91 90711 01108</p>
+</footer>
+
+<!-- NAV SCROLL -->
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+</script>
+
+<!-- 4: BANNER ROTATOR JS -->
+<script>
+  const bgs = document.querySelectorAll('.hero-bg');
+  const dots = document.querySelectorAll('.dot');
+  let i = 0;
+  const go = (n) => {
+    bgs[i].classList.remove('active'); dots[i].classList.remove('active');
+    i = n;
+    bgs[i].classList.add('active'); dots[i].classList.add('active');
+  };
+  setInterval(() => go((i + 1) % bgs.length), 10000);
+  dots.forEach((d, n) => d.addEventListener('click', () => go(n)));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse SH320 ICU Ventilator | Pulse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ═══════════════════════════════════════════
+     AYR ENERGY EXACT COLOR SYSTEM
+  ═══════════════════════════════════════════ */
+  :root {
+    --hero-from:   #1a2a6c;
+    --hero-mid:    #2046b0;
+    --hero-to:     #5b8de0;
+    --nav-bg:      #1c2b5e;
+    --ann-bg:      #1e2f6b;
+    --body:        #ffffff;
+    --body-alt:    #f7f8fc;
+    --ink:         #1a1a2e;
+    --ink-mid:     #4a4f70;
+    --ink-light:   #8a8fab;
+    --accent:      #5b6bcc;
+    --accent-lt:   #7b8de0;
+    --accent-pale: #8a96d9;
+    --accent-dim:  rgba(91,107,204,0.10);
+    --border:      #e4e7f2;
+    --border-dark: #2a3a7a;
+    --white:       #ffffff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--body);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ── ANNOUNCEMENT BAR ── */
+  .ann-bar {
+    background: var(--ann-bg);
+    color: rgba(255,255,255,0.75);
+    text-align: center; padding: 9px 20px;
+    font-size: 0.76rem; letter-spacing: 0.05em;
+    position: relative; z-index: 101; overflow: hidden;
+  }
+  .ann-track {
+    display: inline-flex; gap: 0;
+    animation: annScroll 20s linear infinite;
+    white-space: nowrap;
+  }
+  .ann-item { padding: 0 60px; }
+  .ann-sep { color: rgba(255,255,255,0.3); }
+  @keyframes annScroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 60px; height: 68px;
+    background: var(--nav-bg);
+    transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
+
+  .nav-logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--white); text-decoration: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-logo-mark {
+    width: 28px; height: 28px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .nav-logo-mark svg { width: 14px; height: 14px; color: white; }
+
+  .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+  .nav-links a {
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 0.88rem; font-weight: 400;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-sep { width: 1px; height: 24px; background: rgba(255,255,255,0.2); }
+  .nav-cta {
+    color: var(--white) !important;
+    border: 1.5px solid rgba(255,255,255,0.5) !important;
+    padding: 8px 20px; border-radius: 6px;
+    font-size: 0.85rem !important; font-weight: 500 !important;
+    transition: all 0.2s !important;
+  }
+  .nav-cta:hover {
+    background: rgba(255,255,255,0.12) !important;
+    border-color: rgba(255,255,255,0.8) !important;
+  }
+
+  /* ── MEGA MENU ── */
+  .nav-item-mega { position: relative; }
+  .mega-menu {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px);
+    background: var(--nav-bg); border: 1px solid var(--border-dark); border-radius: 8px;
+    width: 700px; padding: 32px; box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+    opacity: 0; visibility: hidden; transition: all 0.3s ease;
+    pointer-events: none; z-index: 100; margin-top: 10px;
+  }
+  .nav-item-mega:hover .mega-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+  .nav-item-mega::after { content:''; position:absolute; bottom:-20px; left:0; right:0; height:20px; }
+  
+  .mega-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; text-align: left; }
+  .mega-col h5 { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 20px; }
+  .mega-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .mega-col ul li a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; display: block; }
+  .mega-col ul li a:hover { color: var(--white); }
+  
+  .mega-featured .featured-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+  .fc-img { width: 100%; height: 100px; background: rgba(91,107,204,0.1); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--accent); }
+  .fc-img svg { width: 40px; height: 40px; opacity: 0.6; }
+  .mega-featured h6 { font-size: 0.95rem; font-weight: 600; color: white; line-height: 1.4; }
+  .fc-link { font-size: 0.85rem; font-weight: 500; color: var(--accent) !important; text-decoration: none; margin-top: auto; display: inline-block; transition: color 0.2s; }
+  .fc-link:hover { color: var(--accent-lt) !important; }
+
+  /* ── INNER HERO ── */
+  .inner-hero {
+    min-height: 45vh;
+    background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-mid) 45%, var(--hero-to) 100%);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 120px 60px 80px;
+    position: relative; overflow: hidden;
+  }
+  .inner-hero .hero-sky {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 120% 80% at 60% 0%, rgba(120,180,255,0.35) 0%, transparent 55%),
+                radial-gradient(ellipse 60% 40% at 80% 100%, rgba(30,50,140,0.6) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; width: 100%;
+  }
+  .inner-hero h1 {
+    font-size: clamp(2.4rem, 4vw, 3.8rem); font-weight: 700; color: white; letter-spacing: -0.02em;
+    margin-bottom: 20px; animation: fadeUp 0.8s ease both;
+  }
+  .hero-category {
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent-pale); margin-bottom: 16px; display: block; animation: fadeUp 0.8s ease both;
+  }
+  .inner-hero p {
+    font-size: 1.05rem; color: rgba(255,255,255,0.8); max-width: 600px; line-height: 1.6;
+    margin-bottom: 40px; animation: fadeUp 0.8s ease 0.15s both;
+  }
+  .hero-product-img {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px;
+    aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+    animation: fadeUp 0.8s ease 0.2s both;
+  }
+  .hero-product-img svg { width: 120px; height: 120px; color: white; opacity: 0.8; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+  /* ── PRODUCT DETAILS CONTENT ── */
+  .details-wrapper { padding: 100px 60px; background: var(--body); }
+  .details-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; max-width: 1200px; margin: 0 auto; }
+  
+  .details-main h2 { font-size: 1.8rem; font-weight: 700; color: var(--ink); margin-bottom: 24px; letter-spacing: -0.01em; }
+  .details-main p { font-size: 1.05rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 40px; }
+  
+  .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 48px; }
+  .specs-table th, .specs-table td { padding: 16px; text-align: left; border-bottom: 1px solid var(--border); }
+  .specs-table th { font-weight: 600; color: var(--ink); width: 35%; background: var(--body-alt); }
+  .specs-table td { color: var(--ink-mid); }
+  .specs-table tr:last-child th, .specs-table tr:last-child td { border-bottom: none; }
+  .table-wrap { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 40px; }
+
+  .cert-list { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+  .cert-badge { background: var(--body-alt); border: 1px solid var(--border); padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+  .cert-badge svg { width: 16px; height: 16px; color: var(--accent); }
+
+  /* ── SIDEBAR ── */
+  .details-sidebar { position: sticky; top: 100px; align-self: start; }
+  .sidebar-card { background: var(--body-alt); border: 1px solid var(--border); border-radius: 16px; padding: 40px; text-align: center; }
+  .sidebar-card h3 { font-size: 1.4rem; font-weight: 700; color: var(--ink); margin-bottom: 16px; }
+  .sidebar-card p { font-size: 0.95rem; color: var(--ink-mid); line-height: 1.6; margin-bottom: 32px; }
+  
+  .btn-primary { background: var(--accent); color: white; padding: 14px 32px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; display: inline-block; width: 100%; transition: all 0.2s; border: none; cursor: pointer; }
+  .btn-primary:hover { background: var(--hero-mid); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(91,107,204,0.25); }
+  .btn-outline { background: transparent; color: var(--ink); padding: 14px 32px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; display: inline-block; width: 100%; transition: all 0.2s; border: 1.5px solid var(--border); margin-top: 12px; }
+  .btn-outline:hover { border-color: var(--ink); }
+
+  /* ── FOOTER ── */
+  footer { background: var(--nav-bg); border-top: 1px solid var(--border-dark); padding: 64px 60px 40px; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 52px; }
+  .footer-brand .nav-logo { margin-bottom: 16px; }
+  .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.38); line-height: 1.75; max-width: 270px; }
+  .footer-col h5 { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 18px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col ul a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.86rem; transition: color 0.2s; }
+  .footer-col ul a:hover { color: rgba(180,200,255,0.9); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-dark); padding-top: 28px; }
+  .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.22); }
+  .footer-bottom-links { display: flex; gap: 24px; }
+  .footer-bottom-links a { font-size: 0.78rem; color: rgba(255,255,255,0.25); text-decoration: none; transition: color 0.2s; }
+  .footer-bottom-links a:hover { color: white; }
+
+  @media (max-width: 1024px) {
+    nav, .details-wrapper, footer, .inner-hero { padding-left: 32px; padding-right: 32px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .details-grid { grid-template-columns: 1fr; }
+    .details-sidebar { position: static; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; }
+  }
+  @media (max-width: 640px) {
+    nav, .details-wrapper, footer, .inner-hero { padding-left: 20px; padding-right: 20px; }
+    .nav-links { display: none; }
+    .footer-top { flex-direction: column; display: flex; }
+  }
+
+  /* ── FLOATING CONTACT FORM ── */
+  .floating-contact-btn {
+    position: fixed; bottom: 32px; right: 32px; z-index: 999;
+    background: var(--accent); color: white; width: 60px; height: 60px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(91,107,204,0.3); cursor: pointer; transition: transform 0.2s;
+    border: none; outline: none;
+  }
+  .floating-contact-btn:hover { transform: scale(1.05); }
+  .floating-contact-btn::before {
+    content: ''; position: absolute; inset: -4px; border-radius: 50%;
+    border: 2px solid var(--accent); opacity: 0;
+    animation: pulseAnim 2s infinite; pointer-events: none;
+  }
+  @keyframes pulseAnim {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.3); opacity: 0; }
+  }
+  .fc-label {
+    position: absolute; right: 72px; top: 50%; transform: translateY(-50%);
+    background: white; color: var(--ink); font-size: 0.85rem; font-weight: 600;
+    padding: 6px 12px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 0.3s;
+  }
+  .floating-contact-btn:hover .fc-label { opacity: 1; }
+
+  .contact-popup {
+    position: fixed; bottom: 104px; right: 32px; width: 380px; max-height: 85vh;
+    background: white; border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+    z-index: 998; display: flex; flex-direction: column; overflow: hidden;
+    transform: translateY(20px); opacity: 0; visibility: hidden; transition: all 0.3s ease;
+  }
+  .contact-popup.open { transform: translateY(0); opacity: 1; visibility: visible; }
+  
+  .cp-header {
+    background: var(--nav-bg); padding: 16px 20px; display: flex;
+    justify-content: space-between; align-items: center; color: white;
+  }
+  .cp-header h4 { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+  .cp-close {
+    background: none; border: none; color: rgba(255,255,255,0.7); cursor: pointer;
+    display: flex; align-items: center; justify-content: center; padding: 4px;
+    transition: color 0.2s;
+  }
+  .cp-close:hover { color: white; }
+  
+  .cp-body { padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+  .cp-body::-webkit-scrollbar { width: 6px; }
+  .cp-body::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 4px; }
+  
+  .cp-form-group { display: flex; flex-direction: column; gap: 6px; }
+  .cp-form-group label { font-size: 0.8rem; font-weight: 600; color: var(--ink); }
+  .cp-input, .cp-select, .cp-textarea {
+    width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 6px;
+    font-size: 0.9rem; font-family: 'Inter', sans-serif; color: var(--ink); background: var(--body-alt);
+    transition: border-color 0.2s;
+  }
+  .cp-input:focus, .cp-select:focus, .cp-textarea:focus { outline: none; border-color: var(--accent); background: white; }
+  .cp-textarea { resize: vertical; min-height: 80px; }
+  
+  .cp-checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .cp-checkbox { display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; color: var(--ink-mid); cursor: pointer; line-height: 1.3; }
+  .cp-checkbox input { margin-top: 2px; accent-color: var(--accent); }
+  
+  .cp-submit {
+    background: var(--accent); color: white; border: none; border-radius: 6px;
+    padding: 12px; font-size: 0.95rem; font-weight: 600; cursor: pointer;
+    transition: background 0.2s; display: flex; justify-content: center; align-items: center; gap: 8px;
+    margin-top: 8px;
+  }
+  .cp-submit:hover { background: var(--hero-mid); }
+  
+  .cp-success {
+    display: none; padding: 40px 20px; text-align: center; color: var(--ink);
+    flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    min-height: 300px;
+  }
+  .cp-success svg { width: 56px; height: 56px; color: #10b981; }
+  .cp-success h5 { font-size: 1.25rem; font-weight: 700; margin: 0; }
+  .cp-success p { font-size: 0.95rem; color: var(--ink-mid); line-height: 1.5; margin: 0; }
+
+  /* ── PREMIUM FOOTER ── */
+  .premium-footer { background: var(--nav-bg); border-top: 1px solid var(--border-dark); display: flex; flex-direction: column; }
+  
+  .pf-strip { background: rgba(91,107,204,0.1); border-bottom: 1px solid var(--border-dark); padding: 40px 60px; }
+  .pf-strip-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+  .pf-strip h3 { font-size: 1.4rem; font-weight: 600; color: white; letter-spacing: -0.01em; margin: 0; line-height: 1.4; }
+  .pf-strip-actions { display: flex; gap: 16px; flex-shrink: 0; }
+  .pf-btn { padding: 12px 24px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+  .pf-btn.primary { background: var(--accent); color: white; border: none; }
+  .pf-btn.primary:hover { background: var(--hero-mid); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(91,107,204,0.3); }
+  .pf-btn.secondary { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }
+  .pf-btn.secondary:hover { background: rgba(255,255,255,0.05); border-color: white; }
+
+  .pf-main { padding: 80px 60px 60px; }
+  .pf-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr 1.2fr; gap: 48px; }
+  
+  .pf-brand-col .pf-logo { margin-bottom: 20px; display: flex; font-family: 'Inter', sans-serif; font-size: 1.25rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white); text-decoration: none; align-items: center; gap: 10px; }
+  .pf-brand-col .nav-logo-mark { width: 28px; height: 28px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .pf-brand-col .nav-logo-mark svg { width: 14px; height: 14px; color: white; }
+
+  .pf-tagline { font-size: 0.9rem; color: rgba(255,255,255,0.5); line-height: 1.6; margin-bottom: 28px; max-width: 280px; }
+  .pf-socials { display: flex; gap: 16px; margin-bottom: 32px; }
+  .pf-socials a { color: rgba(255,255,255,0.4); transition: color 0.2s, transform 0.2s; display: flex; align-items: center; justify-content: center; }
+  .pf-socials a:hover { color: white; transform: translateY(-2px); }
+  .pf-socials svg { width: 20px; height: 20px; }
+  .pf-iso-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(91,107,204,0.15); border: 1px solid rgba(91,107,204,0.3); color: var(--accent-lt); font-size: 0.75rem; font-weight: 600; padding: 6px 12px; border-radius: 4px; letter-spacing: 0.05em; text-transform: uppercase; }
+  .pf-iso-badge svg { width: 14px; height: 14px; }
+
+  .pf-col h5 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 24px; }
+  .pf-col ul { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .pf-col ul a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+  .pf-col ul a:hover { color: white; }
+
+  .pf-contact-col ul li { color: rgba(255,255,255,0.6); font-size: 0.9rem; display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .pf-contact-col ul li svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+  .pf-map-placeholder { width: 100%; height: 120px; background: rgba(0,0,0,0.2); border: 1px solid var(--border-dark); border-radius: 8px; margin-top: 24px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.15); }
+  .pf-map-placeholder svg { width: 32px; height: 32px; }
+
+  .pf-bottom { border-top: 1px solid var(--border-dark); padding: 24px 60px; background: rgba(0,0,0,0.1); }
+  .pf-bottom-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); width: 100%; }
+  .pf-bottom-center { display: flex; align-items: center; gap: 12px; font-weight: 500; letter-spacing: 0.05em; color: rgba(255,255,255,0.5); }
+  .pf-bottom-center .dot { color: var(--accent); }
+  .pf-bottom-right { display: flex; gap: 24px; }
+  .pf-bottom-right a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+  .pf-bottom-right a:hover { color: white; }
+
+  @media (max-width: 1024px) {
+    .pf-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .pf-brand-col { grid-column: 1 / -1; }
+    .pf-strip-content { flex-direction: column; text-align: center; }
+    .pf-bottom-inner { flex-direction: column; gap: 16px; text-align: center; }
+  }
+  @media (max-width: 640px) {
+    .pf-grid { grid-template-columns: 1fr; }
+    .pf-strip, .pf-main, .pf-bottom { padding-left: 20px; padding-right: 20px; }
+  }
+
+</style>
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar" style="overflow:hidden;">
+  <div class="ann-track">
+    <span class="ann-item">Pulse is now serving pan-India facilities — book a demo today</span>
+    <span class="ann-sep">·</span>
+    <span class="ann-item">Full-stack medical equipment: Design → Source → Manufacture → Deliver → Service</span>
+    <span class="ann-sep">·</span>
+    <span class="ann-item">Pulse is now serving pan-India facilities — book a demo today</span>
+    <span class="ann-sep">·</span>
+    <span class="ann-item">Full-stack medical equipment: Design → Source → Manufacture → Deliver → Service</span>
+    <span class="ann-sep">·</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="image/pulse-logo.png" alt="Pulse" style="height:42px; width:auto; object-fit:contain;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="why-pulse.html">Why Pulse</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="categories.html">Categories</a></li>
+    <li class="nav-item-mega">
+      <a href="#" class="mega-trigger" style="display:flex;align-items:center;">Products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;margin-left:4px;"><polyline points="6 9 12 15 18 9"/></svg></a>
+      <div class="mega-menu">
+        <div class="mega-grid">
+          <div class="mega-col">
+            <h5>BY SPECIALTY</h5>
+            <ul>
+              <li><a href="products.html#critical-care">Critical Care</a></li>
+              <li><a href="products.html#cardiology">Cardiology</a></li>
+              <li><a href="products.html#infusion-therapy">Infusion Therapy</a></li>
+              <li><a href="products.html#anaesthesia">Anaesthesia</a></li>
+              <li><a href="products.html#diagnostics">Diagnostics</a></li>
+              <li><a href="products.html#renal-care">Renal Care</a></li>
+              <li><a href="products.html#wound-care">Wound Care</a></li>
+              <li><a href="products.html#aesthetics">Aesthetics</a></li>
+            </ul>
+          </div>
+          <div class="mega-col">
+            <h5>BY CATEGORY</h5>
+            <ul>
+              <li><a href="products.html#ventilators">Ventilators</a></li>
+              <li><a href="products.html#patient-monitors">Patient Monitors</a></li>
+              <li><a href="products.html#infusion-pumps">Infusion Pumps</a></li>
+              <li><a href="products.html#diagnostic-devices">Diagnostic Devices</a></li>
+              <li><a href="products.html#consumables">Consumables</a></li>
+              <li><a href="products.html#anaesthesia-machines">Anaesthesia Machines</a></li>
+              <li><a href="products.html#dialysis-equipment">Dialysis Equipment</a></li>
+              <li><a href="products.html#wound-care-products">Wound Care Products</a></li>
+            </ul>
+          </div>
+          <div class="mega-col mega-featured">
+            <h5>FEATURED</h5>
+            <div class="featured-card">
+              <div class="fc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg></div>
+              <h6>Pulse SH320 ICU Ventilator</h6>
+              <a href="product-detail.html" class="fc-link">View Product &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="quality.html">Quality</a></li>
+    <li><a href="the-pulse-edge.html">The Pulse Edge</a></li>
+    <div class="nav-sep"></div>
+    <li><a href="index.html#cta" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="inner-hero">
+  <div class="hero-sky"></div>
+  <div class="hero-grid">
+    <div>
+      <span class="hero-category">Critical Care • Ventilators</span>
+      <h1>Pulse SH320 ICU Ventilator</h1>
+      <p>A highly versatile, turbine-driven ICU ventilator providing advanced invasive and non-invasive ventilation therapy for adult, pediatric, and neonatal patients.</p>
+    </div>
+    <div class="hero-product-img">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/><path d="M8 8h8M8 12h5"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILS SECTION -->
+<section class="details-wrapper">
+  <div class="details-grid">
+    <div class="details-main">
+      <h2>Comprehensive Clinical Control</h2>
+      <p>The Pulse SH320 offers a complete array of ventilation modes, from basic volume control to advanced dual-control and spontaneous breathing support. Its intuitive interface and intelligent alarms minimize cognitive load, allowing clinicians to focus entirely on the patient. Designed for the high demands of the modern ICU, the built-in turbine provides independence from central compressed air, ensuring continuous therapy even during infrastructure failures.</p>
+
+      <h2>Key Specifications</h2>
+      <div class="table-wrap">
+        <table class="specs-table">
+          <tbody>
+            <tr>
+              <th>Patient Range</th>
+              <td>Adult, Pediatric, Neonatal (optional)</td>
+            </tr>
+            <tr>
+              <th>Ventilation Modes</th>
+              <td>VCV, PCV, PRVC, SIMV (VC/PC/PRVC), SPONT/CPAP, BIVENT/APRV</td>
+            </tr>
+            <tr>
+              <th>Tidal Volume</th>
+              <td>2 ml - 2000 ml</td>
+            </tr>
+            <tr>
+              <th>Display</th>
+              <td>15.6" TFT Touch Screen (Rotatable)</td>
+            </tr>
+            <tr>
+              <th>Gas Source</th>
+              <td>Integrated High-Performance Turbine & High-pressure O2</td>
+            </tr>
+            <tr>
+              <th>Battery Backup</th>
+              <td>Up to 3 hours (Hot-swappable dual batteries)</td>
+            </tr>
+            <tr>
+              <th>Monitoring Parameters</th>
+              <td>Ppeak, Pmean, Pplat, PEEP, Vti, Vte, MV, f, fspont, FiO2, Cdyn, Raw</td>
+            </tr>
+            <tr>
+              <th>Connectivity</th>
+              <td>HL7, RS232, USB, Ethernet, VGA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Certifications & Quality</h2>
+      <div class="cert-list">
+        <div class="cert-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> CE Certified
+        </div>
+        <div class="cert-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> ISO 13485:2016
+        </div>
+        <div class="cert-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> CDSCO Approved
+        </div>
+      </div>
+    </div>
+
+    <div class="details-sidebar">
+      <div class="sidebar-card">
+        <h3>Ready to Upgrade?</h3>
+        <p>Book a technical demonstration at your facility. Our clinical specialists will walk you through the SH320's capabilities.</p>
+        <a href="mailto:hello@pulse.in" class="btn-primary">Request a Demo</a>
+        <a href="#" class="btn-outline">Download Brochure</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<!-- PREMIUM FOOTER -->
+<footer class="premium-footer">
+  <!-- Pre-Footer Strip -->
+  <div class="pf-strip">
+    <div class="pf-strip-content">
+      <h3>Ready to equip your facility with Made-in-India medical technology?</h3>
+      <div class="pf-strip-actions">
+        <a href="mailto:hello@pulse.in?subject=Demo Request" class="pf-btn secondary">Request a Demo</a>
+        <button class="pf-btn primary" onclick="document.getElementById('fc-popup') ? document.getElementById('fc-popup').classList.add('open') : null">Get a Quote</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Grid -->
+  <div class="pf-main">
+    <div class="pf-grid">
+      <!-- Col 1 -->
+      <div class="pf-col pf-brand-col">
+        <a href="index.html" class="nav-logo">
+          <img src="image/pulse-logo.png" alt="Pulse" style="height:42px; width:auto; object-fit:contain; filter:brightness(10);">
+        </a>
+        <p class="pf-tagline">Indian medical equipment manufacturer — engineering, building, and servicing devices that power healthcare across the nation.</p>
+        <div class="pf-socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+          <a href="https://instagram.com/pulse.medical" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+        <div class="pf-iso-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> ISO 13485 Certified
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="pf-col">
+        <h5>COMPANY</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Vision</a></li>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press & Media</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="pf-col">
+        <h5>SOLUTIONS</h5>
+        <ul>
+          <li><a href="patient-monitoring.html">Patient Monitoring</a></li>
+          <li><a href="diagnostic-imaging.html">Diagnostic Imaging</a></li>
+          <li><a href="critical-care.html">Critical Care</a></li>
+          <li><a href="ot-surgical.html">OT & Surgical</a></li>
+          <li><a href="laboratory.html">Laboratory</a></li>
+          <li><a href="rehabilitation.html">Rehabilitation & Therapy</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="pf-col">
+        <h5>SUPPORT</h5>
+        <ul>
+          <li><a href="mailto:hello@pulse.in">Request Demo</a></li>
+          <li><a href="#" onclick="document.getElementById('fc-popup') ? document.getElementById('fc-popup').classList.add('open') : null; return false;">Get a Quote</a></li>
+          <li><a href="#">Service Support</a></li>
+          <li><a href="#">AMC & Maintenance</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5 -->
+      <div class="pf-col pf-contact-col">
+        <h5>CONTACT</h5>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 27th Main Road, Sector 2, HSR Layout, Bangalore, Karnataka 560102</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 90711 01108</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@pulse.in</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5!2d77.6408!3d12.9116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zHSR+Layout+Sector+2+Bangalore!5e0!3m2!1sen!2sin!4v1" width="100%" height="180" style="border:0;border-radius:8px;margin-top:24px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="pf-bottom">
+    <div class="pf-bottom-inner">
+      <div class="pf-bottom-left">
+        <p>© 2025 Pulse Medical. HSR Layout, Bangalore. All rights reserved.</p>
+      </div>
+      <div class="pf-bottom-center">
+        <span>ISO 13485</span> <span class="dot">·</span> <span>CE</span> <span class="dot">·</span> <span>CDSCO</span> <span class="dot">·</span> <span>FDA</span>
+      </div>
+      <div class="pf-bottom-right">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+</script>
+
+<!-- FLOATING CONTACT -->
+
+
+<div class="contact-popup" id="fc-popup">
+  <div class="cp-header">
+    <h4>Talk to Our Experts</h4>
+    <button class="cp-close" id="fc-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  
+  <div class="cp-body" id="fc-body">
+    <form id="fc-form" action="mailto:hello@pulse.in" method="POST" enctype="text/plain">
+      <div class="cp-form-group">
+        <label>Full Name *</label>
+        <input type="text" class="cp-input" required>
+      </div>
+      <div class="cp-form-group">
+        <label>Mobile Number *</label>
+        <input type="tel" class="cp-input" placeholder="+91 90711 01108" required>
+      </div>
+      <div class="cp-form-group">
+        <label>Email Address *</label>
+        <input type="email" class="cp-input" required>
+      </div>
+      <div class="cp-form-group">
+        <label>Organisation / Hospital Name *</label>
+        <input type="text" class="cp-input" required>
+      </div>
+      <div class="cp-form-group">
+        <label>Designation</label>
+        <select class="cp-select">
+          <option>Doctor</option>
+          <option>Hospital Administrator</option>
+          <option>Purchase Manager</option>
+          <option>Biomedical Engineer</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="cp-form-group">
+        <label>City *</label>
+        <input type="text" class="cp-input" required>
+      </div>
+      <div class="cp-form-group">
+        <label>Equipment Interested In</label>
+        <div class="cp-checkbox-group">
+          <label class="cp-checkbox"><input type="checkbox"> Patient Monitoring</label>
+          <label class="cp-checkbox"><input type="checkbox"> Diagnostic Imaging</label>
+          <label class="cp-checkbox"><input type="checkbox"> Critical Care</label>
+          <label class="cp-checkbox"><input type="checkbox"> OT & Surgical</label>
+          <label class="cp-checkbox"><input type="checkbox"> Laboratory</label>
+          <label class="cp-checkbox"><input type="checkbox"> Rehabilitation</label>
+        </div>
+      </div>
+      <div class="cp-form-group">
+        <label>Budget Range</label>
+        <select class="cp-select">
+          <option>Under ₹5L</option>
+          <option>₹5L–₹20L</option>
+          <option>₹20L–₹50L</option>
+          <option>₹50L+</option>
+          <option>Not Sure</option>
+        </select>
+      </div>
+      <div class="cp-form-group">
+        <label>Timeline</label>
+        <select class="cp-select">
+          <option>Immediate</option>
+          <option>1–3 Months</option>
+          <option>3–6 Months</option>
+          <option>Just Exploring</option>
+        </select>
+      </div>
+      <div class="cp-form-group">
+        <label>Message</label>
+        <textarea class="cp-textarea" placeholder="Any specific requirements?"></textarea>
+      </div>
+      <button type="submit" class="cp-submit">Submit Enquiry &rarr;</button>
+    </form>
+  </div>
+  
+  <div class="cp-success" id="fc-success">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <h5>Thank you!</h5>
+    <p>Our team will contact you within 48 hours.</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const fcBtn = document.getElementById('fc-btn');
+    const fcPopup = document.getElementById('fc-popup');
+    const fcClose = document.getElementById('fc-close');
+    const fcForm = document.getElementById('fc-form');
+    const fcBody = document.getElementById('fc-body');
+    const fcSuccess = document.getElementById('fc-success');
+
+    if (fcBtn && fcPopup) {
+      fcBtn.addEventListener('click', () => fcPopup.classList.toggle('open'));
+      fcClose.addEventListener('click', () => fcPopup.classList.remove('open'));
+      
+      fcForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fcBody.style.display = 'none';
+        fcSuccess.style.display = 'flex';
+        setTimeout(() => {
+          fcPopup.classList.remove('open');
+          setTimeout(() => {
+            fcBody.style.display = 'flex';
+            fcSuccess.style.display = 'none';
+            fcForm.reset();
+          }, 300);
+        }, 3000);
+      });
+    }
+  });
+</script>
+
+<!-- AI CHATBOT WIDGET -->
+<style>
+/* Chatbot button and pulse animation */
+.pulse-chatbot-btn {
+  position: fixed; bottom: 32px; right: 32px; width: 60px; height: 60px;
+  border-radius: 50%; background: linear-gradient(135deg, #1c2b5e, #5b6bcc);
+  color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 9999; transition: transform 0.3s ease;
+}
+.pulse-chatbot-btn:hover { transform: scale(1.05); }
+.pulse-chatbot-btn::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%; border: 2px solid #5b6bcc; animation: chatbotPulse 2s infinite;
+}
+@keyframes chatbotPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+.pulse-chatbot-btn svg { width: 30px; height: 30px; }
+.pulse-chatbot-label {
+  position: absolute; right: 75px; background: white; color: #1c2b5e; padding: 8px 12px;
+  border-radius: 20px; font-size: 0.85rem; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.pulse-chatbot-btn:hover .pulse-chatbot-label { opacity: 1; }
+
+/* Chatbot Window */
+.pulse-chat-window {
+  position: fixed; bottom: 100px; right: 32px; width: 360px; height: 500px;
+  background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  display: flex; flex-direction: column; z-index: 9998; overflow: hidden;
+  font-family: 'Inter', sans-serif; transform: translateY(20px); opacity: 0;
+  pointer-events: none; transition: all 0.3s ease;
+}
+.pulse-chat-window.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+
+/* Header */
+.pulse-chat-header {
+  background: linear-gradient(135deg, #1c2b5e, #2a3c75); color: white; padding: 16px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.pulse-chat-title { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 1.05rem; }
+.pulse-chat-title svg { width: 24px; height: 24px; }
+.pulse-chat-actions button { background: none; border: none; color: white; cursor: pointer; opacity: 0.8; transition: opacity 0.2s; padding: 4px; display: flex; }
+.pulse-chat-actions button:hover { opacity: 1; }
+.pulse-chat-actions { display: flex; gap: 8px; }
+
+/* Body */
+.pulse-chat-body {
+  flex: 1; padding: 16px; overflow-y: auto; background: #f7f8fc;
+  display: flex; flex-direction: column; gap: 12px;
+}
+/* Scrollbar */
+.pulse-chat-body::-webkit-scrollbar { width: 6px; }
+.pulse-chat-body::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+/* Messages */
+.chat-msg { max-width: 85%; padding: 12px 16px; border-radius: 16px; font-size: 0.9rem; line-height: 1.5; word-wrap: break-word; }
+.chat-msg.bot { background: white; border: 1px solid #e4e7f2; border-bottom-left-radius: 4px; color: #333; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+.chat-msg.user { background: #e3f2fd; color: #1c2b5e; border-bottom-right-radius: 4px; align-self: flex-end; }
+
+/* Quick Actions */
+.chat-quick-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.chat-quick-btn {
+  background: white; border: 1px solid #5b6bcc; color: #5b6bcc;
+  padding: 8px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;
+  cursor: pointer; transition: all 0.2s; text-align: left;
+}
+.chat-quick-btn:hover { background: #5b6bcc; color: white; }
+
+/* Input */
+.pulse-chat-input-area {
+  padding: 16px; background: white; border-top: 1px solid #e4e7f2; display: flex; gap: 10px; align-items: center;
+}
+.pulse-chat-input-area input {
+  flex: 1; border: 1px solid #e4e7f2; border-radius: 20px; padding: 10px 16px; font-size: 0.9rem; outline: none; transition: border-color 0.2s;
+}
+.pulse-chat-input-area input:focus { border-color: #5b6bcc; }
+.pulse-chat-send {
+  background: #5b6bcc; color: white; border: none; width: 38px; height: 38px; border-radius: 50%;
+  display: flex; justify-content: center; align-items: center; cursor: pointer; transition: background 0.2s; flex-shrink: 0;
+}
+.pulse-chat-send:hover { background: #4a59a8; }
+.pulse-chat-footer { text-align: center; font-size: 0.65rem; color: #999; padding: 0 0 12px; background: white; }
+</style>
+
+<button class="pulse-chatbot-btn" id="ai-chat-btn" aria-label="Chat with Pulse AI">
+  <span class="pulse-chatbot-label">Chat with Pulse AI</span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M12 5v4"/><circle cx="12" cy="3" r="2"/><path d="M6 15v-2a6 6 0 0 1 12 0v2"/></svg>
+</button>
+
+<div class="pulse-chat-window" id="ai-chat-window">
+  <div class="pulse-chat-header">
+    <div class="pulse-chat-title">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      Pulse AI Assistant
+    </div>
+    <div class="pulse-chat-actions">
+      <button id="ai-chat-minimize" aria-label="Minimize"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <button id="ai-chat-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+  </div>
+  <div class="pulse-chat-body" id="ai-chat-body">
+    <div class="chat-msg bot">Hello! 👋 Welcome to Pulse Medical. How can I help you today?</div>
+    <div class="chat-quick-actions" id="ai-quick-actions">
+      <button class="chat-quick-btn">🏥 Our Products</button>
+      <button class="chat-quick-btn">🔧 Service Enquiry</button>
+      <button class="chat-quick-btn">📞 Request a Call Back</button>
+      <button class="chat-quick-btn">💼 Careers</button>
+      <button class="chat-quick-btn">💬 Chat with Experts</button>
+    </div>
+  </div>
+  <div class="pulse-chat-input-area">
+    <input type="text" id="ai-chat-input" placeholder="Type a message...">
+    <button class="pulse-chat-send" id="ai-chat-send" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+  </div>
+  <div class="pulse-chat-footer">Powered by Pulse AI</div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const chatBtn = document.getElementById('ai-chat-btn');
+    const chatWindow = document.getElementById('ai-chat-window');
+    const chatMinimize = document.getElementById('ai-chat-minimize');
+    const chatClose = document.getElementById('ai-chat-close');
+    const chatBody = document.getElementById('ai-chat-body');
+    const chatInput = document.getElementById('ai-chat-input');
+    const chatSend = document.getElementById('ai-chat-send');
+    const quickActions = document.getElementById('ai-quick-actions');
+
+    const responses = {
+      '🏥 Our Products': 'We manufacture 6 categories of medical equipment: Patient Monitoring, Diagnostic Imaging, Critical Care, OT & Surgical, Laboratory, and Rehabilitation. Which category interests you?',
+      '🔧 Service Enquiry': 'Our service team operates pan-India with a 72-hour response guarantee. Please call +91 90711 01108 or email Info@pulseio.in and we\\'ll get back to you within 48 hours.',
+      '📞 Request a Call Back': 'Please share your name and number below and our team will call you within 24 hours. Or call us directly at +91 90711 01108.',
+      '💼 Careers': 'We\\'re always looking for passionate people to join the Pulse team. Send your resume to Info@pulseio.in with the subject line "Careers at Pulse".',
+      '💬 Chat with Experts': 'You\\'re now connected with our expert team. Please describe your requirement and we\\'ll respond shortly. You can also reach us at +91 90711 01108.'
+    };
+
+    function addMessage(text, sender) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `chat-msg ${sender}`;
+      msgDiv.textContent = text;
+      
+      if (quickActions && sender === 'user') {
+        quickActions.style.display = 'none';
+      }
+      
+      chatBody.appendChild(msgDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function handleUserInput(text) {
+      if (!text.trim()) return;
+      addMessage(text, 'user');
+      
+      setTimeout(() => {
+        let reply = "Thank you for your message! Our team will get back to you within 48 hours. For urgent queries call +91 90711 01108.";
+        if (responses[text]) {
+            reply = responses[text];
+        }
+        addMessage(reply, 'bot');
+      }, 600);
+    }
+
+    if (chatBtn && chatWindow) {
+      chatBtn.addEventListener('click', () => { chatWindow.classList.add('open'); chatBtn.style.transform = 'scale(0)'; setTimeout(() => chatBtn.style.display = 'none', 300); });
+      
+      const closeChat = () => { 
+        chatWindow.classList.remove('open'); 
+        chatBtn.style.display = 'flex'; 
+        setTimeout(() => chatBtn.style.transform = 'scale(1)', 10); 
+      };
+      
+      chatMinimize.addEventListener('click', closeChat);
+      chatClose.addEventListener('click', closeChat);
+
+      chatSend.addEventListener('click', () => {
+        handleUserInput(chatInput.value);
+        chatInput.value = '';
+      });
+      chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          handleUserInput(chatInput.value);
+          chatInput.value = '';
+        }
+      });
+
+      document.querySelectorAll('.chat-quick-btn').forEach(btn => {
+        btn.addEventListener('click', () => handleUserInput(btn.textContent));
+      });
+    }
+  });
+</script>
+<!-- AI CHATBOT WIDGET END -->
+
+</body>
+</html>
