@@ -1,1 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Submissions | Pulse Admin</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/admin/supabase-config.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0f1117;
+    --sidebar: #151820;
+    --card: #1a1e2a;
+    --card-hover: #1f2436;
+    --border: #252b3b;
+    --text: #e8eaf0;
+    --muted: #6b7280;
+    --accent: #e8734a;
+    --accent2: #f0a070;
+    --blue: #3b82f6;
+    --green: #22c55e;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --purple: #a855f7;
+  }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: var(--sidebar);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+  }
+
+  .sidebar-logo {
+    padding: 24px 20px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-logo img { height: 32px; }
+
+  .sidebar-nav {
+    flex: 1;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+
+  .nav-item:hover { background: var(--card); color: var(--text); }
+  .nav-item.active { background: var(--accent); color: #fff; }
+
+  .nav-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+  .sidebar-footer {
+    padding: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .user-info { font-size: 13px; margin-bottom: 10px; }
+  .user-email { color: var(--text); font-weight: 500; }
+  .user-role { color: var(--accent); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .sign-out-btn {
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+  .sign-out-btn:hover { border-color: var(--red); color: var(--red); }
+
+  /* MAIN */
+  .main {
+    margin-left: 240px;
+    flex: 1;
+    padding: 32px;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .page-title { font-size: 24px; font-weight: 700; }
+  .page-subtitle { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+  /* TABS */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    background: var(--card);
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 24px;
+    width: fit-content;
+  }
+
+  .tab-btn {
+    padding: 8px 20px;
+    border-radius: 7px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tab-btn.active { background: var(--accent); color: #fff; }
+  .tab-btn:not(.active):hover { color: var(--text); }
+
+  .tab-count {
+    background: rgba(255,255,255,0.15);
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .tab-btn:not(.active) .tab-count {
+    background: var(--border);
+    color: var(--muted);
+  }
+
+  /* FILTERS */
+  .filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-box {
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    position: relative;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 9px 12px 9px 36px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    transition: border 0.15s;
+  }
+
+  .search-box input:focus { border-color: var(--accent); }
+  .search-box svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    width: 16px; height: 16px;
+  }
+
+  .filter-select {
+    padding: 9px 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .export-btn {
+    padding: 9px 16px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.15s;
+    margin-left: auto;
+  }
+  .export-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* STATS ROW */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+  }
+
+  .stat-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .stat-value { font-size: 28px; font-weight: 700; }
+  .stat-new { color: var(--blue); }
+  .stat-total { color: var(--text); }
+
+  /* TABLE */
+  .table-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+    background: var(--sidebar);
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.1s;
+    cursor: pointer;
+  }
+
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--card-hover); }
+
+  td {
+    padding: 14px 16px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  .td-name { font-weight: 600; }
+  .td-email { color: var(--muted); font-size: 13px; }
+  .td-org { color: var(--muted); font-size: 13px; }
+  .td-date { color: var(--muted); font-size: 13px; white-space: nowrap; }
+
+  /* STATUS BADGE */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+
+  .badge-new { background: rgba(59,130,246,0.15); color: var(--blue); }
+  .badge-contacted { background: rgba(245,158,11,0.15); color: var(--yellow); }
+  .badge-scheduled { background: rgba(168,85,247,0.15); color: var(--purple); }
+  .badge-completed { background: rgba(34,197,94,0.15); color: var(--green); }
+  .badge-cancelled { background: rgba(239,68,68,0.15); color: var(--red); }
+  .badge-reviewing { background: rgba(245,158,11,0.15); color: var(--yellow); }
+  .badge-quoted { background: rgba(168,85,247,0.15); color: var(--purple); }
+  .badge-won { background: rgba(34,197,94,0.15); color: var(--green); }
+  .badge-lost { background: rgba(239,68,68,0.15); color: var(--red); }
+
+  /* EMPTY STATE */
+  .empty-state {
+    text-align: center;
+    padding: 64px 24px;
+    color: var(--muted);
+  }
+
+  .empty-state svg { width: 48px; height: 48px; margin: 0 auto 16px; opacity: 0.3; display: block; }
+  .empty-state h3 { font-size: 16px; color: var(--text); margin-bottom: 6px; }
+  .empty-state p { font-size: 14px; }
+
+  /* LOADING */
+  .loading {
+    text-align: center;
+    padding: 48px;
+    color: var(--muted);
+  }
+
+  .spinner {
+    width: 32px; height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto 12px;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* MODAL */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 560px;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .modal-title { font-size: 17px; font-weight: 700; }
+
+  .modal-close {
+    background: none;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    transition: color 0.15s;
+  }
+  .modal-close:hover { color: var(--text); }
+
+  .modal-body { padding: 24px; }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .detail-item { }
+  .detail-item.full { grid-column: 1 / -1; }
+  .detail-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .detail-value { font-size: 14px; font-weight: 500; }
+
+  .status-update {
+    background: var(--sidebar);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  .status-update label { font-size: 13px; color: var(--muted); display: block; margin-bottom: 8px; }
+
+  .status-options { display: flex; gap: 8px; flex-wrap: wrap; }
+
+  .status-option {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .status-option:hover, .status-option.selected {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(232,115,74,0.1);
+  }
+
+  .save-btn {
+    margin-top: 16px;
+    width: 100%;
+    padding: 11px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .save-btn:hover { opacity: 0.85; }
+  .save-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* TOAST */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 12px 20px;
+    background: var(--green);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 200;
+    transform: translateY(80px);
+    transition: transform 0.3s;
+  }
+  .toast.show { transform: translateY(0); }
+  .toast.error { background: var(--red); }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="/image/pulse-logo.png" alt="Pulse" onerror="this.style.display='none'">
+    <span style="font-size:18px;font-weight:700;color:#e8734a;" id="logoText">PULSE</span>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="/admin/dashboard.html" class="nav-item">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/></svg>
+      Dashboard
+    </a>
+    <a href="/admin/banners.html" class="nav-item">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      Banners
+    </a>
+    <a href="/admin/blogs.html" class="nav-item">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      Blogs
+    </a>
+    <a href="/admin/products.html" class="nav-item">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+      Products
+    </a>
+    <a href="/admin/form-submissions.html" class="nav-item active">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      Form Submissions
+    </a>
+    <a href="/admin/admin-users.html" class="nav-item">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+      Admin Users
+    </a>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="user-info">
+      <div class="user-email" id="userEmail">Loading...</div>
+      <div class="user-role" id="userRole">—</div>
+    </div>
+    <button class="sign-out-btn" onclick="handleSignOut()">Sign out</button>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="page-header">
+    <div>
+      <div class="page-title">Form Submissions</div>
+      <div class="page-subtitle">Demo bookings and quote requests from your website</div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-row" id="statsRow">
+    <div class="stat-card">
+      <div class="stat-label">New Demos</div>
+      <div class="stat-value stat-new" id="statNewDemos">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Demos</div>
+      <div class="stat-value stat-total" id="statTotalDemos">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">New Quotes</div>
+      <div class="stat-value stat-new" id="statNewQuotes">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Quotes</div>
+      <div class="stat-value stat-total" id="statTotalQuotes">—</div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('demos')" id="tab-demos">
+      📋 Demo Bookings <span class="tab-count" id="demoCount">0</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('quotes')" id="tab-quotes">
+      💰 Quote Requests <span class="tab-count" id="quoteCount">0</span>
+    </button>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <div class="search-box">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      <input type="text" id="searchInput" placeholder="Search by name, email, city..." oninput="applyFilters()">
+    </div>
+    <select class="filter-select" id="statusFilter" onchange="applyFilters()">
+      <option value="">All Statuses</option>
+    </select>
+    <button class="export-btn" onclick="exportCSV()">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      Export CSV
+    </button>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrap" id="tableWrap">
+    <div class="loading">
+      <div class="spinner"></div>
+      Loading submissions...
+    </div>
+  </div>
+</main>
+
+<!-- DETAIL MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modalTitle">Submission Details</div>
+      <button class="modal-close" onclick="closeModalDirect()">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+let currentTab = 'demos';
+let allDemos = [];
+let allQuotes = [];
+let selectedStatus = '';
+let currentRecord = null;
+
+const DEMO_STATUSES = ['new', 'contacted', 'scheduled', 'completed', 'cancelled'];
+const QUOTE_STATUSES = ['new', 'reviewing', 'quoted', 'won', 'lost'];
+
+// AUTH CHECK
+async function init() {
+  const { data: { session } } = await supabase.auth.getSession();
+  if (!session) { window.location.href = '/admin/login.html'; return; }
+
+  const { data: adminRow } = await supabase
+    .from('admins')
+    .select('email, role')
+    .eq('id', session.user.id)
+    .single();
+
+  if (!adminRow) { window.location.href = '/admin/login.html'; return; }
+
+  document.getElementById('userEmail').textContent = adminRow.email;
+  document.getElementById('userRole').textContent = adminRow.role.replace('_', ' ').toUpperCase();
+
+  await loadAll();
+}
+
+async function loadAll() {
+  const [demosRes, quotesRes] = await Promise.all([
+    supabase.from('demo_bookings').select('*').order('created_at', { ascending: false }),
+    supabase.from('quote_requests').select('*').order('created_at', { ascending: false })
+  ]);
+
+  allDemos = demosRes.data || [];
+  allQuotes = quotesRes.data || [];
+
+  // Stats
+  document.getElementById('statNewDemos').textContent = allDemos.filter(d => d.status === 'new').length;
+  document.getElementById('statTotalDemos').textContent = allDemos.length;
+  document.getElementById('statNewQuotes').textContent = allQuotes.filter(q => q.status === 'new').length;
+  document.getElementById('statTotalQuotes').textContent = allQuotes.length;
+  document.getElementById('demoCount').textContent = allDemos.length;
+  document.getElementById('quoteCount').textContent = allQuotes.length;
+
+  renderTable();
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById('tab-demos').classList.toggle('active', tab === 'demos');
+  document.getElementById('tab-quotes').classList.toggle('active', tab === 'quotes');
+  document.getElementById('searchInput').value = '';
+  document.getElementById('statusFilter').value = '';
+
+  // Update status options
+  const statuses = tab === 'demos' ? DEMO_STATUSES : QUOTE_STATUSES;
+  const sel = document.getElementById('statusFilter');
+  sel.innerHTML = '<option value="">All Statuses</option>' +
+    statuses.map(s => `<option value="${s}">${capitalize(s)}</option>`).join('');
+
+  renderTable();
+}
+
+function applyFilters() {
+  renderTable();
+}
+
+function renderTable() {
+  const data = currentTab === 'demos' ? allDemos : allQuotes;
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  const status = document.getElementById('statusFilter').value;
+
+  let filtered = data.filter(row => {
+    const matchSearch = !search ||
+      (row.full_name || '').toLowerCase().includes(search) ||
+      (row.email || '').toLowerCase().includes(search) ||
+      (row.city || '').toLowerCase().includes(search) ||
+      (row.mobile || '').toLowerCase().includes(search);
+    const matchStatus = !status || row.status === status;
+    return matchSearch && matchStatus;
+  });
+
+  const wrap = document.getElementById('tableWrap');
+
+  if (filtered.length === 0) {
+    wrap.innerHTML = `<div class="empty-state">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      <h3>No submissions found</h3>
+      <p>${data.length === 0 ? 'No one has submitted a form yet.' : 'Try adjusting your filters.'}</p>
+    </div>`;
+    return;
+  }
+
+  const isDemos = currentTab === 'demos';
+
+  wrap.innerHTML = `<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>${isDemos ? 'Organisation' : 'Hospital'}</th>
+        <th>City</th>
+        <th>${isDemos ? 'Category' : 'Equipment'}</th>
+        <th>Status</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${filtered.map(row => `
+        <tr onclick="openModal('${row.id}')">
+          <td>
+            <div class="td-name">${esc(row.full_name)}</div>
+            <div class="td-email">${esc(row.email)} · ${esc(row.mobile)}</div>
+          </td>
+          <td class="td-org">${esc(isDemos ? row.organisation : row.hospital_name) || '—'}</td>
+          <td class="td-org">${esc(row.city) || '—'}</td>
+          <td class="td-org">${esc(isDemos ? row.equipment_category : row.equipment_needed) || '—'}</td>
+          <td><span class="badge badge-${row.status}">${capitalize(row.status)}</span></td>
+          <td class="td-date">${formatDate(row.created_at)}</td>
+        </tr>
+      `).join('')}
+    </tbody>
+  </table>`;
+}
+
+function openModal(id) {
+  const data = currentTab === 'demos' ? allDemos : allQuotes;
+  const row = data.find(r => r.id === id);
+  if (!row) return;
+  currentRecord = row;
+
+  const isDemos = currentTab === 'demos';
+  const statuses = isDemos ? DEMO_STATUSES : QUOTE_STATUSES;
+
+  document.getElementById('modalTitle').textContent = isDemos ? 'Demo Booking Details' : 'Quote Request Details';
+
+  let extraFields = isDemos ? `
+    <div class="detail-item"><div class="detail-label">Equipment Category</div><div class="detail-value">${esc(row.equipment_category) || '—'}</div></div>
+    <div class="detail-item"><div class="detail-label">Preferred Date</div><div class="detail-value">${row.preferred_date || '—'}</div></div>
+    <div class="detail-item full"><div class="detail-label">Message</div><div class="detail-value">${esc(row.message) || '—'}</div></div>
+  ` : `
+    <div class="detail-item"><div class="detail-label">Equipment Needed</div><div class="detail-value">${esc(row.equipment_needed) || '—'}</div></div>
+    <div class="detail-item"><div class="detail-label">Quantity</div><div class="detail-value">${esc(row.quantity) || '—'}</div></div>
+    <div class="detail-item"><div class="detail-label">Budget Range</div><div class="detail-value">${esc(row.budget_range) || '—'}</div></div>
+    <div class="detail-item"><div class="detail-label">Timeline</div><div class="detail-value">${esc(row.timeline) || '—'}</div></div>
+  `;
+
+  document.getElementById('modalBody').innerHTML = `
+    <div class="detail-grid">
+      <div class="detail-item">
+        <div class="detail-label">Full Name</div>
+        <div class="detail-value">${esc(row.full_name)}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Mobile</div>
+        <div class="detail-value">${esc(row.mobile)}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Email</div>
+        <div class="detail-value">${esc(row.email)}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">${isDemos ? 'Organisation' : 'Hospital Name'}</div>
+        <div class="detail-value">${esc(isDemos ? row.organisation : row.hospital_name) || '—'}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">City</div>
+        <div class="detail-value">${esc(row.city) || '—'}</div>
+      </div>
+      <div class="detail-item">
+        <div class="detail-label">Submitted</div>
+        <div class="detail-value">${formatDate(row.created_at)}</div>
+      </div>
+      ${extraFields}
+    </div>
+
+    <div class="status-update">
+      <label>Update Status</label>
+      <div class="status-options">
+        ${statuses.map(s => `
+          <button class="status-option ${row.status === s ? 'selected' : ''}"
+            onclick="selectStatus(this, '${s}')">${capitalize(s)}</button>
+        `).join('')}
+      </div>
+      <button class="save-btn" id="saveBtn" onclick="saveStatus()">Save Status</button>
+    </div>
+  `;
+
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+function selectStatus(btn, status) {
+  document.querySelectorAll('.status-option').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  currentRecord._newStatus = status;
+}
+
+async function saveStatus() {
+  if (!currentRecord || !currentRecord._newStatus) return;
+  const btn = document.getElementById('saveBtn');
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+
+  const table = currentTab === 'demos' ? 'demo_bookings' : 'quote_requests';
+  const { error } = await supabase
+    .from(table)
+    .update({ status: currentRecord._newStatus })
+    .eq('id', currentRecord.id);
+
+  if (error) {
+    showToast('Error saving status', true);
+  } else {
+    currentRecord.status = currentRecord._newStatus;
+    // Update local array
+    const arr = currentTab === 'demos' ? allDemos : allQuotes;
+    const idx = arr.findIndex(r => r.id === currentRecord.id);
+    if (idx !== -1) arr[idx].status = currentRecord._newStatus;
+    showToast('Status updated ✓');
+    closeModalDirect();
+    renderTable();
+    // Refresh stats
+    document.getElementById('statNewDemos').textContent = allDemos.filter(d => d.status === 'new').length;
+    document.getElementById('statNewQuotes').textContent = allQuotes.filter(q => q.status === 'new').length;
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Save Status';
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModalDirect();
+}
+
+function closeModalDirect() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  currentRecord = null;
+}
+
+function exportCSV() {
+  const data = currentTab === 'demos' ? allDemos : allQuotes;
+  if (!data.length) { showToast('No data to export', true); return; }
+
+  const keys = Object.keys(data[0]).filter(k => k !== 'id');
+  const csv = [
+    keys.join(','),
+    ...data.map(row => keys.map(k => `"${(row[k] || '').toString().replace(/"/g, '""')}"`).join(','))
+  ].join('\n');
+
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `${currentTab}_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  showToast('CSV downloaded ✓');
+}
+
+async function handleSignOut() {
+  await supabase.auth.signOut();
+  window.location.href = '/admin/login.html';
+}
+
+// UTILS
+function esc(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function capitalize(str) {
+  return str ? str.charAt(0).toUpperCase() + str.slice(1) : '';
+}
+
+function formatDate(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+}
+
+function showToast(msg, isError = false) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (isError ? ' error' : '');
+  setTimeout(() => t.className = 'toast', 3000);
+}
+
+init();
+</script>
+</body>
+</html>
 
