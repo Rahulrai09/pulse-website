@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our People | Pulse</title>
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: #0a1e40; background: #fff; line-height: 1.6; overflow-x: hidden; }
+
+  /* ── HERO ── */
+  .hero { position: relative; min-height: 480px; display: flex; align-items: center; background: #1c2b5e; overflow: hidden; text-align: center; justify-content: center; padding: 80px 20px; }
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; }
+  .hero-content { position: relative; z-index: 2; max-width: 800px; }
+  .hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .hero p { font-size: 18px; color: rgba(255,255,255,0.85); line-height: 1.7; max-width: 600px; margin: 0 auto; }
+
+  /* ── SECTIONS ── */
+  section { padding: 80px 8%; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #5b6bcc; margin-bottom: 16px; display: block; text-align: center; }
+  .section-heading { font-size: clamp(28px, 4vw, 42px); font-weight: 700; color: #1c2b5e; letter-spacing: -0.01em; text-align: center; margin-bottom: 64px; }
+  
+  /* ── LEADERSHIP ── */
+  .leader-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto; }
+  .leader-card { background: #f8f9fc; border: 1px solid #e5e7eb; border-radius: 12px; padding: 40px 24px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+  .leader-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(28,43,94,0.08); border-color: #5b6bcc; }
+  .leader-img { width: 120px; height: 120px; border-radius: 50%; background: #e5e7eb; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .leader-img i { font-size: 48px; color: #9ca3af; }
+  .leader-name { font-size: 20px; font-weight: 700; color: #1c2b5e; margin-bottom: 6px; }
+  .leader-role { font-size: 14px; color: #4b5563; font-weight: 500; margin-bottom: 16px; }
+  .leader-linkedin { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #fff; color: #5b6bcc; border: 1px solid #e5e7eb; text-decoration: none; transition: 0.2s; }
+  .leader-linkedin:hover { background: #5b6bcc; color: #fff; border-color: #5b6bcc; }
+
+  /* ── CULTURE ── */
+  .culture-section { background: #f8f9fc; }
+  .culture-body { text-align: center; max-width: 700px; margin: 0 auto 56px; font-size: 18px; color: #4b5563; line-height: 1.7; }
+  .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto; }
+  .value-card { background: #fff; padding: 32px; border-radius: 12px; border: 1px solid #e5e7eb; text-align: center; }
+  .value-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(91,107,204,0.1); color: #5b6bcc; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
+  .value-card h3 { font-size: 20px; font-weight: 700; color: #1c2b5e; margin-bottom: 12px; }
+  .value-card p { font-size: 15px; color: #4b5563; line-height: 1.6; }
+
+  /* ── CTA ── */
+  .cta { text-align: center; padding: 80px 20px; background: #fff; }
+  .cta h2 { font-size: 28px; font-weight: 700; color: #1c2b5e; margin-bottom: 32px; }
+  .cta-btn { display: inline-flex; background: #5b6bcc; color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.2s; }
+  .cta-btn:hover { background: #1c2b5e; transform: translateY(-2px); }
+  
+  @media (max-width: 768px) {
+    .hero { padding: 60px 20px; min-height: 380px; }
+    section { padding: 60px 20px; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="global-header"></div>
+<script src="js/header.js"></script>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="image/Our people.png" alt="Our People" class="hero-bg">
+  <div class="hero-content">
+    <h1>The People Behind Pulse</h1>
+    <p>Our leadership team and the culture that drives us.</p>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="leadership">
+  <span class="section-label">LEADERSHIP</span>
+  <h2 class="section-heading">Driven by Vision. Grounded in Purpose.</h2>
+  
+  <div class="leader-grid">
+    <div class="leader-card">
+      <div class="leader-img"><i class="ti ti-user"></i></div>
+      <div class="leader-name">Name Placeholder</div>
+      <div class="leader-role">Founder &amp; CEO</div>
+      <a href="#" class="leader-linkedin"><i class="ti ti-brand-linkedin"></i></a>
+    </div>
+    <div class="leader-card">
+      <div class="leader-img"><i class="ti ti-user"></i></div>
+      <div class="leader-name">Name Placeholder</div>
+      <div class="leader-role">Chief Technology Officer</div>
+      <a href="#" class="leader-linkedin"><i class="ti ti-brand-linkedin"></i></a>
+    </div>
+    <div class="leader-card">
+      <div class="leader-img"><i class="ti ti-user"></i></div>
+      <div class="leader-name">Name Placeholder</div>
+      <div class="leader-role">Chief Operations Officer</div>
+      <a href="#" class="leader-linkedin"><i class="ti ti-brand-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="culture-section">
+  <span class="section-label">CULTURE</span>
+  <h2 class="section-heading">Life at Pulse</h2>
+  <p class="culture-body">We build medical technology that saves lives — and we believe the people who build it deserve an environment that inspires them. At Pulse, we foster a culture of ownership, speed, and care.</p>
+  
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon"><i class="ti ti-rocket"></i></div>
+      <h3>Move Fast</h3>
+      <p>We ship, iterate, and improve — every week.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon"><i class="ti ti-briefcase"></i></div>
+      <h3>Own It</h3>
+      <p>Every team member drives outcomes, not just tasks.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon"><i class="ti ti-heart"></i></div>
+      <h3>Care Deeply</h3>
+      <p>For patients, for hospitals, for each other.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Want to be part of building India's medical future?</h2>
+  <a href="careers.html" class="cta-btn">View Open Roles</a>
+</section>
+
+<div id="global-footer"></div>
+<script src="js/footer.js"></script>
+</body>
+</html>

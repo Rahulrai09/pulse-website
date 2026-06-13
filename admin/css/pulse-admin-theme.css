@@ -1,0 +1,449 @@
+/* ══ PULSE ADMIN THEME — Exact class override ══ */
+:root {
+  --adm-bg:      #060f24;
+  --adm-rail:    #0a1530;
+  --adm-nav:     #0d1a35;
+  --adm-card:    #0f1e3d;
+  --adm-card2:   #132248;
+  --adm-border:  rgba(255,255,255,0.07);
+  --adm-orange:  #E87722;
+  --adm-blue:    #5b6bcc;
+  --adm-text:    #e8edf8;
+  --adm-mid:     rgba(255,255,255,0.55);
+  --adm-dim:     rgba(255,255,255,0.28);
+  --adm-green:   #10b981;
+  --adm-red:     #E63946;
+}
+
+/* ── Base ── */
+html, body {
+  background: var(--adm-bg) !important;
+  color: var(--adm-text) !important;
+}
+
+/* ── Icon Rail (left sidebar) ── */
+.icon-rail {
+  background: var(--adm-rail) !important;
+  border-right: 1px solid var(--adm-border) !important;
+}
+
+.rail-icon {
+  color: var(--adm-mid) !important;
+  background: transparent !important;
+  border-radius: 10px !important;
+  transition: all 0.2s !important;
+}
+
+.rail-icon:hover {
+  background: rgba(232,119,34,0.15) !important;
+  color: #fff !important;
+}
+
+.rail-icon.active {
+  background: var(--adm-orange) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(232,119,34,0.35) !important;
+}
+
+.rail-bottom { border-top: 1px solid var(--adm-border) !important; }
+.rail-sep { background: var(--adm-border) !important; }
+
+/* ── Top Nav ── */
+.top-nav {
+  background: var(--adm-nav) !important;
+  border-bottom: 1px solid var(--adm-border) !important;
+}
+
+.nav-tab {
+  color: var(--adm-mid) !important;
+  border-bottom: 2px solid transparent !important;
+  transition: all 0.2s !important;
+}
+
+.nav-tab:hover { color: var(--adm-text) !important; }
+
+.nav-tab.active {
+  color: var(--adm-orange) !important;
+  border-bottom-color: var(--adm-orange) !important;
+}
+
+.nav-search {
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid var(--adm-border) !important;
+  border-radius: 8px !important;
+}
+
+.nav-search input {
+  background: transparent !important;
+  color: var(--adm-text) !important;
+  border: none !important;
+}
+
+.nav-search input::placeholder { color: var(--adm-dim) !important; }
+.nav-search i { color: var(--adm-dim) !important; }
+
+.nav-icon-btn {
+  color: var(--adm-mid) !important;
+  background: transparent !important;
+  border: none !important;
+}
+.nav-icon-btn:hover { color: var(--adm-text) !important; }
+
+.user-pill {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid var(--adm-border) !important;
+  border-radius: 20px !important;
+}
+.user-name { color: var(--adm-text) !important; }
+.user-avatar {
+  background: var(--adm-orange) !important;
+  color: #fff !important;
+}
+
+/* ── Top Header ── */
+.top-header {
+  background: var(--adm-nav) !important;
+  border-bottom: 1px solid var(--adm-border) !important;
+  color: var(--adm-text) !important;
+}
+
+.header-greeting { color: var(--adm-text) !important; }
+.header-btn {
+  color: var(--adm-mid) !important;
+  background: transparent !important;
+  border: none !important;
+}
+.header-btn:hover { color: var(--adm-text) !important; }
+
+/* ── Page body / content area ── */
+.main-content, .page-body, .content-area,
+[class*="main-"], [class*="content-wrap"],
+[class*="page-content"] {
+  background: var(--adm-bg) !important;
+}
+
+/* ── Cards & Panels ── */
+.card, .panel, .widget, .stat-card,
+.panel-header, [class*="-card"],
+[class*="-panel"], [class*="-widget"],
+[class*="stat-box"] {
+  background: var(--adm-card) !important;
+  border: 1px solid var(--adm-border) !important;
+  border-radius: 12px !important;
+  color: var(--adm-text) !important;
+}
+
+.panel-header {
+  border-bottom: 1px solid var(--adm-border) !important;
+  background: var(--adm-card2) !important;
+  border-radius: 12px 12px 0 0 !important;
+  color: var(--adm-text) !important;
+}
+
+/* Stat numbers */
+.stat-value, .stat-num, .metric-value,
+[class*="stat-val"], [class*="count-big"],
+[class*="number-lg"] {
+  color: #fff !important;
+  font-weight: 800 !important;
+}
+
+/* ── Table ── */
+table, .data-table, [class*="submissions-table"] {
+  background: var(--adm-card) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--adm-border) !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+}
+
+thead, thead tr {
+  background: var(--adm-card2) !important;
+}
+
+th {
+  background: var(--adm-card2) !important;
+  color: var(--adm-dim) !important;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  padding: 14px 18px !important;
+  border-bottom: 1px solid var(--adm-border) !important;
+}
+
+td {
+  padding: 14px 18px !important;
+  border-bottom: 1px solid var(--adm-border) !important;
+  font-size: 0.88rem !important;
+  color: var(--adm-text) !important;
+  vertical-align: middle !important;
+  background: var(--adm-card) !important;
+}
+
+tbody tr:last-child td { border-bottom: none !important; }
+tbody tr:hover td { background: rgba(255,255,255,0.03) !important; }
+
+/* ── Status badges ── */
+.badge, [class*="badge"],
+.status-new, [class*="status-"] {
+  border-radius: 20px !important;
+  padding: 4px 12px !important;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  display: inline-block !important;
+}
+
+.status-new, [class*="status-new"]     { background: rgba(91,107,204,0.2) !important; color: #a0aaff !important; }
+.status-read, [class*="status-read"]   { background: rgba(255,255,255,0.08) !important; color: var(--adm-mid) !important; }
+.status-replied, [class*="status-replied"] { background: rgba(16,185,129,0.15) !important; color: #34d399 !important; }
+.status-archived, [class*="status-archived"] { background: rgba(255,255,255,0.05) !important; color: var(--adm-dim) !important; }
+
+/* ── Inputs ── */
+input:not([type="range"]), select, textarea {
+  background: var(--adm-card2) !important;
+  border: 1px solid var(--adm-border) !important;
+  color: var(--adm-text) !important;
+  border-radius: 8px !important;
+  font-family: inherit !important;
+  transition: border-color 0.2s !important;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none !important;
+  border-color: var(--adm-orange) !important;
+  box-shadow: 0 0 0 3px rgba(232,119,34,0.12) !important;
+}
+input::placeholder, textarea::placeholder { color: var(--adm-dim) !important; }
+
+/* ── Filter tabs/buttons ── */
+.filter-btn, .tab-btn, [class*="filter-tab"],
+[class*="status-filter"] {
+  background: transparent !important;
+  border: 1px solid var(--adm-border) !important;
+  color: var(--adm-mid) !important;
+  padding: 6px 16px !important;
+  border-radius: 20px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+.filter-btn.active, .tab-btn.active,
+[class*="filter-tab"].active {
+  background: var(--adm-orange) !important;
+  border-color: var(--adm-orange) !important;
+  color: #fff !important;
+}
+.filter-btn:hover { border-color: var(--adm-orange) !important; color: var(--adm-text) !important; }
+
+/* ── Buttons ── */
+.btn-primary, [class*="btn-primary"],
+button.primary, [class*="save-btn"],
+[class*="submit-btn"] {
+  background: var(--adm-orange) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+}
+.btn-primary:hover { background: #d06a1a !important; }
+
+.btn-secondary, [class*="btn-secondary"],
+button.secondary {
+  background: transparent !important;
+  border: 1px solid var(--adm-border) !important;
+  color: var(--adm-mid) !important;
+  border-radius: 8px !important;
+}
+
+/* Action buttons in table */
+.action-btn, [class*="view-btn"],
+[class*="action-btn"] {
+  background: var(--adm-card2) !important;
+  border: 1px solid var(--adm-border) !important;
+  color: var(--adm-mid) !important;
+  border-radius: 6px !important;
+  padding: 5px 12px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+.action-btn:hover, [class*="view-btn"]:hover {
+  border-color: var(--adm-orange) !important;
+  color: var(--adm-orange) !important;
+}
+
+/* ── Modal / Drawer / Detail panel ── */
+.modal, .drawer, .detail-panel,
+[class*="modal"], [class*="drawer"],
+[class*="detail-"], [class*="-modal"],
+[class*="submission-detail"] {
+  background: var(--adm-card) !important;
+  border: 1px solid var(--adm-border) !important;
+  color: var(--adm-text) !important;
+  border-radius: 12px !important;
+}
+
+/* ── Headings & labels ── */
+h1, h2, h3, h4, h5 { color: var(--adm-text) !important; }
+p, span, label, small { color: var(--adm-mid) !important; }
+strong, b { color: var(--adm-text) !important; }
+
+/* Section/page title */
+.page-title, .section-title,
+[class*="page-title"], [class*="section-title"] {
+  color: #fff !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+}
+
+/* ── Chart colors ── */
+.recharts-cartesian-grid line { stroke: var(--adm-border) !important; }
+.recharts-text, .recharts-legend-item-text { fill: var(--adm-mid) !important; }
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: var(--adm-card2) !important;
+  border: 1px solid var(--adm-border) !important;
+  border-radius: 8px !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--adm-bg); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--adm-orange); }
+
+/* ── Bell badge ── */
+.bell-badge {
+  background: var(--adm-orange) !important;
+  border-color: var(--adm-rail) !important;
+}
+
+/* ── Login page ── */
+.login-card, .login-box,
+[class*="login-"] {
+  background: var(--adm-card) !important;
+  border: 1px solid var(--adm-border) !important;
+  border-radius: 16px !important;
+}
+
+/* Quick action links */
+.quick-action, [class*="quick-action"] {
+  background: var(--adm-card2) !important;
+  border: 1px solid var(--adm-border) !important;
+  color: var(--adm-text) !important;
+  border-radius: 10px !important;
+  transition: all 0.2s !important;
+}
+.quick-action:hover { border-color: var(--adm-orange) !important; color: var(--adm-orange) !important; }
+
+/* Progress bars */
+[class*="progress-bar"], [class*="progress-fill"] {
+  background: var(--adm-orange) !important;
+}
+[class*="progress-track"], [class*="progress-bg"] {
+  background: rgba(255,255,255,0.08) !important;
+}
+
+/* Dividers */
+hr, .divider, [class*="divider"] {
+  border-color: var(--adm-border) !important;
+}
+
+/* ── Fix type badge white boxes ── */
+td span, td .badge, td [class*="badge"],
+td [class*="type-"], td [class*="tag"] {
+  background: rgba(91,107,204,0.2) !important;
+  color: #a0aaff !important;
+  border: 1px solid rgba(91,107,204,0.3) !important;
+  border-radius: 4px !important;
+  padding: 3px 8px !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
+/* ── Fix chart colors ── */
+.recharts-bar-rectangle path { fill: #E87722 !important; }
+.recharts-line path, .recharts-line line { stroke: #E87722 !important; }
+.recharts-area path { fill: rgba(232,119,34,0.2) !important; stroke: #E87722 !important; }
+.recharts-pie-sector path:nth-child(1) { fill: #E87722 !important; }
+.recharts-pie-sector path:nth-child(2) { fill: #5b6bcc !important; }
+.recharts-pie-sector path:nth-child(3) { fill: #10b981 !important; }
+.recharts-pie-sector path:nth-child(4) { fill: #f59e0b !important; }
+
+/* ══ Expand icon-rail to full sidebar with text labels ══ */
+.icon-rail {
+  width: 220px !important;
+  padding: 8px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.rail-icon {
+  width: calc(100% - 16px) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  padding: 10px 16px !important;
+  margin: 2px 8px !important;
+  border-radius: 8px !important;
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  height: auto !important;
+  white-space: nowrap !important;
+}
+
+/* Show title text next to icon using CSS attr() */
+.rail-icon::after {
+  content: attr(title) !important;
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+  color: inherit !important;
+  display: inline !important;
+}
+
+/* Icon sizing */
+.rail-icon i {
+  font-size: 1rem !important;
+  flex-shrink: 0 !important;
+  width: 18px !important;
+  text-align: center !important;
+}
+
+/* Rail separator stays as divider line */
+.rail-sep {
+  width: calc(100% - 32px) !important;
+  margin: 8px 16px !important;
+  height: 1px !important;
+  display: block !important;
+}
+
+/* Rail bottom section */
+.rail-bottom {
+  padding: 8px 0 !important;
+  width: 100% !important;
+}
+
+/* Push main content right to match new sidebar width */
+.main-content, .page-body,
+[class*="main-"], [class*="content-wrap"],
+[class*="page-content"], [class*="shell-content"] {
+  margin-left: 220px !important;
+}
+
+/* Top nav logo area — wider to match */
+.logo-link img, .logo-link svg {
+  max-width: 80px !important;
+}

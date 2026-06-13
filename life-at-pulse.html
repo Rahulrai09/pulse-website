@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life at Pulse | Pulse</title>
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; color: #0a1e40; background: #fff; line-height: 1.6; overflow-x: hidden; }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #2d4a8a;
+  }
+  .hero-content {
+    padding: 80px 8%;
+    max-width: 800px;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  .hero p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  /* ── SHARED SECTION STYLES ── */
+  section { padding: 80px 8%; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #E87722; margin-bottom: 20px; display: block; text-align: center; }
+  .section-heading { font-size: clamp(28px, 4vw, 42px); font-weight: 700; color: #1c2b5e; letter-spacing: -0.01em; text-align: center; margin-bottom: 64px; }
+  
+  /* ── LEADERSHIP ── */
+  .leadership { background: #fff; }
+  .leader-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto; }
+  .leader-card { background: #fff; border: 1px solid #e4e7f2; border-radius: 12px; padding: 28px; text-align: center; transition: box-shadow 0.3s; }
+  .leader-card:hover { box-shadow: 0 12px 32px rgba(28,43,94,0.08); }
+  .leader-img { width: 80px; height: 80px; border-radius: 50%; background: #e8eaf2; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .leader-img i { font-size: 32px; color: #9ca3af; }
+  .leader-name { font-size: 20px; font-weight: 700; color: #1c2b5e; margin-bottom: 6px; }
+  .leader-role { font-size: 14px; color: #4b5563; font-weight: 500; margin-bottom: 16px; }
+  .leader-linkedin { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #fff; color: #5b6bcc; border: 1px solid #e4e7f2; text-decoration: none; transition: 0.2s; }
+  .leader-linkedin:hover { background: #5b6bcc; color: #fff; border-color: #5b6bcc; }
+
+  /* ── CULTURE ── */
+  .culture-section { background: #f8f9fc; }
+  .culture-body { text-align: center; max-width: 700px; margin: 0 auto 56px; font-size: 18px; color: #4b5563; line-height: 1.7; }
+  .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto; }
+  .value-card { background: #fff; padding: 40px 32px; border-radius: 16px; border: 1px solid #e4e7f2; text-align: left; }
+  .value-card h3 { font-size: 22px; font-weight: 700; color: #1c2b5e; margin-bottom: 16px; }
+  .value-card p { font-size: 16px; color: #4b5563; line-height: 1.6; }
+
+  /* ── CTA ── */
+  .cta { text-align: center; padding: 100px 20px; background: #1B2F6E; }
+  .cta h2 { font-size: clamp(28px, 4vw, 42px); font-weight: 700; color: #fff; margin-bottom: 40px; letter-spacing: -0.01em; }
+  .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .cta-btn-primary { display: inline-flex; background: #fff; color: #1c2b5e; padding: 16px 36px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.2s; border: 1px solid transparent; }
+  .cta-btn-primary:hover { background: #f8f9fc; transform: translateY(-2px); }
+  .cta-btn-secondary { display: inline-flex; background: transparent; color: #fff; padding: 16px 36px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.2s; border: 1px solid rgba(255,255,255,0.3); }
+  .cta-btn-secondary:hover { background: rgba(255,255,255,0.05); transform: translateY(-2px); border-color: rgba(255,255,255,0.5); }
+  
+  @media (max-width: 768px) {
+    .hero { padding: 60px 20px; min-height: 420px; }
+    .hero-content { padding: 0; }
+    section { padding: 60px 20px; }
+  }
+
+  @media (max-width: 640px) {
+    /* LEADERSHIP */
+    .leader-grid { grid-template-columns: 1fr !important; }
+    .leader-card { width: 100% !important; box-sizing: border-box; }
+    .leader-img img { object-fit: cover !important; object-position: center top !important; }
+    
+    /* CULTURE */
+    .values-grid { grid-template-columns: 1fr !important; }
+    .value-card { width: 100% !important; box-sizing: border-box; }
+    
+    /* PHOTO STRIP */
+    .pulse-photo-strip { padding: 20px 0 !important; }
+    .pulse-strip-track {
+      display: inline-flex !important;
+      animation: marquee-strip 30s linear infinite !important;
+    }
+    .pulse-strip-track img {
+      width: 100vw !important;
+      height: auto !important;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    
+    /* CTA */
+    .cta { padding: 60px 20px !important; }
+    .cta-btns { flex-direction: column !important; width: 100% !important; }
+    .cta-btn-primary, .cta-btn-secondary { width: 100% !important; box-sizing: border-box !important; }
+    .roles-dropdown { width: 100% !important; }
+    .roles-dropdown-panel { width: 100% !important; min-width: unset !important; left: 0 !important; transform: none !important; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="global-header"></div>
+<script src="js/header.js"></script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Life at Pulse</h1>
+    <p>A culture built on purpose, precision, and people who care deeply about healthcare.</p>
+    <p style="margin-top:16px;">Join a team that engineers solutions to real clinical challenges — made in India, built for the world.</p>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="leadership">
+  <span class="section-label">LEADERSHIP</span>
+  <h2 class="section-heading">Driven by Vision. Grounded in Purpose.</h2>
+  
+  <div class="leader-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:32px; max-width:900px; margin:0 auto;">
+    <div class="leader-card" style="width:100%;">
+      <div class="leader-img" style="width:280px; height:280px; border-radius:8px; margin:0 auto 20px; overflow:hidden; background:#e8eaf2;"><img src="image/Anshul Sharma.jpeg" alt="Anshul Sharma" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="leader-name">Anshul Sharma</div>
+      <div class="leader-role">Co-Founder</div>
+      <a href="https://www.linkedin.com/in/anshulsharma2711/" class="leader-linkedin" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
+    </div>
+    <div class="leader-card" style="width:100%;">
+      <div class="leader-img" style="width:280px; height:280px; border-radius:8px; margin:0 auto 20px; overflow:hidden; background:#e8eaf2;"><img src="image/Nishant Goel.jpeg" alt="Nishant Goel" style="width:100%;height:100%;object-fit:cover; object-position: center 20%;"></div>
+      <div class="leader-name">Nishant Goel</div>
+      <div class="leader-role">Co-Founder</div>
+      <a href="https://www.linkedin.com/in/nishant-goel-41a03868/" class="leader-linkedin" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURE -->
+<section class="culture-section">
+  <span class="section-label">CULTURE</span>
+  <h2 class="section-heading">What It Means to Work at Pulse</h2>
+  <p class="culture-body">We build medical technology that saves lives — and we believe the people who build it deserve an environment that inspires them. At Pulse, we foster a culture of ownership, speed, and care.</p>
+  
+  <div class="values-grid">
+    <div class="value-card">
+      <h3>Move Fast</h3>
+      <p>We ship, iterate, and improve — every week.</p>
+    </div>
+    <div class="value-card">
+      <h3>Own It</h3>
+      <p>Every team member drives outcomes, not tasks.</p>
+    </div>
+    <div class="value-card">
+      <h3>Care Deeply</h3>
+      <p>For patients, for hospitals, for each other.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP CAROUSEL -->
+<style>
+  .pulse-photo-strip {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #fff;
+    padding: 40px 0;
+    line-height: 0;
+  }
+  .pulse-strip-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-strip 60s linear infinite;
+  }
+  .pulse-strip-track img {
+    height: 320px;
+    width: auto;
+    border-radius: 0;
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: middle;
+  }
+  @keyframes marquee-strip {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+</style>
+<div class="pulse-photo-strip">
+  <div class="pulse-strip-track">
+    <img src="image/1.JPG" alt="Pulse team photo 1">
+    <img src="image/2.JPG" alt="Pulse team photo 2">
+    <img src="image/3.JPG" alt="Pulse team photo 3">
+    <img src="image/4.JPG" alt="Pulse team photo 4">
+    <img src="image/1.JPG" alt="Pulse team photo 1">
+    <img src="image/2.JPG" alt="Pulse team photo 2">
+    <img src="image/3.JPG" alt="Pulse team photo 3">
+    <img src="image/4.JPG" alt="Pulse team photo 4">
+  </div>
+</div>
+
+
+<section class="cta">
+  <h2>Want to build India's medical future with us?</h2>
+  <style>
+    .roles-dropdown { position: relative; display: inline-block; }
+    .roles-dropdown-panel {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border: 1px solid #e4e7f2;
+      border-radius: 10px;
+      padding: 16px 20px;
+      min-width: 260px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      z-index: 100;
+      text-align: left;
+    }
+    .roles-dropdown:hover .roles-dropdown-panel,
+    .roles-dropdown:focus-within .roles-dropdown-panel { display: block; }
+    .roles-dropdown-panel .role-section-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: #9ca3af; margin: 12px 0 6px;
+      display: block;
+    }
+    .roles-dropdown-panel .role-section-label:first-child { margin-top: 0; }
+    .roles-dropdown-panel a.role-link {
+      display: block; padding: 6px 0; color: #1c2b5e;
+      text-decoration: none; font-size: 0.9rem; transition: color 0.15s;
+    }
+    .roles-dropdown-panel a.role-link:hover { color: #e87722; }
+  </style>
+  <div class="cta-btns">
+    <div class="roles-dropdown">
+      <span class="cta-btn-primary" style="cursor:pointer; user-select:none;">View Open Roles ▾</span>
+      <div class="roles-dropdown-panel">
+        <span class="role-section-label">General</span>
+        <a class="role-link" href="#" onclick="openCareerModal('HR'); return false;">HR</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Finance'); return false;">Finance</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Marketing'); return false;">Marketing</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Sales'); return false;">Sales</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Customer Support'); return false;">Customer Support</a>
+        <span class="role-section-label">Specialist Sales</span>
+        <a class="role-link" href="#" onclick="openCareerModal('Cardiac Sales Specialist'); return false;">Cardiac Sales Specialist</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Renal Sales Specialist'); return false;">Renal Sales Specialist</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Aesthetics Sales Specialist'); return false;">Aesthetics Sales Specialist</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Critical Care Sales Specialist'); return false;">Critical Care Sales Specialist</a>
+        <a class="role-link" href="#" onclick="openCareerModal('Hospital Setup Sales Specialist'); return false;">Hospital Setup Sales Specialist</a>
+      </div>
+    </div>
+    <a href="#" onclick="openCareerModal(''); return false;" class="cta-btn-secondary">Contact Us</a>
+  </div>
+</section>
+
+<div id="global-footer"></div>
+<script src="js/footer.js"></script>
+</body>
+</html>

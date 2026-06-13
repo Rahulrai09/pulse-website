@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Updates | Pulse Medical</title>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #0a1e40;
+  background: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.internal-hero {
+  width: 100%;
+  height: 45vh;
+  min-height: 400px;
+  position: relative;
+  background: #1B2F6E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.internal-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.internal-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 24px;
+  max-width: 900px;
+}
+.internal-hero h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.internal-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.news-section { padding: 80px 0; background: #f8f9fc; }
+.news-container { max-width: 1300px; margin: 0 auto; padding: 0 4%; }
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #1B2F6E;
+}
+.news-title {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: #0a1e40;
+  letter-spacing: -0.025em;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 60px;
+}
+.news-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  display: flex;
+  flex-direction: column;
+}
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+}
+.news-card-img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: #eef0f5;
+  position: relative;
+}
+.news-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease;
+}
+.news-card:hover .news-card-img img { transform: scale(1.04); }
+.news-card-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #E63946;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.news-card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.news-card-meta {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.news-card-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a1e40;
+  line-height: 1.4;
+  flex: 1;
+}
+.news-card-body p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+.news-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding-top: 40px;
+  border-top: 1px solid #e5e7eb;
+}
+.pagination-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #1B2F6E;
+  color: #1B2F6E;
+  background: #fff;
+  transition: all 200ms ease;
+}
+.pagination-btn:hover {
+  background: #1B2F6E;
+  color: #fff;
+}
+.pagination-btn.active {
+  background: #1B2F6E;
+  color: #fff;
+}
+.pagination-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #e5e7eb;
+  color: #6b7280;
+  background: #fff;
+  transition: all 200ms ease;
+}
+.pagination-num:hover, .pagination-num.active {
+  border-color: #1B2F6E;
+  color: #1B2F6E;
+}
+@media (max-width: 1024px) { .news-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .news-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div id="global-header"></div>
+
+  <section class="internal-hero">
+    <img src="image/Banner/image of service banner.webp" alt="Pulse News">
+    <div class="internal-hero-content">
+      <h1>News & Updates</h1>
+      <p>The latest breakthroughs, strategic partnerships, and corporate announcements from the pulse of Indian MedTech.</p>
+    </div>
+  </section>
+
+<section class="news-section">
+  <div class="news-container">
+    <div class="news-header">
+      <h2 class="news-title">Latest Headlines</h2>
+    </div>
+    <div class="news-grid">
+
+      <a href="blog-pulse-4million.html" class="news-card">
+        <div class="news-card-img">
+          <img src="image/feature-et-news.webp" alt="">
+          <span class="news-card-tag">News Release</span>
+        </div>
+        <div class="news-card-body">
+          <span class="news-card-meta">Corporate · 5 Min Read</span>
+          <h3>Pulse raises $4M seed round led by 3one4 Capital to build a full-stack medical equipment brand</h3>
+        </div>
+      </a>
+
+      <a href="blog-zuvio-amtz.html" class="news-card">
+        <div class="news-card-img">
+          <img src="image/feature-et-article.webp" alt="">
+          <span class="news-card-tag">Manufacturing</span>
+        </div>
+        <div class="news-card-body">
+          <span class="news-card-meta">Operational · 3 Min Read</span>
+          <h3>Pulse opens critical care manufacturing unit at AMTZ Visakhapatnam</h3>
+        </div>
+      </a>
+
+      <a href="blog-placeholder.html" class="news-card">
+        <div class="news-card-img">
+          <img src="image/Portfolio/cardiac-care.webp" alt="">
+          <span class="news-card-tag">Strategic</span>
+        </div>
+        <div class="news-card-body">
+          <span class="news-card-meta">Partnership · 2 Min Read</span>
+          <h3>Strategic Tie-Up With Apollo Hospitals for Critical Care</h3>
+        </div>
+      </a>
+
+      <a href="blog-placeholder.html" class="news-card">
+        <div class="news-card-img">
+          <img src="image/Design to delivery/manufacturing.webp" alt="">
+          <span class="news-card-tag">Expansion</span>
+        </div>
+        <div class="news-card-body">
+          <span class="news-card-meta">Operations · 2 Min Read</span>
+          <h3>AMTZ Production Line Goes Live with Enhanced Capacity</h3>
+        </div>
+      </a>
+
+      <a href="blog-placeholder.html" class="news-card">
+        <div class="news-card-img">
+          <img src="image/Portfolio/renal-care.webp" alt="">
+          <span class="news-card-tag">Product</span>
+        </div>
+        <div class="news-card-body">
+          <span class="news-card-meta">Product Update · 6 Min Read</span>
+          <h3>Haemodialysis System Expands with Enhanced Renal Care Range</h3>
+        </div>
+      </a>
+
+      <a href="blog-placeholder.html" class="news-card">
+        <div class="news-card-img">
+          <img src="image/Design to delivery/delivery-installation.webp" alt="">
+          <span class="news-card-tag">Service</span>
+        </div>
+        <div class="news-card-body">
+          <span class="news-card-meta">Service · 3 Min Read</span>
+          <h3>72-Hour Service Promise — How Our Pan-India Network Delivers</h3>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="news-pagination">
+      <a href="#" class="pagination-btn">← Previous</a>
+      <a href="#" class="pagination-num active">1</a>
+      <a href="#" class="pagination-num">2</a>
+      <a href="#" class="pagination-num">3</a>
+      <a href="#" class="pagination-btn">Next →</a>
+    </div>
+
+  </div>
+</section>
+
+  <footer class="premium-footer">
+    <!-- Pre-Footer Strip -->
+    <div class="pf-strip">
+      <div class="pf-strip-content">
+        <h3>Ready to equip your facility with Made-in-India medical technology?</h3>
+        <div class="pf-strip-actions">
+          <button class="pf-btn secondary" onclick="document.getElementById('demo-modal-overlay') ? document.getElementById('demo-modal-overlay').classList.add('open') : (window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank'))">Request a Demo</button>
+          <button class="pf-btn primary" onclick="document.getElementById('quote-modal-overlay') ? document.getElementById('quote-modal-overlay').classList.add('open') : (document.getElementById('fc-popup') ? document.getElementById('fc-popup').classList.add('open') : window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank'))">Get a Quote</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="pf-main">
+      <div class="pf-grid">
+        <!-- Col 1 -->
+        <div class="pf-col pf-brand-col">
+          <a href="index.html" class="nav-logo">
+            <img src="image/pulse-logo-PNG-W.png" alt="Pulse" style="height:44px; width:auto; object-fit:contain; filter:brightness(10);">
+          </a>
+          <div class="pf-socials">
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="https://instagram.com/pulse.medical" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5!2d77.6408!3d12.9116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zHSR+Layout+Sector+2+Bangalore!5e0!3m2!1sen!2sin!4v1" width="100%" height="160" style="border:0;border-radius:8px;margin-top:16px;display:block;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="pf-col">
+          <h5>COMPANY</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="articles.html">Articles & Insights</a></li>
+            <li><a href="innovation.html">Innovation & R&D</a></li>
+            <li><a href="life-at-pulse.html">Life at Pulse</a></li>
+
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="pf-col">
+          <h5>SOLUTIONS</h5>
+          <ul>
+            <li><a href="critical-care.html">Critical Care</a></li>
+            <li><a href="renal-care.html">Renal Care</a></li>
+            <li><a href="cardiac-care.html">Cardiac Care</a></li>
+            <li><a href="aesthetics.html">Aesthetics</a></li>
+            <li><a href="rehabilitation.html">Rehabilitation</a></li>
+            <li><a href="hospital-setup.html">Hospital Setup</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="pf-col">
+          <h5>SUPPORT</h5>
+          <ul>
+            <li><a href="https://mail.google.com/mail/?view=cm&to=Info@pulseio.in" target="_blank" rel="noopener noreferrer">Request Demo</a></li>
+            <li><a href="#" onclick="document.getElementById('fc-popup') ? document.getElementById('fc-popup').classList.add('open') : (document.getElementById('quote-modal-overlay') ? document.getElementById('quote-modal-overlay').classList.add('open') : null); return false;">Get a Quote</a></li>
+            <li><a href="#">Service Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5 -->
+        <div class="pf-col pf-contact-col">
+          <h5>CONTACT</h5>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 27th Main Road, Sector 2, HSR Layout, Bangalore, Karnataka 560102</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">+91 90711 01108</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="https://mail.google.com/mail/?view=cm&to=Info@pulseio.in" target="_blank" rel="noopener noreferrer">Info@pulseio.in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pf-bottom">
+      <div class="pf-bottom-inner">
+        <div class="pf-bottom-left">
+          <p>© 2025 Pulse Medical. All rights reserved.</p>
+        </div>
+
+        <div class="pf-bottom-right">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
+

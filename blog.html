@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights | Pulse — Integrated Medical Equipment</title>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/public-blog.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="global-header"></div>
+<script src="js/header.js"></script>
+
+<header class="blog-hero">
+  <span class="eyebrow">INSIGHTS</span>
+  <h1>Stories shaping the future of medical equipment</h1>
+  <p>Read about our latest innovations, customer successes, and industry insights.</p>
+</header>
+
+<div class="blog-filters-bar">
+  <div class="blog-filters-container">
+    <div class="category-filters" id="categoryFilters">
+      <button class="filter-pill active" data-category="all">All</button>
+    </div>
+    <div class="blog-search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="blogSearchInput" placeholder="Search by title...">
+    </div>
+  </div>
+</div>
+
+<main class="blog-listing">
+  <div class="blog-grid" id="blogGrid"></div>
+  <div class="blog-empty-state" id="blogEmptyState">
+    <h3>No insights yet</h3>
+    <p>Check back soon for new stories.</p>
+  </div>
+  <div class="load-more-container" id="loadMoreContainer">
+    <button class="btn-load-more" id="btnLoadMore">Load more</button>
+  </div>
+</main>
+
+<div id="global-footer"></div>
+<script src="js/footer.js"></script>
+
+<!-- Modals -->
+<div class="pulse-modal-overlay" id="demo-modal-overlay">
+  <div class="pulse-modal">
+    <div class="pm-header"><h4>Book a Free Demo</h4><button class="pm-close">✕</button></div>
+    <div class="pm-body">
+      <form id="demo-form">
+        <div class="pm-form-group"><label>Full Name *</label><input type="text" class="pm-input" required></div>
+        <div class="pm-form-group"><label>Mobile Number *</label><input type="tel" class="pm-input" required></div>
+        <div class="pm-form-group"><label>Email Address *</label><input type="email" class="pm-input" required></div>
+        <button type="submit" class="pm-submit">Book My Demo &rarr;</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="pulse-modal-overlay" id="quote-modal-overlay">
+  <div class="pulse-modal">
+    <div class="pm-header"><h4>Get a Custom Quote</h4><button class="pm-close">✕</button></div>
+    <div class="pm-body">
+      <form id="quote-form">
+        <div class="pm-form-group"><label>Full Name *</label><input type="text" class="pm-input" required></div>
+        <div class="pm-form-group"><label>Mobile Number *</label><input type="tel" class="pm-input" required></div>
+        <button type="submit" class="pm-submit">Request My Quote &rarr;</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/pulse-forms.js"></script>
+<script src="js/public-content.js"></script>
+<script>
+  // Navbar Logic
+  const contactBtn = document.getElementById('nav-contact-btn');
+  const contactDropdown = document.getElementById('nav-contact-dropdown');
+  const demoModal = document.getElementById('demo-modal-overlay');
+  const quoteModal = document.getElementById('quote-modal-overlay');
+
+  contactBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    contactDropdown.classList.toggle('open');
+    e.stopPropagation();
+  });
+
+  document.addEventListener('click', () => contactDropdown.classList.remove('open'));
+  contactDropdown.addEventListener('click', (e) => e.stopPropagation());
+
+  document.getElementById('btn-request-demo').addEventListener('click', (e) => {
+    e.preventDefault(); contactDropdown.classList.remove('open'); demoModal.classList.add('open');
+  });
+  document.getElementById('btn-get-quote').addEventListener('click', (e) => {
+    e.preventDefault(); contactDropdown.classList.remove('open'); quoteModal.classList.add('open');
+  });
+
+  document.querySelectorAll('.pm-close, .pulse-modal-overlay').forEach(el => {
+    el.addEventListener('click', (e) => {
+      if (e.target === el || el.classList.contains('pm-close')) {
+        document.querySelectorAll('.pulse-modal-overlay').forEach(m => m.classList.remove('open'));
+      }
+    });
+  });
+
+  // Blog Logic
+  let currentPage = 0;
+  let currentCategory = 'all';
+  let searchQuery = '';
+
+  async function init() {
+    const params = new URLSearchParams(window.location.search);
+    currentCategory = params.get('category') || 'all';
+    searchQuery = params.get('q') || '';
+    if (searchQuery) document.getElementById('blogSearchInput').value = searchQuery;
+
+    await loadCategories();
+    await loadPosts(true);
+  }
+
+  async function loadCategories() {
+    const categories = await PulseContent.fetchCategories();
+    const container = document.getElementById('categoryFilters');
+    categories.forEach(cat => {
+      const btn = document.createElement('button');
+      btn.className = `filter-pill ${currentCategory === cat.slug ? 'active' : ''}`;
+      btn.textContent = cat.name;
+      btn.onclick = () => {
+        currentCategory = cat.slug;
+        document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        loadPosts(true);
+      };
+      container.appendChild(btn);
+    });
+  }
+
+  async function loadPosts(reset = false) {
+    if (reset) { currentPage = 0; document.getElementById('blogGrid').innerHTML = ''; }
+    const posts = await PulseContent.fetchAllBlogs({ page: currentPage, category: currentCategory === 'all' ? null : currentCategory, search: searchQuery });
+    
+    if (posts.length === 0 && reset) document.getElementById('blogEmptyState').style.display = 'block';
+    else {
+      document.getElementById('blogEmptyState').style.display = 'none';
+      posts.forEach(post => {
+        const date = post.published_at ? new Date(post.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Recently';
+        const card = `<a href="blog-post.html?slug=${post.slug}" class="blog-card">
+          <div class="blog-card-img"><img src="${post.featured_image_url || 'image/pulse-logo.png'}" loading="lazy"></div>
+          <div class="blog-card-body"><span class="blog-card-category">${post.category_name}</span><h3 class="blog-card-title">${post.title}</h3><p class="blog-card-excerpt">${post.excerpt || ''}</p><div class="blog-card-footer"><span>${post.reading_time_minutes || 5} min read</span><span>${date}</span></div></div>
+        </a>`;
+        document.getElementById('blogGrid').insertAdjacentHTML('beforeend', card);
+      });
+    }
+    document.getElementById('loadMoreContainer').style.display = posts.length < 12 ? 'none' : 'block';
+  }
+
+  document.getElementById('btnLoadMore').onclick = () => { currentPage++; loadPosts(); };
+  
+  let timeout;
+  document.getElementById('blogSearchInput').oninput = (e) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => { searchQuery = e.target.value.trim(); loadPosts(true); }, 300);
+  };
+
+  init();
+</script>
+<div id="global-footer"></div>
+<script src="js/footer.js"></script>
+<script src="/api-connector.js"></script>
+</body>
+</html>
+

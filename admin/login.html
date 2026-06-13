@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Pulse</title>
+  <link rel="icon" href="/image/pulse-logo.png">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="login-wrap">
+    <!-- method="POST" prevents GET query params; onsubmit="return false" is the ultimate safety net -->
+    <form class="login-card" id="loginForm" method="POST" action="#" onsubmit="return false;" autocomplete="on">
+      <div class="login-logo" style="text-align:center; margin-bottom:24px;">
+        <img src="/image/pulse-logo.png" alt="Pulse" style="max-width:160px; height:auto;">
+      </div>
+      <h1 style="font-size:24px; font-weight:600; margin-bottom:8px;">Admin Login</h1>
+      <p class="sub" style="color:#6b7280; font-size:14px; margin-bottom:24px;">Sign in to manage your medical equipment portal.</p>
+      <div id="msgBox"></div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password">
+      </div>
+      <!-- Cloudflare Turnstile — validated server-side by Supabase -->
+      <div class="field turnstile-field">
+        <div class="cf-turnstile"
+             id="turnstileWidget"
+             data-sitekey="0x4AAAAAADOTXznCgQ618E36"
+             data-theme="light"
+             data-callback="onTurnstileSuccess"
+             data-expired-callback="onTurnstileExpired">
+        </div>
+      </div>
+      <button type="submit" class="btn-primary" id="submitBtn">Sign in</button>
+    </form>
+  </div>
+  <script src="js/supabase-config.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      // Roles allowed to access the admin panel
+      const ALLOWED_ROLES = ['super_admin', 'editor', 'viewer'];
+
+      const form = document.getElementById('loginForm');
+      const msgBox = document.getElementById('msgBox');
+      const submitBtn = document.getElementById('submitBtn');
+
+      // Localhost bypass check
+      const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      let captchaToken = null;
+
+      // Hide captcha widget if on localhost
+      if (isLocalhost) {
+        const widget = document.getElementById('turnstileWidget');
+        if (widget) {
+          const parent = widget.closest('.field');
+          if (parent) parent.style.display = 'none';
+          else widget.style.display = 'none';
+        }
+      }
+
+      // Turnstile callbacks (must be on window for the data-callback attribute)
+      window.onTurnstileSuccess = function (token) { captchaToken = token; };
+      window.onTurnstileExpired = function () { captchaToken = null; };
+
+      // Guard: verify Supabase loaded
+      if (!window.PulseAdmin || !window.PulseAdmin.sb) {
+        msgBox.innerHTML = '<div class="msg-error">Failed to load authentication library. Please refresh.</div>';
+        submitBtn.disabled = true;
+        return;
+      }
+
+      const { sb } = window.PulseAdmin;
+
+      // If already logged in as admin, redirect
+      (async () => {
+        try {
+          const { data: { session } } = await sb.auth.getSession();
+          if (session) {
+            const { data: adminRow } = await sb
+              .from('admins').select('id, role').eq('id', session.user.id).single();
+            if (adminRow && ALLOWED_ROLES.includes(adminRow.role)) {
+              window.location.href = '/admin/dashboard.html';
+            }
+          }
+        } catch (err) {
+          console.error('Session check failed:', err);
+        }
+      })();
+
+      // Form submit handler
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        msgBox.innerHTML = '';
+
+        // Require a valid Turnstile token (skipped on localhost)
+        if (!isLocalhost && !captchaToken) {
+          msgBox.innerHTML = '<div class="msg-error">Please complete the CAPTCHA verification.</div>';
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Signing in...';
+
+        // Read values from inputs, never from URL
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+
+        try {
+          // Step 1: Authenticate with Supabase (Turnstile validated server-side if provided)
+          const authParams = { email, password };
+          if (captchaToken) {
+            authParams.options = { captchaToken };
+          }
+          const { data, error } = await sb.auth.signInWithPassword(authParams);
+
+          if (error) {
+            console.error('signInWithPassword error:', error);
+            msgBox.innerHTML = '<div class="msg-error">' + error.message + '</div>';
+            resetForm();
+            return;
+          }
+
+          console.log('Auth succeeded for user:', data.user.id);
+
+          // Step 2: Check if user is in the admins whitelist with an allowed role
+          const { data: adminRow, error: adminErr } = await sb
+            .from('admins').select('id, role, full_name, email').eq('id', data.user.id).single();
+
+          console.log('Admin query result:', { adminRow, adminErr });
+
+          if (adminErr) {
+            console.error('Admin table query error:', adminErr.message, adminErr.code, adminErr.details);
+            await sb.auth.signOut();
+            msgBox.innerHTML = '<div class="msg-error">Unable to verify admin status. Error: ' + adminErr.message + '</div>';
+            resetForm();
+            return;
+          }
+
+          if (!adminRow) {
+            console.error('No admin row found for user:', data.user.id);
+            await sb.auth.signOut();
+            msgBox.innerHTML = '<div class="msg-error">Your account is not in the admin whitelist.</div>';
+            resetForm();
+            return;
+          }
+
+          if (!ALLOWED_ROLES.includes(adminRow.role)) {
+            console.error('User role "' + adminRow.role + '" is not in ALLOWED_ROLES:', ALLOWED_ROLES);
+            await sb.auth.signOut();
+            msgBox.innerHTML = '<div class="msg-error">Your role (' + adminRow.role + ') does not have admin panel access.</div>';
+            resetForm();
+            return;
+          }
+
+          // Step 3: Success — persist role for RBAC UI and redirect
+          sessionStorage.setItem('admin_role', adminRow.role);
+          
+          // Update last login timestamp
+          await sb.from('admins').update({ last_login: new Date().toISOString() }).eq('id', data.user.id);
+          
+          console.log('Login success! Role:', adminRow.role, 'Redirecting to dashboard...');
+          window.location.href = '/admin/dashboard.html';
+
+        } catch (err) {
+          console.error('Login error:', err);
+          msgBox.innerHTML = '<div class="msg-error">An unexpected error occurred: ' + err.message + '</div>';
+          resetForm();
+        }
+      });
+
+      function resetForm() {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Sign in';
+        captchaToken = null;
+        if (typeof turnstile !== 'undefined') turnstile.reset('#turnstileWidget');
+      }
+    })();
+  </script>
+</body>
+</html>

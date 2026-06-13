@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Device Showcase</title>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, #03091a 0%, #071530 45%, #0a1e40 100%);
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+
+  /* ── Hero wrapper ── */
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3vw;
+    overflow: hidden;
+  }
+
+  /* ── Radial glow behind center ── */
+  .hero-glow {
+    position: absolute;
+    top: 50%; right: 9vw;
+    transform: translate(0, -50%);
+    width: 700px; height: 500px;
+    background: radial-gradient(ellipse, rgba(50,100,255,0.18) 0%, rgba(100,50,220,0.09) 40%, transparent 72%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: glowBreath 4s ease-in-out infinite;
+  }
+  .hero-glow-floor {
+    position: absolute;
+    bottom: 130px; right: 9vw;
+    transform: translateX(0);
+    width: 600px; height: 120px;
+    background: radial-gradient(ellipse, rgba(50,100,255,0.20) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: glowBreath 4s ease-in-out infinite 0.6s;
+  }
+  @keyframes glowBreath {
+    0%, 100% { opacity: 0.7; transform: translate(0,-50%) scale(1); }
+    50%       { opacity: 1;   transform: translate(0,-50%) scale(1.06); }
+  }
+  .hero-glow-floor { animation: glowFloor 4s ease-in-out infinite 0.6s; }
+  @keyframes glowFloor {
+    0%, 100% { opacity: 0.7; transform: translateX(0) scale(1); }
+    50%       { opacity: 1;   transform: translateX(0) scale(1.05); }
+  }
+
+  /* scan lines overlay */
+  .scan-lines {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0px, transparent 3px,
+      rgba(255,255,255,0.012) 3px, rgba(255,255,255,0.012) 4px
+    );
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* ── Coverflow stage ── */
+  .coverflow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: grab;
+  }
+  .coverflow:active { cursor: grabbing; }
+
+  /* ── Cards ── */
+  .cf-track {
+    position: relative;
+    width: 380px;
+    height: 480px;
+  }
+
+  .cf-card {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.6s cubic-bezier(0.4,0,0.2,1),
+                opacity  0.6s cubic-bezier(0.4,0,0.2,1),
+                z-index  0s;
+    will-change: transform, opacity;
+    user-select: none;
+  }
+
+  /* device image */
+  .cf-img-wrap {
+    width: 320px;
+    height: 360px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .cf-img {
+    width: 100%; height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    filter:
+      drop-shadow(0 0 20px rgba(70,120,255,0.5))
+      drop-shadow(0 0 50px rgba(80,50,220,0.25))
+      drop-shadow(0 28px 36px rgba(0,0,30,0.65));
+    pointer-events: none;
+  }
+
+  /* ground + reflection */
+  .cf-shadow {
+    width: 240px; height: 18px;
+    background: radial-gradient(ellipse, rgba(40,80,220,0.5) 0%, transparent 70%);
+    border-radius: 50%;
+    margin-top: -8px;
+    flex-shrink: 0;
+  }
+  .cf-ground {
+    width: 260px; height: 1px;
+    background: linear-gradient(to right, transparent, rgba(100,160,255,0.5), transparent);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .cf-reflection-wrap {
+    width: 320px; height: 65px;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .cf-reflection {
+    width: 100%; height: 200px;
+    object-fit: contain;
+    object-position: center top;
+    transform: scaleY(-1);
+    transform-origin: top center;
+    filter: blur(2px) brightness(0.28) saturate(1.3);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 100%);
+    pointer-events: none;
+  }
+
+  /* ── card position states ── */
+  .cf-card[data-pos="center"] {
+    transform: translateX(0)   scale(1.0)  rotateY(0deg);
+    opacity: 1;
+    z-index: 4;
+  }
+  .cf-card[data-pos="left"] {
+    transform: translateX(-220px) scale(0.75) rotateY(35deg);
+    opacity: 0.15;
+    z-index: 2;
+  }
+  .cf-card[data-pos="right"] {
+    transform: translateX(220px) scale(0.75) rotateY(-35deg);
+    opacity: 0.15;
+    z-index: 2;
+  }
+  .cf-card[data-pos="far-left"] {
+    transform: translateX(-380px) scale(0.6) rotateY(45deg);
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .cf-card[data-pos="far-right"] {
+    transform: translateX(380px) scale(0.6) rotateY(-45deg);
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* float animation only on center */
+  .cf-card[data-pos="center"] .cf-img-wrap {
+    animation: cfFloat 5.2s ease-in-out infinite;
+  }
+  .cf-card[data-pos="center"] .cf-shadow {
+    animation: cfShadow 5.2s ease-in-out infinite;
+  }
+  @keyframes cfFloat {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-18px); }
+  }
+  @keyframes cfShadow {
+    0%, 100% { transform: scaleX(1);    opacity: 0.85; }
+    50%       { transform: scaleX(0.8); opacity: 0.45; }
+  }
+
+  /* ── Arrows ── */
+  .cf-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(100,160,255,0.3);
+    color: rgba(150,200,255,0.8);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    user-select: none;
+  }
+  .cf-arrow:hover {
+    background: rgba(77,143,217,0.2);
+    border-color: rgba(100,160,255,0.7);
+    color: #fff;
+  }
+  .cf-arrow.prev { left: 32px; }
+  .cf-arrow.next { right: 32px; }
+
+  /* ── Dot nav ── */
+  .dot-nav {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+  }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(100,150,255,0.25);
+    border: 1px solid rgba(100,150,255,0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .dot.active {
+    background: rgba(100,160,255,0.9);
+    box-shadow: 0 0 10px rgba(80,140,255,0.9);
+    transform: scale(1.35);
+  }
+
+  /* ── Progress bar ── */
+  .progress-bar-track {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: rgba(255,255,255,0.05);
+    z-index: 20;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: #4d8fd9;
+    transition: none;
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="hero">
+  <!-- Background glows -->
+  <div class="hero-glow"></div>
+  <div class="hero-glow-floor"></div>
+  <div class="scan-lines"></div>
+
+  <!-- Arrows -->
+  <div class="cf-arrow prev" id="btn-prev">&#8592;</div>
+  <div class="cf-arrow next" id="btn-next">&#8594;</div>
+
+  <!-- Coverflow -->
+  <div class="coverflow" id="coverflow">
+    <div class="cf-track" id="cf-track">
+      <!-- cards injected by JS -->
+    </div>
+  </div>
+
+  <!-- Dot nav -->
+  <div class="dot-nav" id="dot-nav"></div>
+
+  <!-- Progress bar -->
+  <div class="progress-bar-track">
+    <div class="progress-bar-fill" id="progress-fill"></div>
+  </div>
+</div>
+
+<script>
+// ── DATA ────────────────────────────────────────────────────
+const DEVICES = [
+  { src: 'uploads/Background 1-ddc50744.png',                                alt: 'Wavelength Pro-X' },
+  { src: 'uploads/Gemini_Generated_Image_2kw8f42kw8f42kw8.png',             alt: 'NCCO Pro-V' },
+  { src: 'uploads/Dr. Rahul kumer gaya VENTILATOR  INSTALL SH320 (1).png',  alt: 'SH320 Ventilator' },
+  { src: 'uploads/img51.png',                                                alt: 'Anesthesia Unit' },
+  { src: 'uploads/664c44c060fa2.png',                                        alt: 'ICU Hospital Bed' },
+  { src: 'uploads/71bIKgWuwSL.png',                                          alt: 'Mobility Wheelchair' },
+];
+const N = DEVICES.length;
+
+// ── BUILD CARDS ──────────────────────────────────────────────
+const track  = document.getElementById('cf-track');
+const dotNav = document.getElementById('dot-nav');
+
+DEVICES.forEach((dev, i) => {
+  // card
+  const card = document.createElement('div');
+  card.className = 'cf-card';
+  card.dataset.idx = i;
+  card.innerHTML = `
+    <div class="cf-img-wrap">
+      <img class="cf-img" src="${dev.src}" alt="${dev.alt}">
+    </div>
+    <div class="cf-shadow"></div>
+    <div class="cf-ground"></div>
+    <div class="cf-reflection-wrap">
+      <img class="cf-reflection" src="${dev.src}" alt="">
+    </div>
+  `;
+  track.appendChild(card);
+
+  // dot
+  const dot = document.createElement('div');
+  dot.className = 'dot';
+  dot.addEventListener('click', () => { goTo(i); resetTimer(); });
+  dotNav.appendChild(dot);
+});
+
+const cards = Array.from(track.querySelectorAll('.cf-card'));
+const dots  = Array.from(dotNav.querySelectorAll('.dot'));
+
+// ── STATE ────────────────────────────────────────────────────
+let current   = 0;
+let paused    = false;
+let rafId     = null;
+let startTime = null;
+const DURATION = 5000; // ms
+
+// ── LAYOUT ──────────────────────────────────────────────────
+function positionOf(idx) {
+  const diff = ((idx - current) % N + N) % N;
+  if (diff === 0)           return 'center';
+  if (diff === 1)           return 'right';
+  if (diff === N - 1)       return 'left';
+  if (diff <= N / 2)        return 'far-right';
+  return 'far-left';
+}
+
+function render() {
+  cards.forEach((card, i) => {
+    card.dataset.pos = positionOf(i);
+  });
+  dots.forEach((d, i) => {
+    d.classList.toggle('active', i === current);
+  });
+}
+
+// ── NAVIGATION ───────────────────────────────────────────────
+function goTo(idx) {
+  current = ((idx % N) + N) % N;
+  render();
+}
+
+function next() { goTo(current + 1); }
+function prev() { goTo(current - 1); }
+
+document.getElementById('btn-next').addEventListener('click', () => { next(); resetTimer(); });
+document.getElementById('btn-prev').addEventListener('click', () => { prev(); resetTimer(); });
+
+// ── PROGRESS BAR (rAF) ───────────────────────────────────────
+const fill = document.getElementById('progress-fill');
+
+function tickProgress(ts) {
+  if (!startTime) startTime = ts;
+  const elapsed = ts - startTime;
+  const pct     = Math.min(elapsed / DURATION, 1) * 100;
+  fill.style.width = pct + '%';
+
+  if (elapsed >= DURATION) {
+    next();
+    startTime = ts; // reset immediately
+  }
+
+  rafId = requestAnimationFrame(tickProgress);
+}
+
+function resetTimer() {
+  startTime = null;
+  fill.style.width = '0%';
+}
+
+function startProgress() {
+  if (rafId) cancelAnimationFrame(rafId);
+  startTime = null;
+  rafId = requestAnimationFrame(tickProgress);
+}
+
+function stopProgress() {
+  if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+}
+
+// ── HOVER PAUSE ──────────────────────────────────────────────
+let pausedAt = 0;
+
+const hero = document.querySelector('.hero');
+hero.addEventListener('mouseenter', () => {
+  paused   = true;
+  pausedAt = performance.now() - (startTime ? performance.now() - startTime : 0);
+  stopProgress();
+});
+hero.addEventListener('mouseleave', () => {
+  paused    = false;
+  // resume from where we paused
+  startTime = performance.now() - pausedAt;
+  rafId = requestAnimationFrame(tickProgress);
+});
+
+// ── INIT ─────────────────────────────────────────────────────
+render();
+startProgress();
+</script>
+</body>
+</html>

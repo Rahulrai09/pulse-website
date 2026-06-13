@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service & Support | Pulse Medical</title>
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: #0a1e40; background: #ffffff; overflow-x: hidden; }
+
+    /* HERO */
+    .cat-hero {
+      background: #1B2F6E;
+      color: #fff;
+      padding: 120px 6% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cat-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(27,47,110,0.95), rgba(232,119,34,0.3));
+      z-index: 0;
+    }
+    .cat-hero-content { position: relative; z-index: 1; max-width: 800px; }
+    
+    .cat-breadcrumb {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cat-breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .cat-breadcrumb a:hover { color: #fff; }
+    .cat-breadcrumb span { color: rgba(255,255,255,0.3); }
+    
+    .cat-hero h1 {
+      font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    .cat-hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      opacity: 0.85;
+      max-width: 640px;
+    }
+
+    /* SECTION ANCHOR NAV */
+    .anchor-nav-wrapper {
+      background: #ffffff;
+      border-bottom: 1px solid #e4e7f2;
+      position: sticky;
+      top: 72px;
+      z-index: 99;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .anchor-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 4%;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      align-items: center;
+      height: 64px;
+      gap: 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      scrollbar-width: none;
+    }
+    .anchor-nav::-webkit-scrollbar {
+      display: none;
+    }
+    .anchor-link {
+      color: #4a4f70;
+      flex: 0 0 auto;
+      white-space: nowrap;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .anchor-link:hover, .anchor-link.active {
+      border-bottom: 2px solid #1B2F6E;
+      color: #1B2F6E;
+    }
+
+    /* SECTIONS */
+    .support-section {
+      padding: 100px 6%;
+      position: relative;
+    }
+    .support-section:nth-of-type(even) {
+      background: #f8f9fc;
+    }
+    .support-section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-header {
+      margin-bottom: 48px;
+    }
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #E87722;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .section-title {
+      font-size: clamp(26px, 3vw, 36px);
+      font-weight: 800;
+      color: #0a1e40;
+      letter-spacing: -0.02em;
+    }
+
+    /* CARDS GRID */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .service-card {
+      background: #ffffff;
+      border: 1.5px solid #e4e7f2;
+      border-radius: 12px;
+      padding: 32px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .support-section:nth-of-type(even) .service-card {
+      background: #ffffff;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(27,47,110,0.08);
+      border-color: #1B2F6E;
+    }
+    .card-num {
+      font-size: 48px;
+      font-weight: 800;
+      color: rgba(27,47,110,0.05);
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      user-select: none;
+      transition: color 0.3s ease;
+    }
+    .service-card:hover .card-num {
+      color: rgba(232,119,34,0.1);
+    }
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgba(27,47,110,0.05);
+      color: #1B2F6E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .service-card:hover .card-icon {
+      background: #1B2F6E;
+      color: #ffffff;
+    }
+    .card-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0a1e40;
+      margin-bottom: 12px;
+      line-height: 1.35;
+      max-width: 80%;
+    }
+    .card-desc {
+      font-size: 14.5px;
+      color: #4a4f70;
+      line-height: 1.6;
+    }
+
+    /* Floating / Extra elements styling from main site */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .anchor-nav-wrapper { top: 60px; }
+      .support-section { padding: 60px 5%; }
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div id="global-header"></div>
+
+  <!-- HERO -->
+  <section class="cat-hero">
+    <div class="cat-hero-content">
+      <div class="cat-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        Support
+      </div>
+      <h1>Comprehensive MedTech Solutions</h1>
+      <p>We offer end-to-end medical device solutions that cover every stage of the product lifecycle — from concept to clinical application.</p>
+    </div>
+  </section>
+
+  <!-- SECTION ANCHOR NAV -->
+  <div class="anchor-nav-wrapper">
+    <div class="anchor-nav">
+      <a href="#manufacturing" class="anchor-link active">Manufacturing & Production</a>
+      <a href="#research" class="anchor-link">Research & Innovation</a>
+      <a href="#regulatory" class="anchor-link">Regulatory & Quality Assurance</a>
+      <a href="#customer" class="anchor-link">Customer Support & Training</a>
+    </div>
+  </div>
+
+  <!-- SECTION 1 — MANUFACTURING & PRODUCTION -->
+  <section class="support-section" id="manufacturing">
+    <div class="support-section-inner">
+      <div class="section-header reveal">
+        <span class="section-label">Section 1</span>
+        <h2 class="section-title">Manufacturing & Production</h2>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="service-card reveal">
+          <div class="card-num">01</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 20h20M20 20V8l-6 4V8l-6 4V4L2 8v12"/>
+            </svg>
+          </div>
+          <h3 class="card-title">End-to-End Medical Device Manufacturing</h3>
+          <p class="card-desc">Delivering precision-built devices for critical medical applications.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal">
+          <div class="card-num">02</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">OEM & ODM Contract Manufacturing</h3>
+          <p class="card-desc">Partnering with global brands to produce customized devices at competitive costs.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal">
+          <div class="card-num">03</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Custom Product Design & Development</h3>
+          <p class="card-desc">Tailoring products to meet unique hospital or clinical requirements.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card reveal">
+          <div class="card-num">04</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Prototyping, Tooling & Pilot Production</h3>
+          <p class="card-desc">Turning ideas into functional prototypes and preparing for large-scale production.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card reveal">
+          <div class="card-num">05</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Sterilization & Medical-Grade Packaging</h3>
+          <p class="card-desc">Ensuring safety, compliance, and shelf-life integrity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — RESEARCH & INNOVATION -->
+  <section class="support-section" id="research">
+    <div class="support-section-inner">
+      <div class="section-header reveal">
+        <span class="section-label">Section 2</span>
+        <h2 class="section-title">Research & Innovation</h2>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="service-card reveal">
+          <div class="card-num">01</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Product Engineering & Integration</h3>
+          <p class="card-desc">Designing devices that integrate seamlessly into hospital systems.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal">
+          <div class="card-num">02</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16.3 11c.9-1.2 1.4-2.7 1.4-4.3c0-3.7-3-6.7-6.7-6.7S4.3 3 4.3 6.7c0 1.6.5 3.1 1.4 4.3l-2.4 8.2c-.3.9.4 1.8 1.4 1.8h14.6c1 0 1.7-.9 1.4-1.8l-2.4-8.2z"/>
+              <path d="M8.3 6.7c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7S12.5 9.4 11 9.4s-2.7-1.2-2.7-2.7z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">R&D Partnerships</h3>
+          <p class="card-desc">Collaborating with hospitals and research institutes to co-develop next-gen technologies.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal">
+          <div class="card-num">03</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 20a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              <path d="M9 9l6 6M18 14v6M15 17h6"/>
+            </svg>
+          </div>
+          <h3 class="card-title">IoMT & AI Integration</h3>
+          <p class="card-desc">Building smart devices powered by data and connectivity.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card reveal">
+          <div class="card-num">04</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Clinical Validation & Testing</h3>
+          <p class="card-desc">Ensuring accuracy, safety, and compliance at every stage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — REGULATORY & QUALITY ASSURANCE -->
+  <section class="support-section" id="regulatory">
+    <div class="support-section-inner">
+      <div class="section-header reveal">
+        <span class="section-label">Section 3</span>
+        <h2 class="section-title">Regulatory & Quality Assurance</h2>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="service-card reveal">
+          <div class="card-num">01</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Compliance Documentation</h3>
+          <p class="card-desc">Full regulatory support for local and global markets.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal">
+          <div class="card-num">02</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Certification Guidance</h3>
+          <p class="card-desc">Assistance with ISO, CE, and GMP approvals.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal">
+          <div class="card-num">03</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <circle cx="12" cy="11" r="3"/>
+              <path d="M12 2v3M12 17v3M5 12h3M16 12h3"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Risk Management & Testing</h3>
+          <p class="card-desc">Rigorous safety checks and calibration services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 — CUSTOMER SUPPORT & TRAINING -->
+  <section class="support-section" id="customer">
+    <div class="support-section-inner">
+      <div class="section-header reveal">
+        <span class="section-label">Section 4</span>
+        <h2 class="section-title">Customer Support & Training</h2>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="service-card reveal">
+          <div class="card-num">01</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Installation & Commissioning</h3>
+          <p class="card-desc">Seamless product implementation.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal">
+          <div class="card-num">02</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1H20v21H6.5"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Healthcare Training</h3>
+          <p class="card-desc">Hands-on training for doctors, nurses, and technicians.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal">
+          <div class="card-num">03</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <path d="m9 16 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Annual Maintenance Contracts</h3>
+          <p class="card-desc">AMC/CMC services for reliable long-term performance.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card reveal">
+          <div class="card-num">04</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <path d="M12 7v5l3 3"/>
+            </svg>
+          </div>
+          <h3 class="card-title">On-Site & Remote Support</h3>
+          <p class="card-desc">Quick service, repair, and spare part availability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="global-footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+
+  <script>
+    // Robust Scroll Reveal
+    document.addEventListener('DOMContentLoaded', () => {
+      const reveals = document.querySelectorAll('.reveal');
+      
+      if (!('IntersectionObserver' in window)) {
+        reveals.forEach(el => el.classList.add('visible'));
+        return;
+      }
+
+      const revealObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            revealObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      reveals.forEach(el => revealObs.observe(el));
+
+      // Scroll Spy for Anchor Navigation
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.anchor-link');
+
+      const handleScrollSpy = () => {
+        let current = '';
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 160; // offset for sticky nav + header
+          if (scrollPosition >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').slice(1) === current) {
+            link.classList.add('active');
+          }
+        });
+      };
+
+      window.addEventListener('scroll', handleScrollSpy);
+      handleScrollSpy(); // Initial call
+    });
+  </script>
+</body>
+</html>
