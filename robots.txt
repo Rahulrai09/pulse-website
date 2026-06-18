@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://www.pulseio.in/sitemap.xml
-
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.json$
