@@ -28,7 +28,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pulse — Integrated Medical Equipment</title>
+<title>Home | Pulse</title>
+<meta name="description" content="Pulse is a homegrown medical equipment manufacturer — engineering, building and servicing every product from our facilities to hospitals across India.">
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -298,18 +299,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     display: flex; align-items: center; gap: 40px;
   }
   .logos-strip-label {
-    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--ink-light); white-space: nowrap;
+    font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--accent-pale); white-space: nowrap;
     flex-shrink: 0;
   }
   .logo-items { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
   .logo-placeholder {
     font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
     text-transform: uppercase; color: #b0b5cc; white-space: nowrap;
-    padding: 6px 0; border-bottom: 1.5px solid #d0d4e8;
+    padding: 6px 0;
     transition: color 0.2s;
   }
-  .logo-placeholder:hover { color: var(--accent); border-color: var(--accent); }
+  .logo-placeholder:hover { color: var(--accent); }
 
   /* ── SHARED SECTION ── */
   section { padding: 100px 60px; }
@@ -1278,14 +1279,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .logos-strip {
       flex-direction: row;
       align-items: center;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
-      padding: 8px 20px;
-      overflow: hidden;
+      padding: 12px 20px;
+      overflow: visible;
     }
     .logos-strip-label { font-size: 0.6rem; white-space: nowrap; }
-    .logo-items { gap: 14px; flex-wrap: nowrap; }
-    .logo-placeholder { font-size: 0.6rem; letter-spacing: 0.04em; }
+    .logo-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+    }
+    .logo-placeholder img {
+      max-height: 20px !important;
+      width: auto;
+    }
 
     .hero { height: 260px; min-height: 0; }
     .hero-content { padding: 20px 0 0 20px; }
