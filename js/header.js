@@ -285,42 +285,42 @@ document.addEventListener('DOMContentLoaded', function() {
                               },
                               {
                                         "name": "Anesthesia Workstation",
-                                        "image": "image/Critical%20care/Anesthesia%20Workstation.png",
+                                        "image": "image/Critical%20care/anesthesia-workstation-transparent.png",
                                         "href": "critical-anesthesia-workstation.html"
                               },
                               {
                                         "name": "Vital ZEC3 ECG Machine",
-                                        "image": "image/Critical%20care/ECG%20Machine%203%20Channel.png",
+                                        "image": "image/Critical%20care/ecg-machine-3-channel-transparent.png",
                                         "href": "critical-vital-zec3.html"
                               },
                               {
                                         "name": "Vital ZEC6 ECG Machine",
-                                        "image": "image/Critical%20care/6%20Channel%20ECG%20Machine.png",
+                                        "image": "image/Critical%20care/6-channel-ecg-machine-transparent.png",
                                         "href": "critical-vital-zec6.html"
                               },
                               {
                                         "name": "Vital ZEC12 ECG Machine",
-                                        "image": "image/Critical%20care/12%20Channel%20ECG%20Machine.png",
+                                        "image": "image/Critical%20care/12-channel-ecg-machine-transparent.png",
                                         "href": "critical-vital-zec12.html"
                               },
                               {
                                         "name": "Vital ZPM5 Patient Monitor",
-                                        "image": "image/Critical%20care/Pateint%20monitor.png",
+                                        "image": "image/Critical%20care/patient-monitor-transparent.png",
                                         "href": "critical-vital-zpm5.html"
                               },
                               {
                                         "name": "Vital ZPM7 Patient Monitor",
-                                        "image": "image/Critical%20care/7%20Para%20Pateint%20Monitor.png",
+                                        "image": "image/Critical%20care/7-para-patient-monitor-transparent.png",
                                         "href": "critical-vital-zpm7.html"
                               },
                               {
                                         "name": "Vital ZIP1 Infusion Pump",
-                                        "image": "image/Critical%20care/Infusion%20pump.png",
+                                        "image": "image/Critical%20care/infusion-pump-transparent.png",
                                         "href": "critical-vital-zip1.html"
                               },
                               {
                                         "name": "Vital ZSP1 Syringe Pump",
-                                        "image": "image/Critical%20care/Syringe%20Pump.png",
+                                        "image": "image/Critical%20care/syringe-pump-transparent.png",
                                         "href": "critical-vital-zsp1.html"
                               }
                     ]
@@ -330,32 +330,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     "products": [
                               {
                                         "name": "PDM-6000",
-                                        "image": "image/Renal%20care/PDM-6000%20Precision%20Haemodialysis%20System.png",
+                                        "image": "image/Renal%20care/pdm-6000-precision-haemodialysis-system-transparent.png",
                                         "href": "renal-pdm-6000.html"
                               },
                               {
                                         "name": "PD-Canova",
-                                        "image": "image/Renal%20care/PD%20-%20Canova.png",
+                                        "image": "image/Renal%20care/pd-canova-transparent.png",
                                         "href": "renal-pd-canova.html"
                               },
                               {
                                         "name": "PD-Linepro",
-                                        "image": "image/Renal%20care/PD%20-%20Linepro.png",
+                                        "image": "image/Renal%20care/pd-linepro-transparent.png",
                                         "href": "renal-pd-linepro.html"
                               },
                               {
                                         "name": "Dialysers",
-                                        "image": "image/Renal%20care/Dialysers.png",
+                                        "image": "image/Renal%20care/dialysers-transparent.png",
                                         "href": "renal-dialysers.html"
                               },
                               {
                                         "name": "PD-Cath",
-                                        "image": "image/Renal%20care/PD%20-%20Cath.png",
+                                        "image": "image/Renal%20care/pd-cath-transparent.png",
                                         "href": "renal-pd-cath.html"
                               },
                               {
                                         "name": "PD-TP",
-                                        "image": "image/Renal%20care/PD%20TP.png",
+                                        "image": "image/Renal%20care/pd-tp-transparent.png",
                                         "href": "renal-pd-tp.html"
                               }
                     ]
@@ -571,8 +571,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 a.addEventListener('mouseenter', function () {
                     const img   = document.querySelector('.featured-product-img');
                     const label = document.querySelector('.featured-product-label');
+                    const link  = document.querySelector('.fc-link');
                     if (img   && this.dataset.image) img.src         = this.dataset.image;
                     if (label && this.dataset.label) label.textContent = this.dataset.label;
+                    if (link) link.href = p.href;
                 });
                 
                 colProductsEl.appendChild(a);
@@ -596,8 +598,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (firstLink) {
                         const img = document.querySelector('.featured-product-img');
                         const label = document.querySelector('.featured-product-label');
+                        const link = document.querySelector('.fc-link');
                         if (img) img.src = firstLink.dataset.image;
                         if (label) label.textContent = firstLink.dataset.label;
+                        if (link) link.href = firstLink.getAttribute('href');
                     }
                 });
             });
@@ -608,8 +612,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (firstLink) {
                 const img = document.querySelector('.featured-product-img');
                 const label = document.querySelector('.featured-product-label');
+                const link = document.querySelector('.fc-link');
                 if (img) img.src = firstLink.dataset.image;
                 if (label) label.textContent = firstLink.dataset.label;
+                if (link) link.href = firstLink.getAttribute('href');
             }
         }
 
@@ -1000,8 +1006,10 @@ if (mobileSearch) {
           link.addEventListener('mouseenter', function () {
             const img   = document.querySelector('.featured-product-img');
             const label = document.querySelector('.featured-product-label');
+            const fcLink = document.querySelector('.fc-link');
             if (img   && this.dataset.image) img.src         = this.dataset.image;
             if (label && this.dataset.label) label.textContent = this.dataset.label;
+            if (fcLink) fcLink.href = this.getAttribute('href');
           });
         });
     }

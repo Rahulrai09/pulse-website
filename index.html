@@ -1280,7 +1280,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .logos-strip {
       flex-direction: row;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
       gap: 12px;
       padding: 12px 20px;
@@ -1289,7 +1289,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .logos-strip-label { font-size: 0.6rem; white-space: nowrap; }
     .logo-items {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
       gap: 16px;
@@ -1676,7 +1676,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pf-bottom-links a { font-size: 0.7rem !important; }
   }
 
-
+  @media (max-width: 400px) {
+    .logos-strip {
+      gap: 8px;
+      padding: 12px 12px;
+    }
+    .logos-strip-label {
+      flex-shrink: 0;
+    }
+    .logo-items {
+      gap: 8px;
+    }
+    .logo-placeholder {
+      width: 70px;
+      flex-shrink: 0;
+    }
+    .logo-placeholder img {
+      max-height: 16px !important;
+    }
+  }
 
   @media (max-width: 480px) {
     .hero { height: 220px; min-height: 0; }
