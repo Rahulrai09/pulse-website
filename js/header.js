@@ -405,62 +405,62 @@ document.addEventListener('DOMContentLoaded', function() {
                     "products": [
                               {
                                         "name": "Wavelength Pro X",
-                                        "image": "image/Aesthetics%20images/Wavelength%20pro%20x.png",
+                                        "image": "image/Aesthetics%20images/wavelength-pro-x-transparent.png",
                                         "href": "aesthetics-wavelength-pro-x.html"
                               },
                               {
                                         "name": "Pi-Code",
-                                        "image": "image/Aesthetics%20images/Pi-Code.png",
+                                        "image": "image/Aesthetics%20images/pi-code-transparent.png",
                                         "href": "aesthetics-pi-code.html"
                               },
                               {
                                         "name": "Code Factor",
-                                        "image": "image/Aesthetics%20images/Code%20Factor.png",
+                                        "image": "image/Aesthetics%20images/code-factor-transparent.png",
                                         "href": "aesthetics-code-factor.html"
                               },
                               {
                                         "name": "Nodd",
-                                        "image": "image/Aesthetics%20images/Nodd.png",
+                                        "image": "image/Aesthetics%20images/nodd-transparent.png",
                                         "href": "aesthetics-nodd.html"
                               },
                               {
                                         "name": "HYDRAFRAC",
-                                        "image": "image/Aesthetics%20images/Hydrafrac.png",
+                                        "image": "image/Aesthetics%20images/hydrafrac-transparent.png",
                                         "href": "aesthetics-hydrafrac.html"
                               },
                               {
                                         "name": "Cool Shape",
-                                        "image": "image/Aesthetics%20images/Cool%20Shape.png",
+                                        "image": "image/Aesthetics%20images/cool-shape-transparent.png",
                                         "href": "aesthetics-cool-shape.html"
                               },
                               {
                                         "name": "Em Code",
-                                        "image": "image/Aesthetics%20images/Em%20Code.png",
+                                        "image": "image/Aesthetics%20images/em-code-transparent.png",
                                         "href": "aesthetics-em-code.html"
                               },
                               {
                                         "name": "Bbl Super IPL+DPL",
-                                        "image": "image/Aesthetics%20images/BBL%20Super%20IDL%20%2B%20Dpl.png",
+                                        "image": "image/Aesthetics%20images/bbl-super-ipl-dpl-transparent.png",
                                         "href": "aesthetics-bbl-super-ipl-dpl.html"
                               },
                               {
                                         "name": "Visage",
-                                        "image": "image/Aesthetics%20images/Visage.png",
+                                        "image": "image/Aesthetics%20images/visage-transparent.png",
                                         "href": "aesthetics-visage.html"
                               },
                               {
                                         "name": "Excimer",
-                                        "image": "image/Aesthetics%20images/Excimer.png",
+                                        "image": "image/Aesthetics%20images/excimer-transparent.png",
                                         "href": "aesthetics-excimer.html"
                               },
                               {
                                         "name": "Em-Ma",
-                                        "image": "image/Aesthetics%20images/EM-MA.png",
+                                        "image": "image/Aesthetics%20images/em-ma-transparent.png",
                                         "href": "aesthetics-em-ma.html"
                               },
                               {
                                         "name": "Skin Analyzer",
-                                        "image": "image/Aesthetics%20images/skin-analyzer.png",
+                                        "image": "image/Aesthetics%20images/skin-analyzer-transparent.png",
                                         "href": "aesthetics-skin-analyzer.html"
                               }
                     ]
