@@ -3515,23 +3515,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           chatStep = 3;
           renderBotMessage("Great choice! To connect you with our specialist, could you share your phone number or email?", []);
         } else if (chatStep === 3) {
-          userData.contact = text;
+          // Validate 10-digit phone number
+          const phoneRegex = /^[6-9]\d{9}$/;
+          const cleanPhone = text.trim().replace(/\s+/g, "");
+          if (!phoneRegex.test(cleanPhone)) {
+            renderBotMessage("Please enter a valid 10-digit Indian mobile number (e.g. 9876543210).", []);
+            return;
+          }
+          userData.phone = cleanPhone;
+          chatStep = 4;
+          renderBotMessage("Thank you! Could you also share your email address?", []);
+        } else if (chatStep === 4) {
+          userData.email = text.trim();
+          chatStep = 5;
           // Submit chat lead to Google Sheets
-          const isEmail = userData.contact.includes('@');
           if (window.PulsePublic && window.PulsePublic.submitChat) {
             window.PulsePublic.submitChat({
               name: userData.name,
-              phone: isEmail ? '' : userData.contact,
-              email: isEmail ? userData.contact : '',
+              phone: userData.phone,
+              email: userData.email,
               userType: userData.role,
-              category: userData.category.replace(/^\d+\s*/, ''),
-              message: 'Chat lead from Pulse AI Assistant'
-            }).catch(err => console.error('[chat] Lead submission failed:', err));
+              category: userData.category.replace(/^\d+\s*/, ""),
+              message: "Chat lead from Pulse AI Assistant"
+            }).catch(err => console.error("[chat] Lead submission failed:", err));
           }
-          chatStep = 4;
-          renderBotMessage(`Thank you, our ${userData.category.replace(/^\d+\s*/, '').replace(/\s*Care$/i, '')} Care expert will reach out within 24 hours. For urgent queries call 📞 +91 90711 01108 directly.`, []);
-        } else {
-          renderBotMessage("Your request has been logged. For urgent queries call 📞 +91 90711 01108 directly.", []);
+          renderBotMessage(`Thank you! Our ${userData.category.replace(/^\d+\s*/, "").replace(/\s*Care$/i, "")} Care expert will reach out within 24 hours. For urgent queries call +91 90711 01108 directly.`, []);
         }
       }, 600);
     }

@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="pm-form-group"><label>Full Name *</label><input type="text" class="pm-input" required></div>
             <div class="pm-form-group"><label>Mobile Number *</label><input type="tel" class="pm-input" required></div>
             <div class="pm-form-group"><label>Email Address *</label><input type="email" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Hospital/Organisation Name *</label><input type="text" class="pm-input" required></div>
+            <div class="pm-form-group"><label>Hospital/Organisation Name</label><input type="text" class="pm-input"></div>
             <div class="pm-form-group"><label>City *</label><input type="text" class="pm-input" required></div>
             <div class="pm-form-group">
               <label>Equipment Category</label>
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="pm-form-group"><label>Full Name *</label><input type="text" class="pm-input" required></div>
             <div class="pm-form-group"><label>Mobile Number *</label><input type="tel" class="pm-input" required></div>
             <div class="pm-form-group"><label>Email Address *</label><input type="email" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Hospital Name *</label><input type="text" class="pm-input" required></div>
+            <div class="pm-form-group"><label>Hospital Name</label><input type="text" class="pm-input"></div>
             <div class="pm-form-group"><label>City *</label><input type="text" class="pm-input" required></div>
             <div class="pm-form-group"><label>Equipment Needed</label><textarea class="pm-textarea" required></textarea></div>
             <div class="pm-form-group"><label>Quantity Required</label><input type="number" class="pm-input"></div>
