@@ -1,47 +1,97 @@
-// PULSE Public Website — Supabase Client
-// This is the ANON/PUBLIC key — safe for client-side use.
-// RLS policies on Supabase restrict what anonymous users can do (INSERT only on form_submissions).
+﻿// PULSE Website — Google Sheets Form Connector
 (function () {
   'use strict';
-  const SUPABASE_URL = 'https://lgymrvtunpkntfmkddhl.supabase.co';
-  const SUPABASE_ANON_KEY = 'sb_publishable_dzQUy7N0BpQjMzVJcOvYVg_lhNqK3UB';
 
-  if (!window.supabase || !window.supabase.createClient) {
-    console.error('[pulse-forms] Supabase JS not loaded. Forms will not work.');
-    return;
-  }
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzglVLuVMPcXPwyK-fsUyNb0Uk0xqrMv-BPQHxT4jZJ72LEzVFZOxZB5e8umfJ7XTQpAQ/exec';
 
-  const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-  /**
-   * Unified form submission handler
-   * @param {Object} payload - The form data
-   * @returns {Promise<{success: boolean, error: any}>}
-   */
-  async function submitForm(payload) {
+  async function submitToSheet(payload) {
     try {
-      // Ensure basic fields exist
-      const data = {
-        form_type: payload.form_type || 'contact',
-        name: payload.name || null,
-        email: payload.email || null,
-        phone: payload.phone || null,
-        message: payload.message || null,
-        source_page: payload.source_page || window.location.href,
-        metadata: payload.metadata || {},
-        status: 'new',
-        created_at: new Date().toISOString()
-      };
-
-      const { error } = await sb.from('form_submissions').insert([data]);
-      if (error) throw error;
-      
-      return { success: true };
+      const formData = new FormData();
+      formData.append('payload', JSON.stringify(payload));
+      const response = await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: formData
+      });
+      const text = await response.text();
+      if (text === 'success') {
+        return { success: true };
+      } else {
+        console.error('[pulse-forms] Script returned:', text);
+        return { success: false, error: text };
+      }
     } catch (err) {
       console.error('[pulse-forms] Submission failed:', err);
       return { success: false, error: err };
     }
   }
 
-  window.PulsePublic = { sb, submitForm };
+  // Demo form submission
+  async function submitDemo(data) {
+    return submitToSheet({
+      formType: 'demo',
+      fullName: data.fullName || '',
+      mobile: data.mobile || '',
+      email: data.email || '',
+      hospitalName: data.hospitalName || '',
+      city: data.city || '',
+      equipmentCategory: data.equipmentCategory || '',
+      preferredDate: data.preferredDate || '',
+      message: data.message || ''
+    });
+  }
+
+  // Quote form submission
+  async function submitQuote(data) {
+    return submitToSheet({
+      formType: 'quote',
+      fullName: data.fullName || '',
+      mobile: data.mobile || '',
+      email: data.email || '',
+      hospitalName: data.hospitalName || '',
+      city: data.city || '',
+      equipmentNeeded: data.equipmentNeeded || '',
+      quantity: data.quantity || '',
+      budgetRange: data.budgetRange || '',
+      timeline: data.timeline || ''
+    });
+  }
+
+  // Job application submission
+  async function submitJob(data) {
+    const payload = {
+      formType: 'job',
+      appliedRole: data.appliedRole || '',
+      name: data.name || '',
+      phone: data.phone || '',
+      email: data.email || '',
+      skillDetails: data.skillDetails || '',
+      yearsExperience: data.yearsExperience || '',
+      message: data.message || '',
+      resumeFileName: data.resumeFileName || '',
+      resumeMimeType: data.resumeMimeType || '',
+      resumeBase64: data.resumeBase64 || ''
+    };
+    return submitToSheet(payload);
+  }
+
+  // AI Chat lead submission
+  async function submitChat(data) {
+    return submitToSheet({
+      formType: 'chat',
+      name: data.name || '',
+      phone: data.phone || '',
+      email: data.email || '',
+      userType: data.userType || '',
+      category: data.category || '',
+      message: data.message || ''
+    });
+  }
+
+  window.PulsePublic = {
+    submitDemo,
+    submitQuote,
+    submitJob,
+    submitChat
+  };
+
 })();
