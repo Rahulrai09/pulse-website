@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Dynamic dependency injector for Supabase and PulsePublic
         function ensurePulsePublic() {
           return new Promise((resolve) => {
-            if (window.PulsePublic && window.PulsePublic.submitForm) {
+            if (window.PulsePublic && window.PulsePublic.submitDemo) {
               resolve(true);
               return;
             }
@@ -266,15 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // First check window.supabase
-            const p = window.supabase ? Promise.resolve() : loadScript('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2');
-
-            p.then(() => {
-              // Now load pulse-forms.js if PulsePublic is missing
-              if (window.PulsePublic) {
-                return Promise.resolve();
-              }
-              return loadScript('js/pulse-forms.js');
-            }).then(() => {
+            loadScript('js/pulse-forms.js').then(() => {
               resolve(true);
             }).catch(err => {
               console.error('[footer] Failed to load form dependencies:', err);
@@ -297,43 +289,65 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Ensure dependency is loaded
             const loaded = await ensurePulsePublic();
-            if (!loaded || !window.PulsePublic || !window.PulsePublic.submitForm) {
+            if (!loaded || !window.PulsePublic || !window.PulsePublic.submitDemo) {
               alert('Sorry, submission service is currently unavailable. Please email Info@pulseio.in');
               btn.disabled = false;
               btn.textContent = origText;
               return;
             }
 
-            const payload = {
-              form_type: type,
-              name: form.querySelector('input[type="text"]')?.value || '',
-              phone: form.querySelector('input[type="tel"]')?.value || '',
-              email: form.querySelector('input[type="email"]')?.value || '',
-              message: form.querySelector('textarea')?.value || '',
-              source_page: window.location.href,
-              metadata: {}
-            };
-
-            // Custom metadata based on form type
-            if (type === 'demo') {
-              payload.metadata = {
-                organisation: form.querySelectorAll('input[type="text"]')[1]?.value || '',
-                city: form.querySelectorAll('input[type="text"]')[2]?.value || '',
-                category: form.querySelector('select')?.value || '',
-                date: form.querySelector('input[type="date"]')?.value || ''
-              };
-            } else {
-              payload.metadata = {
-                hospital: form.querySelectorAll('input[type="text"]')[1]?.value || '',
-                city: form.querySelectorAll('input[type="text"]')[2]?.value || '',
-                quantity: form.querySelector('input[type="number"]')?.value || '',
-                budget: form.querySelectorAll('select')[0]?.value || '',
-                timeline: form.querySelectorAll('select')[1]?.value || ''
-              };
-            }
-
+            let result;
             try {
-              const { success } = await window.PulsePublic.submitForm(payload);
+              if (type === 'demo') {
+                result = await window.PulsePublic.submitDemo({
+                  fullName: form.querySelector('input[name="fullName"],input[placeholder*="Name"],input[type="text"]')?.value || '',
+                  mobile: form.querySelector('input[type="tel"]')?.value || '',
+                  email: form.querySelector('input[type="email"]')?.value || '',
+                  hospitalName: form.querySelectorAll('input[type="text"]')[1]?.value || '',
+                  city: form.querySelectorAll('input[type="text"]')[2]?.value || '',
+                  equipmentCategory: form.querySelector('select')?.value || '',
+                  preferredDate: form.querySelector('input[type="date"]')?.value || '',
+                  message: form.querySelector('textarea')?.value || ''
+                });
+              } else if (type === 'quote') {
+                result = await window.PulsePublic.submitQuote({
+                  fullName: form.querySelector('input[type="text"]')?.value || '',
+                  mobile: form.querySelector('input[type="tel"]')?.value || '',
+                  email: form.querySelector('input[type="email"]')?.value || '',
+                  hospitalName: form.querySelectorAll('input[type="text"]')[1]?.value || '',
+                  city: form.querySelectorAll('input[type="text"]')[2]?.value || '',
+                  equipmentNeeded: form.querySelector('textarea')?.value || '',
+                  quantity: form.querySelector('input[type="number"]')?.value || '',
+                  budgetRange: form.querySelectorAll('select')[0]?.value || '',
+                  timeline: form.querySelectorAll('select')[1]?.value || ''
+                });
+              } else if (type === 'career') {
+                const resumeInput = form.querySelector('input[type="file"]');
+                let resumeBase64 = '', resumeFileName = '', resumeMimeType = '';
+                if (resumeInput && resumeInput.files && resumeInput.files[0]) {
+                  const file = resumeInput.files[0];
+                  resumeFileName = file.name;
+                  resumeMimeType = file.type;
+                  resumeBase64 = await new Promise((resolve) => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => resolve(e.target.result.split(',')[1]);
+                    reader.readAsDataURL(file);
+                  });
+                }
+                result = await window.PulsePublic.submitJob({
+                  appliedRole: form.querySelector('#careers-role-input')?.value || '',
+                  name: form.querySelector('input[type="text"]')?.value || '',
+                  phone: form.querySelector('input[type="tel"]')?.value || '',
+                  email: form.querySelector('input[type="email"]')?.value || '',
+                  skillDetails: form.querySelectorAll('input[type="text"]')[1]?.value || '',
+                  yearsExperience: form.querySelectorAll('input[type="text"]')[2]?.value || '',
+                  message: form.querySelector('textarea')?.value || '',
+                  resumeBase64,
+                  resumeFileName,
+                  resumeMimeType
+                });
+              }
+              const { success } = result || { success: false };
               if (success) {
                 form.closest('.pm-body').style.display = 'none';
                 form.closest('.pulse-modal').querySelector('.pm-success').style.display = 'flex';
