@@ -3342,6 +3342,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   font-family: 'Inter', sans-serif; transform: translateY(20px); opacity: 0;
   pointer-events: none; transition: all 0.3s ease;
 }
+@media (max-width: 400px) {
+  .pulse-chat-window {
+    width: calc(100vw - 24px);
+    height: calc(100vh - 140px);
+    right: 12px;
+    left: 12px;
+    bottom: 80px;
+  }
+}
 .pulse-chat-window.open { transform: translateY(0); opacity: 1; pointer-events: all; }
 
 .pulse-chat-header {
