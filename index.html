@@ -3515,6 +3515,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           renderBotMessage("Great choice! To connect you with our specialist, could you share your phone number or email?", []);
         } else if (chatStep === 3) {
           userData.contact = text;
+          // Submit chat lead to Google Sheets
+          const isEmail = userData.contact.includes('@');
+          if (window.PulsePublic && window.PulsePublic.submitChat) {
+            window.PulsePublic.submitChat({
+              name: userData.name,
+              phone: isEmail ? '' : userData.contact,
+              email: isEmail ? userData.contact : '',
+              userType: userData.role,
+              category: userData.category.replace(/^\d+\s*/, ''),
+              message: 'Chat lead from Pulse AI Assistant'
+            }).catch(err => console.error('[chat] Lead submission failed:', err));
+          }
           chatStep = 4;
           renderBotMessage(`Thank you, our ${userData.category.replace(/^\d+\s*/, '').replace(/\s*Care$/i, '')} Care expert will reach out within 24 hours. For urgent queries call 📞 +91 90711 01108 directly.`, []);
         } else {
