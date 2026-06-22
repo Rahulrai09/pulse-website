@@ -408,9 +408,9 @@
                     "label": "SURGICAL",
                     "products": [
                               {
-                                        "name": "Laparoscopy Equipment",
-                                        "image": "image/Portfolio/cardiac-care.webp",
-                                        "href": "surgical.html"
+                                        "name": "CircumEase Stapler",
+                                        "image": "image/Circumease/circumease-3.jpg",
+                                        "href": "surgical-circumease-stapler.html"
                               }
                     ]
                   },
