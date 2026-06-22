@@ -1,4 +1,4 @@
-/* ── GLOBAL HEADER STYLES ── */
+﻿/* ── GLOBAL HEADER STYLES ── */
 
 :root {
   --nav-bg:      #1c2b5e;
@@ -152,6 +152,8 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
 }
 .sub-product-link:hover { color: #fff; padding-left: 6px; }
 .col-featured { padding-left: 20px; border-left: 1px solid rgba(255,255,255,0.08); }
+.fc-img { width: 220px; height: 220px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+.fc-img img { width: 100%; height: 100%; object-fit: contain; }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateX(-6px); }
   to   { opacity: 1; transform: translateX(0); }
@@ -303,6 +305,8 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
 }
 .sub-product-link:hover { color: #fff; padding-left: 6px; }
 .col-featured { padding-left: 20px; border-left: 1px solid rgba(255,255,255,0.08); }
+.fc-img { width: 220px; height: 220px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+.fc-img img { width: 100%; height: 100%; object-fit: contain; }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateX(-6px); }
   to   { opacity: 1; transform: translateX(0); }
