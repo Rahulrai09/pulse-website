@@ -86,8 +86,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     .article-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 48px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 32px;
     }
 
     .article-card {
@@ -95,15 +95,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: inherit;
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 16px;
       transition: transform 300ms ease;
     }
     .article-card:hover { transform: translateY(-8px); }
     
     .article-img {
       width: 100%;
-      aspect-ratio: 16/9;
-      border-radius: 12px;
+      aspect-ratio: 4/3;
+      border-radius: 10px;
       overflow: hidden;
       background: #f4f6fa;
       position: relative;
@@ -173,6 +173,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: inline-block;
     }
 
+    .blog-placeholder-card {
+      cursor: default;
+      opacity: 0.85;
+    }
+    .blog-placeholder-card:hover { transform: none; }
+
     @media (max-width: 768px) {
       .article-grid { grid-template-columns: 1fr; }
     }
@@ -235,9 +241,77 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="article-container">
       <h2 class="section-subheading">Blogs</h2>
       <div class="article-grid">
-        <div class="coming-soon-msg" style="text-align:center; padding:48px; color:#888; font-size:1rem; grid-column:1/-1;">
-          Blog posts coming soon. Stay tuned.
-        </div>
+        <a class="article-card blog-placeholder-card">
+          <div class="article-img" style="background:#e8f0fe; display:flex; align-items:center; justify-content:center;">
+            <span style="font-size:2.5rem;">🩺</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">Coming Soon <span class="dot"></span> Blog</div>
+            <h3>What is CircumEase? A Guide to Disposable Circumcision Kits</h3>
+            <p>Everything you need to know about modern disposable circumcision kits and their role in safe, hygienic procedures.</p>
+            <span class="read-more" style="color:#888;">Coming Soon</span>
+          </div>
+        </a>
+
+        <a class="article-card blog-placeholder-card">
+          <div class="article-img" style="background:#e8f4fd; display:flex; align-items:center; justify-content:center;">
+            <span style="font-size:2.5rem;">🫁</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">Coming Soon <span class="dot"></span> Blog</div>
+            <h3>How ICU Ventilators Work: A Beginner's Guide</h3>
+            <p>Understanding the mechanics behind modern ICU ventilators and how they support critically ill patients.</p>
+            <span class="read-more" style="color:#888;">Coming Soon</span>
+          </div>
+        </a>
+
+        <a class="article-card blog-placeholder-card">
+          <div class="article-img" style="background:#eafaf1; display:flex; align-items:center; justify-content:center;">
+            <span style="font-size:2.5rem;">🏥</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">Coming Soon <span class="dot"></span> Blog</div>
+            <h3>Complete Guide to Hospital Setup: Equipment Every Facility Needs</h3>
+            <p>From ICU beds to OT lights — a comprehensive look at what it takes to equip a modern hospital facility.</p>
+            <span class="read-more" style="color:#888;">Coming Soon</span>
+          </div>
+        </a>
+
+        <a class="article-card blog-placeholder-card">
+          <div class="article-img" style="background:#fef9e7; display:flex; align-items:center; justify-content:center;">
+            <span style="font-size:2.5rem;">📊</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">Coming Soon <span class="dot"></span> Blog</div>
+            <h3>Patient Monitors Explained: What Each Parameter Means</h3>
+            <p>SpO2, NIBP, ECG, EtCO2 — breaking down every vital sign displayed on a modern patient monitor.</p>
+            <span class="read-more" style="color:#888;">Coming Soon</span>
+          </div>
+        </a>
+
+        <a class="article-card blog-placeholder-card">
+          <div class="article-img" style="background:#fdf2f8; display:flex; align-items:center; justify-content:center;">
+            <span style="font-size:2.5rem;">🖥️</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">Coming Soon <span class="dot"></span> Blog</div>
+            <h3>Types of Patient Monitors: 5-Para vs 7-Para vs 12-Para</h3>
+            <p>Choosing the right patient monitor for your ward, ICU or OT — a practical comparison of monitoring parameters.</p>
+            <span class="read-more" style="color:#888;">Coming Soon</span>
+          </div>
+        </a>
+
+        <a class="article-card blog-placeholder-card">
+          <div class="article-img" style="background:#f0f4ff; display:flex; align-items:center; justify-content:center;">
+            <span style="font-size:2.5rem;">💨</span>
+          </div>
+          <div class="article-content">
+            <div class="article-meta">Coming Soon <span class="dot"></span> Blog</div>
+            <h3>Types of Ventilators: ICU, Transport, Neonatal and More</h3>
+            <p>A clear breakdown of the different ventilator types used in hospitals — from high-acuity ICU to portable transport ventilators.</p>
+            <span class="read-more" style="color:#888;">Coming Soon</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
