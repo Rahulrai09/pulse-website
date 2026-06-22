@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <ul>
               <li><a href="about.html">About Us</a></li>
 
-              <li><a href="articles.html">Articles & Insights</a></li>
+              <li><a href="articles.html">Articles & Blogs</a></li>
               <li><a href="innovation.html">Innovation & R&D</a></li>
               <li><a href="life-at-pulse.html">Life at Pulse</a></li>
             </ul>
