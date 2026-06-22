@@ -163,6 +163,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin-top: 8px;
     }
 
+    .section-subheading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0a1e40;
+      margin-bottom: 32px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #E87722;
+      display: inline-block;
+    }
+
     @media (max-width: 768px) {
       .article-grid { grid-template-columns: 1fr; }
     }
@@ -186,7 +196,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="article-section">
     <div class="article-container">
-      
+      <h2 class="section-subheading">Articles</h2>
       <div class="article-grid">
         
         <!-- Article 1 -->
@@ -218,7 +228,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
 
       </div>
+    </div>
+  </section>
 
+  <section class="article-section" style="background:#f8f9fc;">
+    <div class="article-container">
+      <h2 class="section-subheading">Blogs</h2>
+      <div class="article-grid">
+        <div class="coming-soon-msg" style="text-align:center; padding:48px; color:#888; font-size:1rem; grid-column:1/-1;">
+          Blog posts coming soon. Stay tuned.
+        </div>
+      </div>
     </div>
   </section>
 
