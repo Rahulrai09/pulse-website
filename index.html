@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="preload" as="image" href="image/Banner/banner-1.webp" fetchpriority="high">
@@ -3137,6 +3137,86 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- AMTZ Factory Carousel -->
+<section style="padding: 80px 0; background: #f8f9fc; overflow: hidden;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 8%;margin-bottom:40px;">
+    <div style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#E63946;margin-bottom:12px;">OUR FACILITY</div>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:#0d1b2a;line-height:1.2;">Inside Our AMTZ Factory</h2>
+  </div>
+  <div class="amtz-carousel-wrapper" style="position:relative;overflow:hidden;cursor:grab;user-select:none;">
+    <div class="amtz-carousel-track" style="display:flex;gap:20px;width:max-content;animation:amtzScroll 40s linear infinite;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-1.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-2.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-3.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-4.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-5.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-6.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-7.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-8.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-9.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <!-- Duplicate for seamless loop -->
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-1.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-2.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-3.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-4.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-5.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-6.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-7.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-8.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+      <img src="image/Amtz carousal moving images/compressed/amtz-factory-9.jpg" alt="AMTZ Factory" style="height:380px;width:auto;border-radius:12px;pointer-events:none;">
+    </div>
+  </div>
+</section>
+<style>
+@keyframes amtzScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.amtz-carousel-wrapper:active { cursor: grabbing; }
+</style>
+<script>
+(function(){
+  var wrapper = document.querySelector('.amtz-carousel-wrapper');
+  var track = document.querySelector('.amtz-carousel-track');
+  if(!wrapper || !track) return;
+  var isDragging = false, startX = 0, scrollLeft = 0, animPaused = false;
+  var manualOffset = 0;
+
+  wrapper.addEventListener('mousedown', function(e){
+    isDragging = true;
+    startX = e.pageX;
+    track.style.animationPlayState = 'paused';
+    animPaused = true;
+    var mat = new WebKitCSSMatrix(getComputedStyle(track).transform);
+    scrollLeft = mat.m41;
+  });
+  window.addEventListener('mouseup', function(){
+    if(isDragging){ isDragging = false; }
+  });
+  window.addEventListener('mousemove', function(e){
+    if(!isDragging) return;
+    var dx = e.pageX - startX;
+    track.style.transform = 'translateX(' + (scrollLeft + dx) + 'px)';
+  });
+  wrapper.addEventListener('mouseleave', function(){
+    if(!isDragging && animPaused){
+      track.style.animationPlayState = 'running';
+      animPaused = false;
+    }
+  });
+  wrapper.addEventListener('mouseenter', function(){
+    // pause on hover
+    track.style.animationPlayState = 'paused';
+    animPaused = true;
+  });
+  // resume when not dragging and mouse leaves
+  wrapper.addEventListener('mouseleave', function(){
+    isDragging = false;
+    track.style.animationPlayState = 'running';
+    animPaused = false;
+  });
+})();
+</script>
 <!-- FAQ -->
 <section id="faq">
   <div class="faq-inner">
