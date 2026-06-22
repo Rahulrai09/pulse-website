@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     const headerHTML = `
     <!-- ANNOUNCEMENT BAR -->
     <style>
@@ -114,6 +114,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="category-row" data-cat="Cardiac Care" data-href="cardiac-care.html">
                   <a href="cardiac-care.html" class="category-name">Cardiac Care</a>
+                  <span class="chevron">&#8964;</span>
+                </div>
+                <div class="category-row" data-cat="Surgical" data-href="surgical.html">
+                  <a href="surgical.html" class="category-name">Surgical</a>
                   <span class="chevron">&#8964;</span>
                 </div>
                 <div class="category-row" data-cat="Aesthetics" data-href="aesthetics.html">
@@ -400,6 +404,16 @@ document.addEventListener('DOMContentLoaded', function() {
                               }
                     ]
           },
+          "Surgical": {
+                    "label": "SURGICAL",
+                    "products": [
+                              {
+                                        "name": "Laparoscopy Equipment",
+                                        "image": "image/Portfolio/cardiac-care.webp",
+                                        "href": "surgical.html"
+                              }
+                    ]
+                  },
           "Aesthetics": {
                     "label": "AESTHETICS",
                     "products": [
