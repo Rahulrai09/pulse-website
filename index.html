@@ -3140,8 +3140,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- AMTZ Factory Carousel -->
 <section style="padding: 80px 0; background: #f8f9fc; overflow: hidden; text-align: left;">
   <div style="max-width:1280px;margin:0 auto;padding:0 8%;margin-bottom:40px;text-align:left;">
-    <div style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#E63946;margin-bottom:12px;">OUR FACILITY</div>
-    <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;line-height:1.2;"><span style="color:#0d1b2a;">Inside Our </span><span style="color:#1B2F6E;">AMTZ Factory</span></h2>
+    <div class="amtz-section-label" style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#E63946;margin-bottom:12px;">OUR FACILITY</div>
+    <h2 class="amtz-section-heading" style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;line-height:1.2;"><span style="color:#0d1b2a;">Inside Our </span><span style="color:#1B2F6E;">AMTZ Factory</span></h2>
   </div>
   <div class="amtz-carousel-wrapper" style="position:relative;overflow:hidden;cursor:grab;user-select:none;">
     <div class="amtz-carousel-track" style="display:flex;gap:20px;width:max-content;animation:amtzScroll 80s linear infinite;">
@@ -3173,6 +3173,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   100% { transform: translateX(-50%); }
 }
 .amtz-carousel-wrapper:active { cursor: grabbing; }
+@media (max-width: 768px) {
+  .amtz-carousel-wrapper img { height: 200px !important; }
+  .amtz-section-heading { font-size: clamp(1rem,4.5vw,1.4rem) !important; }
+  .amtz-section-label { font-size: 0.65rem !important; }
+}
+@media (max-width: 480px) {
+  .amtz-carousel-wrapper img { height: 150px !important; }
+  .amtz-section-heading { font-size: clamp(0.9rem,4vw,1.2rem) !important; }
+}
 </style>
 <script>
 (function(){
