@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const headerHTML = `
     <!-- ANNOUNCEMENT BAR -->
     <style>
@@ -800,7 +800,7 @@ const searchMap = [
   { keywords: ['medicine trolley'], url: 'medicine-trolley.html' },
   { keywords: ['medicine cart'], url: 'medicine-cart.html' },
   { keywords: ['hospital wheelchair'], url: 'hospital-wheelchair.html' },
-  { keywords: ['circumease','circumcision kit','disposable circumcision'], url: 'circumease-disposable-circumcision-kit.html' },
+  { keywords: ['circumease','circumcision kit','disposable circumcision','circumcision'], url: 'surgical-circumease-stapler.html' },
   { keywords: ['blood donation chair'], url: 'blood-donation-chair.html' },
   { keywords: ['overbed table','ob table'], url: 'ob-table-overbed-table.html' },
   { keywords: ['sliding glass door'], url: 'sliding-glass-door-unit.html' },
@@ -930,8 +930,7 @@ const searchMap = [
       'emergency trolley','medicine trolley','instrument trolley',
       'saline stand','stool','round stool','locker','filing cabinet',
       'overbed table','baby warmer','infant warmer','medical gas',
-      'gas pipeline','trolley','medicine cart','emergency cart',
-      'circumcision','circumease'
+      'gas pipeline','trolley','medicine cart','emergency cart'
     ],
     url: 'hospital-setup.html'
   },
