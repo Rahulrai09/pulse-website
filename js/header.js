@@ -1181,7 +1181,7 @@ if (mobileSearch) {
 });
 
 // ── SEARCH SUGGESTIONS ──
-(function(){
+setTimeout(function(){
   var searchInput = document.getElementById('nav-search-input');
   if (!searchInput) return;
 
@@ -1252,4 +1252,4 @@ if (mobileSearch) {
   searchInput.addEventListener('focus', function() {
     if (this.value.length >= 2) renderSuggestions(this.value);
   });
-})();
+}, 300);
