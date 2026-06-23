@@ -1189,7 +1189,7 @@ setTimeout(function(){
   var suggestBox = document.createElement('div');
   suggestBox.id = 'search-suggestions';
   suggestBox.style.cssText = 'position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid #e2e8f0;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.12);z-index:9999;max-height:320px;overflow-y:auto;display:none;';
-  searchInput.parentNode.style.position = 'relative';
+  // position handled by CSS
   searchInput.parentNode.appendChild(suggestBox);
 
   // Build suggestions list from searchMap
