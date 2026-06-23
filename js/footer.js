@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     const footerHTML = `
     <footer class="premium-footer">
       <!-- Pre-Footer Strip -->
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="pf-col">
             <h5>SUPPORT</h5>
             <ul>
-              <li><a href="https://mail.google.com/mail/?view=cm&to=Info@pulseio.in" target="_blank" rel="noopener noreferrer">Request Demo</a></li>
+              <li><a href="#" onclick="document.getElementById('demo-modal-overlay').classList.add('open'); return false;">Request Demo</a></li>
               <li><a href="#" onclick="document.getElementById('quote-modal-overlay').classList.add('open'); return false;">Get a Quote</a></li>
               <li><a href="service-support.html">Service Support</a></li>
             </ul>
