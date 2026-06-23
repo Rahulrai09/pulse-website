@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     const headerHTML = `
     <!-- ANNOUNCEMENT BAR -->
     <style>
@@ -1179,3 +1179,77 @@ if (mobileSearch) {
         });
     }
 });
+
+// ── SEARCH SUGGESTIONS ──
+(function(){
+  var searchInput = document.getElementById('nav-search-input');
+  if (!searchInput) return;
+
+  // Create suggestions dropdown
+  var suggestBox = document.createElement('div');
+  suggestBox.id = 'search-suggestions';
+  suggestBox.style.cssText = 'position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid #e2e8f0;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.12);z-index:9999;max-height:320px;overflow-y:auto;display:none;';
+  searchInput.parentNode.style.position = 'relative';
+  searchInput.parentNode.appendChild(suggestBox);
+
+  // Build suggestions list from searchMap
+  function getSuggestions(query) {
+    if (!query || query.length < 2) return [];
+    var q = query.toLowerCase().trim();
+    var results = [];
+    var seen = {};
+    if (typeof searchMap !== 'undefined') {
+      searchMap.forEach(function(entry) {
+        var matched = false;
+        var label = '';
+        if (entry.keywords) {
+          entry.keywords.forEach(function(k) {
+            if (k.toLowerCase().indexOf(q) !== -1 && !matched) {
+              matched = true;
+              label = k.charAt(0).toUpperCase() + k.slice(1);
+            }
+          });
+        }
+        if (matched && !seen[entry.url]) {
+          seen[entry.url] = true;
+          results.push({ label: label, url: entry.url });
+        }
+      });
+    }
+    return results.slice(0, 6);
+  }
+
+  function renderSuggestions(query) {
+    var items = getSuggestions(query);
+    if (!items.length) { suggestBox.style.display = 'none'; return; }
+    suggestBox.innerHTML = '';
+    items.forEach(function(item) {
+      var div = document.createElement('div');
+      div.style.cssText = 'padding:10px 16px;cursor:pointer;font-size:14px;color:#0d1b2a;display:flex;align-items:center;gap:8px;border-bottom:1px solid #f0f0f0;';
+      div.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" style="width:14px;height:14px;flex-shrink:0;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' + item.label;
+      div.addEventListener('mouseenter', function(){ this.style.background='#f8f9fc'; });
+      div.addEventListener('mouseleave', function(){ this.style.background=''; });
+      div.addEventListener('mousedown', function(e){
+        e.preventDefault();
+        window.location.href = item.url;
+      });
+      suggestBox.appendChild(div);
+    });
+    suggestBox.style.display = 'block';
+  }
+
+  searchInput.addEventListener('input', function() {
+    renderSuggestions(this.value);
+  });
+  searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { suggestBox.style.display = 'none'; }
+  });
+  document.addEventListener('click', function(e) {
+    if (!suggestBox.contains(e.target) && e.target !== searchInput) {
+      suggestBox.style.display = 'none';
+    }
+  });
+  searchInput.addEventListener('focus', function() {
+    if (this.value.length >= 2) renderSuggestions(this.value);
+  });
+})();
