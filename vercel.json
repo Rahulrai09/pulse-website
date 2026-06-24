@@ -1,4 +1,4 @@
-﻿{
+{
   "redirects": [
     { "source": "/critical", "destination": "/critical-care.html", "permanent": false },
     { "source": "/criticalcare", "destination": "/critical-care.html", "permanent": false },
@@ -29,7 +29,7 @@
     { "source": "/terms", "destination": "/terms-and-conditions.html", "permanent": false },
     { "source": "/blogs", "destination": "/articles.html", "permanent": false },
     { "source": "/blog", "destination": "/articles.html", "permanent": false },
-    { "source": "/contact", "destination": "/index.html#contact", "permanent": false },
+    { "source": "/contact", "destination": "/index.html", "permanent": false },
     { "source": "/products", "destination": "/categories.html", "permanent": false },
     { "source": "/categories", "destination": "/categories.html", "permanent": false },
     { "source": "/ventilator", "destination": "/critical-sh320-ventilator.html", "permanent": false },
