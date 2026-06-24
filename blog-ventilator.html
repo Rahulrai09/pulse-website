@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16TN7FZCYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16TN7FZCYT');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5DZWPXR');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://www.pulseio.in/blog-ventilator.html" />
+  <title>How ICU Ventilators Work: A Beginner's Guide | Pulse</title>
+  <meta name="description" content="A complete beginner's guide to ICU ventilators — how they work, the different ventilation modes, and why the right ventilator matters for patient outcomes in Indian hospitals.">
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #0a1e40;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    .blog-banner {
+      width: 100%;
+      max-height: 560px;
+      overflow: hidden;
+      background: #f4f6fa;
+    }
+    .blog-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .blog-article {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 64px 24px 100px;
+    }
+    .blog-meta {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #E63946;
+      margin-bottom: 14px;
+    }
+    .blog-meta .dot { color: #9ca3af; margin: 0 8px; }
+    .blog-meta .date { color: #6b7280; }
+
+    .blog-title {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #0a1e40;
+      margin-bottom: 18px;
+    }
+    .blog-deck {
+      font-size: 18px;
+      color: #4b5563;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .blog-article h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #0a1e40;
+      margin: 40px 0 14px;
+      letter-spacing: -0.01em;
+    }
+    .blog-article p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #1f2937;
+      margin-bottom: 18px;
+    }
+    .blog-article blockquote {
+      border-left: 3px solid #E63946;
+      padding: 8px 22px;
+      margin: 28px 0;
+      font-size: 17px;
+      line-height: 1.65;
+      color: #0a1e40;
+      font-style: italic;
+      background: #f9fafb;
+    }
+    .blog-article ul, .blog-article ol {
+      margin: 0 0 18px 24px;
+    }
+    .blog-article li {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 15px;
+    }
+    .spec-table th {
+      background: #1B2F6E;
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .spec-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      color: #1f2937;
+    }
+    .spec-table tr:nth-child(even) td { background: #f9fafb; }
+
+    .mode-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0 28px;
+    }
+    .mode-badge {
+      background: #1B2F6E;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .cta-bar {
+      background: #1B2F6E;
+      padding: 60px 8%;
+      text-align: center;
+      color: #fff;
+    }
+    .cta-bar h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; margin-bottom: 12px; }
+    .cta-bar p { font-size: 1rem; color: rgba(255,255,255,0.8); margin-bottom: 28px; }
+    .cta-bar a {
+      display: inline-block;
+      background: #fff;
+      color: #1B2F6E;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 6px;
+    }
+    .cta-bar a.outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    .more-reading {
+      display: flex;
+      justify-content: flex-end;
+      padding: 32px 5%;
+      background: #f9fafb;
+    }
+    .more-reading a {
+      background: #1B2F6E;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-align: right;
+    }
+    .more-reading a span { display: block; font-size: 0.75rem; opacity: 0.7; font-weight: 400; margin-bottom: 2px; }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="global-header"></div>
+
+<!-- Banner -->
+<div class="blog-banner">
+  <img src="image/Blog venti image.png" alt="ICU Ventilator — Pulse SH320">
+</div>
+
+<!-- Article -->
+<article class="blog-article">
+  <div class="blog-meta">
+    June 24, 2026 <span class="dot">•</span> Blog <span class="dot">•</span> Critical Care
+  </div>
+  <h1 class="blog-title">How ICU Ventilators Work: A Beginner's Guide</h1>
+  <p class="blog-deck">Understanding the mechanics behind modern ICU ventilators — and why the right machine can mean the difference between a stable recovery and a critical complication.</p>
+
+  <h2>What Is an ICU Ventilator?</h2>
+  <p>An ICU ventilator is a medical device that assists or replaces a patient's breathing when they are unable to breathe adequately on their own. It delivers a controlled mixture of air and oxygen into the lungs, monitors respiratory parameters in real time, and adjusts automatically to match the patient's clinical needs.</p>
+  <p>Ventilators are used across neonatal, paediatric, and adult patients — in intensive care units, operation theatres, and emergency departments. They are one of the most critical pieces of equipment in any hospital that handles serious illness or trauma.</p>
+
+  <h2>Who Needs a Ventilator?</h2>
+  <p>A patient may require mechanical ventilation when:</p>
+  <ul>
+    <li>They cannot breathe independently due to respiratory failure</li>
+    <li>They are under general anaesthesia during surgery</li>
+    <li>They have suffered a stroke, severe infection (sepsis), or lung injury</li>
+    <li>They are a premature neonate with underdeveloped lungs</li>
+    <li>They are recovering from major trauma or cardiac arrest</li>
+  </ul>
+  <p>Modern ICU ventilators like the Pulse SH320 are designed to support all three patient populations — neonates, paediatric patients, and adults — using a single device, which significantly reduces procurement complexity for hospitals.</p>
+
+  <h2>How Does a Ventilator Work?</h2>
+  <p>At its core, a ventilator works by generating positive pressure to push air into the lungs. The machine controls three key variables: the volume of air delivered per breath (tidal volume), the pressure applied during inhalation, and the rate of breathing (respiratory frequency).</p>
+  <p>Between breaths, the ventilator allows passive exhalation — the lungs naturally deflate due to their elastic recoil. A baseline pressure called PEEP (Positive End-Expiratory Pressure) is maintained at the end of each breath to keep the alveoli open and prevent lung collapse.</p>
+  <p>The ventilator also monitors oxygen saturation, CO₂ levels, airway resistance, and compliance (how easily the lungs expand) — providing the clinical team with a continuous picture of respiratory function.</p>
+
+  <h2>Ventilation Modes Explained</h2>
+  <p>One of the most important decisions in mechanical ventilation is selecting the right mode. Different modes give different levels of control to the machine versus the patient, depending on how much spontaneous breathing effort the patient can make.</p>
+
+  <div class="mode-grid">
+    <span class="mode-badge">VCV</span>
+    <span class="mode-badge">PCV</span>
+    <span class="mode-badge">SIMV-V</span>
+    <span class="mode-badge">SIMV-P</span>
+    <span class="mode-badge">CPAP/PSV</span>
+    <span class="mode-badge">PRVC</span>
+    <span class="mode-badge">APRV</span>
+    <span class="mode-badge">VS</span>
+    <span class="mode-badge">SMV</span>
+    <span class="mode-badge">CPRV</span>
+    <span class="mode-badge">SIMV-PRVC</span>
+    <span class="mode-badge">DualVent</span>
+  </div>
+
+  <p><strong>VCV (Volume Controlled Ventilation)</strong> delivers a fixed tidal volume with each breath — ensuring consistent lung inflation regardless of airway resistance. It is typically used for fully sedated patients.</p>
+  <p><strong>PCV (Pressure Controlled Ventilation)</strong> delivers breaths up to a set pressure limit. The volume delivered varies with lung compliance — making it gentler for patients with fragile lungs.</p>
+  <p><strong>SIMV (Synchronised Intermittent Mandatory Ventilation)</strong> allows the patient to take spontaneous breaths between mandatory machine breaths. It is commonly used during the weaning process — gradually reducing the patient's dependence on the ventilator.</p>
+  <p><strong>CPAP/PSV (Continuous Positive Airway Pressure / Pressure Support Ventilation)</strong> provides a baseline pressure and supports the patient's own breathing effort. It is used when the patient is breathing independently but needs assistance.</p>
+  <p><strong>PRVC (Pressure Regulated Volume Control)</strong> combines the benefits of both volume and pressure control — delivering a target tidal volume while minimising peak airway pressure.</p>
+
+  <blockquote>The right ventilation mode is not a fixed choice — it evolves with the patient's condition, and the best ventilators make switching modes seamless and safe.</blockquote>
+
+  <h2>Key Features to Look For in an ICU Ventilator</h2>
+  <p>Not all ventilators are equal. When evaluating a ventilator for a hospital or ICU, here are the clinical and operational features that matter most:</p>
+  <ul>
+    <li><strong>Multi-patient capability:</strong> Adult, paediatric, and neonatal support in a single unit reduces procurement cost and training complexity</li>
+    <li><strong>Turbine technology:</strong> Eliminates dependency on a piped gas supply — critical for hospitals in tier-2 and tier-3 cities</li>
+    <li><strong>Large touchscreen display:</strong> An 18.5-inch colour touchscreen enables clear waveform monitoring and intuitive mode selection</li>
+    <li><strong>Battery backup:</strong> Up to 6 hours with two batteries — essential during power outages or patient transport</li>
+    <li><strong>Comprehensive waveform monitoring:</strong> Five waveforms and four loops (Paw-Volume, Flow-Volume, Paw-Flow, Volume-CO₂) give clinicians detailed real-time insight</li>
+    <li><strong>Auxiliary functions:</strong> Lung recruitment tools, PV tools, and PEEPi monitoring for advanced respiratory management</li>
+    <li><strong>Connectivity:</strong> Network, RS-232, HDMI, and USB port support for EMR integration and data logging</li>
+  </ul>
+
+  <h2>Pulse SH320 — Product Specifications</h2>
+  <p>The Pulse SH320 is a versatile ICU ventilator engineered for neonates, paediatrics, and adults. It features turbine technology, an 18.5-inch touchscreen, and supports invasive, non-invasive, and high-flow oxygen therapy.</p>
+
+  <table class="spec-table">
+    <thead>
+      <tr>
+        <th>Parameter</th>
+        <th>Specification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Patient Type</td><td>Adult, Pediatric, Neonate</td></tr>
+      <tr><td>Dimensions (HWD)</td><td>365mm × 385mm × 245mm (excluding trolley)</td></tr>
+      <tr><td>Weight</td><td>Approximately ≤12 Kg (main unit)</td></tr>
+      <tr><td>Screen</td><td>13.3 or 15.6-inch colour active matrix capacitive touch screen</td></tr>
+      <tr><td>Tidal Volume — Adult</td><td>100–4000 ml</td></tr>
+      <tr><td>Tidal Volume — Pediatric</td><td>20–300 ml</td></tr>
+      <tr><td>Tidal Volume — Neonate</td><td>2–100 ml</td></tr>
+      <tr><td>O₂ Concentration</td><td>21–100%</td></tr>
+      <tr><td>Respiratory Frequency</td><td>Adult/Pediatric: 1–100 /min; Neonate: 1–150 /min</td></tr>
+      <tr><td>I:E Ratio</td><td>1:10–10:1</td></tr>
+      <tr><td>PEEP</td><td>OFF, 1–50 cmH₂O</td></tr>
+      <tr><td>Battery Backup</td><td>150 min (one battery); up to 6 hours (two batteries)</td></tr>
+      <tr><td>Battery Type</td><td>Built-in Lithium-ion, 14.4 VDC</td></tr>
+      <tr><td>Power Input</td><td>100–240 V; 50/60 Hz</td></tr>
+      <tr><td>Connectivity</td><td>Network, RS-232, Nurse call, HDMI, USB</td></tr>
+      <tr><td>Waveforms</td><td>Airway pressure-time, Flow-time, Volume-time, CO₂-time</td></tr>
+      <tr><td>Loops</td><td>Paw-Volume, Flow-Volume, Paw-Flow, Volume-CO₂</td></tr>
+      <tr><td>Trend Storage</td><td>72 hours (tabular and graphic)</td></tr>
+      <tr><td>Log</td><td>Up to 5000 alarm and operation entries</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Why the Right Ventilator Matters for Indian Hospitals</h2>
+  <p>India's healthcare infrastructure spans everything from 500-bed corporate hospitals in metros to 30-bed district hospitals in semi-urban areas. A ventilator that works well in one setting must also work reliably in the other — without a constant piped gas supply, with inconsistent power, and with clinical teams who may be managing multiple critical patients simultaneously.</p>
+  <p>No more juggling vendors. No more disappearing service. No more waiting weeks. Pulse is a horizontal MedTech OEM brand — bringing quality, service, speed, and value into one accountable partnership.</p>
+  <p>The Pulse SH320 is built with these realities in mind: turbine-driven so it doesn't depend on wall oxygen, battery-backed for up to 6 hours, and supported by Pulse's pan-India service network with a 72-hour response commitment.</p>
+
+  <h2>The Bottom Line</h2>
+  <p>An ICU ventilator is not a commodity purchase — it is a clinical decision that affects patient outcomes directly. Understanding how ventilators work, what modes they support, and what specifications matter helps procurement teams and clinicians make the right choice for their facility.</p>
+  <p>If you're evaluating ICU ventilators for your hospital, Pulse's team is available to walk you through a demonstration, provide technical specifications, and support your clinical assessment process.</p>
+
+  <p><a href="critical-care.html" style="color:#E63946; font-weight:600; text-decoration:none;">Visit the Pulse Critical Care Product Page →</a></p>
+</article>
+
+<div class="more-reading">
+  <a href="articles.html">
+    <span>MORE READING</span>
+    Explore More Blogs →
+  </a>
+</div>
+
+<!-- CTA -->
+<section class="cta-bar">
+  <h2>Ready to equip your facility with Made-in-India medical technology?</h2>
+  <p>Request a demo of the Pulse SH320 ICU Ventilator or speak to our clinical team.</p>
+  <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer">Contact Us on WhatsApp</a>
+  <a href="https://wa.me/919071101108?text=Hi%2C%20I%20would%20like%20to%20request%20the%20brochure%20for%20Pulse%20SH320%20ICU%20Ventilator" target="_blank" rel="noopener noreferrer" class="outline">Request Brochure</a>
+</section>
+
+<div id="global-footer"></div>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
