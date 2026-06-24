@@ -262,10 +262,11 @@
           </div>
         </li>
       </ul>
-      <!-- Mobile search icon -->
+
+
       <!-- Mobile right controls -->
-      <div class="mob-right">
       <div class="mob-right" id="mob-right" style="display:none;">
+        <button class="mob-search-btn" id="mob-search-btn" aria-label="Search">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
         <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
@@ -274,7 +275,6 @@
           <span></span>
         </button>
       </div>
-
       <!-- Slide-down mobile menu -->
       <div class="mobile-menu" id="mobileMenu">
         <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
