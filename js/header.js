@@ -127,10 +127,10 @@
         .mob-search-btn { display: none !important; }
         .mob-search-overlay { display: none !important; }
         .mob-right { display: none !important; }
-      }
-        .mobile-search-item { display: none !important; }
-        .mob-search-btn { display: none !important; }
-        .mob-search-overlay { display: none !important; }
+
+
+
+
       }
     </style>
     <div class="ann-bar">
