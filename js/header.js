@@ -1160,6 +1160,7 @@ if (desktopSearch) {
 }
 
 // Mobile search icon + overlay
+if (window.innerWidth <= 1024) { var mr = document.getElementById('mob-right'); if(mr) mr.style.display='flex'; }
 const mobSearchBtn = document.getElementById('mob-search-btn');
 const mobSearchOverlay = document.getElementById('mob-search-overlay');
 const mobSearchInput = document.getElementById('mob-search-input');
