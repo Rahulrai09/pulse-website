@@ -265,7 +265,7 @@
 
 
       <!-- Mobile right controls -->
-      <div class="mob-right" id="mob-right" style="display:none;">
+      <div class="mob-right" id="mob-right">
         <button class="mob-search-btn" id="mob-search-btn" aria-label="Search">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
@@ -1160,7 +1160,7 @@ if (desktopSearch) {
 }
 
 // Mobile search icon + overlay
-if (window.innerWidth <= 1024) { var mr = document.getElementById('mob-right'); if(mr) mr.style.display='flex'; }
+// mobile search handled by CSS only
 const mobSearchBtn = document.getElementById('mob-search-btn');
 const mobSearchOverlay = document.getElementById('mob-search-overlay');
 const mobSearchInput = document.getElementById('mob-search-input');
