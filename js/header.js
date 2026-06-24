@@ -1165,7 +1165,7 @@ if (mobSearchInput) {
     }
   });
 }
-
+var mr = document.getElementById('mob-right'); if(mr && window.innerWidth <= 1024){ mr.style.display='flex'; }
         if (hamburger && mobileMenu) {
             hamburger.addEventListener('click', () => {
                 mobileMenu.classList.toggle('open');
