@@ -62,16 +62,49 @@
       }
       
       @media (max-width: 768px) {
-        .mobile-search-item {
-          display: block;
-          padding: 12px 16px;
-          border-top: 1px solid rgba(255,255,255,0.1);
+        .mobile-search-item { display: none !important; }
+        .mob-search-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 6px;
+          color: #fff;
+        }
+        .mob-search-overlay {
+          display: none;
+          position: fixed;
+          top: 0; left: 0; right: 0;
+          background: #1B2F6E;
+          padding: 14px 16px;
+          z-index: 9999;
+          align-items: center;
+          gap: 10px;
+        }
+        .mob-search-overlay.open { display: flex; }
+        .mob-search-overlay input {
+          flex: 1;
+          padding: 10px 14px;
+          border-radius: 6px;
+          border: none;
+          font-size: 15px;
+          outline: none;
+        }
+        .mob-search-overlay button {
+          background: none;
+          border: none;
+          color: #fff;
+          font-size: 22px;
+          cursor: pointer;
+          padding: 4px 8px;
         }
       }
       @media (min-width: 769px) {
-        .mobile-search-item {
-          display: none !important;
-        }
+        .mobile-search-item { display: none !important; }
+        .mob-search-btn { display: none !important; }
+        .mob-search-overlay { display: none !important; }
       }
     </style>
     <div class="ann-bar">
@@ -203,6 +236,10 @@
           </div>
         </li>
       </ul>
+      <!-- Mobile search icon -->
+      <button class="mob-search-btn" id="mob-search-btn" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
       <!-- Hamburger button -->
       <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
         <span></span>
@@ -234,14 +271,12 @@
         <div style="height: 1px; background: rgba(255,255,255,0.1); margin: 10px 0;"></div>
         <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer">Call Support</a>
         <a href="https://mail.google.com/mail/?view=cm&to=Info@pulseio.in" target="_blank" rel="noopener noreferrer">Email Us</a>
-        <div class="mobile-search-item">
-          <input type="text"
-            id="mobile-search-bar"
-            placeholder="Search..."
-            style="width:100%; padding:10px 14px; border-radius:6px;
-                   border:none; font-size:14px; margin-top:4px;"
-          />
-        </div>
+      </div>
+
+      <!-- Mobile search overlay -->
+      <div class="mob-search-overlay" id="mob-search-overlay">
+        <input type="text" id="mob-search-input" placeholder="Search products, pages…" autocomplete="off">
+        <button id="mob-search-close" aria-label="Close">&times;</button>
       </div>
     </nav>
     `;
@@ -1096,11 +1131,34 @@ if (desktopSearch) {
   });
 }
 
-// Mobile search input
-const mobileSearch = document.getElementById('mobile-search-bar');
-if (mobileSearch) {
-  mobileSearch.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') handleSearch(this.value);
+// Mobile search icon + overlay
+const mobSearchBtn = document.getElementById('mob-search-btn');
+const mobSearchOverlay = document.getElementById('mob-search-overlay');
+const mobSearchInput = document.getElementById('mob-search-input');
+const mobSearchClose = document.getElementById('mob-search-close');
+
+if (mobSearchBtn && mobSearchOverlay) {
+  mobSearchBtn.addEventListener('click', () => {
+    mobSearchOverlay.classList.add('open');
+    setTimeout(() => { if (mobSearchInput) mobSearchInput.focus(); }, 100);
+  });
+}
+if (mobSearchClose && mobSearchOverlay) {
+  mobSearchClose.addEventListener('click', () => {
+    mobSearchOverlay.classList.remove('open');
+    if (mobSearchInput) mobSearchInput.value = '';
+  });
+}
+if (mobSearchInput) {
+  mobSearchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      handleSearch(this.value);
+      mobSearchOverlay.classList.remove('open');
+    }
+    if (e.key === 'Escape') {
+      mobSearchOverlay.classList.remove('open');
+      this.value = '';
+    }
   });
 }
 
