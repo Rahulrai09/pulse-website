@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const headerHTML = `
     <!-- ANNOUNCEMENT BAR -->
     <style>
@@ -219,7 +219,7 @@
           <button class="nav-search-btn" id="nav-search-btn" aria-label="Search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </button>
-          <div class="nav-search-bar" id="nav-search-bar">
+          <div class="nav-search-bar" id="nav-search-bar" style="display:none;">
             <input type="text" id="nav-search-input" placeholder="Search products, pages…" autocomplete="off" aria-label="Search site">
             <button class="nav-search-close" id="nav-search-close" aria-label="Close search">&times;</button>
           </div>
@@ -1234,25 +1234,23 @@ if (mobSearchInput) {
             searchBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                searchBar.classList.toggle('open');
-                if (searchBar.classList.contains('open')) {
+                const isOpen = searchBar.classList.contains('open');
+                if (isOpen) {
+                    searchBar.classList.remove('open');
+                    searchBar.style.display = 'none';
+                } else {
+                    searchBar.style.display = 'flex';
+                    searchBar.classList.add('open');
                     searchInput.focus();
                 }
             });
-
             if (searchClose) {
                 searchClose.addEventListener('click', () => {
                     searchBar.classList.remove('open');
+                    searchBar.style.display = 'none';
                     searchInput.value = '';
                 });
             }
-
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && searchBar.classList.contains('open')) {
-                    searchBar.classList.remove('open');
-                    searchInput.value = '';
-                }
-            });
         }
         
         // Hover image swap in product dropdown
