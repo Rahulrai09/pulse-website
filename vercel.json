@@ -1,4 +1,4 @@
-{
+﻿{
   "redirects": [
     { "source": "/critical", "destination": "/critical-care.html", "permanent": false },
     { "source": "/criticalcare", "destination": "/critical-care.html", "permanent": false },
@@ -17,6 +17,16 @@
     { "source": "/about", "destination": "/about.html", "permanent": false },
     { "source": "/quality", "destination": "/quality.html", "permanent": false },
     { "source": "/articles", "destination": "/articles.html", "permanent": false },
+    { "source": "/article", "destination": "/articles.html", "permanent": false },
+    { "source": "/blog-circumease", "destination": "/blog-circumease.html", "permanent": false },
+    { "source": "/blog-ventilator", "destination": "/blog-ventilator.html", "permanent": false },
+    { "source": "/why-pulse", "destination": "/why-pulse.html", "permanent": false },
+    { "source": "/how-it-works", "destination": "/how-it-works.html", "permanent": false },
+    { "source": "/service", "destination": "/service-support.html", "permanent": false },
+    { "source": "/innovation", "destination": "/innovation.html", "permanent": false },
+    { "source": "/life", "destination": "/life-at-pulse.html", "permanent": false },
+    { "source": "/privacy", "destination": "/privacy-policy.html", "permanent": false },
+    { "source": "/terms", "destination": "/terms-and-conditions.html", "permanent": false },
     { "source": "/blogs", "destination": "/articles.html", "permanent": false },
     { "source": "/blog", "destination": "/articles.html", "permanent": false },
     { "source": "/contact", "destination": "/index.html#contact", "permanent": false },
