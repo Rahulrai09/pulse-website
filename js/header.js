@@ -61,7 +61,7 @@
         background: rgba(255,255,255,0.1);
       }
       
-      @media (max-width: 1024px) {
+      @media (max-width: 768px) {
       @media (max-width: 768px) {
         .mobile-search-item { display: none !important; }
         /* Right side wrapper: search icon + hamburger together */
