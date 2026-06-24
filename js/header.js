@@ -125,9 +125,9 @@
       @media (min-width: 769px) {
         .mobile-search-item { display: none !important; }
         .mob-search-btn { display: none !important; }
-        .mob-search-overlay { display: none !important; }
+        .mob-search-overlay { display: none !important; visibility: hidden !important; }
         .mob-right { display: none !important; }
-
+        #mob-search-overlay { display: none !important; visibility: hidden !important; }
 
 
 
