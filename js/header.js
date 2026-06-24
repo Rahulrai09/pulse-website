@@ -61,8 +61,8 @@
         background: rgba(255,255,255,0.1);
       }
       
-      @media (max-width: 768px) {
-
+      .mob-right { display: none; }
+      .mob-search-overlay { display: none; }
         .mobile-search-item { display: none !important; }
         /* Right side wrapper: search icon + hamburger together */
         .mob-right {
