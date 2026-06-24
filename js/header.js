@@ -122,7 +122,7 @@
           flex-shrink: 0;
         }
       }
-      @media (min-width: 769px) {
+      @media (min-width: 1025px) {
         .mobile-search-item { display: none !important; }
         .mob-search-btn { display: none !important; }
         .mob-search-overlay { display: none !important; visibility: hidden !important; }
