@@ -72,19 +72,16 @@
           cursor: pointer;
           padding: 6px;
           color: #fff;
-          margin-left: auto;
-          margin-right: 4px;
         }
         .mob-search-overlay {
           display: none;
           position: fixed;
-          top: 68px; left: 0; right: 0;
+          top: 0; left: 0; right: 0;
           background: #1B2F6E;
-          padding: 12px 16px;
-          z-index: 9998;
+          padding: 14px 16px;
+          z-index: 9999;
           align-items: center;
           gap: 10px;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .mob-search-overlay.open { display: flex; }
         .mob-search-overlay input {
