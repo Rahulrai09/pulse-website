@@ -61,12 +61,15 @@
         background: rgba(255,255,255,0.1);
       }
       
-      .mob-right { display: none; }
-      .mob-search-overlay { display: none; }
-        .mobile-search-item { display: none !important; }
-        /* Right side wrapper: search icon + hamburger together */
+      /* Mobile search - hidden by default */
+      .mob-right { display: none !important; }
+      .mob-search-overlay { display: none !important; }
+      .mobile-search-item { display: none !important; }
+
+      /* Show on mobile only */
+      @media (max-width: 1024px) {
         .mob-right {
-          display: flex;
+          display: flex !important;
           align-items: center;
           gap: 2px;
           margin-left: auto;
@@ -81,9 +84,8 @@
           padding: 6px;
           color: #fff;
         }
-        /* Slide bar - same effect as desktop, opens below nav */
         .mob-search-overlay {
-          display: flex;
+          display: none;
           position: absolute;
           top: 100%; left: 0; right: 0;
           background: #1B2F6E;
@@ -98,6 +100,7 @@
           box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .mob-search-overlay.open {
+          display: flex !important;
           height: 56px;
           padding: 10px 16px;
         }
@@ -121,16 +124,6 @@
           padding: 4px 8px;
           flex-shrink: 0;
         }
-      }
-      @media (min-width: 1025px) {
-        .mobile-search-item { display: none !important; }
-        .mob-search-btn { display: none !important; }
-        .mob-search-overlay { display: none !important; visibility: hidden !important; }
-        .mob-right { display: none !important; }
-        #mob-search-overlay { display: none !important; visibility: hidden !important; }
-
-
-
       }
     </style>
     <div class="ann-bar">
