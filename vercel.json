@@ -1,0 +1,28 @@
+{
+  "redirects": [
+    { "source": "/critical", "destination": "/critical-care.html", "permanent": false },
+    { "source": "/criticalcare", "destination": "/critical-care.html", "permanent": false },
+    { "source": "/critical-care", "destination": "/critical-care.html", "permanent": false },
+    { "source": "/renal", "destination": "/renal-care.html", "permanent": false },
+    { "source": "/renalcare", "destination": "/renal-care.html", "permanent": false },
+    { "source": "/renal-care", "destination": "/renal-care.html", "permanent": false },
+    { "source": "/cardiac", "destination": "/cardiac-care.html", "permanent": false },
+    { "source": "/cardiaccare", "destination": "/cardiac-care.html", "permanent": false },
+    { "source": "/cardiac-care", "destination": "/cardiac-care.html", "permanent": false },
+    { "source": "/aesthetics", "destination": "/aesthetics.html", "permanent": false },
+    { "source": "/rehabilitation", "destination": "/rehabilitation.html", "permanent": false },
+    { "source": "/surgical", "destination": "/surgical.html", "permanent": false },
+    { "source": "/hospital", "destination": "/hospital-setup.html", "permanent": false },
+    { "source": "/hospital-setup", "destination": "/hospital-setup.html", "permanent": false },
+    { "source": "/about", "destination": "/about.html", "permanent": false },
+    { "source": "/quality", "destination": "/quality.html", "permanent": false },
+    { "source": "/articles", "destination": "/articles.html", "permanent": false },
+    { "source": "/blogs", "destination": "/articles.html", "permanent": false },
+    { "source": "/blog", "destination": "/articles.html", "permanent": false },
+    { "source": "/contact", "destination": "/index.html#contact", "permanent": false },
+    { "source": "/products", "destination": "/categories.html", "permanent": false },
+    { "source": "/categories", "destination": "/categories.html", "permanent": false },
+    { "source": "/ventilator", "destination": "/critical-sh320-ventilator.html", "permanent": false },
+    { "source": "/circumease", "destination": "/surgical-circumease-stapler.html", "permanent": false }
+  ]
+}
