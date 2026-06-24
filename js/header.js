@@ -122,7 +122,7 @@
     </div>
 
     <!-- NAV -->
-    <nav id="main-nav">
+      <nav id="main-nav" style="position:relative;">
       <a href="index.html" class="nav-logo">
         <img src="image/pulse-logo.png" alt="Pulse">
       </a>
