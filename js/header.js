@@ -75,8 +75,8 @@
         }
         .mob-search-overlay {
           display: none;
-          position: fixed;
-          top: 0; left: 0; right: 0;
+          position: absolute;
+          top: 100%; left: 0; right: 0;
           background: #1B2F6E;
           padding: 14px 16px;
           z-index: 9999;
