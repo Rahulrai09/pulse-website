@@ -62,7 +62,15 @@
       }
       
       @media (max-width: 768px) {
+      @media (max-width: 768px) {
         .mobile-search-item { display: none !important; }
+        /* Right side wrapper: search icon + hamburger together */
+        .mob-right {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          margin-left: auto;
+        }
         .mob-search-btn {
           display: flex;
           align-items: center;
@@ -73,25 +81,37 @@
           padding: 6px;
           color: #fff;
         }
+        /* Slide bar - same effect as desktop, opens below nav */
         .mob-search-overlay {
-          display: none;
+          display: flex;
           position: absolute;
           top: 100%; left: 0; right: 0;
           background: #1B2F6E;
-          padding: 14px 16px;
+          padding: 0 16px;
           z-index: 9999;
           align-items: center;
           gap: 10px;
+          height: 0;
+          overflow: hidden;
+          transition: height 0.35s cubic-bezier(0.4,0,0.2,1),
+                      padding 0.35s cubic-bezier(0.4,0,0.2,1);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
-        .mob-search-overlay.open { display: flex; }
+        .mob-search-overlay.open {
+          height: 56px;
+          padding: 10px 16px;
+        }
         .mob-search-overlay input {
           flex: 1;
-          padding: 10px 14px;
+          padding: 8px 12px;
           border-radius: 6px;
           border: none;
           font-size: 15px;
           outline: none;
+          background: rgba(255,255,255,0.15);
+          color: #fff;
         }
+        .mob-search-overlay input::placeholder { color: rgba(255,255,255,0.6); }
         .mob-search-overlay button {
           background: none;
           border: none;
@@ -99,9 +119,15 @@
           font-size: 22px;
           cursor: pointer;
           padding: 4px 8px;
+          flex-shrink: 0;
         }
       }
       @media (min-width: 769px) {
+        .mobile-search-item { display: none !important; }
+        .mob-search-btn { display: none !important; }
+        .mob-search-overlay { display: none !important; }
+        .mob-right { display: none !important; }
+      }
         .mobile-search-item { display: none !important; }
         .mob-search-btn { display: none !important; }
         .mob-search-overlay { display: none !important; }
@@ -237,15 +263,17 @@
         </li>
       </ul>
       <!-- Mobile search icon -->
-      <button class="mob-search-btn" id="mob-search-btn" aria-label="Search">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </button>
-      <!-- Hamburger button -->
-      <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <!-- Mobile right controls -->
+      <div class="mob-right">
+        <button class="mob-search-btn" id="mob-search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
       <!-- Slide-down mobile menu -->
       <div class="mobile-menu" id="mobileMenu">
