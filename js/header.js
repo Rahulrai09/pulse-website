@@ -1231,6 +1231,10 @@ if (mobSearchInput) {
         const searchClose = document.getElementById('nav-search-close');
 
         if (searchBtn && searchBar) {
+            // Ensure hidden on load
+            searchBar.style.display = 'none';
+            searchBar.classList.remove('open');
+
             searchBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -1241,16 +1245,32 @@ if (mobSearchInput) {
                 } else {
                     searchBar.style.display = 'flex';
                     searchBar.classList.add('open');
-                    searchInput.focus();
+                    if (searchInput) searchInput.focus();
                 }
             });
+
             if (searchClose) {
                 searchClose.addEventListener('click', () => {
                     searchBar.classList.remove('open');
                     searchBar.style.display = 'none';
-                    searchInput.value = '';
+                    if (searchInput) searchInput.value = '';
                 });
             }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && searchBar.classList.contains('open')) {
+                    searchBar.classList.remove('open');
+                    searchBar.style.display = 'none';
+                    if (searchInput) searchInput.value = '';
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!searchBar.contains(e.target) && !searchBtn.contains(e.target)) {
+                    searchBar.classList.remove('open');
+                    searchBar.style.display = 'none';
+                }
+            });
         }
         
         // Hover image swap in product dropdown
