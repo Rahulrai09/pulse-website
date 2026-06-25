@@ -1,4 +1,4 @@
-/* -- GLOBAL HEADER STYLES -- */
+﻿/* ── GLOBAL HEADER STYLES ── */
 
 :root {
   --nav-bg:      #1c2b5e;
@@ -11,7 +11,7 @@
   --ink-mid:     #4a4f70;
 }
 
-/* -- ANNOUNCEMENT BAR -- */
+/* ── ANNOUNCEMENT BAR ── */
 .ann-bar {
   background: var(--ann-bg);
   color: rgba(255,255,255,0.75);
@@ -28,7 +28,7 @@
 .ann-sep { color: rgba(255,255,255,0.3); }
 @keyframes annScroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 
-/* -- NAV -- */
+/* ── NAV ── */
 nav {
   position: sticky; top: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -68,7 +68,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
   border-color: rgba(255,255,255,0.8) !important;
 }
 
-/* -- INLINE SEARCH -- */
+/* ── INLINE SEARCH ── */
 .nav-search-wrapper { position: relative; display: flex; align-items: center; }
 .nav-search-btn {
   background: none; border: none; cursor: pointer;
@@ -79,7 +79,6 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
 .nav-search-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
 .nav-search-bar {
-  display: none;
   position: absolute; top: 50%; right: 0;
   transform: translateY(-50%);
   display: flex; align-items: center; gap: 6px;
@@ -111,7 +110,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
 }
 .nav-search-close:hover { color: #fff; }
 
-/* -- MEGA MENU -- */
+/* ── MEGA MENU ── */
 .nav-item-mega { position: relative; }
 .mega-menu {
   position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px);
@@ -160,7 +159,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
   to   { opacity: 1; transform: translateX(0); }
 }
 .nav-item-mega.open .mega-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto; }
-/* -- CONTACT DROPDOWN -- */
+/* ── CONTACT DROPDOWN ── */
 .contact-dropdown {
   position: absolute; top: 68px; right: 60px;
   background: white; border-radius: 12px;
@@ -204,7 +203,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
 .cd-title { font-size: 14px !important; font-weight: 600 !important; color: #1c2b5e; display: block !important; text-align: left !important; margin-bottom: 2px !important; }
 .cd-sub { font-size: 12px !important; color: #666 !important; line-height: 1.3; display: block !important; text-align: left !important; margin-top: 2px !important; }
 
-/* -- MOBILE NAV -- */
+/* ── MOBILE NAV ── */
 .hamburger { display: none; background: none; border: none; padding: 10px; cursor: pointer; flex-direction: column; gap: 4px; z-index: 1001; }
 .hamburger span { display: block; width: 24px; height: 2px; background: white; transition: all 0.3s; }
 
@@ -264,7 +263,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
   nav { padding: 0 20px; }
 }
 
-/* -- RESPONSIVE FIXES -- */
+/* ── RESPONSIVE FIXES ── */
 @media (max-width: 1024px) {
   .mega-menu {
   position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px);
@@ -329,8 +328,4 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
   }
   .cd-grid { grid-template-columns: 1fr; }
 }
-
-
-
-
 
