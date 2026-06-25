@@ -608,9 +608,7 @@
 
           <input type="tel" id="cf-contact" placeholder="Contact Number *" required />
 
-          <input type="email" id="cf-email" placeholder="Email Address *" required />
 
-          <input type="text" id="cf-city" placeholder="City *" required />
 
           <button class="submit-btn" id="cf-submit">Submit</button>
 
@@ -2586,13 +2584,11 @@ if (mobSearchInput) {
 
             const contact = document.getElementById('cf-contact').value.trim();
 
-            const email = document.getElementById('cf-email').value.trim();
-
-            const city = document.getElementById('cf-city').value.trim();
 
 
 
-            if (!name || !contact || !email || !city) {
+
+            if (!name || !contact) {
 
               alert('Please fill all fields.');
 
@@ -2610,9 +2606,7 @@ if (mobSearchInput) {
 
             formData.append('contact', contact);
 
-            formData.append('email', email);
 
-            formData.append('city', city);
 
             formData.append('source', 'Contact Us Form');
 
@@ -2632,7 +2626,7 @@ if (mobSearchInput) {
 
             // Build WhatsApp message
 
-            const msg = `Hi Pulse MedTech! I'm ${name} from ${city}. My contact is ${contact} and email is ${email}. I'd like to know more about your products.`;
+            const msg = `Hi Pulse MedTech! I'm ${name}. My contact is ${contact}. I'd like to know more about your products.`;
 
             const waUrl = `https://wa.me/919071101108?text=${encodeURIComponent(msg)}`;
 
