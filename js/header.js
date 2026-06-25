@@ -2669,7 +2669,15 @@ setTimeout(function(){
 
   // position handled by CSS
 
-  searchInput.parentNode.appendChild(suggestBox);
+  document.body.appendChild(suggestBox);
+  function positionSuggestBox() {
+    var rect = searchInput.getBoundingClientRect();
+    suggestBox.style.position = 'fixed';
+    suggestBox.style.top = (rect.bottom + 4) + 'px';
+    suggestBox.style.left = rect.left + 'px';
+    suggestBox.style.width = rect.width + 'px';
+    suggestBox.style.zIndex = '999999';
+  }
 
 
 
@@ -2759,6 +2767,7 @@ setTimeout(function(){
 
     });
 
+    positionSuggestBox();
     suggestBox.style.display = 'block';
 
   }
