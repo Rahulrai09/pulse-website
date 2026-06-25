@@ -414,3 +414,5 @@
         modal.classList.add('open');
       }
     };
+
+const contactTriggerScript = document.createElement('script'); contactTriggerScript.src = 'js/contact-trigger.js'; document.body.appendChild(contactTriggerScript);
