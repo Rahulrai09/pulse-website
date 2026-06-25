@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     const headerHTML = `
     <!-- ANNOUNCEMENT BAR -->
     <style>
@@ -1360,3 +1360,4 @@ setTimeout(function(){
     if (this.value.length >= 2) renderSuggestions(this.value);
   });
 }, 300);
+
