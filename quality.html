@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -28,9 +28,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* ═══════════════════════════════════════════
+  /* -------------------------------------------
      AYR ENERGY EXACT COLOR SYSTEM
-  ═══════════════════════════════════════════ */
+  ------------------------------------------- */
   :root {
     --hero-from:   #1a2a6c;
     --hero-mid:    #2046b0;
@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--body); color: var(--ink); overflow-x: hidden; }
 
 
-  /* ── INNER HERO ── */
+  /* -- INNER HERO -- */
   .inner-hero {
     min-height: 560px; height: 560px; background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-mid) 45%, var(--hero-to) 100%); background-image: url('image/Quality%20%26%20Compliance%20banner%201440x560.png'); background-size: cover; background-position: center;
     display: flex; flex-direction: column; justify-content: center; padding: 120px 60px 80px; position: relative; overflow: hidden;
@@ -71,14 +71,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
 
-  /* ── SHARED SECTION ── */
+  /* -- SHARED SECTION -- */
   section { padding: 100px 60px; }
   .section-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
   .section-title-ayr { font-size: clamp(2.4rem, 4vw, 3.6rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 24px; }
   .section-title-ayr .t-dark { color: var(--ink); }
   .section-title-ayr .t-blue { color: var(--accent-pale); }
 
-  /* ── CERTIFICATIONS ── */
+  /* -- CERTIFICATIONS -- */
   .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-top: 48px; }
   .cert-card {
     background: var(--body); border: 1px solid var(--border); border-radius: 12px; padding: 32px;
@@ -89,7 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .cert-title svg { width: 20px; height: 20px; }
   .cert-desc { font-size: 0.95rem; line-height: 1.7; color: var(--ink-mid); }
 
-  /* ── TRUST PROCESS ── */
+  /* -- TRUST PROCESS -- */
   .trust-features { display: flex; flex-direction: column; gap: 20px; margin-top: 48px; }
   .tf {
     display: flex; gap: 24px; align-items: flex-start;
@@ -105,7 +105,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .tf h4 { font-size: 1.1rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
   .tf p { font-size: 0.95rem; color: var(--ink-mid); line-height: 1.6; }
 
-  /* ── CTA ── */
+  /* -- CTA -- */
   #cta { background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-mid) 60%, var(--hero-to) 100%); text-align: center; padding: 120px 64px; position: relative; overflow: hidden; }
   #cta::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(ellipse, rgba(255,255,255,0.07) 0%, transparent 65%); top: 50%; left: 50%; transform: translate(-50%,-50%); }
   .cta-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
@@ -119,7 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .btn-ghost-white:hover { border-color: rgba(255,255,255,0.6); color: white; }
 
 
-  /* ── Reveal ── */
+  /* -- Reveal -- */
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
   .reveal-delay-1 { transition-delay: 0.1s; }
@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .cta-btns { flex-direction: column; align-items: stretch; }
   }
 
-  /* ── FLOATING CONTACT FORM ── */
+  /* -- FLOATING CONTACT FORM -- */
   .floating-contact-btn {
     position: fixed; bottom: 32px; right: 32px; z-index: 999;
     background: var(--accent); color: white; width: 60px; height: 60px;
@@ -222,7 +222,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .cp-success h5 { font-size: 1.25rem; font-weight: 700; margin: 0; }
   .cp-success p { font-size: 0.95rem; color: var(--ink-mid); line-height: 1.5; margin: 0; }
 
-  /* ── PREMIUM FOOTER ── */
+  /* -- PREMIUM FOOTER -- */
   /* Global footer styles are now in css/footer.css */
 
 </style>
@@ -236,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div id="global-header"></div>
-<script src="js/header.js"></script>
+<script src="js/header.js?v=2"></script>
 
 <!-- HERO -->
 <section class="inner-hero">
@@ -405,10 +405,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cp-form-group">
         <label>Budget Range</label>
         <select class="cp-select">
-          <option>Under ₹5L</option>
-          <option>₹5L–₹20L</option>
-          <option>₹20L–₹50L</option>
-          <option>₹50L+</option>
+          <option>Under ?5L</option>
+          <option>?5L�?20L</option>
+          <option>?20L�?50L</option>
+          <option>?50L+</option>
           <option>Not Sure</option>
         </select>
       </div>
@@ -416,8 +416,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <label>Timeline</label>
         <select class="cp-select">
           <option>Immediate</option>
-          <option>1–3 Months</option>
-          <option>3–6 Months</option>
+          <option>1�3 Months</option>
+          <option>3�6 Months</option>
           <option>Just Exploring</option>
         </select>
       </div>
@@ -617,13 +617,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <div class="pulse-chat-body" id="ai-chat-body">
-    <div class="chat-msg bot">Hello! 👋 Welcome to Pulse. How can I help you today?</div>
+    <div class="chat-msg bot">Hello! ?? Welcome to Pulse. How can I help you today?</div>
     <div class="chat-quick-actions" id="ai-quick-actions">
-      <button class="chat-quick-btn">🏥 Our Products</button>
-      <button class="chat-quick-btn">🔧 Service Enquiry</button>
-      <button class="chat-quick-btn">📞 Request a Call Back</button>
-      <button class="chat-quick-btn">💼 Careers</button>
-      <button class="chat-quick-btn">💬 Chat with Experts</button>
+      <button class="chat-quick-btn">?? Our Products</button>
+      <button class="chat-quick-btn">?? Service Enquiry</button>
+      <button class="chat-quick-btn">?? Request a Call Back</button>
+      <button class="chat-quick-btn">?? Careers</button>
+      <button class="chat-quick-btn">?? Chat with Experts</button>
     </div>
   </div>
   <div class="pulse-chat-input-area">
@@ -645,11 +645,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const quickActions = document.getElementById('ai-quick-actions');
 
     const responses = {
-      '🏥 Our Products': 'We manufacture 6 categories of medical equipment: Patient Monitoring, Diagnostic Imaging, Critical Care, OT & Surgical, Laboratory, and Rehabilitation. Which category interests you?',
-      '🔧 Service Enquiry': 'Our service team operates pan-India with a 72-hour response guarantee. Please call +91 90711 01108 or email Info@pulseio.in and we\\'ll get back to you within 48 hours.',
-      '📞 Request a Call Back': 'Please share your name and number below and our team will call you within 24 hours. Or call us directly at +91 90711 01108.',
-      '💼 Careers': 'We\\'re always looking for passionate people to join the Pulse team. Send your resume to Info@pulseio.in with the subject line "Careers at Pulse".',
-      '💬 Chat with Experts': 'You\\'re now connected with our expert team. Please describe your requirement and we\\'ll respond shortly. You can also reach us at +91 90711 01108.'
+      '?? Our Products': 'We manufacture 6 categories of medical equipment: Patient Monitoring, Diagnostic Imaging, Critical Care, OT & Surgical, Laboratory, and Rehabilitation. Which category interests you?',
+      '?? Service Enquiry': 'Our service team operates pan-India with a 72-hour response guarantee. Please call +91 90711 01108 or email Info@pulseio.in and we\\'ll get back to you within 48 hours.',
+      '?? Request a Call Back': 'Please share your name and number below and our team will call you within 24 hours. Or call us directly at +91 90711 01108.',
+      '?? Careers': 'We\\'re always looking for passionate people to join the Pulse team. Send your resume to Info@pulseio.in with the subject line "Careers at Pulse".',
+      '?? Chat with Experts': 'You\\'re now connected with our expert team. Please describe your requirement and we\\'ll respond shortly. You can also reach us at +91 90711 01108.'
     };
 
     function addMessage(text, sender) {
