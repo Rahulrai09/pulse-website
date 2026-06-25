@@ -2600,7 +2600,9 @@ if (mobSearchInput) {
 
             // Save to Google Sheets
 
-            const payload = JSON.stringify({ formType: 'contact', name: name, contact: contact, source: 'Contact Us Form' });
+            const pageProduct = document.title.replace(' | Pulse','').replace(' | Pulse Medical','').trim();
+            const formData2 = new FormData();
+            formData2.append('payload', JSON.stringify({ formType: 'contact', name: name, contact: contact, product: pageProduct, source: 'Contact Us Form' }));
 
 
 
@@ -2613,7 +2615,7 @@ if (mobSearchInput) {
 
               method: 'POST',
 
-              body: payload,
+              body: formData2,
               mode: 'no-cors'
 
 
