@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const headerHTML = `
     <!-- ANNOUNCEMENT BAR -->
     <style>
@@ -219,10 +219,6 @@
           <button class="nav-search-btn" id="nav-search-btn" aria-label="Search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </button>
-          <div class="nav-search-bar" id="nav-search-bar" style="display:none;">
-            <input type="text" id="nav-search-input" placeholder="Search products, pages…" autocomplete="off" aria-label="Search site">
-            <button class="nav-search-close" id="nav-search-close" aria-label="Close search">&times;</button>
-          </div>
         </li>
         <div class="nav-sep"></div>
         <li>
