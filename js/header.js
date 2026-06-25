@@ -2600,15 +2600,12 @@ if (mobSearchInput) {
 
             // Save to Google Sheets
 
-            const formData = new FormData();
-
-            formData.append('name', name);
-
-            formData.append('contact', contact);
+            const payload = JSON.stringify({ formType: 'contact', name: name, contact: contact, source: 'Contact Us Form' });
 
 
 
-            formData.append('source', 'Contact Us Form');
+
+
 
 
 
@@ -2616,9 +2613,9 @@ if (mobSearchInput) {
 
               method: 'POST',
 
-              body: formData,
-
+              body: payload,
               mode: 'no-cors'
+
 
             });
 
