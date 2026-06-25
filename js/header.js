@@ -2626,7 +2626,7 @@ if (mobSearchInput) {
 
             // Build WhatsApp message
 
-            const msg = `Hi Pulse MedTech! I'm ${name}. My contact is ${contact}. I'd like to know more about your products.`;
+            const msg = `Hi PULSE! I'm ${name}. My contact is ${contact}. I'd like to know more about your products.`;
 
             const waUrl = `https://wa.me/919071101108?text=${encodeURIComponent(msg)}`;
 
