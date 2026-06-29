@@ -40,7 +40,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .pg-thumbs img.active, .pg-thumbs img:hover { border-color:#1B2F6E; }
   .pg-main { width:224px; height:300px; border-radius:12px; overflow:hidden; border:1px solid #e8edf5; background:#f8f9fc; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
   .pg-main img { width:100%; height:100%; object-fit:contain; display:block; }
-  @media(max-width:768px){ .pg-gallery{width:100%;} .pg-thumbs{flex-direction:row; overflow-x:auto;} .pg-thumbs img{flex-shrink:0;} .pg-main{width:100%; height:260px;} }
+  @media(max-width:768px){
+    .pg-gallery { flex-direction:column; width:100%; max-width:100%; }
+    .pg-main { width:100%; height:240px; }
+    .pg-thumbs { flex-direction:row; overflow-x:auto; width:100%; }
+    .pg-thumbs img { flex-shrink:0; width:56px; height:56px; }
+  }
 </style>
 </head>
 <body>
