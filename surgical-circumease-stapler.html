@@ -27,19 +27,47 @@
     max-width: 1280px;
     margin: 0 auto;
   }
-  .product-hero-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    .product-hero-images {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: flex-start;
   }
-  .product-hero-images img {
-    width: 100%;
-    border-radius: 12px;
+  .product-thumb-strip {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .product-thumb-strip img {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
     object-fit: cover;
-    border: 1px solid #e8edf5;
+    border: 2px solid #e8edf5;
+    cursor: pointer;
+    transition: border-color 0.2s;
   }
-  .product-hero-images img:first-child {
-    grid-column: 1 / -1;
+  .product-thumb-strip img.active,
+  .product-thumb-strip img:hover {
+    border-color: #1B2F6E;
+  }
+  .product-main-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e8edf5;
+    background: #f8f9fc;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
   .product-hero-info { }
   .product-category {
@@ -223,6 +251,9 @@
 
   @media (max-width: 768px) {
     .product-hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 5% 40px; }
+    .product-hero-images { flex-direction: column; }
+    .product-thumb-strip { flex-direction: row; overflow-x: auto; }
+    .product-thumb-strip img { width: 60px; height: 60px; flex-shrink: 0; }
     .stats-bar { grid-template-columns: repeat(2, 1fr); }
     .comparison-inner { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .comparison-table { font-size: 0.75rem; min-width: 480px; }
@@ -244,10 +275,15 @@
     </p>
   </div>
   <div class="product-hero">
-    <div class="product-hero-images">
-      <img src="image/Circumease/CircumEase%201.png" alt="CircumEase Stapler — Disposable Circumcision Kit">
-      <img src="image/Circumease/CircumEase%202.png" alt="CircumEase Stapler Kit">
-      <img src="image/Circumease/circumease-3.jpg" alt="CircumEase Disposable Circumcision Kit">
+        <div class="product-hero-images">
+      <div class="product-thumb-strip">
+        <img src="image/Circumease/CircumEase%201.png" alt="CircumEase Stapler view 1" class="active" onclick="setMainImage(this)">
+        <img src="image/Circumease/CircumEase%202.png" alt="CircumEase Stapler Kit" onclick="setMainImage(this)">
+        <img src="image/Circumease/circumease-3.jpg" alt="CircumEase Disposable Circumcision Kit" onclick="setMainImage(this)">
+      </div>
+      <div class="product-main-image">
+        <img id="mainProductImage" src="image/Circumease/CircumEase%201.png" alt="CircumEase Stapler — Disposable Circumcision Kit">
+      </div>
     </div>
     <div class="product-hero-info">
       <div class="product-category">Surgical · Circumcision</div>
@@ -409,5 +445,13 @@
 <div id="global-footer"></div>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
+<script>
+  function setMainImage(thumb) {
+    document.getElementById('mainProductImage').src = thumb.src;
+    document.getElementById('mainProductImage').alt = thumb.alt;
+    document.querySelectorAll('.product-thumb-strip img').forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+  }
+</script>
 </body>
 </html>
