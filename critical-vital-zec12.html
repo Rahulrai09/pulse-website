@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Buy Vital ZEC12 from Pulse — India's trusted medical equipment manufacturer. Critical Care product engineered and serviced from our facilities. Get a quote o...">
+  <meta name="description" content="Buy Vital ZEC12 from Pulse ï¿½ India's trusted medical equipment manufacturer. Critical Care product engineered and serviced from our facilities. Get a quote o...">
   <link rel="canonical" href="https://www.pulseio.in/critical-vital-zec12.html" />
   <title>Vital ZEC12 | Pulse</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -34,6 +34,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   *, *::before, *::after { box-sizing: border-box; }
   body { font-family: 'Inter', sans-serif; color: #0a1e40; background: #f8f9fc; margin: 0; padding: 0; }
   a { color: inherit; }
+  .pg-gallery { display:flex; flex-direction:row; gap:14px; align-items:flex-start; width:300px; flex-shrink:0; }
+  .pg-thumbs { display:flex; flex-direction:column; gap:10px; flex-shrink:0; }
+  .pg-thumbs img { width:64px; height:64px; border-radius:8px; object-fit:cover; border:2px solid #e8edf5; cursor:pointer; transition:border-color 0.2s; }
+  .pg-thumbs img.active, .pg-thumbs img:hover { border-color:#1B2F6E; }
+  .pg-main { width:224px; height:300px; border-radius:12px; overflow:hidden; border:1px solid #e8edf5; background:#f8f9fc; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .pg-main img { width:100%; height:100%; object-fit:contain; display:block; }
+  @media(max-width:768px){ .pg-gallery{width:100%;} .pg-thumbs{flex-direction:row; overflow-x:auto;} .pg-thumbs img{flex-shrink:0;} .pg-main{width:100%; height:260px;} }
 </style>
 </head>
 <body>
@@ -58,8 +65,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:60px; align-items:start; padding-bottom:60px;">
 
         <!-- Left: Product Image -->
-        <div style="background:#fff; border-radius:12px; padding:32px; box-shadow:0 2px 12px rgba(0,0,0,0.06); display:flex; justify-content:center; align-items:center;">
-          <img src="image/Critical%20care/12%20Channel%20ECG%20Machine.png" alt="Vital ZEC12" style="width:100%; object-fit:contain; max-height:420px;">
+        <div class="pg-gallery">
+          <div class="pg-thumbs">
+            <img src="image/Critical%20care/12%20Channel%20ECG%20Machine.png" alt="Vital ZEC12" class="active" onclick="pgSetMain(this)">
+          </div>
+          <div class="pg-main">
+            <img src="image/Critical%20care/12%20Channel%20ECG%20Machine.png" alt="Vital ZEC12">
+          </div>
         </div>
 
         <!-- Right: Product Info -->
