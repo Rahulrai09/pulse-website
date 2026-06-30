@@ -1518,7 +1518,7 @@
 
         // Unified Search Logic
 
-const searchMap = [
+var searchMap = [
 
   // ── PRODUCT-LEVEL SEARCH ENTRIES ────────────────
 
