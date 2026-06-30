@@ -3443,14 +3443,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .pulse-chatbot-btn svg { width: 30px; height: 30px; }
 .chat-hi-bubble {
   position: fixed;
-  bottom: 78px;
-  right: 8px;
-  width: 150px;
-  height: auto;
+  bottom: 100px;
+  right: 28px;
+  background: #fff;
+  color: #1B2F6E;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   z-index: 9996;
   opacity: 0;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   animation: chatHiPulse 12s ease-in-out infinite;
+}
+.chat-hi-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  right: 28px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  transform: rotate(45deg);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.08);
+}
+.chat-hi-wave {
+  display: inline-block;
+  animation: waveHand 0.6s ease-in-out 3;
+  transform-origin: 70% 70%;
+}
+@keyframes waveHand {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-15deg); }
 }
 @keyframes chatHiPulse {
   0%    { opacity: 0; transform: translateY(6px) scale(0.9); }
@@ -3553,7 +3582,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </style>
 
-<img src="image/hii for chatbot.png" alt="Hi" class="chat-hi-bubble" id="chat-hi-bubble">
+<div class="chat-hi-bubble" id="chat-hi-bubble"><span class="chat-hi-text">Hi!</span><span class="chat-hi-wave">👋</span></div>
 <button class="pulse-chatbot-btn" id="ai-chat-btn" aria-label="Chat with Pulse AI">
   <img src="image/Pulse Chat bot.png" alt="Chat with Pulse AI" style="width:64px;height:64px;border-radius:50%;object-fit:cover;margin:-2px;">
 </button>
