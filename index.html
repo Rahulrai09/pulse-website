@@ -3720,6 +3720,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           startChatFlow();
         }
       });
+
+      // Auto-open AI chat widget after 3 seconds
+      setTimeout(function() {
+        if (chatBtn && !chatWindow.classList.contains('open')) {
+          chatBtn.click();
+        }
+      }, 3000);
       
       const closeChat = () => { 
         chatWindow.classList.remove('open'); 
