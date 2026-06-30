@@ -263,13 +263,17 @@
     .comparison-table th, .comparison-table td { padding: 8px 10px; }
     .comparison-section { padding: 60px 4%; }
   }
+  @media (max-width: 768px) {
+    .pg-hero-section { padding-top: 16px !important; }
+    .pg-hero-grid { gap: 24px !important; padding-bottom: 24px !important; }
+  }
 </style>
 </head>
 <body>
 <div id="global-header"></div>
 
 <!-- Hero -->
-<section style="background:#f7f9fc; padding:60px 0 0;">
+<section class="pg-hero-section" style="background:#f7f9fc; padding:60px 0 0;">
   <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
     <p style="font-size:13px; color:#888; margin-bottom:32px;">
       <a href="index.html" style="color:#888; text-decoration:none;">HOME</a> ›

@@ -46,6 +46,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pg-thumbs { flex-direction:row; overflow-x:auto; width:100%; }
     .pg-thumbs img { flex-shrink:0; width:56px; height:56px; }
   }
+  @media (max-width: 768px) {
+    .pg-hero-section { padding-top: 16px !important; }
+    .pg-hero-grid { gap: 24px !important; padding-bottom: 24px !important; }
+  }
 </style>
 </head>
 <body>
@@ -57,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="global-header"></div>
 
   <!-- HERO SECTION -->
-  <section style="background:#f7f9fc; padding:60px 0 0;">
+  <section class="pg-hero-section" style="background:#f7f9fc; padding:60px 0 0;">
     <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
 
       <!-- Breadcrumb -->
@@ -67,7 +71,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Innovax — Model 6016A
       </p>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:60px; align-items:start; padding-bottom:60px;">
+      <div class="pg-hero-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:60px; align-items:start; padding-bottom:60px;">
 
         <!-- Left: Product Image -->
         <div class="pg-gallery">
