@@ -3491,11 +3491,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .chat-hi-bubble.hidden { display: none; }
 
 .pulse-chat-window {
-  position: fixed; bottom: 100px; right: 32px; width: 360px; height: 520px;
+  position: fixed; bottom: 92px; right: 28px; width: 360px; height: 480px; max-height: calc(100vh - 160px);
   background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);
   display: flex; flex-direction: column; z-index: 9998; overflow: hidden;
-  font-family: 'Inter', sans-serif; transform: translateY(20px); opacity: 0;
-  pointer-events: none; transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif; transform: translateY(16px); opacity: 0;
+  pointer-events: none; transition: opacity 0.5s ease, transform 0.5s ease;
 }
 @media (max-width: 400px) {
   .pulse-chat-window {
@@ -3721,12 +3721,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
       });
 
-      // Auto-open AI chat widget after 3 seconds
+      // Auto-open AI chat widget after 1 second
       setTimeout(function() {
         if (chatBtn && !chatWindow.classList.contains('open')) {
           chatBtn.click();
         }
-      }, 3000);
+      }, 1000);
       
       const closeChat = () => { 
         chatWindow.classList.remove('open'); 

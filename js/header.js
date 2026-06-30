@@ -214,9 +214,9 @@
 
       }
 
-      .contact-modal-overlay { display:flex; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0); z-index:9999; align-items:center; justify-content:center; opacity:0; visibility:hidden; pointer-events:none; transition:opacity 0.25s ease, background 0.25s ease, visibility 0.25s; }
+      .contact-modal-overlay { display:flex; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0); z-index:9999; align-items:center; justify-content:center; opacity:0; visibility:hidden; pointer-events:none; transition:opacity 0.5s ease, background 0.5s ease, visibility 0.5s; }
       .contact-modal-overlay.open { background:rgba(0,0,0,0.5); opacity:1; visibility:visible; pointer-events:all; }
-      .contact-modal { transform:scale(0.95); opacity:0; transition:transform 0.25s ease, opacity 0.25s ease; }
+      .contact-modal { transform:scale(0.95); opacity:0; transition:transform 0.5s ease, opacity 0.5s ease; }
       .contact-modal-overlay.open .contact-modal { transform:scale(1); opacity:1; }
 
       .contact-modal-overlay.open { display:flex; }
@@ -2548,7 +2548,7 @@ if (mobSearchInput) {
         if (document.body && document.body.hasAttribute('data-product-page')) {
           setTimeout(function() {
             if (contactOverlay) contactOverlay.classList.add('open');
-          }, 2000);
+          }, 1000);
         }
 
         const contactClose = document.getElementById('contact-modal-close');
