@@ -1524,7 +1524,7 @@ const searchMap = [
 
   // CRITICAL CARE PRODUCTS
 
-  { keywords: ['ventilator','sh320','icu ventilator','sh-320','breathing machine','turbine ventilator','pulse ventilator'], url: 'critical-sh320-ventilator.html' },
+  { keywords: ['ventilator','ventilation','sh320','icu ventilator','sh-320','breathing machine','turbine ventilator','pulse ventilator'], url: 'critical-sh320-ventilator.html' },
 
   { keywords: ['anesthesia workstation','anaesthesia workstation','anesthesia machine','anaesthesia machine','a-station'], url: 'critical-anesthesia-workstation.html' },
 
@@ -2287,31 +2287,25 @@ const searchMap = [
 // ── SEARCH HANDLER ─────────────────────────────
 
 function handleSearch(query) {
-
   const q = query.trim().toLowerCase();
-
   if (!q) return;
 
-
-
+  const stem = q.length >= 4 ? q.slice(0, Math.min(q.length, 6)) : q;
   const match = searchMap.find(item =>
-
-    item.keywords.some(k =>
-
-      q.includes(k) || k.includes(q)
-
-    )
-
+    item.keywords.some(k => {
+      const kl = k.toLowerCase();
+      return q.includes(kl) || kl.includes(q) || (q.length >= 4 && kl.indexOf(stem) !== -1);
+    })
   );
 
-
-
-  window.location.href = match
-
-    ? match.url
-
-    : 'about.html'; // default fallback
-
+  if (match) {
+    window.location.href = match.url;
+  } else {
+    if (typeof suggestBox !== 'undefined') {
+      suggestBox.innerHTML = '<div style="padding:14px 16px;color:#888;font-size:14px;">No matching products found. Try a different term.</div>';
+      suggestBox.style.display = 'block';
+    }
+  }
 }
 
 
@@ -2704,15 +2698,12 @@ setTimeout(function(){
         if (entry.keywords) {
 
           entry.keywords.forEach(function(k) {
-
-            if (k.toLowerCase().indexOf(q) !== -1 && !matched) {
-
+            var kl = k.toLowerCase();
+            var stem = q.length >= 4 ? q.slice(0, Math.min(q.length, 6)) : q;
+            if ((kl.indexOf(q) !== -1 || (q.length >= 4 && kl.indexOf(stem) !== -1)) && !matched) {
               matched = true;
-
               label = k.charAt(0).toUpperCase() + k.slice(1);
-
             }
-
           });
 
         }
