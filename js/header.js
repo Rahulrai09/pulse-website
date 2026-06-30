@@ -2639,13 +2639,6 @@ if (mobSearchInput) {
 
     }
 
-});
-
-
-
-// ── SEARCH SUGGESTIONS ──
-
-setTimeout(function(){
 
   var searchInput = document.getElementById('nav-search-input');
 
@@ -2793,5 +2786,5 @@ setTimeout(function(){
 
   });
 
-}, 300);
+});
 
