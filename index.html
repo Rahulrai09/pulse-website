@@ -3441,6 +3441,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .pulse-chatbot-btn:hover { transform: scale(1.05); }
 .pulse-chatbot-btn svg { width: 30px; height: 30px; }
+.chat-hi-bubble {
+  position: fixed;
+  bottom: 100px;
+  right: 32px;
+  background: #fff;
+  color: #1B2F6E;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  z-index: 9997;
+  opacity: 0;
+  pointer-events: none;
+  animation: chatHiPulse 4s ease-in-out infinite;
+}
+.chat-hi-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 24px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  transform: rotate(45deg);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.06);
+}
+@keyframes chatHiPulse {
+  0%   { opacity: 0; transform: translateY(6px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  50%  { opacity: 1; transform: translateY(0); }
+  60%  { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 0; transform: translateY(6px); }
+}
+.chat-hi-bubble.hidden { display: none; }
 
 .pulse-chat-window {
   position: fixed; bottom: 100px; right: 32px; width: 360px; height: 520px;
@@ -3534,6 +3569,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </style>
 
+<div class="chat-hi-bubble" id="chat-hi-bubble">Hi! 👋</div>
 <button class="pulse-chatbot-btn" id="ai-chat-btn" aria-label="Chat with Pulse AI">
   <img src="image/Pulse Chatbot.svg" alt="Chat with Pulse AI" style="width:34px;height:34px;object-fit:contain;">
 </button>
@@ -3664,6 +3700,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       chatBtn.addEventListener('click', () => { 
         chatWindow.classList.add('open'); 
         chatBtn.style.transform = 'scale(0)'; 
+        var hiBubble = document.getElementById('chat-hi-bubble');
+        if (hiBubble) hiBubble.classList.add('hidden');
         setTimeout(() => chatBtn.style.display = 'none', 300);
         if (chatBody.innerHTML.trim() === '') {
           startChatFlow();
