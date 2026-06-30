@@ -2539,8 +2539,14 @@ if (mobSearchInput) {
 
 
         // Contact Modal
-
         const contactOverlay = document.getElementById('contact-modal-overlay');
+
+        // Auto-open contact modal on product pages
+        if (document.body && document.body.hasAttribute('data-product-page')) {
+          setTimeout(function() {
+            if (contactOverlay) contactOverlay.classList.add('open');
+          }, 0);
+        }
 
         const contactClose = document.getElementById('contact-modal-close');
 
