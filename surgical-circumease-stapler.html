@@ -16,18 +16,18 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-16TN7FZCYT');</script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Inter', sans-serif; color: #0d1b2a; background: #fff; }
+  body { font-family: 'Inter', sans-serif; color: #0f1f4b; background: #fff; }
 
   .product-hero {
-    padding: 80px 8% 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    max-width: 1280px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    align-items: start;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 24px 60px;
   }
-    .product-hero-images {
+  .product-hero-images {
     display: flex;
     flex-direction: row;
     gap: 14px;
@@ -71,18 +71,18 @@
   }
   .product-hero-info { }
   .product-category {
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #E63946;
-    margin-bottom: 12px;
+    color: #F07C2A;
+    margin-bottom: 8px;
   }
   .product-title {
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    font-weight: 800;
-    color: #0d1b2a;
-    line-height: 1.15;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f1f4b;
+    line-height: 1.2;
     margin-bottom: 16px;
   }
   .product-subtitle {
@@ -93,9 +93,9 @@
   }
   .product-desc {
     font-size: 1rem;
-    line-height: 1.75;
-    color: #4a5568;
-    margin-bottom: 32px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 24px;
   }
   .product-cta {
     display: flex;
@@ -105,20 +105,20 @@
   .btn-primary {
     background: #1B2F6E;
     color: #fff;
-    padding: 14px 28px;
-    border-radius: 8px;
+    padding: 14px 32px;
+    border-radius: 6px;
     font-weight: 600;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 15px;
   }
   .btn-secondary {
     background: transparent;
     color: #1B2F6E;
-    padding: 14px 28px;
-    border-radius: 8px;
+    padding: 14px 32px;
+    border-radius: 6px;
     font-weight: 600;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 15px;
     border: 2px solid #1B2F6E;
   }
 
@@ -141,8 +141,8 @@
     max-width: 1280px;
     margin: 0 auto;
   }
-  .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #E63946; margin-bottom: 12px; }
-  .section-title { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; color: #0d1b2a; margin-bottom: 48px; }
+  .section-label { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #F07C2A; margin-bottom: 12px; }
+  .section-title { font-size: 1.6rem; font-weight: 700; color: #0f1f4b; margin-bottom: 28px; }
   .reasons-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -154,8 +154,8 @@
     padding: 32px;
     border-left: 4px solid #1B2F6E;
   }
-  .reason-card h3 { font-size: 1.1rem; font-weight: 700; color: #0d1b2a; margin-bottom: 12px; }
-  .reason-card p { font-size: 0.95rem; line-height: 1.7; color: #4a5568; }
+  .reason-card h3 { font-size: 1.1rem; font-weight: 700; color: #0f1f4b; margin-bottom: 12px; }
+  .reason-card p { font-size: 0.95rem; line-height: 1.7; color: #555; }
 
   /* Benefits */
   .benefits-section {
@@ -178,10 +178,10 @@
     gap: 12px;
     font-weight: 600;
     font-size: 0.95rem;
-    color: #0d1b2a;
+    color: #0f1f4b;
     border: 1px solid #e8edf5;
   }
-  .benefit-dot { width: 8px; height: 8px; background: #E63946; border-radius: 50%; flex-shrink: 0; }
+  .benefit-dot { width: 8px; height: 8px; background: #F07C2A; border-radius: 50%; flex-shrink: 0; }
 
   /* Sizes */
   .sizes-section {
@@ -224,7 +224,7 @@
     font-size: 0.9rem;
   }
   .comparison-table th:first-child { background: #E87722; color: #fff; }
-  .comparison-table th:nth-child(2) { background: #4a5568; color: #fff; }
+  .comparison-table th:nth-child(2) { background: #555; color: #fff; }
   .comparison-table th:nth-child(3) { background: #718096; color: #fff; }
   .comparison-table th:nth-child(4) { background: #1B2F6E; color: #fff; }
   .comparison-table td {
@@ -250,7 +250,7 @@
   .cta-btn-outline { background: transparent; color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; border: 2px solid rgba(255,255,255,0.5); }
 
   @media (max-width: 768px) {
-    .product-hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 5% 40px; }
+    .product-hero { grid-template-columns: 1fr; gap: 40px; padding: 0 16px 40px; }
     .product-hero-images { flex-direction: column; }
     .product-thumb-strip { flex-direction: row; overflow-x: auto; }
     .product-thumb-strip img { width: 60px; height: 60px; flex-shrink: 0; }
@@ -266,8 +266,8 @@
 <div id="global-header"></div>
 
 <!-- Hero -->
-<section style="padding-top: 0;">
-  <div style="max-width:1200px; margin:0 auto; padding:0 5%;">
+<section style="background:#f7f9fc; padding:60px 0 0;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
     <p style="font-size:13px; color:#888; margin-bottom:32px;">
       <a href="index.html" style="color:#888; text-decoration:none;">HOME</a> ›
       <a href="surgical.html" style="color:#888; text-decoration:none;">Surgical</a> ›
@@ -275,7 +275,7 @@
     </p>
   </div>
   <div class="product-hero">
-        <div class="product-hero-images">
+    <div class="product-hero-images">
       <div class="product-thumb-strip">
         <img src="image/Surgical/CircumEase%201.png" alt="CircumEase Stapler view 1" class="active" onclick="setMainImage(this)">
         <img src="image/Surgical/CircumEase%202.png" alt="CircumEase Stapler Kit" onclick="setMainImage(this)">
@@ -290,7 +290,7 @@
       <h1 class="product-title">CircumEase Stapler</h1>
       <div class="product-subtitle">Disposable Circumcision Kit — The Safest Way to Perform Male Circumcision</div>
       <p class="product-desc">CircumEase is a single-use disposable circumcision stapler designed to standardize and simplify circumcision procedures. With an operation time of just 3–5 minutes, negligible bleeding, and an aesthetic result — it sets a new standard for safe, hygienic circumcision across India.</p>
-      <a href="blog-circumease.html" style="display:inline-flex;align-items:center;gap:8px;color:#E63946;font-size:0.9rem;font-weight:600;text-decoration:none;margin-bottom:20px;">
+      <a href="blog-circumease.html" style="display:inline-flex;align-items:center;gap:8px;color:#F07C2A;font-size:0.9rem;font-weight:600;text-decoration:none;margin-bottom:20px;">
         
         Read our blog: What is CircumEase? A Guide to Disposable Circumcision Kits →
       </a>
@@ -375,7 +375,7 @@
 <section class="sizes-section">
   <div class="section-label">Available Sizes</div>
   <h2 class="section-title">Various Sizes Based on Glans Diameter</h2>
-  <p style="color:#4a5568;font-size:1rem;margin-bottom:8px;">Select the correct size using the included measuring scale. Suitable for neonatal, paediatric, and adult patients.</p>
+  <p style="color:#555;font-size:1rem;margin-bottom:8px;">Select the correct size using the included measuring scale. Suitable for neonatal, paediatric, and adult patients.</p>
   <div class="sizes-grid">
     <div class="size-badge">12mm</div>
     <div class="size-badge">15mm</div>
