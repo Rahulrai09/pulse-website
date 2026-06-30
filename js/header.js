@@ -214,7 +214,10 @@
 
       }
 
-      .contact-modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; }
+      .contact-modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0); z-index:9999; align-items:center; justify-content:center; transition:background 0.3s ease; }
+      .contact-modal-overlay.open { background:rgba(0,0,0,0.5); }
+      .contact-modal { transform:scale(0.92) translateY(12px); opacity:0; transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s ease; }
+      .contact-modal-overlay.open .contact-modal { transform:scale(1) translateY(0); opacity:1; }
 
       .contact-modal-overlay.open { display:flex; }
 
@@ -2545,7 +2548,7 @@ if (mobSearchInput) {
         if (document.body && document.body.hasAttribute('data-product-page')) {
           setTimeout(function() {
             if (contactOverlay) contactOverlay.classList.add('open');
-          }, 0);
+          }, 2000);
         }
 
         const contactClose = document.getElementById('contact-modal-close');
