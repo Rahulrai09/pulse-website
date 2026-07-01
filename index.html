@@ -3458,7 +3458,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   display: flex;
   align-items: center;
   gap: 6px;
-  animation: chatHiPulse 12s ease-in-out infinite;
+  animation: chatHiPulse 11s ease-in-out infinite;
 }
 .chat-hi-bubble::after {
   content: "";
@@ -3484,8 +3484,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 @keyframes chatHiPulse {
   0%    { opacity: 0; transform: translateY(6px) scale(0.9); }
   5%    { opacity: 1; transform: translateY(0) scale(1); }
-  65%   { opacity: 1; transform: translateY(0) scale(1); }
-  70%   { opacity: 0; transform: translateY(6px) scale(0.9); }
+  72%   { opacity: 1; transform: translateY(0) scale(1); }
+  78%   { opacity: 0; transform: translateY(6px) scale(0.9); }
   100%  { opacity: 0; transform: translateY(6px) scale(0.9); }
 }
 .chat-hi-bubble.hidden { display: none; }
@@ -3731,7 +3731,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const closeChat = () => { 
         chatWindow.classList.remove('open'); 
         chatBtn.style.display = 'flex'; 
-        setTimeout(() => chatBtn.style.transform = 'scale(1)', 10); 
+        setTimeout(() => chatBtn.style.transform = 'scale(1)', 10);
+        var hiBubble = document.getElementById('chat-hi-bubble');
+        if (hiBubble) hiBubble.classList.remove('hidden');
       };
       
       chatClose.addEventListener('click', closeChat);
