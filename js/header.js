@@ -223,7 +223,7 @@
 
       .contact-modal { background:#fff; border-radius:12px; padding:40px; width:90%; max-width:480px; position:relative; }
 
-      .contact-modal h2 { font-size:1.4rem; font-weight:700; color:#1c2b5e; margin-bottom:8px; }
+      .contact-modal h2 { font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:8px; }
 
       .contact-modal p { color:#666; font-size:0.9rem; margin-bottom:24px; }
 
@@ -601,9 +601,10 @@
 
         <button class="contact-modal-close" id="contact-modal-close">&times;</button>
 
-        <h2>Get in Touch</h2>
+        <p id="cf-product-name" style="font-size:1.1rem; font-weight:700; color:#F07C2A; margin-bottom:4px; line-height:1.3;"></p>
+        <h2 style="color:#0f1f4b; margin-bottom:8px;">Get in Touch</h2>
 
-        <p>Fill the form below and we'll connect with you on WhatsApp.</p>
+        <p>Fill the details, our expert will connect with you.</p>
 
         <div class="contact-form-fields" id="contact-form-fields">
 
@@ -2546,6 +2547,11 @@ if (mobSearchInput) {
 
         // Auto-open contact modal on product pages
         if (document.body && document.body.hasAttribute('data-product-page')) {
+          var h1El = document.querySelector('h1');
+          var cfProductName = document.getElementById('cf-product-name');
+          if (h1El && cfProductName) {
+            cfProductName.textContent = h1El.innerText || h1El.textContent;
+          }
           setTimeout(function() {
             if (contactOverlay) contactOverlay.classList.add('open');
           }, 1000);
