@@ -223,7 +223,7 @@
 
       .contact-modal { background:#fff; border-radius:12px; padding:40px; width:90%; max-width:480px; position:relative; }
 
-      .contact-modal h2 { font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:8px; }
+      .contact-modal h2 { font-size:0.85rem; font-weight:400; color:#999; margin-bottom:0; text-align:center; }
 
       .contact-modal p { color:#666; font-size:0.9rem; margin-bottom:24px; }
 
@@ -601,10 +601,9 @@
 
         <button class="contact-modal-close" id="contact-modal-close">&times;</button>
 
-        <p id="cf-product-name" style="font-size:1.1rem; font-weight:700; color:#F07C2A; margin-bottom:4px; line-height:1.3;"></p>
-        <h2 style="color:#0f1f4b; margin-bottom:8px;">Get in Touch</h2>
+        <p id="cf-product-name" style="font-size:1.5rem; font-weight:800; color:#F07C2A; margin-bottom:6px; line-height:1.3;"></p>
 
-        <p>Fill the details, our expert will connect with you.</p>
+        <p style="color:#666; font-size:0.88rem; margin-bottom:20px;">Fill the details, our expert will connect with you.</p>
 
         <div class="contact-form-fields" id="contact-form-fields">
 
@@ -615,6 +614,8 @@
 
 
           <button class="submit-btn" id="cf-submit">Submit</button>
+
+          <p style="font-size:0.8rem; color:#aaa; text-align:center; margin-top:10px; margin-bottom:0;">Get in Touch with Pulse</p>
 
         </div>
 
