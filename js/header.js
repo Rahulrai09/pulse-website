@@ -567,6 +567,8 @@
 
              <a href="rehabilitation.html">Rehabilitation</a>
 
+            <a href="surgical.html">Surgical</a>
+
             <a href="hospital-setup.html">Hospital Setup</a>
 
           </div>
