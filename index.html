@@ -3543,6 +3543,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .pulse-chat-window.open { transform: translateY(0); opacity: 1; pointer-events: all; }
 
+.chat-welcome-pill {
+  position: fixed;
+  bottom: 100px;
+  right: 90px;
+  background: #1B2F6E;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 9997;
+  white-space: nowrap;
+  transform: translateX(120px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: none;
+}
+.chat-welcome-pill.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+.chat-welcome-pill::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: #1B2F6E;
+}
+@media (max-width: 767px) {
+  .chat-welcome-pill { display: block; }
+}
+
 .pulse-chat-header {
   background: #1c2b5e; color: white; padding: 16px;
   display: flex; justify-content: space-between; align-items: center;
@@ -3617,6 +3653,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </style>
 
+<div class="chat-welcome-pill" id="chat-welcome-pill">Welcome to Pulse, How may I help you?</div>
 <div class="chat-hi-bubble" id="chat-hi-bubble"><span class="chat-hi-text">Hi!</span><span class="chat-hi-wave">👋</span></div>
 <button class="pulse-chatbot-btn" id="ai-chat-btn" aria-label="Chat with Pulse AI">
   <img src="image/Pulse Chat bot.png" alt="Chat with Pulse AI" style="width:64px;height:64px;border-radius:50%;object-fit:cover;margin:-2px;">
@@ -3758,8 +3795,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       // Auto-open AI chat widget after 1 second
       setTimeout(function() {
-        if (chatBtn && !chatWindow.classList.contains('open')) {
-          chatBtn.click();
+        if (window.innerWidth <= 767) {
+          // On mobile: show sliding welcome pill instead of full chat
+          var pill = document.getElementById('chat-welcome-pill');
+          if (pill) {
+            pill.classList.add('show');
+            pill.addEventListener('click', function() {
+              pill.classList.remove('show');
+              if (chatBtn && !chatWindow.classList.contains('open')) {
+                chatBtn.click();
+              }
+            });
+          }
+        } else {
+          // On desktop: open chat normally
+          if (chatBtn && !chatWindow.classList.contains('open')) {
+            chatBtn.click();
+          }
         }
       }, 1000);
       
