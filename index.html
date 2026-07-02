@@ -3545,19 +3545,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 .chat-welcome-pill {
   position: fixed;
-  bottom: 100px;
-  right: 90px;
+  bottom: 108px;
+  right: 28px;
   background: #1B2F6E;
   color: #fff;
   padding: 10px 16px;
   border-radius: 24px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   cursor: pointer;
   z-index: 9997;
   white-space: nowrap;
-  transform: translateX(120px);
+  transform: translateX(calc(100% + 20px));
   opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
   display: none;
@@ -3569,11 +3569,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .chat-welcome-pill::after {
   content: "";
   position: absolute;
-  right: -8px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 20px;
+  bottom: -8px;
+  transform: none;
   border: 6px solid transparent;
-  border-left-color: #1B2F6E;
+  border-top-color: #1B2F6E;
 }
 @media (max-width: 767px) {
   .chat-welcome-pill { display: block; }
@@ -3798,10 +3798,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (window.innerWidth <= 767) {
           // On mobile: show sliding welcome pill instead of full chat
           var pill = document.getElementById('chat-welcome-pill');
+          var hiBubbleMob = document.getElementById('chat-hi-bubble');
           if (pill) {
+            // Hide Hi bubble, show pill
+            if (hiBubbleMob) hiBubbleMob.classList.add('hidden');
             pill.classList.add('show');
+            // After 5s hide pill, show Hi bubble again
+            setTimeout(function() {
+              pill.classList.remove('show');
+              if (hiBubbleMob) hiBubbleMob.classList.remove('hidden');
+            }, 5000);
             pill.addEventListener('click', function() {
               pill.classList.remove('show');
+              if (hiBubbleMob) hiBubbleMob.classList.add('hidden');
               if (chatBtn && !chatWindow.classList.contains('open')) {
                 chatBtn.click();
               }
