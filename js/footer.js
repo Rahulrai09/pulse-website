@@ -169,19 +169,12 @@
         </div>
         <div class="pm-body" id="demo-body">
           <form id="demo-form">
-            <div class="pm-form-group"><label>Full Name *</label><input type="text" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Mobile Number *</label><input type="tel" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Email Address *</label><input type="email" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Hospital/Organisation Name</label><input type="text" class="pm-input"></div>
-            <div class="pm-form-group"><label>City *</label><input type="text" class="pm-input" required></div>
-            <div class="pm-form-group">
-              <label>Equipment Category</label>
-              <select class="pm-select">
-                <option>Critical Care</option><option>Renal Care</option>
-                <option>Cardiac Care</option><option>Aesthetics</option>
-                <option>Rehabilitation</option><option>Hospital Setup</option>
-              </select>
-            </div>
+            <div class="pm-form-group"><label>Full Name <span style="color:#e53e3e">*</span></label><input type="text" class="pm-input" required></div>
+            <div class="pm-form-group"><label>Mobile Number <span style="color:#e53e3e">*</span></label><input type="tel" class="pm-input" required></div>
+            <div class="pm-form-group"><label>Email Address</label><input type="email" class="pm-input"></div>
+            <div class="pm-form-group"><label>Equipment Needed</label><textarea class="pm-textarea"></textarea></div>
+            <div class="pm-form-group"><label>City</label><input type="text" class="pm-input"></div>
+
             <div class="pm-form-group"><label>Preferred Demo Date</label><input type="date" class="pm-input"></div>
             <div class="pm-form-group"><label>Message</label><textarea class="pm-textarea"></textarea></div>
             <button type="submit" class="pm-submit">Book My Demo &rarr;</button>
@@ -204,11 +197,11 @@
         </div>
         <div class="pm-body" id="quote-body">
           <form id="quote-form">
-            <div class="pm-form-group"><label>Full Name *</label><input type="text" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Mobile Number *</label><input type="tel" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Email Address *</label><input type="email" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Hospital Name</label><input type="text" class="pm-input"></div>
-            <div class="pm-form-group"><label>City *</label><input type="text" class="pm-input" required></div>
+            <div class="pm-form-group"><label>Full Name <span style="color:#e53e3e">*</span></label><input type="text" class="pm-input" required></div>
+            <div class="pm-form-group"><label>Mobile Number <span style="color:#e53e3e">*</span></label><input type="tel" class="pm-input" required></div>
+            <div class="pm-form-group"><label>Email Address</label><input type="email" class="pm-input"></div>
+
+            <div class="pm-form-group"><label>City</label><input type="text" class="pm-input"></div>
             <div class="pm-form-group"><label>Equipment Needed</label><textarea class="pm-textarea" required></textarea></div>
             <div class="pm-form-group"><label>Quantity Required</label><input type="number" class="pm-input"></div>
             <div class="pm-form-group">
