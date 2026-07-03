@@ -79,6 +79,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       max-width: 600px;
       margin: 0 auto;
     }
+    @media (max-width: 767px) {
+      .internal-hero { height: 220px !important; min-height: 220px !important; }
+      .internal-hero-content { padding: 0 24px; }
+      .internal-hero h1 { font-size: clamp(24px, 8vw, 32px); margin-bottom: 0; }
+      .internal-hero p { display: none; }
+    }
 
     /* Innovation Sections */
     .innov-section { padding: 100px 0; }

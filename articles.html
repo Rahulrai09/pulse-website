@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -179,6 +179,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .blog-placeholder-card:hover { transform: none; }
 
+    @media (max-width: 767px) {
+      .internal-hero { height: 220px !important; min-height: 220px !important; }
+      .internal-hero-content { padding: 0 6%; }
+      .internal-hero h1 { font-size: clamp(26px, 8vw, 36px); margin-bottom: 0; }
+      .internal-hero p { display: none; }
+    }
     @media (max-width: 768px) {
       .article-grid { grid-template-columns: 1fr; }
     }
