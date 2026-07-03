@@ -20,7 +20,7 @@
 
 .pf-tagline { font-size: 0.9rem; color: rgba(255,255,255,0.5); line-height: 1.6; margin-bottom: 28px; max-width: 280px; }
 .pf-socials { display: flex; gap: 16px; margin-bottom: 32px; }
-.pf-socials a { color: rgba(255,255,255,0.4); transition: color 0.2s, transform 0.2s; display: flex; align-items: center; justify-content: center; }
+.pf-socials a { color: #FFFFFF; transition: color 0.2s, transform 0.2s; display: flex; align-items: center; justify-content: center; }
 .pf-socials a:hover { color: white; transform: translateY(-2px); }
 .pf-socials svg { width: 20px; height: 20px; }
 .pf-iso-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(91,107,204,0.15); border: 1px solid rgba(91,107,204,0.3); color: var(--accent-lt); font-size: 0.75rem; font-weight: 600; padding: 6px 12px; border-radius: 4px; letter-spacing: 0.05em; text-transform: uppercase; }
@@ -37,11 +37,11 @@
 .pf-map-placeholder svg { width: 32px; height: 32px; }
 
 .pf-bottom { border-top: 1px solid var(--border-dark); padding: 24px 60px; background: rgba(0,0,0,0.1); }
-.pf-bottom-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); width: 100%; }
+.pf-bottom-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: #FFFFFF; width: 100%; }
 .pf-bottom-center { display: flex; align-items: center; gap: 12px; font-weight: 500; letter-spacing: 0.05em; color: rgba(255,255,255,0.5); }
 .pf-bottom-center .dot { color: var(--accent); }
 .pf-bottom-right { display: flex; gap: 24px; }
-.pf-bottom-right a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+.pf-bottom-right a { color: #FFFFFF; text-decoration: none; transition: color 0.2s; }
 .pf-bottom-right a:hover { color: white; }
 
 @media (max-width: 1024px) {
