@@ -1,4 +1,4 @@
-﻿{
+{
   "redirects": [
     { "source": "/critical", "destination": "/critical-care.html", "permanent": false },
     { "source": "/criticalcare", "destination": "/critical-care.html", "permanent": false },
