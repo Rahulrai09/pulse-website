@@ -81,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     /* Article List */
-    .article-section { padding: 100px 0; background: #fff; }
+    .article-section { padding: 40px 0 100px; background: #fff; }
     .article-container { max-width: 1200px; margin: 0; padding: 0 4%; }
     
     .article-grid {
@@ -172,20 +172,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-bottom: 2px solid #E87722;
       display: inline-block;
     }
-    .tab-btn {
-      background: none;
-      border: 2px solid #E87722;
-      color: #E87722;
-      padding: 8px 24px;
-      border-radius: 24px;
-      font-weight: 600;
-      font-size: 14px;
+    .tab-label {
       cursor: pointer;
-      transition: 0.2s;
+      color: #9aa3b5;
+      transition: color 0.2s;
     }
-    .tab-btn.active, .tab-btn:hover {
-      background: #E87722;
-      color: #fff;
+    .tab-label.active {
+      color: #0a1e40;
+    }
+    .tab-label-sep {
+      color: #ccc;
+      margin: 0 8px;
+      font-weight: 400;
     }
 
     .blog-placeholder-card {
@@ -221,14 +219,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <div class="article-container" style="display:flex; justify-content:flex-end; gap:12px; padding-top:32px;">
-    <button class="tab-btn active" id="tab-btn-articles" onclick="showArticleTab('articles')">Articles</button>
-    <button class="tab-btn" id="tab-btn-blogs" onclick="showArticleTab('blogs')">Blogs</button>
+  <div class="article-container" style="padding-top:48px;">
+    <h2 class="section-subheading">
+      <span id="tab-label-articles" class="tab-label active" onclick="showArticleTab('articles')">Articles</span>
+      <span class="tab-label-sep">/</span>
+      <span id="tab-label-blogs" class="tab-label" onclick="showArticleTab('blogs')">Blogs</span>
+    </h2>
   </div>
 
   <section class="article-section" id="articles-section">
     <div class="article-container">
-      <h2 class="section-subheading">Articles</h2>
       <div class="article-grid">
         
         <!-- Article 1 -->
@@ -265,7 +265,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="article-section" style="background:#f8f9fc; display:none;" id="blogs-section">
     <div class="article-container">
-      <h2 class="section-subheading">Blogs</h2>
       <div class="article-grid">
         
         <a href="blog-circumease.html" class="article-card">
@@ -358,8 +357,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function showArticleTab(tab) {
       document.getElementById('articles-section').style.display = tab === 'articles' ? 'block' : 'none';
       document.getElementById('blogs-section').style.display = tab === 'blogs' ? 'block' : 'none';
-      document.getElementById('tab-btn-articles').classList.toggle('active', tab === 'articles');
-      document.getElementById('tab-btn-blogs').classList.toggle('active', tab === 'blogs');
+      document.getElementById('tab-label-articles').classList.toggle('active', tab === 'articles');
+      document.getElementById('tab-label-blogs').classList.toggle('active', tab === 'blogs');
     }
   </script>
 </body>
