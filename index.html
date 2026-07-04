@@ -3736,21 +3736,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (chatStep === 0) {
           const greetings = ["hi","hii","hiii","hiiii","hello","helo","hey","heyy","heya","hola","yo","namaste","good morning","good afternoon","good evening"];
           const normalized = text.trim().toLowerCase().replace(/[!.,]+$/, "");
-          let greetLine;
           if (greetings.indexOf(normalized) !== -1) {
             userData.name = '';
-            greetLine = 'Hi! How can I assist you? Are you a:';
-          } else {
-            const properName = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
-            userData.name = properName;
-            greetLine = 'Hi ' + properName + '! How can I assist you? Are you a:';
+            chatStep = 0.5;
+            renderBotMessage('Hi! How can I assist you? Could you please tell me your name?', []);
+            return;
           }
+          const properName = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
+          userData.name = properName;
           chatStep = 1;
-          renderBotMessage(greetLine, [
+          renderBotMessage('Hi ' + properName + '! How can I assist you? Are you a:', [
             "🏥 Hospital / Clinic",
             "🏭 Distributor / Dealer",
             "🔬 Research Institution",
             "👤 Individual Enquiry"
+          ]);
+        } else if (chatStep === 0.5) {
+          const properName2 = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
+          userData.name = properName2;
+          chatStep = 1;
+          renderBotMessage('Nice to meet you, ' + properName2 + '! Are you a:', [
+            "\u{1F3E5} Hospital / Clinic",
+            "\u{1F3ED} Distributor / Dealer",
+            "\u{1F52C} Research Institution",
+            "\u{1F464} Individual Enquiry"
           ]);
         } else if (chatStep === 1) {
           userData.role = text;
