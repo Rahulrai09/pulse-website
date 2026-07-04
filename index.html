@@ -3692,10 +3692,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     let chatStep = 0;
     let userData = { name: '', role: '', category: '', contact: '' };
+    let chatTranscript = [];
 
     function startChatFlow() {
       chatStep = 0;
       userData = { name: '', role: '', category: '', contact: '' };
+      chatTranscript = [];
       chatBody.innerHTML = '';
       renderBotMessage(`Hello! 👋 Welcome to PULSE — India's integrated MedTech manufacturer. I'm here to help you find the right solution: HOW MAY I ASSIST YOU.`, []);
     }
@@ -3706,6 +3708,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       msgDiv.textContent = text;
       chatBody.appendChild(msgDiv);
       chatBody.scrollTop = chatBody.scrollHeight;
+      chatTranscript.push((sender === 'bot' ? 'Bot: ' : 'You: ') + text);
     }
 
     function renderBotMessage(text, options = []) {
@@ -3799,7 +3802,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               email: userData.email,
               userType: userData.role,
               category: userData.category.replace(/^\d+\s*/, ""),
-              message: "Chat lead from Pulse AI Assistant"
+              message: chatTranscript.join(' || ')
             }).catch(err => console.error("[chat] Lead submission failed:", err));
           }
           renderBotMessage(`Thank you! Our ${userData.category.replace(/^\d+\s*/, "").replace(/\s*Care$/i, "")} Care expert will reach out within 24 hours. For urgent queries call +91 90711 01108 directly.`, []);
