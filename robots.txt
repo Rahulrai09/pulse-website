@@ -1,3 +1,5 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
+Disallow: /prizes/
+Disallow: /products/
 Sitemap: https://www.pulseio.in/sitemap.xml
