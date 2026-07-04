@@ -1,4 +1,4 @@
-﻿// PULSE Website — Google Sheets Form Connector
+// PULSE Website — Google Sheets Form Connector
 (function () {
   'use strict';
 
@@ -78,6 +78,7 @@
   async function submitChat(data) {
     return submitToSheet({
       formType: 'chat',
+      firstMessage: data.firstMessage || '',
       name: data.name || '',
       phone: data.phone || '',
       email: data.email || '',

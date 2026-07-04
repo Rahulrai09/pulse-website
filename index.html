@@ -3691,12 +3691,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const chatSend = document.getElementById('ai-chat-send');
 
     let chatStep = 0;
-    let userData = { name: '', role: '', category: '', contact: '' };
+    let userData = { name: '', role: '', category: '', contact: '', firstMessage: '' };
     let chatTranscript = [];
 
     function startChatFlow() {
       chatStep = 0;
-      userData = { name: '', role: '', category: '', contact: '' };
+      userData = { name: '', role: '', category: '', contact: '', firstMessage: '' };
       chatTranscript = [];
       chatBody.innerHTML = '';
       renderBotMessage(`Hello! 👋 Welcome to PULSE — India's integrated MedTech manufacturer. I'm here to help you find the right solution: HOW MAY I ASSIST YOU.`, []);
@@ -3737,6 +3737,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       setTimeout(() => {
         if (chatStep === 0) {
+          userData.firstMessage = text;
           const greetings = ["hi","hii","hiii","hiiii","hello","helo","hey","heyy","heya","hola","yo","namaste","good morning","good afternoon","good evening"];
           const normalized = text.trim().toLowerCase().replace(/[!.,]+$/, "");
           if (greetings.indexOf(normalized) !== -1) {
@@ -3797,6 +3798,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           // Submit chat lead to Google Sheets
           if (window.PulsePublic && window.PulsePublic.submitChat) {
             window.PulsePublic.submitChat({
+              firstMessage: userData.firstMessage,
               name: userData.name,
               phone: userData.phone,
               email: userData.email,
