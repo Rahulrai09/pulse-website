@@ -3697,7 +3697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       chatStep = 0;
       userData = { name: '', role: '', category: '', contact: '' };
       chatBody.innerHTML = '';
-      renderBotMessage(`Hello! 👋 Welcome to PULSE — India's integrated MedTech manufacturer. I'm here to help you find the right solution. May I know your name?`, []);
+      renderBotMessage(`Hello! 👋 Welcome to PULSE — India's integrated MedTech manufacturer. I'm here to help you find the right solution: HOW MAY I ASSIST YOU.`, []);
     }
 
     function addMessage(text, sender) {
@@ -3734,9 +3734,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       setTimeout(() => {
         if (chatStep === 0) {
-          userData.name = text;
+          const greetings = ["hi","hii","hiii","hiiii","hello","helo","hey","heyy","heya","hola","yo","namaste","good morning","good afternoon","good evening"];
+          const normalized = text.trim().toLowerCase().replace(/[!.,]+$/, "");
+          let greetLine;
+          if (greetings.indexOf(normalized) !== -1) {
+            userData.name = '';
+            greetLine = 'Hi! How can I assist you? Are you a:';
+          } else {
+            const properName = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
+            userData.name = properName;
+            greetLine = 'Hi ' + properName + '! How can I assist you? Are you a:';
+          }
           chatStep = 1;
-          renderBotMessage(`Nice to meet you, ${userData.name}! Are you a:`, [
+          renderBotMessage(greetLine, [
             "🏥 Hospital / Clinic",
             "🏭 Distributor / Dealer",
             "🔬 Research Institution",
