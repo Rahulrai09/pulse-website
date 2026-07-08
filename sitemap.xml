@@ -138,13 +138,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.pulseio.in/blog-post.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.pulseio.in/blog-pulse-4million.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -608,12 +601,6 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-wheelchair.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pulseio.in/how-it-works.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1109,6 +1096,24 @@
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-ventilator.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-hospital-setup-checklist.html</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-buying-medical-equipment-india.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.pulseio.in/surgical.html</loc>
