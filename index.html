@@ -3983,8 +3983,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     encodePath('image/Design to delivery/delivery-&-installation-1.webp'),
     encodePath('image/Design to delivery/after-sales-service.webp')
   ];
+  const bgImagesMobile = [
+    encodePath('image/Design to delivery/engineer-mobile.webp'),
+    encodePath('image/Design to delivery/manufacturing-mobile.webp'),
+    encodePath('image/Design to delivery/delivery-&-installation-1-mobile.webp'),
+    encodePath('image/Design to delivery/after-sales-service-mobile.webp')
+  ];
+  const getBgImages = () => (window.innerWidth <= 640 ? bgImagesMobile : bgImages);
 
-  bgImages.forEach((src) => {
+  [...bgImages, ...bgImagesMobile].forEach((src) => {
     const img = new Image();
     img.src = src;
   });
@@ -4004,7 +4011,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       else if (i === nextIdx)  setState(i, 'pos-bottom');
       else                     setState(i, 'pos-hidden');
     });
-    bg.style.backgroundImage = `url("${bgImages[active]}")`;
+    bg.style.backgroundImage = `url("${getBgImages()[active]}")`;
     counter.textContent = String(active + 1).padStart(2, '0');
     progressBar.style.width = `${((active + 1) / total) * 100}%`;
     if (content) content.classList.add('fading');
