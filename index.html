@@ -578,10 +578,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* === Process Showcase (Globe Express style) === */
   .process-showcase {
     position: relative;
-    min-height: 760px;
+    max-width: 1440px;
+    aspect-ratio: 1440 / 540;
+    height: auto;
+    margin: 0 auto;
     background: #0a1e40;
     overflow: hidden;
     padding: 80px 5% 130px;
+    box-sizing: border-box;
     color: #fff;
   }
 
