@@ -578,14 +578,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* === Process Showcase (Globe Express style) === */
   .process-showcase {
     position: relative;
-    max-width: 1440px;
-    aspect-ratio: 1440 / 560;
-    height: auto;
-    margin: 0 auto;
+    min-height: 760px;
     background: #0a1e40;
     overflow: hidden;
     padding: 80px 5% 130px;
-    box-sizing: border-box;
     color: #fff;
   }
 
@@ -614,13 +610,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* Stage Header (on white strip) */
   .stage-header {
     background: #ffffff;
-    padding: 80px 60px 40px 60px;
+    padding: 80px 8% 40px 6%;
     max-width: 100%;
-    text-align: left;
-  }
-  .amtz-heading-wrap {
-    padding: 0 60px;
-    margin-bottom: 24px;
     text-align: left;
   }
   .stage-eyebrow {
@@ -1268,7 +1259,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .reveal-delay-4 { transition-delay: 0.4s; }
   @media (max-width: 1024px) {
     nav { padding: 0 32px; }
-    section, #hero, #stats, footer, .stage-header, .amtz-heading-wrap { padding-left: 32px; padding-right: 32px; }
+    section, #hero, #stats, footer { padding-left: 32px; padding-right: 32px; }
     .diff-inner, .how-inner, .faq-inner { grid-template-columns: 1fr; gap: 48px; }
     .pillars-grid { grid-template-columns: repeat(2, 1fr); }
     /* cat-grid replaced by portfolio-strip */
@@ -1279,7 +1270,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media (max-width: 640px) {
     nav { padding: 0 20px; }
     .nav-links { display: none; }
-    section, #hero, #stats, footer, .stage-header, .amtz-heading-wrap { padding-left: 20px; padding-right: 20px; }
+    section, #hero, #stats, footer { padding-left: 20px; padding-right: 20px; }
     .pillars-grid, .stats-grid { grid-template-columns: 1fr; }
     .pillar-card { border-right: none; border-bottom: 1px solid var(--border); }
     .cat-header, .footer-top { flex-direction: column; }
@@ -1479,12 +1470,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .news-type { font-size: 8px !important; padding: 4px 8px !important; top: 10px !important; left: 10px !important; }
 
     .process-showcase {
-      min-height: 260px !important;
-      height: 260px !important;
+      min-height: 280px !important;
+      height: 280px !important;
       padding: 0 !important;
-      margin: 0 36px !important;
-      width: auto !important;
-      border-radius: 12px !important;
       overflow: hidden !important;
       position: relative !important;
     }
@@ -3198,7 +3186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- AMTZ Factory Carousel -->
 <section style="padding: 40px 0 0 0; background: #ffffff; overflow: hidden; text-align: left;">
-  <div class="amtz-heading-wrap">
+  <div style="max-width:1280px;margin:0 auto;padding:0 2% 0 1%;margin-bottom:24px;text-align:left;">
     <div class="amtz-section-label" style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#E63946;margin-bottom:12px;">OUR FACILITY</div>
     <h2 class="amtz-section-heading" style="font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;line-height:1.2;"><span style="color:#0d1b2a;">Inside Our </span><span style="color:#1B2F6E;">AMTZ Factory</span></h2>
   </div>
@@ -3983,15 +3971,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     encodePath('image/Design to delivery/delivery-&-installation-1.webp'),
     encodePath('image/Design to delivery/after-sales-service.webp')
   ];
-  const bgImagesMobile = [
-    encodePath('image/Design to delivery/engineer-mobile.webp'),
-    encodePath('image/Design to delivery/manufacturing-mobile.webp'),
-    encodePath('image/Design to delivery/delivery-&-installation-1-mobile.webp'),
-    encodePath('image/Design to delivery/after-sales-service-mobile.webp')
-  ];
-  const getBgImages = () => (window.innerWidth <= 640 ? bgImagesMobile : bgImages);
 
-  [...bgImages, ...bgImagesMobile].forEach((src) => {
+  bgImages.forEach((src) => {
     const img = new Image();
     img.src = src;
   });
@@ -4011,7 +3992,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       else if (i === nextIdx)  setState(i, 'pos-bottom');
       else                     setState(i, 'pos-hidden');
     });
-    bg.style.backgroundImage = `url("${getBgImages()[active]}")`;
+    bg.style.backgroundImage = `url("${bgImages[active]}")`;
     counter.textContent = String(active + 1).padStart(2, '0');
     progressBar.style.width = `${((active + 1) / total) * 100}%`;
     if (content) content.classList.add('fading');
