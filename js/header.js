@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     const headerHTML = `
 
@@ -399,7 +399,7 @@
 
                   <h6 class="featured-product-label" style="color: #ffffff;">OT Light — Four Reflector</h6>
 
-                  <a href="critical-sh320-ventilator.html" class="fc-link">View Product &rarr;</a>
+                  <a href="icu-ventilator.html" class="fc-link">View Product &rarr;</a>
 
                 </div>
 
@@ -719,7 +719,7 @@
 
                                         "image": "image/PULSE Ventilator.png",
 
-                                        "href": "critical-sh320-ventilator.html"
+                                        "href": "icu-ventilator.html"
 
                               },
 
@@ -739,7 +739,7 @@
 
                                         "image": "image/Critical%20care/ecg-machine-3-channel-transparent.png",
 
-                                        "href": "critical-vital-zec3.html"
+                                        "href": "3-channel-ecg-machine.html"
 
                               },
 
@@ -749,7 +749,7 @@
 
                                         "image": "image/Critical%20care/6-channel-ecg-machine-transparent.png",
 
-                                        "href": "critical-vital-zec6.html"
+                                        "href": "6-channel-ecg-machine.html"
 
                               },
 
@@ -759,7 +759,7 @@
 
                                         "image": "image/Critical%20care/12-channel-ecg-machine-transparent.png",
 
-                                        "href": "critical-vital-zec12.html"
+                                        "href": "12-channel-ecg-machine.html"
 
                               },
 
@@ -769,7 +769,7 @@
 
                                         "image": "image/Critical%20care/patient-monitor-transparent.png",
 
-                                        "href": "critical-vital-zpm5.html"
+                                        "href": "5-para-patient-monitor.html"
 
                               },
 
@@ -779,7 +779,7 @@
 
                                         "image": "image/Critical%20care/7-para-patient-monitor-transparent.png",
 
-                                        "href": "critical-vital-zpm7.html"
+                                        "href": "7-para-patient-monitor.html"
 
                               },
 
@@ -789,7 +789,7 @@
 
                                         "image": "image/Critical%20care/infusion-pump-transparent.png",
 
-                                        "href": "critical-vital-zip1.html"
+                                        "href": "infusion-pump.html"
 
                               },
 
@@ -799,7 +799,7 @@
 
                                         "image": "image/Critical%20care/syringe-pump-transparent.png",
 
-                                        "href": "critical-vital-zsp1.html"
+                                        "href": "syringe-pump.html"
 
                               }
 
@@ -1531,23 +1531,23 @@ var searchMap = [
 
   // CRITICAL CARE PRODUCTS
 
-  { keywords: ['ventilator','ventilation','sh320','icu ventilator','sh-320','breathing machine','turbine ventilator','pulse ventilator'], url: 'critical-sh320-ventilator.html' },
+  { keywords: ['ventilator','ventilation','sh320','icu ventilator','sh-320','breathing machine','turbine ventilator','pulse ventilator'], url: 'icu-ventilator.html' },
 
   { keywords: ['anesthesia workstation','anaesthesia workstation','anesthesia machine','anaesthesia machine','a-station'], url: 'critical-anesthesia-workstation.html' },
 
-  { keywords: ['zec3','ecg 3 channel','3 channel ecg','ecg machine 3','vital zec3'], url: 'critical-vital-zec3.html' },
+  { keywords: ['zec3','ecg 3 channel','3 channel ecg','ecg machine 3','vital zec3'], url: '3-channel-ecg-machine.html' },
 
-  { keywords: ['zec6','ecg 6 channel','6 channel ecg','ecg machine 6','vital zec6'], url: 'critical-vital-zec6.html' },
+  { keywords: ['zec6','ecg 6 channel','6 channel ecg','ecg machine 6','vital zec6'], url: '6-channel-ecg-machine.html' },
 
-  { keywords: ['zec12','ecg 12 channel','12 channel ecg','12 lead ecg','ecg machine 12','vital zec12'], url: 'critical-vital-zec12.html' },
+  { keywords: ['zec12','ecg 12 channel','12 channel ecg','12 lead ecg','ecg machine 12','vital zec12'], url: '12-channel-ecg-machine.html' },
 
-  { keywords: ['zpm5','patient monitor 5','5 para monitor','5 parameter monitor','vital zpm5'], url: 'critical-vital-zpm5.html' },
+  { keywords: ['zpm5','patient monitor 5','5 para monitor','5 parameter monitor','vital zpm5'], url: '5-para-patient-monitor.html' },
 
-  { keywords: ['zpm7','patient monitor 7','7 para monitor','7 parameter monitor','vital zpm7'], url: 'critical-vital-zpm7.html' },
+  { keywords: ['zpm7','patient monitor 7','7 para monitor','7 parameter monitor','vital zpm7'], url: '7-para-patient-monitor.html' },
 
-  { keywords: ['zip1','infusion pump','iv pump','volumetric pump','vital zip1'], url: 'critical-vital-zip1.html' },
+  { keywords: ['zip1','infusion pump','iv pump','volumetric pump','vital zip1'], url: 'infusion-pump.html' },
 
-  { keywords: ['zsp1','syringe pump','vital zsp1'], url: 'critical-vital-zsp1.html' },
+  { keywords: ['zsp1','syringe pump','vital zsp1'], url: 'syringe-pump.html' },
 
 
 
