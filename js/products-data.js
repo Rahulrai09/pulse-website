@@ -113,44 +113,8 @@ window.allProducts = [
       "Feature 3": "65µm Strut"
     }
   },
-  {
-    "id": "optima-inflation-device",
-    "name": "OPTIMA Inflation Device",
-    "category": "PTCA ACCESSORIES",
-    "categoryUrl": "cardiac-care.html",
-    "type": "balloon",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "One-handed inflation of vascular & coronary balloons. Gun/Plunger/Hybrid types. 0–30 atm, 20mL barrel, 3-way stopcock, winged locking mechanism.",
-    "tags": [
-      "0–30 ATM",
-      "One-Handed",
-      "3 Types"
-    ],
-    "specs": {
-      "Feature 1": "0–30 ATM",
-      "Feature 2": "One-Handed",
-      "Feature 3": "3 Types"
-    }
-  },
-  {
-    "id": "optima-manifolds",
-    "name": "OPTIMA Manifolds",
-    "category": "PTCA ACCESSORIES",
-    "categoryUrl": "cardiac-care.html",
-    "type": "balloon",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "For low & high pressure injections. Large 2.3mm internal lumen for high flow rates, smooth-turning handles, latex free, sterile packed, On/Off types, 2 or 3 side ports.",
-    "tags": [
-      "500psi",
-      "Latex Free",
-      "2–3 Side Ports"
-    ],
-    "specs": {
-      "Feature 1": "500psi",
-      "Feature 2": "Latex Free",
-      "Feature 3": "2–3 Side Ports"
-    }
-  },
+  
+  
   {
     "id": "optima-ptca-kit-y-connector-set",
     "name": "OPTIMA PTCA Kit — Y Connector Set",
@@ -189,25 +153,7 @@ window.allProducts = [
       "Feature 3": "Adjustable"
     }
   },
-  {
-    "id": "guidex-guidewires",
-    "name": "GuideX Guidewires",
-    "category": "GUIDEWIRES",
-    "categoryUrl": "cardiac-care.html",
-    "type": "wire",
-    "image": "image/Design to delivery/After-Sales Service.jpg",
-    "description": "Worker Amplatz combination of stiffness and rail support. SS core with flat-wire coils, PTFE coated, gradual taper for atraumatic navigation. Fixed core straight, J-tip & exchange wire options.",
-    "tags": [
-      "PTFE Coated",
-      "SS Core",
-      "Multiple Tips"
-    ],
-    "specs": {
-      "Feature 1": "PTFE Coated",
-      "Feature 2": "SS Core",
-      "Feature 3": "Multiple Tips"
-    }
-  },
+  
   {
     "id": "acusafe-micro-access-introducer-kits",
     "name": "AcuSafe Micro-Access Introducer Kits",
@@ -265,25 +211,7 @@ window.allProducts = [
       "Feature 3": "18G–24G"
     }
   },
-  {
-    "id": "acusafe-blunt-needle-access-system",
-    "name": "AcuSafe Blunt Needle Access System",
-    "category": "CATHETERS",
-    "categoryUrl": "cardiac-care.html",
-    "type": "catheter",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "Sharp and blunt stylets for controlled access in percutaneous drainage procedures. Box of 5. Available 18G x 10cm / 15cm / 20cm.",
-    "tags": [
-      "18G",
-      "Percutaneous",
-      "Blunt Stylet"
-    ],
-    "specs": {
-      "Feature 1": "18G",
-      "Feature 2": "Percutaneous",
-      "Feature 3": "Blunt Stylet"
-    }
-  },
+  
   {
     "id": "high-pressure-injection-lines-1200psi",
     "name": "High Pressure Injection Lines — 1200psi",
@@ -341,25 +269,7 @@ window.allProducts = [
       "Feature 3": "18.5\" Screen"
     }
   },
-  {
-    "id": "anesthesia-workstation",
-    "name": "Anesthesia Workstation",
-    "category": "ANAESTHESIA",
-    "categoryUrl": "critical-care.html",
-    "type": "anaesthesia",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Classic & reliable anesthesia machine, CE certified. 8.4\" LCD touch screen, dual vaporizer support, pneumatically driven, integrated AGSS.",
-    "tags": [
-      "Adult / Pediatric",
-      "CE Certified",
-      "8.4\" LCD"
-    ],
-    "specs": {
-      "Feature 1": "Adult / Pediatric",
-      "Feature 2": "CE Certified",
-      "Feature 3": "8.4\" LCD"
-    }
-  },
+  
   {
     "id": "ecg-machine-3-channel-vital-zec3",
     "name": "ECG Machine — 3 Channel (Vital ZEC3)",
@@ -455,44 +365,8 @@ window.allProducts = [
       "Feature 3": "EtCO2"
     }
   },
-  {
-    "id": "infusion-pump-vital-zip1",
-    "name": "Infusion Pump (Vital ZIP1)",
-    "category": "INFUSION PUMPS",
-    "categoryUrl": "critical-care.html",
-    "type": "infusion",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "4.3-inch colour touch screen, compact & lightweight, 5-hour battery, advanced pressure detection, flow rate 0.1–1500 ml/h.",
-    "tags": [
-      "0.1–1500 ml/h",
-      "5hr Battery",
-      "Touch Screen"
-    ],
-    "specs": {
-      "Feature 1": "0.1–1500 ml/h",
-      "Feature 2": "5hr Battery",
-      "Feature 3": "Touch Screen"
-    }
-  },
-  {
-    "id": "syringe-pump-vital-zsp1",
-    "name": "Syringe Pump (Vital ZSP1)",
-    "category": "SYRINGE PUMPS",
-    "categoryUrl": "critical-care.html",
-    "type": "syringe",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "3.8\" touch display, 5/10/20/30/50ml syringe sizes, rate 0.1–1500 ml/h, 8hr battery backup, speed+time+volume infusion modes.",
-    "tags": [
-      "5–50ml Syringes",
-      "8hr Battery",
-      "3.8\" Touch"
-    ],
-    "specs": {
-      "Feature 1": "5–50ml Syringes",
-      "Feature 2": "8hr Battery",
-      "Feature 3": "3.8\" Touch"
-    }
-  },
+  
+  
   {
     "id": "manual-bed-with-sideboards-icu-range",
     "name": "Manual Bed with Sideboards (ICU Range)",
@@ -588,63 +462,9 @@ window.allProducts = [
       "Feature 3": "Robust Frame"
     }
   },
-  {
-    "id": "manual-ot-table",
-    "name": "Manual OT Table",
-    "category": "OT TABLES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "ot",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "Precision hydraulic-lift manual operating table. Offers key surgical positions including Trendelenburg, lateral tilt, and kidney bridge.",
-    "tags": [
-      "Hydraulic Lift",
-      "Multi-Position",
-      "Durable Gear"
-    ],
-    "specs": {
-      "Feature 1": "Hydraulic Lift",
-      "Feature 2": "Multi-Position",
-      "Feature 3": "Durable Gear"
-    }
-  },
-  {
-    "id": "electric-ot-table",
-    "name": "Electric OT Table",
-    "category": "OT TABLES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "ot",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "High-end electric operating table with electro-hydraulic adjustments, hand-held remote control, and excellent stability.",
-    "tags": [
-      "Electro-Hydraulic",
-      "Remote Control",
-      "C-Arm Compatible"
-    ],
-    "specs": {
-      "Feature 1": "Electro-Hydraulic",
-      "Feature 2": "Remote Control",
-      "Feature 3": "C-Arm Compatible"
-    }
-  },
-  {
-    "id": "c-arm-electric-ot-table",
-    "name": "C-Arm Electric OT Table",
-    "category": "OT TABLES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "ot",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "Premium radiolucent C-Arm compatible electric OT table with carbon fiber tabletop for unimpeded 360-degree imaging.",
-    "tags": [
-      "Carbon Fiber Top",
-      "Fully Radiolucent",
-      "Multi-Axis"
-    ],
-    "specs": {
-      "Feature 1": "Carbon Fiber Top",
-      "Feature 2": "Fully Radiolucent",
-      "Feature 3": "Multi-Axis"
-    }
-  },
+  
+  
+  
   {
     "id": "ldrp-bed",
     "name": "LDRP Bed",
@@ -1158,25 +978,7 @@ window.allProducts = [
       "Feature 3": "High Lux"
     }
   },
-  {
-    "id": "examination-light",
-    "name": "Examination Light",
-    "category": "OT LIGHTS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "light",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Mobile clinical examination light featuring a highly flexible gooseneck arm, cool LED output, and stable castored base.",
-    "tags": [
-      "Mobile Stand",
-      "Flexible Gooseneck",
-      "40K Lux"
-    ],
-    "specs": {
-      "Feature 1": "Mobile Stand",
-      "Feature 2": "Flexible Gooseneck",
-      "Feature 3": "40K Lux"
-    }
-  },
+  
   {
     "id": "blood-donation-chair",
     "name": "Blood Donation Chair",
