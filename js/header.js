@@ -715,7 +715,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "SH320 ICU Ventilator",
+                                        "name": "ICU Ventilator",
 
                                         "image": "image/PULSE Ventilator.png",
 
@@ -735,7 +735,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "Vital ZEC3 ECG Machine",
+                                        "name": "3-Channel ECG Machine",
 
                                         "image": "image/Critical%20care/ecg-machine-3-channel-transparent.png",
 
@@ -745,7 +745,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "Vital ZEC6 ECG Machine",
+                                        "name": "6-Channel ECG Machine",
 
                                         "image": "image/Critical%20care/6-channel-ecg-machine-transparent.png",
 
@@ -755,7 +755,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "Vital ZEC12 ECG Machine",
+                                        "name": "12-Channel ECG Machine",
 
                                         "image": "image/Critical%20care/12-channel-ecg-machine-transparent.png",
 
@@ -765,7 +765,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "Vital ZPM5 Patient Monitor",
+                                        "name": "5-Para Patient Monitor",
 
                                         "image": "image/Critical%20care/patient-monitor-transparent.png",
 
@@ -775,7 +775,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "Vital ZPM7 Patient Monitor",
+                                        "name": "7-Para Patient Monitor",
 
                                         "image": "image/Critical%20care/7-para-patient-monitor-transparent.png",
 
@@ -785,7 +785,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "Vital ZIP1 Infusion Pump",
+                                        "name": "Infusion Pump",
 
                                         "image": "image/Critical%20care/infusion-pump-transparent.png",
 
@@ -795,7 +795,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
-                                        "name": "Vital ZSP1 Syringe Pump",
+                                        "name": "Syringe Pump",
 
                                         "image": "image/Critical%20care/syringe-pump-transparent.png",
 
