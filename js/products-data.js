@@ -18,63 +18,9 @@ window.allProducts = [
       "Feature 3": "Advanced Cooling"
     }
   },
-  {
-    "id": "body-contouring-systems",
-    "name": "Body Contouring Systems",
-    "category": "RF PLATFORMS",
-    "categoryUrl": "aesthetics.html",
-    "type": "rf",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "Multi-polar Radiofrequency & Cryolipolysis systems for effective targeted fat reduction and skin tightening. Safe, non-invasive solutions.",
-    "tags": [
-      "Multi-Polar RF",
-      "Cryolipolysis",
-      "Non-Invasive"
-    ],
-    "specs": {
-      "Feature 1": "Multi-Polar RF",
-      "Feature 2": "Cryolipolysis",
-      "Feature 3": "Non-Invasive"
-    }
-  },
-  {
-    "id": "skin-rejuvenation-devices",
-    "name": "Skin Rejuvenation Devices",
-    "category": "HIFU SYSTEMS",
-    "categoryUrl": "aesthetics.html",
-    "type": "hifu",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "High-intensity focused ultrasound (HIFU) systems for facelift, neck tightening, and anti-aging treatments with adjustable cartridge depth.",
-    "tags": [
-      "Facelift & Neck",
-      "Deep Cartridges",
-      "High Intensity"
-    ],
-    "specs": {
-      "Feature 1": "Facelift & Neck",
-      "Feature 2": "Deep Cartridges",
-      "Feature 3": "High Intensity"
-    }
-  },
-  {
-    "id": "hair-restoration-systems",
-    "name": "Hair Restoration Systems",
-    "category": "SKIN ANALYSIS",
-    "categoryUrl": "aesthetics.html",
-    "type": "analysis",
-    "image": "image/Design to delivery/Delivery & Installation 1.jpg",
-    "description": "Specialized clinical therapy platforms for scalp rejuvenation, hair growth stimulation, and follicular revitalisation.",
-    "tags": [
-      "Follicular Therapy",
-      "Scalp Rejuvenation",
-      "Clinical Grade"
-    ],
-    "specs": {
-      "Feature 1": "Follicular Therapy",
-      "Feature 2": "Scalp Rejuvenation",
-      "Feature 3": "Clinical Grade"
-    }
-  },
+  
+  
+  
   {
     "id": "sirova-sirolimus-eluting-stent",
     "name": "SIROVA Sirolimus Eluting Stent",
@@ -115,44 +61,8 @@ window.allProducts = [
   },
   
   
-  {
-    "id": "optima-ptca-kit-y-connector-set",
-    "name": "OPTIMA PTCA Kit — Y Connector Set",
-    "category": "PTCA ACCESSORIES",
-    "categoryUrl": "cardiac-care.html",
-    "type": "balloon",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Minimizes blood loss and provides smooth channel for interventional device delivery. Easy push-pull one-hand operation. Rotating and Push-Pull connector types.",
-    "tags": [
-      "Y Connector",
-      "Push-Pull",
-      "Blood Loss Control"
-    ],
-    "specs": {
-      "Feature 1": "Y Connector",
-      "Feature 2": "Push-Pull",
-      "Feature 3": "Blood Loss Control"
-    }
-  },
-  {
-    "id": "optima-radial-artery-compression-band",
-    "name": "OPTIMA Radial Artery Compression Band",
-    "category": "PTCA ACCESSORIES",
-    "categoryUrl": "cardiac-care.html",
-    "type": "balloon",
-    "image": "image/Design to delivery/Delivery & Installation 1.jpg",
-    "description": "For radial artery hemostasis post percutaneous puncture. Transparent material for visual control, unilateral valve balloon, adjustable band length, stopcock for accurate deflation.",
-    "tags": [
-      "Radial Hemostasis",
-      "Transparent",
-      "Adjustable"
-    ],
-    "specs": {
-      "Feature 1": "Radial Hemostasis",
-      "Feature 2": "Transparent",
-      "Feature 3": "Adjustable"
-    }
-  },
+  
+  
   
   {
     "id": "acusafe-micro-access-introducer-kits",
@@ -192,25 +102,7 @@ window.allProducts = [
       "Feature 3": "Radiopaque Sheath"
     }
   },
-  {
-    "id": "acusafe-iv-catheter-cannula",
-    "name": "AcuSafe IV Catheter & Cannula",
-    "category": "CATHETERS",
-    "categoryUrl": "cardiac-care.html",
-    "type": "catheter",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "Radiopaque FEP polymer straight hub. Thin wall 3-radiopaque-line design for high flow, FEP + Lancet tip for reduced insertion force. Sizes 18G–24G, 32–70mm lengths.",
-    "tags": [
-      "FEP Polymer",
-      "High Flow",
-      "18G–24G"
-    ],
-    "specs": {
-      "Feature 1": "FEP Polymer",
-      "Feature 2": "High Flow",
-      "Feature 3": "18G–24G"
-    }
-  },
+  
   
   {
     "id": "high-pressure-injection-lines-1200psi",
@@ -367,161 +259,17 @@ window.allProducts = [
   },
   
   
-  {
-    "id": "manual-bed-with-sideboards-icu-range",
-    "name": "Manual Bed with Sideboards (ICU Range)",
-    "category": "ICU BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/After-Sales Service.jpg",
-    "description": "High-quality manual ICU bed with detachable ABS head & foot boards, collapsible aluminum side rails, and high-strength actuators.",
-    "tags": [
-      "2 / 3 Function",
-      "ABS Panels",
-      "Collapsible Rails"
-    ],
-    "specs": {
-      "Feature 1": "2 / 3 Function",
-      "Feature 2": "ABS Panels",
-      "Feature 3": "Collapsible Rails"
-    }
-  },
-  {
-    "id": "electric-bed-with-sideboards-icu-range",
-    "name": "Electric Bed with Sideboards (ICU Range)",
-    "category": "ICU BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/After-Sales Service.jpg",
-    "description": "Premium electric ICU bed with standard 3/5 functions, robust linear actuators, hand remote, and integrated emergency battery backup.",
-    "tags": [
-      "3 / 5 Function",
-      "Linear Actuators",
-      "Battery Backup"
-    ],
-    "specs": {
-      "Feature 1": "3 / 5 Function",
-      "Feature 2": "Linear Actuators",
-      "Feature 3": "Battery Backup"
-    }
-  },
-  {
-    "id": "lite-fowler-ms-bed",
-    "name": "Lite Fowler MS Bed",
-    "category": "ICU BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/After-Sales Service.jpg",
-    "description": "Durable mild steel Fowler bed with smooth manual winding mechanism for backrest and knee-rest adjustments.",
-    "tags": [
-      "Mild Steel",
-      "Fowler Design",
-      "Winding System"
-    ],
-    "specs": {
-      "Feature 1": "Mild Steel",
-      "Feature 2": "Fowler Design",
-      "Feature 3": "Winding System"
-    }
-  },
-  {
-    "id": "plus-lite-semi-fowler-pp-bed",
-    "name": "Plus Lite Semi Fowler PP Bed",
-    "category": "ICU BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/After-Sales Service.jpg",
-    "description": "Semi-Fowler bed featuring high-quality polypropylene head & foot boards, dual manual winding system, and heavy-duty frame.",
-    "tags": [
-      "Polypropylene Panels",
-      "Semi Fowler",
-      "Dual Winding"
-    ],
-    "specs": {
-      "Feature 1": "Polypropylene Panels",
-      "Feature 2": "Semi Fowler",
-      "Feature 3": "Dual Winding"
-    }
-  },
-  {
-    "id": "plus-lite-semi-fowler-ssplt-bed",
-    "name": "Plus Lite Semi Fowler SSPLT Bed",
-    "category": "ICU BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/After-Sales Service.jpg",
-    "description": "Heavy-duty Semi-Fowler bed with durable stainless steel panels, smooth crank system, and high-load capacity.",
-    "tags": [
-      "Stainless Steel Panels",
-      "Semi Fowler",
-      "Robust Frame"
-    ],
-    "specs": {
-      "Feature 1": "Stainless Steel Panels",
-      "Feature 2": "Semi Fowler",
-      "Feature 3": "Robust Frame"
-    }
-  },
   
   
   
-  {
-    "id": "ldrp-bed",
-    "name": "LDRP Bed",
-    "category": "LABOUR DELIVERY BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Versatile Labour, Delivery, Recovery, and Postpartum (LDRP) bed. Electric height, backrest and tilt adjustments with leg rests.",
-    "tags": [
-      "3 Section Top",
-      "Electric Adjust",
-      "Leg Supports"
-    ],
-    "specs": {
-      "Feature 1": "3 Section Top",
-      "Feature 2": "Electric Adjust",
-      "Feature 3": "Leg Supports"
-    }
-  },
-  {
-    "id": "lite-ldrp-bed",
-    "name": "Lite LDRP Bed",
-    "category": "LABOUR DELIVERY BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Cost-effective and compact LDRP bed with essential mechanical adjustments, comfortable padding, and quick transformation.",
-    "tags": [
-      "Manual / Semi-Elec",
-      "Foldable",
-      "Compact"
-    ],
-    "specs": {
-      "Feature 1": "Manual / Semi-Elec",
-      "Feature 2": "Foldable",
-      "Feature 3": "Compact"
-    }
-  },
-  {
-    "id": "pediatric-bed",
-    "name": "Pediatric Bed",
-    "category": "LABOUR DELIVERY BEDS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Secure pediatric patient bed with full-length side-guards, child safety locks, and smooth adjustable mechanism.",
-    "tags": [
-      "Full-Length Rails",
-      "Safety Lock",
-      "Colorful Panels"
-    ],
-    "specs": {
-      "Feature 1": "Full-Length Rails",
-      "Feature 2": "Safety Lock",
-      "Feature 3": "Colorful Panels"
-    }
-  },
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "id": "stretcher-on-trolley",
     "name": "Stretcher on Trolley",
@@ -636,348 +384,24 @@ window.allProducts = [
       "Feature 3": "Heavy-Duty Castors"
     }
   },
-  {
-    "id": "instrument-trolley-bowl-and-bucket-dressing-trolley",
-    "name": "Instrument Trolley — Bowl and Bucket / Dressing Trolley",
-    "category": "SS TROLLEYS & CARTS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Delivery & Installation 1.jpg",
-    "description": "Mobile clinical dressing trolley featuring integrated stainless steel bowl and bucket, two guard-railed shelves.",
-    "tags": [
-      "With Bowl & Bucket",
-      "SS304",
-      "Two Shelves"
-    ],
-    "specs": {
-      "Feature 1": "With Bowl & Bucket",
-      "Feature 2": "SS304",
-      "Feature 3": "Two Shelves"
-    }
-  },
-  {
-    "id": "instrument-trolley",
-    "name": "Instrument Trolley",
-    "category": "SS TROLLEYS & CARTS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Delivery & Installation 1.jpg",
-    "description": "Standard stainless steel surgical instrument trolley with protective guard rails on all shelves and anti-static castors.",
-    "tags": [
-      "SS Shelves",
-      "Guard Rails",
-      "Anti-Static Castors"
-    ],
-    "specs": {
-      "Feature 1": "SS Shelves",
-      "Feature 2": "Guard Rails",
-      "Feature 3": "Anti-Static Castors"
-    }
-  },
-  {
-    "id": "medicine-trolley",
-    "name": "Medicine Trolley",
-    "category": "SS TROLLEYS & CARTS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Delivery & Installation 1.jpg",
-    "description": "Compact medicine trolley with smooth-sliding drawers and open shelves for efficient bedside medication delivery.",
-    "tags": [
-      "Drawers & Shelves",
-      "SS304",
-      "Side Handles"
-    ],
-    "specs": {
-      "Feature 1": "Drawers & Shelves",
-      "Feature 2": "SS304",
-      "Feature 3": "Side Handles"
-    }
-  },
-  {
-    "id": "double-step-stool",
-    "name": "Double Step Stool",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Safe dual-level stepping stool with non-slip rubber tread and a durable stainless steel tubular frame.",
-    "tags": [
-      "Non-Slip Rubber",
-      "SS Frame",
-      "Dual Step"
-    ],
-    "specs": {
-      "Feature 1": "Non-Slip Rubber",
-      "Feature 2": "SS Frame",
-      "Feature 3": "Dual Step"
-    }
-  },
-  {
-    "id": "square-stool",
-    "name": "Square Stool",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Strong clinical square stool with stainless steel seat, heavy-duty welded joints, and floor-protecting rubber tips.",
-    "tags": [
-      "SS304 Top",
-      "Rubber Feet",
-      "Robust Leg"
-    ],
-    "specs": {
-      "Feature 1": "SS304 Top",
-      "Feature 2": "Rubber Feet",
-      "Feature 3": "Robust Leg"
-    }
-  },
-  {
-    "id": "round-stool",
-    "name": "Round Stool",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Ergonomic round stool with gas-spring height adjustment, chrome footrest ring, and smooth 5-castor base.",
-    "tags": [
-      "Height Adjustable",
-      "Gas Lift Option",
-      "Footrest Ring"
-    ],
-    "specs": {
-      "Feature 1": "Height Adjustable",
-      "Feature 2": "Gas Lift Option",
-      "Feature 3": "Footrest Ring"
-    }
-  },
-  {
-    "id": "3-fold-modesty-screen",
-    "name": "3-Fold Modesty Screen",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Three-panel mobile privacy screen with washable canvas curtains and a sturdy powder-coated mild steel frame.",
-    "tags": [
-      "3-Fold Canvas",
-      "Foldable MS Frame",
-      "Mobile Castors"
-    ],
-    "specs": {
-      "Feature 1": "3-Fold Canvas",
-      "Feature 2": "Foldable MS Frame",
-      "Feature 3": "Mobile Castors"
-    }
-  },
-  {
-    "id": "soil-linen-trolley",
-    "name": "Soil Linen Trolley",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Mobile soiled linen trolley with heavy-duty washable canvas bag and a rust-resistant stainless steel framework.",
-    "tags": [
-      "Canvas Bag",
-      "SS Frame",
-      "Removable Bag"
-    ],
-    "specs": {
-      "Feature 1": "Canvas Bag",
-      "Feature 2": "SS Frame",
-      "Feature 3": "Removable Bag"
-    }
-  },
-  {
-    "id": "ss-saline-stand",
-    "name": "SS Saline Stand",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Premium stainless steel IV stand with a 4-hook top, smooth hand-knob height adjustment, and stable 5-castor base.",
-    "tags": [
-      "4 Hook Top",
-      "Height Adjust",
-      "Weighted Base"
-    ],
-    "specs": {
-      "Feature 1": "4 Hook Top",
-      "Feature 2": "Height Adjust",
-      "Feature 3": "Weighted Base"
-    }
-  },
-  {
-    "id": "ob-table-overbed-table",
-    "name": "OB Table (Overbed Table)",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Overbed utility table with smooth gas-spring height adjustment, laminated wooden top, and low-profile slide-under base.",
-    "tags": [
-      "Gas-Spring Lift",
-      "Laminated Top",
-      "U-Shape Base"
-    ],
-    "specs": {
-      "Feature 1": "Gas-Spring Lift",
-      "Feature 2": "Laminated Top",
-      "Feature 3": "U-Shape Base"
-    }
-  },
-  {
-    "id": "locker-1-drawer-1-cabinet",
-    "name": "Locker — 1 Drawer 1 Cabinet",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Durable bedside cabinet featuring 1 top drawer, 1 spacious bottom locker with security keys, and a chemical-resistant ABS top.",
-    "tags": [
-      "1 Drawer 1 Cabinet",
-      "Key Lock",
-      "ABS Top Tray"
-    ],
-    "specs": {
-      "Feature 1": "1 Drawer 1 Cabinet",
-      "Feature 2": "Key Lock",
-      "Feature 3": "ABS Top Tray"
-    }
-  },
-  {
-    "id": "mattress",
-    "name": "Mattress",
-    "category": "SS & MS ACCESSORIES",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "Medical-grade bedside mattress with high-density foam, waterproof/breathable zippered cover, designed for 4-section ICU beds.",
-    "tags": [
-      "Waterproof Cover",
-      "High-Density Foam",
-      "Multi-Section"
-    ],
-    "specs": {
-      "Feature 1": "Waterproof Cover",
-      "Feature 2": "High-Density Foam",
-      "Feature 3": "Multi-Section"
-    }
-  },
-  {
-    "id": "sliding-glass-door-unit",
-    "name": "Sliding Glass Door Unit",
-    "category": "ADMIN & NURSING STATION",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Premium steel cabinet with sliding tempered glass doors, adjustable shelves, and a secure dual-lock system for medical files.",
-    "tags": [
-      "Tempered Glass",
-      "Key Lock",
-      "Adjustable Shelves"
-    ],
-    "specs": {
-      "Feature 1": "Tempered Glass",
-      "Feature 2": "Key Lock",
-      "Feature 3": "Adjustable Shelves"
-    }
-  },
-  {
-    "id": "bookcase",
-    "name": "Bookcase",
-    "category": "ADMIN & NURSING STATION",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Heavy-duty multi-tier open bookcase for immediate access to reference materials, manuals, and clinical records.",
-    "tags": [
-      "Open Shelves",
-      "SS or MS",
-      "Rigid Frame"
-    ],
-    "specs": {
-      "Feature 1": "Open Shelves",
-      "Feature 2": "SS or MS",
-      "Feature 3": "Rigid Frame"
-    }
-  },
-  {
-    "id": "vfc-vertical-filing-cabinet",
-    "name": "VFC (Vertical Filing Cabinet)",
-    "category": "ADMIN & NURSING STATION",
-    "categoryUrl": "hospital-setup.html",
-    "type": "furniture",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Four-drawer vertical filing cabinet with anti-tilt safety mechanism, smooth ball-bearing runners, and central locking.",
-    "tags": [
-      "4 Drawers",
-      "Anti-Tilt",
-      "Central Lock"
-    ],
-    "specs": {
-      "Feature 1": "4 Drawers",
-      "Feature 2": "Anti-Tilt",
-      "Feature 3": "Central Lock"
-    }
-  },
-  {
-    "id": "single-dome-ot-light",
-    "name": "Single Dome OT Light",
-    "category": "OT LIGHTS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "light",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "High-performance ceiling-mounted single-dome surgical light. 120,000 lux illumination with cool LED technology.",
-    "tags": [
-      "120K Lux",
-      "Shadow-Less",
-      "Focus Adjustment"
-    ],
-    "specs": {
-      "Feature 1": "120K Lux",
-      "Feature 2": "Shadow-Less",
-      "Feature 3": "Focus Adjustment"
-    }
-  },
-  {
-    "id": "double-dome-ot-light",
-    "name": "Double Dome OT Light",
-    "category": "OT LIGHTS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "light",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Premium double-dome LED operating theatre light. Offers unmatched shadow-free illumination, variable color temperature, and camera systems.",
-    "tags": [
-      "160K + 120K Lux",
-      "Shadow-Less",
-      "Touch Control"
-    ],
-    "specs": {
-      "Feature 1": "160K + 120K Lux",
-      "Feature 2": "Shadow-Less",
-      "Feature 3": "Touch Control"
-    }
-  },
-  {
-    "id": "butterfly-ot-light",
-    "name": "Butterfly OT Light",
-    "category": "OT LIGHTS",
-    "categoryUrl": "hospital-setup.html",
-    "type": "light",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "Aerodynamically optimized butterfly-style surgical light, fully compatible with laminar flow operating rooms.",
-    "tags": [
-      "Aerodynamic Design",
-      "Laminar Flow Comp.",
-      "High Lux"
-    ],
-    "specs": {
-      "Feature 1": "Aerodynamic Design",
-      "Feature 2": "Laminar Flow Comp.",
-      "Feature 3": "High Lux"
-    }
-  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   {
     "id": "blood-donation-chair",
@@ -1017,101 +441,11 @@ window.allProducts = [
       "Feature 3": "Saves Prep Time"
     }
   },
-  {
-    "id": "pulse-kneeflex-cpm-machine",
-    "name": "Pulse KneeFlex CPM Machine",
-    "category": "CPM Machines",
-    "categoryUrl": "rehabilitation.html",
-    "type": "cpm",
-    "image": "image/Design to delivery/Manufacturing.jpg",
-    "description": "Knee continuous passive motion machine with programmable ROM, speed control and patient hand-held remote.",
-    "tags": [
-      "0-120° ROM",
-      "Speed Control",
-      "Hand Remote"
-    ],
-    "specs": {
-      "Feature 1": "0-120° ROM",
-      "Feature 2": "Speed Control",
-      "Feature 3": "Hand Remote"
-    }
-  },
-  {
-    "id": "pulse-combistim-4-channel",
-    "name": "Pulse CombiStim 4-Channel",
-    "category": "Electrotherapy",
-    "categoryUrl": "rehabilitation.html",
-    "type": "electro",
-    "image": "image/Design to delivery/Design.jpg",
-    "description": "4-channel combination electrotherapy unit with IFT, TENS, NMES, Russian stimulation and ultrasound modes.",
-    "tags": [
-      "4-Channel",
-      "IFT+TENS+NMES",
-      "Combo Unit"
-    ],
-    "specs": {
-      "Feature 1": "4-Channel",
-      "Feature 2": "IFT+TENS+NMES",
-      "Feature 3": "Combo Unit"
-    }
-  },
-  {
-    "id": "pulse-us-therapy-3mhz",
-    "name": "Pulse US Therapy 3MHz",
-    "category": "Ultrasound Therapy",
-    "categoryUrl": "rehabilitation.html",
-    "type": "ultrasound",
-    "image": "image/Design to delivery/Engineer.jpg",
-    "description": "1MHz/3MHz therapeutic ultrasound unit with pulsed and continuous modes for deep tissue treatment.",
-    "tags": [
-      "1+3 MHz",
-      "Pulsed/Cont.",
-      "5cm² Head"
-    ],
-    "specs": {
-      "Feature 1": "1+3 MHz",
-      "Feature 2": "Pulsed/Cont.",
-      "Feature 3": "5cm² Head"
-    }
-  },
-  {
-    "id": "pulse-cervtract-traction-unit",
-    "name": "Pulse CervTract Traction Unit",
-    "category": "Traction Systems",
-    "categoryUrl": "rehabilitation.html",
-    "type": "traction",
-    "image": "image/Design to delivery/Delivery & Installation 1.jpg",
-    "description": "Motorized cervical and lumbar traction unit with programmable force, hold and rest cycles for spinal conditions.",
-    "tags": [
-      "Cervical+Lumbar",
-      "Motorized",
-      "Programmable"
-    ],
-    "specs": {
-      "Feature 1": "Cervical+Lumbar",
-      "Feature 2": "Motorized",
-      "Feature 3": "Programmable"
-    }
-  },
-  {
-    "id": "pulse-softlaser-830nm",
-    "name": "Pulse SoftLaser 830nm",
-    "category": "Laser Therapy",
-    "categoryUrl": "rehabilitation.html",
-    "type": "electro",
-    "image": "image/Design to delivery/After-Sales Service.jpg",
-    "description": "Cold laser therapy unit for pain management, wound healing and musculoskeletal rehabilitation.",
-    "tags": [
-      "830nm",
-      "Cold Laser",
-      "Pain Relief"
-    ],
-    "specs": {
-      "Feature 1": "830nm",
-      "Feature 2": "Cold Laser",
-      "Feature 3": "Pain Relief"
-    }
-  },
+  
+  
+  
+  
+  
   {
     "id": "pulse-rollator-walker",
     "name": "Pulse Rollator Walker",

@@ -1591,13 +1591,10 @@ var searchMap = [
 
   { keywords: ['optima pressure monitoring','pressure monitoring lines'], url: 'optima-pressure-monitoring-lines.html' },
 
-  { keywords: ['ptca kit','y connector','y-connector set','ptca y connector'], url: 'optima-ptca-kit-y-connector-set.html' },
 
-  { keywords: ['radial compression band','radial artery compression','compression band'], url: 'optima-radial-artery-compression-band.html' },
 
   { keywords: ['high pressure injection','1200psi','injection lines'], url: 'high-pressure-injection-lines-1200psi.html' },
 
-  { keywords: ['acusafe iv catheter','iv cannula','iv catheter cannula'], url: 'acusafe-iv-catheter-cannula.html' },
 
 
 
@@ -1629,11 +1626,8 @@ var searchMap = [
 
   { keywords: ['wavelength pro','wavelength pro x'], url: 'aesthetics-wavelength-pro-x.html' },
 
-  { keywords: ['body contouring system','contouring system'], url: 'body-contouring-systems.html' },
 
-  { keywords: ['hair restoration system','hair restoration'], url: 'hair-restoration-systems.html' },
 
-  { keywords: ['skin rejuvenation','rejuvenation device'], url: 'skin-rejuvenation-devices.html' },
 
 
 
@@ -1651,17 +1645,12 @@ var searchMap = [
 
   { keywords: ['xtrion wheelchair','xtrion 6013'], url: 'rehab-xtrion-6013a.html' },
 
-  { keywords: ['cervtract','traction unit','cervical traction unit'], url: 'pulse-cervtract-traction-unit.html' },
 
-  { keywords: ['combistim','4 channel stimulator','neuromuscular stimulator'], url: 'pulse-combistim-4-channel.html' },
 
-  { keywords: ['kneeflex','cpm machine','knee cpm','continuous passive motion'], url: 'pulse-kneeflex-cpm-machine.html' },
 
   { keywords: ['rollator walker','rollator','pulse rollator'], url: 'pulse-rollator-walker.html' },
 
-  { keywords: ['softlaser','soft laser','830nm laser'], url: 'pulse-softlaser-830nm.html' },
 
-  { keywords: ['us therapy','ultrasound therapy','3mhz therapy','physiotherapy ultrasound'], url: 'pulse-us-therapy-3mhz.html' },
 
   { keywords: ['folding wheelchair with cushion'], url: 'folding-wheelchair-with-cushion.html' },
 
@@ -1681,19 +1670,12 @@ var searchMap = [
 
   { keywords: ['semi fowler electric','semi fowler bed'], url: 'hospital-semi-fowler-electric.html' },
 
-  { keywords: ['lite fowler','lite fowler ms bed'], url: 'lite-fowler-ms-bed.html' },
 
-  { keywords: ['ldrp bed','labour delivery recovery'], url: 'ldrp-bed.html' },
 
-  { keywords: ['lite ldrp bed'], url: 'lite-ldrp-bed.html' },
 
-  { keywords: ['pediatric bed','paediatric bed'], url: 'pediatric-bed.html' },
 
-  { keywords: ['plus lite semi fowler pp','pp bed'], url: 'plus-lite-semi-fowler-pp-bed.html' },
 
-  { keywords: ['electric bed sideboards','icu bed sideboards'], url: 'electric-bed-with-sideboards-icu-range.html' },
 
-  { keywords: ['manual bed sideboards'], url: 'manual-bed-with-sideboards-icu-range.html' },
 
   { keywords: ['delivery table hydraulic','hydraulic delivery table'], url: 'hospital-delivery-table-hydraulic.html' },
 
@@ -1711,11 +1693,8 @@ var searchMap = [
 
   { keywords: ['globus dome ot light','globus dome'], url: 'hospital-ot-light-globus-dome.html' },
 
-  { keywords: ['butterfly ot light'], url: 'butterfly-ot-light.html' },
 
-  { keywords: ['double dome ot light'], url: 'double-dome-ot-light.html' },
 
-  { keywords: ['single dome ot light'], url: 'single-dome-ot-light.html' },
 
   { keywords: ['examination light','ot examination light'], url: 'hospital-ot-examination-light.html' },
 
@@ -1739,11 +1718,8 @@ var searchMap = [
 
   { keywords: ['ss instrument trolley','instrument trolleys'], url: 'hospital-ss-instrument-trolleys.html' },
 
-  { keywords: ['instrument trolley bowl','dressing trolley','bowl and bucket'], url: 'instrument-trolley-bowl-and-bucket-dressing-trolley.html' },
 
-  { keywords: ['instrument trolley'], url: 'instrument-trolley.html' },
 
-  { keywords: ['medicine trolley'], url: 'medicine-trolley.html' },
 
   { keywords: ['medicine cart'], url: 'medicine-cart.html' },
 
@@ -1753,29 +1729,17 @@ var searchMap = [
 
   { keywords: ['blood donation chair'], url: 'blood-donation-chair.html' },
 
-  { keywords: ['overbed table','ob table'], url: 'ob-table-overbed-table.html' },
 
-  { keywords: ['sliding glass door'], url: 'sliding-glass-door-unit.html' },
 
-  { keywords: ['soil linen trolley','linen trolley'], url: 'soil-linen-trolley.html' },
 
-  { keywords: ['saline stand','ss saline stand'], url: 'ss-saline-stand.html' },
 
-  { keywords: ['round stool'], url: 'round-stool.html' },
 
-  { keywords: ['square stool'], url: 'square-stool.html' },
 
-  { keywords: ['double step stool'], url: 'double-step-stool.html' },
 
-  { keywords: ['locker drawer cabinet','locker'], url: 'locker-1-drawer-1-cabinet.html' },
 
-  { keywords: ['filing cabinet','vertical filing cabinet'], url: 'vfc-vertical-filing-cabinet.html' },
 
-  { keywords: ['mattress','hospital mattress'], url: 'mattress.html' },
 
-  { keywords: ['bookcase'], url: 'bookcase.html' },
 
-  { keywords: ['modesty screen','3 fold screen'], url: '3-fold-modesty-screen.html' },
 
   { keywords: ['stretcher on trolley'], url: 'stretcher-on-trolley.html' },
 
