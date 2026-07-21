@@ -1,5 +1,5 @@
 /* PREMIUM FOOTER STYLES */
-.premium-footer { background: var(--nav-bg); border-top: 1px solid var(--border-dark); display: flex; flex-direction: column; }
+.premium-footer { background: var(--nav-bg); border-top: 1px solid var(--border-dark); padding: 64px 60px 40px; display: flex; flex-direction: column; }
 
 .pf-strip { background: rgba(91,107,204,0.1); border-bottom: 1px solid var(--border-dark); padding: 40px 60px; }
 .pf-strip-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 40px; }
