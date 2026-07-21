@@ -133,6 +133,18 @@
 }
 
 /* --- Global Mobile Footer Overrides --- */
+/* --- Homepage-parity refinements (ported from index.html/quality.html/why-pulse.html, now global) --- */
+@media (max-width: 640px) {
+  #global-footer .pf-main { padding: 28px 16px 20px !important; }
+  #global-footer .pf-grid { gap: 16px !important; margin-bottom: 24px !important; }
+  #global-footer .pf-col h5 { font-size: 0.58rem !important; margin-bottom: 8px !important; }
+  #global-footer .pf-col ul { gap: 6px !important; }
+  #global-footer .pf-col ul a { font-size: 0.75rem !important; }
+  #global-footer .pf-bottom { padding-top: 16px !important; }
+  #global-footer .pf-bottom-inner p { font-size: 0.7rem !important; }
+  #global-footer .pf-bottom-right { gap: 12px !important; flex-wrap: wrap !important; }
+  #global-footer .pf-bottom-right a { font-size: 0.7rem !important; }
+}
 @media (max-width: 767px) {
   #global-footer .pf-grid {
     grid-template-columns: 1fr 1fr !important;
