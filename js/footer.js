@@ -410,3 +410,14 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 function initContactTrigger() { var modal = document.getElementById('contact-modal-overlay'); if (!modal) { setTimeout(initContactTrigger, 500); return; } document.querySelectorAll('a').forEach(function(btn) { var text = btn.textContent.trim(); if (text === 'Contact Us' || text === 'Contact us') { if (btn.closest('footer')) return; if (btn.closest('nav')) return; if (btn.id === 'nav-contact-btn') return; btn.removeAttribute('href'); btn.removeAttribute('target'); btn.removeAttribute('rel'); btn.style.cursor = 'pointer'; btn.onclick = function(e) { e.preventDefault(); e.stopPropagation(); modal.classList.add('open'); return false; }; } }); } setTimeout(initContactTrigger, 1500);
+
+// Product gallery: swap main image when a thumbnail is clicked
+function pgSetMain(el){
+  var thumbs = el.parentElement.querySelectorAll('img');
+  thumbs.forEach(function(t){ t.classList.remove('active'); });
+  el.classList.add('active');
+  var gallery = el.closest('.pg-gallery');
+  if (!gallery) return;
+  var mainImg = gallery.querySelector('.pg-main img');
+  if (mainImg) { mainImg.src = el.src; mainImg.alt = el.alt; }
+}
