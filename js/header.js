@@ -889,7 +889,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Cardiac%20care/Optima%20Inflation%20Device%20Kit.png",
 
-                                        "href": "cardiac-optima-inflation-kit.html"
+                                        "href": "/cardiac-care/optima-inflation-kit/"
 
                               },
 
@@ -899,7 +899,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Cardiac%20care/Optima%20Manifolds.png",
 
-                                        "href": "cardiac-optima-manifolds.html"
+                                        "href": "/cardiac-care/optima-manifolds/"
 
                               },
 
@@ -909,7 +909,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Cardiac%20care/AcuSafe%20Blunt%20Needle%20Access%20System.png",
 
-                                        "href": "cardiac-acusafe-blunt-needle.html"
+                                        "href": "/cardiac-care/acusafe-blunt-needle/"
 
                               },
 
@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Cardiac%20care/Sirova%20Sirolimus%20Stent.png",
 
-                                        "href": "cardiac-sirova-stent.html"
+                                        "href": "/cardiac-care/sirova-stent/"
 
                               },
 
@@ -929,7 +929,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Cardiac%20care/Evera%20Everolimus%20Stent.png",
 
-                                        "href": "cardiac-evera-stent.html"
+                                        "href": "/cardiac-care/evera-stent/"
 
                               },
 
@@ -939,7 +939,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Cardiac%20care/GuideX%20Guidewires.png",
 
-                                        "href": "cardiac-guidex-guidewires.html"
+                                        "href": "/cardiac-care/guidex-guidewires/"
 
                               },
 
@@ -949,7 +949,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Cardiac%20care/AcuSafe%20Micro-Access%20Introducer%20Kits.png",
 
-                                        "href": "cardiac-acusafe-micro-access.html"
+                                        "href": "/cardiac-care/acusafe-micro-access/"
 
                               }
 
@@ -1569,21 +1569,21 @@ var searchMap = [
 
   // CARDIAC CARE PRODUCTS
 
-  { keywords: ['sirova','sirolimus stent','sirolimus eluting stent'], url: 'cardiac-sirova-stent.html' },
+  { keywords: ['sirova','sirolimus stent','sirolimus eluting stent'], url: '/cardiac-care/sirova-stent/' },
 
-  { keywords: ['evera','everolimus stent','everolimus eluting stent'], url: 'cardiac-evera-stent.html' },
+  { keywords: ['evera','everolimus stent','everolimus eluting stent'], url: '/cardiac-care/evera-stent/' },
 
-  { keywords: ['guidex','guidex guidewire','coronary guidewire'], url: 'cardiac-guidex-guidewires.html' },
+  { keywords: ['guidex','guidex guidewire','coronary guidewire'], url: '/cardiac-care/guidex-guidewires/' },
 
-  { keywords: ['optima inflation','inflation kit','inflation device kit','optima inflation kit'], url: 'cardiac-optima-inflation-kit.html' },
+  { keywords: ['optima inflation','inflation kit','inflation device kit','optima inflation kit'], url: '/cardiac-care/optima-inflation-kit/' },
 
-  { keywords: ['optima manifold','cardiac manifold','optima manifolds'], url: 'cardiac-optima-manifolds.html' },
+  { keywords: ['optima manifold','cardiac manifold','optima manifolds'], url: '/cardiac-care/optima-manifolds/' },
 
-  { keywords: ['acusafe blunt needle','blunt needle access','cardiac blunt needle'], url: 'cardiac-acusafe-blunt-needle.html' },
+  { keywords: ['acusafe blunt needle','blunt needle access','cardiac blunt needle'], url: '/cardiac-care/acusafe-blunt-needle/' },
 
-  { keywords: ['micro access introducer','acusafe micro access','micro access kit'], url: 'cardiac-acusafe-micro-access.html' },
+  { keywords: ['micro access introducer','acusafe micro access','micro access kit'], url: '/cardiac-care/acusafe-micro-access/' },
 
-  { keywords: ['introducer kits venous','venous access kit','acusafe introducer'], url: 'cardiac-acusafe-introducer-kits.html' },
+  { keywords: ['introducer kits venous','venous access kit','acusafe introducer'], url: '/cardiac-care/acusafe-introducer-kits/' },
 
   { keywords: ['aed','swm11089','automatic external defibrillator','aed device'], url: 'cardiac-aed-swm11089.html' },
 

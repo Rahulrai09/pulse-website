@@ -149,7 +149,15 @@
     { "source": "/renal-pd-linepro.html", "destination": "/renal-care/pd-linepro/", "permanent": true },
     { "source": "/renal-dialysers.html", "destination": "/renal-care/dialysers/", "permanent": true },
     { "source": "/renal-pd-cath.html", "destination": "/renal-care/pd-cath/", "permanent": true },
-    { "source": "/renal-pd-tp.html", "destination": "/renal-care/pd-tp/", "permanent": true }
+    { "source": "/renal-pd-tp.html", "destination": "/renal-care/pd-tp/", "permanent": true },
+    { "source": "/cardiac-optima-inflation-kit.html", "destination": "/cardiac-care/optima-inflation-kit/", "permanent": true },
+    { "source": "/cardiac-optima-manifolds.html", "destination": "/cardiac-care/optima-manifolds/", "permanent": true },
+    { "source": "/cardiac-acusafe-blunt-needle.html", "destination": "/cardiac-care/acusafe-blunt-needle/", "permanent": true },
+    { "source": "/cardiac-sirova-stent.html", "destination": "/cardiac-care/sirova-stent/", "permanent": true },
+    { "source": "/cardiac-evera-stent.html", "destination": "/cardiac-care/evera-stent/", "permanent": true },
+    { "source": "/cardiac-guidex-guidewires.html", "destination": "/cardiac-care/guidex-guidewires/", "permanent": true },
+    { "source": "/cardiac-acusafe-micro-access.html", "destination": "/cardiac-care/acusafe-micro-access/", "permanent": true },
+    { "source": "/cardiac-acusafe-introducer-kits.html", "destination": "/cardiac-care/acusafe-introducer-kits/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/critical-care/icu-ventilator", "destination": "/critical-care/icu-ventilator.html" },
@@ -181,6 +189,22 @@
     { "source": "/renal-care/pd-cath", "destination": "/renal-care/pd-cath.html" },
     { "source": "/renal-care/pd-cath/", "destination": "/renal-care/pd-cath.html" },
     { "source": "/renal-care/pd-tp", "destination": "/renal-care/pd-tp.html" },
-    { "source": "/renal-care/pd-tp/", "destination": "/renal-care/pd-tp.html" }
+    { "source": "/renal-care/pd-tp/", "destination": "/renal-care/pd-tp.html" },
+    { "source": "/cardiac-care/optima-inflation-kit", "destination": "/cardiac-care/optima-inflation-kit.html" },
+    { "source": "/cardiac-care/optima-inflation-kit/", "destination": "/cardiac-care/optima-inflation-kit.html" },
+    { "source": "/cardiac-care/optima-manifolds", "destination": "/cardiac-care/optima-manifolds.html" },
+    { "source": "/cardiac-care/optima-manifolds/", "destination": "/cardiac-care/optima-manifolds.html" },
+    { "source": "/cardiac-care/acusafe-blunt-needle", "destination": "/cardiac-care/acusafe-blunt-needle.html" },
+    { "source": "/cardiac-care/acusafe-blunt-needle/", "destination": "/cardiac-care/acusafe-blunt-needle.html" },
+    { "source": "/cardiac-care/sirova-stent", "destination": "/cardiac-care/sirova-stent.html" },
+    { "source": "/cardiac-care/sirova-stent/", "destination": "/cardiac-care/sirova-stent.html" },
+    { "source": "/cardiac-care/evera-stent", "destination": "/cardiac-care/evera-stent.html" },
+    { "source": "/cardiac-care/evera-stent/", "destination": "/cardiac-care/evera-stent.html" },
+    { "source": "/cardiac-care/guidex-guidewires", "destination": "/cardiac-care/guidex-guidewires.html" },
+    { "source": "/cardiac-care/guidex-guidewires/", "destination": "/cardiac-care/guidex-guidewires.html" },
+    { "source": "/cardiac-care/acusafe-micro-access", "destination": "/cardiac-care/acusafe-micro-access.html" },
+    { "source": "/cardiac-care/acusafe-micro-access/", "destination": "/cardiac-care/acusafe-micro-access.html" },
+    { "source": "/cardiac-care/acusafe-introducer-kits", "destination": "/cardiac-care/acusafe-introducer-kits.html" },
+    { "source": "/cardiac-care/acusafe-introducer-kits/", "destination": "/cardiac-care/acusafe-introducer-kits.html" }
   ]
 }
