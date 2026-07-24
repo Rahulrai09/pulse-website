@@ -719,7 +719,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/PULSE Ventilator.png",
 
-                                        "href": "icu-ventilator.html"
+                                        "href": "/critical-care/icu-ventilator/"
 
                               },
 
@@ -729,7 +729,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/anesthesia-workstation-transparent.png",
 
-                                        "href": "critical-anesthesia-workstation.html"
+                                        "href": "/critical-care/anesthesia-workstation/"
 
                               },
 
@@ -739,7 +739,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/ecg-machine-3-channel-transparent.png",
 
-                                        "href": "3-channel-ecg-machine.html"
+                                        "href": "/critical-care/3-channel-ecg-machine/"
 
                               },
 
@@ -749,7 +749,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/6-channel-ecg-machine-transparent.png",
 
-                                        "href": "6-channel-ecg-machine.html"
+                                        "href": "/critical-care/6-channel-ecg-machine/"
 
                               },
 
@@ -759,7 +759,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/12-channel-ecg-machine-transparent.png",
 
-                                        "href": "12-channel-ecg-machine.html"
+                                        "href": "/critical-care/12-channel-ecg-machine/"
 
                               },
 
@@ -769,7 +769,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/patient-monitor-transparent.png",
 
-                                        "href": "5-para-patient-monitor.html"
+                                        "href": "/critical-care/5-para-patient-monitor/"
 
                               },
 
@@ -779,7 +779,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/7-para-patient-monitor-transparent.png",
 
-                                        "href": "7-para-patient-monitor.html"
+                                        "href": "/critical-care/7-para-patient-monitor/"
 
                               },
 
@@ -789,7 +789,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/infusion-pump-transparent.png",
 
-                                        "href": "infusion-pump.html"
+                                        "href": "/critical-care/infusion-pump/"
 
                               },
 
@@ -799,7 +799,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Critical%20care/syringe-pump-transparent.png",
 
-                                        "href": "syringe-pump.html"
+                                        "href": "/critical-care/syringe-pump/"
 
                               }
 
@@ -1531,23 +1531,23 @@ var searchMap = [
 
   // CRITICAL CARE PRODUCTS
 
-  { keywords: ['ventilator','ventilation','sh320','icu ventilator','sh-320','breathing machine','turbine ventilator','pulse ventilator'], url: 'icu-ventilator.html' },
+  { keywords: ['ventilator','ventilation','sh320','icu ventilator','sh-320','breathing machine','turbine ventilator','pulse ventilator'], url: '/critical-care/icu-ventilator/' },
 
-  { keywords: ['anesthesia workstation','anaesthesia workstation','anesthesia machine','anaesthesia machine','a-station'], url: 'critical-anesthesia-workstation.html' },
+  { keywords: ['anesthesia workstation','anaesthesia workstation','anesthesia machine','anaesthesia machine','a-station'], url: '/critical-care/anesthesia-workstation/' },
 
-  { keywords: ['zec3','ecg 3 channel','3 channel ecg','ecg machine 3','vital zec3'], url: '3-channel-ecg-machine.html' },
+  { keywords: ['zec3','ecg 3 channel','3 channel ecg','ecg machine 3','vital zec3'], url: '/critical-care/3-channel-ecg-machine/' },
 
-  { keywords: ['zec6','ecg 6 channel','6 channel ecg','ecg machine 6','vital zec6'], url: '6-channel-ecg-machine.html' },
+  { keywords: ['zec6','ecg 6 channel','6 channel ecg','ecg machine 6','vital zec6'], url: '/critical-care/6-channel-ecg-machine/' },
 
-  { keywords: ['zec12','ecg 12 channel','12 channel ecg','12 lead ecg','ecg machine 12','vital zec12'], url: '12-channel-ecg-machine.html' },
+  { keywords: ['zec12','ecg 12 channel','12 channel ecg','12 lead ecg','ecg machine 12','vital zec12'], url: '/critical-care/12-channel-ecg-machine/' },
 
-  { keywords: ['zpm5','patient monitor 5','5 para monitor','5 parameter monitor','vital zpm5'], url: '5-para-patient-monitor.html' },
+  { keywords: ['zpm5','patient monitor 5','5 para monitor','5 parameter monitor','vital zpm5'], url: '/critical-care/5-para-patient-monitor/' },
 
-  { keywords: ['zpm7','patient monitor 7','7 para monitor','7 parameter monitor','vital zpm7'], url: '7-para-patient-monitor.html' },
+  { keywords: ['zpm7','patient monitor 7','7 para monitor','7 parameter monitor','vital zpm7'], url: '/critical-care/7-para-patient-monitor/' },
 
-  { keywords: ['zip1','infusion pump','iv pump','volumetric pump','vital zip1'], url: 'infusion-pump.html' },
+  { keywords: ['zip1','infusion pump','iv pump','volumetric pump','vital zip1'], url: '/critical-care/infusion-pump/' },
 
-  { keywords: ['zsp1','syringe pump','vital zsp1'], url: 'syringe-pump.html' },
+  { keywords: ['zsp1','syringe pump','vital zsp1'], url: '/critical-care/syringe-pump/' },
 
 
 

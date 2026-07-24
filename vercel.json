@@ -134,6 +134,35 @@
     { "source": "/soil-linen-trolley.html", "destination": "/hospital-setup.html", "permanent": true },
     { "source": "/square-stool.html", "destination": "/hospital-setup.html", "permanent": true },
     { "source": "/ss-saline-stand.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/vfc-vertical-filing-cabinet.html", "destination": "/hospital-setup.html", "permanent": true }
+    { "source": "/vfc-vertical-filing-cabinet.html", "destination": "/hospital-setup.html", "permanent": true },
+    { "source": "/icu-ventilator.html", "destination": "/critical-care/icu-ventilator/", "permanent": true },
+    { "source": "/3-channel-ecg-machine.html", "destination": "/critical-care/3-channel-ecg-machine/", "permanent": true },
+    { "source": "/6-channel-ecg-machine.html", "destination": "/critical-care/6-channel-ecg-machine/", "permanent": true },
+    { "source": "/12-channel-ecg-machine.html", "destination": "/critical-care/12-channel-ecg-machine/", "permanent": true },
+    { "source": "/infusion-pump.html", "destination": "/critical-care/infusion-pump/", "permanent": true },
+    { "source": "/syringe-pump.html", "destination": "/critical-care/syringe-pump/", "permanent": true },
+    { "source": "/5-para-patient-monitor.html", "destination": "/critical-care/5-para-patient-monitor/", "permanent": true },
+    { "source": "/7-para-patient-monitor.html", "destination": "/critical-care/7-para-patient-monitor/", "permanent": true },
+    { "source": "/critical-anesthesia-workstation.html", "destination": "/critical-care/anesthesia-workstation/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/critical-care/icu-ventilator", "destination": "/critical-care/icu-ventilator.html" },
+    { "source": "/critical-care/icu-ventilator/", "destination": "/critical-care/icu-ventilator.html" },
+    { "source": "/critical-care/3-channel-ecg-machine", "destination": "/critical-care/3-channel-ecg-machine.html" },
+    { "source": "/critical-care/3-channel-ecg-machine/", "destination": "/critical-care/3-channel-ecg-machine.html" },
+    { "source": "/critical-care/6-channel-ecg-machine", "destination": "/critical-care/6-channel-ecg-machine.html" },
+    { "source": "/critical-care/6-channel-ecg-machine/", "destination": "/critical-care/6-channel-ecg-machine.html" },
+    { "source": "/critical-care/12-channel-ecg-machine", "destination": "/critical-care/12-channel-ecg-machine.html" },
+    { "source": "/critical-care/12-channel-ecg-machine/", "destination": "/critical-care/12-channel-ecg-machine.html" },
+    { "source": "/critical-care/infusion-pump", "destination": "/critical-care/infusion-pump.html" },
+    { "source": "/critical-care/infusion-pump/", "destination": "/critical-care/infusion-pump.html" },
+    { "source": "/critical-care/syringe-pump", "destination": "/critical-care/syringe-pump.html" },
+    { "source": "/critical-care/syringe-pump/", "destination": "/critical-care/syringe-pump.html" },
+    { "source": "/critical-care/5-para-patient-monitor", "destination": "/critical-care/5-para-patient-monitor.html" },
+    { "source": "/critical-care/5-para-patient-monitor/", "destination": "/critical-care/5-para-patient-monitor.html" },
+    { "source": "/critical-care/7-para-patient-monitor", "destination": "/critical-care/7-para-patient-monitor.html" },
+    { "source": "/critical-care/7-para-patient-monitor/", "destination": "/critical-care/7-para-patient-monitor.html" },
+    { "source": "/critical-care/anesthesia-workstation", "destination": "/critical-care/anesthesia-workstation.html" },
+    { "source": "/critical-care/anesthesia-workstation/", "destination": "/critical-care/anesthesia-workstation.html" }
   ]
 }
