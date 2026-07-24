@@ -143,7 +143,13 @@
     { "source": "/syringe-pump.html", "destination": "/critical-care/syringe-pump/", "permanent": true },
     { "source": "/5-para-patient-monitor.html", "destination": "/critical-care/5-para-patient-monitor/", "permanent": true },
     { "source": "/7-para-patient-monitor.html", "destination": "/critical-care/7-para-patient-monitor/", "permanent": true },
-    { "source": "/critical-anesthesia-workstation.html", "destination": "/critical-care/anesthesia-workstation/", "permanent": true }
+    { "source": "/critical-anesthesia-workstation.html", "destination": "/critical-care/anesthesia-workstation/", "permanent": true },
+    { "source": "/renal-pdm-6000.html", "destination": "/renal-care/pdm-6000/", "permanent": true },
+    { "source": "/renal-pd-canova.html", "destination": "/renal-care/pd-canova/", "permanent": true },
+    { "source": "/renal-pd-linepro.html", "destination": "/renal-care/pd-linepro/", "permanent": true },
+    { "source": "/renal-dialysers.html", "destination": "/renal-care/dialysers/", "permanent": true },
+    { "source": "/renal-pd-cath.html", "destination": "/renal-care/pd-cath/", "permanent": true },
+    { "source": "/renal-pd-tp.html", "destination": "/renal-care/pd-tp/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/critical-care/icu-ventilator", "destination": "/critical-care/icu-ventilator.html" },
@@ -163,6 +169,18 @@
     { "source": "/critical-care/7-para-patient-monitor", "destination": "/critical-care/7-para-patient-monitor.html" },
     { "source": "/critical-care/7-para-patient-monitor/", "destination": "/critical-care/7-para-patient-monitor.html" },
     { "source": "/critical-care/anesthesia-workstation", "destination": "/critical-care/anesthesia-workstation.html" },
-    { "source": "/critical-care/anesthesia-workstation/", "destination": "/critical-care/anesthesia-workstation.html" }
+    { "source": "/critical-care/anesthesia-workstation/", "destination": "/critical-care/anesthesia-workstation.html" },
+    { "source": "/renal-care/pdm-6000", "destination": "/renal-care/pdm-6000.html" },
+    { "source": "/renal-care/pdm-6000/", "destination": "/renal-care/pdm-6000.html" },
+    { "source": "/renal-care/pd-canova", "destination": "/renal-care/pd-canova.html" },
+    { "source": "/renal-care/pd-canova/", "destination": "/renal-care/pd-canova.html" },
+    { "source": "/renal-care/pd-linepro", "destination": "/renal-care/pd-linepro.html" },
+    { "source": "/renal-care/pd-linepro/", "destination": "/renal-care/pd-linepro.html" },
+    { "source": "/renal-care/dialysers", "destination": "/renal-care/dialysers.html" },
+    { "source": "/renal-care/dialysers/", "destination": "/renal-care/dialysers.html" },
+    { "source": "/renal-care/pd-cath", "destination": "/renal-care/pd-cath.html" },
+    { "source": "/renal-care/pd-cath/", "destination": "/renal-care/pd-cath.html" },
+    { "source": "/renal-care/pd-tp", "destination": "/renal-care/pd-tp.html" },
+    { "source": "/renal-care/pd-tp/", "destination": "/renal-care/pd-tp.html" }
   ]
 }

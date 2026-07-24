@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Renal%20care/pdm-6000-precision-haemodialysis-system-transparent.png",
 
-                                        "href": "renal-pdm-6000.html"
+                                        "href": "/renal-care/pdm-6000/"
 
                               },
 
@@ -829,7 +829,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Renal%20care/pd-canova-transparent.png",
 
-                                        "href": "renal-pd-canova.html"
+                                        "href": "/renal-care/pd-canova/"
 
                               },
 
@@ -839,7 +839,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Renal%20care/pd-linepro-transparent.png",
 
-                                        "href": "renal-pd-linepro.html"
+                                        "href": "/renal-care/pd-linepro/"
 
                               },
 
@@ -849,7 +849,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Renal%20care/dialysers-transparent.png",
 
-                                        "href": "renal-dialysers.html"
+                                        "href": "/renal-care/dialysers/"
 
                               },
 
@@ -859,7 +859,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Renal%20care/pd-cath-transparent.png",
 
-                                        "href": "renal-pd-cath.html"
+                                        "href": "/renal-care/pd-cath/"
 
                               },
 
@@ -869,7 +869,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Renal%20care/pd-tp-transparent.png",
 
-                                        "href": "renal-pd-tp.html"
+                                        "href": "/renal-care/pd-tp/"
 
                               }
 
@@ -1553,17 +1553,17 @@ var searchMap = [
 
   // RENAL CARE PRODUCTS
 
-  { keywords: ['dialyser','dialysers','high efficiency dialyser','toxin removal'], url: 'renal-dialysers.html' },
+  { keywords: ['dialyser','dialysers','high efficiency dialyser','toxin removal'], url: '/renal-care/dialysers/' },
 
-  { keywords: ['canova','av fistula needle','fistula needle','pd canova'], url: 'renal-pd-canova.html' },
+  { keywords: ['canova','av fistula needle','fistula needle','pd canova'], url: '/renal-care/pd-canova/' },
 
-  { keywords: ['pd cath','haemodialysis catheter','pd-cath','dialysis catheter'], url: 'renal-pd-cath.html' },
+  { keywords: ['pd cath','haemodialysis catheter','pd-cath','dialysis catheter'], url: '/renal-care/pd-cath/' },
 
-  { keywords: ['linepro','pd linepro','blood tubing set','blood circuit'], url: 'renal-pd-linepro.html' },
+  { keywords: ['linepro','pd linepro','blood tubing set','blood circuit'], url: '/renal-care/pd-linepro/' },
 
-  { keywords: ['pd tp','transducer protector','tp transducer','pd-tp'], url: 'renal-pd-tp.html' },
+  { keywords: ['pd tp','transducer protector','tp transducer','pd-tp'], url: '/renal-care/pd-tp/' },
 
-  { keywords: ['pdm 6000','pdm-6000','haemodialysis system','dialysis machine','precision haemodialysis'], url: 'renal-pdm-6000.html' },
+  { keywords: ['pdm 6000','pdm-6000','haemodialysis system','dialysis machine','precision haemodialysis'], url: '/renal-care/pdm-6000/' },
 
 
 
