@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           3one4 Capital &nbsp;—&nbsp;
 
-          <a href="blog-pulse-4million.html"
+          <a href="/blog-pulse-4million.html"
 
              style="color:#E87722;font-weight:700;
 
@@ -281,19 +281,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <nav id="main-nav" style="position:relative;">
 
-      <a href="index.html" class="nav-logo">
+      <a href="/index.html" class="nav-logo">
 
-        <img src="image/pulse-logo.png" alt="Pulse">
+        <img src="/image/pulse-logo.png" alt="Pulse">
 
       </a>
 
       <ul class="nav-links">
 
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="/about.html">About Us</a></li>
 
-        <li><a href="index.html#why-pulse">Why Pulse</a></li>
+        <li><a href="/index.html#why-pulse">Why Pulse</a></li>
 
-        <li><a href="index.html#excellence">How It Works</a></li>
+        <li><a href="/index.html#excellence">How It Works</a></li>
 
         <li class="nav-item-mega" id="products-mega-li">
 
@@ -309,57 +309,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <p class="col-label">BY CATEGORY</p>
 
-                <div class="category-row active" data-cat="Critical Care" data-href="critical-care.html">
+                <div class="category-row active" data-cat="Critical Care" data-href="/critical-care.html">
 
-                  <a href="critical-care.html" class="category-name">Critical Care</a>
-
-                  <span class="chevron">&#8964;</span>
-
-                </div>
-
-                <div class="category-row" data-cat="Renal Care" data-href="renal-care.html">
-
-                  <a href="renal-care.html" class="category-name">Renal Care</a>
+                  <a href="/critical-care.html" class="category-name">Critical Care</a>
 
                   <span class="chevron">&#8964;</span>
 
                 </div>
 
-                <div class="category-row" data-cat="Cardiac Care" data-href="cardiac-care.html">
+                <div class="category-row" data-cat="Renal Care" data-href="/renal-care.html">
 
-                  <a href="cardiac-care.html" class="category-name">Cardiac Care</a>
-
-                  <span class="chevron">&#8964;</span>
-
-                </div>
-
-                <div class="category-row" data-cat="Surgical" data-href="surgical.html">
-
-                  <a href="surgical.html" class="category-name">Surgical</a>
+                  <a href="/renal-care.html" class="category-name">Renal Care</a>
 
                   <span class="chevron">&#8964;</span>
 
                 </div>
 
-                <div class="category-row" data-cat="Aesthetics" data-href="aesthetics.html">
+                <div class="category-row" data-cat="Cardiac Care" data-href="/cardiac-care.html">
 
-                  <a href="aesthetics.html" class="category-name">Aesthetics</a>
-
-                  <span class="chevron">&#8964;</span>
-
-                </div>
-
-                <div class="category-row" data-cat="Rehabilitation" data-href="rehabilitation.html">
-
-                  <a href="rehabilitation.html" class="category-name">Rehabilitation</a>
+                  <a href="/cardiac-care.html" class="category-name">Cardiac Care</a>
 
                   <span class="chevron">&#8964;</span>
 
                 </div>
 
-                <div class="category-row" data-cat="Hospital Setup" data-href="hospital-setup.html">
+                <div class="category-row" data-cat="Surgical" data-href="/surgical.html">
 
-                  <a href="hospital-setup.html" class="category-name">Hospital Setup</a>
+                  <a href="/surgical.html" class="category-name">Surgical</a>
+
+                  <span class="chevron">&#8964;</span>
+
+                </div>
+
+                <div class="category-row" data-cat="Aesthetics" data-href="/aesthetics.html">
+
+                  <a href="/aesthetics.html" class="category-name">Aesthetics</a>
+
+                  <span class="chevron">&#8964;</span>
+
+                </div>
+
+                <div class="category-row" data-cat="Rehabilitation" data-href="/rehabilitation.html">
+
+                  <a href="/rehabilitation.html" class="category-name">Rehabilitation</a>
+
+                  <span class="chevron">&#8964;</span>
+
+                </div>
+
+                <div class="category-row" data-cat="Hospital Setup" data-href="/hospital-setup.html">
+
+                  <a href="/hospital-setup.html" class="category-name">Hospital Setup</a>
 
                   <span class="chevron">&#8964;</span>
 
@@ -373,17 +373,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <p class="col-label" id="mega-col-products-label">CRITICAL CARE</p>
 
-                <a href="product-detail.html?id=sh320" class="sub-product-link dropdown-product-link" data-image="image/PULSE Ventilator.png" data-label="Pulse SH320 ICU Ventilator">&#8594; Pulse SH320 ICU Ventilator</a>
+                <a href="/product-detail.html?id=sh320" class="sub-product-link dropdown-product-link" data-image="/image/PULSE Ventilator.png" data-label="Pulse SH320 ICU Ventilator">&#8594; Pulse SH320 ICU Ventilator</a>
 
-                <a href="product-detail.html?id=patient-monitor" class="sub-product-link dropdown-product-link" data-image="image/Portfolio/critical-care.jpg" data-label="Patient Monitor Pro">&#8594; Patient Monitor Pro</a>
+                <a href="/product-detail.html?id=patient-monitor" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Patient Monitor Pro">&#8594; Patient Monitor Pro</a>
 
-                <a href="product-detail.html?id=infusion-pump" class="sub-product-link dropdown-product-link" data-image="image/Portfolio/critical-care.jpg" data-label="Infusion Pump Series">&#8594; Infusion Pump Series</a>
+                <a href="/product-detail.html?id=infusion-pump" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Infusion Pump Series">&#8594; Infusion Pump Series</a>
 
-                <a href="product-detail.html?id=anaesthesia" class="sub-product-link dropdown-product-link" data-image="image/Portfolio/critical-care.jpg" data-label="Anaesthesia Workstation">&#8594; Anaesthesia Workstation</a>
+                <a href="/product-detail.html?id=anaesthesia" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Anaesthesia Workstation">&#8594; Anaesthesia Workstation</a>
 
-                <a href="product-detail.html?id=syringe-pump" class="sub-product-link dropdown-product-link" data-image="image/Portfolio/critical-care.jpg" data-label="Syringe Pump">&#8594; Syringe Pump</a>
+                <a href="/product-detail.html?id=syringe-pump" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Syringe Pump">&#8594; Syringe Pump</a>
 
-                <a href="critical-care.html" class="dropdown-more-btn">More &rarr;</a>
+                <a href="/critical-care.html" class="dropdown-more-btn">More &rarr;</a>
 
               </div>
 
@@ -395,11 +395,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="featured-card">
 
-                  <div class="fc-img"><img src="image/Hospital Furniture/OT Light - Four Reflector (SingleDouble).png" alt="OT Light — Four Reflector" style="width:100%; height:100%; object-fit:contain;" class="featured-product-img"></div>
+                  <div class="fc-img"><img src="/image/Hospital Furniture/OT Light - Four Reflector (SingleDouble).png" alt="OT Light — Four Reflector" style="width:100%; height:100%; object-fit:contain;" class="featured-product-img"></div>
 
                   <h6 class="featured-product-label" style="color: #ffffff;">OT Light — Four Reflector</h6>
 
-                  <a href="icu-ventilator.html" class="fc-link">View Product &rarr;</a>
+                  <a href="/critical-care/icu-ventilator/" class="fc-link">View Product &rarr;</a>
 
                 </div>
 
@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         </li>
 
-        <li><a href="quality.html">Quality</a></li>
+        <li><a href="/quality.html">Quality</a></li>
 
         <li class="nav-search-wrapper">
 
@@ -539,11 +539,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
 
-        <a href="about.html">About Us</a>
+        <a href="/about.html">About Us</a>
 
-        <a href="index.html#why-pulse">Why Pulse</a>
+        <a href="/index.html#why-pulse">Why Pulse</a>
 
-        <a href="index.html#excellence">How It Works</a>
+        <a href="/index.html#excellence">How It Works</a>
 
         <div class="mob-nav-item">
 
@@ -557,25 +557,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <div class="mob-products-submenu" id="mobProductsMenu">
 
-            <a href="critical-care.html">Critical Care</a>
+            <a href="/critical-care.html">Critical Care</a>
 
-            <a href="renal-care.html">Renal Care</a>
+            <a href="/renal-care.html">Renal Care</a>
 
-            <a href="cardiac-care.html">Cardiac Care</a>
+            <a href="/cardiac-care.html">Cardiac Care</a>
 
-            <a href="aesthetics.html">Aesthetics</a>
+            <a href="/aesthetics.html">Aesthetics</a>
 
-             <a href="rehabilitation.html">Rehabilitation</a>
+             <a href="/rehabilitation.html">Rehabilitation</a>
 
-            <a href="surgical.html">Surgical</a>
+            <a href="/surgical.html">Surgical</a>
 
-            <a href="hospital-setup.html">Hospital Setup</a>
+            <a href="/hospital-setup.html">Hospital Setup</a>
 
           </div>
 
         </div>
 
-        <a href="quality.html">Quality</a>
+        <a href="/quality.html">Quality</a>
 
         <div style="height: 1px; background: rgba(255,255,255,0.1); margin: 10px 0;"></div>
 
