@@ -157,7 +157,8 @@
     { "source": "/cardiac-evera-stent.html", "destination": "/cardiac-care/evera-stent/", "permanent": true },
     { "source": "/cardiac-guidex-guidewires.html", "destination": "/cardiac-care/guidex-guidewires/", "permanent": true },
     { "source": "/cardiac-acusafe-micro-access.html", "destination": "/cardiac-care/acusafe-micro-access/", "permanent": true },
-    { "source": "/cardiac-acusafe-introducer-kits.html", "destination": "/cardiac-care/acusafe-introducer-kits/", "permanent": true }
+    { "source": "/cardiac-acusafe-introducer-kits.html", "destination": "/cardiac-care/acusafe-introducer-kits/", "permanent": true },
+    { "source": "/surgical-circumease-stapler.html", "destination": "/surgical-care/circumease-stapler/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/critical-care/icu-ventilator", "destination": "/critical-care/icu-ventilator.html" },
@@ -205,6 +206,8 @@
     { "source": "/cardiac-care/acusafe-micro-access", "destination": "/cardiac-care/acusafe-micro-access.html" },
     { "source": "/cardiac-care/acusafe-micro-access/", "destination": "/cardiac-care/acusafe-micro-access.html" },
     { "source": "/cardiac-care/acusafe-introducer-kits", "destination": "/cardiac-care/acusafe-introducer-kits.html" },
-    { "source": "/cardiac-care/acusafe-introducer-kits/", "destination": "/cardiac-care/acusafe-introducer-kits.html" }
+    { "source": "/cardiac-care/acusafe-introducer-kits/", "destination": "/cardiac-care/acusafe-introducer-kits.html" },
+    { "source": "/surgical-care/circumease-stapler", "destination": "/surgical-care/circumease-stapler.html" },
+    { "source": "/surgical-care/circumease-stapler/", "destination": "/surgical-care/circumease-stapler.html" }
   ]
 }

@@ -969,7 +969,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Circumease/circumease-3.jpg",
 
-                                        "href": "surgical-circumease-stapler.html"
+                                        "href": "/surgical-care/circumease-stapler/"
 
                               }
 
@@ -1725,7 +1725,7 @@ var searchMap = [
 
   { keywords: ['hospital wheelchair'], url: 'hospital-wheelchair.html' },
 
-  { keywords: ['circumease','circumcision kit','disposable circumcision','circumcision'], url: 'surgical-circumease-stapler.html' },
+  { keywords: ['circumease','circumcision kit','disposable circumcision','circumcision'], url: '/surgical-care/circumease-stapler/' },
 
   { keywords: ['blood donation chair'], url: 'blood-donation-chair.html' },
 
