@@ -421,3 +421,34 @@ function pgSetMain(el){
   var mainImg = gallery.querySelector('.pg-main img');
   if (mainImg) { mainImg.src = el.src; mainImg.alt = el.alt; }
 }
+// Product gallery lightbox: shows all photos when "+N more" tile is clicked
+function openGallery(images, altPrefix) {
+  var overlay = document.getElementById('pg-lightbox-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'pg-lightbox-overlay';
+    overlay.id = 'pg-lightbox-overlay';
+    overlay.innerHTML = '<div class="pg-lightbox-inner"><button class="pg-lightbox-close" aria-label="Close" onclick="closeGallery()">&times;</button><div class="pg-lightbox-grid" id="pg-lightbox-grid"></div></div>';
+    overlay.addEventListener('click', function(e){ if (e.target === overlay) closeGallery(); });
+    document.body.appendChild(overlay);
+  }
+  var grid = document.getElementById('pg-lightbox-grid');
+  grid.innerHTML = '';
+  images.forEach(function(src, i){
+    var img = document.createElement('img');
+    img.src = src;
+    img.alt = altPrefix + ' photo ' + (i+1);
+    img.loading = 'lazy';
+    img.onclick = function(){
+      var mainImg = document.querySelector('.pg-main img');
+      if (mainImg) { mainImg.src = src; mainImg.alt = altPrefix; }
+      closeGallery();
+    };
+    grid.appendChild(img);
+  });
+  overlay.classList.add('open');
+}
+function closeGallery() {
+  var overlay = document.getElementById('pg-lightbox-overlay');
+  if (overlay) overlay.classList.remove('open');
+}
