@@ -725,7 +725,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         return;
       }
       grid.innerHTML = page.map(p => `
-        <div class="product-card" data-type="${p.type}" onclick="window.location.href=p.link" style="cursor:pointer" 
+        <div class="product-card" data-type="${p.type}" onclick="window.location.href=`${p.link}`" style="cursor:pointer" 
              data-app="${p.app}" data-cert="${p.cert}">
           <div class="product-card-img">
             <img src="${p.img}" alt="${p.name}" loading="lazy"
