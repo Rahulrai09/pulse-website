@@ -989,7 +989,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/wavelength-pro-x-transparent.png",
 
-                                        "href": "aesthetics-wavelength-pro-x.html"
+                                        "href": "/aesthetics/wavelength-pro-x/"
 
                               },
 
@@ -999,7 +999,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/pi-code-transparent.png",
 
-                                        "href": "aesthetics-pi-code.html"
+                                        "href": "/aesthetics/pi-code/"
 
                               },
 
@@ -1009,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/code-factor-transparent.png",
 
-                                        "href": "aesthetics-code-factor.html"
+                                        "href": "/aesthetics/code-factor/"
 
                               },
 
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/nodd-transparent.png",
 
-                                        "href": "aesthetics-nodd.html"
+                                        "href": "/aesthetics/nodd/"
 
                               },
 
@@ -1029,7 +1029,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/hydrafrac-transparent.png",
 
-                                        "href": "aesthetics-hydrafrac.html"
+                                        "href": "/aesthetics/hydrafrac/"
 
                               },
 
@@ -1039,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/cool-shape-transparent.png",
 
-                                        "href": "aesthetics-cool-shape.html"
+                                        "href": "/aesthetics/cool-shape/"
 
                               },
 
@@ -1049,7 +1049,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/em-code-transparent.png",
 
-                                        "href": "aesthetics-em-code.html"
+                                        "href": "/aesthetics/em-code/"
 
                               },
 
@@ -1059,7 +1059,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/bbl-super-ipl-dpl-transparent.png",
 
-                                        "href": "aesthetics-bbl-super-ipl-dpl.html"
+                                        "href": "/aesthetics/bbl-super-ipl-dpl/"
 
                               },
 
@@ -1069,7 +1069,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/visage-transparent.png",
 
-                                        "href": "aesthetics-visage.html"
+                                        "href": "/aesthetics/visage/"
 
                               },
 
@@ -1079,7 +1079,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/excimer-transparent.png",
 
-                                        "href": "aesthetics-excimer.html"
+                                        "href": "/aesthetics/excimer/"
 
                               },
 
@@ -1089,7 +1089,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/em-ma-transparent.png",
 
-                                        "href": "aesthetics-em-ma.html"
+                                        "href": "/aesthetics/em-ma/"
 
                               },
 
@@ -1099,7 +1099,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Aesthetics%20images/skin-analyzer-transparent.png",
 
-                                        "href": "aesthetics-skin-analyzer.html"
+                                        "href": "/aesthetics/skin-analyzer/"
 
                               }
 
@@ -1600,31 +1600,31 @@ var searchMap = [
 
   // AESTHETICS PRODUCTS
 
-  { keywords: ['bbl','super ipl','dpl','ipl dpl','bbl super'], url: 'aesthetics-bbl-super-ipl-dpl.html' },
+  { keywords: ['bbl','super ipl','dpl','ipl dpl','bbl super'], url: '/aesthetics/bbl-super-ipl-dpl/' },
 
-  { keywords: ['code factor','codefactor'], url: 'aesthetics-code-factor.html' },
+  { keywords: ['code factor','codefactor'], url: '/aesthetics/code-factor/' },
 
-  { keywords: ['cool shape','coolshape','cryolipolysis machine'], url: 'aesthetics-cool-shape.html' },
+  { keywords: ['cool shape','coolshape','cryolipolysis machine'], url: '/aesthetics/cool-shape/' },
 
-  { keywords: ['em code','emcode'], url: 'aesthetics-em-code.html' },
+  { keywords: ['em code','emcode'], url: '/aesthetics/em-code/' },
 
-  { keywords: ['em ma','emma'], url: 'aesthetics-em-ma.html' },
+  { keywords: ['em ma','emma'], url: '/aesthetics/em-ma/' },
 
-  { keywords: ['excimer','excimer laser'], url: 'aesthetics-excimer.html' },
+  { keywords: ['excimer','excimer laser'], url: '/aesthetics/excimer/' },
 
-  { keywords: ['hydrafrac','hydra frac'], url: 'aesthetics-hydrafrac.html' },
+  { keywords: ['hydrafrac','hydra frac'], url: '/aesthetics/hydrafrac/' },
 
   { keywords: ['laser machine range','aesthetics laser'], url: 'aesthetics-laser-machine-range.html' },
 
-  { keywords: ['nodd'], url: 'aesthetics-nodd.html' },
+  { keywords: ['nodd'], url: '/aesthetics/nodd/' },
 
-  { keywords: ['pi code','picode'], url: 'aesthetics-pi-code.html' },
+  { keywords: ['pi code','picode'], url: '/aesthetics/pi-code/' },
 
-  { keywords: ['skin analyzer','skin analyser'], url: 'aesthetics-skin-analyzer.html' },
+  { keywords: ['skin analyzer','skin analyser'], url: '/aesthetics/skin-analyzer/' },
 
-  { keywords: ['visage'], url: 'aesthetics-visage.html' },
+  { keywords: ['visage'], url: '/aesthetics/visage/' },
 
-  { keywords: ['wavelength pro','wavelength pro x'], url: 'aesthetics-wavelength-pro-x.html' },
+  { keywords: ['wavelength pro','wavelength pro x'], url: '/aesthetics/wavelength-pro-x/' },
 
 
 
