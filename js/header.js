@@ -967,7 +967,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "CircumEase Stapler",
 
-                                        "image": "image/Circumease/circumease-3.jpg",
+                                        "image": "image/Surgical/circumease-3.jpg",
 
                                         "href": "/surgical-care/circumease-stapler/"
 
@@ -1117,7 +1117,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse Motion Pro 1 Electric Wheelchair",
 
-                                        "image": "image/Rehabiliation/6001 Motion Pro 1.png",
+                                        "image": "image/Rehabiliation/motion-pro-1-01.jpg",
 
                                         "href": "rehab-motion-pro-6001.html"
 
@@ -1322,6 +1322,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const link  = document.querySelector('.fc-link');
 
                     if (img   && this.dataset.image) img.src         = this.dataset.image;
+            if (img && this.dataset.label) img.alt = this.dataset.label;
 
                     if (label && this.dataset.label) label.textContent = this.dataset.label;
 
@@ -1376,6 +1377,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         const link = document.querySelector('.fc-link');
 
                         if (img) img.src = firstLink.dataset.image;
+                        if (img) img.alt = firstLink.dataset.label;
 
                         if (label) label.textContent = firstLink.dataset.label;
 
@@ -1404,6 +1406,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const link = document.querySelector('.fc-link');
 
                 if (img) img.src = firstLink.dataset.image;
+                        if (img) img.alt = firstLink.dataset.label;
 
                 if (label) label.textContent = firstLink.dataset.label;
 
@@ -2498,6 +2501,7 @@ if (mobSearchInput) {
             const fcLink = document.querySelector('.fc-link');
 
             if (img   && this.dataset.image) img.src         = this.dataset.image;
+            if (img && this.dataset.label) img.alt = this.dataset.label;
 
             if (label && this.dataset.label) label.textContent = this.dataset.label;
 
