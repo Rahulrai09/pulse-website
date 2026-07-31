@@ -1119,7 +1119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Rehabiliation/motion-pro-1-01.jpg",
 
-                                        "href": "rehab-motion-pro-6001.html"
+                                        "href": "rehabilitation/motion-pro-1.html"
 
                               },
 
@@ -1129,7 +1129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Rehabiliation/6013A xtrion.png",
 
-                                        "href": "rehab-xtrion-6013a.html"
+                                        "href": "rehabilitation/xtrion.html"
 
                               },
 
@@ -1139,7 +1139,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Rehabiliation/6016A Innovax.png",
 
-                                        "href": "rehab-innovax-6016a.html"
+                                        "href": "rehabilitation/innovax.html"
 
                               },
 
@@ -1149,7 +1149,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Rehabiliation/6019 Aerodrive 1.png",
 
-                                        "href": "rehab-aerodrive-6019.html"
+                                        "href": "rehabilitation/aerodrive-1.html"
 
                               },
 
@@ -1159,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "image/Rehabiliation/9005 Joylite 1.png",
 
-                                        "href": "rehab-joylite-9005.html"
+                                        "href": "rehabilitation/joylite-1.html"
 
                               },
 
@@ -1167,19 +1167,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse Joylite 2 Electric Wheelchair",
 
-                                        "image": "image/Rehabiliation/9006 Joylite 2.png",
+                                        "image": "image/Rehabiliation/joylite-2-01.jpg",
 
-                                        "href": "rehab-joylite-9006.html"
+                                        "href": "rehabilitation/joylite-2.html"
 
                               },
 
                               {
 
-                                        "name": "Autofold Smartride 2 Electric Wheelchair",
+                                        "name": "Pulse Smartride 2 Electric Wheelchair",
 
-                                        "image": "image/Rehabiliation/Autofold Smartride 2.png",
+                                        "image": "image/Rehabiliation/smartride-2-01.jpg",
 
-                                        "href": "rehab-autofold-smartride.html"
+                                        "href": "rehabilitation/smartride-2.html"
 
                               }
 
@@ -1635,17 +1635,17 @@ var searchMap = [
 
   // REHABILITATION PRODUCTS
 
-  { keywords: ['aerodrive wheelchair','aerodrive 6019','aerodrive'], url: 'rehab-aerodrive1-wheelchair.html' },
+  { keywords: ['aerodrive wheelchair','aerodrive 6019','aerodrive'], url: 'rehabilitation/aerodrive-1.html' },
 
-  { keywords: ['autofold smartride','smartride wheelchair','autofold'], url: 'rehab-autofold-smartride2-wheelchair.html' },
+  { keywords: ['autofold smartride','smartride wheelchair','autofold'], url: 'rehabilitation/smartride-2.html' },
 
-  { keywords: ['innovax','innovax wheelchair'], url: 'rehab-innovax-6016a.html' },
+  { keywords: ['innovax','innovax wheelchair'], url: 'rehabilitation/innovax.html' },
 
-  { keywords: ['joylite wheelchair','joylite 9005','joylite'], url: 'rehab-joylite1-wheelchair.html' },
+  { keywords: ['joylite wheelchair','joylite 9005','joylite'], url: 'rehabilitation/joylite-1.html' },
 
-  { keywords: ['motion pro wheelchair','motionpro','motion pro 6001'], url: 'rehab-motionpro1-wheelchair.html' },
+  { keywords: ['motion pro wheelchair','motionpro','motion pro 6001'], url: 'rehabilitation/motion-pro-1.html' },
 
-  { keywords: ['xtrion wheelchair','xtrion 6013'], url: 'rehab-xtrion-6013a.html' },
+  { keywords: ['xtrion wheelchair','xtrion 6013'], url: 'rehabilitation/xtrion.html' },
 
 
 
