@@ -1590,7 +1590,6 @@ var searchMap = [
 
   { keywords: ['aed','swm11089','automatic external defibrillator','aed device'], url: 'cardiac-aed-swm11089.html' },
 
-  { keywords: ['defibrillator monitor','swm11090','cardiac defibrillator','manual defibrillator'], url: 'cardiac-defibrillator-monitor-swm11090.html' },
 
   { keywords: ['optima pressure monitoring','pressure monitoring lines'], url: 'optima-pressure-monitoring-lines.html' },
 
