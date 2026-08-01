@@ -1127,7 +1127,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse Xtrion Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/6013A xtrion.png",
+                                        "image": "/image/Rehabiliation/xtrion-01.png",
 
                                         "href": "rehabilitation/xtrion.html"
 
@@ -1137,7 +1137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse Innovax Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/6016A Innovax.png",
+                                        "image": "/image/Rehabiliation/innovax-01.jpg",
 
                                         "href": "rehabilitation/innovax.html"
 
@@ -1147,7 +1147,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse Aerodrive 1 Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/6019 Aerodrive 1.png",
+                                        "image": "/image/Rehabiliation/aerodrive-1-01.jpg",
 
                                         "href": "rehabilitation/aerodrive-1.html"
 
@@ -1157,7 +1157,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse Joylite 1 Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/9005 Joylite 1.png",
+                                        "image": "/image/Rehabiliation/joylite-1-01.jpg",
 
                                         "href": "rehabilitation/joylite-1.html"
 
