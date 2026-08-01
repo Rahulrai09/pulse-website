@@ -1199,7 +1199,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Hospital Furniture/ChatGPT Image May 28, 2026, 04_09_07 PM.png",
 
-                                        "href": "hospital-icu-bed-5func-electric-deluxe.html"
+                                        "href": "/hospital-setup/icu-bed-5func-electric-deluxe/"
 
                               },
 
@@ -1209,7 +1209,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Hospital Furniture/Modular ot theatre.png",
 
-                                        "href": "hospital-modular-ot.html"
+                                        "href": "/hospital-setup/modular-ot/"
 
                               },
 
@@ -1219,7 +1219,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Hospital Furniture/OT Light - Four Reflector (SingleDouble).png",
 
-                                        "href": "hospital-ot-light-four-reflector.html"
+                                        "href": "/hospital-setup/ot-light-four-reflector/"
 
                               },
 
@@ -1229,7 +1229,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Hospital Furniture/OT Light - Premium Globus Dome.png",
 
-                                        "href": "hospital-ot-light-globus-dome.html"
+                                        "href": "/hospital-setup/ot-light-globus-dome/"
 
                               },
 
@@ -1239,7 +1239,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Hospital Furniture/OT Examination Light.png",
 
-                                        "href": "hospital-ot-examination-light.html"
+                                        "href": "/hospital-setup/ot-examination-light/"
 
                               },
 
@@ -1249,7 +1249,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Hospital Furniture/ChatGPT Image May 28, 2026, 04_10_39 PM.png",
 
-                                        "href": "hospital-medical-gas-pipeline.html"
+                                        "href": "/hospital-setup/medical-gas-pipeline/"
 
                               }
 
@@ -1660,72 +1660,72 @@ var searchMap = [
 
   // HOSPITAL SETUP PRODUCTS
 
-  { keywords: ['icu bed 3 function','3 function electric bed','3 func icu bed'], url: 'hospital-icu-bed-3func-electric.html' },
+  { keywords: ['icu bed 3 function','3 function electric bed','3 func icu bed'], url: '/hospital-setup/icu-bed-3func-electric/' },
 
-  { keywords: ['icu bed 5 function deluxe','5 func deluxe icu bed'], url: 'hospital-icu-bed-5func-electric-deluxe.html' },
+  { keywords: ['icu bed 5 function deluxe','5 func deluxe icu bed'], url: '/hospital-setup/icu-bed-5func-electric-deluxe/' },
 
-  { keywords: ['icu bed 5 function premium','5 func premium icu bed'], url: 'hospital-icu-bed-5func-electric-premium.html' },
+  { keywords: ['icu bed 5 function premium','5 func premium icu bed'], url: '/hospital-setup/icu-bed-5func-electric-premium/' },
 
-  { keywords: ['manual icu bed','5 func manual deluxe','manual icu'], url: 'hospital-icu-bed-5func-manual-deluxe.html' },
+  { keywords: ['manual icu bed','5 func manual deluxe','manual icu'], url: '/hospital-setup/icu-bed-5func-manual-deluxe/' },
 
-  { keywords: ['fowler bed electric','electric fowler bed'], url: 'hospital-fowler-bed-electric.html' },
+  { keywords: ['fowler bed electric','electric fowler bed'], url: '/hospital-setup/fowler-bed-electric/' },
 
-  { keywords: ['semi fowler electric','semi fowler bed'], url: 'hospital-semi-fowler-electric.html' },
-
-
+  { keywords: ['semi fowler electric','semi fowler bed'], url: '/hospital-setup/semi-fowler-electric/' },
 
 
 
 
 
 
-  { keywords: ['delivery table hydraulic','hydraulic delivery table'], url: 'hospital-delivery-table-hydraulic.html' },
-
-  { keywords: ['delivery table electric','electric delivery table'], url: 'hospital-delivery-table-electric-manual.html' },
-
-  { keywords: ['stretcher trolley','hospital stretcher'], url: 'hospital-stretcher-trolley-ms-ss.html' },
-
-  { keywords: ['autoclave','sterilizer','hospital autoclave'], url: 'hospital-autoclaves-sterilizers.html' },
-
-  { keywords: ['modular ot','modular operation theatre'], url: 'hospital-modular-ot.html' },
-
-  { keywords: ['ot light premium camera','camera ot light'], url: 'hospital-ot-light-premium-camera.html' },
-
-  { keywords: ['four reflector ot light','4 reflector ot light'], url: 'hospital-ot-light-four-reflector.html' },
-
-  { keywords: ['globus dome ot light','globus dome'], url: 'hospital-ot-light-globus-dome.html' },
 
 
+  { keywords: ['delivery table hydraulic','hydraulic delivery table'], url: '/hospital-setup/delivery-table-hydraulic/' },
+
+  { keywords: ['delivery table electric','electric delivery table'], url: '/hospital-setup/delivery-table-electric-manual/' },
+
+  { keywords: ['stretcher trolley','hospital stretcher'], url: '/hospital-setup/stretcher-trolley-ms-ss/' },
+
+  { keywords: ['autoclave','sterilizer','hospital autoclave'], url: '/hospital-setup/autoclaves-sterilizers/' },
+
+  { keywords: ['modular ot','modular operation theatre'], url: '/hospital-setup/modular-ot/' },
+
+  { keywords: ['ot light premium camera','camera ot light'], url: '/hospital-setup/ot-light-premium-camera/' },
+
+  { keywords: ['four reflector ot light','4 reflector ot light'], url: '/hospital-setup/ot-light-four-reflector/' },
+
+  { keywords: ['globus dome ot light','globus dome'], url: '/hospital-setup/ot-light-globus-dome/' },
 
 
-  { keywords: ['examination light','ot examination light'], url: 'hospital-ot-examination-light.html' },
 
-  { keywords: ['c-arm ot table','c arm table','carm ot table'], url: 'hospital-ot-table-carm-hydraulic.html' },
 
-  { keywords: ['electric ot table','electric manual ot table'], url: 'hospital-ot-table-electric-manual-deluxe.html' },
+  { keywords: ['examination light','ot examination light'], url: '/hospital-setup/ot-examination-light/' },
 
-  { keywords: ['hydraulic ot table','general hydraulic ot table'], url: 'hospital-ot-table-general-hydraulic.html' },
+  { keywords: ['c-arm ot table','c arm table','carm ot table'], url: '/hospital-setup/ot-table-carm-hydraulic/' },
 
-  { keywords: ['crash cart','ss crash cart'], url: 'hospital-crash-cart.html' },
+  { keywords: ['electric ot table','electric manual ot table'], url: '/hospital-setup/ot-table-electric-manual-deluxe/' },
 
-  { keywords: ['emergency trolley','hydraulic emergency trolley'], url: 'hospital-emergency-trolley-hydraulic.html' },
+  { keywords: ['hydraulic ot table','general hydraulic ot table'], url: '/hospital-setup/ot-table-general-hydraulic/' },
+
+  { keywords: ['crash cart','ss crash cart'], url: '/hospital-setup/crash-cart/' },
+
+  { keywords: ['emergency trolley','hydraulic emergency trolley'], url: '/hospital-setup/emergency-trolley-hydraulic/' },
 
   { keywords: ['rapid neo ert','ert trolley','emergency response trolley'], url: 'rapid-neo-ert-emergency-response-trolley.html' },
 
   { keywords: ['emergency cart'], url: 'emergency-cart.html' },
 
-  { keywords: ['baby warmer','infant warmer'], url: 'hospital-baby-warmer.html' },
+  { keywords: ['baby warmer','infant warmer'], url: '/hospital-setup/baby-warmer/' },
 
-  { keywords: ['medical gas pipeline','gas pipeline'], url: 'hospital-medical-gas-pipeline.html' },
+  { keywords: ['medical gas pipeline','gas pipeline'], url: '/hospital-setup/medical-gas-pipeline/' },
 
-  { keywords: ['ss instrument trolley','instrument trolleys'], url: 'hospital-ss-instrument-trolleys.html' },
+  { keywords: ['ss instrument trolley','instrument trolleys'], url: '/hospital-setup/ss-instrument-trolleys/' },
 
 
 
 
   { keywords: ['medicine cart'], url: 'medicine-cart.html' },
 
-  { keywords: ['hospital wheelchair'], url: 'hospital-wheelchair.html' },
+  { keywords: ['hospital wheelchair'], url: '/hospital-setup/wheelchair/' },
 
   { keywords: ['circumease','circumcision kit','disposable circumcision','circumcision'], url: '/surgical-care/circumease-stapler/' },
 
