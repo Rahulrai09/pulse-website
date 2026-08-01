@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="featured-card">
 
-                  <div class="fc-img"><img src="/image/Hospital Furniture/OT Light - Four Reflector (SingleDouble).png" alt="OT Light — Four Reflector" style="width:100%; height:100%; object-fit:contain;" class="featured-product-img"></div>
+                  <div class="fc-img"><img src="/image/Hospital Furniture/OT Light — Four Reflector (SingleDouble).png" alt="OT Light — Four Reflector" style="width:100%; height:100%; object-fit:contain;" class="featured-product-img"></div>
 
                   <h6 class="featured-product-label" style="color: #ffffff;">OT Light — Four Reflector</h6>
 
@@ -1217,7 +1217,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "OT Light — Four Reflector",
 
-                                        "image": "/image/Hospital Furniture/OT Light - Four Reflector (SingleDouble).png",
+                                        "image": "/image/Hospital Furniture/OT Light — Four Reflector (SingleDouble).png",
 
                                         "href": "/hospital-setup/ot-light-four-reflector/"
 
@@ -1227,7 +1227,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "OT Light — Premium Globus Dome",
 
-                                        "image": "/image/Hospital Furniture/OT Light - Premium Globus Dome.png",
+                                        "image": "/image/Hospital Furniture/OT Light — Premium Globus Dome.png",
 
                                         "href": "/hospital-setup/ot-light-globus-dome/"
 
