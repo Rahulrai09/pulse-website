@@ -493,74 +493,85 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.pulseio.in/rehab-aerodrive1-wheelchair.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pulseio.in/rehab-aerodrive-6019.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pulseio.in/rehab-autofold-smartride.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.pulseio.in/rehab-autofold-smartride2-wheelchair.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.pulseio.in/rehabilitation.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.pulseio.in/rehab-innovax-6016a.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://www.pulseio.in/rehabilitation/motion-pro-1/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.pulseio.in/rehab-joylite1-wheelchair.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://www.pulseio.in/rehabilitation/motion-pro-2/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.pulseio.in/rehab-joylite-9005.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://www.pulseio.in/rehabilitation/aerodrive-1/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.pulseio.in/rehab-joylite-9006.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://www.pulseio.in/rehabilitation/aerodrive-2/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.pulseio.in/rehab-motionpro1-wheelchair.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://www.pulseio.in/rehabilitation/joylite-1/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.pulseio.in/rehab-motion-pro-6001.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://www.pulseio.in/rehabilitation/joylite-2/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://www.pulseio.in/rehab-xtrion-6013a.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <loc>https://www.pulseio.in/rehabilitation/smartride-1/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pulseio.in/rehabilitation/smartride-2/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pulseio.in/rehabilitation/cruza/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pulseio.in/rehabilitation/innovax/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pulseio.in/rehabilitation/xtrion/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
