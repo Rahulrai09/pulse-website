@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
   var metaPixel = document.createElement('script'); metaPixel.async = true; metaPixel.src = 'https://connect.facebook.net/en_US/fbevents.js'; document.head.appendChild(metaPixel); metaPixel.onload = function(){ fbq('init','3413725288776120'); fbq('track','PageView'); }; window.fbq = window.fbq || function(){ (window.fbq.q = window.fbq.q || []).push(arguments); }; window._fbq = window._fbq || window.fbq;
     const footerHTML = `
     <footer class="premium-footer">
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="pf-col pf-contact-col">
             <h5>CONTACT</h5>
             <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru, Karnataka � 560102</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru, Karnataka - 560102</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">+91 90711 01108</a></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <a href="https://mail.google.com/mail/?view=cm&to=Info@pulseio.in" target="_blank" rel="noopener noreferrer">Info@pulseio.in</a></li>
             </ul>
@@ -207,15 +207,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="pm-form-group">
               <label>Budget Range</label>
               <select class="pm-select">
-                <option>Under ₹5L</option><option>₹5L–₹20L</option>
-                <option>₹20L–₹50L</option><option>₹50L+</option>
+                <option>Under â‚¹5L</option><option>â‚¹5Lâ€“â‚¹20L</option>
+                <option>â‚¹20Lâ€“â‚¹50L</option><option>â‚¹50L+</option>
               </select>
             </div>
             <div class="pm-form-group">
               <label>Timeline</label>
               <select class="pm-select">
-                <option>Immediate</option><option>1–3 Months</option>
-                <option>3–6 Months</option><option>Just Exploring</option>
+                <option>Immediate</option><option>1â€“3 Months</option>
+                <option>3â€“6 Months</option><option>Just Exploring</option>
               </select>
             </div>
             <button type="submit" class="pm-submit">Request My Quote &rarr;</button>
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (sidebar && catMain) {
       const toggleBtn = document.createElement('button');
       toggleBtn.className = 'mob-filter-toggle';
-      toggleBtn.innerHTML = '⚙ Filters';
+      toggleBtn.innerHTML = 'âš™ Filters';
       catMain.insertBefore(toggleBtn, sidebar);
       toggleBtn.addEventListener('click', () => {
         sidebar.classList.toggle('open');
