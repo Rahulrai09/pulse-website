@@ -1,7 +1,7 @@
 window.allProducts = [
   {
     "id": "aesthetics-laser-machine-range",
-    "name": "Aesthetics Laser Machine Range",
+    "name": "Pulse Aesthetics Laser Machine Range",
     "category": "LASER SYSTEMS",
     "categoryUrl": "aesthetics.html",
     "type": "laser",
@@ -23,7 +23,7 @@ window.allProducts = [
   
   {
     "id": "sirova-sirolimus-eluting-stent",
-    "name": "SIROVA Sirolimus Eluting Stent",
+    "name": "Pulse SIROVA Sirolimus Eluting Stent",
     "category": "DRUG ELUTING STENTS",
     "categoryUrl": "cardiac-care.html",
     "type": "stent",
@@ -42,7 +42,7 @@ window.allProducts = [
   },
   {
     "id": "evera-everolimus-eluting-stent",
-    "name": "EVERA Everolimus Eluting Stent",
+    "name": "Pulse EVERA Everolimus Eluting Stent",
     "category": "DRUG ELUTING STENTS",
     "categoryUrl": "cardiac-care.html",
     "type": "stent",
@@ -66,7 +66,7 @@ window.allProducts = [
   
   {
     "id": "acusafe-micro-access-introducer-kits",
-    "name": "AcuSafe Micro-Access Introducer Kits",
+    "name": "Pulse AcuSafe Micro-Access Introducer Kits",
     "category": "INTRODUCER KITS",
     "categoryUrl": "cardiac-care.html",
     "type": "sheath",
@@ -85,7 +85,7 @@ window.allProducts = [
   },
   {
     "id": "acusafe-introducer-kits-for-venous-access",
-    "name": "AcuSafe Introducer Kits for Venous Access",
+    "name": "Pulse AcuSafe Introducer Kits for Venous Access",
     "category": "INTRODUCER KITS",
     "categoryUrl": "cardiac-care.html",
     "type": "sheath",
@@ -106,7 +106,7 @@ window.allProducts = [
   
   {
     "id": "high-pressure-injection-lines-1200psi",
-    "name": "High Pressure Injection Lines — 1200psi",
+    "name": "Pulse High Pressure Injection Lines — 1200psi",
     "category": "FLUID MANAGEMENT",
     "categoryUrl": "cardiac-care.html",
     "type": "sheath",
@@ -125,7 +125,7 @@ window.allProducts = [
   },
   {
     "id": "optima-pressure-monitoring-lines",
-    "name": "OPTIMA Pressure Monitoring Lines",
+    "name": "Pulse OPTIMA Pressure Monitoring Lines",
     "category": "FLUID MANAGEMENT",
     "categoryUrl": "cardiac-care.html",
     "type": "sheath",
@@ -144,7 +144,7 @@ window.allProducts = [
   },
   {
     "id": "pulse-sh320-icu-ventilator",
-    "name": "Pulse SH320 ICU Ventilator",
+    "name": "Pulse ICU Ventilator",
     "category": "VENTILATORS",
     "categoryUrl": "critical-care.html",
     "type": "ventilator",
@@ -164,7 +164,7 @@ window.allProducts = [
   
   {
     "id": "ecg-machine-3-channel-vital-zec3",
-    "name": "ECG Machine — 3 Channel (Vital ZEC3)",
+    "name": "Pulse ECG Machine — 3 Channel (Vital ZEC3)",
     "category": "ECG MACHINES",
     "categoryUrl": "critical-care.html",
     "type": "ecg",
@@ -183,7 +183,7 @@ window.allProducts = [
   },
   {
     "id": "ecg-machine-6-channel-vital-zec6",
-    "name": "ECG Machine — 6 Channel (Vital ZEC6)",
+    "name": "Pulse ECG Machine — 6 Channel (Vital ZEC6)",
     "category": "ECG MACHINES",
     "categoryUrl": "critical-care.html",
     "type": "ecg",
@@ -202,7 +202,7 @@ window.allProducts = [
   },
   {
     "id": "ecg-machine-12-channel-vital-zec12",
-    "name": "ECG Machine — 12 Channel (Vital ZEC12)",
+    "name": "Pulse ECG Machine — 12 Channel (Vital ZEC12)",
     "category": "ECG MACHINES",
     "categoryUrl": "critical-care.html",
     "type": "ecg",
@@ -221,7 +221,7 @@ window.allProducts = [
   },
   {
     "id": "patient-monitor-5-para-vital-zpm5",
-    "name": "Patient Monitor — 5 Para (Vital ZPM5)",
+    "name": "Pulse Patient Monitor — 5 Para (Vital ZPM5)",
     "category": "PATIENT MONITORS",
     "categoryUrl": "critical-care.html",
     "type": "monitor",
@@ -240,7 +240,7 @@ window.allProducts = [
   },
   {
     "id": "patient-monitor-7-para-vital-zpm7",
-    "name": "Patient Monitor — 7 Para (Vital ZPM7)",
+    "name": "Pulse Patient Monitor — 7 Para (Vital ZPM7)",
     "category": "PATIENT MONITORS",
     "categoryUrl": "critical-care.html",
     "type": "monitor",
@@ -272,7 +272,7 @@ window.allProducts = [
   
   {
     "id": "stretcher-on-trolley",
-    "name": "Stretcher on Trolley",
+    "name": "Pulse Stretcher on Trolley",
     "category": "PATIENT MOBILITY",
     "categoryUrl": "hospital-setup.html",
     "type": "furniture",
@@ -291,7 +291,7 @@ window.allProducts = [
   },
   {
     "id": "rapid-neo-ert-emergency-response-trolley",
-    "name": "Rapid Neo ERT (Emergency Response Trolley)",
+    "name": "Pulse Rapid Neo ERT (Emergency Response Trolley)",
     "category": "PATIENT MOBILITY",
     "categoryUrl": "hospital-setup.html",
     "type": "furniture",
@@ -310,7 +310,7 @@ window.allProducts = [
   },
   {
     "id": "folding-wheelchair-with-cushion",
-    "name": "Folding Wheelchair with Cushion",
+    "name": "Pulse Folding Wheelchair with Cushion",
     "category": "PATIENT MOBILITY",
     "categoryUrl": "hospital-setup.html",
     "type": "furniture",
@@ -329,7 +329,7 @@ window.allProducts = [
   },
   {
     "id": "medicine-cart",
-    "name": "Medicine Cart",
+    "name": "Pulse Medicine Cart",
     "category": "PATIENT MOBILITY",
     "categoryUrl": "hospital-setup.html",
     "type": "furniture",
@@ -348,7 +348,7 @@ window.allProducts = [
   },
   {
     "id": "emergency-cart",
-    "name": "Emergency Cart",
+    "name": "Pulse Emergency Cart",
     "category": "PATIENT MOBILITY",
     "categoryUrl": "hospital-setup.html",
     "type": "furniture",
@@ -367,7 +367,7 @@ window.allProducts = [
   },
   {
     "id": "ss-crash-cart",
-    "name": "SS Crash Cart",
+    "name": "Pulse SS Crash Cart",
     "category": "PATIENT MOBILITY",
     "categoryUrl": "hospital-setup.html",
     "type": "furniture",
@@ -405,7 +405,7 @@ window.allProducts = [
   
   {
     "id": "blood-donation-chair",
-    "name": "Blood Donation Chair",
+    "name": "Pulse Blood Donation Chair",
     "category": "BLOOD DONATION CHAIR",
     "categoryUrl": "hospital-setup.html",
     "type": "furniture",
@@ -424,7 +424,7 @@ window.allProducts = [
   },
   {
     "id": "circumease-disposable-circumcision-kit",
-    "name": "CircumEase — Disposable Circumcision Kit",
+    "name": "Pulse CircumEase — Disposable Circumcision Kit",
     "category": "SURGICAL KITS",
     "categoryUrl": "hospital-setup.html",
     "type": "ot",
@@ -467,7 +467,7 @@ window.allProducts = [
   },
   {
     "id": "pdm-6000-precision-haemodialysis-system",
-    "name": "PDM-6000 Precision Haemodialysis System",
+    "name": "Pulse PDM-6000 Precision Haemodialysis System",
     "category": "DIALYSIS MACHINES",
     "categoryUrl": "renal-care.html",
     "type": "hd",
@@ -486,7 +486,7 @@ window.allProducts = [
   },
   {
     "id": "pd-canova-av-fistula-needles",
-    "name": "PD-Canova — AV Fistula Needles",
+    "name": "Pulse PD-Canova — AV Fistula Needles",
     "category": "CONSUMABLES",
     "categoryUrl": "renal-care.html",
     "type": "needle",
@@ -505,7 +505,7 @@ window.allProducts = [
   },
   {
     "id": "pd-linepro-blood-tubing-set",
-    "name": "PD-Linepro — Blood Tubing Set",
+    "name": "Pulse PD-Linepro — Blood Tubing Set",
     "category": "CONSUMABLES",
     "categoryUrl": "renal-care.html",
     "type": "tubing",
@@ -524,7 +524,7 @@ window.allProducts = [
   },
   {
     "id": "dialysers-high-efficiency-toxin-removal",
-    "name": "Dialysers — High-Efficiency Toxin Removal",
+    "name": "Pulse Dialysers — High-Efficiency Toxin Removal",
     "category": "CONSUMABLES",
     "categoryUrl": "renal-care.html",
     "type": "consumable",
@@ -543,7 +543,7 @@ window.allProducts = [
   },
   {
     "id": "pd-cath-haemodialysis-catheters",
-    "name": "PD-Cath — Haemodialysis Catheters",
+    "name": "Pulse PD-Cath — Haemodialysis Catheters",
     "category": "CONSUMABLES",
     "categoryUrl": "renal-care.html",
     "type": "consumable",
@@ -562,7 +562,7 @@ window.allProducts = [
   },
   {
     "id": "pd-tp-transducer-protectors",
-    "name": "PD-TP — Transducer Protectors",
+    "name": "Pulse PD-TP — Transducer Protectors",
     "category": "CONSUMABLES",
     "categoryUrl": "renal-care.html",
     "type": "consumable",
