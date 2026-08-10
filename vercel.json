@@ -1,344 +1,1591 @@
 {
   "redirects": [
-    { "source": "/critical", "destination": "/critical-care.html", "permanent": false },
-    { "source": "/criticalcare", "destination": "/critical-care.html", "permanent": false },
-    { "source": "/critical-care", "destination": "/critical-care.html", "permanent": false },
-    { "source": "/renal", "destination": "/renal-care.html", "permanent": false },
-    { "source": "/renalcare", "destination": "/renal-care.html", "permanent": false },
-    { "source": "/renal-care", "destination": "/renal-care.html", "permanent": false },
-    { "source": "/cardiac", "destination": "/cardiac-care.html", "permanent": false },
-    { "source": "/cardiaccare", "destination": "/cardiac-care.html", "permanent": false },
-    { "source": "/cardiac-care", "destination": "/cardiac-care.html", "permanent": false },
-    { "source": "/aesthetics", "destination": "/aesthetics.html", "permanent": false },
-    { "source": "/rehabilitation", "destination": "/rehabilitation.html", "permanent": false },
-    { "source": "/surgical", "destination": "/surgical.html", "permanent": false },
-    { "source": "/hospital", "destination": "/hospital-setup.html", "permanent": false },
-    { "source": "/hospital-setup", "destination": "/hospital-setup.html", "permanent": false },
-    { "source": "/about", "destination": "/about.html", "permanent": false },
-    { "source": "/quality", "destination": "/quality.html", "permanent": false },
-    { "source": "/articles", "destination": "/articles-blogs.html", "permanent": false },
-    { "source": "/article", "destination": "/articles-blogs.html", "permanent": false },
-    { "source": "/blog-circumease", "destination": "/blog-circumease.html", "permanent": false },
-    { "source": "/blog-ventilator", "destination": "/blog-ventilator.html", "permanent": false },
-    { "source": "/why-pulse", "destination": "/why-pulse.html", "permanent": false },
-    { "source": "/how-it-works", "destination": "/index.html#how-it-works", "permanent": true },
-    { "source": "/how-it-works.html", "destination": "/index.html#how-it-works", "permanent": true },
-    { "source": "/blog.html", "destination": "/articles-blogs.html", "permanent": true },
-    { "source": "/articles.html", "destination": "/articles-blogs.html", "permanent": true },
-    { "source": "/critical-sh320-ventilator.html", "destination": "/icu-ventilator.html", "permanent": true },
-    { "source": "/critical-vital-zec3.html", "destination": "/3-channel-ecg-machine.html", "permanent": true },
-    { "source": "/critical-vital-zec6.html", "destination": "/6-channel-ecg-machine.html", "permanent": true },
-    { "source": "/critical-vital-zec12.html", "destination": "/12-channel-ecg-machine.html", "permanent": true },
-    { "source": "/critical-vital-zip1.html", "destination": "/infusion-pump.html", "permanent": true },
-    { "source": "/critical-vital-zpm5.html", "destination": "/5-para-patient-monitor.html", "permanent": true },
-    { "source": "/critical-vital-zpm7.html", "destination": "/7-para-patient-monitor.html", "permanent": true },
-    { "source": "/critical-vital-zsp1.html", "destination": "/syringe-pump.html", "permanent": true },
-    { "source": "/blog.html", "destination": "/articles-blogs.html", "permanent": true },
-    { "source": "/articles.html", "destination": "/articles-blogs.html", "permanent": true },
-    { "source": "/articles.html", "destination": "/articles-blogs.html", "permanent": true },
-    { "source": "/critical-sh320-ventilator.html", "destination": "/icu-ventilator.html", "permanent": true },
-    { "source": "/critical-vital-zec3.html", "destination": "/3-channel-ecg-machine.html", "permanent": true },
-    { "source": "/critical-vital-zec6.html", "destination": "/6-channel-ecg-machine.html", "permanent": true },
-    { "source": "/critical-vital-zec12.html", "destination": "/12-channel-ecg-machine.html", "permanent": true },
-    { "source": "/critical-vital-zip1.html", "destination": "/infusion-pump.html", "permanent": true },
-    { "source": "/critical-vital-zpm5.html", "destination": "/5-para-patient-monitor.html", "permanent": true },
-    { "source": "/critical-vital-zpm7.html", "destination": "/7-para-patient-monitor.html", "permanent": true },
-    { "source": "/critical-vital-zsp1.html", "destination": "/syringe-pump.html", "permanent": true },
-    { "source": "/blog-post.html", "destination": "/articles-blogs.html", "permanent": true },
-    { "source": "/patient-monitoring.html", "destination": "/critical-care.html", "permanent": true },
-    { "source": "/banner-animation.html", "destination": "/index.html", "permanent": true },
-    { "source": "/ss-crash-cart.html", "destination": "/hospital-crash-cart.html", "permanent": true },
-    { "source": "/examination-light.html", "destination": "/hospital-ot-examination-light.html", "permanent": true },
-    { "source": "/c-arm-electric-ot-table.html", "destination": "/hospital-ot-table-carm-hydraulic.html", "permanent": true },
-    { "source": "/electric-ot-table.html", "destination": "/hospital-ot-table-electric-manual-deluxe.html", "permanent": true },
-    { "source": "/manual-ot-table.html", "destination": "/hospital-ot-table-general-hydraulic.html", "permanent": true },
-    { "source": "/acusafe-introducer-kits-for-venous-access.html", "destination": "/cardiac-acusafe-introducer-kits.html", "permanent": true },
-    { "source": "/furniture-blood-donation.html", "destination": "/blood-donation-chair.html", "permanent": true },
-    { "source": "/service", "destination": "/service-support.html", "permanent": false },
-    { "source": "/innovation", "destination": "/innovation.html", "permanent": false },
-    { "source": "/life", "destination": "/life-at-pulse.html", "permanent": false },
-    { "source": "/privacy", "destination": "/privacy-policy.html", "permanent": false },
-    { "source": "/terms", "destination": "/terms-and-conditions.html", "permanent": false },
-    { "source": "/blogs", "destination": "/articles-blogs.html", "permanent": false },
-    { "source": "/blog", "destination": "/articles-blogs.html", "permanent": false },
-    { "source": "/contact", "destination": "/index.html", "permanent": false },
-    { "source": "/products", "destination": "/categories.html", "permanent": false },
-    { "source": "/categories", "destination": "/categories.html", "permanent": false },
-    { "source": "/ventilator", "destination": "/icu-ventilator.html", "permanent": false },
-    { "source": "/circumease", "destination": "/surgical-circumease-stapler.html", "permanent": false },
-    { "source": "/pulse-sh320-icu-ventilator.html", "destination": "/icu-ventilator.html", "permanent": true },
-    { "source": "/anesthesia-workstation.html", "destination": "/critical-anesthesia-workstation.html", "permanent": true },
-    { "source": "/modular-operation-theatre.html", "destination": "/hospital-modular-ot.html", "permanent": true },
-    { "source": "/ot-light-four-reflector.html", "destination": "/hospital-ot-light-four-reflector.html", "permanent": true },
-    { "source": "/ot-light-premium-globus-dome.html", "destination": "/hospital-ot-light-globus-dome.html", "permanent": true },
-    { "source": "/ot-examination-light.html", "destination": "/hospital-ot-examination-light.html", "permanent": true },
-    { "source": "/rehab-aerodrive1-wheelchair.html", "destination": "/rehabilitation/aerodrive-1/", "permanent": true },
-    { "source": "/rehab-autofold-smartride2-wheelchair.html", "destination": "/rehabilitation/smartride-2/", "permanent": true },
-    { "source": "/rehab-joylite1-wheelchair.html", "destination": "/rehabilitation/joylite-1/", "permanent": true },
-    { "source": "/rehab-motionpro1-wheelchair.html", "destination": "/rehabilitation/motion-pro-1/", "permanent": true },
-    { "source": "/ecg-machine-3-channel-vital-zec3.html", "destination": "/3-channel-ecg-machine.html", "permanent": true },
-    { "source": "/ecg-machine-6-channel-vital-zec6.html", "destination": "/6-channel-ecg-machine.html", "permanent": true },
-    { "source": "/ecg-machine-12-channel-vital-zec12.html", "destination": "/12-channel-ecg-machine.html", "permanent": true },
-    { "source": "/patient-monitor-5-para-vital-zpm5.html", "destination": "/5-para-patient-monitor.html", "permanent": true },
-    { "source": "/patient-monitor-7-para-vital-zpm7.html", "destination": "/7-para-patient-monitor.html", "permanent": true },
-    { "source": "/infusion-pump-vital-zip1.html", "destination": "/infusion-pump.html", "permanent": true },
-    { "source": "/syringe-pump-vital-zsp1.html", "destination": "/syringe-pump.html", "permanent": true },
-    { "source": "/pdm-6000-precision-haemodialysis-system.html", "destination": "/renal-pdm-6000.html", "permanent": true },
-    { "source": "/pd-canova-av-fistula-needles.html", "destination": "/renal-pd-canova.html", "permanent": true },
-    { "source": "/pd-cath-haemodialysis-catheters.html", "destination": "/renal-pd-cath.html", "permanent": true },
-    { "source": "/pd-linepro-blood-tubing-set.html", "destination": "/renal-pd-linepro.html", "permanent": true },
-    { "source": "/pd-tp-transducer-protectors.html", "destination": "/renal-pd-tp.html", "permanent": true },
-    { "source": "/dialysers-high-efficiency-toxin-removal.html", "destination": "/renal-dialysers.html", "permanent": true },
-    { "source": "/sirova-sirolimus-eluting-stent.html", "destination": "/cardiac-sirova-stent.html", "permanent": true },
-    { "source": "/evera-everolimus-eluting-stent.html", "destination": "/cardiac-evera-stent.html", "permanent": true },
-    { "source": "/guidex-guidewires.html", "destination": "/cardiac-guidex-guidewires.html", "permanent": true },
-    { "source": "/optima-inflation-device.html", "destination": "/cardiac-optima-inflation-kit.html", "permanent": true },
-    { "source": "/optima-manifolds.html", "destination": "/cardiac-optima-manifolds.html", "permanent": true },
-    { "source": "/acusafe-blunt-needle-access-system.html", "destination": "/cardiac-acusafe-blunt-needle.html", "permanent": true },
-    { "source": "/acusafe-micro-access-introducer-kits.html", "destination": "/cardiac-acusafe-micro-access.html", "permanent": true },
-    { "source": "/circumease-disposable-circumcision-kit.html", "destination": "/surgical-circumease-stapler.html", "permanent": true },
-    { "source": "/3-fold-modesty-screen.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/acusafe-iv-catheter-cannula.html", "destination": "/cardiac-care.html", "permanent": true },
-    { "source": "/body-contouring-systems.html", "destination": "/aesthetics.html", "permanent": true },
-    { "source": "/bookcase.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/butterfly-ot-light.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/double-dome-ot-light.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/double-step-stool.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/electric-bed-with-sideboards-icu-range.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/hair-restoration-systems.html", "destination": "/aesthetics.html", "permanent": true },
-    { "source": "/instrument-trolley.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/instrument-trolley-bowl-and-bucket-dressing-trolley.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/ldrp-bed.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/lite-fowler-ms-bed.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/lite-ldrp-bed.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/locker-1-drawer-1-cabinet.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/manual-bed-with-sideboards-icu-range.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/mattress.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/medicine-trolley.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/ob-table-overbed-table.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/optima-ptca-kit-y-connector-set.html", "destination": "/cardiac-care.html", "permanent": true },
-    { "source": "/optima-radial-artery-compression-band.html", "destination": "/cardiac-care.html", "permanent": true },
-    { "source": "/pediatric-bed.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/plus-lite-semi-fowler-pp-bed.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/plus-lite-semi-fowler-ssplt-bed.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/round-stool.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/single-dome-ot-light.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/skin-rejuvenation-devices.html", "destination": "/aesthetics.html", "permanent": true },
-    { "source": "/sliding-glass-door-unit.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/soil-linen-trolley.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/square-stool.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/ss-saline-stand.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/vfc-vertical-filing-cabinet.html", "destination": "/hospital-setup.html", "permanent": true },
-    { "source": "/icu-ventilator.html", "destination": "/critical-care/icu-ventilator/", "permanent": true },
-    { "source": "/hospital-icu-bed-5func-electric-premium.html", "destination": "/hospital-setup/icu-bed-5func-electric-premium/", "permanent": true },
-    { "source": "/hospital-icu-bed-5func-electric-deluxe.html", "destination": "/hospital-setup/icu-bed-5func-electric-deluxe/", "permanent": true },
-    { "source": "/hospital-icu-bed-5func-manual-deluxe.html", "destination": "/hospital-setup/icu-bed-5func-manual-deluxe/", "permanent": true },
-    { "source": "/hospital-icu-bed-3func-electric.html", "destination": "/hospital-setup/icu-bed-3func-electric/", "permanent": true },
-    { "source": "/hospital-fowler-bed-electric.html", "destination": "/hospital-setup/fowler-bed-electric/", "permanent": true },
-    { "source": "/hospital-semi-fowler-electric.html", "destination": "/hospital-setup/semi-fowler-electric/", "permanent": true },
-    { "source": "/hospital-ot-table-electric-manual-deluxe.html", "destination": "/hospital-setup/ot-table-electric-manual-deluxe/", "permanent": true },
-    { "source": "/hospital-ot-table-carm-hydraulic.html", "destination": "/hospital-setup/ot-table-carm-hydraulic/", "permanent": true },
-    { "source": "/hospital-ot-table-general-hydraulic.html", "destination": "/hospital-setup/ot-table-general-hydraulic/", "permanent": true },
-    { "source": "/hospital-delivery-table-electric-manual.html", "destination": "/hospital-setup/delivery-table-electric-manual/", "permanent": true },
-    { "source": "/hospital-delivery-table-hydraulic.html", "destination": "/hospital-setup/delivery-table-hydraulic/", "permanent": true },
-    { "source": "/hospital-stretcher-trolley-ms-ss.html", "destination": "/hospital-setup/stretcher-trolley-ms-ss/", "permanent": true },
-    { "source": "/hospital-emergency-trolley-hydraulic.html", "destination": "/hospital-setup/emergency-trolley-hydraulic/", "permanent": true },
-    { "source": "/hospital-wheelchair.html", "destination": "/hospital-setup/wheelchair/", "permanent": true },
-    { "source": "/hospital-ss-instrument-trolleys.html", "destination": "/hospital-setup/ss-instrument-trolleys/", "permanent": true },
-    { "source": "/hospital-crash-cart.html", "destination": "/hospital-setup/crash-cart/", "permanent": true },
-    { "source": "/hospital-autoclaves-sterilizers.html", "destination": "/hospital-setup/autoclaves-sterilizers/", "permanent": true },
-    { "source": "/hospital-baby-warmer.html", "destination": "/hospital-setup/baby-warmer/", "permanent": true },
-    { "source": "/hospital-medical-gas-pipeline.html", "destination": "/hospital-setup/medical-gas-pipeline/", "permanent": true },
-    { "source": "/hospital-modular-ot.html", "destination": "/hospital-setup/modular-ot/", "permanent": true },
-    { "source": "/hospital-ot-light-four-reflector.html", "destination": "/hospital-setup/ot-light-four-reflector/", "permanent": true },
-    { "source": "/hospital-ot-light-globus-dome.html", "destination": "/hospital-setup/ot-light-globus-dome/", "permanent": true },
-    { "source": "/hospital-ot-examination-light.html", "destination": "/hospital-setup/ot-examination-light/", "permanent": true },
-    { "source": "/hospital-ot-light-premium-camera.html", "destination": "/hospital-setup/ot-light-premium-camera/", "permanent": true },
-    { "source": "/aesthetics-nodd.html", "destination": "/aesthetics/nodd/", "permanent": true },
-    { "source": "/aesthetics-em-ma.html", "destination": "/aesthetics/em-ma/", "permanent": true },
-    { "source": "/aesthetics-visage.html", "destination": "/aesthetics/visage/", "permanent": true },
-    { "source": "/aesthetics-pi-code.html", "destination": "/aesthetics/pi-code/", "permanent": true },
-    { "source": "/aesthetics-hydrafrac.html", "destination": "/aesthetics/hydrafrac/", "permanent": true },
-    { "source": "/aesthetics-cool-shape.html", "destination": "/aesthetics/cool-shape/", "permanent": true },
-    { "source": "/aesthetics-code-factor.html", "destination": "/aesthetics/code-factor/", "permanent": true },
-    { "source": "/aesthetics-excimer.html", "destination": "/aesthetics/excimer/", "permanent": true },
-    { "source": "/aesthetics-wavelength-pro-x.html", "destination": "/aesthetics/wavelength-pro-x/", "permanent": true },
-    { "source": "/aesthetics-skin-analyzer.html", "destination": "/aesthetics/skin-analyzer/", "permanent": true },
-    { "source": "/aesthetics-bbl-super-ipl-dpl.html", "destination": "/aesthetics/bbl-super-ipl-dpl/", "permanent": true },
-    { "source": "/aesthetics-em-code.html", "destination": "/aesthetics/em-code/", "permanent": true },
-    { "source": "/3-channel-ecg-machine.html", "destination": "/critical-care/3-channel-ecg-machine/", "permanent": true },
-    { "source": "/6-channel-ecg-machine.html", "destination": "/critical-care/6-channel-ecg-machine/", "permanent": true },
-    { "source": "/12-channel-ecg-machine.html", "destination": "/critical-care/12-channel-ecg-machine/", "permanent": true },
-    { "source": "/infusion-pump.html", "destination": "/critical-care/infusion-pump/", "permanent": true },
-    { "source": "/syringe-pump.html", "destination": "/critical-care/syringe-pump/", "permanent": true },
-    { "source": "/5-para-patient-monitor.html", "destination": "/critical-care/5-para-patient-monitor/", "permanent": true },
-    { "source": "/7-para-patient-monitor.html", "destination": "/critical-care/7-para-patient-monitor/", "permanent": true },
-    { "source": "/critical-anesthesia-workstation.html", "destination": "/critical-care/anesthesia-workstation/", "permanent": true },
-    { "source": "/renal-pdm-6000.html", "destination": "/renal-care/pdm-6000/", "permanent": true },
-    { "source": "/renal-pd-canova.html", "destination": "/renal-care/pd-canova/", "permanent": true },
-    { "source": "/renal-pd-linepro.html", "destination": "/renal-care/pd-linepro/", "permanent": true },
-    { "source": "/renal-dialysers.html", "destination": "/renal-care/dialysers/", "permanent": true },
-    { "source": "/renal-pd-cath.html", "destination": "/renal-care/pd-cath/", "permanent": true },
-    { "source": "/renal-pd-tp.html", "destination": "/renal-care/pd-tp/", "permanent": true },
-    { "source": "/cardiac-optima-inflation-kit.html", "destination": "/cardiac-care/optima-inflation-kit/", "permanent": true },
-    { "source": "/cardiac-optima-manifolds.html", "destination": "/cardiac-care/optima-manifolds/", "permanent": true },
-    { "source": "/cardiac-acusafe-blunt-needle.html", "destination": "/cardiac-care/acusafe-blunt-needle/", "permanent": true },
-    { "source": "/cardiac-sirova-stent.html", "destination": "/cardiac-care/sirova-stent/", "permanent": true },
-    { "source": "/cardiac-evera-stent.html", "destination": "/cardiac-care/evera-stent/", "permanent": true },
-    { "source": "/cardiac-guidex-guidewires.html", "destination": "/cardiac-care/guidex-guidewires/", "permanent": true },
-    { "source": "/cardiac-acusafe-micro-access.html", "destination": "/cardiac-care/acusafe-micro-access/", "permanent": true },
-    { "source": "/cardiac-acusafe-introducer-kits.html", "destination": "/cardiac-care/acusafe-introducer-kits/", "permanent": true },
-    { "source": "/surgical-circumease-stapler.html", "destination": "/surgical-care/circumease-stapler/", "permanent": true },
-    { "source": "/rehab-motion-pro-6001.html", "destination": "/rehabilitation/motion-pro-1/", "permanent": true },
-    { "source": "/rehab-aerodrive-6019.html", "destination": "/rehabilitation/aerodrive-1/", "permanent": true },
-    { "source": "/rehab-autofold-smartride.html", "destination": "/rehabilitation/smartride-2/", "permanent": true },
-    { "source": "/rehab-innovax-6016a.html", "destination": "/rehabilitation/innovax/", "permanent": true },
-    { "source": "/rehab-joylite-9005.html", "destination": "/rehabilitation/joylite-1/", "permanent": true },
-    { "source": "/rehab-joylite-9006.html", "destination": "/rehabilitation/joylite-2/", "permanent": true },
-    { "source": "/rehab-xtrion-6013a.html", "destination": "/rehabilitation/xtrion/", "permanent": true }
+    {
+      "source": "/categories.html#cta",
+      "destination": "/index.html#cta",
+      "permanent": true
+    },
+    {
+      "source": "/categories.html",
+      "destination": "/index.html#cta",
+      "permanent": true
+    },
+    {
+      "source": "/critical",
+      "destination": "/critical-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/criticalcare",
+      "destination": "/critical-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/critical-care",
+      "destination": "/critical-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/renal",
+      "destination": "/renal-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/renalcare",
+      "destination": "/renal-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/renal-care",
+      "destination": "/renal-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/cardiac",
+      "destination": "/cardiac-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/cardiaccare",
+      "destination": "/cardiac-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/cardiac-care",
+      "destination": "/cardiac-care.html",
+      "permanent": false
+    },
+    {
+      "source": "/aesthetics",
+      "destination": "/aesthetics.html",
+      "permanent": false
+    },
+    {
+      "source": "/rehabilitation",
+      "destination": "/rehabilitation.html",
+      "permanent": false
+    },
+    {
+      "source": "/surgical",
+      "destination": "/surgical.html",
+      "permanent": false
+    },
+    {
+      "source": "/hospital",
+      "destination": "/hospital-setup.html",
+      "permanent": false
+    },
+    {
+      "source": "/hospital-setup",
+      "destination": "/hospital-setup.html",
+      "permanent": false
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": false
+    },
+    {
+      "source": "/quality",
+      "destination": "/quality.html",
+      "permanent": false
+    },
+    {
+      "source": "/articles",
+      "destination": "/articles-blogs.html",
+      "permanent": false
+    },
+    {
+      "source": "/article",
+      "destination": "/articles-blogs.html",
+      "permanent": false
+    },
+    {
+      "source": "/blog-circumease",
+      "destination": "/blog-circumease.html",
+      "permanent": false
+    },
+    {
+      "source": "/blog-ventilator",
+      "destination": "/blog-ventilator.html",
+      "permanent": false
+    },
+    {
+      "source": "/why-pulse",
+      "destination": "/why-pulse.html",
+      "permanent": false
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/index.html#how-it-works",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works.html",
+      "destination": "/index.html#how-it-works",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/articles-blogs.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles.html",
+      "destination": "/articles-blogs.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-sh320-ventilator.html",
+      "destination": "/icu-ventilator.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zec3.html",
+      "destination": "/3-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zec6.html",
+      "destination": "/6-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zec12.html",
+      "destination": "/12-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zip1.html",
+      "destination": "/infusion-pump.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zpm5.html",
+      "destination": "/5-para-patient-monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zpm7.html",
+      "destination": "/7-para-patient-monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zsp1.html",
+      "destination": "/syringe-pump.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/articles-blogs.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles.html",
+      "destination": "/articles-blogs.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles.html",
+      "destination": "/articles-blogs.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-sh320-ventilator.html",
+      "destination": "/icu-ventilator.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zec3.html",
+      "destination": "/3-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zec6.html",
+      "destination": "/6-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zec12.html",
+      "destination": "/12-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zip1.html",
+      "destination": "/infusion-pump.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zpm5.html",
+      "destination": "/5-para-patient-monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zpm7.html",
+      "destination": "/7-para-patient-monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/critical-vital-zsp1.html",
+      "destination": "/syringe-pump.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog-post.html",
+      "destination": "/articles-blogs.html",
+      "permanent": true
+    },
+    {
+      "source": "/patient-monitoring.html",
+      "destination": "/critical-care.html",
+      "permanent": true
+    },
+    {
+      "source": "/banner-animation.html",
+      "destination": "/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/ss-crash-cart.html",
+      "destination": "/hospital-crash-cart.html",
+      "permanent": true
+    },
+    {
+      "source": "/examination-light.html",
+      "destination": "/hospital-ot-examination-light.html",
+      "permanent": true
+    },
+    {
+      "source": "/c-arm-electric-ot-table.html",
+      "destination": "/hospital-ot-table-carm-hydraulic.html",
+      "permanent": true
+    },
+    {
+      "source": "/electric-ot-table.html",
+      "destination": "/hospital-ot-table-electric-manual-deluxe.html",
+      "permanent": true
+    },
+    {
+      "source": "/manual-ot-table.html",
+      "destination": "/hospital-ot-table-general-hydraulic.html",
+      "permanent": true
+    },
+    {
+      "source": "/acusafe-introducer-kits-for-venous-access.html",
+      "destination": "/cardiac-acusafe-introducer-kits.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-blood-donation.html",
+      "destination": "/blood-donation-chair.html",
+      "permanent": true
+    },
+    {
+      "source": "/service",
+      "destination": "/service-support.html",
+      "permanent": false
+    },
+    {
+      "source": "/innovation",
+      "destination": "/innovation.html",
+      "permanent": false
+    },
+    {
+      "source": "/life",
+      "destination": "/life-at-pulse.html",
+      "permanent": false
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy-policy.html",
+      "permanent": false
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms-and-conditions.html",
+      "permanent": false
+    },
+    {
+      "source": "/blogs",
+      "destination": "/articles-blogs.html",
+      "permanent": false
+    },
+    {
+      "source": "/blog",
+      "destination": "/articles-blogs.html",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/products",
+      "destination": "/index.html#cta",
+      "permanent": true
+    },
+    {
+      "source": "/categories",
+      "destination": "/index.html#cta",
+      "permanent": true
+    },
+    {
+      "source": "/ventilator",
+      "destination": "/icu-ventilator.html",
+      "permanent": false
+    },
+    {
+      "source": "/circumease",
+      "destination": "/surgical-circumease-stapler.html",
+      "permanent": false
+    },
+    {
+      "source": "/pulse-sh320-icu-ventilator.html",
+      "destination": "/icu-ventilator.html",
+      "permanent": true
+    },
+    {
+      "source": "/anesthesia-workstation.html",
+      "destination": "/critical-anesthesia-workstation.html",
+      "permanent": true
+    },
+    {
+      "source": "/modular-operation-theatre.html",
+      "destination": "/hospital-modular-ot.html",
+      "permanent": true
+    },
+    {
+      "source": "/ot-light-four-reflector.html",
+      "destination": "/hospital-ot-light-four-reflector.html",
+      "permanent": true
+    },
+    {
+      "source": "/ot-light-premium-globus-dome.html",
+      "destination": "/hospital-ot-light-globus-dome.html",
+      "permanent": true
+    },
+    {
+      "source": "/ot-examination-light.html",
+      "destination": "/hospital-ot-examination-light.html",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-aerodrive1-wheelchair.html",
+      "destination": "/rehabilitation/aerodrive-1/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-autofold-smartride2-wheelchair.html",
+      "destination": "/rehabilitation/smartride-2/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-joylite1-wheelchair.html",
+      "destination": "/rehabilitation/joylite-1/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-motionpro1-wheelchair.html",
+      "destination": "/rehabilitation/motion-pro-1/",
+      "permanent": true
+    },
+    {
+      "source": "/ecg-machine-3-channel-vital-zec3.html",
+      "destination": "/3-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/ecg-machine-6-channel-vital-zec6.html",
+      "destination": "/6-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/ecg-machine-12-channel-vital-zec12.html",
+      "destination": "/12-channel-ecg-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/patient-monitor-5-para-vital-zpm5.html",
+      "destination": "/5-para-patient-monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/patient-monitor-7-para-vital-zpm7.html",
+      "destination": "/7-para-patient-monitor.html",
+      "permanent": true
+    },
+    {
+      "source": "/infusion-pump-vital-zip1.html",
+      "destination": "/infusion-pump.html",
+      "permanent": true
+    },
+    {
+      "source": "/syringe-pump-vital-zsp1.html",
+      "destination": "/syringe-pump.html",
+      "permanent": true
+    },
+    {
+      "source": "/pdm-6000-precision-haemodialysis-system.html",
+      "destination": "/renal-pdm-6000.html",
+      "permanent": true
+    },
+    {
+      "source": "/pd-canova-av-fistula-needles.html",
+      "destination": "/renal-pd-canova.html",
+      "permanent": true
+    },
+    {
+      "source": "/pd-cath-haemodialysis-catheters.html",
+      "destination": "/renal-pd-cath.html",
+      "permanent": true
+    },
+    {
+      "source": "/pd-linepro-blood-tubing-set.html",
+      "destination": "/renal-pd-linepro.html",
+      "permanent": true
+    },
+    {
+      "source": "/pd-tp-transducer-protectors.html",
+      "destination": "/renal-pd-tp.html",
+      "permanent": true
+    },
+    {
+      "source": "/dialysers-high-efficiency-toxin-removal.html",
+      "destination": "/renal-dialysers.html",
+      "permanent": true
+    },
+    {
+      "source": "/sirova-sirolimus-eluting-stent.html",
+      "destination": "/cardiac-sirova-stent.html",
+      "permanent": true
+    },
+    {
+      "source": "/evera-everolimus-eluting-stent.html",
+      "destination": "/cardiac-evera-stent.html",
+      "permanent": true
+    },
+    {
+      "source": "/guidex-guidewires.html",
+      "destination": "/cardiac-guidex-guidewires.html",
+      "permanent": true
+    },
+    {
+      "source": "/optima-inflation-device.html",
+      "destination": "/cardiac-optima-inflation-kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/optima-manifolds.html",
+      "destination": "/cardiac-optima-manifolds.html",
+      "permanent": true
+    },
+    {
+      "source": "/acusafe-blunt-needle-access-system.html",
+      "destination": "/cardiac-acusafe-blunt-needle.html",
+      "permanent": true
+    },
+    {
+      "source": "/acusafe-micro-access-introducer-kits.html",
+      "destination": "/cardiac-acusafe-micro-access.html",
+      "permanent": true
+    },
+    {
+      "source": "/circumease-disposable-circumcision-kit.html",
+      "destination": "/surgical-circumease-stapler.html",
+      "permanent": true
+    },
+    {
+      "source": "/3-fold-modesty-screen.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/acusafe-iv-catheter-cannula.html",
+      "destination": "/cardiac-care.html",
+      "permanent": true
+    },
+    {
+      "source": "/body-contouring-systems.html",
+      "destination": "/aesthetics.html",
+      "permanent": true
+    },
+    {
+      "source": "/bookcase.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/butterfly-ot-light.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/double-dome-ot-light.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/double-step-stool.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/electric-bed-with-sideboards-icu-range.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/hair-restoration-systems.html",
+      "destination": "/aesthetics.html",
+      "permanent": true
+    },
+    {
+      "source": "/instrument-trolley.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/instrument-trolley-bowl-and-bucket-dressing-trolley.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/ldrp-bed.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/lite-fowler-ms-bed.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/lite-ldrp-bed.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/locker-1-drawer-1-cabinet.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/manual-bed-with-sideboards-icu-range.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/mattress.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/medicine-trolley.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/ob-table-overbed-table.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/optima-ptca-kit-y-connector-set.html",
+      "destination": "/cardiac-care.html",
+      "permanent": true
+    },
+    {
+      "source": "/optima-radial-artery-compression-band.html",
+      "destination": "/cardiac-care.html",
+      "permanent": true
+    },
+    {
+      "source": "/pediatric-bed.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/plus-lite-semi-fowler-pp-bed.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/plus-lite-semi-fowler-ssplt-bed.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/round-stool.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/single-dome-ot-light.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/skin-rejuvenation-devices.html",
+      "destination": "/aesthetics.html",
+      "permanent": true
+    },
+    {
+      "source": "/sliding-glass-door-unit.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/soil-linen-trolley.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/square-stool.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/ss-saline-stand.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/vfc-vertical-filing-cabinet.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/icu-ventilator.html",
+      "destination": "/critical-care/icu-ventilator/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-icu-bed-5func-electric-premium.html",
+      "destination": "/hospital-setup/icu-bed-5func-electric-premium/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-icu-bed-5func-electric-deluxe.html",
+      "destination": "/hospital-setup/icu-bed-5func-electric-deluxe/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-icu-bed-5func-manual-deluxe.html",
+      "destination": "/hospital-setup/icu-bed-5func-manual-deluxe/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-icu-bed-3func-electric.html",
+      "destination": "/hospital-setup/icu-bed-3func-electric/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-fowler-bed-electric.html",
+      "destination": "/hospital-setup/fowler-bed-electric/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-semi-fowler-electric.html",
+      "destination": "/hospital-setup/semi-fowler-electric/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ot-table-electric-manual-deluxe.html",
+      "destination": "/hospital-setup/ot-table-electric-manual-deluxe/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ot-table-carm-hydraulic.html",
+      "destination": "/hospital-setup/ot-table-carm-hydraulic/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ot-table-general-hydraulic.html",
+      "destination": "/hospital-setup/ot-table-general-hydraulic/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-delivery-table-electric-manual.html",
+      "destination": "/hospital-setup/delivery-table-electric-manual/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-delivery-table-hydraulic.html",
+      "destination": "/hospital-setup/delivery-table-hydraulic/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-stretcher-trolley-ms-ss.html",
+      "destination": "/hospital-setup/stretcher-trolley-ms-ss/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-emergency-trolley-hydraulic.html",
+      "destination": "/hospital-setup/emergency-trolley-hydraulic/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-wheelchair.html",
+      "destination": "/hospital-setup/wheelchair/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ss-instrument-trolleys.html",
+      "destination": "/hospital-setup/ss-instrument-trolleys/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-crash-cart.html",
+      "destination": "/hospital-setup/crash-cart/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-autoclaves-sterilizers.html",
+      "destination": "/hospital-setup/autoclaves-sterilizers/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-baby-warmer.html",
+      "destination": "/hospital-setup/baby-warmer/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-medical-gas-pipeline.html",
+      "destination": "/hospital-setup/medical-gas-pipeline/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-modular-ot.html",
+      "destination": "/hospital-setup/modular-ot/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ot-light-four-reflector.html",
+      "destination": "/hospital-setup/ot-light-four-reflector/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ot-light-globus-dome.html",
+      "destination": "/hospital-setup/ot-light-globus-dome/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ot-examination-light.html",
+      "destination": "/hospital-setup/ot-examination-light/",
+      "permanent": true
+    },
+    {
+      "source": "/hospital-ot-light-premium-camera.html",
+      "destination": "/hospital-setup/ot-light-premium-camera/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-nodd.html",
+      "destination": "/aesthetics/nodd/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-em-ma.html",
+      "destination": "/aesthetics/em-ma/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-visage.html",
+      "destination": "/aesthetics/visage/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-pi-code.html",
+      "destination": "/aesthetics/pi-code/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-hydrafrac.html",
+      "destination": "/aesthetics/hydrafrac/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-cool-shape.html",
+      "destination": "/aesthetics/cool-shape/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-code-factor.html",
+      "destination": "/aesthetics/code-factor/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-excimer.html",
+      "destination": "/aesthetics/excimer/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-wavelength-pro-x.html",
+      "destination": "/aesthetics/wavelength-pro-x/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-skin-analyzer.html",
+      "destination": "/aesthetics/skin-analyzer/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-bbl-super-ipl-dpl.html",
+      "destination": "/aesthetics/bbl-super-ipl-dpl/",
+      "permanent": true
+    },
+    {
+      "source": "/aesthetics-em-code.html",
+      "destination": "/aesthetics/em-code/",
+      "permanent": true
+    },
+    {
+      "source": "/3-channel-ecg-machine.html",
+      "destination": "/critical-care/3-channel-ecg-machine/",
+      "permanent": true
+    },
+    {
+      "source": "/6-channel-ecg-machine.html",
+      "destination": "/critical-care/6-channel-ecg-machine/",
+      "permanent": true
+    },
+    {
+      "source": "/12-channel-ecg-machine.html",
+      "destination": "/critical-care/12-channel-ecg-machine/",
+      "permanent": true
+    },
+    {
+      "source": "/infusion-pump.html",
+      "destination": "/critical-care/infusion-pump/",
+      "permanent": true
+    },
+    {
+      "source": "/syringe-pump.html",
+      "destination": "/critical-care/syringe-pump/",
+      "permanent": true
+    },
+    {
+      "source": "/5-para-patient-monitor.html",
+      "destination": "/critical-care/5-para-patient-monitor/",
+      "permanent": true
+    },
+    {
+      "source": "/7-para-patient-monitor.html",
+      "destination": "/critical-care/7-para-patient-monitor/",
+      "permanent": true
+    },
+    {
+      "source": "/critical-anesthesia-workstation.html",
+      "destination": "/critical-care/anesthesia-workstation/",
+      "permanent": true
+    },
+    {
+      "source": "/renal-pdm-6000.html",
+      "destination": "/renal-care/pdm-6000/",
+      "permanent": true
+    },
+    {
+      "source": "/renal-pd-canova.html",
+      "destination": "/renal-care/pd-canova/",
+      "permanent": true
+    },
+    {
+      "source": "/renal-pd-linepro.html",
+      "destination": "/renal-care/pd-linepro/",
+      "permanent": true
+    },
+    {
+      "source": "/renal-dialysers.html",
+      "destination": "/renal-care/dialysers/",
+      "permanent": true
+    },
+    {
+      "source": "/renal-pd-cath.html",
+      "destination": "/renal-care/pd-cath/",
+      "permanent": true
+    },
+    {
+      "source": "/renal-pd-tp.html",
+      "destination": "/renal-care/pd-tp/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-optima-inflation-kit.html",
+      "destination": "/cardiac-care/optima-inflation-kit/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-optima-manifolds.html",
+      "destination": "/cardiac-care/optima-manifolds/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-acusafe-blunt-needle.html",
+      "destination": "/cardiac-care/acusafe-blunt-needle/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-sirova-stent.html",
+      "destination": "/cardiac-care/sirova-stent/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-evera-stent.html",
+      "destination": "/cardiac-care/evera-stent/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-guidex-guidewires.html",
+      "destination": "/cardiac-care/guidex-guidewires/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-acusafe-micro-access.html",
+      "destination": "/cardiac-care/acusafe-micro-access/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-acusafe-introducer-kits.html",
+      "destination": "/cardiac-care/acusafe-introducer-kits/",
+      "permanent": true
+    },
+    {
+      "source": "/surgical-circumease-stapler.html",
+      "destination": "/surgical-care/circumease-stapler/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-motion-pro-6001.html",
+      "destination": "/rehabilitation/motion-pro-1/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-aerodrive-6019.html",
+      "destination": "/rehabilitation/aerodrive-1/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-autofold-smartride.html",
+      "destination": "/rehabilitation/smartride-2/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-innovax-6016a.html",
+      "destination": "/rehabilitation/innovax/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-joylite-9005.html",
+      "destination": "/rehabilitation/joylite-1/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-joylite-9006.html",
+      "destination": "/rehabilitation/joylite-2/",
+      "permanent": true
+    },
+    {
+      "source": "/rehab-xtrion-6013a.html",
+      "destination": "/rehabilitation/xtrion/",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/critical-care/icu-ventilator", "destination": "/critical-care/icu-ventilator.html" },
-    { "source": "/hospital-setup/icu-bed-5func-electric-premium", "destination": "/hospital-setup/icu-bed-5func-electric-premium.html" },
-    { "source": "/hospital-setup/icu-bed-5func-electric-premium/", "destination": "/hospital-setup/icu-bed-5func-electric-premium.html" },
-    { "source": "/hospital-setup/icu-bed-5func-electric-deluxe", "destination": "/hospital-setup/icu-bed-5func-electric-deluxe.html" },
-    { "source": "/hospital-setup/icu-bed-5func-electric-deluxe/", "destination": "/hospital-setup/icu-bed-5func-electric-deluxe.html" },
-    { "source": "/hospital-setup/icu-bed-5func-manual-deluxe", "destination": "/hospital-setup/icu-bed-5func-manual-deluxe.html" },
-    { "source": "/hospital-setup/icu-bed-5func-manual-deluxe/", "destination": "/hospital-setup/icu-bed-5func-manual-deluxe.html" },
-    { "source": "/hospital-setup/icu-bed-3func-electric", "destination": "/hospital-setup/icu-bed-3func-electric.html" },
-    { "source": "/hospital-setup/icu-bed-3func-electric/", "destination": "/hospital-setup/icu-bed-3func-electric.html" },
-    { "source": "/hospital-setup/fowler-bed-electric", "destination": "/hospital-setup/fowler-bed-electric.html" },
-    { "source": "/hospital-setup/fowler-bed-electric/", "destination": "/hospital-setup/fowler-bed-electric.html" },
-    { "source": "/hospital-setup/semi-fowler-electric", "destination": "/hospital-setup/semi-fowler-electric.html" },
-    { "source": "/hospital-setup/semi-fowler-electric/", "destination": "/hospital-setup/semi-fowler-electric.html" },
-    { "source": "/hospital-setup/ot-table-electric-manual-deluxe", "destination": "/hospital-setup/ot-table-electric-manual-deluxe.html" },
-    { "source": "/hospital-setup/ot-table-electric-manual-deluxe/", "destination": "/hospital-setup/ot-table-electric-manual-deluxe.html" },
-    { "source": "/hospital-setup/ot-table-carm-hydraulic", "destination": "/hospital-setup/ot-table-carm-hydraulic.html" },
-    { "source": "/hospital-setup/ot-table-carm-hydraulic/", "destination": "/hospital-setup/ot-table-carm-hydraulic.html" },
-    { "source": "/hospital-setup/ot-table-general-hydraulic", "destination": "/hospital-setup/ot-table-general-hydraulic.html" },
-    { "source": "/hospital-setup/ot-table-general-hydraulic/", "destination": "/hospital-setup/ot-table-general-hydraulic.html" },
-    { "source": "/hospital-setup/delivery-table-electric-manual", "destination": "/hospital-setup/delivery-table-electric-manual.html" },
-    { "source": "/hospital-setup/delivery-table-electric-manual/", "destination": "/hospital-setup/delivery-table-electric-manual.html" },
-    { "source": "/hospital-setup/delivery-table-hydraulic", "destination": "/hospital-setup/delivery-table-hydraulic.html" },
-    { "source": "/hospital-setup/delivery-table-hydraulic/", "destination": "/hospital-setup/delivery-table-hydraulic.html" },
-    { "source": "/hospital-setup/stretcher-trolley-ms-ss", "destination": "/hospital-setup/stretcher-trolley-ms-ss.html" },
-    { "source": "/hospital-setup/stretcher-trolley-ms-ss/", "destination": "/hospital-setup/stretcher-trolley-ms-ss.html" },
-    { "source": "/hospital-setup/emergency-trolley-hydraulic", "destination": "/hospital-setup/emergency-trolley-hydraulic.html" },
-    { "source": "/hospital-setup/emergency-trolley-hydraulic/", "destination": "/hospital-setup/emergency-trolley-hydraulic.html" },
-    { "source": "/hospital-setup/wheelchair", "destination": "/hospital-setup/wheelchair.html" },
-    { "source": "/hospital-setup/wheelchair/", "destination": "/hospital-setup/wheelchair.html" },
-    { "source": "/hospital-setup/ss-instrument-trolleys", "destination": "/hospital-setup/ss-instrument-trolleys.html" },
-    { "source": "/hospital-setup/ss-instrument-trolleys/", "destination": "/hospital-setup/ss-instrument-trolleys.html" },
-    { "source": "/hospital-setup/crash-cart", "destination": "/hospital-setup/crash-cart.html" },
-    { "source": "/hospital-setup/crash-cart/", "destination": "/hospital-setup/crash-cart.html" },
-    { "source": "/hospital-setup/autoclaves-sterilizers", "destination": "/hospital-setup/autoclaves-sterilizers.html" },
-    { "source": "/hospital-setup/autoclaves-sterilizers/", "destination": "/hospital-setup/autoclaves-sterilizers.html" },
-    { "source": "/hospital-setup/baby-warmer", "destination": "/hospital-setup/baby-warmer.html" },
-    { "source": "/hospital-setup/baby-warmer/", "destination": "/hospital-setup/baby-warmer.html" },
-    { "source": "/hospital-setup/medical-gas-pipeline", "destination": "/hospital-setup/medical-gas-pipeline.html" },
-    { "source": "/hospital-setup/medical-gas-pipeline/", "destination": "/hospital-setup/medical-gas-pipeline.html" },
-    { "source": "/hospital-setup/modular-ot", "destination": "/hospital-setup/modular-ot.html" },
-    { "source": "/hospital-setup/modular-ot/", "destination": "/hospital-setup/modular-ot.html" },
-    { "source": "/hospital-setup/ot-light-four-reflector", "destination": "/hospital-setup/ot-light-four-reflector.html" },
-    { "source": "/hospital-setup/ot-light-four-reflector/", "destination": "/hospital-setup/ot-light-four-reflector.html" },
-    { "source": "/hospital-setup/ot-light-globus-dome", "destination": "/hospital-setup/ot-light-globus-dome.html" },
-    { "source": "/hospital-setup/ot-light-globus-dome/", "destination": "/hospital-setup/ot-light-globus-dome.html" },
-    { "source": "/hospital-setup/ot-examination-light", "destination": "/hospital-setup/ot-examination-light.html" },
-    { "source": "/hospital-setup/ot-examination-light/", "destination": "/hospital-setup/ot-examination-light.html" },
-    { "source": "/hospital-setup/ot-light-premium-camera", "destination": "/hospital-setup/ot-light-premium-camera.html" },
-    { "source": "/hospital-setup/ot-light-premium-camera/", "destination": "/hospital-setup/ot-light-premium-camera.html" },
-    { "source": "/critical-care/icu-ventilator/", "destination": "/critical-care/icu-ventilator.html" },
-    { "source": "/aesthetics/nodd", "destination": "/aesthetics/nodd.html" },
-    { "source": "/aesthetics/nodd/", "destination": "/aesthetics/nodd.html" },
-    { "source": "/aesthetics/em-ma", "destination": "/aesthetics/em-ma.html" },
-    { "source": "/aesthetics/em-ma/", "destination": "/aesthetics/em-ma.html" },
-    { "source": "/aesthetics/visage", "destination": "/aesthetics/visage.html" },
-    { "source": "/aesthetics/visage/", "destination": "/aesthetics/visage.html" },
-    { "source": "/aesthetics/pi-code", "destination": "/aesthetics/pi-code.html" },
-    { "source": "/aesthetics/pi-code/", "destination": "/aesthetics/pi-code.html" },
-    { "source": "/aesthetics/hydrafrac", "destination": "/aesthetics/hydrafrac.html" },
-    { "source": "/aesthetics/hydrafrac/", "destination": "/aesthetics/hydrafrac.html" },
-    { "source": "/aesthetics/cool-shape", "destination": "/aesthetics/cool-shape.html" },
-    { "source": "/aesthetics/cool-shape/", "destination": "/aesthetics/cool-shape.html" },
-    { "source": "/aesthetics/code-factor", "destination": "/aesthetics/code-factor.html" },
-    { "source": "/aesthetics/code-factor/", "destination": "/aesthetics/code-factor.html" },
-    { "source": "/aesthetics/excimer", "destination": "/aesthetics/excimer.html" },
-    { "source": "/aesthetics/excimer/", "destination": "/aesthetics/excimer.html" },
-    { "source": "/aesthetics/wavelength-pro-x", "destination": "/aesthetics/wavelength-pro-x.html" },
-    { "source": "/aesthetics/wavelength-pro-x/", "destination": "/aesthetics/wavelength-pro-x.html" },
-    { "source": "/aesthetics/skin-analyzer", "destination": "/aesthetics/skin-analyzer.html" },
-    { "source": "/aesthetics/skin-analyzer/", "destination": "/aesthetics/skin-analyzer.html" },
-    { "source": "/aesthetics/bbl-super-ipl-dpl", "destination": "/aesthetics/bbl-super-ipl-dpl.html" },
-    { "source": "/aesthetics/bbl-super-ipl-dpl/", "destination": "/aesthetics/bbl-super-ipl-dpl.html" },
-    { "source": "/aesthetics/em-code", "destination": "/aesthetics/em-code.html" },
-    { "source": "/aesthetics/em-code/", "destination": "/aesthetics/em-code.html" },
-    { "source": "/critical-care/3-channel-ecg-machine", "destination": "/critical-care/3-channel-ecg-machine.html" },
-    { "source": "/critical-care/3-channel-ecg-machine/", "destination": "/critical-care/3-channel-ecg-machine.html" },
-    { "source": "/critical-care/6-channel-ecg-machine", "destination": "/critical-care/6-channel-ecg-machine.html" },
-    { "source": "/critical-care/6-channel-ecg-machine/", "destination": "/critical-care/6-channel-ecg-machine.html" },
-    { "source": "/critical-care/12-channel-ecg-machine", "destination": "/critical-care/12-channel-ecg-machine.html" },
-    { "source": "/critical-care/12-channel-ecg-machine/", "destination": "/critical-care/12-channel-ecg-machine.html" },
-    { "source": "/critical-care/infusion-pump", "destination": "/critical-care/infusion-pump.html" },
-    { "source": "/critical-care/infusion-pump/", "destination": "/critical-care/infusion-pump.html" },
-    { "source": "/critical-care/syringe-pump", "destination": "/critical-care/syringe-pump.html" },
-    { "source": "/critical-care/syringe-pump/", "destination": "/critical-care/syringe-pump.html" },
-    { "source": "/critical-care/5-para-patient-monitor", "destination": "/critical-care/5-para-patient-monitor.html" },
-    { "source": "/critical-care/5-para-patient-monitor/", "destination": "/critical-care/5-para-patient-monitor.html" },
-    { "source": "/critical-care/7-para-patient-monitor", "destination": "/critical-care/7-para-patient-monitor.html" },
-    { "source": "/critical-care/7-para-patient-monitor/", "destination": "/critical-care/7-para-patient-monitor.html" },
-    { "source": "/critical-care/anesthesia-workstation", "destination": "/critical-care/anesthesia-workstation.html" },
-    { "source": "/critical-care/anesthesia-workstation/", "destination": "/critical-care/anesthesia-workstation.html" },
-    { "source": "/renal-care/pdm-6000", "destination": "/renal-care/pdm-6000.html" },
-    { "source": "/renal-care/pdm-6000/", "destination": "/renal-care/pdm-6000.html" },
-    { "source": "/renal-care/pd-canova", "destination": "/renal-care/pd-canova.html" },
-    { "source": "/renal-care/pd-canova/", "destination": "/renal-care/pd-canova.html" },
-    { "source": "/renal-care/pd-linepro", "destination": "/renal-care/pd-linepro.html" },
-    { "source": "/renal-care/pd-linepro/", "destination": "/renal-care/pd-linepro.html" },
-    { "source": "/renal-care/dialysers", "destination": "/renal-care/dialysers.html" },
-    { "source": "/renal-care/dialysers/", "destination": "/renal-care/dialysers.html" },
-    { "source": "/renal-care/pd-cath", "destination": "/renal-care/pd-cath.html" },
-    { "source": "/renal-care/pd-cath/", "destination": "/renal-care/pd-cath.html" },
-    { "source": "/renal-care/pd-tp", "destination": "/renal-care/pd-tp.html" },
-    { "source": "/renal-care/pd-tp/", "destination": "/renal-care/pd-tp.html" },
-    { "source": "/cardiac-care/optima-inflation-kit", "destination": "/cardiac-care/optima-inflation-kit.html" },
-    { "source": "/cardiac-care/optima-inflation-kit/", "destination": "/cardiac-care/optima-inflation-kit.html" },
-    { "source": "/cardiac-care/optima-manifolds", "destination": "/cardiac-care/optima-manifolds.html" },
-    { "source": "/cardiac-care/optima-manifolds/", "destination": "/cardiac-care/optima-manifolds.html" },
-    { "source": "/cardiac-care/acusafe-blunt-needle", "destination": "/cardiac-care/acusafe-blunt-needle.html" },
-    { "source": "/cardiac-care/acusafe-blunt-needle/", "destination": "/cardiac-care/acusafe-blunt-needle.html" },
-    { "source": "/cardiac-care/sirova-stent", "destination": "/cardiac-care/sirova-stent.html" },
-    { "source": "/cardiac-care/sirova-stent/", "destination": "/cardiac-care/sirova-stent.html" },
-    { "source": "/cardiac-care/evera-stent", "destination": "/cardiac-care/evera-stent.html" },
-    { "source": "/cardiac-care/evera-stent/", "destination": "/cardiac-care/evera-stent.html" },
-    { "source": "/cardiac-care/guidex-guidewires", "destination": "/cardiac-care/guidex-guidewires.html" },
-    { "source": "/cardiac-care/guidex-guidewires/", "destination": "/cardiac-care/guidex-guidewires.html" },
-    { "source": "/cardiac-care/acusafe-micro-access", "destination": "/cardiac-care/acusafe-micro-access.html" },
-    { "source": "/cardiac-care/acusafe-micro-access/", "destination": "/cardiac-care/acusafe-micro-access.html" },
-    { "source": "/cardiac-care/acusafe-introducer-kits", "destination": "/cardiac-care/acusafe-introducer-kits.html" },
-    { "source": "/cardiac-care/acusafe-introducer-kits/", "destination": "/cardiac-care/acusafe-introducer-kits.html" },
-    { "source": "/surgical-care/circumease-stapler", "destination": "/surgical-care/circumease-stapler.html" },
-    { "source": "/surgical-care/circumease-stapler/", "destination": "/surgical-care/circumease-stapler.html" },
-    { "source": "/rehabilitation/motion-pro-1", "destination": "/rehabilitation/motion-pro-1.html" },
-    { "source": "/rehabilitation/motion-pro-1/", "destination": "/rehabilitation/motion-pro-1.html" },
-    { "source": "/rehabilitation/motion-pro-2", "destination": "/rehabilitation/motion-pro-2.html" },
-    { "source": "/rehabilitation/motion-pro-2/", "destination": "/rehabilitation/motion-pro-2.html" },
-    { "source": "/rehabilitation/cruza", "destination": "/rehabilitation/cruza.html" },
-    { "source": "/rehabilitation/cruza/", "destination": "/rehabilitation/cruza.html" },
-    { "source": "/rehabilitation/xtrion", "destination": "/rehabilitation/xtrion.html" },
-    { "source": "/rehabilitation/xtrion/", "destination": "/rehabilitation/xtrion.html" },
-    { "source": "/rehabilitation/innovax", "destination": "/rehabilitation/innovax.html" },
-    { "source": "/rehabilitation/innovax/", "destination": "/rehabilitation/innovax.html" },
-    { "source": "/rehabilitation/aerodrive-1", "destination": "/rehabilitation/aerodrive-1.html" },
-    { "source": "/rehabilitation/aerodrive-1/", "destination": "/rehabilitation/aerodrive-1.html" },
-    { "source": "/rehabilitation/aerodrive-2", "destination": "/rehabilitation/aerodrive-2.html" },
-    { "source": "/rehabilitation/aerodrive-2/", "destination": "/rehabilitation/aerodrive-2.html" },
-    { "source": "/rehabilitation/joylite-1", "destination": "/rehabilitation/joylite-1.html" },
-    { "source": "/rehabilitation/joylite-1/", "destination": "/rehabilitation/joylite-1.html" },
-    { "source": "/rehabilitation/joylite-2", "destination": "/rehabilitation/joylite-2.html" },
-    { "source": "/rehabilitation/joylite-2/", "destination": "/rehabilitation/joylite-2.html" },
-    { "source": "/rehabilitation/smartride-1", "destination": "/rehabilitation/smartride-1.html" },
-    { "source": "/rehabilitation/smartride-1/", "destination": "/rehabilitation/smartride-1.html" },
-    { "source": "/rehabilitation/smartride-2", "destination": "/rehabilitation/smartride-2.html" },
-    { "source": "/rehabilitation/smartride-2/", "destination": "/rehabilitation/smartride-2.html" }
+    {
+      "source": "/critical-care/icu-ventilator",
+      "destination": "/critical-care/icu-ventilator.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-5func-electric-premium",
+      "destination": "/hospital-setup/icu-bed-5func-electric-premium.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-5func-electric-premium/",
+      "destination": "/hospital-setup/icu-bed-5func-electric-premium.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-5func-electric-deluxe",
+      "destination": "/hospital-setup/icu-bed-5func-electric-deluxe.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-5func-electric-deluxe/",
+      "destination": "/hospital-setup/icu-bed-5func-electric-deluxe.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-5func-manual-deluxe",
+      "destination": "/hospital-setup/icu-bed-5func-manual-deluxe.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-5func-manual-deluxe/",
+      "destination": "/hospital-setup/icu-bed-5func-manual-deluxe.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-3func-electric",
+      "destination": "/hospital-setup/icu-bed-3func-electric.html"
+    },
+    {
+      "source": "/hospital-setup/icu-bed-3func-electric/",
+      "destination": "/hospital-setup/icu-bed-3func-electric.html"
+    },
+    {
+      "source": "/hospital-setup/fowler-bed-electric",
+      "destination": "/hospital-setup/fowler-bed-electric.html"
+    },
+    {
+      "source": "/hospital-setup/fowler-bed-electric/",
+      "destination": "/hospital-setup/fowler-bed-electric.html"
+    },
+    {
+      "source": "/hospital-setup/semi-fowler-electric",
+      "destination": "/hospital-setup/semi-fowler-electric.html"
+    },
+    {
+      "source": "/hospital-setup/semi-fowler-electric/",
+      "destination": "/hospital-setup/semi-fowler-electric.html"
+    },
+    {
+      "source": "/hospital-setup/ot-table-electric-manual-deluxe",
+      "destination": "/hospital-setup/ot-table-electric-manual-deluxe.html"
+    },
+    {
+      "source": "/hospital-setup/ot-table-electric-manual-deluxe/",
+      "destination": "/hospital-setup/ot-table-electric-manual-deluxe.html"
+    },
+    {
+      "source": "/hospital-setup/ot-table-carm-hydraulic",
+      "destination": "/hospital-setup/ot-table-carm-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/ot-table-carm-hydraulic/",
+      "destination": "/hospital-setup/ot-table-carm-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/ot-table-general-hydraulic",
+      "destination": "/hospital-setup/ot-table-general-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/ot-table-general-hydraulic/",
+      "destination": "/hospital-setup/ot-table-general-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/delivery-table-electric-manual",
+      "destination": "/hospital-setup/delivery-table-electric-manual.html"
+    },
+    {
+      "source": "/hospital-setup/delivery-table-electric-manual/",
+      "destination": "/hospital-setup/delivery-table-electric-manual.html"
+    },
+    {
+      "source": "/hospital-setup/delivery-table-hydraulic",
+      "destination": "/hospital-setup/delivery-table-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/delivery-table-hydraulic/",
+      "destination": "/hospital-setup/delivery-table-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/stretcher-trolley-ms-ss",
+      "destination": "/hospital-setup/stretcher-trolley-ms-ss.html"
+    },
+    {
+      "source": "/hospital-setup/stretcher-trolley-ms-ss/",
+      "destination": "/hospital-setup/stretcher-trolley-ms-ss.html"
+    },
+    {
+      "source": "/hospital-setup/emergency-trolley-hydraulic",
+      "destination": "/hospital-setup/emergency-trolley-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/emergency-trolley-hydraulic/",
+      "destination": "/hospital-setup/emergency-trolley-hydraulic.html"
+    },
+    {
+      "source": "/hospital-setup/wheelchair",
+      "destination": "/hospital-setup/wheelchair.html"
+    },
+    {
+      "source": "/hospital-setup/wheelchair/",
+      "destination": "/hospital-setup/wheelchair.html"
+    },
+    {
+      "source": "/hospital-setup/ss-instrument-trolleys",
+      "destination": "/hospital-setup/ss-instrument-trolleys.html"
+    },
+    {
+      "source": "/hospital-setup/ss-instrument-trolleys/",
+      "destination": "/hospital-setup/ss-instrument-trolleys.html"
+    },
+    {
+      "source": "/hospital-setup/crash-cart",
+      "destination": "/hospital-setup/crash-cart.html"
+    },
+    {
+      "source": "/hospital-setup/crash-cart/",
+      "destination": "/hospital-setup/crash-cart.html"
+    },
+    {
+      "source": "/hospital-setup/autoclaves-sterilizers",
+      "destination": "/hospital-setup/autoclaves-sterilizers.html"
+    },
+    {
+      "source": "/hospital-setup/autoclaves-sterilizers/",
+      "destination": "/hospital-setup/autoclaves-sterilizers.html"
+    },
+    {
+      "source": "/hospital-setup/baby-warmer",
+      "destination": "/hospital-setup/baby-warmer.html"
+    },
+    {
+      "source": "/hospital-setup/baby-warmer/",
+      "destination": "/hospital-setup/baby-warmer.html"
+    },
+    {
+      "source": "/hospital-setup/medical-gas-pipeline",
+      "destination": "/hospital-setup/medical-gas-pipeline.html"
+    },
+    {
+      "source": "/hospital-setup/medical-gas-pipeline/",
+      "destination": "/hospital-setup/medical-gas-pipeline.html"
+    },
+    {
+      "source": "/hospital-setup/modular-ot",
+      "destination": "/hospital-setup/modular-ot.html"
+    },
+    {
+      "source": "/hospital-setup/modular-ot/",
+      "destination": "/hospital-setup/modular-ot.html"
+    },
+    {
+      "source": "/hospital-setup/ot-light-four-reflector",
+      "destination": "/hospital-setup/ot-light-four-reflector.html"
+    },
+    {
+      "source": "/hospital-setup/ot-light-four-reflector/",
+      "destination": "/hospital-setup/ot-light-four-reflector.html"
+    },
+    {
+      "source": "/hospital-setup/ot-light-globus-dome",
+      "destination": "/hospital-setup/ot-light-globus-dome.html"
+    },
+    {
+      "source": "/hospital-setup/ot-light-globus-dome/",
+      "destination": "/hospital-setup/ot-light-globus-dome.html"
+    },
+    {
+      "source": "/hospital-setup/ot-examination-light",
+      "destination": "/hospital-setup/ot-examination-light.html"
+    },
+    {
+      "source": "/hospital-setup/ot-examination-light/",
+      "destination": "/hospital-setup/ot-examination-light.html"
+    },
+    {
+      "source": "/hospital-setup/ot-light-premium-camera",
+      "destination": "/hospital-setup/ot-light-premium-camera.html"
+    },
+    {
+      "source": "/hospital-setup/ot-light-premium-camera/",
+      "destination": "/hospital-setup/ot-light-premium-camera.html"
+    },
+    {
+      "source": "/critical-care/icu-ventilator/",
+      "destination": "/critical-care/icu-ventilator.html"
+    },
+    {
+      "source": "/aesthetics/nodd",
+      "destination": "/aesthetics/nodd.html"
+    },
+    {
+      "source": "/aesthetics/nodd/",
+      "destination": "/aesthetics/nodd.html"
+    },
+    {
+      "source": "/aesthetics/em-ma",
+      "destination": "/aesthetics/em-ma.html"
+    },
+    {
+      "source": "/aesthetics/em-ma/",
+      "destination": "/aesthetics/em-ma.html"
+    },
+    {
+      "source": "/aesthetics/visage",
+      "destination": "/aesthetics/visage.html"
+    },
+    {
+      "source": "/aesthetics/visage/",
+      "destination": "/aesthetics/visage.html"
+    },
+    {
+      "source": "/aesthetics/pi-code",
+      "destination": "/aesthetics/pi-code.html"
+    },
+    {
+      "source": "/aesthetics/pi-code/",
+      "destination": "/aesthetics/pi-code.html"
+    },
+    {
+      "source": "/aesthetics/hydrafrac",
+      "destination": "/aesthetics/hydrafrac.html"
+    },
+    {
+      "source": "/aesthetics/hydrafrac/",
+      "destination": "/aesthetics/hydrafrac.html"
+    },
+    {
+      "source": "/aesthetics/cool-shape",
+      "destination": "/aesthetics/cool-shape.html"
+    },
+    {
+      "source": "/aesthetics/cool-shape/",
+      "destination": "/aesthetics/cool-shape.html"
+    },
+    {
+      "source": "/aesthetics/code-factor",
+      "destination": "/aesthetics/code-factor.html"
+    },
+    {
+      "source": "/aesthetics/code-factor/",
+      "destination": "/aesthetics/code-factor.html"
+    },
+    {
+      "source": "/aesthetics/excimer",
+      "destination": "/aesthetics/excimer.html"
+    },
+    {
+      "source": "/aesthetics/excimer/",
+      "destination": "/aesthetics/excimer.html"
+    },
+    {
+      "source": "/aesthetics/wavelength-pro-x",
+      "destination": "/aesthetics/wavelength-pro-x.html"
+    },
+    {
+      "source": "/aesthetics/wavelength-pro-x/",
+      "destination": "/aesthetics/wavelength-pro-x.html"
+    },
+    {
+      "source": "/aesthetics/skin-analyzer",
+      "destination": "/aesthetics/skin-analyzer.html"
+    },
+    {
+      "source": "/aesthetics/skin-analyzer/",
+      "destination": "/aesthetics/skin-analyzer.html"
+    },
+    {
+      "source": "/aesthetics/bbl-super-ipl-dpl",
+      "destination": "/aesthetics/bbl-super-ipl-dpl.html"
+    },
+    {
+      "source": "/aesthetics/bbl-super-ipl-dpl/",
+      "destination": "/aesthetics/bbl-super-ipl-dpl.html"
+    },
+    {
+      "source": "/aesthetics/em-code",
+      "destination": "/aesthetics/em-code.html"
+    },
+    {
+      "source": "/aesthetics/em-code/",
+      "destination": "/aesthetics/em-code.html"
+    },
+    {
+      "source": "/critical-care/3-channel-ecg-machine",
+      "destination": "/critical-care/3-channel-ecg-machine.html"
+    },
+    {
+      "source": "/critical-care/3-channel-ecg-machine/",
+      "destination": "/critical-care/3-channel-ecg-machine.html"
+    },
+    {
+      "source": "/critical-care/6-channel-ecg-machine",
+      "destination": "/critical-care/6-channel-ecg-machine.html"
+    },
+    {
+      "source": "/critical-care/6-channel-ecg-machine/",
+      "destination": "/critical-care/6-channel-ecg-machine.html"
+    },
+    {
+      "source": "/critical-care/12-channel-ecg-machine",
+      "destination": "/critical-care/12-channel-ecg-machine.html"
+    },
+    {
+      "source": "/critical-care/12-channel-ecg-machine/",
+      "destination": "/critical-care/12-channel-ecg-machine.html"
+    },
+    {
+      "source": "/critical-care/infusion-pump",
+      "destination": "/critical-care/infusion-pump.html"
+    },
+    {
+      "source": "/critical-care/infusion-pump/",
+      "destination": "/critical-care/infusion-pump.html"
+    },
+    {
+      "source": "/critical-care/syringe-pump",
+      "destination": "/critical-care/syringe-pump.html"
+    },
+    {
+      "source": "/critical-care/syringe-pump/",
+      "destination": "/critical-care/syringe-pump.html"
+    },
+    {
+      "source": "/critical-care/5-para-patient-monitor",
+      "destination": "/critical-care/5-para-patient-monitor.html"
+    },
+    {
+      "source": "/critical-care/5-para-patient-monitor/",
+      "destination": "/critical-care/5-para-patient-monitor.html"
+    },
+    {
+      "source": "/critical-care/7-para-patient-monitor",
+      "destination": "/critical-care/7-para-patient-monitor.html"
+    },
+    {
+      "source": "/critical-care/7-para-patient-monitor/",
+      "destination": "/critical-care/7-para-patient-monitor.html"
+    },
+    {
+      "source": "/critical-care/anesthesia-workstation",
+      "destination": "/critical-care/anesthesia-workstation.html"
+    },
+    {
+      "source": "/critical-care/anesthesia-workstation/",
+      "destination": "/critical-care/anesthesia-workstation.html"
+    },
+    {
+      "source": "/renal-care/pdm-6000",
+      "destination": "/renal-care/pdm-6000.html"
+    },
+    {
+      "source": "/renal-care/pdm-6000/",
+      "destination": "/renal-care/pdm-6000.html"
+    },
+    {
+      "source": "/renal-care/pd-canova",
+      "destination": "/renal-care/pd-canova.html"
+    },
+    {
+      "source": "/renal-care/pd-canova/",
+      "destination": "/renal-care/pd-canova.html"
+    },
+    {
+      "source": "/renal-care/pd-linepro",
+      "destination": "/renal-care/pd-linepro.html"
+    },
+    {
+      "source": "/renal-care/pd-linepro/",
+      "destination": "/renal-care/pd-linepro.html"
+    },
+    {
+      "source": "/renal-care/dialysers",
+      "destination": "/renal-care/dialysers.html"
+    },
+    {
+      "source": "/renal-care/dialysers/",
+      "destination": "/renal-care/dialysers.html"
+    },
+    {
+      "source": "/renal-care/pd-cath",
+      "destination": "/renal-care/pd-cath.html"
+    },
+    {
+      "source": "/renal-care/pd-cath/",
+      "destination": "/renal-care/pd-cath.html"
+    },
+    {
+      "source": "/renal-care/pd-tp",
+      "destination": "/renal-care/pd-tp.html"
+    },
+    {
+      "source": "/renal-care/pd-tp/",
+      "destination": "/renal-care/pd-tp.html"
+    },
+    {
+      "source": "/cardiac-care/optima-inflation-kit",
+      "destination": "/cardiac-care/optima-inflation-kit.html"
+    },
+    {
+      "source": "/cardiac-care/optima-inflation-kit/",
+      "destination": "/cardiac-care/optima-inflation-kit.html"
+    },
+    {
+      "source": "/cardiac-care/optima-manifolds",
+      "destination": "/cardiac-care/optima-manifolds.html"
+    },
+    {
+      "source": "/cardiac-care/optima-manifolds/",
+      "destination": "/cardiac-care/optima-manifolds.html"
+    },
+    {
+      "source": "/cardiac-care/acusafe-blunt-needle",
+      "destination": "/cardiac-care/acusafe-blunt-needle.html"
+    },
+    {
+      "source": "/cardiac-care/acusafe-blunt-needle/",
+      "destination": "/cardiac-care/acusafe-blunt-needle.html"
+    },
+    {
+      "source": "/cardiac-care/sirova-stent",
+      "destination": "/cardiac-care/sirova-stent.html"
+    },
+    {
+      "source": "/cardiac-care/sirova-stent/",
+      "destination": "/cardiac-care/sirova-stent.html"
+    },
+    {
+      "source": "/cardiac-care/evera-stent",
+      "destination": "/cardiac-care/evera-stent.html"
+    },
+    {
+      "source": "/cardiac-care/evera-stent/",
+      "destination": "/cardiac-care/evera-stent.html"
+    },
+    {
+      "source": "/cardiac-care/guidex-guidewires",
+      "destination": "/cardiac-care/guidex-guidewires.html"
+    },
+    {
+      "source": "/cardiac-care/guidex-guidewires/",
+      "destination": "/cardiac-care/guidex-guidewires.html"
+    },
+    {
+      "source": "/cardiac-care/acusafe-micro-access",
+      "destination": "/cardiac-care/acusafe-micro-access.html"
+    },
+    {
+      "source": "/cardiac-care/acusafe-micro-access/",
+      "destination": "/cardiac-care/acusafe-micro-access.html"
+    },
+    {
+      "source": "/cardiac-care/acusafe-introducer-kits",
+      "destination": "/cardiac-care/acusafe-introducer-kits.html"
+    },
+    {
+      "source": "/cardiac-care/acusafe-introducer-kits/",
+      "destination": "/cardiac-care/acusafe-introducer-kits.html"
+    },
+    {
+      "source": "/surgical-care/circumease-stapler",
+      "destination": "/surgical-care/circumease-stapler.html"
+    },
+    {
+      "source": "/surgical-care/circumease-stapler/",
+      "destination": "/surgical-care/circumease-stapler.html"
+    },
+    {
+      "source": "/rehabilitation/motion-pro-1",
+      "destination": "/rehabilitation/motion-pro-1.html"
+    },
+    {
+      "source": "/rehabilitation/motion-pro-1/",
+      "destination": "/rehabilitation/motion-pro-1.html"
+    },
+    {
+      "source": "/rehabilitation/motion-pro-2",
+      "destination": "/rehabilitation/motion-pro-2.html"
+    },
+    {
+      "source": "/rehabilitation/motion-pro-2/",
+      "destination": "/rehabilitation/motion-pro-2.html"
+    },
+    {
+      "source": "/rehabilitation/cruza",
+      "destination": "/rehabilitation/cruza.html"
+    },
+    {
+      "source": "/rehabilitation/cruza/",
+      "destination": "/rehabilitation/cruza.html"
+    },
+    {
+      "source": "/rehabilitation/xtrion",
+      "destination": "/rehabilitation/xtrion.html"
+    },
+    {
+      "source": "/rehabilitation/xtrion/",
+      "destination": "/rehabilitation/xtrion.html"
+    },
+    {
+      "source": "/rehabilitation/innovax",
+      "destination": "/rehabilitation/innovax.html"
+    },
+    {
+      "source": "/rehabilitation/innovax/",
+      "destination": "/rehabilitation/innovax.html"
+    },
+    {
+      "source": "/rehabilitation/aerodrive-1",
+      "destination": "/rehabilitation/aerodrive-1.html"
+    },
+    {
+      "source": "/rehabilitation/aerodrive-1/",
+      "destination": "/rehabilitation/aerodrive-1.html"
+    },
+    {
+      "source": "/rehabilitation/aerodrive-2",
+      "destination": "/rehabilitation/aerodrive-2.html"
+    },
+    {
+      "source": "/rehabilitation/aerodrive-2/",
+      "destination": "/rehabilitation/aerodrive-2.html"
+    },
+    {
+      "source": "/rehabilitation/joylite-1",
+      "destination": "/rehabilitation/joylite-1.html"
+    },
+    {
+      "source": "/rehabilitation/joylite-1/",
+      "destination": "/rehabilitation/joylite-1.html"
+    },
+    {
+      "source": "/rehabilitation/joylite-2",
+      "destination": "/rehabilitation/joylite-2.html"
+    },
+    {
+      "source": "/rehabilitation/joylite-2/",
+      "destination": "/rehabilitation/joylite-2.html"
+    },
+    {
+      "source": "/rehabilitation/smartride-1",
+      "destination": "/rehabilitation/smartride-1.html"
+    },
+    {
+      "source": "/rehabilitation/smartride-1/",
+      "destination": "/rehabilitation/smartride-1.html"
+    },
+    {
+      "source": "/rehabilitation/smartride-2",
+      "destination": "/rehabilitation/smartride-2.html"
+    },
+    {
+      "source": "/rehabilitation/smartride-2/",
+      "destination": "/rehabilitation/smartride-2.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https:; frame-ancestors 'self'"
+        }
+      ]
+    }
   ]
 }
