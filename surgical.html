@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pulse Surgical â€” precision surgical instruments and procedure kits for Indian hospitals.">
+  <meta name="description" content="Pulse Surgical — precision surgical instruments and procedure kits for Indian hospitals.">
   <link rel="canonical" href="https://www.pulseio.in/surgical.html" />
   <title>Surgical | Pulse</title>
   <link rel="icon" type="image/png" href="image/pulse-logo.png">
@@ -452,13 +452,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cat-hero-content">
       <div class="cat-breadcrumb">
         <a href="index.html">Home</a>
-        <span>â€º</span>
+        <span>›</span>
         <a href="index.html#portfolio">Categories</a>
-        <span>â€º</span>
+        <span>›</span>
         Surgical
       </div>
       <h1>Surgical</h1>
-      <p>Precision surgical instruments and single-use procedure kits for Indian hospitals â€” engineered for safety, hygiene, and consistent clinical outcomes.</p>
+      <p>Precision surgical instruments and single-use procedure kits for Indian hospitals — engineered for safety, hygiene, and consistent clinical outcomes.</p>
       <div class="cat-hero-stats">
         <div class="cat-stat">
           <strong>1</strong>
@@ -520,8 +520,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <select class="product-sort" onchange="sortProducts(this.value)">
           <option value="default">Sort: Default</option>
-          <option value="az">Name: A â†’ Z</option>
-          <option value="za">Name: Z â†’ A</option>
+          <option value="az">Name: A → Z</option>
+          <option value="za">Name: Z → A</option>
         </select>
       </div>
 
@@ -538,7 +538,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
   <script>
-    // â”€â”€ PRODUCT DATA â”€â”€
+    // ── PRODUCT DATA ──
     const PRODUCTS = [
       {
         name: "CircumEase Stapler",
@@ -549,8 +549,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cert: ["iso"],
         tag: "CIRCUMCISION",
         tagColor: "orange",
-        desc: "Disposable circumcision kit â€” 3 to 5 min operation time, negligible bleeding, aesthetic result. Available in 8 sizes (12mmâ€“34mm).",
-        specs: ["3â€“5 Min Operation", "Negligible Bleeding", "8 Sizes (12-34mm)"],
+        desc: "Disposable circumcision kit — 3 to 5 min operation time, negligible bleeding, aesthetic result. Available in 8 sizes (12mm–34mm).",
+        specs: ["3–5 Min Operation", "Negligible Bleeding", "8 Sizes (12-34mm)"],
         img: "image/Surgical/circumease-3.jpg"
       }
     ];
@@ -593,7 +593,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank')">
               Get Quote
             </button>
-            <a href="${p.slug}" class="btn-details" onclick="event.stopPropagation();">â†’</a>
+            <a href="${p.slug}" class="btn-details" onclick="event.stopPropagation();">→</a>
           </div>
         </div>`).join('');
       renderPagination();
@@ -604,17 +604,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const pg = document.getElementById('pagination');
       if (total <= 1) { pg.innerHTML = ''; return; }
       let html = `<button class="page-nav" onclick="goPage(${currentPage-1})" 
-                  ${currentPage===1?'disabled':''}>â† Prev</button>`;
+                  ${currentPage===1?'disabled':''}>← Prev</button>`;
       for (let i = 1; i <= total; i++) {
         if (i===1 || i===total || Math.abs(i-currentPage)<=1) {
           html += `<button class="page-btn ${i===currentPage?'active':''}" 
                    onclick="goPage(${i})">${i}</button>`;
         } else if (Math.abs(i-currentPage)===2) {
-          html += `<span style="color:#9ca3af;padding:0 4px">â€¦</span>`;
+          html += `<span style="color:#9ca3af;padding:0 4px">…</span>`;
         }
       }
       html += `<button class="page-nav" onclick="goPage(${currentPage+1})" 
-               ${currentPage===total?'disabled':''}>Next â†’</button>`;
+               ${currentPage===total?'disabled':''}>Next →</button>`;
       pg.innerHTML = html;
     }
 
