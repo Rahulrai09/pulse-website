@@ -510,9 +510,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cat-hero-content">
       <div class="cat-breadcrumb">
         <a href="index.html">Home</a>
-        <span>›</span>
+        <span>â€º</span>
         <a href="index.html#portfolio">Categories</a>
-        <span>›</span>
+        <span>â€º</span>
         Renal Care
       </div>
       <h1>Renal Care</h1>
@@ -593,8 +593,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <select class="product-sort" onchange="sortProducts(this.value)">
           <option value="default">Sort: Default</option>
-          <option value="az">Name: A → Z</option>
-          <option value="za">Name: Z → A</option>
+          <option value="az">Name: A â†’ Z</option>
+          <option value="za">Name: Z â†’ A</option>
         </select>
       </div>
 
@@ -611,7 +611,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
   <script>
-    // ── PRODUCT DATA ──
+    // â”€â”€ PRODUCT DATA â”€â”€
     const PRODUCTS = [
       {
         name: "PDM-6000",
@@ -623,7 +623,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         tag: "Haemodialysis Machines",
         tagColor: "orange",
         desc: "Designed to deliver safe, accurate, and consistent haemodialysis therapy, the PDM-6000 supports dialysis centers and hospitals with dependable renal replacement therapy performance.",
-        specs: ["±1% UF Precision", "Kt/V Monitoring", "Auto Priming"],
+        specs: ["Â±1% UF Precision", "Kt/V Monitoring", "Auto Priming"],
         img: "image/Renal%20care/PDM-6000%20Precision%20Haemodialysis%20System.png"
       },
       {
@@ -715,9 +715,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              data-app="${p.app}" data-cert="${(p.cert||[]).join(',')}">
           <div class="product-card-img">
             <img src="${p.img}" alt="${p.name}" loading="lazy"
-                 onerror="this.src='image/pulse-logo.png'">
-            <span class="product-tag ${p.tagColor||''}">${p.tag}</span>
-          </div>
+                 onerror="this.src='image/pulse-logo.png'">          </div>
           <div class="product-card-body">
             <div class="product-card-category">${p.category||''}</div>
             <div class="product-card-name">${p.name}</div>
@@ -742,7 +740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank')">
               Get Quote
             </button>
-            <a href="${p.slug}" class="btn-details" onclick="event.stopPropagation();">→</a>
+            <a href="${p.slug}" class="btn-details" onclick="event.stopPropagation();">â†’</a>
           </div>
         </div>`).join('');
       renderPagination();
@@ -753,17 +751,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const pg = document.getElementById('pagination');
       if (total <= 1) { pg.innerHTML = ''; return; }
       let html = `<button class="page-nav" onclick="goPage(${currentPage-1})" 
-                  ${currentPage===1?'disabled':''}>← Prev</button>`;
+                  ${currentPage===1?'disabled':''}>â† Prev</button>`;
       for (let i = 1; i <= total; i++) {
         if (i===1 || i===total || Math.abs(i-currentPage)<=1) {
           html += `<button class="page-btn ${i===currentPage?'active':''}" 
                    onclick="goPage(${i})">${i}</button>`;
         } else if (Math.abs(i-currentPage)===2) {
-          html += `<span style="color:#9ca3af;padding:0 4px">…</span>`;
+          html += `<span style="color:#9ca3af;padding:0 4px">â€¦</span>`;
         }
       }
       html += `<button class="page-nav" onclick="goPage(${currentPage+1})" 
-               ${currentPage===total?'disabled':''}>Next →</button>`;
+               ${currentPage===total?'disabled':''}>Next â†’</button>`;
       pg.innerHTML = html;
     }
 

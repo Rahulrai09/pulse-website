@@ -451,9 +451,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cat-hero-content">
       <div class="cat-breadcrumb">
         <a href="index.html">Home</a>
-        <span>›</span>
+        <span>â€º</span>
         <a href="index.html#portfolio">Categories</a>
-        <span>›</span>
+        <span>â€º</span>
         Aesthetics
       </div>
       <h1>Aesthetics</h1>
@@ -540,8 +540,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <select class="product-sort" onchange="sortProducts(this.value)">
           <option value="default">Sort: Default</option>
-          <option value="az">Name: A → Z</option>
-          <option value="za">Name: Z → A</option>
+          <option value="az">Name: A â†’ Z</option>
+          <option value="za">Name: Z â†’ A</option>
         </select>
       </div>
 
@@ -558,7 +558,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
   <script>
-    // ── PRODUCT DATA ──
+    // â”€â”€ PRODUCT DATA â”€â”€
     const PRODUCTS = [
       {
         name: "Wavelength Pro X",
@@ -568,8 +568,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cert: ["iso", "ce"],
         tag: "HAIR REMOVAL",
         tagColor: "orange",
-        desc: "A breakthrough hair removal platform combining 4 Wave Technology (755+808+940+1064nm) with a 12×28mm² spot size and continuous cooling for pain-free treatments on all skin types I–VI.",
-        specs: ["4 Wave Technology", "12×28mm² Spot", "Skin Types I–VI"],
+        desc: "A breakthrough hair removal platform combining 4 Wave Technology (755+808+940+1064nm) with a 12Ã—28mmÂ² spot size and continuous cooling for pain-free treatments on all skin types Iâ€“VI.",
+        specs: ["4 Wave Technology", "12Ã—28mmÂ² Spot", "Skin Types Iâ€“VI"],
         img: "image/Aesthetics%20images/Wavelength%20Pro%20X%20Banner.png",
         slug: "/aesthetics/wavelength-pro-x/"
       },
@@ -595,7 +595,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         tag: "CO\u2082 LASER",
         tagColor: "orange",
         desc: "State-of-the-art minimally-invasive CO\u2082 Fractional LASER for stretch marks, scars, wrinkles, and skin dermabrasion. Fast, painless, and safe with 7 fractional scanning shapes.",
-        specs: ["40W CO\u2082 Laser", "360° Vaginal Option", "7 Scan Shapes"],
+        specs: ["40W CO\u2082 Laser", "360Â° Vaginal Option", "7 Scan Shapes"],
         img: "image/Aesthetics%20images/Code%20Factor%20Banner.png",
         slug: "/aesthetics/code-factor/"
       },
@@ -608,7 +608,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         tag: "RF MICRONEEDLE",
         tagColor: "",
         desc: "Fractional RF Microneedle delivering RF energy directly to the dermis to stimulate and remodel collagen, supporting both invasive micro-needling and non-invasive RF matrix modes.",
-        specs: ["Gold-Plated Needles", "Mono & Bipolar", "0.4–4mm Depth"],
+        specs: ["Gold-Plated Needles", "Mono & Bipolar", "0.4â€“4mm Depth"],
         img: "image/Aesthetics%20images/Nodd%20Banner.png",
         slug: "/aesthetics/nodd/"
       },
@@ -633,8 +633,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cert: ["iso", "ce"],
         tag: "CRYOLIPOLYSIS",
         tagColor: "",
-        desc: "360° freezing technology to dissolve excess subcutaneous fat without damaging surrounding tissue. Medical silicone cups fit all body curves from chin to knees.",
-        specs: ["360° Cooling", "7-in-1 Applicator", "–11°C Min Temp"],
+        desc: "360Â° freezing technology to dissolve excess subcutaneous fat without damaging surrounding tissue. Medical silicone cups fit all body curves from chin to knees.",
+        specs: ["360Â° Cooling", "7-in-1 Applicator", "â€“11Â°C Min Temp"],
         img: "image/Aesthetics%20images/Cool%20Shape%20Banner.png",
         slug: "/aesthetics/cool-shape/"
       },
@@ -659,8 +659,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cert: ["iso", "ce"],
         tag: "IPL / DPL",
         tagColor: "",
-        desc: "Intense Pulsed Light system using non-coherent light across 400–1200nm to target chromophores for vascular and pigmented lesions, skin photoaging, and hair removal. 11 universal filters.",
-        specs: ["11 Filters", "Hot & Cold Modes", "2–50J/cm² Fluence"],
+        desc: "Intense Pulsed Light system using non-coherent light across 400â€“1200nm to target chromophores for vascular and pigmented lesions, skin photoaging, and hair removal. 11 universal filters.",
+        specs: ["11 Filters", "Hot & Cold Modes", "2â€“50J/cmÂ² Fluence"],
         img: "image/Aesthetics%20images/BBL%20Super%20IDL%20%2B%20Dpl%20Banner.png",
         slug: "/aesthetics/bbl-super-ipl-dpl/"
       },
@@ -740,9 +740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              data-app="${p.app}" data-cert="${p.cert}">
           <div class="product-card-img">
             <img src="${p.img}" alt="${p.name}" loading="lazy"
-                 onerror="this.src='image/pulse-logo.png'">
-            <span class="product-tag ${p.tagColor||''}">${p.tag}</span>
-          </div>
+                 onerror="this.src='image/pulse-logo.png'">          </div>
           <div class="product-card-body">
             <div class="product-card-category">${p.category}</div>
             <div class="product-card-name">${p.name}</div>
@@ -758,7 +756,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank')">
               Get Quote
             </button>
-            <a href="${p.slug}" class="btn-details">→</a>
+            <a href="${p.slug}" class="btn-details">â†’</a>
           </div>
         </div>`).join('');
       renderPagination();
@@ -769,17 +767,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const pg = document.getElementById('pagination');
       if (total <= 1) { pg.innerHTML = ''; return; }
       let html = `<button class="page-nav" onclick="goPage(${currentPage-1})" 
-                  ${currentPage===1?'disabled':''}>← Prev</button>`;
+                  ${currentPage===1?'disabled':''}>â† Prev</button>`;
       for (let i = 1; i <= total; i++) {
         if (i===1 || i===total || Math.abs(i-currentPage)<=1) {
           html += `<button class="page-btn ${i===currentPage?'active':''}" 
                    onclick="goPage(${i})">${i}</button>`;
         } else if (Math.abs(i-currentPage)===2) {
-          html += `<span style="color:#9ca3af;padding:0 4px">…</span>`;
+          html += `<span style="color:#9ca3af;padding:0 4px">â€¦</span>`;
         }
       }
       html += `<button class="page-nav" onclick="goPage(${currentPage+1})" 
-               ${currentPage===total?'disabled':''}>Next →</button>`;
+               ${currentPage===total?'disabled':''}>Next â†’</button>`;
       pg.innerHTML = html;
     }
 

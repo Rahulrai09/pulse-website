@@ -451,13 +451,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="cat-hero-content">
       <div class="cat-breadcrumb">
         <a href="index.html">Home</a>
-        <span>›</span>
+        <span>â€º</span>
         <a href="index.html#portfolio">Categories</a>
-        <span>›</span>
+        <span>â€º</span>
         Critical Care
       </div>
       <h1>Critical Care</h1>
-      <p>ICU-grade ventilators, patient monitors, infusion pumps, anaesthesia machines and syringe pumps — engineered for precision in high-acuity clinical environments.</p>
+      <p>ICU-grade ventilators, patient monitors, infusion pumps, anaesthesia machines and syringe pumps â€” engineered for precision in high-acuity clinical environments.</p>
       <div class="cat-hero-stats">
         <div class="cat-stat">
           <strong>60+</strong>
@@ -537,8 +537,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <select class="product-sort" onchange="sortProducts(this.value)">
           <option value="default">Sort: Default</option>
-          <option value="az">Name: A → Z</option>
-          <option value="za">Name: Z → A</option>
+          <option value="az">Name: A â†’ Z</option>
+          <option value="za">Name: Z â†’ A</option>
         </select>
       </div>
 
@@ -555,7 +555,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
   <script>
-    // ── PRODUCT DATA ──
+    // â”€â”€ PRODUCT DATA â”€â”€
     const PRODUCTS = [
       {
         name: "ICU Ventilator",
@@ -579,7 +579,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cert: ["iso", "ce"],
         tag: "Anesthesia",
         tagColor: "",
-        desc: "A classic anesthesia machine approved globally. CE certified for safe and efficient anesthesia. Features integrated sockets, optional AGSS, and optional EtCO₂.",
+        desc: "A classic anesthesia machine approved globally. CE certified for safe and efficient anesthesia. Features integrated sockets, optional AGSS, and optional EtCOâ‚‚.",
         specs: ["Adult / Pediatric", "CE Certified", "8.4\" Touch Screen"],
         img: "image/Critical%20care/Anesthesia%20Workstation%20Banner.png"
       },
@@ -645,7 +645,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         tag: "Patient Monitor",
         tagColor: "orange",
         desc: "7-parameter patient monitor with 12.1\" high-resolution color TFT display, real-time waveforms, and built-in battery backup.",
-        specs: ["7 Para", "12.1\" TFT", "EtCO₂ & CO"],
+        specs: ["7 Para", "12.1\" TFT", "EtCOâ‚‚ & CO"],
         img: "image/Critical%20care/7%20Para%20Pateint%20Monitor%20Banner.png"
       },
       {
@@ -658,7 +658,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         tag: "Infusion Pump",
         tagColor: "",
         desc: "Compact and lightweight infusion pump with 4.3-inch color touch screen, audible and visual alarm system, and multiple infusion modes.",
-        specs: ["0.1–1500 ml/h", "4.3\" Touch Screen", "5hr Battery"],
+        specs: ["0.1â€“1500 ml/h", "4.3\" Touch Screen", "5hr Battery"],
         img: "image/Critical%20care/Infusion%20pump%20Banner.png"
       },
       {
@@ -670,8 +670,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cert: ["iso"],
         tag: "Syringe Pump",
         tagColor: "",
-        desc: "Precision syringe pump with 3.8\" touch display supporting 5/10/20/30/50ml syringes, ±2% accuracy, and minimum 8 hours battery life.",
-        specs: ["5ml–50ml Syringes", "3.8\" Touch Display", "8hr Battery"],
+        desc: "Precision syringe pump with 3.8\" touch display supporting 5/10/20/30/50ml syringes, Â±2% accuracy, and minimum 8 hours battery life.",
+        specs: ["5mlâ€“50ml Syringes", "3.8\" Touch Display", "8hr Battery"],
         img: "image/Critical%20care/Syringe%20Pump%20Banner.png"
       }
     ];
@@ -698,9 +698,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              data-app="${p.app}" data-cert="${(p.cert||[]).join(',')}">
           <div class="product-card-img">
             <img src="${p.img}" alt="${p.name}" loading="lazy"
-                 onerror="this.src='image/pulse-logo.png'">
-            <span class="product-tag ${p.tagColor||''}">${p.tag}</span>
-          </div>
+                 onerror="this.src='image/pulse-logo.png'">          </div>
           <div class="product-card-body">
             <div class="product-card-category">${p.category||''}</div>
             <div class="product-card-name">${p.name}</div>
@@ -716,7 +714,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank')">
               Get Quote
             </button>
-            <a href="${p.slug}" class="btn-details" onclick="event.stopPropagation();">→</a>
+            <a href="${p.slug}" class="btn-details" onclick="event.stopPropagation();">â†’</a>
           </div>
         </div>`).join('');
       renderPagination();
@@ -727,17 +725,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const pg = document.getElementById('pagination');
       if (total <= 1) { pg.innerHTML = ''; return; }
       let html = `<button class="page-nav" onclick="goPage(${currentPage-1})" 
-                  ${currentPage===1?'disabled':''}>← Prev</button>`;
+                  ${currentPage===1?'disabled':''}>â† Prev</button>`;
       for (let i = 1; i <= total; i++) {
         if (i===1 || i===total || Math.abs(i-currentPage)<=1) {
           html += `<button class="page-btn ${i===currentPage?'active':''}" 
                    onclick="goPage(${i})">${i}</button>`;
         } else if (Math.abs(i-currentPage)===2) {
-          html += `<span style="color:#9ca3af;padding:0 4px">…</span>`;
+          html += `<span style="color:#9ca3af;padding:0 4px">â€¦</span>`;
         }
       }
       html += `<button class="page-nav" onclick="goPage(${currentPage+1})" 
-               ${currentPage===total?'disabled':''}>Next →</button>`;
+               ${currentPage===total?'disabled':''}>Next â†’</button>`;
       pg.innerHTML = html;
     }
 
