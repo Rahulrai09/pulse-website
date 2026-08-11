@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   var metaPixel = document.createElement('script'); metaPixel.async = true; metaPixel.src = 'https://connect.facebook.net/en_US/fbevents.js'; document.head.appendChild(metaPixel); metaPixel.onload = function(){ fbq('init','3413725288776120'); fbq('track','PageView'); }; window.fbq = window.fbq || function(){ (window.fbq.q = window.fbq.q || []).push(arguments); }; window._fbq = window._fbq || window.fbq;
     const footerHTML = `
     <footer class="premium-footer">
@@ -207,15 +207,15 @@
             <div class="pm-form-group">
               <label>Budget Range</label>
               <select class="pm-select">
-                <option>Under â‚¹5L</option><option>â‚¹5Lâ€“â‚¹20L</option>
-                <option>â‚¹20Lâ€“â‚¹50L</option><option>â‚¹50L+</option>
+                <option>Under ₹5L</option><option>₹5L–₹20L</option>
+                <option>₹20L–₹50L</option><option>₹50L+</option>
               </select>
             </div>
             <div class="pm-form-group">
               <label>Timeline</label>
               <select class="pm-select">
-                <option>Immediate</option><option>1â€“3 Months</option>
-                <option>3â€“6 Months</option><option>Just Exploring</option>
+                <option>Immediate</option><option>1–3 Months</option>
+                <option>3–6 Months</option><option>Just Exploring</option>
               </select>
             </div>
             <button type="submit" class="pm-submit">Request My Quote &rarr;</button>
