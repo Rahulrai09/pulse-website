@@ -135,6 +135,7 @@
 /* --- Global Mobile Footer Overrides --- */
 /* --- Homepage-parity refinements (ported from index.html/quality.html/why-pulse.html, now global) --- */
 @media (max-width: 640px) {
+  #global-footer .premium-footer { padding: 28px 16px 20px !important; }
   #global-footer .pf-main { padding: 28px 16px 20px !important; }
   #global-footer .pf-grid { gap: 16px !important; margin-bottom: 24px !important; }
   #global-footer .pf-col h5 { font-size: 0.58rem !important; margin-bottom: 8px !important; }
