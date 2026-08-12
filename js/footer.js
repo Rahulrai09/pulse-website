@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="pf-grid">
           <!-- Col 1 -->
           <div class="pf-col pf-brand-col">
-            <a href="index.html" class="pf-logo">
-              <img src="image/pulse-logo-PNG-W.png" alt="Pulse" style="height:44px; width:auto; object-fit:contain; filter:brightness(10);">
+            <a href="/index.html" class="pf-logo">
+              <img src="/image/pulse-logo-PNG-W.png" alt="Pulse" style="height:44px; width:auto; object-fit:contain; filter:brightness(10);">
             </a>
             <div class="pf-socials">
               <a href="https://www.linkedin.com/company/pulseiomed/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="pf-col">
             <h5>COMPANY</h5>
             <ul>
-              <li><a href="about.html">About Us</a></li>
+              <li><a href="/about.html">About Us</a></li>
 
-              <li><a href="articles-blogs.html">Articles & Blogs</a></li>
-              <li><a href="innovation.html">Innovation & R&D</a></li>
-              <li><a href="life-at-pulse.html">Life at Pulse</a></li>
+              <li><a href="/articles-blogs.html">Articles & Blogs</a></li>
+              <li><a href="/innovation.html">Innovation & R&D</a></li>
+              <li><a href="/life-at-pulse.html">Life at Pulse</a></li>
             </ul>
           </div>
 
@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="pf-col">
             <h5>SOLUTIONS</h5>
             <ul>
-              <li><a href="critical-care.html">Critical Care</a></li>
-              <li><a href="renal-care.html">Renal Care</a></li>
-              <li><a href="cardiac-care.html">Cardiac Care</a></li>
-              <li><a href="aesthetics.html">Aesthetics</a></li>
-              <li><a href="rehabilitation.html">Rehabilitation</a></li>
-              <li><a href="hospital-setup.html">Hospital Setup</a></li>
+              <li><a href="/critical-care.html">Critical Care</a></li>
+              <li><a href="/renal-care.html">Renal Care</a></li>
+              <li><a href="/cardiac-care.html">Cardiac Care</a></li>
+              <li><a href="/aesthetics.html">Aesthetics</a></li>
+              <li><a href="/rehabilitation.html">Rehabilitation</a></li>
+              <li><a href="/hospital-setup.html">Hospital Setup</a></li>
             </ul>
           </div>
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <ul>
               <li><a href="#" onclick="document.getElementById('demo-modal-overlay').classList.add('open'); return false;">Request Demo</a></li>
               <li><a href="#" onclick="document.getElementById('quote-modal-overlay').classList.add('open'); return false;">Get a Quote</a></li>
-              <li><a href="service-support.html">Service Support</a></li>
+              <li><a href="/service-support.html">Service Support</a></li>
             </ul>
           </div>
 
@@ -85,9 +85,9 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
 
           <div class="pf-bottom-right">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-and-conditions.html">Terms of Use</a>
-            <a href="privacy-policy.html#cookies">Cookie Policy</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="/terms-and-conditions.html">Terms of Use</a>
+            <a href="/privacy-policy.html#cookies">Cookie Policy</a>
           </div>
         </div>
       </div>
