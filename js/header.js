@@ -1119,7 +1119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Rehabiliation/motion-pro-1-01.jpg",
 
-                                        "href": "rehabilitation/motion-pro-1.html"
+                                        "href": "/rehabilitation/motion-pro-1.html"
 
                               },
 
@@ -1129,7 +1129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Rehabiliation/xtrion-01.png",
 
-                                        "href": "rehabilitation/xtrion.html"
+                                        "href": "/rehabilitation/xtrion.html"
 
                               },
 
@@ -1139,7 +1139,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Rehabiliation/innovax-01.jpg",
 
-                                        "href": "rehabilitation/innovax.html"
+                                        "href": "/rehabilitation/innovax.html"
 
                               },
 
@@ -1149,7 +1149,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Rehabiliation/aerodrive-1-01.jpg",
 
-                                        "href": "rehabilitation/aerodrive-1.html"
+                                        "href": "/rehabilitation/aerodrive-1.html"
 
                               },
 
@@ -1159,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Rehabiliation/joylite-1-01.jpg",
 
-                                        "href": "rehabilitation/joylite-1.html"
+                                        "href": "/rehabilitation/joylite-1.html"
 
                               },
 
@@ -1169,7 +1169,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Rehabiliation/joylite-2-01.jpg",
 
-                                        "href": "rehabilitation/joylite-2.html"
+                                        "href": "/rehabilitation/joylite-2.html"
 
                               },
 
@@ -1179,7 +1179,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "image": "/image/Rehabiliation/smartride-2-01.jpg",
 
-                                        "href": "rehabilitation/smartride-2.html"
+                                        "href": "/rehabilitation/smartride-2.html"
 
                               }
 
@@ -1588,14 +1588,14 @@ var searchMap = [
 
   { keywords: ['introducer kits venous','venous access kit','acusafe introducer'], url: '/cardiac-care/acusafe-introducer-kits/' },
 
-  { keywords: ['aed','swm11089','automatic external defibrillator','aed device'], url: 'cardiac-aed-swm11089.html' },
+  { keywords: ['aed','swm11089','automatic external defibrillator','aed device'], url: '/cardiac-aed-swm11089.html' },
 
 
-  { keywords: ['optima pressure monitoring','pressure monitoring lines'], url: 'optima-pressure-monitoring-lines.html' },
+  { keywords: ['optima pressure monitoring','pressure monitoring lines'], url: '/optima-pressure-monitoring-lines.html' },
 
 
 
-  { keywords: ['high pressure injection','1200psi','injection lines'], url: 'high-pressure-injection-lines-1200psi.html' },
+  { keywords: ['high pressure injection','1200psi','injection lines'], url: '/high-pressure-injection-lines-1200psi.html' },
 
 
 
@@ -1616,7 +1616,7 @@ var searchMap = [
 
   { keywords: ['hydrafrac','hydra frac'], url: '/aesthetics/hydrafrac/' },
 
-  { keywords: ['laser machine range','aesthetics laser'], url: 'aesthetics-laser-machine-range.html' },
+  { keywords: ['laser machine range','aesthetics laser'], url: '/aesthetics-laser-machine-range.html' },
 
   { keywords: ['nodd'], url: '/aesthetics/nodd/' },
 
@@ -1635,26 +1635,26 @@ var searchMap = [
 
   // REHABILITATION PRODUCTS
 
-  { keywords: ['aerodrive wheelchair','aerodrive 6019','aerodrive'], url: 'rehabilitation/aerodrive-1.html' },
+  { keywords: ['aerodrive wheelchair','aerodrive 6019','aerodrive'], url: '/rehabilitation/aerodrive-1.html' },
 
-  { keywords: ['autofold smartride','smartride wheelchair','autofold'], url: 'rehabilitation/smartride-2.html' },
+  { keywords: ['autofold smartride','smartride wheelchair','autofold'], url: '/rehabilitation/smartride-2.html' },
 
-  { keywords: ['innovax','innovax wheelchair'], url: 'rehabilitation/innovax.html' },
+  { keywords: ['innovax','innovax wheelchair'], url: '/rehabilitation/innovax.html' },
 
-  { keywords: ['joylite wheelchair','joylite 9005','joylite'], url: 'rehabilitation/joylite-1.html' },
+  { keywords: ['joylite wheelchair','joylite 9005','joylite'], url: '/rehabilitation/joylite-1.html' },
 
-  { keywords: ['motion pro wheelchair','motionpro','motion pro 6001'], url: 'rehabilitation/motion-pro-1.html' },
+  { keywords: ['motion pro wheelchair','motionpro','motion pro 6001'], url: '/rehabilitation/motion-pro-1.html' },
 
-  { keywords: ['xtrion wheelchair','xtrion 6013'], url: 'rehabilitation/xtrion.html' },
-
-
-
-
-  { keywords: ['rollator walker','rollator','pulse rollator'], url: 'pulse-rollator-walker.html' },
+  { keywords: ['xtrion wheelchair','xtrion 6013'], url: '/rehabilitation/xtrion.html' },
 
 
 
-  { keywords: ['folding wheelchair with cushion'], url: 'folding-wheelchair-with-cushion.html' },
+
+  { keywords: ['rollator walker','rollator','pulse rollator'], url: '/pulse-rollator-walker.html' },
+
+
+
+  { keywords: ['folding wheelchair with cushion'], url: '/folding-wheelchair-with-cushion.html' },
 
 
 
@@ -1710,9 +1710,9 @@ var searchMap = [
 
   { keywords: ['emergency trolley','hydraulic emergency trolley'], url: '/hospital-setup/emergency-trolley-hydraulic/' },
 
-  { keywords: ['rapid neo ert','ert trolley','emergency response trolley'], url: 'rapid-neo-ert-emergency-response-trolley.html' },
+  { keywords: ['rapid neo ert','ert trolley','emergency response trolley'], url: '/rapid-neo-ert-emergency-response-trolley.html' },
 
-  { keywords: ['emergency cart'], url: 'emergency-cart.html' },
+  { keywords: ['emergency cart'], url: '/emergency-cart.html' },
 
   { keywords: ['baby warmer','infant warmer'], url: '/hospital-setup/baby-warmer/' },
 
@@ -1723,13 +1723,13 @@ var searchMap = [
 
 
 
-  { keywords: ['medicine cart'], url: 'medicine-cart.html' },
+  { keywords: ['medicine cart'], url: '/medicine-cart.html' },
 
   { keywords: ['hospital wheelchair'], url: '/hospital-setup/wheelchair/' },
 
   { keywords: ['circumease','circumcision kit','disposable circumcision','circumcision'], url: '/surgical-care/circumease-stapler/' },
 
-  { keywords: ['blood donation chair'], url: 'blood-donation-chair.html' },
+  { keywords: ['blood donation chair'], url: '/blood-donation-chair.html' },
 
 
 
@@ -1743,7 +1743,7 @@ var searchMap = [
 
 
 
-  { keywords: ['stretcher on trolley'], url: 'stretcher-on-trolley.html' },
+  { keywords: ['stretcher on trolley'], url: '/stretcher-on-trolley.html' },
 
 
 
@@ -1775,7 +1775,7 @@ var searchMap = [
 
     ],
 
-    url: 'critical-care.html'
+    url: '/critical-care.html'
 
   },
 
@@ -1809,7 +1809,7 @@ var searchMap = [
 
     ],
 
-    url: 'renal-care.html'
+    url: '/renal-care.html'
 
   },
 
@@ -1849,7 +1849,7 @@ var searchMap = [
 
     ],
 
-    url: 'cardiac-care.html'
+    url: '/cardiac-care.html'
 
   },
 
@@ -1889,7 +1889,7 @@ var searchMap = [
 
     ],
 
-    url: 'aesthetics.html'
+    url: '/aesthetics.html'
 
   },
 
@@ -1933,7 +1933,7 @@ var searchMap = [
 
     ],
 
-    url: 'rehabilitation.html'
+    url: '/rehabilitation.html'
 
   },
 
@@ -1979,7 +1979,7 @@ var searchMap = [
 
     ],
 
-    url: 'hospital-setup.html'
+    url: '/hospital-setup.html'
 
   },
 
@@ -1997,7 +1997,7 @@ var searchMap = [
 
     ],
 
-    url: 'about.html'
+    url: '/about.html'
 
   },
 
@@ -2019,7 +2019,7 @@ var searchMap = [
 
     ],
 
-    url: 'quality.html'
+    url: '/quality.html'
 
   },
 
@@ -2043,7 +2043,7 @@ var searchMap = [
 
     ],
 
-    url: 'service-support.html'
+    url: '/service-support.html'
 
   },
 
@@ -2065,7 +2065,7 @@ var searchMap = [
 
     ],
 
-    url: 'index.html#contact'
+    url: '/index.html#contact'
 
   },
 
@@ -2083,7 +2083,7 @@ var searchMap = [
 
     ],
 
-    url: 'index.html#why-pulse'
+    url: '/index.html#why-pulse'
 
   },
 
@@ -2101,7 +2101,7 @@ var searchMap = [
 
     ],
 
-    url: 'index.html#excellence'
+    url: '/index.html#excellence'
 
   },
 
@@ -2117,7 +2117,7 @@ var searchMap = [
 
     ],
 
-    url: 'about.html#insights'
+    url: '/about.html#insights'
 
   },
 
@@ -2135,7 +2135,7 @@ var searchMap = [
 
     ],
 
-    url: 'about.html#careers'
+    url: '/about.html#careers'
 
   },
 
@@ -2153,7 +2153,7 @@ var searchMap = [
 
     ],
 
-    url: 'about.html#innovation'
+    url: '/about.html#innovation'
 
   },
 
@@ -2169,7 +2169,7 @@ var searchMap = [
 
     ],
 
-    url: 'about.html#vision'
+    url: '/about.html#vision'
 
   },
 
@@ -2185,7 +2185,7 @@ var searchMap = [
 
     ],
 
-    url: 'privacy-policy.html'
+    url: '/privacy-policy.html'
 
   },
 
@@ -2197,7 +2197,7 @@ var searchMap = [
 
     ],
 
-    url: 'terms-and-conditions.html'
+    url: '/terms-and-conditions.html'
 
   },
 
@@ -2215,7 +2215,7 @@ var searchMap = [
 
     ],
 
-    url: 'about.html'
+    url: '/about.html'
 
   },
 
@@ -2233,7 +2233,7 @@ var searchMap = [
 
     ],
 
-    url: 'index.html#contact'
+    url: '/index.html#contact'
 
   },
 
@@ -2249,7 +2249,7 @@ var searchMap = [
 
     ],
 
-    url: 'index.html'
+    url: '/index.html'
 
   }
 
