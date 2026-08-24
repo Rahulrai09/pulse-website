@@ -1659,287 +1659,287 @@
   "rewrites": [
     {
       "source": "/critical-care/icu-ventilator/",
-      "destination": "/critical-care/icu-ventilator.html"
+      "destination": "/_src/critical-care/icu-ventilator.html"
     },
     {
       "source": "/hospital-setup/icu-bed-5func-electric-premium/",
-      "destination": "/hospital-setup/icu-bed-5func-electric-premium.html"
+      "destination": "/_src/hospital-setup/icu-bed-5func-electric-premium.html"
     },
     {
       "source": "/hospital-setup/icu-bed-5func-electric-deluxe/",
-      "destination": "/hospital-setup/icu-bed-5func-electric-deluxe.html"
+      "destination": "/_src/hospital-setup/icu-bed-5func-electric-deluxe.html"
     },
     {
       "source": "/hospital-setup/icu-bed-5func-manual-deluxe/",
-      "destination": "/hospital-setup/icu-bed-5func-manual-deluxe.html"
+      "destination": "/_src/hospital-setup/icu-bed-5func-manual-deluxe.html"
     },
     {
       "source": "/hospital-setup/icu-bed-3func-electric/",
-      "destination": "/hospital-setup/icu-bed-3func-electric.html"
+      "destination": "/_src/hospital-setup/icu-bed-3func-electric.html"
     },
     {
       "source": "/hospital-setup/fowler-bed-electric/",
-      "destination": "/hospital-setup/fowler-bed-electric.html"
+      "destination": "/_src/hospital-setup/fowler-bed-electric.html"
     },
     {
       "source": "/hospital-setup/semi-fowler-electric/",
-      "destination": "/hospital-setup/semi-fowler-electric.html"
+      "destination": "/_src/hospital-setup/semi-fowler-electric.html"
     },
     {
       "source": "/hospital-setup/ot-table-electric-manual-deluxe/",
-      "destination": "/hospital-setup/ot-table-electric-manual-deluxe.html"
+      "destination": "/_src/hospital-setup/ot-table-electric-manual-deluxe.html"
     },
     {
       "source": "/hospital-setup/ot-table-carm-hydraulic/",
-      "destination": "/hospital-setup/ot-table-carm-hydraulic.html"
+      "destination": "/_src/hospital-setup/ot-table-carm-hydraulic.html"
     },
     {
       "source": "/hospital-setup/ot-table-general-hydraulic/",
-      "destination": "/hospital-setup/ot-table-general-hydraulic.html"
+      "destination": "/_src/hospital-setup/ot-table-general-hydraulic.html"
     },
     {
       "source": "/hospital-setup/delivery-table-electric-manual/",
-      "destination": "/hospital-setup/delivery-table-electric-manual.html"
+      "destination": "/_src/hospital-setup/delivery-table-electric-manual.html"
     },
     {
       "source": "/hospital-setup/delivery-table-hydraulic/",
-      "destination": "/hospital-setup/delivery-table-hydraulic.html"
+      "destination": "/_src/hospital-setup/delivery-table-hydraulic.html"
     },
     {
       "source": "/hospital-setup/stretcher-trolley-ms-ss/",
-      "destination": "/hospital-setup/stretcher-trolley-ms-ss.html"
+      "destination": "/_src/hospital-setup/stretcher-trolley-ms-ss.html"
     },
     {
       "source": "/hospital-setup/emergency-trolley-hydraulic/",
-      "destination": "/hospital-setup/emergency-trolley-hydraulic.html"
+      "destination": "/_src/hospital-setup/emergency-trolley-hydraulic.html"
     },
     {
       "source": "/hospital-setup/wheelchair/",
-      "destination": "/hospital-setup/wheelchair.html"
+      "destination": "/_src/hospital-setup/wheelchair.html"
     },
     {
       "source": "/hospital-setup/ss-instrument-trolleys/",
-      "destination": "/hospital-setup/ss-instrument-trolleys.html"
+      "destination": "/_src/hospital-setup/ss-instrument-trolleys.html"
     },
     {
       "source": "/hospital-setup/crash-cart/",
-      "destination": "/hospital-setup/crash-cart.html"
+      "destination": "/_src/hospital-setup/crash-cart.html"
     },
     {
       "source": "/hospital-setup/autoclaves-sterilizers/",
-      "destination": "/hospital-setup/autoclaves-sterilizers.html"
+      "destination": "/_src/hospital-setup/autoclaves-sterilizers.html"
     },
     {
       "source": "/hospital-setup/baby-warmer/",
-      "destination": "/hospital-setup/baby-warmer.html"
+      "destination": "/_src/hospital-setup/baby-warmer.html"
     },
     {
       "source": "/hospital-setup/medical-gas-pipeline/",
-      "destination": "/hospital-setup/medical-gas-pipeline.html"
+      "destination": "/_src/hospital-setup/medical-gas-pipeline.html"
     },
     {
       "source": "/hospital-setup/modular-ot/",
-      "destination": "/hospital-setup/modular-ot.html"
+      "destination": "/_src/hospital-setup/modular-ot.html"
     },
     {
       "source": "/hospital-setup/ot-light-four-reflector/",
-      "destination": "/hospital-setup/ot-light-four-reflector.html"
+      "destination": "/_src/hospital-setup/ot-light-four-reflector.html"
     },
     {
       "source": "/hospital-setup/ot-light-globus-dome/",
-      "destination": "/hospital-setup/ot-light-globus-dome.html"
+      "destination": "/_src/hospital-setup/ot-light-globus-dome.html"
     },
     {
       "source": "/hospital-setup/ot-examination-light/",
-      "destination": "/hospital-setup/ot-examination-light.html"
+      "destination": "/_src/hospital-setup/ot-examination-light.html"
     },
     {
       "source": "/hospital-setup/ot-light-premium-camera/",
-      "destination": "/hospital-setup/ot-light-premium-camera.html"
+      "destination": "/_src/hospital-setup/ot-light-premium-camera.html"
     },
     {
       "source": "/aesthetics/nodd/",
-      "destination": "/aesthetics/nodd.html"
+      "destination": "/_src/aesthetics/nodd.html"
     },
     {
       "source": "/aesthetics/em-ma/",
-      "destination": "/aesthetics/em-ma.html"
+      "destination": "/_src/aesthetics/em-ma.html"
     },
     {
       "source": "/aesthetics/visage/",
-      "destination": "/aesthetics/visage.html"
+      "destination": "/_src/aesthetics/visage.html"
     },
     {
       "source": "/aesthetics/pi-code/",
-      "destination": "/aesthetics/pi-code.html"
+      "destination": "/_src/aesthetics/pi-code.html"
     },
     {
       "source": "/aesthetics/hydrafrac/",
-      "destination": "/aesthetics/hydrafrac.html"
+      "destination": "/_src/aesthetics/hydrafrac.html"
     },
     {
       "source": "/aesthetics/cool-shape/",
-      "destination": "/aesthetics/cool-shape.html"
+      "destination": "/_src/aesthetics/cool-shape.html"
     },
     {
       "source": "/aesthetics/code-factor/",
-      "destination": "/aesthetics/code-factor.html"
+      "destination": "/_src/aesthetics/code-factor.html"
     },
     {
       "source": "/aesthetics/excimer/",
-      "destination": "/aesthetics/excimer.html"
+      "destination": "/_src/aesthetics/excimer.html"
     },
     {
       "source": "/aesthetics/wavelength-pro-x/",
-      "destination": "/aesthetics/wavelength-pro-x.html"
+      "destination": "/_src/aesthetics/wavelength-pro-x.html"
     },
     {
       "source": "/aesthetics/skin-analyzer/",
-      "destination": "/aesthetics/skin-analyzer.html"
+      "destination": "/_src/aesthetics/skin-analyzer.html"
     },
     {
       "source": "/aesthetics/bbl-super-ipl-dpl/",
-      "destination": "/aesthetics/bbl-super-ipl-dpl.html"
+      "destination": "/_src/aesthetics/bbl-super-ipl-dpl.html"
     },
     {
       "source": "/aesthetics/em-code/",
-      "destination": "/aesthetics/em-code.html"
+      "destination": "/_src/aesthetics/em-code.html"
     },
     {
       "source": "/critical-care/3-channel-ecg-machine/",
-      "destination": "/critical-care/3-channel-ecg-machine.html"
+      "destination": "/_src/critical-care/3-channel-ecg-machine.html"
     },
     {
       "source": "/critical-care/6-channel-ecg-machine/",
-      "destination": "/critical-care/6-channel-ecg-machine.html"
+      "destination": "/_src/critical-care/6-channel-ecg-machine.html"
     },
     {
       "source": "/critical-care/12-channel-ecg-machine/",
-      "destination": "/critical-care/12-channel-ecg-machine.html"
+      "destination": "/_src/critical-care/12-channel-ecg-machine.html"
     },
     {
       "source": "/critical-care/infusion-pump/",
-      "destination": "/critical-care/infusion-pump.html"
+      "destination": "/_src/critical-care/infusion-pump.html"
     },
     {
       "source": "/critical-care/syringe-pump/",
-      "destination": "/critical-care/syringe-pump.html"
+      "destination": "/_src/critical-care/syringe-pump.html"
     },
     {
       "source": "/critical-care/5-para-patient-monitor/",
-      "destination": "/critical-care/5-para-patient-monitor.html"
+      "destination": "/_src/critical-care/5-para-patient-monitor.html"
     },
     {
       "source": "/critical-care/7-para-patient-monitor/",
-      "destination": "/critical-care/7-para-patient-monitor.html"
+      "destination": "/_src/critical-care/7-para-patient-monitor.html"
     },
     {
       "source": "/critical-care/anesthesia-workstation/",
-      "destination": "/critical-care/anesthesia-workstation.html"
+      "destination": "/_src/critical-care/anesthesia-workstation.html"
     },
     {
       "source": "/renal-care/pdm-6000/",
-      "destination": "/renal-care/pdm-6000.html"
+      "destination": "/_src/renal-care/pdm-6000.html"
     },
     {
       "source": "/renal-care/pd-canova/",
-      "destination": "/renal-care/pd-canova.html"
+      "destination": "/_src/renal-care/pd-canova.html"
     },
     {
       "source": "/renal-care/pd-linepro/",
-      "destination": "/renal-care/pd-linepro.html"
+      "destination": "/_src/renal-care/pd-linepro.html"
     },
     {
       "source": "/renal-care/dialysers/",
-      "destination": "/renal-care/dialysers.html"
+      "destination": "/_src/renal-care/dialysers.html"
     },
     {
       "source": "/renal-care/pd-cath/",
-      "destination": "/renal-care/pd-cath.html"
+      "destination": "/_src/renal-care/pd-cath.html"
     },
     {
       "source": "/renal-care/pd-tp/",
-      "destination": "/renal-care/pd-tp.html"
+      "destination": "/_src/renal-care/pd-tp.html"
     },
     {
       "source": "/cardiac-care/optima-inflation-kit/",
-      "destination": "/cardiac-care/optima-inflation-kit.html"
+      "destination": "/_src/cardiac-care/optima-inflation-kit.html"
     },
     {
       "source": "/cardiac-care/optima-manifolds/",
-      "destination": "/cardiac-care/optima-manifolds.html"
+      "destination": "/_src/cardiac-care/optima-manifolds.html"
     },
     {
       "source": "/cardiac-care/acusafe-blunt-needle/",
-      "destination": "/cardiac-care/acusafe-blunt-needle.html"
+      "destination": "/_src/cardiac-care/acusafe-blunt-needle.html"
     },
     {
       "source": "/cardiac-care/sirova-stent/",
-      "destination": "/cardiac-care/sirova-stent.html"
+      "destination": "/_src/cardiac-care/sirova-stent.html"
     },
     {
       "source": "/cardiac-care/evera-stent/",
-      "destination": "/cardiac-care/evera-stent.html"
+      "destination": "/_src/cardiac-care/evera-stent.html"
     },
     {
       "source": "/cardiac-care/guidex-guidewires/",
-      "destination": "/cardiac-care/guidex-guidewires.html"
+      "destination": "/_src/cardiac-care/guidex-guidewires.html"
     },
     {
       "source": "/cardiac-care/acusafe-micro-access/",
-      "destination": "/cardiac-care/acusafe-micro-access.html"
+      "destination": "/_src/cardiac-care/acusafe-micro-access.html"
     },
     {
       "source": "/cardiac-care/acusafe-introducer-kits/",
-      "destination": "/cardiac-care/acusafe-introducer-kits.html"
+      "destination": "/_src/cardiac-care/acusafe-introducer-kits.html"
     },
     {
       "source": "/surgical-care/circumease-stapler/",
-      "destination": "/surgical-care/circumease-stapler.html"
+      "destination": "/_src/surgical-care/circumease-stapler.html"
     },
     {
       "source": "/rehabilitation/motion-pro-1/",
-      "destination": "/rehabilitation/motion-pro-1.html"
+      "destination": "/_src/rehabilitation/motion-pro-1.html"
     },
     {
       "source": "/rehabilitation/motion-pro-2/",
-      "destination": "/rehabilitation/motion-pro-2.html"
+      "destination": "/_src/rehabilitation/motion-pro-2.html"
     },
     {
       "source": "/rehabilitation/cruza/",
-      "destination": "/rehabilitation/cruza.html"
+      "destination": "/_src/rehabilitation/cruza.html"
     },
     {
       "source": "/rehabilitation/xtrion/",
-      "destination": "/rehabilitation/xtrion.html"
+      "destination": "/_src/rehabilitation/xtrion.html"
     },
     {
       "source": "/rehabilitation/innovax/",
-      "destination": "/rehabilitation/innovax.html"
+      "destination": "/_src/rehabilitation/innovax.html"
     },
     {
       "source": "/rehabilitation/aerodrive-1/",
-      "destination": "/rehabilitation/aerodrive-1.html"
+      "destination": "/_src/rehabilitation/aerodrive-1.html"
     },
     {
       "source": "/rehabilitation/aerodrive-2/",
-      "destination": "/rehabilitation/aerodrive-2.html"
+      "destination": "/_src/rehabilitation/aerodrive-2.html"
     },
     {
       "source": "/rehabilitation/joylite-1/",
-      "destination": "/rehabilitation/joylite-1.html"
+      "destination": "/_src/rehabilitation/joylite-1.html"
     },
     {
       "source": "/rehabilitation/joylite-2/",
-      "destination": "/rehabilitation/joylite-2.html"
+      "destination": "/_src/rehabilitation/joylite-2.html"
     },
     {
       "source": "/rehabilitation/smartride-1/",
-      "destination": "/rehabilitation/smartride-1.html"
+      "destination": "/_src/rehabilitation/smartride-1.html"
     },
     {
       "source": "/rehabilitation/smartride-2/",
-      "destination": "/rehabilitation/smartride-2.html"
+      "destination": "/_src/rehabilitation/smartride-2.html"
     }
   ],
   "headers": [
