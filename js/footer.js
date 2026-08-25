@@ -139,14 +139,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <label style="color:#1c2b5e; font-weight:600; font-size:0.85rem;">Applied Role:</label>
                 <input type="text" class="pm-input" id="careers-role-input" style="background:#f0f4ff; border-color:#d0d7f0; color:#1c2b5e; font-weight:500;" readonly>
               </div>
-              <div class="pm-form-group" style="margin-bottom:12px;"><label style="font-size:0.85rem;">Name</label><input type="text" class="pm-input" required></div>
+              <div class="pm-form-group" style="margin-bottom:12px;"><label style="font-size:0.85rem;">Name</label><input type="text" id="careers-name-input" class="pm-input" required></div>
               <div style="display:flex; gap:16px; margin-bottom:12px;">
                 <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Phone</label><input type="tel" class="pm-input" required></div>
                 <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Email</label><input type="email" class="pm-input" required></div>
               </div>
               <div style="display:flex; gap:16px; margin-bottom:12px;">
-                <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Job Role</label><input type="text" class="pm-input" required></div>
-                <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">No. of year experience</label><input type="text" class="pm-input" required></div>
+                <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Job Role</label><input type="text" id="careers-jobrole-input" class="pm-input" required></div>
+                <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">No. of year experience</label><input type="text" id="careers-experience-input" class="pm-input" required></div>
               </div>
               <div class="pm-form-group" style="margin-bottom:12px;"><label style="font-size:0.85rem;">Additional Message</label><textarea class="pm-textarea" style="min-height:80px;"></textarea></div>
               <div class="pm-form-group" style="margin-bottom:16px;"><label style="font-size:0.85rem;">Upload Resume</label><input type="file" class="pm-input" accept=".pdf,.doc,.docx" required style="padding:6px; background:#f7f9fc;"></div>
@@ -332,11 +332,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 result = await window.PulsePublic.submitJob({
                   appliedRole: form.querySelector('#careers-role-input')?.value || '',
-                  name: form.querySelector('input[type="text"]')?.value || '',
+                  name: form.querySelector('#careers-name-input')?.value || '',
                   phone: form.querySelector('input[type="tel"]')?.value || '',
                   email: form.querySelector('input[type="email"]')?.value || '',
-                  skillDetails: form.querySelectorAll('input[type="text"]')[1]?.value || '',
-                  yearsExperience: form.querySelectorAll('input[type="text"]')[2]?.value || '',
+                  skillDetails: form.querySelector('#careers-jobrole-input')?.value || '',
+                  yearsExperience: form.querySelector('#careers-experience-input')?.value || '',
                   message: form.querySelector('textarea')?.value || '',
                   resumeBase64,
                   resumeFileName,
