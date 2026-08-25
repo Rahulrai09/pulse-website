@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Job Role</label><input type="text" class="pm-input" required></div>
                 <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">No. of year experience</label><input type="text" class="pm-input" required></div>
               </div>
-              <div class="pm-form-group" style="margin-bottom:12px;"><label style="font-size:0.85rem;">Message</label><textarea class="pm-textarea" style="min-height:80px;"></textarea></div>
+              <div class="pm-form-group" style="margin-bottom:12px;"><label style="font-size:0.85rem;">Additional Message</label><textarea class="pm-textarea" style="min-height:80px;"></textarea></div>
               <div class="pm-form-group" style="margin-bottom:16px;"><label style="font-size:0.85rem;">Upload Resume</label><input type="file" class="pm-input" accept=".pdf,.doc,.docx" required style="padding:6px; background:#f7f9fc;"></div>
               <button type="submit" class="pm-submit" style="background:#e87722; width:100%; border:none; border-radius:6px; padding:12px; color:#fff; font-weight:600; cursor:pointer;">Send Message &rarr;</button>
             </form>
