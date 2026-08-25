@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Email</label><input type="email" class="pm-input" required></div>
               </div>
               <div style="display:flex; gap:16px; margin-bottom:12px;">
-                <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Skill Details</label><input type="text" class="pm-input" required></div>
+                <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">Job Role</label><input type="text" class="pm-input" required></div>
                 <div class="pm-form-group" style="flex:1; margin-bottom:0;"><label style="font-size:0.85rem;">No. of year experience</label><input type="text" class="pm-input" required></div>
               </div>
               <div class="pm-form-group" style="margin-bottom:12px;"><label style="font-size:0.85rem;">Message</label><textarea class="pm-textarea" style="min-height:80px;"></textarea></div>
