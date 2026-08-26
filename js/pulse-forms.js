@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzL9FjPKD9_87Y4vQL1fIXsERz82Ls35X6Z9T6A2Iy7bMLd0gZVohTO9_bvFJxT6GbbvA/exec';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyEYYoGCZDQxvYFy5hFiMuk54RsArVOfx72lpO_7uSarC_8aZ7fqiTv9o2NUJ23HwxgMA/exec';
 
   async function submitToSheet(payload) {
     try {
