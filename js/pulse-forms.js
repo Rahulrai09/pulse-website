@@ -47,12 +47,8 @@
       fullName: data.fullName || '',
       mobile: data.mobile || '',
       email: data.email || '',
-      hospitalName: data.hospitalName || '',
       city: data.city || '',
-      equipmentNeeded: data.equipmentNeeded || '',
-      quantity: data.quantity || '',
-      budgetRange: data.budgetRange || '',
-      timeline: data.timeline || ''
+      query: data.query || ''
     });
   }
 

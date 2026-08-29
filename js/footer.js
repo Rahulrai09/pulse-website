@@ -199,27 +199,15 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="pm-body" id="quote-body">
           <form id="quote-form">
-            <div class="pm-form-group"><label>Full Name <span style="color:#e53e3e">*</span></label><input type="text" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Mobile Number <span style="color:#e53e3e">*</span></label><input type="tel" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Email Address</label><input type="email" class="pm-input"></div>
-
-            <div class="pm-form-group"><label>City</label><input type="text" class="pm-input"></div>
-            <div class="pm-form-group"><label>Equipment Needed</label><textarea class="pm-textarea" required></textarea></div>
-            <div class="pm-form-group"><label>Quantity Required</label><input type="number" class="pm-input"></div>
-            <div class="pm-form-group">
-              <label>Budget Range</label>
-              <select class="pm-select">
-                <option>Under ₹5L</option><option>₹5L–₹20L</option>
-                <option>₹20L–₹50L</option><option>₹50L+</option>
-              </select>
+            <div class="pm-form-row">
+              <div class="pm-form-group"><label>Full Name <span style="color:#e53e3e">*</span></label><input type="text" id="quote-fullname" class="pm-input" required></div>
+              <div class="pm-form-group"><label>Email <span style="color:#e53e3e">*</span></label><input type="email" id="quote-email" class="pm-input" required></div>
             </div>
-            <div class="pm-form-group">
-              <label>Timeline</label>
-              <select class="pm-select">
-                <option>Immediate</option><option>1–3 Months</option>
-                <option>3–6 Months</option><option>Just Exploring</option>
-              </select>
+            <div class="pm-form-row">
+              <div class="pm-form-group"><label>Phone Number <span style="color:#e53e3e">*</span></label><input type="tel" id="quote-mobile" class="pm-input" required></div>
+              <div class="pm-form-group"><label>City</label><input type="text" id="quote-city" class="pm-input"></div>
             </div>
+            <div class="pm-form-group"><label>Query <span style="color:#e53e3e">*</span></label><input type="text" id="quote-query" class="pm-input" required></div>
             <button type="submit" class="pm-submit">Request My Quote &rarr;</button>
           </form>
         </div>
@@ -307,15 +295,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
               } else if (type === 'quote') {
                 result = await window.PulsePublic.submitQuote({
-                  fullName: form.querySelector('input[type="text"]')?.value || '',
-                  mobile: form.querySelector('input[type="tel"]')?.value || '',
-                  email: form.querySelector('input[type="email"]')?.value || '',
-                  hospitalName: form.querySelectorAll('input[type="text"]')[1]?.value || '',
-                  city: form.querySelectorAll('input[type="text"]')[2]?.value || '',
-                  equipmentNeeded: form.querySelector('textarea')?.value || '',
-                  quantity: form.querySelector('input[type="number"]')?.value || '',
-                  budgetRange: form.querySelectorAll('select')[0]?.value || '',
-                  timeline: form.querySelectorAll('select')[1]?.value || ''
+                  fullName: form.querySelector('#quote-fullname')?.value || '',
+                  mobile: form.querySelector('#quote-mobile')?.value || '',
+                  email: form.querySelector('#quote-email')?.value || '',
+                  city: form.querySelector('#quote-city')?.value || '',
+                  query: form.querySelector('#quote-query')?.value || ''
                 });
               } else if (type === 'career') {
                 const resumeInput = form.querySelector('input[type="file"]');

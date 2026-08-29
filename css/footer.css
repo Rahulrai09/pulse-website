@@ -294,3 +294,6 @@
   .pg-lightbox-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
   .pg-lightbox-grid img { height: 140px; }
 }
+
+.pm-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .pm-form-row { grid-template-columns: 1fr; } }
