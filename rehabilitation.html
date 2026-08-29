@@ -744,7 +744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank')">
               Get Quote
             </button>
-            <a href="${p.link}" class="btn-details">&rarr;</a>
+            <a href="${p.link}" class="btn-details" onclick="event.stopPropagation();">&rarr;</a>
           </div>
         </div>`).join('');
       renderPagination();
