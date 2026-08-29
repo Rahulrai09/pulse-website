@@ -751,12 +751,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="product-card-footer">
             <button class="btn-quote" 
-              onclick="document.getElementById('quote-modal-overlay') ? 
+              onclick="event.stopPropagation(); document.getElementById('quote-modal-overlay') ? 
               document.getElementById('quote-modal-overlay').classList.add('open') : 
               window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank')">
               Get Quote
             </button>
-            <a href="${p.slug}" class="btn-details">→</a>
+            <a href="${p.slug}" class="btn-details" onclick="event.stopPropagation();">→</a>
           </div>
         </div>`).join('');
       renderPagination();
