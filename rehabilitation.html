@@ -739,7 +739,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="product-card-footer">
             <button class="btn-quote" 
-              onclick="document.getElementById('quote-modal-overlay') ? 
+              onclick="event.stopPropagation(); document.getElementById('quote-modal-overlay') ? 
               document.getElementById('quote-modal-overlay').classList.add('open') : 
               window.open('https://mail.google.com/mail/?view=cm&to=Info@pulseio.in', '_blank')">
               Get Quote
