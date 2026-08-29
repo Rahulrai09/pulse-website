@@ -32,11 +32,8 @@
       fullName: data.fullName || '',
       mobile: data.mobile || '',
       email: data.email || '',
-      hospitalName: data.hospitalName || '',
       city: data.city || '',
-      equipmentCategory: data.equipmentCategory || '',
-      preferredDate: data.preferredDate || '',
-      message: data.message || ''
+      preferredDate: data.preferredDate || ''
     });
   }
 

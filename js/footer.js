@@ -171,14 +171,15 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="pm-body" id="demo-body">
           <form id="demo-form">
-            <div class="pm-form-group"><label>Full Name <span style="color:#e53e3e">*</span></label><input type="text" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Mobile Number <span style="color:#e53e3e">*</span></label><input type="tel" class="pm-input" required></div>
-            <div class="pm-form-group"><label>Email Address</label><input type="email" class="pm-input"></div>
-            <div class="pm-form-group"><label>Equipment Needed</label><textarea class="pm-textarea"></textarea></div>
-            <div class="pm-form-group"><label>City</label><input type="text" class="pm-input"></div>
-
-            <div class="pm-form-group"><label>Preferred Demo Date</label><input type="date" class="pm-input"></div>
-            <div class="pm-form-group"><label>Message</label><textarea class="pm-textarea"></textarea></div>
+            <div class="pm-form-row">
+              <div class="pm-form-group"><label>Full Name <span style="color:#e53e3e">*</span></label><input type="text" id="demo-fullname" class="pm-input" required></div>
+              <div class="pm-form-group"><label>Email <span style="color:#e53e3e">*</span></label><input type="email" id="demo-email" class="pm-input" required></div>
+            </div>
+            <div class="pm-form-row">
+              <div class="pm-form-group"><label>Phone Number <span style="color:#e53e3e">*</span></label><input type="tel" id="demo-mobile" class="pm-input" required></div>
+              <div class="pm-form-group"><label>City</label><input type="text" id="demo-city" class="pm-input"></div>
+            </div>
+            <div class="pm-form-group"><label>Preferred Demo Date</label><input type="date" id="demo-date" class="pm-input"></div>
             <button type="submit" class="pm-submit">Book My Demo &rarr;</button>
           </form>
         </div>
@@ -284,14 +285,11 @@ document.addEventListener('DOMContentLoaded', function() {
             try {
               if (type === 'demo') {
                 result = await window.PulsePublic.submitDemo({
-                  fullName: form.querySelector('input[name="fullName"],input[placeholder*="Name"],input[type="text"]')?.value || '',
-                  mobile: form.querySelector('input[type="tel"]')?.value || '',
-                  email: form.querySelector('input[type="email"]')?.value || '',
-                  hospitalName: form.querySelectorAll('input[type="text"]')[1]?.value || '',
-                  city: form.querySelectorAll('input[type="text"]')[2]?.value || '',
-                  equipmentCategory: form.querySelector('select')?.value || '',
-                  preferredDate: form.querySelector('input[type="date"]')?.value || '',
-                  message: form.querySelector('textarea')?.value || ''
+                  fullName: form.querySelector('#demo-fullname')?.value || '',
+                  mobile: form.querySelector('#demo-mobile')?.value || '',
+                  email: form.querySelector('#demo-email')?.value || '',
+                  city: form.querySelector('#demo-city')?.value || '',
+                  preferredDate: form.querySelector('#demo-date')?.value || ''
                 });
               } else if (type === 'quote') {
                 result = await window.PulsePublic.submitQuote({
