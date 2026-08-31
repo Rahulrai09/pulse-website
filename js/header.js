@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <nav id="main-nav" style="position:relative;">
 
-      <a href="/index.html" class="nav-logo">
+      <a href="/" class="nav-logo">
 
         <img src="/image/pulse-logo.png" alt="Pulse">
 

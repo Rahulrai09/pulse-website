@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="pf-grid">
           <!-- Col 1 -->
           <div class="pf-col pf-brand-col">
-            <a href="/index.html" class="pf-logo">
+            <a href="/" class="pf-logo">
               <img src="/image/pulse-logo-PNG-W.png" alt="Pulse" style="height:44px; width:auto; object-fit:contain; filter:brightness(10);">
             </a>
             <div class="pf-socials">
