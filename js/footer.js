@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // First check window.supabase
-            loadScript('js/pulse-forms.js').then(() => {
+            loadScript('/js/pulse-forms.js').then(() => {
               resolve(true);
             }).catch(err => {
               console.error('[footer] Failed to load form dependencies:', err);
