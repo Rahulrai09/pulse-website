@@ -341,6 +341,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 </div>
 
+                <div class="category-row" data-cat="IVD" data-href="/ivd-diagnostics.html">
+                  <a href="/ivd-diagnostics.html" class="category-name">IVD</a>
+                  <span class="chevron">&#8964;</span>
+                </div>
+
                 <div class="category-row" data-cat="Aesthetics" data-href="/aesthetics.html">
 
                   <a href="/aesthetics.html" class="category-name">Aesthetics</a>
@@ -568,6 +573,8 @@ document.addEventListener('DOMContentLoaded', function() {
              <a href="/rehabilitation.html">Rehabilitation</a>
 
             <a href="/surgical.html">Surgical</a>
+
+            <a href="/ivd-diagnostics.html">IVD</a>
 
             <a href="/hospital-setup.html">Hospital Setup</a>
 
