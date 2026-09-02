@@ -984,7 +984,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
                   },
 
-          "Aesthetics": {
+                  "IVD": {
+          label: "IVD",
+          products: [
+            { name: "Pulse ZT Smart SAA Biochemistry Analyzer", image: "/image/IVD/zt-smart-saa-biochemistry.png", href: "/ivd-diagnostics/zt-smart-saa-biochemistry/" },
+            { name: "Pulse ZT370 3-Part-Diff Hematology Analyzer", image: "/image/IVD/zt370-hematology-analyzer.png", href: "/ivd-diagnostics/zt370-hematology-analyzer/" },
+            { name: "Pulse ZT360 Auto Hematology Analyzer", image: "/image/IVD/zt360-hematology-analyzer.png", href: "/ivd-diagnostics/zt360-hematology-analyzer/" }
+          ]
+        },
+                "IVD": {
+          label: "IVD",
+          products: [
+            { name: "Pulse ZT Smart SAA Biochemistry Analyzer", image: "/image/IVD/zt-smart-saa-biochemistry.png", href: "/ivd-diagnostics/zt-smart-saa-biochemistry/" },
+            { name: "Pulse ZT370 3-Part-Diff Hematology Analyzer", image: "/image/IVD/zt370-hematology-analyzer.png", href: "/ivd-diagnostics/zt370-hematology-analyzer/" },
+            { name: "Pulse ZT360 Auto Hematology Analyzer", image: "/image/IVD/zt360-hematology-analyzer.png", href: "/ivd-diagnostics/zt360-hematology-analyzer/" }
+          ]
+        },
+        "Aesthetics": {
 
                     "label": "AESTHETICS",
 

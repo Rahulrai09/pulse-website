@@ -450,7 +450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- HERO -->
   <section class="cat-hero">
-    <!-- TODO: add <img class="cat-hero-img" src="image/Portfolio/ivd-diagnostics.jpg" alt="IVD"> once the banner image is supplied -->
+    <img class="cat-hero-img" src="image/Portfolio/ivd-diagnostics.png" alt="IVD">
     <div class="cat-hero-content">
       <div class="cat-breadcrumb">
         <a href="index.html">Home</a>
@@ -463,8 +463,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>In-vitro diagnostics equipment and devices for Indian hospitals and laboratories — engineered for accuracy, reliability, and consistent clinical outcomes.</p>
       <div class="cat-hero-stats">
         <div class="cat-stat">
-          <strong>New</strong>
-          <span>Category</span>
+          <strong>3</strong>
+          <span>Products</span>
         </div>
         <div class="cat-stat">
           <strong>ISO</strong>
@@ -487,18 +487,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="filter-group">
         <h4>Product Type</h4>
-        <!-- Filter options will be added once products are listed -->
+        <label class="filter-option"><input type="checkbox" value="Pulse ZT Smart SAA Biochemistry"> Biochemistry Analyzer</label>
+        <label class="filter-option"><input type="checkbox" value="Pulse ZT370"> ZT370 Hematology Analyzer</label>
+        <label class="filter-option"><input type="checkbox" value="Pulse ZT360"> ZT360 Hematology Analyzer</label>
       </div>
 
       <div class="filter-group">
         <h4>Application</h4>
-        <!-- Filter options will be added once products are listed -->
+        <label class="filter-option"><input type="checkbox" value="biochemistry"> Biochemistry Testing <span class="filter-count">1</span></label>
+        <label class="filter-option"><input type="checkbox" value="hematology"> Hematology Testing <span class="filter-count">2</span></label>
       </div>
 
       <div class="filter-group">
         <h4>Certification</h4>
         <label class="filter-option">
           <input type="checkbox" value="iso"> ISO 13485
+          <span class="filter-count">All</span>
         </label>
       </div>
 
@@ -509,8 +513,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="product-area">
       <div class="product-toolbar">
         <div class="product-count">
-          Showing <strong id="showCount">0</strong> of 
-          <strong id="totalCount">0</strong> products
+          Showing <strong id="showCount">3</strong> of 
+          <strong id="totalCount">3</strong> products
         </div>
         <div class="product-search">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -540,10 +544,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/footer.js"></script>
   <script>
     // ── PRODUCT DATA ──
-    // No products yet — this category page is live but empty.
-    // Add entries here in the same shape as other category pages
-    // once products are supplied.
-    const PRODUCTS = [];
+    const PRODUCTS = [
+      {
+        name: "Pulse ZT Smart SAA Biochemistry Analyzer",
+        slug: "/ivd-diagnostics/zt-smart-saa-biochemistry/",
+        category: "BIOCHEMISTRY ANALYZERS",
+        type: "Pulse ZT Smart SAA Biochemistry",
+        app: "biochemistry",
+        cert: ["iso"],
+        tag: "BIOCHEMISTRY",
+        tagColor: "orange",
+        desc: "Compact clinical chemistry analyzer with 7\" resistive touchscreen, 25,000-test storage with QC results, and 10 built-in incubator positions — compatible with all biochemistry reagents.",
+        specs: ["7\" Touchscreen", "25,000 Test Storage", "10 Incubators Built-in"],
+        img: "image/IVD/zt-smart-saa-biochemistry.png"
+      },
+      {
+        name: "Pulse ZT370 3-Part-Diff Hematology Analyzer",
+        slug: "/ivd-diagnostics/zt370-hematology-analyzer/",
+        category: "HEMATOLOGY ANALYZERS",
+        type: "Pulse ZT370",
+        app: "hematology",
+        cert: ["iso"],
+        tag: "HEMATOLOGY",
+        tagColor: "orange",
+        desc: "3-part-diff hematology analyzer with double-chamber design for 72 tests/hour throughput, compact footprint, and a simple 2-reagent (diluent & lyse) system.",
+        specs: ["72 Tests/Hour", "2-Reagent System", "RFID Optional"],
+        img: "image/IVD/zt370-hematology-analyzer.png"
+      },
+      {
+        name: "Pulse ZT360 Auto Hematology Analyzer",
+        slug: "/ivd-diagnostics/zt360-hematology-analyzer/",
+        category: "HEMATOLOGY ANALYZERS",
+        type: "Pulse ZT360",
+        app: "hematology",
+        cert: ["iso"],
+        tag: "HEMATOLOGY",
+        tagColor: "orange",
+        desc: "Fully automatic 3-part hematology analyzer with cyanide-free HGB measurement, a 10.4\" high-definition touchscreen, and storage for over 100,000 patient records.",
+        specs: ["60 Samples/Hour", "10.4\" Touchscreen", "100,000+ Record Storage"],
+        img: "image/IVD/zt360-hematology-analyzer.png"
+      }
+    ];
     const PER_PAGE = 12;
     let currentPage = 1;
     let filtered = [...PRODUCTS];
@@ -557,8 +598,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.getElementById('totalCount').textContent = filtered.length;
       if (page.length === 0) {
         grid.innerHTML = `<div class="no-results">
-          <h3>New products coming soon</h3>
-          <p>We're adding IVD products to this category shortly. Check back soon or contact us for more information.</p>
+          <p>No products found</p>
+          <p>Try adjusting your filters or search term.</p>
         </div>`;
         return;
       }
@@ -566,6 +607,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-card" data-type="${p.type}" onclick="window.location.href='${p.slug}'" style="cursor:pointer" 
              data-app="${p.app}" data-cert="${(p.cert||[]).join(',')}">
           <div class="product-card-img">
+            <span class="product-tag ${p.tagColor||''}">${p.tag||''}</span>
             <img src="${p.img}" alt="${p.name}" loading="lazy"
                  onerror="this.src='image/pulse-logo.png'">          </div>
           <div class="product-card-body">
