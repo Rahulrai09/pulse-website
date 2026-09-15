@@ -2733,3 +2733,49 @@ if (mobSearchInput) {
   setupSuggestions(document.getElementById('mob-search-input'));
 });
 
+
+/* ── Smooth page-transition fade (outgoing navigation only) ── */
+(function () {
+  try {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return; // respect accessibility setting — no animation at all
+    }
+
+    var FADE_MS = 220;
+    var style = document.createElement('style');
+    style.textContent =
+      'body.pulse-page-fading { opacity: 0 !important; transition: opacity ' + FADE_MS + 'ms ease !important; }' +
+      'body { transition: opacity ' + FADE_MS + 'ms ease; }';
+    document.head.appendChild(style);
+
+    document.addEventListener('click', function (e) {
+      try {
+        if (e.defaultPrevented || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+
+        var a = e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a) return;
+
+        var href = a.getAttribute('href');
+        if (!href || href === '#' || href.indexOf('#') === 0) return;
+        if (a.hasAttribute('onclick')) return;
+        if (a.target && a.target === '_blank') return;
+        if (a.hasAttribute('download')) return;
+        if (href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('wa.me') !== -1) return;
+
+        var url;
+        try { url = new URL(a.href, window.location.href); } catch (err) { return; }
+
+        if (url.origin !== window.location.origin) return;
+        if (url.pathname === window.location.pathname && url.hash) return;
+
+        e.preventDefault();
+        document.body.classList.add('pulse-page-fading');
+        setTimeout(function () { window.location.href = a.href; }, FADE_MS);
+      } catch (innerErr) {
+        return; // fail safe — let the click behave normally
+      }
+    }, false);
+  } catch (outerErr) {
+    // fail safe — no animation, site works exactly as before
+  }
+})();
