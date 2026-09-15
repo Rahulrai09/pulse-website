@@ -490,12 +490,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
   <script>
-    function showArticleTab(tab) {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    function showArticleTab(tab, skipSave) {
       document.getElementById('articles-section').style.display = tab === 'articles' ? 'block' : 'none';
       document.getElementById('blogs-section').style.display = tab === 'blogs' ? 'block' : 'none';
       document.getElementById('tab-label-articles').classList.toggle('active', tab === 'articles');
       document.getElementById('tab-label-blogs').classList.toggle('active', tab === 'blogs');
+      if (!skipSave) {
+        try { sessionStorage.setItem('pulse-articles-blogs-tab', tab); } catch (e) {}
+      }
     }
+
+    (function () {
+      var savedTab = 'articles';
+      try {
+        var stored = sessionStorage.getItem('pulse-articles-blogs-tab');
+        if (stored === 'articles' || stored === 'blogs') savedTab = stored;
+      } catch (e) {}
+      showArticleTab(savedTab, true);
+      window.scrollTo(0, 0);
+    })();
   </script>
 </body>
 </html>
