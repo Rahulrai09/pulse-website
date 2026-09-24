@@ -1,0 +1,41 @@
+# Pulse Medical
+
+> Pulse is a horizontal MedTech OEM brand headquartered in HSR Layout, Bengaluru, India. Pulse engineers, manufactures and services medical equipment across Critical Care, Renal Care, Cardiac Care, Surgical, Aesthetics, Rehabilitation and Hospital Setup, bringing quality, service, speed and value into one accountable partnership.
+
+Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
+
+## Company
+- [About Pulse](https://www.pulseio.in/about.html): Who Pulse is and how it works
+- [Why Pulse](https://www.pulseio.in/why-pulse.html): Single-vendor OEM model
+- [Quality](https://www.pulseio.in/quality.html): Certifications and quality standards
+- [Service and Support](https://www.pulseio.in/service-support.html): After-sales service
+- [Innovation](https://www.pulseio.in/innovation.html)
+
+## Product categories
+- [Critical Care](https://www.pulseio.in/critical-care.html): ICU ventilators, patient monitors, ECG machines, infusion and syringe pumps, anesthesia workstation
+- [Renal Care](https://www.pulseio.in/renal-care.html): Dialysis equipment
+- [Cardiac Care](https://www.pulseio.in/cardiac-care.html): Coronary stents, inflation kits, introducer kits, AED
+- [Surgical](https://www.pulseio.in/surgical.html)
+- [Aesthetics](https://www.pulseio.in/aesthetics.html): Laser and aesthetic devices
+- [Rehabilitation](https://www.pulseio.in/rehabilitation.html): Wheelchairs and mobility aids
+- [Hospital Setup](https://www.pulseio.in/hospital-setup.html): ICU beds, OT tables and lights, trolleys, medical gas pipeline, modular OT
+- [IVD Diagnostics](https://www.pulseio.in/ivd-diagnostics.html)
+
+## Guides and articles
+- [Medical equipment manufacturers in India: OEM vs branded](https://www.pulseio.in/blog-oem-vs-branded.html)
+- [Top medical equipment companies in India](https://www.pulseio.in/blog-top-medical-equipment-companies-india.html)
+- [Medical equipment distributors in India](https://www.pulseio.in/blog-medical-equipment-distributors-india.html)
+- [Medical equipment manufacturers in Karnataka: directory](https://www.pulseio.in/blog-medical-equipment-manufacturers-karnataka-directory.html)
+- [Made-in-India medical devices and quality](https://www.pulseio.in/blog-made-in-india-medical-devices-quality.html)
+- [Critical care equipment manufacturer in India](https://www.pulseio.in/blog-critical-care-equipment-manufacturer-india.html)
+- [Renal care and dialysis equipment manufacturer in India](https://www.pulseio.in/blog-renal-care-dialysis-equipment-manufacturer-india.html)
+- [Cardiac care device manufacturer in India](https://www.pulseio.in/blog-cardiac-care-device-manufacturer-india.html)
+- [Aesthetic machine manufacturer in India](https://www.pulseio.in/blog-aesthetic-machine-manufacturer-india.html)
+- [Rehabilitation equipment manufacturer in India](https://www.pulseio.in/blog-rehabilitation-equipment-manufacturer-india.html)
+- [All articles](https://www.pulseio.in/articles-blogs.html)
+
+## Contact
+- Email: Info@pulseio.in
+- Phone: +91-90711-01108
+- LinkedIn: https://www.linkedin.com/company/pulse-medtech
+- Sitemap: https://www.pulseio.in/sitemap.xml
