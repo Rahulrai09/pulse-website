@@ -1611,14 +1611,14 @@ var searchMap = [
 
   { keywords: ['introducer kits venous','venous access kit','acusafe introducer'], url: '/cardiac-care/acusafe-introducer-kits/' },
 
-  { keywords: ['aed','swm11089','automatic external defibrillator','aed device'], url: '/cardiac-aed-swm11089.html' },
+  { keywords: ['aed','swm11089','automatic external defibrillator','aed device'], url: '/cardiac-care.html' },
 
 
-  { keywords: ['optima pressure monitoring','pressure monitoring lines'], url: '/optima-pressure-monitoring-lines.html' },
+  { keywords: ['optima pressure monitoring','pressure monitoring lines'], url: '/cardiac-care.html' },
 
 
 
-  { keywords: ['high pressure injection','1200psi','injection lines'], url: '/high-pressure-injection-lines-1200psi.html' },
+  { keywords: ['high pressure injection','1200psi','injection lines'], url: '/cardiac-care.html' },
 
 
 
@@ -1673,11 +1673,11 @@ var searchMap = [
 
 
 
-  { keywords: ['rollator walker','rollator','pulse rollator'], url: '/pulse-rollator-walker.html' },
+  { keywords: ['rollator walker','rollator','pulse rollator'], url: '/rehabilitation.html' },
 
 
 
-  { keywords: ['folding wheelchair with cushion'], url: '/folding-wheelchair-with-cushion.html' },
+  { keywords: ['folding wheelchair with cushion'], url: '/rehabilitation.html' },
 
 
 
@@ -1733,9 +1733,9 @@ var searchMap = [
 
   { keywords: ['emergency trolley','hydraulic emergency trolley'], url: '/hospital-setup/emergency-trolley-hydraulic/' },
 
-  { keywords: ['rapid neo ert','ert trolley','emergency response trolley'], url: '/rapid-neo-ert-emergency-response-trolley.html' },
+  { keywords: ['rapid neo ert','ert trolley','emergency response trolley'], url: '/hospital-setup.html' },
 
-  { keywords: ['emergency cart'], url: '/emergency-cart.html' },
+  { keywords: ['emergency cart'], url: '/hospital-setup.html' },
 
   { keywords: ['baby warmer','infant warmer'], url: '/hospital-setup/baby-warmer/' },
 
@@ -1746,13 +1746,13 @@ var searchMap = [
 
 
 
-  { keywords: ['medicine cart'], url: '/medicine-cart.html' },
+  { keywords: ['medicine cart'], url: '/hospital-setup.html' },
 
   { keywords: ['hospital wheelchair'], url: '/hospital-setup/wheelchair/' },
 
   { keywords: ['circumease','circumcision kit','disposable circumcision','circumcision'], url: '/surgical-care/circumease-stapler/' },
 
-  { keywords: ['blood donation chair'], url: '/blood-donation-chair.html' },
+  { keywords: ['blood donation chair'], url: '/hospital-setup.html' },
 
 
 
@@ -1766,7 +1766,7 @@ var searchMap = [
 
 
 
-  { keywords: ['stretcher on trolley'], url: '/stretcher-on-trolley.html' },
+  { keywords: ['stretcher on trolley'], url: '/hospital-setup.html' },
 
 
 

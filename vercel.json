@@ -1,6 +1,91 @@
 {
     "redirects":  [
                       {
+      "source": "/cardiac-aed-swm11089.html",
+      "destination": "/cardiac-care.html",
+      "permanent": true
+    },
+    {
+      "source": "/high-pressure-injection-lines-1200psi.html",
+      "destination": "/cardiac-care.html",
+      "permanent": true
+    },
+    {
+      "source": "/optima-pressure-monitoring-lines.html",
+      "destination": "/cardiac-care.html",
+      "permanent": true
+    },
+    {
+      "source": "/folding-wheelchair-with-cushion.html",
+      "destination": "/rehabilitation.html",
+      "permanent": true
+    },
+    {
+      "source": "/pulse-rollator-walker.html",
+      "destination": "/rehabilitation.html",
+      "permanent": true
+    },
+    {
+      "source": "/blood-donation-chair.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/emergency-cart.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-admin-nursing.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-icu-beds.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-labour-delivery.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-ot-lights.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-ot-tables.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-patient-mobility.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/furniture-ss-trolleys.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/medicine-cart.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/rapid-neo-ert-emergency-response-trolley.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
+      "source": "/stretcher-on-trolley.html",
+      "destination": "/hospital-setup.html",
+      "permanent": true
+    },
+    {
                           "source":  "/news.html",
                           "destination":  "/articles-blogs.html",
                           "permanent":  true
@@ -287,7 +372,7 @@
                       },
                       {
                           "source":  "/furniture-blood-donation.html",
-                          "destination":  "/blood-donation-chair.html",
+                          "destination":  "/hospital-setup.html",
                           "permanent":  true
                       },
                       {
