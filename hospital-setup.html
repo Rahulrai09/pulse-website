@@ -437,7 +437,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .product-search { max-width: 100%; }
       .cat-hero-stats { flex-wrap: wrap; gap: 12px; }
     }
+
+    /* FAQ ACCORDION */
+    .faq-accordion { display: flex; flex-direction: column; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+    .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+    .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+    .faq-layout { display: grid; grid-template-columns: 360px 1fr; gap: 40px; align-items: start; }
+    @media (max-width: 900px) { .faq-layout { grid-template-columns: 1fr; } }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the Hospital Setup range include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ICU beds, OT tables, delivery tables, OT lights, stretchers and trolleys, wheelchairs, autoclaves, baby warmers, medical gas pipeline systems, and modular OT construction. Sixteen product types from one vendor for your whole floor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these products certified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All products are ISO 13485 certified, and many also carry CE marking or CDSCO registration. Use the Certification filter on this page to see exactly which products qualify."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide installation and after-sales support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, with PAN-India installation and service support, including modular OT commissioning, medical gas pipeline fitting, and nursing station fit-outs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I check before ordering an ICU bed or OT table?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The functional configuration (how many functions), the frame material, and the railing type. Each product page states these upfront so you can compare models correctly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this range suitable for both small clinics and large hospitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, it is built for both. Whether you are setting up a single-bed clinic room or a multi-department hospital wing, our team can walk you through a single BOM covering furniture, lighting, and gas systems together. Message us on WhatsApp at +91 90711 01108 for pricing."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -554,14 +614,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
     <section style="padding:48px 0; background:#fafafa; border-top:1px solid #eee;">
-    <div style="max-width:900px; margin:0 auto; padding:0 24px;">
-      <h2 style="font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:16px;">Furnishing a Hospital Floor, Not Just Selling a Bed</h2>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">Setting up a new ward or OT means dozens of separate purchase decisions: ICU beds, OT tables, lighting, trolleys, sterilizers, and gas pipeline systems. These usually come from a dozen different vendors, each with its own delivery timeline. Pulse's hospital setup range cuts that down. We offer sixteen product categories, from modular OTs and medical gas systems to ICU beds in manual and electric versions, and nursing station furniture, all through one procurement relationship.</p>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">Every ICU bed listed here states its functional configuration, frame material, and railing type up front. That is what actually separates a premium bed from a deluxe one, not marketing copy. If you are planning a multi-department fit-out, our team can walk you through a single BOM covering furniture, lighting, and gas systems together, instead of coordinating separate vendors for each.</p>
+    <div style="max-width:1100px; margin:0 auto; padding:0 24px;">
+      <div class="faq-layout">
+        <div>
+          <h2 style="font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:16px;">One Vendor for Every Room in the Hospital</h2>
+          <p style="color:#444; line-height:1.7;">Setting up a ward or OT usually means buying from a dozen different vendors: one for beds, one for lights, one for gas pipelines. Pulse supplies all of it from one place, so you deal with one team instead of a dozen delivery timelines.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px;">
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; 16 Product Categories</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">ICU beds, OT tables, OT lights, trolleys, autoclaves, gas pipelines, modular OT, and more.</div>
+          </div>
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; ISO / CE / CDSCO</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">ISO 13485 certified across the range, with CE and CDSCO coverage on many products.</div>
+          </div>
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; PAN-India Service</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">Installation and after-sales support, including modular OT and gas pipeline commissioning.</div>
+          </div>
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; Exact Specs Upfront</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">Functions, frame material, and railing type are stated on every product page, no guesswork.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   
+
+  <section style="padding:60px 0; background:#fff;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 24px;">
+      <div class="faq-layout">
+        <div>
+          <p style="color:#E87722; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">GOT QUESTIONS?</p>
+          <h2 style="font-size:1.6rem; font-weight:800; color:#0f1f4b; margin:0;">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+              What does the Hospital Setup range include?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a"><p>ICU beds, OT tables, delivery tables, OT lights, stretchers and trolleys, wheelchairs, autoclaves, baby warmers, medical gas pipeline systems, and modular OT construction. Sixteen product types from one vendor for your whole floor.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+              Are these products certified?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a"><p>Yes. All products are ISO 13485 certified, and many also carry CE marking or CDSCO registration. Use the Certification filter on this page to see exactly which products qualify.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+              Do you provide installation and after-sales support?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a"><p>Yes, with PAN-India installation and service support, including modular OT commissioning, medical gas pipeline fitting, and nursing station fit-outs.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+              What should I check before ordering an ICU bed or OT table?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a"><p>The functional configuration (how many functions), the frame material, and the railing type. Each product page states these upfront so you can compare models correctly.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+              Is this range suitable for both small clinics and large hospitals?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a"><p>Yes, it is built for both. Whether you are setting up a single-bed clinic room or a multi-department hospital wing, our team can walk you through a single BOM covering furniture, lighting, and gas systems together. Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a> for pricing.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div id="global-footer"></div>
 
