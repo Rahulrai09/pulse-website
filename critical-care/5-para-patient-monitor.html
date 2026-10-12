@@ -50,6 +50,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pg-hero-section { padding-top: 16px !important; }
     .pg-hero-grid { gap: 24px !important; padding-bottom: 24px !important; }
   }
+
+  /* FAQ ACCORDION */
+  .faq-accordion { display: flex; flex-direction: column; }
+  .faq-item { border-bottom: 1px solid #e5e7eb; }
+  .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+  .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+  .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+  .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
 </style>
   <script type="application/ld+json">
   {
@@ -105,7 +115,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     ]
   }
-  </script></head>
+  </script>  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What parameters does the Pulse 5-Para Patient Monitor track?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ECG, SpO2, NIBP, pulse/heart rate, respiration, and two-channel temperature, shown on a 12.1-inch color TFT LCD display."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is it typically used?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ICU, CCU, operation theatre, recovery, and emergency departments, wherever a ward needs reliable vitals without extra complexity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it resist interference from other equipment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. It has strong anti-interference protection against defibrillators and HF surgical knives."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can it detect pacemaker activity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, along with real-time S-T segment analysis and a freeze waveform function for instant review."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get pricing or place an order?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Message Pulse on WhatsApp at +91 90711 01108, or use the Request Brochure button on this page."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
 <body data-product-page="true">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
@@ -244,6 +302,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 style="color:#0f1f4b; margin-bottom:16px;">Five Parameters, One Screen, No Guesswork</h2>
       <p style="color:#444; line-height:1.7;">A general ward or step-down unit does not need every bell and whistle a cath lab monitor has. What it needs is ECG, SpO2, NIBP, temperature, and respiration rate, read accurately and displayed clearly, without a nurse having to dig through menus mid-shift. That is the entire design brief behind this monitor, and it shows in how quickly new staff pick it up.</p>
     <p style="color:#444; line-height:1.7;">We also built it to hold up through a busy night shift: alarms that are loud enough to hear over ward noise but not so sensitive that they go off every time a patient shifts position, and a screen that stays readable from across the room. For hospitals running a central nurse-call setup, it integrates cleanly, so a reading on this monitor does not sit isolated from the rest of the ward's monitoring picture.
+    </div>
+  </section>
+
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>What parameters does the Pulse 5-Para Patient Monitor track?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>ECG, SpO2, NIBP, pulse/heart rate, respiration, and two-channel temperature, shown on a 12.1-inch color TFT LCD display.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Where is it typically used?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>ICU, CCU, operation theatre, recovery, and emergency departments, wherever a ward needs reliable vitals without extra complexity.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Does it resist interference from other equipment?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. It has strong anti-interference protection against defibrillators and HF surgical knives.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Can it detect pacemaker activity?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes, along with real-time S-T segment analysis and a freeze waveform function for instant review.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>How do I get pricing or place an order?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Message Pulse on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a>, or use the Request Brochure button on this page.</p></div>
+        </div>
+      </div>
     </div>
   </section>
 
