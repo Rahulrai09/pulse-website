@@ -1647,7 +1647,7 @@ var searchMap = [
 
   { keywords: ['hydrafrac','hydra frac'], url: '/aesthetics/hydrafrac/' },
 
-  { keywords: ['laser machine range','aesthetics laser'], url: '/aesthetics-laser-machine-range.html' },
+  { keywords: ['laser machine range','aesthetics laser'], url: '/aesthetics.html' },
 
   { keywords: ['nodd'], url: '/aesthetics/nodd/' },
 

@@ -21,6 +21,11 @@
       "permanent": true
     },
     {
+      "source": "/aesthetics-laser-machine-range.html",
+      "destination": "/aesthetics.html",
+      "permanent": true
+    },
+    {
       "source": "/pulse-rollator-walker.html",
       "destination": "/rehabilitation.html",
       "permanent": true
