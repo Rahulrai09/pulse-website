@@ -494,7 +494,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .product-search { max-width: 100%; }
       .cat-hero-stats { flex-wrap: wrap; gap: 12px; }
     }
+
+    /* FAQ ACCORDION */
+    .faq-accordion { display: flex; flex-direction: column; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+    .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+    .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+    .faq-layout { display: grid; grid-template-columns: 360px 1fr; gap: 40px; align-items: start; }
+    @media (max-width: 900px) {
+      .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the Pulse renal care range include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The PDM-6000 haemodialysis system and the consumables used with it: dialysers, PD-Linepro blood tubing sets, PD-Canova AV fistula needles, PD-Cath haemodialysis catheters and PD-TP transducer protectors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why source the machine and consumables from one supplier?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A consumables stockout stops treatment even when the machine is working. Sourcing from one supplier keeps items compatible, and Pulse stocks consumables in India for faster replenishment than a typical import cycle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these products certified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All items are CE marked, and most also carry CDSCO clearance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the PDM-6000 monitor during treatment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ultrafiltration to within plus or minus 1%, Kt/V for therapy adequacy, air and blood leaks, and multiple pressure points, with 30 minutes of battery backup after a power cut."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this range suitable for both small clinics and large hospitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. These products are used in both small dialysis clinics and large hospital nephrology departments across India. Message us on WhatsApp at +91 90711 01108 for pricing, or use the Get Quote button on any product on this page."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -606,14 +668,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
     <section style="padding:48px 0; background:#fafafa; border-top:1px solid #eee;">
-    <div style="max-width:900px; margin:0 auto; padding:0 24px;">
-      <h2 style="font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:16px;">From the Dialysis Machine to the Last Fistula Needle</h2>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">Nephrology departments don't just need a haemodialysis machine, they need the entire chain behind it: tubing sets, fistula needles, dialysers and concentrates that all have to be compatible and in stock at the same time. Pulse's renal care range covers both ends, including the PDM-6000 haemodialysis system with plus-or-minus 1% UF precision and Kt/V monitoring, and the full set of consumables, such as PD-Canova fistula needles and PD-Linepro blood circuit tubing, that keep a dialysis unit running day to day.</p>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">This matters more for renal care than almost any other category, because a stockout on consumables stops treatment even if the machine itself is working fine. All items are CE marked and most carry CDSCO clearance, and we stock consumables for faster replenishment than a typical import cycle allows.</p>
+    <div style="max-width:1100px; margin:0 auto; padding:0 24px;">
+      <div class="faq-layout">
+        <div>
+          <h2 style="font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:16px;">From the Dialysis Machine to the Last Fistula Needle</h2>
+          <p style="color:#444; line-height:1.7;">A dialysis unit needs more than a machine. Tubing sets, fistula needles and dialysers all have to be compatible and in stock at the same time, because a consumables stockout stops treatment even when the machine is working.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px;">
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; Machine + Consumables</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">The PDM-6000 haemodialysis system plus dialysers, blood tubing, fistula needles, catheters and transducer protectors.</div>
+          </div>
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; 1% UF Precision</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">The PDM-6000 controls ultrafiltration to within plus or minus 1%, with integrated Kt/V monitoring.</div>
+          </div>
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; Stocked in India</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">Consumables are stocked locally for faster replenishment than a typical import cycle.</div>
+          </div>
+          <div style="background:#fff; border:1px solid #e8edf5; border-radius:10px; padding:18px;">
+            <div style="color:#1B2F6E; font-weight:700; font-size:14px; margin-bottom:6px;">&#10003; CE Marked</div>
+            <div style="color:#555; font-size:13.5px; line-height:1.5;">All items are CE marked, and most also carry CDSCO clearance.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   
+
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What does the Pulse renal care range include?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>The PDM-6000 haemodialysis system and the consumables used with it: dialysers, PD-Linepro blood tubing sets, PD-Canova AV fistula needles, PD-Cath haemodialysis catheters and PD-TP transducer protectors.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Why source the machine and consumables from one supplier?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>A consumables stockout stops treatment even when the machine is working. Sourcing from one supplier keeps items compatible, and Pulse stocks consumables in India for faster replenishment than a typical import cycle.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Are these products certified?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>All items are CE marked, and most also carry CDSCO clearance.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What does the PDM-6000 monitor during treatment?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Ultrafiltration to within plus or minus 1%, Kt/V for therapy adequacy, air and blood leaks, and multiple pressure points, with 30 minutes of battery backup after a power cut.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Is this range suitable for both small clinics and large hospitals?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. These products are used in both small dialysis clinics and large hospital nephrology departments across India. Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a> for pricing, or use the Get Quote button on any product on this page.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div id="global-footer"></div>
 

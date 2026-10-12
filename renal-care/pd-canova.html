@@ -50,6 +50,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pg-hero-section { padding-top: 16px !important; }
     .pg-hero-grid { gap: 24px !important; padding-bottom: 24px !important; }
   }
+
+  /* FAQ ACCORDION */
+  .faq-accordion { display: flex; flex-direction: column; }
+  .faq-item { border-bottom: 1px solid #e5e7eb; }
+  .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+  .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+  .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+  .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+  @media (max-width: 900px) {
+    .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+  }
 </style>
   <script type="application/ld+json">
   {
@@ -102,6 +115,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "position": 3,
         "name": "Pulse PD-Canova AV Fistula Needle",
         "item": "https://www.pulseio.in/renal-care/pd-canova/"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Pulse PD-Canova?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An AV fistula needle set for vascular access during haemodialysis, supplied as an arterial and venous twin set."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which gauges are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "15G, 16G and 17G, with or without a back-eye needle. Colour-coded wings make each gauge easy to identify."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is it sterilised and packed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is sterilised by gamma irradiation or ETO, and packed 50 sets to an inner pack and 500 sets to an outer pack."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this suitable for small clinics and large hospitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. This is used in both small dialysis clinics and large hospital nephrology departments across India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get pricing or the brochure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Message us on WhatsApp at +91 90711 01108, or download the brochure on this page for full specifications."
+        }
       }
     ]
   }
@@ -240,6 +301,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       ← Back to Renal Care
     </a>
   </div>
+
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What is the Pulse PD-Canova?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>An AV fistula needle set for vascular access during haemodialysis, supplied as an arterial and venous twin set.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Which gauges are available?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>15G, 16G and 17G, with or without a back-eye needle. Colour-coded wings make each gauge easy to identify.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            How is it sterilised and packed?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>It is sterilised by gamma irradiation or ETO, and packed 50 sets to an inner pack and 500 sets to an outer pack.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Is this suitable for small clinics and large hospitals?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. This is used in both small dialysis clinics and large hospital nephrology departments across India.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            How do I get pricing or the brochure?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a>, or download the brochure on this page for full specifications.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div id="global-footer"></div>
   <script src="/js/header.js"></script>
