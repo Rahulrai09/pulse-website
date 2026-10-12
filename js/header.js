@@ -378,15 +378,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <p class="col-label" id="mega-col-products-label">CRITICAL CARE</p>
 
-                <a href="/product-detail.html?id=sh320" class="sub-product-link dropdown-product-link" data-image="/image/PULSE Ventilator.png" data-label="Pulse SH320 ICU Ventilator">&#8594; Pulse SH320 ICU Ventilator</a>
+                <a href="/critical-care/icu-ventilator/" class="sub-product-link dropdown-product-link" data-image="/image/PULSE Ventilator.png" data-label="ICU Ventilator">&#8594; ICU Ventilator</a>
 
-                <a href="/product-detail.html?id=patient-monitor" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Patient Monitor Pro">&#8594; Patient Monitor Pro</a>
+                <a href="/critical-care/anesthesia-workstation/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/anesthesia-workstation-transparent.png" data-label="Anesthesia Workstation">&#8594; Anesthesia Workstation</a>
 
-                <a href="/product-detail.html?id=infusion-pump" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Infusion Pump Series">&#8594; Infusion Pump Series</a>
+                <a href="/critical-care/3-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/ecg-machine-3-channel-transparent.png" data-label="3-Channel ECG Machine">&#8594; 3-Channel ECG Machine</a>
 
-                <a href="/product-detail.html?id=anaesthesia" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Anaesthesia Workstation">&#8594; Anaesthesia Workstation</a>
+                <a href="/critical-care/6-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/6-channel-ecg-machine-transparent.png" data-label="6-Channel ECG Machine">&#8594; 6-Channel ECG Machine</a>
 
-                <a href="/product-detail.html?id=syringe-pump" class="sub-product-link dropdown-product-link" data-image="/image/Portfolio/critical-care.jpg" data-label="Syringe Pump">&#8594; Syringe Pump</a>
+                <a href="/critical-care/12-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/12-channel-ecg-machine-transparent.png" data-label="12-Channel ECG Machine">&#8594; 12-Channel ECG Machine</a>
+
+                <a href="/critical-care/5-para-patient-monitor/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/patient-monitor-transparent.png" data-label="5-Para Patient Monitor">&#8594; 5-Para Patient Monitor</a>
+
+                <a href="/critical-care/7-para-patient-monitor/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/7-para-patient-monitor-transparent.png" data-label="7-Para Patient Monitor">&#8594; 7-Para Patient Monitor</a>
+
+                <a href="/critical-care/infusion-pump/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/infusion-pump-transparent.png" data-label="Infusion Pump">&#8594; Infusion Pump</a>
+
+                <a href="/critical-care/syringe-pump/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/syringe-pump-transparent.png" data-label="Syringe Pump">&#8594; Syringe Pump</a>
 
                 <a href="/critical-care.html" class="dropdown-more-btn">More &rarr;</a>
 
