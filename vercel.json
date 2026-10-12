@@ -207,8 +207,13 @@
                       },
                       {
                           "source":  "/why-pulse",
-                          "destination":  "/why-pulse.html",
+                          "destination":  "/index.html#why-pulse",
                           "permanent":  false
+                      },
+                      {
+                          "source":  "/why-pulse.html",
+                          "destination":  "/index.html#why-pulse",
+                          "permanent":  true
                       },
                       {
                           "source":  "/how-it-works",
