@@ -436,7 +436,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .product-search { max-width: 100%; }
       .cat-hero-stats { flex-wrap: wrap; gap: 12px; }
     }
+
+    /* FAQ ACCORDION */
+    .faq-accordion { display: flex; flex-direction: column; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+    .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+    .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+    @media (max-width: 900px) {
+      .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does Pulse offer in its cardiac care range?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse supplies cath lab consumables for interventional cardiology, including drug-eluting stents (sirolimus and everolimus), PTCA balloon accessories, guidewires, diagnostic catheters, introducer sheaths, and manifolds. There are 65+ products in this range."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these products certified and cleared for use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every stent and catheter carries CDSCO clearance and CE marking, and the range is ISO 13485 certified."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do Tier-2 hospitals get the same delivery speed as metro hospitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse tracks lead times by city, not just by product. A Tier-2 hospital does not wait as long as a metro hospital for the same part."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I check before ordering guidewires, catheters, or stents?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check lumen size, pressure ratings, and stylet type. These are the specs a procurement team needs to match the right product to the procedure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get pricing or place an order?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Message Pulse on WhatsApp at +91 90711 01108, or use the Get Quote button on any product on this page."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -548,15 +609,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-    <section style="padding:48px 0; background:#fafafa; border-top:1px solid #eee;">
-    <div style="max-width:900px; margin:0 auto; padding:0 24px;">
-      <h2 style="font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:16px;">What a Cath Lab Actually Runs Through in a Week</h2>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">A busy cath lab goes through supplies fast: guidewires, sheaths, inflation kits, and manifolds. Running out mid-procedure is not an option. Pulse supplies the full chain for interventional cardiology. This includes drug-eluting stents in sirolimus and everolimus types, balloon accessories, diagnostic catheters, and the inflation and manifold hardware that keeps a procedure moving.</p>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">Every stent and catheter here carries CDSCO clearance and CE marking. Our logistics team tracks lead times by city, not just by product. A Tier-2 hospital does not wait as long as a metro hospital for the same part. If you are stocking a new cath lab, or standardising vendors across departments, check the specs below. Lumen size, pressure ratings, and stylet type are the numbers your procurement team will actually need.</p>
+    <section style="padding:64px 0; background:#fafafa; border-top:1px solid #eee;">
+    <div class="faq-layout" style="max-width:1100px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:360px 1fr; gap:48px; align-items:start;">
+      <div>
+        <h2 style="font-size:1.6rem; font-weight:800; color:#0a1e40; line-height:1.2; margin-bottom:14px;">Built for the Pace of a Cath Lab</h2>
+        <p style="color:#555; line-height:1.7;">A busy cath lab goes through guidewires, sheaths, inflation kits, and manifolds fast. Running out mid-procedure is not an option, so Pulse keeps the full chain for interventional cardiology in stock and ready to move.</p>
+      </div>
+      <div style="display:grid; gap:18px;">
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Drug-eluting stents in sirolimus and everolimus types, PTCA balloon accessories, diagnostic catheters, and the inflation and manifold hardware that keeps a procedure moving.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Every stent and catheter carries CDSCO clearance and CE marking, with ISO 13485 certification across the range.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Lead times tracked by city, not just by product &mdash; a Tier-2 hospital does not wait as long as a metro hospital for the same part.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Lumen size, pressure ratings, and stylet type listed on every product page &mdash; the numbers procurement teams actually need.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   
+
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>What does Pulse offer in its cardiac care range?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Pulse supplies cath lab consumables for interventional cardiology &mdash; drug-eluting stents (sirolimus and everolimus), PTCA balloon accessories, guidewires, diagnostic catheters, introducer sheaths, and manifolds. There are 65+ products in this range.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Are these products certified and cleared for use?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Every stent and catheter carries CDSCO clearance and CE marking, and the range is ISO 13485 certified.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Do Tier-2 hospitals get the same delivery speed as metro hospitals?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Pulse tracks lead times by city, not just by product. A Tier-2 hospital does not wait as long as a metro hospital for the same part.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>What should I check before ordering guidewires, catheters, or stents?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Check lumen size, pressure ratings, and stylet type &mdash; these are the specs your procurement team needs to match the right product to the procedure.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>How do I get pricing or place an order?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Message Pulse on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a>, or use the Get Quote button on any product on this page.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div id="global-footer"></div>
 
