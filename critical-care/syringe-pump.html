@@ -60,6 +60,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
   .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
   .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+  @media (max-width: 900px) {
+    .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+  }
 </style>
   <script type="application/ld+json">
   {

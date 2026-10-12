@@ -448,7 +448,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
     .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
     .faq-layout { display: grid; grid-template-columns: 360px 1fr; gap: 40px; align-items: start; }
-    @media (max-width: 900px) { .faq-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) {
+      .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -644,49 +646,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   
 
-  <section style="padding:60px 0; background:#fff;">
-    <div style="max-width:1100px; margin:0 auto; padding:0 24px;">
-      <div class="faq-layout">
-        <div>
-          <p style="color:#E87722; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">GOT QUESTIONS?</p>
-          <h2 style="font-size:1.6rem; font-weight:800; color:#0f1f4b; margin:0;">Frequently Asked Questions</h2>
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What does the Hospital Setup range include?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>ICU beds, OT tables, delivery tables, OT lights, stretchers and trolleys, wheelchairs, autoclaves, baby warmers, medical gas pipeline systems, and modular OT construction. Sixteen product types from one vendor for your whole floor.</p></div>
         </div>
-        <div class="faq-accordion">
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              What does the Hospital Setup range include?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>ICU beds, OT tables, delivery tables, OT lights, stretchers and trolleys, wheelchairs, autoclaves, baby warmers, medical gas pipeline systems, and modular OT construction. Sixteen product types from one vendor for your whole floor.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              Are these products certified?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>Yes. All products are ISO 13485 certified, and many also carry CE marking or CDSCO registration. Use the Certification filter on this page to see exactly which products qualify.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              Do you provide installation and after-sales support?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>Yes, with PAN-India installation and service support, including modular OT commissioning, medical gas pipeline fitting, and nursing station fit-outs.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              What should I check before ordering an ICU bed or OT table?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>The functional configuration (how many functions), the frame material, and the railing type. Each product page states these upfront so you can compare models correctly.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              Is this range suitable for both small clinics and large hospitals?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>Yes, it is built for both. Whether you are setting up a single-bed clinic room or a multi-department hospital wing, our team can walk you through a single BOM covering furniture, lighting, and gas systems together. Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a> for pricing.</p></div>
-          </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Are these products certified?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. All products are ISO 13485 certified, and many also carry CE marking or CDSCO registration. Use the Certification filter on this page to see exactly which products qualify.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Do you provide installation and after-sales support?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes, with PAN-India installation and service support, including modular OT commissioning, medical gas pipeline fitting, and nursing station fit-outs.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What should I check before ordering an ICU bed or OT table?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>The functional configuration (how many functions), the frame material, and the railing type. Each product page states these upfront so you can compare models correctly.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Is this range suitable for both small clinics and large hospitals?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes, it is built for both. Whether you are setting up a single-bed clinic room or a multi-department hospital wing, our team can walk you through a single BOM covering furniture, lighting, and gas systems together. Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a> for pricing.</p></div>
         </div>
       </div>
     </div>

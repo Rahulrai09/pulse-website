@@ -450,7 +450,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
     .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
     .faq-layout { display: grid; grid-template-columns: 360px 1fr; gap: 40px; align-items: start; }
-    @media (max-width: 900px) { .faq-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) {
+      .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -629,49 +631,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   
 
-  <section style="padding:60px 0; background:#fff;">
-    <div style="max-width:1100px; margin:0 auto; padding:0 24px;">
-      <div class="faq-layout">
-        <div>
-          <p style="color:#E87722; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">GOT QUESTIONS?</p>
-          <h2 style="font-size:1.6rem; font-weight:800; color:#0f1f4b; margin:0;">Frequently Asked Questions</h2>
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What does the IVD range include?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>A biochemistry analyzer and two hematology analyzers: the Pulse ZT Smart SAA Biochemistry Analyzer, the Pulse ZT370, and the Pulse ZT360. Three analyzers covering biochemistry and hematology testing.</p></div>
         </div>
-        <div class="faq-accordion">
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              What does the IVD range include?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>A biochemistry analyzer and two hematology analyzers: the Pulse ZT Smart SAA Biochemistry Analyzer, the Pulse ZT370, and the Pulse ZT360. Three analyzers covering biochemistry and hematology testing.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              Why does Pulse only sell three analyzers in this category?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>It is a deliberate choice. A narrower catalogue means our service team can support reagents, spare parts, and calibration for each analyzer end to end, instead of spreading support thin across a large range.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              Are these analyzers certified?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>Yes, all three are ISO 13485 certified, backed by a PAN-India service network for parts and calibration support.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              What is the difference between the ZT360 and ZT370 hematology analyzers?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>The ZT360 runs 60 samples an hour with a 10.4 inch touchscreen and storage for over 100,000 records. The ZT370 is a more compact double-chamber design that runs faster at 72 tests an hour using a simpler 2-reagent system.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
-              Is this range suitable for both small clinics and large hospitals?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p>Yes. These analyzers are used in both small diagnostic clinics and large hospital laboratories across India. Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a> for pricing, or use the Get Quote button on any product on this page.</p></div>
-          </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Why does Pulse only sell three analyzers in this category?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>It is a deliberate choice. A narrower catalogue means our service team can support reagents, spare parts, and calibration for each analyzer end to end, instead of spreading support thin across a large range.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Are these analyzers certified?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes, all three are ISO 13485 certified, backed by a PAN-India service network for parts and calibration support.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What is the difference between the ZT360 and ZT370 hematology analyzers?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>The ZT360 runs 60 samples an hour with a 10.4 inch touchscreen and storage for over 100,000 records. The ZT370 is a more compact double-chamber design that runs faster at 72 tests an hour using a simpler 2-reagent system.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Is this range suitable for both small clinics and large hospitals?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. These analyzers are used in both small diagnostic clinics and large hospital laboratories across India. Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a> for pricing, or use the Get Quote button on any product on this page.</p></div>
         </div>
       </div>
     </div>
