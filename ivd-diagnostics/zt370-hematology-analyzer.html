@@ -50,6 +50,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pg-hero-section { padding-top: 16px !important; }
     .pg-hero-grid { gap: 24px !important; padding-bottom: 24px !important; }
   }
+
+  /* FAQ ACCORDION */
+  .faq-accordion { display: flex; flex-direction: column; }
+  .faq-item { border-bottom: 1px solid #e5e7eb; }
+  .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+  .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+  .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+  .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
 </style>
   <script type="application/ld+json">
   {
@@ -82,7 +92,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ]
   }
   </script>
-</head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Pulse ZT370 used for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is a compact 3-part-diff hematology analyzer for routine blood count testing, built with a double-chamber design for faster throughput."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many samples per hour does it run and what reagents does it need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Up to 72 tests per hour, using only 2 reagents, diluent and lyse, with an optional RFID reagent system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it certified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, it is ISO 13485 certified."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this suitable for small clinics and large hospitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. This is used in both small diagnostic clinics and large hospital laboratories across India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get pricing or the brochure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Message us on WhatsApp at +91 90711 01108, or download the brochure on this page for full specifications."
+        }
+      }
+    ]
+  }
+  </script></head>
 <body data-product-page="true">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR"
@@ -224,6 +281,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
   </div>
 
+  <section style="padding:48px 0; background:#fff;">
+    <div style="max-width:800px; margin:0 auto; padding:0 24px;">
+      <p style="color:#E87722; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">GOT QUESTIONS?</p>
+      <h2 style="font-size:1.5rem; font-weight:800; color:#0f1f4b; margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            What is the Pulse ZT370 used for?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>It is a compact 3-part-diff hematology analyzer for routine blood count testing, built with a double-chamber design for faster throughput.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            How many samples per hour does it run and what reagents does it need?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Up to 72 tests per hour, using only 2 reagents, diluent and lyse, with an optional RFID reagent system.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Is it certified?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes, it is ISO 13485 certified.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            Is this suitable for small clinics and large hospitals?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. This is used in both small diagnostic clinics and large hospital laboratories across India.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            How do I get pricing or the brochure?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Message us on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a>, or download the brochure on this page for full specifications.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div id="global-footer"></div>
   <script src="/js/header.js"></script>
   <script src="/js/footer.js"></script>
