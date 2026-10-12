@@ -6,7 +6,7 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 
 ## Company
 - [About Pulse](https://www.pulseio.in/about.html): Who Pulse is and how it works
-- [Why Pulse](https://www.pulseio.in/why-pulse.html): Single-vendor OEM model
+- [Why Pulse](https://www.pulseio.in/#why-pulse): Single-vendor OEM model
 - [Quality](https://www.pulseio.in/quality.html): Certifications and quality standards
 - [Service and Support](https://www.pulseio.in/service-support.html): After-sales service
 - [Innovation](https://www.pulseio.in/innovation.html)
