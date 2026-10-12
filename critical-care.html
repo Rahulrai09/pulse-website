@@ -436,7 +436,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .product-search { max-width: 100%; }
       .cat-hero-stats { flex-wrap: wrap; gap: 12px; }
     }
+
+    /* FAQ ACCORDION */
+    .faq-accordion { display: flex; flex-direction: column; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+    .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+    .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+    @media (max-width: 900px) {
+      .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does Pulse's critical care range include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these products certified and cleared for use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every device in this range is CDSCO cleared and CE marked, with ISO 13485 certification across the range."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of service support comes with critical care equipment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse provides PAN-India service, because equipment hospitals run around the clock needs support that can respond just as fast, wherever the hospital is located."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I check before ordering a ventilator, monitor, or ECG machine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each product page lists the exact ventilation modes, monitoring parameters, and accuracy ranges your biomedical engineering team needs before sign-off, not just a marketing summary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get pricing or place an order?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Message Pulse on WhatsApp at +91 90711 01108, or use the Get Quote button on any product on this page."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -550,16 +611,80 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-    <section style="padding:48px 0; background:#fafafa; border-top:1px solid #eee;">
-    <div style="max-width:900px; margin:0 auto; padding:0 24px;">
-      <h2 style="font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:16px;">Twelve Products, One Job: Keep the ICU Running</h2>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">Critical care equipment does not get a second chance. A ventilator or patient monitor must perform when a patient needs it, every time. Pulse's critical care range covers the full bedside. This includes ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps.</p>
-      <p style="color:#444; line-height:1.7; margin-bottom:16px;">Every device here is CDSCO cleared and CE marked. This is equipment hospitals run around the clock, so our service commitment matters as much as the spec sheet. Each product page below lists the exact ventilation modes, monitoring parameters, and accuracy ranges your biomedical engineering team needs before sign-off, not just a marketing summary.</p>
+    <section style="padding:64px 0; background:#fafafa; border-top:1px solid #eee;">
+    <div class="faq-layout" style="max-width:1100px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:360px 1fr; gap:48px; align-items:start;">
+      <div>
+        <h2 style="font-size:1.6rem; font-weight:800; color:#0a1e40; line-height:1.2; margin-bottom:14px;">Built to Perform When the ICU Needs It</h2>
+        <p style="color:#555; line-height:1.7;">A ventilator or patient monitor does not get a second chance. It has to perform when a patient needs it, every time, which is why every device in this range is built and checked around that one requirement.</p>
+      </div>
+      <div style="display:grid; gap:18px;">
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Every device is CDSCO cleared and CE marked, with ISO 13485 certification across the range.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">PAN-India service &mdash; equipment hospitals run around the clock needs a service response that keeps up, wherever the hospital is.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Exact ventilation modes, monitoring parameters, and accuracy ranges listed on every product page &mdash; the numbers your biomedical engineering team needs before sign-off.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   
 
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>What does Pulse's critical care range include?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Are these products certified and cleared for use?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Every device in this range is CDSCO cleared and CE marked, with ISO 13485 certification across the range.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>What kind of service support comes with critical care equipment?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Pulse provides PAN-India service, because equipment hospitals run around the clock needs support that can respond just as fast, wherever the hospital is located.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>What should I check before ordering a ventilator, monitor, or ECG machine?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Each product page lists the exact ventilation modes, monitoring parameters, and accuracy ranges your biomedical engineering team needs before sign-off, not just a marketing summary.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>How do I get pricing or place an order?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a"><p>Message Pulse on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a>, or use the Get Quote button on any product on this page.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div id="global-footer"></div>
 
   <script src="js/header.js"></script>
