@@ -60,6 +60,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
   .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
   .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+  @media (max-width: 900px) {
+    .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+  }
 </style>
   <script type="application/ld+json">
   {
@@ -335,10 +338,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
   </div>
 
-  <section style="padding:48px 0; background:#fff;">
-    <div style="max-width:800px; margin:0 auto; padding:0 24px;">
-      <p style="color:#E87722; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">GOT QUESTIONS?</p>
-      <h2 style="font-size:1.5rem; font-weight:800; color:#0f1f4b; margin-bottom:16px;">Frequently Asked Questions</h2>
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+      </div>
       <div class="faq-accordion">
         <div class="faq-item">
           <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
@@ -378,6 +383,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
   <div id="global-footer"></div>
   <script src="/js/header.js"></script>
   <script src="/js/footer.js"></script>
