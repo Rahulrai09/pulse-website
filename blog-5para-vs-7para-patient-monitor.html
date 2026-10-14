@@ -33,6 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "@type": "BlogPosting",
     "headline": "5-Para vs 7-Para Patient Monitor: Which Does Your Ward Actually Need?",
     "description": "A practical hospital procurement guide to choosing between 5-parameter and 7-parameter patient monitors. Covers what each tier measures, which clinical settings genuinely need capnography and invasive blood pressure, and how to mix tiers across wards without over-specifying.",
+    "image": "https://www.pulseio.in/image/Blogs%20Banners/5-Para%20vs%207-Para%20Monitor%20blog%20banner.jpg",
     "author": { "@type": "Organization", "name": "Pulse" },
     "publisher": {
       "@type": "Organization",
@@ -88,75 +89,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: #0a1e40; background: #ffffff; line-height: 1.6; }
+    .blog-article { max-width: 780px; margin: 0 auto; padding: 64px 24px 100px; }
+    .blog-meta { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #E63946; margin-bottom: 14px; }
+    .blog-meta .dot { color: #9ca3af; margin: 0 8px; }
+    .blog-title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; color: #0a1e40; margin-bottom: 18px; }
+    .blog-deck { font-size: 18px; color: #4b5563; line-height: 1.6; margin-bottom: 24px; font-weight: 400; }
+    .snippet-answer { font-size: 17px; line-height: 1.7; color: #0a1e40; background: #f4f6fa; border-left: 3px solid #1B2F6E; padding: 18px 22px; margin-bottom: 40px; border-radius: 6px; }
+    .blog-article h2 { font-size: 24px; font-weight: 700; color: #0a1e40; margin: 40px 0 14px; letter-spacing: -0.01em; }
+    .blog-article h3 { font-size: 19px; font-weight: 700; color: #0a1e40; margin: 28px 0 10px; }
+    .blog-article p { font-size: 16px; line-height: 1.75; color: #1f2937; margin-bottom: 18px; }
+    .blog-article blockquote { border-left: 3px solid #E63946; padding: 8px 22px; margin: 28px 0; font-size: 17px; line-height: 1.65; color: #0a1e40; font-style: italic; background: #f9fafb; }
+    .blog-article ul, .blog-article ol { margin: 0 0 18px 24px; }
+    .blog-article li { font-size: 16px; line-height: 1.75; color: #1f2937; margin-bottom: 8px; }
+    .spec-table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 15px; }
+    .spec-table th { background: #1B2F6E; color: #fff; padding: 12px 16px; text-align: left; font-weight: 600; }
+    .spec-table td { padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #1f2937; }
+    .spec-table tr:nth-child(even) td { background: #f9fafb; }
+    .disclaimer-box { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px 22px; margin: 28px 0; font-size: 14px; color: #4b5563; }
+    .product-link-box { background: #f4f6fa; border-radius: 10px; padding: 24px 28px; margin: 32px 0; text-align: center; }
+    .product-link-box a { display: inline-block; background: #1B2F6E; color: #fff; padding: 13px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 15px; }
+    .references { font-size: 14px; color: #4b5563; margin-top: 36px; border-top: 1px solid #e5e7eb; padding-top: 20px; }
+    .references h3 { font-size: 15px; margin-bottom: 10px; color: #0a1e40; }
+    .references li { font-size: 14px; margin-bottom: 6px; }
+    .references a { color: #1B2F6E; }
+    .cta-bar { background: #1B2F6E; padding: 60px 8%; text-align: center; color: #fff; }
+    .cta-bar h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; margin-bottom: 12px; }
+    .cta-bar p { font-size: 1rem; color: rgba(255,255,255,0.8); margin-bottom: 28px; }
+    .cta-bar a { display: inline-block; background: #fff; color: #1B2F6E; padding: 14px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; margin: 6px; }
+    .more-reading { display: flex; justify-content: flex-end; padding: 32px 5%; background: #f9fafb; }
+    .more-reading a { background: #1B2F6E; color: #fff; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; text-align: right; }
+    .more-reading a span { display: block; font-size: 0.75rem; opacity: 0.7; font-weight: 400; margin-bottom: 2px; }
 
-    :root {
-      --blog-paper: #ffffff;
-      --blog-ink: #121d33;
-      --blog-ink-muted: #5b6472;
-      --blog-ink-faint: #9298a3;
-      --blog-rule: #e3e6ec;
-      --blog-accent: #8a6d3b;
-      --blog-brand: #1B2F6E;
-    }
-
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--blog-ink); background: var(--blog-paper); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-
-    .blog-article { max-width: 700px; margin: 0 auto; padding: 88px 24px 110px; }
-
-    .blog-meta { font-size: 12.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blog-accent); margin-bottom: 22px; }
-    .blog-meta .dot { color: var(--blog-ink-faint); margin: 0 9px; font-weight: 400; }
-
-    .blog-title { font-family: 'Fraunces', Georgia, serif; font-size: clamp(32px, 4.4vw, 48px); font-weight: 560; line-height: 1.12; letter-spacing: -0.015em; color: var(--blog-ink); margin-bottom: 26px; }
-
-    .blog-deck { font-size: 19px; color: var(--blog-ink-muted); line-height: 1.65; margin-bottom: 40px; font-weight: 400; max-width: 60ch; }
-
-    .snippet-answer { font-size: 17px; line-height: 1.75; color: var(--blog-ink); background: transparent; border: none; border-top: 1.5px solid var(--blog-ink); border-bottom: 1px solid var(--blog-rule); padding: 26px 0; margin-bottom: 48px; border-radius: 0; }
-    .snippet-answer strong { display: block; font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blog-accent); margin-bottom: 10px; }
-
-    .blog-article h2 { font-family: 'Fraunces', Georgia, serif; font-size: 27px; font-weight: 560; color: var(--blog-ink); letter-spacing: -0.01em; margin: 0; padding-top: 28px; border-top: 1px solid var(--blog-rule); margin-top: 56px; margin-bottom: 18px; }
-    .blog-article > h2:first-of-type { border-top: none; padding-top: 0; margin-top: 44px; }
-
-    .blog-article h3 { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; color: var(--blog-ink); margin: 32px 0 12px; }
-
-    .blog-article p { font-size: 17px; line-height: 1.8; color: var(--blog-ink); margin-bottom: 20px; max-width: 66ch; }
-
-    .blog-article blockquote { position: relative; border: none; padding: 4px 0 4px 36px; margin: 48px 0; font-family: 'Fraunces', Georgia, serif; font-size: 21px; line-height: 1.55; color: var(--blog-ink); font-style: italic; font-weight: 500; background: none; max-width: 62ch; }
-    .blog-article blockquote::before { content: "\201C"; position: absolute; left: -2px; top: -14px; font-family: 'Fraunces', Georgia, serif; font-size: 54px; font-style: normal; font-weight: 500; color: var(--blog-accent); line-height: 1; }
-
-    .blog-article ul, .blog-article ol { margin: 0 0 20px 22px; }
-    .blog-article li { font-size: 17px; line-height: 1.8; color: var(--blog-ink); margin-bottom: 10px; max-width: 66ch; }
-
-    .inline-link { color: var(--blog-brand); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(27,47,110,0.28); padding-bottom: 1px; }
-    .inline-link:hover { border-bottom-color: var(--blog-brand); }
-
-    .spec-table { width: 100%; border-collapse: collapse; margin: 36px 0; font-size: 14.5px; }
-    .spec-table th { background: transparent; padding: 10px 14px 10px 0; text-align: left; font-weight: 600; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blog-ink-muted); border-bottom: 1.5px solid var(--blog-ink); }
-    .spec-table td { padding: 13px 14px 13px 0; border-bottom: 1px solid var(--blog-rule); color: var(--blog-ink); }
-    .spec-table tr:nth-child(even) td { background: transparent; }
-    .spec-table tr:last-child td { border-bottom: 1.5px solid var(--blog-ink); }
-
-    .disclaimer-box { background: transparent; border: none; border-left: 2px solid var(--blog-rule); border-radius: 0; padding: 2px 0 2px 20px; margin: 40px 0; font-size: 13.5px; color: var(--blog-ink-muted); line-height: 1.65; }
-
-    .product-link-box { background: #f6f5f1; border-radius: 4px; padding: 30px 32px; margin: 48px 0; text-align: center; }
-    .product-link-box a { display: inline-block; background: var(--blog-brand); color: #fff; padding: 13px 30px; border-radius: 4px; font-weight: 600; text-decoration: none; font-size: 14.5px; }
-
-    .references { font-size: 13.5px; color: var(--blog-ink-muted); margin-top: 48px; border-top: 1px solid var(--blog-rule); padding-top: 24px; }
-    .references h3 { font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; color: var(--blog-ink-muted); }
-    .references ul { margin-left: 0; }
-    .references li { font-size: 13.5px; margin-bottom: 8px; list-style: none; }
-    .references a { color: var(--blog-ink); text-decoration: underline; text-decoration-color: var(--blog-rule); text-underline-offset: 3px; }
-
-    .cta-bar { background: var(--blog-brand); padding: 76px 8%; text-align: center; color: #fff; }
-    .cta-bar h2 { font-family: 'Fraunces', Georgia, serif; font-size: clamp(1.5rem, 2.6vw, 2.15rem); font-weight: 560; margin-bottom: 14px; line-height: 1.25; }
-    .cta-bar p { font-size: 1rem; color: rgba(255,255,255,0.72); margin-bottom: 30px; max-width: 46ch; margin-left: auto; margin-right: auto; }
-    .cta-bar a { display: inline-block; background: #fff; color: var(--blog-brand); padding: 14px 32px; border-radius: 4px; font-weight: 600; text-decoration: none; margin: 6px; font-size: 14.5px; }
-
-    .more-reading { display: flex; justify-content: flex-end; padding: 36px 5%; background: #fafafa; border-top: 1px solid var(--blog-rule); }
-    .more-reading a { background: var(--blog-brand); color: #fff; padding: 14px 24px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.88rem; text-align: right; }
-    .more-reading a span { display: block; font-size: 0.72rem; opacity: 0.7; font-weight: 400; margin-bottom: 3px; letter-spacing: 0.04em; text-transform: uppercase; }
+    /* Banner */
+    .blog-banner { width: 100%; background: #f4f6fa; }
+    .blog-banner img { width: 100%; height: auto; display: block; }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -164,6 +134,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div id="global-header"></div>
+
+<div class="blog-banner">
+  <img src="image/Blogs Banners/5-Para vs 7-Para Monitor blog banner.jpg" alt="5-parameter versus 7-parameter patient monitor comparison">
+</div>
 
 <article class="blog-article">
   <div class="blog-meta">September 25, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Critical Care</div>
@@ -269,12 +243,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <table class="spec-table">
     <thead><tr><th>Pulse Product</th><th>Tier</th><th>Typical Fit</th></tr></thead>
     <tbody>
-      <tr><td><a href="/critical-care/5-para-patient-monitor/" class="inline-link">Pulse 5-Para Patient Monitor</a></td><td>5-parameter</td><td>General ward, step-down, PACU, OPD observation</td></tr>
-      <tr><td><a href="/critical-care/7-para-patient-monitor/" class="inline-link">Pulse 7-Para Patient Monitor</a></td><td>7-parameter (incl. ETCO2 + IBP)</td><td>ICU, OT, cardiac care, resuscitation bays</td></tr>
-      <tr><td><a href="/critical-care/icu-ventilator/" class="inline-link">Pulse ICU Ventilator</a></td><td>Companion</td><td>Pair with 7-para monitor for ventilated ICU beds</td></tr>
-      <tr><td><a href="/critical-care/anesthesia-workstation/" class="inline-link">Pulse Anesthesia Workstation</a></td><td>Companion</td><td>Pair with 7-para monitor for OT setups</td></tr>
-      <tr><td><a href="/critical-care/infusion-pump/" class="inline-link">Pulse Infusion Pump</a> / <a href="/critical-care/syringe-pump/" class="inline-link">Pulse Syringe Pump</a></td><td>Companion</td><td>Vasopressor delivery alongside IBP monitoring</td></tr>
-      <tr><td><a href="/critical-care/3-channel-ecg-machine/" class="inline-link">Pulse 3 / <a href="/critical-care/6-channel-ecg-machine/" class="inline-link">6</a> / <a href="/critical-care/12-channel-ecg-machine/" class="inline-link">12</a>-Channel ECG Machine</a></td><td>Diagnostic adjunct</td><td>Standalone ECG recording for OPD / wards</td></tr>
+      <tr><td><a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">Pulse 5-Para Patient Monitor</a></td><td>5-parameter</td><td>General ward, step-down, PACU, OPD observation</td></tr>
+      <tr><td><a href="/critical-care/7-para-patient-monitor/" style="color:#E63946; font-weight:600;">Pulse 7-Para Patient Monitor</a></td><td>7-parameter (incl. ETCO2 + IBP)</td><td>ICU, OT, cardiac care, resuscitation bays</td></tr>
+      <tr><td><a href="/critical-care/icu-ventilator/" style="color:#E63946; font-weight:600;">Pulse ICU Ventilator</a></td><td>Companion</td><td>Pair with 7-para monitor for ventilated ICU beds</td></tr>
+      <tr><td><a href="/critical-care/anesthesia-workstation/" style="color:#E63946; font-weight:600;">Pulse Anesthesia Workstation</a></td><td>Companion</td><td>Pair with 7-para monitor for OT setups</td></tr>
+      <tr><td><a href="/critical-care/infusion-pump/" style="color:#E63946; font-weight:600;">Pulse Infusion Pump</a> / <a href="/critical-care/syringe-pump/" style="color:#E63946; font-weight:600;">Pulse Syringe Pump</a></td><td>Companion</td><td>Vasopressor delivery alongside IBP monitoring</td></tr>
+      <tr><td><a href="/critical-care/3-channel-ecg-machine/" style="color:#E63946; font-weight:600;">Pulse 3 / <a href="/critical-care/6-channel-ecg-machine/" style="color:#E63946; font-weight:600;">6</a> / <a href="/critical-care/12-channel-ecg-machine/" style="color:#E63946; font-weight:600;">12</a>-Channel ECG Machine</a></td><td>Diagnostic adjunct</td><td>Standalone ECG recording for OPD / wards</td></tr>
     </tbody>
   </table>
   <p>Individual product specifications and current CDSCO classification should be confirmed on each product page before procurement.</p>
@@ -309,10 +283,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <h2>Related Reading</h2>
   <ul>
-    <li><a href="/blog-critical-care-equipment-manufacturer-india.html" class="inline-link">Critical Care Equipment Manufacturer in India</a></li>
-    <li><a href="/blog-icu-ventilator-price-india.html" class="inline-link">ICU Ventilator Price in India: What Drives the Cost</a></li>
-    <li><a href="/blog-types-of-ventilators.html" class="inline-link">Types of Ventilators: ICU, Transport, Neonatal and More</a></li>
-    <li><a href="/blog-modular-ot-setup-cost-india.html" class="inline-link">Modular OT Setup Cost in India: NABH-Grade Breakdown</a></li>
+    <li><a href="/blog-critical-care-equipment-manufacturer-india.html" style="color:#E63946; font-weight:600;">Critical Care Equipment Manufacturer in India</a></li>
+    <li><a href="/blog-icu-ventilator-price-india.html" style="color:#E63946; font-weight:600;">ICU Ventilator Price in India: What Drives the Cost</a></li>
+    <li><a href="/blog-types-of-ventilators.html" style="color:#E63946; font-weight:600;">Types of Ventilators: ICU, Transport, Neonatal and More</a></li>
+    <li><a href="/blog-modular-ot-setup-cost-india.html" style="color:#E63946; font-weight:600;">Modular OT Setup Cost in India: NABH-Grade Breakdown</a></li>
   </ul>
 </article>
 
