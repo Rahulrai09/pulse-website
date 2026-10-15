@@ -3627,6 +3627,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .chat-quick-btn:hover { background: #5b6bcc; color: white; }
 
+.chat-product-cards { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.chat-product-card {
+  background: white; border: 1px solid #e4e7f2; border-radius: 12px;
+  width: 104px; padding: 8px; text-decoration: none; color: #1c2b5e;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  transition: all 0.2s;
+}
+.chat-product-card:hover { border-color: #5b6bcc; box-shadow: 0 4px 10px rgba(91,107,204,0.15); transform: translateY(-2px); }
+.chat-product-card img { width: 100%; height: 64px; object-fit: contain; }
+.chat-product-card .cpc-name { font-size: 0.72rem; font-weight: 600; text-align: center; line-height: 1.25; }
+
 .pulse-chat-input-area {
   padding: 16px; background: white; border-top: 1px solid #e4e7f2; display: flex; gap: 10px; align-items: center;
 }
@@ -3768,6 +3779,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       chatTranscript.push((sender === 'bot' ? 'Bot: ' : 'You: ') + text);
     }
 
+    function renderProductSuggestions(categoryText) {
+      if (!window.PULSE_CATEGORY_PRODUCTS) return;
+      const key = categoryText.trim().replace(/^\d+\s*/, '');
+      const data = window.PULSE_CATEGORY_PRODUCTS[key];
+      if (!data || !data.products || !data.products.length) return;
+      const products = data.products.slice(0, 3);
+      const cardsDiv = document.createElement('div');
+      cardsDiv.className = 'chat-product-cards';
+      products.forEach(p => {
+        const card = document.createElement('a');
+        card.className = 'chat-product-card';
+        card.href = p.href;
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        const img = document.createElement('img');
+        img.src = p.image;
+        img.alt = p.name;
+        img.loading = 'lazy';
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'cpc-name';
+        nameDiv.textContent = p.name;
+        card.appendChild(img);
+        card.appendChild(nameDiv);
+        cardsDiv.appendChild(card);
+      });
+      chatBody.appendChild(cardsDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
     function renderBotMessage(text, options = []) {
       addMessage(text, 'bot');
       if (options.length > 0) {
@@ -3848,7 +3888,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         } else if (chatStep === 2) {
           userData.category = text;
           chatStep = 3;
-          renderBotMessage("Great choice! To connect you with our specialist, could you share your phone number or email?", []);
+          renderBotMessage("Great choice! Here are a few options in that category:", []);
+          renderProductSuggestions(text);
+          setTimeout(() => {
+            renderBotMessage("To connect you with our specialist, could you share your phone number or email?", []);
+          }, 900);
         } else if (chatStep === 3) {
           // Validate 10-digit phone number
           const phoneRegex = /^[6-9]\d{9}$/;

@@ -1290,6 +1290,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 };
 
+        // Expose the real mega-menu product data (name, image, link per category)
+        // so other components (e.g. the homepage chatbot) can reuse it for
+        // product suggestions without duplicating this list.
+        window.PULSE_CATEGORY_PRODUCTS = categoryData;
+
 
 
         const colProductsEl = document.getElementById('mega-col-products');
