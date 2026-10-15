@@ -3879,12 +3879,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       chatTranscript.push((sender === 'bot' ? 'Bot: ' : 'You: ') + text);
     }
 
-    function renderProductSuggestions(categoryText) {
-      if (!window.PULSE_CATEGORY_PRODUCTS) return;
-      const key = categoryText.trim().replace(/^\d+\s*/, '');
-      const data = window.PULSE_CATEGORY_PRODUCTS[key];
-      if (!data || !data.products || !data.products.length) return;
-      const products = data.products.slice(0, 3);
+    function renderProductCardList(products) {
+      if (!products || !products.length) return;
       const cardsDiv = document.createElement('div');
       cardsDiv.className = 'chat-product-cards';
       products.forEach(p => {
@@ -3906,6 +3902,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
       chatBody.appendChild(cardsDiv);
       chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function renderProductSuggestions(categoryText) {
+      if (!window.PULSE_CATEGORY_PRODUCTS) return;
+      const key = categoryText.trim().replace(/^\d+\s*/, '');
+      const data = window.PULSE_CATEGORY_PRODUCTS[key];
+      if (!data || !data.products || !data.products.length) return;
+      renderProductCardList(data.products.slice(0, 3));
+    }
+
+    let __allProductsFlatCache = null;
+    function getAllProductsFlat() {
+      if (__allProductsFlatCache) return __allProductsFlatCache;
+      const out = [];
+      if (window.PULSE_CATEGORY_PRODUCTS) {
+        Object.keys(window.PULSE_CATEGORY_PRODUCTS).forEach(catKey => {
+          const cat = window.PULSE_CATEGORY_PRODUCTS[catKey];
+          (cat.products || []).forEach(p => {
+            out.push({ name: p.name, image: p.image, href: p.href, category: catKey });
+          });
+        });
+      }
+      __allProductsFlatCache = out;
+      return out;
+    }
+
+    function searchProducts(query, topK) {
+      const q = query.trim().toLowerCase();
+      if (q.length < 2) return [];
+      const all = getAllProductsFlat();
+      const scored = [];
+      all.forEach(p => {
+        const nameLower = p.name.toLowerCase();
+        let score = 0;
+        if (nameLower === q) score = 100;
+        else if (nameLower.startsWith(q)) score = 50;
+        else if (nameLower.includes(q)) score = 20;
+        else {
+          const qWords = q.split(/\s+/).filter(w => w.length > 2);
+          const matchedWords = qWords.filter(w => nameLower.includes(w));
+          if (qWords.length && matchedWords.length === qWords.length) score = 10;
+        }
+        if (score > 0) scored.push({ score, product: p });
+      });
+      scored.sort((a, b) => b.score - a.score);
+      return scored.slice(0, topK || 5).map(s => s.product);
     }
 
     function renderBotMessage(text, options = []) {
@@ -4034,7 +4076,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         } else if (chatStep === 1) {
           userData.role = text;
           chatStep = 2;
-          renderBotMessage("Which category are you interested in?", [
+          renderBotMessage("Which category are you interested in? You can also just type a product name to search (e.g. \"wheelchair\" or \"ventilator\").", [
             "01 Critical Care",
             "02 Renal Care",
             "03 Cardiac Care",
@@ -4044,6 +4086,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "07 Surgical"
           ]);
         } else if (chatStep === 2) {
+          const knownCategories = ["01 Critical Care","02 Renal Care","03 Cardiac Care","04 Aesthetics","05 Rehabilitation","06 Hospital Setup","07 Surgical"];
+          if (knownCategories.indexOf(text) === -1) {
+            // Not a category button click: treat as a product search query
+            const matches = searchProducts(text, 5);
+            if (!matches.length) {
+              renderBotMessage("I couldn't find a product matching \"" + text + "\" — please pick a category below, or try a different product name:", [
+                "01 Critical Care","02 Renal Care","03 Cardiac Care","04 Aesthetics","05 Rehabilitation","06 Hospital Setup","07 Surgical"
+              ]);
+              return;
+            }
+            userData.category = matches[0].category;
+            chatStep = 3;
+            renderBotMessage('Here’s what I found for "' + text + '":', []);
+            renderProductCardList(matches);
+            setTimeout(() => {
+              renderBotMessage("To connect you with our specialist, please share your details:", []);
+              renderContactFormCard();
+            }, 900);
+            return;
+          }
           userData.category = text;
           chatStep = 3;
           renderBotMessage("Great choice! Here are a few options in that category:", []);
