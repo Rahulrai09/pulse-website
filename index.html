@@ -3558,6 +3558,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .pulse-chat-window.open { transform: translateY(0); opacity: 1; pointer-events: all; }
 
+.pulse-chat-window.minimized { height: auto !important; min-height: 0; }
+.pulse-chat-window.minimized .pulse-chat-body,
+.pulse-chat-window.minimized .pulse-chat-input-area,
+.pulse-chat-window.minimized .pulse-chat-footer { display: none; }
+
+.pulse-chat-window.expanded {
+  width: min(520px, calc(100vw - 24px)) !important;
+  height: min(760px, calc(100vh - 48px)) !important;
+  max-height: calc(100vh - 48px) !important;
+}
+
 .chat-welcome-pill {
   position: fixed;
   bottom: 72px;
@@ -3627,6 +3638,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .chat-quick-btn:hover { background: #5b6bcc; color: white; }
 
+.chat-msg-time { font-size: 0.65rem; color: #9aa0b4; margin-top: -6px; margin-bottom: -2px; max-width: 85%; }
+.chat-msg-time.bot { align-self: flex-start; padding-left: 4px; }
+.chat-msg-time.user { align-self: flex-end; padding-right: 4px; text-align: right; }
+
+.chat-form-card { background: white; border: 1px solid #e4e7f2; border-radius: 12px; padding: 14px 16px; width: 100%; }
+.chat-form-title { font-weight: 700; color: #1c2b5e; font-size: 0.85rem; margin-bottom: 8px; }
+.chat-form-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-top: 1px solid #f0f1f6; font-size: 0.78rem; }
+.chat-form-row:first-of-type { border-top: none; }
+.chat-form-label { color: #9aa0b4; }
+.chat-form-row.active .chat-form-label { color: #5b6bcc; font-weight: 600; }
+.chat-form-row.done .chat-form-label { color: #1c2b5e; }
+.chat-form-value { color: #2fa86b; font-weight: 600; }
+
 .chat-product-cards { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
 .chat-product-card {
   background: white; border: 1px solid #e4e7f2; border-radius: 12px;
@@ -3695,6 +3719,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="pulse-chat-title">Pulse AI Assistant</div>
     <div style="display:flex; align-items:center; gap:12px;">
       <button id="chat-refresh-btn" title="Start new chat" style="background: none; border: none; color: #F07C2A; font-size: 16px; font-weight: 700; cursor: pointer; opacity: 1;">↺</button>
+      <button id="chat-minimize-btn" title="Minimize chat" aria-label="Minimize" style="background: none; border: none; color: #F07C2A; font-size: 18px; font-weight: 700; cursor: pointer; opacity: 1; display: flex; align-items: center; justify-content: center; padding: 0;">−</button>
+      <button id="chat-expand-btn" title="Expand chat" aria-label="Expand" style="background: none; border: none; color: #F07C2A; font-size: 15px; font-weight: 700; cursor: pointer; opacity: 1; display: flex; align-items: center; justify-content: center; padding: 0;">⤢</button>
       <button id="ai-chat-close" aria-label="Close" style="background: none; border: none; color: #F07C2A; font-size: 18px; font-weight: 700; cursor: pointer; opacity: 1; display: flex; align-items: center; justify-content: center; padding: 0;">✕</button>
     </div>
   </div>
@@ -3714,6 +3740,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const chatWindow = document.getElementById('ai-chat-window');
     const chatClose = document.getElementById('ai-chat-close');
     const chatRefresh = document.getElementById('chat-refresh-btn');
+    const chatMinimize = document.getElementById('chat-minimize-btn');
+    const chatExpand = document.getElementById('chat-expand-btn');
     const chatBody = document.getElementById('ai-chat-body');
     const chatInput = document.getElementById('ai-chat-input');
     const chatSend = document.getElementById('ai-chat-send');
@@ -3762,12 +3790,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       return false;
     }
 
+    function renderContactFormCard() {
+      const card = document.createElement('div');
+      card.className = 'chat-form-card';
+      card.id = 'chat-contact-form-card';
+      card.innerHTML = `
+        <div class="chat-form-title">Please share your details</div>
+        <div class="chat-form-row active" data-field="phone">
+          <span class="chat-form-label">Mobile Number (1 of 2) *</span>
+          <span class="chat-form-value"></span>
+        </div>
+        <div class="chat-form-row" data-field="email">
+          <span class="chat-form-label">Email ID (2 of 2) *</span>
+          <span class="chat-form-value"></span>
+        </div>
+      `;
+      chatBody.appendChild(card);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function markContactFormField(fieldKey, displayValue) {
+      const card = document.getElementById('chat-contact-form-card');
+      if (!card) return;
+      const row = card.querySelector('.chat-form-row[data-field="' + fieldKey + '"]');
+      if (row) {
+        row.classList.remove('active');
+        row.classList.add('done');
+        const valueSpan = row.querySelector('.chat-form-value');
+        if (valueSpan) valueSpan.textContent = displayValue + ' ✓';
+      }
+      const rows = card.querySelectorAll('.chat-form-row');
+      for (const r of rows) {
+        if (r.classList.contains('done')) continue;
+        r.classList.add('active');
+        break;
+      }
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function renderAnythingElse() {
+      chatStep = 6;
+      renderBotMessage("Is there anything else I can help you with?", [
+        "More Questions",
+        "Request a Callback",
+        "No, thank you"
+      ]);
+    }
+
     function startChatFlow() {
-      chatStep = 0;
-      userData = { name: '', role: '', category: '', contact: '', firstMessage: '' };
+      chatStep = -1;
+      userData = { name: '', role: '', category: '', contact: '', firstMessage: '', phone: '', email: '', issue: '' };
       chatTranscript = [];
       chatBody.innerHTML = '';
-      renderBotMessage(`Hello! 👋 Welcome to PULSE — India's integrated MedTech manufacturer. I'm here to help you find the right solution: HOW MAY I ASSIST YOU.`, []);
+      chatWindow.classList.remove('minimized');
+      renderBotMessage(`Hello! 👋 Welcome to PULSE — India's integrated MedTech manufacturer.`, []);
+      renderBotMessage("How may I help you today?", [
+        "Products",
+        "Service Enquiry",
+        "Request a Callback",
+        "Careers",
+        "Chat with a Specialist"
+      ]);
+    }
+
+    function formatChatTimestamp(date) {
+      const d = String(date.getDate()).padStart(2, '0');
+      const m = String(date.getMonth() + 1).padStart(2, '0');
+      const y = date.getFullYear();
+      let h = date.getHours();
+      const min = String(date.getMinutes()).padStart(2, '0');
+      const ampm = h >= 12 ? 'PM' : 'AM';
+      h = h % 12; if (h === 0) h = 12;
+      return `${d}-${m}-${y} ${h}:${min} ${ampm}`;
     }
 
     function addMessage(text, sender) {
@@ -3775,6 +3869,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       msgDiv.className = `chat-msg ${sender}`;
       msgDiv.textContent = text;
       chatBody.appendChild(msgDiv);
+
+      const timeDiv = document.createElement('div');
+      timeDiv.className = `chat-msg-time ${sender}`;
+      timeDiv.textContent = formatChatTimestamp(new Date());
+      chatBody.appendChild(timeDiv);
+
       chatBody.scrollTop = chatBody.scrollHeight;
       chatTranscript.push((sender === 'bot' ? 'Bot: ' : 'You: ') + text);
     }
@@ -3833,8 +3933,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       existingActions.forEach(el => el.remove());
 
       setTimeout(() => {
-        if (chatStep === 0) {
+        if (chatStep === -1) {
           userData.firstMessage = text;
+          if (text === "Products") {
+            chatStep = 0.5;
+            renderBotMessage('Great! Could you please tell me your name?', []);
+            return;
+          }
+          if (text === "Service Enquiry") {
+            chatStep = 9;
+            renderBotMessage("Sure — what issue are you facing? (e.g. equipment not working, need a spare part, AMC query)", []);
+            return;
+          }
+          if (text === "Request a Callback") {
+            userData.category = "Callback Request";
+            chatStep = 10;
+            renderBotMessage("Sure! Could you tell me your name?", []);
+            return;
+          }
+          if (text === "Careers") {
+            renderBotMessage("Opening our Careers application form for you — you're welcome to keep chatting here too.", []);
+            if (typeof window.openCareerModal === 'function') window.openCareerModal();
+            setTimeout(() => { renderAnythingElse(); }, 700);
+            return;
+          }
+          if (text === "Chat with a Specialist") {
+            renderBotMessage("You can reach a PULSE specialist directly at +91 90711 01108 (call or WhatsApp) — our team typically responds within a few hours.", []);
+            setTimeout(() => { renderAnythingElse(); }, 700);
+            return;
+          }
+          // Free text instead of a menu click: fall through to original first-message handling
           const greetings = ["hi","hii","hiii","hiiii","hello","helo","hey","heyy","heya","hola","yo","namaste","good morning","good afternoon","good evening"];
           const normalized = text.trim().toLowerCase().replace(/[!.,]+$/, "");
           if (greetings.indexOf(normalized) !== -1) {
@@ -3848,21 +3976,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             chatStep = 0.5;
             setTimeout(() => {
               const followUp = answered
-                ? "I hope that helps! I'm here to connect you with a PULSE specialist too \u2014 could you tell me your name?"
-                : "No problem \u2014 I'll pass that along. In the meantime, could you tell me your name so I can connect you with a PULSE specialist?";
+                ? "I hope that helps! I'm here to connect you with a PULSE specialist too — could you tell me your name?"
+                : "No problem — I'll pass that along. In the meantime, could you tell me your name so I can connect you with a PULSE specialist?";
               renderBotMessage(followUp, []);
             }, 700);
             return;
           }
-          const properName = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
-          userData.name = properName;
+          const properName0 = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
+          userData.name = properName0;
           chatStep = 1;
-          renderBotMessage('Hi ' + properName + '! How can I assist you? Are you a:', [
+          renderBotMessage('Hi ' + properName0 + '! How can I assist you? Are you a:', [
             "🏥 Hospital / Clinic",
             "🏭 Distributor / Dealer",
             "🔬 Research Institution",
             "👤 Individual Enquiry"
           ]);
+        } else if (chatStep === 9) {
+          userData.issue = text;
+          chatStep = 10;
+          renderBotMessage("Got it. Could you tell me your name?", []);
+        } else if (chatStep === 10) {
+          const properNameSvc = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
+          userData.name = properNameSvc;
+          chatStep = 11;
+          renderBotMessage('Thanks, ' + properNameSvc + '! Could you share your phone number so our team can reach you?', []);
+        } else if (chatStep === 11) {
+          const phoneRegex11 = /^[6-9]\d{9}$/;
+          const cleanPhone11 = text.trim().replace(/\s+/g, "");
+          if (!phoneRegex11.test(cleanPhone11)) {
+            renderBotMessage("Please enter a valid 10-digit Indian mobile number (e.g. 9876543210).", []);
+            return;
+          }
+          userData.phone = cleanPhone11;
+          if (window.PulsePublic && window.PulsePublic.submitChat) {
+            window.PulsePublic.submitChat({
+              firstMessage: userData.firstMessage,
+              name: userData.name,
+              phone: userData.phone,
+              email: userData.email || '',
+              userType: userData.role || '',
+              category: userData.category || 'Service Enquiry',
+              message: (userData.issue ? ('Issue: ' + userData.issue + ' || ') : '') + chatTranscript.join(' || ')
+            }).catch(err => console.error("[chat] Lead submission failed:", err));
+          }
+          renderBotMessage(`Thank you, ${userData.name}! Our team will call you on ${userData.phone} within 24 hours. For urgent queries call +91 90711 01108 directly.`, []);
+          setTimeout(() => { renderAnythingElse(); }, 900);
         } else if (chatStep === 0.5) {
           const properName2 = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
           userData.name = properName2;
@@ -3891,7 +4049,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           renderBotMessage("Great choice! Here are a few options in that category:", []);
           renderProductSuggestions(text);
           setTimeout(() => {
-            renderBotMessage("To connect you with our specialist, could you share your phone number or email?", []);
+            renderBotMessage("To connect you with our specialist, please share your details:", []);
+            renderContactFormCard();
           }, 900);
         } else if (chatStep === 3) {
           // Validate 10-digit phone number
@@ -3903,10 +4062,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           }
           userData.phone = cleanPhone;
           chatStep = 4;
+          markContactFormField('phone', cleanPhone);
           renderBotMessage("Thank you! Could you also share your email address?", []);
         } else if (chatStep === 4) {
           userData.email = text.trim();
           chatStep = 5;
+          markContactFormField('email', userData.email);
           // Submit chat lead to Google Sheets
           if (window.PulsePublic && window.PulsePublic.submitChat) {
             window.PulsePublic.submitChat({
@@ -3928,8 +4089,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             window.fbq('track', 'Lead');
           }
           renderBotMessage(`Thank you! Our ${userData.category.replace(/^\d+\s*/, "").replace(/\s*Care$/i, "")} Care expert will reach out within 24 hours. For urgent queries call +91 90711 01108 directly.`, []);
+          setTimeout(() => { renderAnythingElse(); }, 900);
         } else if (chatStep === 5) {
           answerFromFAQ(text);
+          setTimeout(() => { renderAnythingElse(); }, 700);
+        } else if (chatStep === 6) {
+          if (text === "More Questions") {
+            renderBotMessage("Sure! What would you like to know?", []);
+            chatStep = 5;
+          } else if (text === "Request a Callback") {
+            renderBotMessage(`Noted! Our specialist will call you on ${userData.phone || 'the number you shared'} within 24 hours.`, []);
+            setTimeout(() => { renderAnythingElse(); }, 700);
+          } else if (text === "No, thank you") {
+            renderBotMessage("Thanks for chatting with PULSE! Feel free to reach out anytime \u{1F44B}", []);
+          } else {
+            answerFromFAQ(text);
+            setTimeout(() => { renderAnythingElse(); }, 700);
+          }
         }
       }, 600);
     }
@@ -3987,6 +4163,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
       chatClose.addEventListener('click', closeChat);
       if (chatRefresh) chatRefresh.addEventListener('click', startChatFlow);
+
+      if (chatMinimize) {
+        chatMinimize.addEventListener('click', () => {
+          chatWindow.classList.toggle('minimized');
+          const isMin = chatWindow.classList.contains('minimized');
+          chatMinimize.title = isMin ? 'Restore chat' : 'Minimize chat';
+          chatMinimize.setAttribute('aria-label', isMin ? 'Restore' : 'Minimize');
+        });
+      }
+
+      if (chatExpand) {
+        chatExpand.addEventListener('click', () => {
+          chatWindow.classList.remove('minimized');
+          chatWindow.classList.toggle('expanded');
+          const isExp = chatWindow.classList.contains('expanded');
+          chatExpand.textContent = isExp ? '⤡' : '⤢';
+          chatExpand.title = isExp ? 'Collapse chat' : 'Expand chat';
+          chatExpand.setAttribute('aria-label', isExp ? 'Collapse' : 'Expand');
+        });
+      }
 
       chatSend.addEventListener('click', () => {
         handleUserInput(chatInput.value);
