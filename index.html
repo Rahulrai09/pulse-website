@@ -3637,6 +3637,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   cursor: pointer; transition: all 0.2s; text-align: left;
 }
 .chat-quick-btn:hover { background: #5b6bcc; color: white; }
+.chat-quick-btn.chat-category-btn {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  padding: 9px 13px; max-width: 220px;
+}
+.chat-quick-btn.chat-category-btn .cat-btn-title { font-weight: 600; }
+.chat-quick-btn.chat-category-btn .cat-btn-sub { font-size: 0.68rem; font-weight: 400; color: #9aa0b4; line-height: 1.3; }
+.chat-quick-btn.chat-category-btn:hover .cat-btn-sub { color: #e4e7f2; }
+.chat-quick-btn.chat-browse-all-btn { border-style: dashed; }
 
 .chat-msg-time { font-size: 0.65rem; color: #9aa0b4; margin-top: -6px; margin-bottom: -2px; max-width: 85%; }
 .chat-msg-time.bot { align-self: flex-start; padding-left: 4px; }
@@ -3950,6 +3958,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       return scored.slice(0, topK || 5).map(s => s.product);
     }
 
+    function renderCategoryButtons(introText) {
+      addMessage(introText, 'bot');
+      const actionsDiv = document.createElement('div');
+      actionsDiv.className = 'chat-quick-actions';
+      const categories = ["01 Critical Care","02 Renal Care","03 Cardiac Care","04 Aesthetics","05 Rehabilitation","06 Hospital Setup","07 Surgical"];
+      categories.forEach(catLabel => {
+        const key = catLabel.replace(/^\d+\s*/, '');
+        const data = window.PULSE_CATEGORY_PRODUCTS && window.PULSE_CATEGORY_PRODUCTS[key];
+        const products = (data && data.products) || [];
+        const btn = document.createElement('button');
+        btn.className = 'chat-quick-btn chat-category-btn';
+        const titleSpan = document.createElement('span');
+        titleSpan.className = 'cat-btn-title';
+        titleSpan.textContent = catLabel;
+        btn.appendChild(titleSpan);
+        if (products.length) {
+          const exampleNames = products.slice(0, 2).map(p => p.name).join(', ');
+          const extra = products.length > 2 ? (', +' + (products.length - 2) + ' more') : '';
+          const subSpan = document.createElement('span');
+          subSpan.className = 'cat-btn-sub';
+          subSpan.textContent = exampleNames + extra;
+          btn.appendChild(subSpan);
+        }
+        btn.addEventListener('click', () => handleUserInput(catLabel));
+        actionsDiv.appendChild(btn);
+      });
+      const browseBtn = document.createElement('button');
+      browseBtn.className = 'chat-quick-btn chat-category-btn chat-browse-all-btn';
+      const bTitle = document.createElement('span');
+      bTitle.className = 'cat-btn-title';
+      bTitle.textContent = '\u{1F50D} Browse All Products';
+      const bSub = document.createElement('span');
+      bSub.className = 'cat-btn-sub';
+      bSub.textContent = 'See every product, every category';
+      browseBtn.appendChild(bTitle);
+      browseBtn.appendChild(bSub);
+      browseBtn.addEventListener('click', () => handleUserInput('Browse All Products'));
+      actionsDiv.appendChild(browseBtn);
+      chatBody.appendChild(actionsDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
     function renderBotMessage(text, options = []) {
       addMessage(text, 'bot');
       if (options.length > 0) {
@@ -4076,24 +4126,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         } else if (chatStep === 1) {
           userData.role = text;
           chatStep = 2;
-          renderBotMessage("Which category are you interested in? You can also just type a product name to search (e.g. \"wheelchair\" or \"ventilator\").", [
-            "01 Critical Care",
-            "02 Renal Care",
-            "03 Cardiac Care",
-            "04 Aesthetics",
-            "05 Rehabilitation",
-            "06 Hospital Setup",
-            "07 Surgical"
-          ]);
+          renderCategoryButtons("Which category are you interested in? Each one shows a couple of example products below it — or just type a product name to search (e.g. \"wheelchair\" or \"ventilator\").");
         } else if (chatStep === 2) {
           const knownCategories = ["01 Critical Care","02 Renal Care","03 Cardiac Care","04 Aesthetics","05 Rehabilitation","06 Hospital Setup","07 Surgical"];
+          if (text === "Browse All Products") {
+            renderBotMessage("Here's our full product range — tap any card to view details:", []);
+            renderProductCardList(getAllProductsFlat());
+            setTimeout(() => {
+              renderCategoryButtons("Or pick a category to narrow it down:");
+            }, 700);
+            return;
+          }
           if (knownCategories.indexOf(text) === -1) {
             // Not a category button click: treat as a product search query
             const matches = searchProducts(text, 5);
             if (!matches.length) {
-              renderBotMessage("I couldn't find a product matching \"" + text + "\" — please pick a category below, or try a different product name:", [
-                "01 Critical Care","02 Renal Care","03 Cardiac Care","04 Aesthetics","05 Rehabilitation","06 Hospital Setup","07 Surgical"
-              ]);
+              renderCategoryButtons("I couldn't find a product matching \"" + text + "\" — please pick a category below, or try a different product name:");
               return;
             }
             userData.category = matches[0].category;
