@@ -515,7 +515,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gap: 24px !important;
     }
   }
+
+  /* FAQ ACCORDION */
+  .faq-accordion { display: flex; flex-direction: column; }
+  .faq-item { border-bottom: 1px solid #e5e7eb; }
+  .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; background: none; border: none; padding: 22px 0; font-size: 17px; font-weight: 700; color: #0a1e40; text-align: left; cursor: pointer; font-family: inherit; }
+  .faq-icon { flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 400; color: #1B2F6E; transition: transform 0.25s ease; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+  .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+  .faq-a p { color: #4b5563; font-size: 15px; line-height: 1.7; margin: 0; }
+  @media (max-width: 900px) {
+    .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
+  }
 </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Pulse an Indian company?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pulse is an Indian medical device manufacturer, founded in Bengaluru in 2025. We design, manufacture, and service our equipment in India, rather than importing and reselling devices made elsewhere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When did Pulse start?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse started on 20th August 2025 in Bengaluru, India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where are Pulse medical devices manufactured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All Pulse equipment is manufactured in India, through in-house R&D and manufacturing built on India's MSME ecosystem, rather than being outsourced to overseas OEMs and relabeled."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Pulse a certified medical device company?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pulse products are ISO 13485 certified and comply with CE and CDSCO standards, with BIS/CDSCO certification for safe domestic distribution across India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Pulse a funded, established company?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Pulse is backed by 3one4 Capital, and provides pan-India service response within 96 hours across every state."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -689,6 +750,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- CTA -->
+<section style="padding:72px 6%; background:#f8f9fc;">
+  <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+    <div>
+      <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+      <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is Pulse an Indian company?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. Pulse is an Indian medical device manufacturer, founded in Bengaluru in 2025. We design, manufacture, and service our equipment in India, rather than importing and reselling devices made elsewhere.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          When did Pulse start?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Pulse started on 20th August 2025 in Bengaluru, India.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Where are Pulse medical devices manufactured?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>All Pulse equipment is manufactured in India, through in-house R&D and manufacturing built on India's MSME ecosystem, rather than being outsourced to overseas OEMs and relabeled.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is Pulse a certified medical device company?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. Pulse products are ISO 13485 certified and comply with CE and CDSCO standards, with BIS/CDSCO certification for safe domestic distribution across India.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is Pulse a funded, established company?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. Pulse is backed by 3one4 Capital, and provides pan-India service response within 96 hours across every state.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="about-cta">
   <h2>Ready to partner with India's most integrated MedTech brand?</h2>
   <div class="about-cta-btns">
