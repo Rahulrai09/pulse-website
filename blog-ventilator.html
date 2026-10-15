@@ -189,12 +189,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       text-align: right;
     }
     .more-reading a span { display: block; font-size: 0.75rem; opacity: 0.7; font-weight: 400; margin-bottom: 2px; }
-  </style>
+      .quick-answer { background: #f4f6fa; border-left: 3px solid #1B2F6E; border-radius: 6px; padding: 18px 22px; margin: 0 0 32px; }
+    .quick-answer p { margin: 0; font-size: 17px; color: #0a1e40; }
+    .key-facts { background: #fff; border: 1px solid #dbe3f3; border-radius: 10px; padding: 18px 22px 4px; margin: 20px 0 28px; }
+    .table-scroll { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .table-scroll .spec-table { min-width: 520px; }
+</style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How ICU Ventilators Work: A Beginner's Guide",
+  "description": "A beginner's guide to ICU ventilators: how they work, the main ventilation modes, and why choosing the right ventilator matters for patients.",
+  "author": {
+    "@type": "Organization",
+    "name": "Pulse"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pulse",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.pulseio.in/favicon-192x192.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.pulseio.in/blog-ventilator.html"
+  },
+  "datePublished": "2026-06-24",
+  "dateModified": "2026-10-15"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does an ICU ventilator work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It uses positive pressure to push a controlled mix of air and oxygen into the lungs, then lets the patient breathe out passively. It controls tidal volume, pressure and breathing rate, and keeps a small pressure (PEEP) at the end of each breath."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is PEEP on a ventilator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PEEP (positive end-expiratory pressure) is a baseline pressure kept in the lungs at the end of each breath. It keeps the tiny air sacs open and helps prevent lung collapse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between VCV and PCV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VCV (volume-controlled ventilation) delivers the same volume of air every breath. PCV (pressure-controlled ventilation) delivers breaths up to a set pressure, so the volume changes with the stiffness of the lungs, which can be gentler on fragile lungs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a hospital look for in an ICU ventilator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Support for adult, paediatric and neonatal patients, turbine drive so it does not need piped air, a clear touchscreen with waveforms, battery backup, a full set of modes, and reliable local service."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -216,6 +287,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <h1 class="blog-title">How ICU Ventilators Work: A Beginner's Guide</h1>
   <p class="blog-deck">Understanding the mechanics behind modern ICU ventilators, and why the right machine can mean the difference between a stable recovery and a critical complication.</p>
+
+  <div class="quick-answer">
+    <p><strong>Quick answer:</strong> An ICU ventilator pushes a controlled mix of air and oxygen into the lungs when a patient cannot breathe well enough alone. It controls how much air goes in (tidal volume), the pressure used and the number of breaths, and keeps a small pressure at the end of each breath (PEEP) so the lungs do not collapse. Modes such as VCV, PCV, SIMV and PRVC set how much the machine or the patient leads each breath.</p>
+  </div>
 
   <h2>What Is an ICU Ventilator?</h2>
   <p>An ICU ventilator is a medical device that assists or replaces a patient's breathing when they are not able to breathe well enough on their own. It delivers a controlled mixture of air and oxygen into the lungs, monitors respiratory parameters in real time, and adjusts automatically to match the patient's clinical needs.</p>
@@ -278,7 +353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>Pulse SH320 — Product Specifications</h2>
   <p>The Pulse SH320 is a versatile ICU ventilator engineered for neonates, paediatrics, and adults. It features turbine technology, an 18.5-inch touchscreen, and supports invasive, non-invasive, and high-flow oxygen therapy.</p>
 
-  <table class="spec-table">
+  <div class="table-scroll"><table class="spec-table">
     <thead>
       <tr>
         <th>Parameter</th>
@@ -306,7 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <tr><td>Trend Storage</td><td>72 hours (tabular and graphic)</td></tr>
       <tr><td>Log</td><td>Up to 5000 alarm and operation entries</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h2>Why the Right Ventilator Matters for Indian Hospitals</h2>
   <p>India's healthcare infrastructure spans everything from 500-bed corporate hospitals in metros to 30-bed district hospitals in semi-urban areas. A ventilator that works well in one setting must also work reliably in the other: without a constant piped gas supply, with inconsistent power, and with clinical teams who may be managing multiple critical patients at once.</p>
@@ -318,6 +393,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>If you're evaluating ICU ventilators for your hospital, Pulse's team is available to walk you through a demonstration, provide technical specifications, and support your clinical assessment process.</p>
 
   <p><a href="critical-care.html" style="color:#E63946; font-weight:600; text-decoration:none;">Visit the Pulse Critical Care Product Page →</a></p>
+
+  <h2>Key Facts at a Glance</h2>
+  <div class="key-facts">
+    <ul>
+      <li>An ICU ventilator controls tidal volume, inspiratory pressure and breathing rate.</li>
+      <li>PEEP is a small pressure kept at the end of each breath to stop the air sacs from collapsing.</li>
+      <li>Volume-controlled ventilation gives a fixed volume each breath; pressure-controlled ventilation gives breaths up to a set pressure.</li>
+      <li>SIMV lets patients take their own breaths between machine breaths and is often used when weaning.</li>
+      <li>Invasive ventilation uses a breathing tube; non-invasive ventilation uses a face mask (Cleveland Clinic).</li>
+    </ul>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <h3>How does an ICU ventilator work?</h3>
+  <p>It uses positive pressure to push a controlled mix of air and oxygen into the lungs, then lets the patient breathe out passively. It controls tidal volume, pressure and breathing rate, and keeps a small pressure (PEEP) at the end of each breath.</p>
+  <h3>What is PEEP on a ventilator?</h3>
+  <p>PEEP (positive end-expiratory pressure) is a baseline pressure kept in the lungs at the end of each breath. It keeps the tiny air sacs open and helps prevent lung collapse.</p>
+  <h3>What is the difference between VCV and PCV?</h3>
+  <p>VCV (volume-controlled ventilation) delivers the same volume of air every breath. PCV (pressure-controlled ventilation) delivers breaths up to a set pressure, so the volume changes with the stiffness of the lungs, which can be gentler on fragile lungs.</p>
+  <h3>What should a hospital look for in an ICU ventilator?</h3>
+  <p>Support for adult, paediatric and neonatal patients, turbine drive so it does not need piped air, a clear touchscreen with waveforms, battery backup, a full set of modes, and reliable local service.</p>
+
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://my.clevelandclinic.org/health/treatments/15368-mechanical-ventilation" target="_blank" rel="noopener noreferrer" style="color:#1B2F6E;">Mechanical Ventilation: Purpose, Types and Complications</a> (Cleveland Clinic, reviewed September 2024)</li>
+    <li>Pulse ICU Ventilator product page: machine details</li>
+  </ul>
+
+  <div class="disclaimer-box">
+    Information is for general guidance and reflects sources available at the time of review. Last reviewed October 2026.
+  </div>
 
   <h2>Related Reading</h2>
   <ul>
