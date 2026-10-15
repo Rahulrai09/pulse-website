@@ -3695,6 +3695,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="pulse-chat-footer">Powered by Pulse AI</div>
 </div>
 
+<script src="js/faq-data.js" defer></script>
+<script src="js/faq-search.js" defer></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const chatBtn = document.getElementById('ai-chat-btn');
@@ -3708,6 +3710,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     let chatStep = 0;
     let userData = { name: '', role: '', category: '', contact: '', firstMessage: '' };
     let chatTranscript = [];
+
+    function looksLikeQuestion(text) {
+      const t = text.trim();
+      if (t.length > 300) return false;
+      if (/\?\s*$/.test(t)) return true;
+      const starters = ['what','how','where','when','why','is','are','do','does','can','could','should','will','which','who','tell','explain'];
+      const firstWord = t.toLowerCase().split(/\s+/)[0].replace(/[^a-z]/g, '');
+      if (starters.indexOf(firstWord) !== -1) return true;
+      if (t.split(/\s+/).length >= 5) return true;
+      return false;
+    }
+
+    function renderLearnMoreLink(url) {
+      if (!url) return;
+      const actionsDiv = document.createElement('div');
+      actionsDiv.className = 'chat-quick-actions';
+      const link = document.createElement('a');
+      link.className = 'chat-quick-btn';
+      link.textContent = 'Learn more \u2192';
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.style.textDecoration = 'none';
+      link.style.display = 'inline-block';
+      actionsDiv.appendChild(link);
+      chatBody.appendChild(actionsDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function answerFromFAQ(queryText) {
+      const results = (window.PulseFAQSearch && window.PulseFAQSearch.search) ? window.PulseFAQSearch.search(queryText, 1) : [];
+      if (results.length && results[0].score >= window.PulseFAQSearch.THRESHOLD) {
+        const entry = results[0].entry;
+        renderBotMessage(entry.a, []);
+        renderLearnMoreLink(entry.u);
+        return true;
+      }
+      renderBotMessage("I don't have a specific answer for that yet, but I'll make sure our specialist covers it when they reach out.", []);
+      return false;
+    }
 
     function startChatFlow() {
       chatStep = 0;
@@ -3759,6 +3801,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             userData.name = '';
             chatStep = 0.5;
             renderBotMessage('Hi! How can I assist you? Could you please tell me your name?', []);
+            return;
+          }
+          if (looksLikeQuestion(text)) {
+            const answered = answerFromFAQ(text);
+            chatStep = 0.5;
+            setTimeout(() => {
+              const followUp = answered
+                ? "I hope that helps! I'm here to connect you with a PULSE specialist too \u2014 could you tell me your name?"
+                : "No problem \u2014 I'll pass that along. In the meantime, could you tell me your name so I can connect you with a PULSE specialist?";
+              renderBotMessage(followUp, []);
+            }, 700);
             return;
           }
           const properName = text.trim().split(/\s+/).map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(); }).join(' ');
@@ -3831,6 +3884,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             window.fbq('track', 'Lead');
           }
           renderBotMessage(`Thank you! Our ${userData.category.replace(/^\d+\s*/, "").replace(/\s*Care$/i, "")} Care expert will reach out within 24 hours. For urgent queries call +91 90711 01108 directly.`, []);
+        } else if (chatStep === 5) {
+          answerFromFAQ(text);
         }
       }, 600);
     }
