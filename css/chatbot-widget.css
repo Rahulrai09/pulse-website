@@ -1,0 +1,201 @@
+/* PULSE AI Chatbot widget styles — shared across every page */
+.pulse-chatbot-btn {
+  position: fixed; bottom: 32px; right: 32px; width: 60px; height: 60px;
+  border-radius: 50%; background-color: #1B2F6E !important;
+  color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 9999; transition: transform 0.3s ease;
+}
+.pulse-chatbot-btn:hover { transform: scale(1.05); }
+.pulse-chatbot-btn svg { width: 30px; height: 30px; }
+.chat-hi-bubble {
+  position: fixed;
+  bottom: 100px;
+  right: 28px;
+  background: #fff;
+  color: #1B2F6E;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 9996;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  animation: chatHiPulse 11s ease-in-out infinite;
+}
+.chat-hi-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  right: 28px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  transform: rotate(45deg);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.08);
+}
+.chat-hi-wave {
+  display: inline-block;
+  animation: waveHand 0.6s ease-in-out 3;
+  transform-origin: 70% 70%;
+}
+@keyframes waveHand {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-15deg); }
+}
+@keyframes chatHiPulse {
+  0%    { opacity: 0; transform: translateY(6px) scale(0.9); }
+  5%    { opacity: 1; transform: translateY(0) scale(1); }
+  72%   { opacity: 1; transform: translateY(0) scale(1); }
+  78%   { opacity: 0; transform: translateY(6px) scale(0.9); }
+  100%  { opacity: 0; transform: translateY(6px) scale(0.9); }
+}
+.chat-hi-bubble.hidden { display: none; }
+
+.pulse-chat-window {
+  position: fixed; bottom: 92px; right: 28px; width: 360px; height: 480px; max-height: calc(100vh - 160px);
+  background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  display: flex; flex-direction: column; z-index: 9998; overflow: hidden;
+  font-family: 'Inter', sans-serif; transform: translateY(16px); opacity: 0;
+  pointer-events: none; transition: opacity 0.5s ease, transform 0.5s ease;
+}
+@media (max-width: 400px) {
+  .pulse-chat-window {
+    width: calc(100vw - 24px);
+    height: min(480px, 60vh);
+    right: 12px;
+    left: 12px;
+    bottom: 80px;
+  }
+}
+.pulse-chat-window.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+
+.pulse-chat-window.minimized { height: auto !important; min-height: 0; }
+.pulse-chat-window.minimized .pulse-chat-body,
+.pulse-chat-window.minimized .pulse-chat-input-area,
+.pulse-chat-window.minimized .pulse-chat-footer { display: none; }
+
+.pulse-chat-window.expanded {
+  width: min(520px, calc(100vw - 24px)) !important;
+  height: min(760px, calc(100vh - 48px)) !important;
+  max-height: calc(100vh - 48px) !important;
+}
+
+.chat-welcome-pill {
+  position: fixed;
+  bottom: 72px;
+  right: 100px;
+  background: #1B2F6E;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 24px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 9997;
+  white-space: nowrap;
+  transform: translateX(160px);
+  opacity: 0;
+  transition: transform 0.6s cubic-bezier(0.34,1.2,0.64,1), opacity 0.4s ease;
+  display: none;
+}
+.chat-welcome-pill.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+.chat-welcome-pill::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 7px solid transparent;
+  border-left-color: #1B2F6E;
+}
+@media (max-width: 767px) {
+  .chat-welcome-pill {
+    display: block;
+    left: 12px;
+    white-space: normal;
+    line-height: 1.3;
+    border-radius: 16px;
+  }
+}
+
+.pulse-chat-header {
+  background: #1c2b5e; color: white; padding: 16px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.pulse-chat-title { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 1.05rem; }
+.pulse-chat-actions button { background: none; border: none; color: white; cursor: pointer; opacity: 0.8; transition: opacity 0.2s; font-size: 1.2rem; display: flex; }
+.pulse-chat-actions button:hover { opacity: 1; }
+
+.pulse-chat-body {
+  flex: 1; padding: 16px; overflow-y: auto; background: #f7f8fc;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.pulse-chat-body::-webkit-scrollbar { width: 6px; }
+.pulse-chat-body::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+.chat-msg { max-width: 85%; padding: 12px 16px; border-radius: 16px; font-size: 0.9rem; line-height: 1.5; word-wrap: break-word; }
+.chat-msg.bot { background: white; border: 1px solid #e4e7f2; border-bottom-left-radius: 4px; color: #1c2b5e; align-self: flex-start; text-align: left; }
+.chat-msg.user { background: #5b6bcc; color: white; border-bottom-right-radius: 4px; align-self: flex-end; text-align: right; }
+
+.chat-quick-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.chat-quick-btn {
+  background: white; border: 1px solid #5b6bcc; color: #5b6bcc;
+  padding: 8px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;
+  cursor: pointer; transition: all 0.2s; text-align: left;
+}
+.chat-quick-btn:hover { background: #5b6bcc; color: white; }
+.chat-quick-btn.chat-category-btn {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  padding: 9px 13px; max-width: 220px;
+}
+.chat-quick-btn.chat-category-btn .cat-btn-title { font-weight: 600; }
+.chat-quick-btn.chat-category-btn .cat-btn-sub { font-size: 0.68rem; font-weight: 400; color: #9aa0b4; line-height: 1.3; }
+.chat-quick-btn.chat-category-btn:hover .cat-btn-sub { color: #e4e7f2; }
+.chat-quick-btn.chat-browse-all-btn { border-style: dashed; }
+
+.chat-msg-time { font-size: 0.65rem; color: #9aa0b4; margin-top: -6px; margin-bottom: -2px; max-width: 85%; }
+.chat-msg-time.bot { align-self: flex-start; padding-left: 4px; }
+.chat-msg-time.user { align-self: flex-end; padding-right: 4px; text-align: right; }
+
+.chat-form-card { background: white; border: 1px solid #e4e7f2; border-radius: 12px; padding: 14px 16px; width: 100%; }
+.chat-form-title { font-weight: 700; color: #1c2b5e; font-size: 0.85rem; margin-bottom: 8px; }
+.chat-form-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-top: 1px solid #f0f1f6; font-size: 0.78rem; }
+.chat-form-row:first-of-type { border-top: none; }
+.chat-form-label { color: #9aa0b4; }
+.chat-form-row.active .chat-form-label { color: #5b6bcc; font-weight: 600; }
+.chat-form-row.done .chat-form-label { color: #1c2b5e; }
+.chat-form-value { color: #2fa86b; font-weight: 600; }
+
+.chat-product-cards { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.chat-product-card {
+  background: white; border: 1px solid #e4e7f2; border-radius: 12px;
+  width: 104px; padding: 8px; text-decoration: none; color: #1c2b5e;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  transition: all 0.2s;
+}
+.chat-product-card:hover { border-color: #5b6bcc; box-shadow: 0 4px 10px rgba(91,107,204,0.15); transform: translateY(-2px); }
+.chat-product-card img { width: 100%; height: 64px; object-fit: contain; }
+.chat-product-card .cpc-name { font-size: 0.72rem; font-weight: 600; text-align: center; line-height: 1.25; }
+
+.pulse-chat-input-area {
+  padding: 16px; background: white; border-top: 1px solid #e4e7f2; display: flex; gap: 10px; align-items: center;
+}
+.pulse-chat-input-area input {
+  flex: 1; border: 1px solid #e4e7f2; border-radius: 20px; padding: 10px 16px; font-size: 0.9rem; outline: none; transition: border-color 0.2s;
+}
+.pulse-chat-input-area input:focus { border-color: #5b6bcc; }
+.pulse-chat-send {
+  background: #5b6bcc; color: white; border: none; width: 38px; height: 38px; border-radius: 50%;
+  display: flex; justify-content: center; align-items: center; cursor: pointer; transition: background 0.2s; flex-shrink: 0;
+}
+.pulse-chat-send:hover { background: #4a59a8; }
+.pulse-chat-footer { text-align: center; font-size: 0.65rem; color: #999; padding: 0 0 12px; background: white; }
