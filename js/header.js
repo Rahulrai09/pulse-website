@@ -291,9 +291,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <li><a href="/about.html">About Us</a></li>
 
-        <li><a href="/index.html#why-pulse">Why Pulse</a></li>
+        <li><a href="/#why-pulse">Why Pulse</a></li>
 
-        <li><a href="/index.html#excellence">How It Works</a></li>
+        <li><a href="/#excellence">How It Works</a></li>
 
         <li class="nav-item-mega" id="products-mega-li">
 
@@ -554,9 +554,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <a href="/about.html">About Us</a>
 
-        <a href="/index.html#why-pulse">Why Pulse</a>
+        <a href="/#why-pulse">Why Pulse</a>
 
-        <a href="/index.html#excellence">How It Works</a>
+        <a href="/#excellence">How It Works</a>
 
         <div class="mob-nav-item">
 
@@ -2101,7 +2101,7 @@ var searchMap = [
 
     ],
 
-    url: '/index.html#contact'
+    url: '/#contact'
 
   },
 
@@ -2119,7 +2119,7 @@ var searchMap = [
 
     ],
 
-    url: '/index.html#why-pulse'
+    url: '/#why-pulse'
 
   },
 
@@ -2137,7 +2137,7 @@ var searchMap = [
 
     ],
 
-    url: '/index.html#excellence'
+    url: '/#excellence'
 
   },
 
@@ -2269,7 +2269,7 @@ var searchMap = [
 
     ],
 
-    url: '/index.html#contact'
+    url: '/#contact'
 
   },
 
@@ -2285,7 +2285,7 @@ var searchMap = [
 
     ],
 
-    url: '/index.html'
+    url: '/'
 
   }
 
