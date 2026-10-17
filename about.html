@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pulse is an Indian medical device maker that builds and services ICU ventilators, dialysis machines and cardiac devices. Backed by 3one4 Capital.">
+  <meta name="description" content="Pulse is a Bengaluru medical equipment maker, founded in 2025 and backed by 3one4 Capital. From single machines to complete hospital setup.">
   <link rel="canonical" href="https://www.pulseio.in/about.html" />
 <title>About Pulse | Medical Equipment Manufacturer in India</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -28,7 +28,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
@@ -279,6 +278,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .value-card i { font-size: 36px; color: #1B2F6E; margin-bottom: 20px; display: block; }
   .value-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 12px; color: #0a1e40; }
   .value-card p { font-size: 13px; color: #6b7280; line-height: 1.6; }
+
+  /* ── AT A GLANCE / WHAT WE MAKE / NEWS ── */
+  .glance-section { padding: 96px 8%; background:#f8f9fc; border-top:1px solid #e5e7eb; }
+  .glance-wrap { max-width:1100px; margin:0 auto; display:grid; grid-template-columns: .8fr 1.2fr; gap:56px; align-items:start; }
+  .glance-intro h2 { font-size:clamp(28px,3.5vw,44px); font-weight:800; color:#0a1e40; letter-spacing:-0.02em; line-height:1.15; margin-bottom:16px; }
+  .glance-intro p { font-size:16px; color:#6b7280; line-height:1.7; }
+  .glance-table { width:100%; border-collapse:separate; border-spacing:0; background:#fff; border:1.5px solid #e5e7eb; border-radius:16px; overflow:hidden; }
+  .glance-table th, .glance-table td { text-align:left; padding:15px 20px; border-top:1px solid #eef1f6; font-size:15px; vertical-align:top; }
+  .glance-table tr:first-child th, .glance-table tr:first-child td { border-top:0; }
+  .glance-table th { width:34%; color:#6b7280; font-weight:600; background:#fbfcfe; }
+  .glance-table td { color:#0a1e40; font-weight:500; }
+  .make-section { padding: 96px 8%; }
+  .make-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; max-width:1200px; margin:0 auto; }
+  .make-card { display:flex; flex-direction:column; gap:8px; padding:26px 22px; border:1.5px solid #e5e7eb; border-radius:14px; text-decoration:none; background:#fff; transition:all .3s; }
+  .make-card:hover { border-color:#1B2F6E; transform:translateY(-4px); box-shadow:0 10px 28px rgba(27,47,110,.1); }
+  .make-card .mk-ic { width:48px; height:48px; border-radius:12px; background:#eef2fb; color:#1B2F6E; display:flex; align-items:center; justify-content:center; font-size:26px; margin-bottom:6px; transition:all .3s; }
+  .make-card:hover .mk-ic { background:#1B2F6E; color:#fff; }
+  .make-card h3 { font-size:17px; font-weight:700; color:#0a1e40; }
+  .make-card p { font-size:14px; color:#6b7280; line-height:1.5; }
+  .make-card .mk-more { margin-top:auto; padding-top:6px; font-size:13.5px; font-weight:700; color:#E87722; }
+  .make-card.feature { background:linear-gradient(135deg,#1B2F6E,#2b4596); border-color:transparent; }
+  .make-card.feature h3, .make-card.feature p { color:#fff; }
+  .make-card.feature .mk-ic { background:rgba(255,255,255,.14); color:#fff; }
+  .make-note { text-align:center; color:#6b7280; font-size:15px; margin-top:28px; }
+  .news-section { padding: 0 8% 96px; }
+  .news-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:1200px; margin:0 auto; }
+  .news-card { display:block; padding:26px; border:1.5px solid #e5e7eb; border-radius:14px; text-decoration:none; transition:all .3s; background:#fff; }
+  .news-card:hover { border-color:#E87722; transform:translateY(-4px); box-shadow:0 10px 28px rgba(0,0,0,.06); }
+  .news-card span { font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#E87722; }
+  .news-card h3 { font-size:17px; font-weight:700; color:#0a1e40; line-height:1.4; margin:10px 0 14px; }
+  .news-card em { font-style:normal; font-size:14px; font-weight:600; color:#1B2F6E; }
+  @media (max-width:1024px) { .make-grid { grid-template-columns:repeat(2,1fr); } .glance-wrap { grid-template-columns:1fr; gap:28px; } .news-grid { grid-template-columns:1fr; } }
+  @media (max-width:600px) { .glance-section, .make-section { padding:64px 6%; } .news-section { padding:0 6% 64px; } .make-grid { grid-template-columns:1fr; } .glance-table th, .glance-table td { display:block; width:100%; } .glance-table td { border-top:0; padding-top:0; } }
 
   /* ── LEGACY ── */
   .legacy-section {
@@ -617,52 +649,76 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is Pulse an Indian company?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Pulse is an Indian medical device manufacturer, founded in Bengaluru in 2025. We design, manufacture, and service our equipment in India, rather than importing and reselling devices made elsewhere."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "When did Pulse start?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pulse started on 20th August 2025 in Bengaluru, India."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where are Pulse medical devices manufactured?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "All Pulse equipment is manufactured in India, through in-house R&D and manufacturing built on India's MSME ecosystem, rather than being outsourced to overseas OEMs and relabeled."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Pulse a certified medical device company?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Pulse products are ISO 13485 certified and comply with CE and CDSCO standards, with BIS/CDSCO certification for safe domestic distribution across India."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Pulse a funded, established company?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Pulse is backed by 3one4 Capital, and provides pan-India service response within 96 hours across every state."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Pulse an Indian company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pulse is an Indian medical device manufacturer, founded in Bengaluru in 2025. We design, manufacture, and service our equipment in India, rather than importing and reselling devices made elsewhere."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "When did Pulse start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pulse started on 20th August 2025 in Bengaluru, India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are Pulse medical devices manufactured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All Pulse equipment is manufactured in India, through in-house R&D and manufacturing built on India's MSME ecosystem, rather than being outsourced to overseas OEMs and relabeled."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Pulse a certified medical device company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pulse products are ISO 13485 certified and comply with CE and CDSCO standards, with BIS/CDSCO certification for safe domestic distribution across India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Pulse a funded, established company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pulse raised a US$4 million seed round in 2026 led by 3one4 Capital, with Incubate Fund Asia and Stride Ventures, and provides pan-India service response within 96 hours across every state."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who founded Pulse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pulse was founded in 2025 by Anshul Sharma and Nishant Goel. The company is headquartered in Bengaluru."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Pulse make?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pulse makes medical equipment across critical care, renal care, cardiac care, aesthetics, rehabilitation, IVD diagnostics and surgical care, and sets up complete hospitals from 0 to 100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Pulse the same company as Zuvio Technologies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pulse is the brand of Zuvio Technologies Private Limited, the registered company behind it."
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -684,13 +740,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>A homegrown medical equipment manufacturer — engineering, building, and servicing devices that power healthcare across the globe.</p>
     <div class="about-hero-badges">
       <div class="hero-badge">
-        <i class="ti ti-certificate"></i> ISO 13485 Certified
+        <i class="ti ti-certificate"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" /><path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" /><path d="M6 9l12 0" /><path d="M6 12l3 0" /><path d="M6 15l2 0" /></svg></i> ISO 13485 Certified
       </div>
       <div class="hero-badge">
-        <i class="ti ti-map-pin"></i> Made in India
+        <i class="ti ti-map-pin"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg></i> Made in India
       </div>
       <div class="hero-badge">
-        <i class="ti ti-building-hospital"></i> Pan-India Service
+        <i class="ti ti-building-hospital"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l18 0" /><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" /><path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" /><path d="M10 9l4 0" /><path d="M12 7l0 4" /></svg></i> Pan-India Service
       </div>
     </div>
   </div>
@@ -725,19 +781,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Our mission is clear and impactful — to enhance the quality of life through affordable and accessible medical technologies that empower healthcare professionals and improve outcomes for patients across the world.</p>
     <div class="about-highlights">
       <div class="highlight-item">
-        <i class="ti ti-check"></i>
+        <i class="ti ti-check"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg></i>
         Designed, built, and serviced entirely under one roof in India
       </div>
       <div class="highlight-item">
-        <i class="ti ti-check"></i>
+        <i class="ti ti-check"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg></i>
         Global clinical standards with India-first pricing
       </div>
       <div class="highlight-item">
-        <i class="ti ti-check"></i>
+        <i class="ti ti-check"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg></i>
         96-hour service response across every state in India
       </div>
       <div class="highlight-item">
-        <i class="ti ti-check"></i>
+        <i class="ti ti-check"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg></i>
         ISO 13485, CE, CDSCO certified across all product lines
       </div>
     </div>
@@ -760,12 +816,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="purpose-grid">
     <div class="purpose-card">
-      <i class="ti ti-target"></i>
+      <i class="ti ti-target"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg></i>
       <h3>Our Mission</h3>
       <p>To improve quality of life by delivering world-class medical devices that combine innovation, affordability, and accessibility — engineered in India for hospitals across the nation and beyond.</p>
     </div>
     <div class="purpose-card orange">
-      <i class="ti ti-eye"></i>
+      <i class="ti ti-eye"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg></i>
       <h3>Our Vision</h3>
       <p>To be at the forefront of India's MedTech revolution — delivering accessible, high-performance medical devices that reduce import dependency, improve patient outcomes, and shape the future of Indian healthcare.</p>
     </div>
@@ -781,27 +837,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="values-grid">
     <div class="value-card">
-      <i class="ti ti-shield-heart"></i>
+      <i class="ti ti-shield-heart"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 21a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12.01 12.01 0 0 1 .378 5" /><path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" /></svg></i>
       <h3>Patient Safety First</h3>
       <p>Every device is engineered with the highest priority on patient well-being — no shortcuts, no compromises.</p>
     </div>
     <div class="value-card">
-      <i class="ti ti-bulb"></i>
+      <i class="ti ti-bulb"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg></i>
       <h3>Innovation with Purpose</h3>
       <p>Technology is only meaningful when it solves real healthcare challenges and reaches those who need it most.</p>
     </div>
     <div class="value-card">
-      <i class="ti ti-certificate"></i>
+      <i class="ti ti-certificate"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" /><path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" /><path d="M6 9l12 0" /><path d="M6 12l3 0" /><path d="M6 15l2 0" /></svg></i>
       <h3>Regulatory Excellence</h3>
       <p>We uphold ISO 13485, CE, and CDSCO standards to ensure uncompromised safety and clinical efficacy across every product.</p>
     </div>
     <div class="value-card">
-      <i class="ti ti-leaf"></i>
+      <i class="ti ti-leaf"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 21c.5 -4.5 2.5 -8 7 -10" /><path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" /></svg></i>
       <h3>Sustainability</h3>
       <p>Ethical, eco-conscious manufacturing is embedded in our DNA — building responsibly for the next generation.</p>
     </div>
     <div class="value-card">
-      <i class="ti ti-heart-handshake"></i>
+      <i class="ti ti-heart-handshake"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:-0.125em;"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /><path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" /><path d="M12.5 15.5l2 2" /><path d="M15 13l2 2" /></svg></i>
       <h3>Customer Commitment</h3>
       <p>Our relationship doesn't end at product delivery — we are long-term partners in your facility's growth and patient outcomes.</p>
     </div>
@@ -809,6 +865,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- LEGACY -->
+<!-- AT A GLANCE -->
+<section class="glance-section">
+  <div class="glance-wrap">
+    <div class="glance-intro">
+      <span class="section-eyebrow">Quick Facts</span>
+      <h2>Pulse at a Glance</h2>
+      <p>The key facts about Pulse in one place: who we are, who backs us, what we make and how to reach us.</p>
+    </div>
+    <table class="glance-table">
+      <tbody>
+        <tr><th scope="row">Brand</th><td>Pulse</td></tr>
+        <tr><th scope="row">Registered company</th><td>Zuvio Technologies Private Limited</td></tr>
+        <tr><th scope="row">Founded</th><td>20 August 2025, Bengaluru, India</td></tr>
+        <tr><th scope="row">Founders</th><td>Anshul Sharma and Nishant Goel</td></tr>
+        <tr><th scope="row">Funding</th><td>US$4 million seed round (2026) led by 3one4 Capital, with Incubate Fund Asia and Stride Ventures</td></tr>
+        <tr><th scope="row">What we make</th><td>Critical care, renal care, cardiac care, aesthetics, rehabilitation, IVD diagnostics and surgical care equipment, plus complete hospital setup from 0 to 100</td></tr>
+        <tr><th scope="row">Who we serve</th><td>Small clinics, nursing homes, dialysis centres and large hospitals across India</td></tr>
+        <tr><th scope="row">Service</th><td>96-hour service response across every state in India</td></tr>
+        <tr><th scope="row">Certifications</th><td>ISO 13485, CE, CDSCO</td></tr>
+        <tr><th scope="row">Head office</th><td>1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru, Karnataka 560102</td></tr>
+        <tr><th scope="row">Contact</th><td>+91 90711 01108 · info@pulseio.in</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- WHAT WE MAKE -->
+<section class="make-section">
+  <div class="section-header">
+    <span class="section-eyebrow">Our Portfolio</span>
+    <h2>What We Make</h2>
+    <p>Equipment for every department, from one machine to a complete hospital.</p>
+  </div>
+  <div class="make-grid">
+    <a class="make-card" href="/critical-care.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" /><path d="M7 20h10" /><path d="M9 16v4" /><path d="M15 16v4" /><path d="M7 10h2l2 3l2 -6l1 3h3" /></svg></span><h3>Critical Care</h3><p>Ventilators, patient monitors, anaesthesia</p><span class="mk-more">Explore &rarr;</span></a>
+    <a class="make-card" href="/renal-care.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" /></svg></span><h3>Renal Care</h3><p>Dialysis machines and consumables</p><span class="mk-more">Explore &rarr;</span></a>
+    <a class="make-card" href="/cardiac-care.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 13.572l-7.5 7.428l-2.896 -2.868m-6.117 -8.104a5 5 0 0 1 9.013 -3.022a5 5 0 1 1 7.5 6.572" /><path d="M3 13h2l2 3l2 -6l1 3h3" /></svg></span><h3>Cardiac Care</h3><p>Coronary stents, guidewires, cath lab</p><span class="mk-more">Explore &rarr;</span></a>
+    <a class="make-card" href="/aesthetics.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm0 -12a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z" /></svg></span><h3>Aesthetics</h3><p>Lasers, RF and body contouring</p><span class="mk-more">Explore &rarr;</span></a>
+    <a class="make-card" href="/rehabilitation.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 16m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" /><path d="M19 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19 17a3 3 0 0 0 -3 -3h-3.4" /><path d="M3 3h1a2 2 0 0 1 2 2v6" /><path d="M6 8h11" /><path d="M15 8v6" /></svg></span><h3>Rehabilitation</h3><p>Electric wheelchairs</p><span class="mk-more">Explore &rarr;</span></a>
+    <a class="make-card" href="/ivd-diagnostics.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 21h14" /><path d="M6 18h2" /><path d="M7 18v3" /><path d="M9 11l3 3l6 -6l-3 -3z" /><path d="M10.5 12.5l-1.5 1.5" /><path d="M17 3l3 3" /><path d="M12 21a6 6 0 0 0 3.715 -10.712" /></svg></span><h3>IVD Diagnostics</h3><p>Lab and diagnostic equipment</p><span class="mk-more">Explore &rarr;</span></a>
+    <a class="make-card" href="/surgical.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.6 8.6l10.4 10.4" /><path d="M8.6 15.4l10.4 -10.4" /></svg></span><h3>Surgical Care</h3><p>Surgical devices and kits</p><span class="mk-more">Explore &rarr;</span></a>
+    <a class="make-card feature" href="/hospital-setup.html"><span class="mk-ic"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l18 0" /><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" /><path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" /><path d="M10 9l4 0" /><path d="M12 7l0 4" /></svg></span><h3>Hospital Setup</h3><p>Complete setup from 0 to 100</p><span class="mk-more">Explore &rarr;</span></a>
+  </div>
+  <p class="make-note">Need something not listed? We are not limited to the products on our website. <a href="/contact.html" style="color:#1B2F6E;font-weight:700;">Talk to our team</a>.</p>
+</section>
+
+<!-- IN THE NEWS -->
+<section class="news-section">
+  <div class="section-header" style="margin-bottom:40px;">
+    <span class="section-eyebrow">In the News</span>
+    <h2>Pulse in the Media</h2>
+  </div>
+  <div class="news-grid">
+    <a class="news-card" href="https://www.biospectrumindia.com/news/93/27385/pulse-raises-4-m-to-build-full-stack-medical-equipment-manufacturing-brand.html" target="_blank" rel="noopener noreferrer"><span>BioSpectrum India</span><h3>Pulse raises $4 M to build full-stack medical equipment manufacturing brand</h3><em>Read the story &rarr;</em></a>
+    <a class="news-card" href="https://india.entrepreneur.com/?p=94149" target="_blank" rel="noopener noreferrer"><span>Entrepreneur India</span><h3>Healthtech startup Pulse raises USD 4 Mn funding led by 3one4 Capital</h3><em>Read the story &rarr;</em></a>
+    <a class="news-card" href="https://entrackr.com/snippets/medical-equipment-startup-pulse-secures-4-mn-led-by-30ne4-capital-11152811" target="_blank" rel="noopener noreferrer"><span>Entrackr</span><h3>Medical equipment startup Pulse secures $4 Mn led by 3one4 Capital</h3><em>Read the story &rarr;</em></a>
+  </div>
+</section>
+
 <section class="legacy-section">
   <div class="legacy-inner">
     <span class="section-eyebrow">Our Foundation</span>
@@ -821,7 +936,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </p>
     <div class="legacy-stats">
       <div class="legacy-stat">
-        <strong>6</strong>
+        <strong>8</strong>
         <span>Product Categories</span>
       </div>
       <div class="legacy-stat">
@@ -877,7 +992,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Is Pulse a funded, established company?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a"><p>Yes. Pulse is backed by 3one4 Capital, and provides pan-India service response within 96 hours across every state.</p></div>
+        <div class="faq-a"><p>Yes. Pulse raised a US$4 million seed round in 2026 led by 3one4 Capital, with Incubate Fund Asia and Stride Ventures, and provides pan-India service response within 96 hours across every state.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Who founded Pulse?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Pulse was founded in 2025 by Anshul Sharma and Nishant Goel. The company is headquartered in Bengaluru.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          What does Pulse make?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Pulse makes medical equipment across critical care, renal care, cardiac care, aesthetics, rehabilitation, IVD diagnostics and surgical care, and sets up complete hospitals from 0 to 100.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is Pulse the same company as Zuvio Technologies?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. Pulse is the brand of Zuvio Technologies Private Limited, the registered company behind it.</p></div>
       </div>
     </div>
   </div>
@@ -887,7 +1023,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>Ready to partner with India's most integrated MedTech brand?</h2>
   <div class="about-cta-btns">
     <a href="/#portfolio" class="cta-btn-primary">Explore Our Products</a>
-    <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">Contact Us</a>
+    <a href="/contact.html" class="cta-btn-secondary">Talk to Our Team</a>
   </div>
 </section>
 
