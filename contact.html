@@ -152,40 +152,177 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
   </script>
 <style>
+  :root { --navy:#1B2F6E; --ink:#0a1e40; --orange:#F07C2A; --muted:#5b6478; --line:#e4e9f2; --soft:#f5f7fb; --wa:#25D366; }
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Inter',sans-serif; color:#0a1e40; background:#fff; line-height:1.6; overflow-x:hidden; }
-  .c-hero { background:#1B2F6E; color:#fff; padding:120px 5% 48px; }
-  .c-wrap { max-width:1100px; margin:0 auto; }
-  .c-eyebrow { font-size:.8rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#F07C2A; margin-bottom:10px; }
-  .c-hero h1 { font-size:clamp(28px,4.5vw,44px); line-height:1.15; margin-bottom:14px; }
-  .c-hero p { font-size:17px; max-width:680px; color:#dbe3f5; }
-  .c-sec { padding:48px 5%; }
-  .quick-answer { background:#f4f6fa; border-left:3px solid #1B2F6E; border-radius:6px; padding:18px 22px; margin-bottom:32px; font-size:16px; }
-  .c-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
-  .c-card { border:1px solid #e3e8f2; border-radius:12px; padding:20px; background:#fff; }
-  .c-card .c-lbl { font-size:14px !important; color:#555 !important; font-weight:600 !important; margin-bottom:6px; }
-  .c-card a, .c-card p { font-size:17px; font-weight:700; color:#1B2F6E; text-decoration:none; word-break:break-word; }
-  .c-card small { display:block; color:#6b7280; font-size:13px; font-weight:400; margin-top:6px; }
-  .c-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:start; }
-  .c-form { background:#f8f9fc; border:1px solid #e3e8f2; border-radius:12px; padding:24px; }
-  .c-form h2, .c-sec h2 { font-size:24px; margin-bottom:14px; color:#0a1e40; }
-  .c-form label { display:block; font-size:14px; font-weight:600; margin:12px 0 6px; }
-  .c-form input, .c-form textarea { width:100%; padding:12px 14px; border:1px solid #d5dcea; border-radius:8px; font:inherit; font-size:15px; background:#fff; }
-  .c-form textarea { min-height:110px; resize:vertical; }
-  .c-btn { display:inline-block; margin-top:16px; background:#1B2F6E; color:#fff; border:0; border-radius:8px; padding:14px 28px; font-weight:700; font-size:15px; cursor:pointer; text-decoration:none; }
-  .c-btn.wa { background:#25D366; color:#0a1e40; }
-  .c-msg { margin-top:12px; font-size:14px; font-weight:600; }
-  .c-steps { list-style:none; counter-reset:s; }
-  .c-steps li { counter-increment:s; position:relative; padding:0 0 18px 44px; color:#374151; }
-  .c-steps li::before { content:counter(s); position:absolute; left:0; top:0; width:30px; height:30px; border-radius:50%; background:#1B2F6E; color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; font-size:14px; }
-  .c-steps strong { color:#0a1e40; }
-  .c-cats { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
-  .c-cats a { display:block; border:1px solid #e3e8f2; border-radius:10px; padding:14px 16px; text-decoration:none; color:#0a1e40; }
-  .c-cats a strong { display:block; color:#1B2F6E; }
-  .c-cats a span { font-size:13.5px; color:#6b7280; }
-  .c-faq h3 { font-size:17px; margin:20px 0 6px; }
-  .c-faq p { color:#4b5563; }
-  @media (max-width:860px) { .c-grid { grid-template-columns:1fr; } .c-hero { padding-top:100px; } }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Inter',sans-serif; color:var(--ink); background:#fff; line-height:1.6; overflow-x:hidden; }
+  a { color:inherit; }
+  .wrap { max-width:1160px; margin:0 auto; padding:0 24px; }
+  .ic { width:22px; height:22px; flex-shrink:0; }
+  .eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--orange); }
+  .eyebrow::before { content:""; width:22px; height:2px; background:var(--orange); }
+  h2.sec-title { font-size:clamp(26px,3.4vw,36px); line-height:1.2; font-weight:800; letter-spacing:-.5px; margin:10px 0 10px; color:var(--ink); }
+  .sec-sub { color:var(--muted); font-size:16.5px; max-width:640px; }
+  section { scroll-margin-top:90px; }
+
+  /* HERO */
+  .hero { position:relative; background:radial-gradient(1200px 500px at 85% -10%, #2f4ea8 0%, transparent 60%), linear-gradient(160deg,#16275c 0%,#1B2F6E 55%,#22397f 100%); color:#fff; padding:130px 0 70px; overflow:hidden; }
+  .hero::after { content:""; position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px); background-size:22px 22px; mask-image:linear-gradient(to bottom, #000 30%, transparent); pointer-events:none; }
+  .hero-grid { position:relative; z-index:1; display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
+  .hero h1 { font-size:clamp(34px,5.2vw,58px); line-height:1.05; letter-spacing:-1.5px; font-weight:800; margin:14px 0 18px; }
+  .hero h1 em { font-style:normal; color:#ffb27a; }
+  .hero p.lead { font-size:18px; color:#d6def3; max-width:560px; }
+  .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+  .btn { display:inline-flex; align-items:center; gap:10px; padding:14px 22px; border-radius:12px; font-weight:700; font-size:15px; text-decoration:none; border:0; cursor:pointer; transition:transform .15s ease, box-shadow .2s ease, background .2s; font-family:inherit; }
+  .btn:hover { transform:translateY(-2px); }
+  .btn-wa { background:var(--wa); color:#06341c; box-shadow:0 10px 24px rgba(37,211,102,.28); }
+  .btn-light { background:rgba(255,255,255,.1); color:#fff; border:1px solid rgba(255,255,255,.25); backdrop-filter:blur(6px); }
+  .btn-light:hover { background:rgba(255,255,255,.18); }
+  .btn-primary { background:var(--navy); color:#fff; box-shadow:0 10px 24px rgba(27,47,110,.25); }
+  .btn-orange { background:var(--orange); color:#fff; box-shadow:0 10px 24px rgba(240,124,42,.3); }
+  .hero-note { margin-top:18px; font-size:13.5px; color:#b9c5e6; display:flex; align-items:center; gap:8px; }
+  .dot { width:8px; height:8px; border-radius:50%; background:var(--wa); box-shadow:0 0 0 0 rgba(37,211,102,.6); animation:pulse 2s infinite; }
+  @keyframes pulse { 70% { box-shadow:0 0 0 10px rgba(37,211,102,0); } 100% { box-shadow:0 0 0 0 rgba(37,211,102,0); } }
+  .hero-card { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.16); border-radius:20px; padding:26px; backdrop-filter:blur(10px); }
+  .hero-card h2 { font-size:15px; font-weight:700; color:#fff; margin-bottom:16px; letter-spacing:.2px; }
+  .hc-row { display:flex; gap:14px; align-items:flex-start; padding:12px 0; border-top:1px solid rgba(255,255,255,.1); text-decoration:none; color:#fff; }
+  .hc-row:first-of-type { border-top:0; }
+  .hc-ic { width:40px; height:40px; border-radius:10px; background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; color:#ffb27a; flex-shrink:0; }
+  .hc-row small { display:block; color:#aebbe0; font-size:12.5px; }
+  .hc-row b { font-size:15.5px; font-weight:600; }
+
+  /* TRUST */
+  .trust { background:#fff; border-bottom:1px solid var(--line); }
+  .trust-in { display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+  .trust-i { display:flex; gap:12px; align-items:center; padding:22px 18px; border-left:1px solid var(--line); }
+  .trust-i:first-child { border-left:0; }
+  .trust-i .ic { color:var(--orange); width:26px; height:26px; }
+  .trust-i b { display:block; font-size:15px; }
+  .trust-i span { font-size:13px; color:var(--muted); }
+
+  /* NEEDS */
+  .needs { padding:80px 0 40px; }
+  .need-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:32px; }
+  .need { text-align:left; background:#fff; border:1.5px solid var(--line); border-radius:16px; padding:20px; cursor:pointer; font-family:inherit; color:var(--ink); transition:border-color .2s, box-shadow .2s, transform .15s; display:flex; gap:14px; align-items:flex-start; }
+  .need:hover { border-color:#b9c6e4; box-shadow:0 14px 30px rgba(16,32,80,.08); transform:translateY(-2px); }
+  .need[aria-pressed="true"] { border-color:var(--navy); box-shadow:0 0 0 3px rgba(27,47,110,.12); background:#f7f9ff; }
+  .need-ic { width:46px; height:46px; border-radius:12px; background:var(--soft); color:var(--navy); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s,color .2s; }
+  .need[aria-pressed="true"] .need-ic { background:var(--navy); color:#fff; }
+  .need b { display:block; font-size:16px; margin-bottom:2px; }
+  .need span { font-size:14px; color:var(--muted); line-height:1.45; }
+
+  /* FORM + STEPS */
+  .ask { padding:40px 0 80px; }
+  .ask-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:start; }
+  .form-card { background:#fff; border:1px solid var(--line); border-radius:20px; padding:30px; box-shadow:0 24px 60px rgba(16,32,80,.08); position:relative; }
+  .form-card h2 { font-size:24px; font-weight:800; margin-bottom:4px; }
+  .form-card .sub { color:var(--muted); font-size:14.5px; margin-bottom:18px; }
+  .chosen { display:none; align-items:center; gap:8px; background:#eef2fb; color:var(--navy); font-weight:600; font-size:13.5px; border-radius:999px; padding:7px 12px; margin-bottom:14px; }
+  .chosen.show { display:inline-flex; }
+  .chosen button { border:0; background:none; color:var(--muted); cursor:pointer; font-size:16px; line-height:1; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .field { position:relative; margin-top:14px; }
+  .field input, .field textarea, .field select { width:100%; border:1.5px solid #d8dfec; border-radius:12px; padding:22px 14px 8px; font:inherit; font-size:15.5px; background:#fff; color:var(--ink); transition:border-color .2s, box-shadow .2s; appearance:none; }
+  .field select { background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235b6478' stroke-width='2' fill='none'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; }
+  .field textarea { min-height:110px; resize:vertical; }
+  .field label { position:absolute; left:15px; top:15px; font-size:15px; color:#7a8399; pointer-events:none; transition:all .15s ease; }
+  .field input:focus, .field textarea:focus, .field select:focus { outline:none; border-color:var(--navy); box-shadow:0 0 0 4px rgba(27,47,110,.1); }
+  .field input:focus + label, .field input:not(:placeholder-shown) + label,
+  .field textarea:focus + label, .field textarea:not(:placeholder-shown) + label,
+  .field select + label { top:6px; font-size:11.5px; font-weight:600; color:var(--navy); letter-spacing:.3px; }
+  .field.err input { border-color:#d14343; }
+  .form-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top:20px; }
+  .form-actions .btn { padding:15px 24px; }
+  .privacy { font-size:12.5px; color:var(--muted); margin-top:14px; }
+  .msg { margin-top:12px; font-size:14px; font-weight:600; min-height:20px; }
+  .success { display:none; text-align:center; padding:30px 10px; }
+  .success.show { display:block; animation:fade .4s ease; }
+  .success .big { width:64px; height:64px; border-radius:50%; background:#e7f8ee; color:#16a34a; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; }
+  .success .big .ic { width:32px; height:32px; }
+  .success h3 { font-size:22px; margin-bottom:6px; }
+  .success p { color:var(--muted); margin-bottom:18px; }
+  @keyframes fade { from { opacity:0; transform:translateY(8px);} to { opacity:1; transform:none; } }
+  .steps { padding:6px 0; }
+  .steps h2 { font-size:22px; font-weight:800; margin-bottom:22px; }
+  .step { display:flex; gap:16px; position:relative; padding-bottom:26px; }
+  .step:not(:last-child)::before { content:""; position:absolute; left:19px; top:42px; bottom:4px; width:2px; background:linear-gradient(var(--line),var(--line)); }
+  .step-n { width:40px; height:40px; border-radius:50%; background:var(--soft); color:var(--navy); font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0; border:2px solid #dbe3f3; }
+  .step b { display:block; font-size:16px; margin-bottom:2px; }
+  .step span { color:var(--muted); font-size:14.5px; }
+  .tip { margin-top:8px; background:#fff7f0; border:1px solid #fde1cb; border-radius:14px; padding:16px 18px; font-size:14.5px; color:#7a3d10; display:flex; gap:12px; }
+  .tip .ic { color:var(--orange); }
+
+  /* CATEGORIES */
+  .cats { background:var(--soft); padding:80px 0; }
+  .cat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:30px; }
+  .cat { background:#fff; border:1px solid var(--line); border-radius:14px; padding:18px; text-decoration:none; display:flex; flex-direction:column; gap:4px; transition:transform .15s, box-shadow .2s, border-color .2s; }
+  .cat:hover { transform:translateY(-3px); box-shadow:0 14px 30px rgba(16,32,80,.08); border-color:#c9d4ec; }
+  .cat b { color:var(--navy); font-size:15.5px; display:flex; justify-content:space-between; align-items:center; }
+  .cat b .ic { width:18px; height:18px; color:var(--orange); transition:transform .2s; }
+  .cat:hover b .ic { transform:translateX(3px); }
+  .cat span { color:var(--muted); font-size:13.5px; }
+  .cat.feature { background:linear-gradient(135deg,var(--navy),#2b4596); border-color:transparent; }
+  .cat.feature b, .cat.feature span { color:#fff; }
+  .cat-note { margin-top:18px; color:var(--muted); font-size:14.5px; }
+
+  /* VISIT */
+  .visit { padding:80px 0; }
+  .visit-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:32px; align-items:stretch; margin-top:28px; }
+  .visit-card { border:1px solid var(--line); border-radius:20px; padding:28px; display:flex; flex-direction:column; gap:18px; }
+  .v-row { display:flex; gap:14px; align-items:flex-start; }
+  .v-row .ic { color:var(--orange); margin-top:2px; }
+  .v-row small { display:block; color:var(--muted); font-size:12.5px; font-weight:600; text-transform:uppercase; letter-spacing:1px; }
+  .v-row a, .v-row p { font-size:16px; font-weight:600; text-decoration:none; color:var(--ink); }
+  .v-row a:hover { color:var(--navy); text-decoration:underline; }
+  .legal { font-size:13px; color:var(--muted); border-top:1px solid var(--line); padding-top:14px; margin-top:auto; }
+  .map { border-radius:20px; overflow:hidden; border:1px solid var(--line); min-height:340px; }
+  .map iframe { width:100%; height:100%; min-height:340px; border:0; display:block; }
+
+  /* FAQ */
+  .faq { background:var(--soft); padding:80px 0; }
+  .faq-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:48px; align-items:start; }
+  .faq-list details { background:#fff; border:1px solid var(--line); border-radius:14px; margin-bottom:10px; overflow:hidden; }
+  .faq-list summary { list-style:none; cursor:pointer; padding:18px 20px; font-weight:700; font-size:16px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+  .faq-list summary::-webkit-details-marker { display:none; }
+  .faq-list summary::after { content:"+"; font-size:22px; font-weight:400; color:var(--navy); transition:transform .2s; }
+  .faq-list details[open] summary::after { transform:rotate(45deg); }
+  .faq-list details p { padding:0 20px 18px; color:#4b5563; font-size:15px; }
+
+  /* FINAL CTA */
+  .final { padding:70px 0; }
+  .final-card { background:linear-gradient(135deg,#16275c,#1B2F6E 60%,#2b4596); border-radius:24px; color:#fff; padding:44px; display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; position:relative; overflow:hidden; }
+  .final-card::after { content:""; position:absolute; right:-60px; top:-60px; width:240px; height:240px; border-radius:50%; background:rgba(240,124,42,.18); }
+  .final-card h2 { font-size:clamp(24px,3vw,32px); font-weight:800; line-height:1.2; position:relative; z-index:1; }
+  .final-card p { color:#c9d4f1; margin-top:6px; position:relative; z-index:1; }
+  .final-card .actions { margin-top:0; position:relative; z-index:1; }
+
+  /* MOBILE BAR */
+  .mbar { display:none; }
+  .reveal { opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity:1; transform:none; transition:none; } .dot { animation:none; } html { scroll-behavior:auto; } }
+
+  @media (max-width:960px) {
+    .hero-grid, .ask-grid, .visit-grid, .faq-grid { grid-template-columns:1fr; }
+    .need-grid { grid-template-columns:1fr 1fr; }
+    .cat-grid { grid-template-columns:1fr 1fr; }
+    .trust-in { grid-template-columns:1fr 1fr; }
+    .trust-i:nth-child(3) { border-left:0; }
+    .trust-i { border-top:1px solid var(--line); }
+  }
+  @media (max-width:600px) {
+    .hero { padding:104px 0 48px; }
+    .hero-card { display:none; }
+    .need-grid { grid-template-columns:1fr; }
+    .row2 { grid-template-columns:1fr; gap:0; }
+    .form-card, .visit-card { padding:22px; }
+    .final-card { padding:30px 22px; }
+    .actions .btn { flex:1 1 auto; justify-content:center; }
+    .mbar { display:flex; position:fixed; left:0; right:0; bottom:0; z-index:900; background:#fff; border-top:1px solid var(--line); padding:10px 12px; gap:10px; box-shadow:0 -6px 20px rgba(0,0,0,.06); }
+    .mbar a { flex:1; justify-content:center; padding:12px; font-size:14.5px; }
+    body { padding-bottom:70px; }
+    .trust-i { padding:16px 12px; }
+  }
 </style>
 </head>
 <body>
@@ -193,87 +330,213 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="global-header"></div>
 
-<section class="c-hero"><div class="c-wrap">
-  <p class="c-eyebrow">Contact &amp; Quotes</p>
-  <h1>Contact Pulse</h1>
-  <p>Ask for a price, a brochure, a demo or a complete hospital setup plan. We reply fastest on WhatsApp.</p>
-</div></section>
-
-<section class="c-sec"><div class="c-wrap">
-  <div class="quick-answer"><strong>Quick answer:</strong> Call or WhatsApp Pulse on <a href="tel:+919071101108" style="color:#1B2F6E;font-weight:700;">+91 90711 01108</a>, email <a href="mailto:info@pulseio.in" style="color:#1B2F6E;font-weight:700;">info@pulseio.in</a>, or visit 1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru, Karnataka 560102. Pulse is the brand of Zuvio Technologies Private Limited.</div>
-  <div class="c-cards">
-    <div class="c-card"><p class="c-lbl">WhatsApp</p><a href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20a%20quote" target="_blank" rel="noopener noreferrer">+91 90711 01108</a><small>Fastest for prices and brochures</small></div>
-    <div class="c-card"><p class="c-lbl">Phone</p><a href="tel:+919071101108">+91 90711 01108</a><small>Sales, service and support</small></div>
-    <div class="c-card"><p class="c-lbl">Email</p><a href="mailto:info@pulseio.in">info@pulseio.in</a><small>Quotes, tenders and partnerships</small></div>
-    <div class="c-card"><p class="c-lbl">Office</p><p style="font-size:15px;">1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru 560102</p><small><a href="https://www.google.com/maps/search/?api=1&amp;query=Plot+No.+646%2C+27th+Main+Road%2C+Sector+1%2C+HSR+Layout%2C+Bengaluru+560102" target="_blank" rel="noopener noreferrer" style="font-size:13px;">Open in Google Maps</a></small></div>
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Contact Pulse</span>
+      <h1>Let's equip your <em>hospital</em>, together.</h1>
+      <p class="lead">Tell us what you need: one machine, a full department, or a whole new hospital. Our team will get back to you with prices, details and a plan.</p>
+      <div class="actions">
+        <a class="btn btn-wa" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20to%20know%20more" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> WhatsApp Us</a>
+        <a class="btn btn-light" href="tel:+919071101108"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Us</a>
+        <a class="btn btn-light" href="#ask"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> Send a Request</a>
+      </div>
+      <p class="hero-note"><span class="dot"></span> WhatsApp is the fastest way to reach us.</p>
+    </div>
+    <div class="hero-card">
+      <h2>Reach us directly</h2>
+      <a class="hc-row" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20to%20know%20more" target="_blank" rel="noopener noreferrer"><span class="hc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span><small>WhatsApp</small><b>+91 90711 01108</b></span></a>
+      <a class="hc-row" href="tel:+919071101108"><span class="hc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span><small>Phone</small><b>+91 90711 01108</b></span></a>
+      <a class="hc-row" href="mailto:info@pulseio.in"><span class="hc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span><small>Email</small><b>info@pulseio.in</b></span></a>
+      <a class="hc-row" href="#visit"><span class="hc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Office</small><b>HSR Layout, Bengaluru 560102</b></span></a>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section class="c-sec" style="padding-top:8px;"><div class="c-wrap c-grid">
-  <form class="c-form" id="quote-form" novalidate>
-    <h2>Get a Quote</h2>
-    <label for="q-name">Your name</label><input id="q-name" name="fullName" required autocomplete="name">
-    <label for="q-mobile">Mobile number</label><input id="q-mobile" name="mobile" type="tel" required autocomplete="tel">
-    <label for="q-email">Email</label><input id="q-email" name="email" type="email" autocomplete="email">
-    <label for="q-city">City</label><input id="q-city" name="city" autocomplete="address-level2">
-    <label for="q-query">What do you need?</label><textarea id="q-query" name="query" placeholder="Product or project, quantity, and when you need it"></textarea>
-    <button class="c-btn" type="submit">Send Quote Request</button>
-    <a class="c-btn wa" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20a%20quote" target="_blank" rel="noopener noreferrer" style="margin-left:8px;">WhatsApp Us</a>
-    <p class="c-msg" id="q-msg" role="status"></p>
-  </form>
-  <div>
-    <h2>What Happens Next</h2>
-    <ol class="c-steps">
-      <li><strong>Tell us what you need.</strong> One product, a full department, or a whole new hospital.</li>
-      <li><strong>We call you back.</strong> Our team checks your needs, your budget and your timeline.</li>
-      <li><strong>You get a quote.</strong> With product details, brochures and a demo if you want one.</li>
-      <li><strong>We deliver and install.</strong> Then train your staff and look after service.</li>
-    </ol>
+<div class="trust">
+  <div class="wrap trust-in">
+    <div class="trust-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><div><b>ISO 13485</b><span>Quality certified</span></div></div>
+    <div class="trust-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><div><b>PAN-India</b><span>Supply and service</span></div></div>
+    <div class="trust-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M12 9v6M9 12h6"/></svg><div><b>0 to 100</b><span>Complete hospital setup</span></div></div>
+    <div class="trust-i"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><b>Clinics to hospitals</b><span>Small and large</span></div></div>
   </div>
-</div></section>
+</div>
 
-<section class="c-sec" style="background:#f8f9fc;"><div class="c-wrap">
-  <h2>What You Can Ask Us About</h2>
-  <p style="color:#4b5563;margin-bottom:18px;">Pulse supplies small clinics and large hospitals across India. If you need something not listed on our website, ask us anyway.</p>
-  <div class="c-cats">
-    <a href="/critical-care.html"><strong>Critical Care</strong><span>ICU ventilators, patient monitors, anaesthesia</span></a><a href="/renal-care.html"><strong>Renal Care</strong><span>Dialysis machines and consumables</span></a><a href="/cardiac-care.html"><strong>Cardiac Care</strong><span>Coronary stents, guidewires, cath lab items</span></a><a href="/aesthetics.html"><strong>Aesthetics</strong><span>Lasers, RF and body-contouring machines</span></a><a href="/rehabilitation.html"><strong>Rehabilitation</strong><span>Electric wheelchairs</span></a><a href="/ivd-diagnostics.html"><strong>IVD Diagnostics</strong><span>Lab and diagnostic equipment</span></a><a href="/surgical.html"><strong>Surgical Care</strong><span>Surgical devices and kits</span></a><a href="/hospital-setup.html"><strong>Hospital Setup</strong><span>Complete setup from 0 to 100</span></a>
+<section class="needs" id="needs">
+  <div class="wrap reveal">
+    <span class="eyebrow">Step 1</span>
+    <h2 class="sec-title">What can we help you with?</h2>
+    <p class="sec-sub">Pick one. We will fill it into the form below, so you only need to add your name and number.</p>
+    <div class="need-grid">
+      <button type="button" class="need" data-need="Price or quote" aria-pressed="false">
+        <span class="need-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5"/></svg></span>
+        <span><b>Price or quote</b><span>Get a price for one product or a full list</span></span>
+      </button>
+      <button type="button" class="need" data-need="Product demo" aria-pressed="false">
+        <span class="need-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3z"/></svg></span>
+        <span><b>Product demo</b><span>See the machine working before you buy</span></span>
+      </button>
+      <button type="button" class="need" data-need="Brochure" aria-pressed="false">
+        <span class="need-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
+        <span><b>Brochure</b><span>Specs and details on WhatsApp or email</span></span>
+      </button>
+      <button type="button" class="need" data-need="Complete hospital setup" aria-pressed="false">
+        <span class="need-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M12 9v6M9 12h6"/></svg></span>
+        <span><b>Complete hospital setup</b><span>Plan and equip a hospital from 0 to 100</span></span>
+      </button>
+      <button type="button" class="need" data-need="Service or support" aria-pressed="false">
+        <span class="need-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg></span>
+        <span><b>Service or support</b><span>Help with a Pulse machine you already have</span></span>
+      </button>
+      <button type="button" class="need" data-need="Dealer or partnership" aria-pressed="false">
+        <span class="need-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3M3 4h8"/></svg></span>
+        <span><b>Dealer or partnership</b><span>Sell or distribute Pulse products</span></span>
+      </button>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section class="c-sec c-faq"><div class="c-wrap">
-  <h2>Frequently Asked Questions</h2>
-  <h3>What is Pulse's phone number?</h3>
-  <p>You can call or WhatsApp Pulse on +91 90711 01108. WhatsApp is the fastest way to get a price or a brochure.</p>
-  <h3>What is Pulse's email address?</h3>
-  <p>Email info@pulseio.in for quotes, brochures, demos, service and partnership questions.</p>
-  <h3>Where is Pulse's office?</h3>
-  <p>Pulse's office is at 1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru, Karnataka 560102. Pulse supplies and services hospitals across India.</p>
-  <h3>How do I get a price or quote from Pulse?</h3>
-  <p>Fill in the quote form on this page or message +91 90711 01108 on WhatsApp. Tell us the product or project, the quantity and your city, and the team will send a quote.</p>
-  <h3>Can Pulse set up a complete hospital?</h3>
-  <p>Yes. Pulse sets up hospitals from 0 to 100: planning, equipment for every department, modular OTs, medical gas pipelines, installation, staff training and after-sales service. Products not listed on the website can also be supplied.</p>
-  <h3>Does Pulse supply small clinics as well as large hospitals?</h3>
-  <p>Yes. Pulse works with single-doctor clinics, nursing homes, dialysis centres and large multi-department hospitals across India.</p>
-  <h3>Is Pulse the same company as Zuvio Technologies?</h3>
-  <p>Yes. Pulse is the brand of Zuvio Technologies Private Limited, the registered company behind it.</p>
-  
-</div></section>
+<section class="ask" id="ask">
+  <div class="wrap ask-grid">
+    <div class="form-card reveal">
+      <form id="quote-form" novalidate>
+        <span class="eyebrow">Step 2</span>
+        <h2 style="margin-top:8px;">Send us your request</h2>
+        <p class="sub">It takes less than a minute. We will call or WhatsApp you back.</p>
+        <span class="chosen" id="chosen"><span id="chosen-t"></span><button type="button" aria-label="Clear choice" id="chosen-x">&times;</button></span>
+        <div class="row2">
+          <div class="field"><input id="q-name" name="fullName" placeholder=" " autocomplete="name" required><label for="q-name">Your name *</label></div>
+          <div class="field"><input id="q-mobile" name="mobile" type="tel" placeholder=" " autocomplete="tel" inputmode="tel" required><label for="q-mobile">Mobile number *</label></div>
+        </div>
+        <div class="row2">
+          <div class="field"><input id="q-email" name="email" type="email" placeholder=" " autocomplete="email"><label for="q-email">Email (optional)</label></div>
+          <div class="field"><input id="q-city" name="city" placeholder=" " autocomplete="address-level2"><label for="q-city">City</label></div>
+        </div>
+        <div class="field"><select id="q-need" name="need"><option>Price or quote</option><option>Product demo</option><option>Brochure</option><option>Complete hospital setup</option><option>Service or support</option><option>Dealer or partnership</option><option>Something else</option></select><label for="q-need">I need</label></div>
+        <div class="field"><textarea id="q-query" name="query" placeholder=" "></textarea><label for="q-query">Tell us more: product, quantity, timeline</label></div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit" id="q-send">Send Request <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <a class="btn btn-wa" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20a%20quote" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Or WhatsApp</a>
+        </div>
+        <p class="msg" id="q-msg" role="status" aria-live="polite"></p>
+        <p class="privacy">We only use your details to reply to you. See our <a href="/privacy-policy.html">privacy policy</a>.</p>
+      </form>
+      <div class="success" id="q-ok" role="status" aria-live="polite">
+        <div class="big"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Thank you, we have your request</h3>
+        <p>Our team will call or WhatsApp you soon. Want a faster answer? Message us now.</p>
+        <a class="btn btn-wa" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20just%20sent%20a%20request%20on%20your%20website" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Continue on WhatsApp</a>
+      </div>
+    </div>
+    <div class="steps reveal">
+      <span class="eyebrow">Step 3</span>
+      <h2 style="margin-top:8px;">What happens next</h2>
+      <div class="step"><div class="step-n">1</div><div><b>We call you back</b><span>Our team checks what you need, your budget and your timeline.</span></div></div>
+      <div class="step"><div class="step-n">2</div><div><b>You get a clear quote</b><span>With product details, brochures and a demo if you want one.</span></div></div>
+      <div class="step"><div class="step-n">3</div><div><b>We deliver and install</b><span>Our engineers set everything up and train your staff.</span></div></div>
+      <div class="step"><div class="step-n">4</div><div><b>We stay with you</b><span>Service and support for as long as you use our equipment.</span></div></div>
+      <div class="tip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><div><b>Setting up a new hospital?</b> Pulse can plan and equip the whole hospital, from 0 to 100. Choose "Complete hospital setup" above.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cats">
+  <div class="wrap reveal">
+    <span class="eyebrow">Explore</span>
+    <h2 class="sec-title">Browse what we supply</h2>
+    <p class="sec-sub">For small clinics and large hospitals across India.</p>
+    <div class="cat-grid"><a class="cat" href="/critical-care.html"><b>Critical Care <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Ventilators, monitors, anaesthesia</span></a><a class="cat" href="/renal-care.html"><b>Renal Care <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Dialysis machines and consumables</span></a><a class="cat" href="/cardiac-care.html"><b>Cardiac Care <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Stents, guidewires, cath lab</span></a><a class="cat" href="/aesthetics.html"><b>Aesthetics <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Lasers, RF, body contouring</span></a><a class="cat" href="/rehabilitation.html"><b>Rehabilitation <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Electric wheelchairs</span></a><a class="cat" href="/ivd-diagnostics.html"><b>IVD Diagnostics <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Lab and diagnostic equipment</span></a><a class="cat" href="/surgical.html"><b>Surgical Care <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Surgical devices and kits</span></a><a class="cat feature" href="/hospital-setup.html"><b>Hospital Setup <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b><span>Complete setup from 0 to 100</span></a></div>
+    <p class="cat-note">Need something you don't see here? Ask us anyway. We are not limited to the products on our website.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap reveal">
+    <span class="eyebrow">Visit us</span>
+    <h2 class="sec-title">Our office in Bengaluru</h2>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <div class="v-row"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Address</small><p>1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru, Karnataka 560102</p></div></div>
+        <div class="v-row"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><small>Phone and WhatsApp</small><a href="tel:+919071101108">+91 90711 01108</a></div></div>
+        <div class="v-row"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><div><small>Email</small><a href="mailto:info@pulseio.in">info@pulseio.in</a></div></div>
+        <a class="btn btn-primary" style="align-self:flex-start;" href="https://www.google.com/maps/dir/?api=1&amp;destination=12.916265,77.651869" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Get Directions</a>
+        <p class="legal">Pulse is the brand of Zuvio Technologies Private Limited.</p>
+      </div>
+      <div class="map"><iframe src="https://maps.google.com/maps?q=12.916265,77.651869&amp;z=16&amp;output=embed" title="Map showing the Pulse office in HSR Layout, Bengaluru" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap faq-grid">
+    <div class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="sec-title">Quick answers</h2>
+      <p class="sec-sub">Can't find what you're looking for? <a href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20have%20a%20question" target="_blank" rel="noopener noreferrer" style="color:var(--navy);font-weight:700;">Ask us on WhatsApp</a>.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details><summary>What is Pulse's phone number?</summary><p>You can call or WhatsApp Pulse on +91 90711 01108. WhatsApp is the fastest way to get a price or a brochure.</p></details>
+      <details><summary>What is Pulse's email address?</summary><p>Email info@pulseio.in for quotes, brochures, demos, service and partnership questions.</p></details>
+      <details><summary>Where is Pulse's office?</summary><p>Pulse's office is at 1st Floor, Plot No. 646, 27th Main Road, Sector 1, HSR Layout, Bengaluru, Karnataka 560102. Pulse supplies and services hospitals across India.</p></details>
+      <details><summary>How do I get a price or quote from Pulse?</summary><p>Fill in the quote form on this page or message +91 90711 01108 on WhatsApp. Tell us the product or project, the quantity and your city, and the team will send a quote.</p></details>
+      <details><summary>Can Pulse set up a complete hospital?</summary><p>Yes. Pulse sets up hospitals from 0 to 100: planning, equipment for every department, modular OTs, medical gas pipelines, installation, staff training and after-sales service. Products not listed on the website can also be supplied.</p></details>
+      <details><summary>Does Pulse supply small clinics as well as large hospitals?</summary><p>Yes. Pulse works with single-doctor clinics, nursing homes, dialysis centres and large multi-department hospitals across India.</p></details>
+      <details><summary>Is Pulse the same company as Zuvio Technologies?</summary><p>Yes. Pulse is the brand of Zuvio Technologies Private Limited, the registered company behind it.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="final-card reveal">
+      <div><h2>Ready when you are.</h2><p>Message us now and get prices, brochures or a plan for your hospital.</p></div>
+      <div class="actions">
+        <a class="btn btn-wa" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20to%20know%20more" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> WhatsApp Us</a>
+        <a class="btn btn-orange" href="#needs">Start a Request <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="mbar">
+  <a class="btn btn-wa" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20to%20know%20more" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> WhatsApp</a>
+  <a class="btn btn-primary" href="tel:+919071101108"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call</a>
+</div>
 
 <div id="global-footer"></div>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
 <script>
 (function(){
-  var f=document.getElementById('quote-form'), m=document.getElementById('q-msg');
+  var f=document.getElementById('quote-form'), m=document.getElementById('q-msg'), sel=document.getElementById('q-need'),
+      chosen=document.getElementById('chosen'), chosenT=document.getElementById('chosen-t'), needs=document.querySelectorAll('.need');
+  function pick(name, scroll){
+    needs.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.need===name ? 'true':'false'); });
+    sel.value=name; chosenT.textContent='You chose: '+name; chosen.classList.add('show');
+    if(scroll) document.getElementById('ask').scrollIntoView({behavior:'smooth', block:'start'});
+    setTimeout(function(){ document.getElementById('q-name').focus({preventScroll:true}); }, scroll?600:0);
+    if(window.gtag) gtag('event','contact_need_select',{need:name});
+  }
+  needs.forEach(function(b){ b.addEventListener('click', function(){ pick(b.dataset.need, true); }); });
+  sel.addEventListener('change', function(){ pick(sel.value, false); });
+  document.getElementById('chosen-x').addEventListener('click', function(){ chosen.classList.remove('show'); needs.forEach(function(b){ b.setAttribute('aria-pressed','false'); }); sel.selectedIndex=0; });
   f.addEventListener('submit', async function(e){
     e.preventDefault();
-    var d={fullName:f.fullName.value.trim(), mobile:f.mobile.value.trim(), email:f.email.value.trim(), city:f.city.value.trim(), query:f.query.value.trim()};
-    if(!d.fullName || !/^[+0-9 ()-]{8,}$/.test(d.mobile)){ m.style.color='#b91c1c'; m.textContent='Please enter your name and a valid mobile number.'; return; }
-    m.style.color='#1B2F6E'; m.textContent='Sending...';
-    var r = (window.PulsePublic && window.PulsePublic.submitQuote) ? await window.PulsePublic.submitQuote(d) : {success:false};
-    if(r.success){ m.style.color='#15803d'; m.textContent='Thank you. Our team will contact you soon.'; f.reset(); if(window.gtag) gtag('event','generate_lead',{form:'contact_quote'}); }
+    var name=f.fullName.value.trim(), mob=f.mobile.value.trim();
+    f.fullName.parentNode.classList.toggle('err', !name);
+    var okMob=/^[+0-9 ()-]{8,}$/.test(mob); f.mobile.parentNode.classList.toggle('err', !okMob);
+    if(!name || !okMob){ m.style.color='#b91c1c'; m.textContent='Please add your name and a valid mobile number.'; return; }
+    var btn=document.getElementById('q-send'); btn.disabled=true; m.style.color='#1B2F6E'; m.textContent='Sending...';
+    var d={fullName:name, mobile:mob, email:f.email.value.trim(), city:f.city.value.trim(), query:'['+sel.value+'] '+f.query.value.trim()};
+    var r=(window.PulsePublic && window.PulsePublic.submitQuote) ? await window.PulsePublic.submitQuote(d) : {success:false};
+    btn.disabled=false;
+    if(r.success){ f.style.display='none'; document.getElementById('q-ok').classList.add('show'); if(window.gtag) gtag('event','generate_lead',{form:'contact_quote', need:sel.value}); }
     else { m.style.color='#b91c1c'; m.innerHTML='Sorry, that did not send. Please <a href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20a%20quote" target="_blank" rel="noopener noreferrer">message us on WhatsApp</a>.'; }
   });
+  var io='IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } }); },{threshold:.12}) : null;
+  document.querySelectorAll('.reveal').forEach(function(el){ io ? io.observe(el) : el.classList.add('in'); });
 })();
 </script>
 <!-- AI CHATBOT WIDGET -->
