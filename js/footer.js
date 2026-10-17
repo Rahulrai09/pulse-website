@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var metaPixel = document.createElement('script'); metaPixel.async = true; metaPixel.src = 'https://connect.facebook.net/en_US/fbevents.js'; document.head.appendChild(metaPixel); metaPixel.onload = function(){ fbq('init','3413725288776120'); fbq('track','PageView'); }; window.fbq = window.fbq || function(){ (window.fbq.q = window.fbq.q || []).push(arguments); }; window._fbq = window._fbq || window.fbq;
+  // Meta Pixel is loaded by Google Tag Manager (GTM-M5DZWPXR). Do not load it here too, or it fires twice.
     const footerHTML = `
     <footer class="premium-footer">
       <!-- Pre-Footer Strip -->

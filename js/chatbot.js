@@ -1,5 +1,5 @@
 // PULSE AI Chatbot widget logic — shared across every page
-// Depends on: window.PULSE_CATEGORY_PRODUCTS (js/header.js), window.PulseFAQSearch (js/faq-search.js), window.PulsePublic.submitChat (js/pulse-forms.js), window.fbq (js/footer.js), window.openCareerModal (js/footer.js)
+// Depends on: window.PULSE_CATEGORY_PRODUCTS (js/header.js), window.PulseFAQSearch (js/faq-search.js), window.PulsePublic.submitChat (js/pulse-forms.js), window.fbq (Meta Pixel via Google Tag Manager), window.openCareerModal (js/footer.js)
   document.addEventListener('DOMContentLoaded', () => {
     const chatBtn = document.getElementById('ai-chat-btn');
     const chatWindow = document.getElementById('ai-chat-window');
@@ -449,10 +449,6 @@
           }
           // Meta Pixel: Advanced Matching + Lead event, now that we have real contact details
           if (window.fbq) {
-            window.fbq('init', '3413725288776120', {
-              ph: '91' + userData.phone,
-              em: userData.email.trim().toLowerCase()
-            });
             window.fbq('track', 'Lead');
           }
           renderBotMessage(`Thank you! Our ${userData.category.replace(/^\d+\s*/, "").replace(/\s*Care$/i, "")} Care expert will reach out within 24 hours. For urgent queries call +91 90711 01108 directly.`, []);
