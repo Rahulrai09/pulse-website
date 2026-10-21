@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <li><a href="/cardiac-care.html">Cardiac Care</a></li>
               <li><a href="/ivd-diagnostics.html">IVD</a></li>
               <li><a href="/aesthetics.html">Aesthetics</a></li>
-              <li><a href="/rehabilitation.html">Rehabilitation</a></li>
+              <li><a href="https://pulsemotion.in/">Mobility</a></li>
               <li><a href="/hospital-setup.html">Hospital Setup</a></li>
             </ul>
           </div>

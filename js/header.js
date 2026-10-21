@@ -354,9 +354,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 </div>
 
-                <div class="category-row" data-cat="Rehabilitation" data-href="/rehabilitation.html">
+                <div class="category-row" data-cat="Mobility" data-href="https://pulsemotion.in/">
 
-                  <a href="/rehabilitation.html" class="category-name">Rehabilitation</a>
+                  <a href="https://pulsemotion.in/" class="category-name">Mobility</a>
 
                   <span class="chevron">&#8964;</span>
 
@@ -578,7 +578,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <a href="/aesthetics.html">Aesthetics</a>
 
-             <a href="/rehabilitation.html">Rehabilitation</a>
+             <a href="https://pulsemotion.in/">Mobility</a>
 
             <a href="/surgical.html">Surgical</a>
 
@@ -1138,79 +1138,79 @@ document.addEventListener('DOMContentLoaded', function() {
 
           },
 
-          "Rehabilitation": {
+          "Mobility": {
 
-                    "label": "REHABILITATION",
+                    "label": "MOBILITY",
 
                     "products": [
 
                               {
 
-                                        "name": "Pulse Motion Pro 1 Electric Wheelchair",
+                                        "name": "Pulse HeavyDuty Electric Wheelchair",
 
                                         "image": "/image/Rehabiliation/motion-pro-1-01.jpg",
 
-                                        "href": "/rehabilitation/motion-pro-1.html"
+                                        "href": "https://pulsemotion.in/products/pulse-heavyduty-electric-wheelchair"
 
                               },
 
                               {
 
-                                        "name": "Pulse Xtrion Electric Wheelchair",
+                                        "name": "Pulse SlimFold Electric Wheelchair",
 
                                         "image": "/image/Rehabiliation/xtrion-01.png",
 
-                                        "href": "/rehabilitation/xtrion.html"
+                                        "href": "https://pulsemotion.in/products/pulse-slimfold-electric-wheelchair"
 
                               },
 
                               {
 
-                                        "name": "Pulse Innovax Electric Wheelchair",
+                                        "name": "Pulse ComfortRide Electric Wheelchair",
 
                                         "image": "/image/Rehabiliation/innovax-01.jpg",
 
-                                        "href": "/rehabilitation/innovax.html"
+                                        "href": "https://pulsemotion.in/products/pulse-comfortride-electric-wheelchair"
 
                               },
 
                               {
 
-                                        "name": "Pulse Aerodrive 1 Electric Wheelchair",
+                                        "name": "Pulse Premium Comfort Electric Wheelchair",
 
                                         "image": "/image/Rehabiliation/aerodrive-1-01.jpg",
 
-                                        "href": "/rehabilitation/aerodrive-1.html"
+                                        "href": "https://pulsemotion.in/products/pulse-premium-comfort-electric-wheelchair"
 
                               },
 
                               {
 
-                                        "name": "Pulse Joylite 1 Electric Wheelchair",
+                                        "name": "Pulse UltraLight Electric Wheelchair",
 
                                         "image": "/image/Rehabiliation/joylite-1-01.jpg",
 
-                                        "href": "/rehabilitation/joylite-1.html"
+                                        "href": "https://pulsemotion.in/products/pulse-ultralight-electric-wheelchair"
 
                               },
 
                               {
 
-                                        "name": "Pulse Joylite 2 Electric Wheelchair",
+                                        "name": "Pulse MiniLite Electric Wheelchair",
 
                                         "image": "/image/Rehabiliation/joylite-2-01.jpg",
 
-                                        "href": "/rehabilitation/joylite-2.html"
+                                        "href": "https://pulsemotion.in/products/pulse-minilite-electric-wheelchair"
 
                               },
 
                               {
 
-                                        "name": "Pulse Smartride 2 Electric Wheelchair",
+                                        "name": "Pulse SmartFold Electric Wheelchair",
 
                                         "image": "/image/Rehabiliation/smartride-2-01.jpg",
 
-                                        "href": "/rehabilitation/smartride-2.html"
+                                        "href": "https://pulsemotion.in/products/pulse-smartfold-electric-wheelchair"
 
                               }
 
@@ -1671,26 +1671,26 @@ var searchMap = [
 
   // REHABILITATION PRODUCTS
 
-  { keywords: ['aerodrive wheelchair','aerodrive 6019','aerodrive'], url: '/rehabilitation/aerodrive-1.html' },
+  { keywords: ['aerodrive wheelchair','aerodrive 6019','aerodrive'], url: 'https://pulsemotion.in/products/pulse-premium-comfort-electric-wheelchair' },
 
-  { keywords: ['autofold smartride','smartride wheelchair','autofold'], url: '/rehabilitation/smartride-2.html' },
+  { keywords: ['autofold smartride','smartride wheelchair','autofold'], url: 'https://pulsemotion.in/products/pulse-smartfold-electric-wheelchair' },
 
-  { keywords: ['innovax','innovax wheelchair'], url: '/rehabilitation/innovax.html' },
+  { keywords: ['innovax','innovax wheelchair'], url: 'https://pulsemotion.in/products/pulse-comfortride-electric-wheelchair' },
 
-  { keywords: ['joylite wheelchair','joylite 9005','joylite'], url: '/rehabilitation/joylite-1.html' },
+  { keywords: ['joylite wheelchair','joylite 9005','joylite'], url: 'https://pulsemotion.in/products/pulse-ultralight-electric-wheelchair' },
 
-  { keywords: ['motion pro wheelchair','motionpro','motion pro 6001'], url: '/rehabilitation/motion-pro-1.html' },
+  { keywords: ['motion pro wheelchair','motionpro','motion pro 6001'], url: 'https://pulsemotion.in/products/pulse-heavyduty-electric-wheelchair' },
 
-  { keywords: ['xtrion wheelchair','xtrion 6013'], url: '/rehabilitation/xtrion.html' },
-
-
-
-
-  { keywords: ['rollator walker','rollator','pulse rollator'], url: '/rehabilitation.html' },
+  { keywords: ['xtrion wheelchair','xtrion 6013'], url: 'https://pulsemotion.in/products/pulse-slimfold-electric-wheelchair' },
 
 
 
-  { keywords: ['folding wheelchair with cushion'], url: '/rehabilitation.html' },
+
+  { keywords: ['rollator walker','rollator','pulse rollator'], url: 'https://pulsemotion.in/' },
+
+
+
+  { keywords: ['folding wheelchair with cushion'], url: 'https://pulsemotion.in/' },
 
 
 
@@ -1969,7 +1969,7 @@ var searchMap = [
 
     ],
 
-    url: '/rehabilitation.html'
+    url: 'https://pulsemotion.in/'
 
   },
 

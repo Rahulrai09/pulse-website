@@ -450,7 +450,7 @@ window.allProducts = [
     "id": "pulse-rollator-walker",
     "name": "Pulse Rollator Walker",
     "category": "Mobility Aids",
-    "categoryUrl": "/rehabilitation.html",
+    "categoryUrl": "https://pulsemotion.in/",
     "type": "mobility",
     "image": "/image/Portfolio/renal-care.webp",
     "description": "4-wheel rollator with height-adjustable handles, padded seat, backrest and lockable loop brakes.",
