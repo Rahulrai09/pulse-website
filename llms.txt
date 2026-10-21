@@ -17,7 +17,7 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 - [Cardiac Care](https://www.pulseio.in/cardiac-care.html): Coronary stents, inflation kits, introducer kits, AED
 - [Surgical](https://www.pulseio.in/surgical.html)
 - [Aesthetics](https://www.pulseio.in/aesthetics.html): Laser and aesthetic devices
-- [Rehabilitation](https://www.pulseio.in/rehabilitation.html): Wheelchairs and mobility aids
+- [Mobility](https://pulsemotion.in/): Pulse Motion electric wheelchairs (separate store)
 - [Hospital Setup](https://www.pulseio.in/hospital-setup.html): ICU beds, OT tables and lights, trolleys, medical gas pipeline, modular OT
 - [IVD Diagnostics](https://www.pulseio.in/ivd-diagnostics.html)
 
