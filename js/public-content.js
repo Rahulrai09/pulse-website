@@ -8,18 +8,16 @@
   'use strict';
 
   // Helper to wait for PulsePublic to be ready
+  // Waits up to 3 seconds for a Supabase client. None is loaded on the site today, so this
+  // gives up quickly instead of polling forever (the old version checked every 50 ms indefinitely).
   async function waitForPulsePublic() {
+    if (window.PulsePublic && window.PulsePublic.sb) return window.PulsePublic.sb;
     return new Promise((resolve) => {
-      if (window.PulsePublic && window.PulsePublic.sb) {
-        resolve(window.PulsePublic.sb);
-      } else {
-        const interval = setInterval(() => {
-          if (window.PulsePublic && window.PulsePublic.sb) {
-            clearInterval(interval);
-            resolve(window.PulsePublic.sb);
-          }
-        }, 50);
-      }
+      let tries = 0;
+      const interval = setInterval(() => {
+        if (window.PulsePublic && window.PulsePublic.sb) { clearInterval(interval); resolve(window.PulsePublic.sb); }
+        else if (++tries > 30) { clearInterval(interval); resolve(null); }
+      }, 100);
     });
   }
 
@@ -30,6 +28,7 @@
   async function fetchActiveBanners() {
     try {
       const sb = await waitForPulsePublic();
+      if (!sb) return [];
       const now = new Date().toISOString();
       
       const { data, error } = await sb
@@ -56,6 +55,7 @@
   async function fetchLatestBlogs(limit = 4) {
     try {
       const sb = await waitForPulsePublic();
+      if (!sb) return [];
       const now = new Date().toISOString();
 
       const { data, error } = await sb
@@ -92,6 +92,7 @@
   async function fetchAllBlogs({ page = 0, category = null, search = null } = {}) {
     try {
       const sb = await waitForPulsePublic();
+      if (!sb) return [];
       const now = new Date().toISOString();
       const pageSize = 12;
       const offset = page * pageSize;
@@ -138,6 +139,7 @@
   async function fetchCategories() {
     try {
       const sb = await waitForPulsePublic();
+      if (!sb) return [];
       const { data, error } = await sb
         .from('blog_categories')
         .select('name, slug')
@@ -159,6 +161,7 @@
   async function fetchBlogBySlug(slug) {
     try {
       const sb = await waitForPulsePublic();
+      if (!sb) return [];
       
       const { data, error } = await sb
         .from('blogs')
@@ -196,6 +199,7 @@
     try {
       if (!categoryId) return [];
       const sb = await waitForPulsePublic();
+      if (!sb) return [];
 
       const { data, error } = await sb
         .from('blogs')
@@ -231,6 +235,7 @@
   async function incrementBlogView(blogId, currentViews) {
     try {
       const sb = await waitForPulsePublic();
+      if (!sb) return [];
       // Using update instead of RPC to avoid potential missing RPCs in user's DB
       await sb
         .from('blogs')

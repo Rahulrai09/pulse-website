@@ -1,91 +1,119 @@
-// PULSE Website — Google Sheets Form Connector
+// PULSE Website — form connector
+// Every lead goes to two places at once:
+//   1. the team's Google Sheet (as before), and
+//   2. the Pulse admin panel (Supabase: enquiries / demo_requests).
+// A submission counts as sent if either one accepts it, so a hiccup on one side never loses a lead.
 (function () {
   'use strict';
 
   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyEYYoGCZDQxvYFy5hFiMuk54RsArVOfx72lpO_7uSarC_8aZ7fqiTv9o2NUJ23HwxgMA/exec';
+  // Public (publishable) key: visitors can only ADD a new lead; reading leads needs an admin login.
+  const SB_URL = 'https://vyknmwrcvfnpbcrjugik.supabase.co';
+  const SB_KEY = 'sb_publishable_An5cioRIYrYkii-Z7QFVgg_FPFpJZ_6';
 
   async function submitToSheet(payload) {
     try {
       const formData = new FormData();
       formData.append('payload', JSON.stringify(payload));
-      const response = await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        body: formData
-      });
+      const response = await fetch(APPS_SCRIPT_URL, { method: 'POST', body: formData });
       const text = await response.text();
-      if (text === 'success') {
-        return { success: true };
-      } else {
-        console.error('[pulse-forms] Script returned:', text);
-        return { success: false, error: text };
-      }
+      if (text === 'success') return { success: true };
+      console.error('[pulse-forms] Sheet returned:', text);
+      return { success: false, error: text };
     } catch (err) {
-      console.error('[pulse-forms] Submission failed:', err);
+      console.error('[pulse-forms] Sheet submission failed:', err);
       return { success: false, error: err };
     }
   }
 
+  async function saveToAdmin(table, row) {
+    try {
+      const clean = {};
+      Object.keys(row).forEach(function (k) { const v = row[k]; if (v !== '' && v != null) clean[k] = typeof v === 'string' ? v.slice(0, 4000) : v; });
+      const res = await fetch(SB_URL + '/rest/v1/' + table, {
+        method: 'POST',
+        headers: { apikey: SB_KEY, Authorization: 'Bearer ' + SB_KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+        body: JSON.stringify(clean),
+        keepalive: true
+      });
+      if (!res.ok) { console.error('[pulse-forms] Admin save failed:', res.status, await res.text()); return { success: false }; }
+      return { success: true };
+    } catch (err) {
+      console.error('[pulse-forms] Admin save failed:', err);
+      return { success: false, error: err };
+    }
+  }
+
+  async function both(sheetPayload, table, row) {
+    const r = await Promise.all([submitToSheet(sheetPayload), saveToAdmin(table, row)]);
+    return r[0].success || r[1].success ? { success: true } : { success: false, error: r[0].error || r[1].error };
+  }
+
+  const page = () => location.href.split('#')[0];
+  const isoDate = (d) => /^\d{4}-\d{2}-\d{2}$/.test(d || '') ? d : null;
+  function customerType(t) {
+    t = String(t || '').toLowerCase();
+    if (/distribut|dealer|reseller/.test(t)) return 'distributor';
+    if (/gov|public sector|psu/.test(t)) return 'government';
+    if (/hospital|clinic|doctor|nursing|diagnostic|lab|centre|center|medical|purchase|biomedical|administrator/.test(t)) return 'hospital';
+    return t ? 'other' : null;
+  }
+
   // Demo form submission
   async function submitDemo(data) {
-    return submitToSheet({
-      formType: 'demo',
-      fullName: data.fullName || '',
-      mobile: data.mobile || '',
-      email: data.email || '',
-      city: data.city || '',
-      preferredDate: data.preferredDate || ''
-    });
+    return both(
+      { formType: 'demo', fullName: data.fullName || '', mobile: data.mobile || '', email: data.email || '', city: data.city || '', preferredDate: data.preferredDate || '' },
+      'demo_requests',
+      { name: data.fullName || 'Website visitor', phone: data.mobile, email: data.email, location: data.city, preferred_date: isoDate(data.preferredDate), status: 'pending' }
+    );
   }
 
   // Quote form submission
   async function submitQuote(data) {
-    return submitToSheet({
-      formType: 'quote',
-      fullName: data.fullName || '',
-      mobile: data.mobile || '',
-      email: data.email || '',
-      city: data.city || '',
-      query: data.query || ''
-    });
+    return both(
+      { formType: 'quote', fullName: data.fullName || '', mobile: data.mobile || '', email: data.email || '', city: data.city || '', query: data.query || '' },
+      'enquiries',
+      { name: data.fullName || 'Website visitor', phone: data.mobile, email: data.email, city: data.city, message: (data.query || '') + '\n\nPage: ' + page(), source: 'website-quote', status: 'new' }
+    );
   }
 
-  // Job application submission
+  // Detailed contact form (Quality page): name, phone, email, message + organisation details
+  async function submitForm(p) {
+    const m = p.metadata || {};
+    const lines = [p.message || ''];
+    if (m.organisation) lines.push('Organisation: ' + m.organisation);
+    if (m.designation) lines.push('Role: ' + m.designation);
+    if (m.equipment_interested && m.equipment_interested.length) lines.push('Interested in: ' + [].concat(m.equipment_interested).join(', '));
+    if (m.budget_range) lines.push('Budget: ' + m.budget_range);
+    if (m.timeline) lines.push('Timeline: ' + m.timeline);
+    lines.push('Page: ' + (p.source_page || page()));
+    const query = lines.filter(Boolean).join('\n');
+    return both(
+      { formType: 'quote', fullName: p.name || '', mobile: p.phone || '', email: p.email || '', city: m.city || '', query: query },
+      'enquiries',
+      { name: p.name || 'Website visitor', phone: p.phone, email: p.email, city: m.city, company: m.organisation, message: query, source: 'website-' + (p.form_type || 'contact'), customer_type: customerType(m.designation || m.organisation), status: 'new' }
+    );
+  }
+
+  // Job application submission (Google Sheet only: CVs don't belong in the sales pipeline)
   async function submitJob(data) {
-    const payload = {
-      formType: 'job',
-      appliedRole: data.appliedRole || '',
-      name: data.name || '',
-      phone: data.phone || '',
-      email: data.email || '',
-      skillDetails: data.skillDetails || '',
-      yearsExperience: data.yearsExperience || '',
-      message: data.message || '',
-      resumeFileName: data.resumeFileName || '',
-      resumeMimeType: data.resumeMimeType || '',
-      resumeBase64: data.resumeBase64 || ''
-    };
-    return submitToSheet(payload);
-  }
-
-  // AI Chat lead submission
-  async function submitChat(data) {
     return submitToSheet({
-      formType: 'chat',
-      firstMessage: data.firstMessage || '',
-      name: data.name || '',
-      phone: data.phone || '',
-      email: data.email || '',
-      userType: data.userType || '',
-      category: data.category || '',
-      message: data.message || ''
+      formType: 'job',
+      appliedRole: data.appliedRole || '', name: data.name || '', phone: data.phone || '', email: data.email || '',
+      skillDetails: data.skillDetails || '', yearsExperience: data.yearsExperience || '', message: data.message || '',
+      resumeFileName: data.resumeFileName || '', resumeMimeType: data.resumeMimeType || '', resumeBase64: data.resumeBase64 || ''
     });
   }
 
-  window.PulsePublic = {
-    submitDemo,
-    submitQuote,
-    submitJob,
-    submitChat
-  };
+  // AI chat lead submission
+  async function submitChat(data) {
+    const msg = [data.category ? 'Topic: ' + data.category : '', data.firstMessage ? 'First message: ' + data.firstMessage : '', data.message || '', 'Page: ' + page()].filter(Boolean).join('\n');
+    return both(
+      { formType: 'chat', firstMessage: data.firstMessage || '', name: data.name || '', phone: data.phone || '', email: data.email || '', userType: data.userType || '', category: data.category || '', message: data.message || '' },
+      'enquiries',
+      { name: data.name || 'Chat visitor', phone: data.phone, email: data.email, message: msg, source: 'chatbot', customer_type: customerType(data.userType), status: 'new' }
+    );
+  }
 
+  window.PulsePublic = { submitDemo, submitQuote, submitForm, submitJob, submitChat };
 })();
