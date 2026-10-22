@@ -1,4 +1,5 @@
 name: Publish from admin panel
+run-name: "Publish by ${{ inputs.requested_by || 'admin panel' }}${{ inputs.dry_run && ' (preview only)' || '' }}"
 
 # Started by the "Publish to website" button in the Pulse admin panel (or by hand from the Actions tab).
 # Reads the admin data from Supabase, updates the website files, and pushes. Vercel then deploys.
