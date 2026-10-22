@@ -1,0 +1,49 @@
+name: Publish from admin panel
+
+# Started by the "Publish to website" button in the Pulse admin panel (or by hand from the Actions tab).
+# Reads the admin data from Supabase, updates the website files, and pushes. Vercel then deploys.
+on:
+  workflow_dispatch:
+    inputs:
+      requested_by:
+        description: Who clicked Publish
+        required: false
+        default: admin panel
+      dry_run:
+        description: Only show what would change
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-from-admin
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update website files from the admin panel
+        id: sync
+        run: node scripts/admin-publish/publish.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Commit and push
+        if: ${{ !inputs.dry_run && steps.sync.outputs.changed != '0' }}
+        env:
+          REQUESTED_BY: ${{ inputs.requested_by }}
+        run: |
+          git config user.name "Pulse Admin Publish"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish from admin panel (${REQUESTED_BY:-admin panel})"
+          git push
