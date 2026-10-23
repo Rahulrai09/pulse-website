@@ -304,8 +304,14 @@ document.addEventListener('DOMContentLoaded', function() {
               } else if (type === 'career') {
                 const resumeInput = form.querySelector('input[type="file"]');
                 let resumeBase64 = '', resumeFileName = '', resumeMimeType = '';
+                let resumeFile = null;
                 if (resumeInput && resumeInput.files && resumeInput.files[0]) {
                   const file = resumeInput.files[0];
+                  if (file.size > 10 * 1024 * 1024) {
+                    alert('Your CV is larger than 10 MB. Please upload a smaller PDF or Word file.');
+                    btn.disabled = false; btn.textContent = origText; return;
+                  }
+                  resumeFile = file;
                   resumeFileName = file.name;
                   resumeMimeType = file.type;
                   resumeBase64 = await new Promise((resolve) => {
@@ -324,7 +330,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   message: form.querySelector('textarea')?.value || '',
                   resumeBase64,
                   resumeFileName,
-                  resumeMimeType
+                  resumeMimeType,
+                  resumeFile
                 });
               }
               const { success } = result || { success: false };

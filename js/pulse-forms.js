@@ -95,14 +95,41 @@
     );
   }
 
-  // Job application submission (Google Sheet only: CVs don't belong in the sales pipeline)
+  // Job application: Google Sheet (as before) + admin panel (Job Applications), with the CV stored privately
+  async function uploadResume(file) {
+    try {
+      if (!file || file.size > 10 * 1024 * 1024) return null;
+      const ext = (file.name.split('.').pop() || 'pdf').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const types = { pdf: 'application/pdf', doc: 'application/msword', docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' };
+      if (!types[ext]) return null;
+      const id = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2);
+      const path = 'applications/' + new Date().toISOString().slice(0, 7) + '/' + id + '.' + ext;
+      const res = await fetch(SB_URL + '/storage/v1/object/resumes/' + path, {
+        method: 'POST',
+        headers: { apikey: SB_KEY, Authorization: 'Bearer ' + SB_KEY, 'Content-Type': file.type || types[ext], 'x-upsert': 'false' },
+        body: file
+      });
+      if (!res.ok) { console.error('[pulse-forms] CV upload failed:', res.status, await res.text()); return null; }
+      return path;
+    } catch (err) { console.error('[pulse-forms] CV upload failed:', err); return null; }
+  }
   async function submitJob(data) {
-    return submitToSheet({
+    const sheet = submitToSheet({
       formType: 'job',
       appliedRole: data.appliedRole || '', name: data.name || '', phone: data.phone || '', email: data.email || '',
       skillDetails: data.skillDetails || '', yearsExperience: data.yearsExperience || '', message: data.message || '',
       resumeFileName: data.resumeFileName || '', resumeMimeType: data.resumeMimeType || '', resumeBase64: data.resumeBase64 || ''
     });
+    const admin = (async () => {
+      const path = await uploadResume(data.resumeFile);
+      return saveToAdmin('job_applications', {
+        name: data.name || 'Applicant', phone: data.phone, email: data.email, applied_role: data.appliedRole,
+        job_title: data.skillDetails, years_experience: data.yearsExperience, message: data.message,
+        resume_path: path, resume_file_name: data.resumeFileName || null, source_page: page(), status: 'new'
+      });
+    })();
+    const r = await Promise.all([sheet, admin]);
+    return r[0].success || r[1].success ? { success: true } : { success: false, error: r[0].error || r[1].error };
   }
 
   // AI chat lead submission
