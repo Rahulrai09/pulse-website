@@ -158,3 +158,11 @@ const summary = [
 console.log(summary);
 if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary + "\n");
 if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `changed=${changed.size}\n`);
+// GitHub annotations: the admin panel's Publish page reads these to show what happened.
+if (process.env.GITHUB_ACTIONS) {
+  const clean = (t) => String(t).replace(/%/g, "%25").replace(/\r?\n/g, "%0A");
+  const what = log.map((l) => l.replace(/^(SEO|PAGE|FAQ)\s+/, "")).slice(0, 25).join("\n");
+  console.log(`::notice title=Publish result::${clean((changed.size ? `${changed.size} file(s) updated${DRY ? " (check only, nothing saved)" : ""}` : "No changes needed") + (what ? "\n" + what : ""))}`);
+  const useful = warn.filter((w) => !/characters \(Google|redirects elsewhere|has no website page yet/.test(w));
+  if (useful.length) console.log(`::warning title=Publish notes::${clean(useful.slice(0, 25).join("\n"))}`);
+}
