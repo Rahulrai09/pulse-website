@@ -3,11 +3,13 @@
 // "Publish to website" in the admin panel. Reads the public data from Supabase and updates:
 //   1. <title>, meta description, Open Graph and Twitter tags on every page (Page SEO)
 //      and every product page (product SEO fields)
-//   2. js/faq-data.js (site search + chatbot answers) from the FAQs table
+//   2. product page content: summary, tags, brochure link, photo gallery, spec tables, key features
+//   3. js/faq-data.js (site search + chatbot answers) from the FAQs table
 // It only edits values that changed, never blanks a field, and refuses to run if the data
 // looks incomplete. Usage: node scripts/admin-publish/publish.mjs [--dry-run]
 import fs from "node:fs";
 import path from "node:path";
+import { syncProduct } from "./products.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
 const SB_URL = "https://vyknmwrcvfnpbcrjugik.supabase.co";
@@ -107,15 +109,26 @@ for (const p of pages) {
   applySeo(file, { title: p.meta_title, description: p.meta_description, image: p.og_image_url });
 }
 
-/* ---------- 2. Product SEO ---------- */
-const products = await fetchAll("products", "select=slug,name,seo_title,seo_description,specifications&status=eq.active&order=slug");
+/* ---------- 2. Product pages: content (summary, tags, brochure, photos, specs, features) + SEO ---------- */
+const products = await fetchAll("products", "select=slug,name,short_description,brochure_url,seo_title,seo_description,specifications,product_images(image_url,alt_text,display_order)&status=eq.active&order=slug");
 if (products.length < 30) throw new Error(`Only ${products.length} products came back (expected 60+). Stopping.`);
 for (const p of products) {
   const url = p.specifications?.page_url;
   if (!url) { warn.push(`Product "${p.name}" has no website page yet (new product), skipped`); continue; }
   const m = url.match(/^https:\/\/www\.pulseio\.in\/([a-z0-9-]+)\/([a-z0-9-]+)\/?$/);
   if (!m) { warn.push(`Product "${p.name}": unexpected page link ${url}, skipped`); continue; }
-  applySeo(`${m[1]}/${m[2]}.html`, { title: p.seo_title, description: p.seo_description });
+  const file = `${m[1]}/${m[2]}.html`, abs = path.join(ROOT, file);
+  if (!fs.existsSync(abs)) { warn.push(`${file}: file not found, skipped`); continue; }
+  const before = fs.readFileSync(abs, "utf8");
+  const r = syncProduct(before, p);
+  r.notes.forEach((n) => warn.push(`${p.name}: ${n}`));
+  if (r.html !== before) {
+    if (/<\/html>/i.test(before) && !/<\/html>/i.test(r.html)) throw new Error(`${file}: page structure changed unexpectedly, stopping`);
+    if (!DRY) fs.writeFileSync(abs, r.html);
+    changed.add(file);
+    log.push(`PAGE ${file}: ${r.done.join(", ")}`);
+  }
+  applySeo(file, { title: p.seo_title, description: p.seo_description });
 }
 
 /* ---------- 3. FAQ data (site search + chatbot) ---------- */

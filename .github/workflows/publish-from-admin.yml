@@ -33,6 +33,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+          cache-dependency-path: scripts/admin-publish/package-lock.json
+
+      - name: Install publish tools
+        run: npm ci --prefix scripts/admin-publish --no-audit --no-fund
 
       - name: Update website files from the admin panel
         id: sync

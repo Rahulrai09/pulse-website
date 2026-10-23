@@ -1,0 +1,9 @@
+{
+  "name": "pulse-admin-publish",
+  "private": true,
+  "type": "module",
+  "description": "Copies admin-panel data from Supabase into the pulseio.in HTML files",
+  "dependencies": {
+    "parse5": "7.1.2"
+  }
+}
