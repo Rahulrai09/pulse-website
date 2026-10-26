@@ -402,7 +402,7 @@
     },
     {
       "source": "/folding-wheelchair-with-cushion.html",
-      "destination": "/rehabilitation.html",
+      "destination": "https://pulsemotion.in/",
       "permanent": true
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "source": "/pulse-rollator-walker.html",
-      "destination": "/rehabilitation.html",
+      "destination": "https://pulsemotion.in/",
       "permanent": true
     },
     {
@@ -487,12 +487,12 @@
     },
     {
       "source": "/categories.html#cta",
-      "destination": "/index.html#portfolio",
+      "destination": "/#portfolio",
       "permanent": true
     },
     {
       "source": "/categories.html",
-      "destination": "/index.html#portfolio",
+      "destination": "/#portfolio",
       "permanent": true
     },
     {
@@ -597,22 +597,22 @@
     },
     {
       "source": "/why-pulse",
-      "destination": "/index.html#why-pulse",
+      "destination": "/#why-pulse",
       "permanent": false
     },
     {
       "source": "/why-pulse.html",
-      "destination": "/index.html#why-pulse",
+      "destination": "/#why-pulse",
       "permanent": true
     },
     {
       "source": "/how-it-works",
-      "destination": "/index.html#how-it-works",
+      "destination": "/#how-it-works",
       "permanent": true
     },
     {
       "source": "/how-it-works.html",
-      "destination": "/index.html#how-it-works",
+      "destination": "/#how-it-works",
       "permanent": true
     },
     {
@@ -812,12 +812,12 @@
     },
     {
       "source": "/products",
-      "destination": "/index.html#portfolio",
+      "destination": "/#portfolio",
       "permanent": true
     },
     {
       "source": "/categories",
-      "destination": "/index.html#portfolio",
+      "destination": "/#portfolio",
       "permanent": true
     },
     {
@@ -1958,6 +1958,11 @@
     {
       "source": "/blog-pulse-lightweight-wheelchair-aerodrive.html",
       "destination": "/blog-pulse-premium-comfort-travelmate-wheelchair.html",
+      "permanent": true
+    },
+    {
+      "source": "/image/Rehabiliation/wheelchair-catalog.pdf",
+      "destination": "https://pulsemotion.in/",
       "permanent": true
     }
   ],
