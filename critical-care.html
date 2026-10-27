@@ -921,7 +921,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-card" data-type="${p.type}" onclick="window.location.href='${p.slug}'" style="cursor:pointer" 
              data-app="${p.app}" data-cert="${(p.cert||[]).join(',')}">
           <div class="product-card-img">
-            <img src="${p.img}" alt="${p.name}" loading="lazy"
+            <img src="${p.img}" alt="${p.name}" loading="lazy" width="400" height="300"
                  onerror="this.src='image/pulse-logo.png'">          </div>
           <div class="product-card-body">
             <div class="product-card-category">${p.category||''}</div>
