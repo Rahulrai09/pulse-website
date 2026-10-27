@@ -1624,7 +1624,6 @@ var searchMap = [
 
   { keywords: ['introducer kits venous','venous access kit','acusafe introducer'], url: '/cardiac-care/acusafe-introducer-kits/' },
 
-  { keywords: ['aed','swm11089','automatic external defibrillator','aed device'], url: '/cardiac-care.html' },
 
 
   { keywords: ['optima pressure monitoring','pressure monitoring lines'], url: '/cardiac-care.html' },
@@ -1873,9 +1872,7 @@ var searchMap = [
 
       'cath lab','catheterization',
 
-      'defibrillator','aed','automatic external defibrillator',
-
-      'cardiac defibrillator','inflation kit','inflation device',
+      'inflation kit','inflation device',
 
       'radial compression','compression band','blunt needle',
 
@@ -1986,8 +1983,6 @@ var searchMap = [
       'laparoscopy','laparoscopic','endoscopy','surgical camera',
 
       'medical laser','surgical laser','co2 laser',
-
-      'aed','defibrillator','automated external defibrillator',
 
       'er','emergency room','er setup','emergency setup',
 
