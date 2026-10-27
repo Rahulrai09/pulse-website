@@ -1369,4 +1369,25 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-hydrafacial-machine-price-india.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hydrafacial%20Machine%20Price%20inner%20banner.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-picosecond-laser-price-india.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Picosecond%20Laser%20Price%20inner%20banner.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-rf-microneedling-machine-price-india.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/RF%20Microneedling%20Machine%20Price%20inner%20banner.webp</image:loc></image:image>
+  </url>
 </urlset>
