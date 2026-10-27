@@ -1278,4 +1278,18 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pulse%20in%20the%20News%20banner.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-ecg-machine-price-india.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/ECG%20Machine%20Price%20banner.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-dialysis-unit-setup-cost-india.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Unit%20Setup%20Cost%20banner.webp</image:loc></image:image>
+  </url>
 </urlset>
