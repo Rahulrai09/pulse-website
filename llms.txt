@@ -39,3 +39,6 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 - Phone: +91-90711-01108
 - LinkedIn: https://www.linkedin.com/company/pulse-medtech
 - Sitemap: https://www.pulseio.in/sitemap.xml
+
+## Press
+- [Pulse in the News: every story on Pulse in 2026](https://www.pulseio.in/blog-pulse-in-the-news-press-coverage-2026.html): press coverage roundup (ET, Inc42, BioSpectrum, Entrackr, Entrepreneur India, BioVoice, Venture Intelligence)
