@@ -14,7 +14,7 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 ## Product categories
 - [Critical Care](https://www.pulseio.in/critical-care.html): ICU ventilators, patient monitors, ECG machines, infusion and syringe pumps, anesthesia workstation
 - [Renal Care](https://www.pulseio.in/renal-care.html): Dialysis equipment
-- [Cardiac Care](https://www.pulseio.in/cardiac-care.html): Coronary stents, inflation kits, introducer kits, AED
+- [Cardiac Care](https://www.pulseio.in/cardiac-care.html): Coronary stents, guidewires, inflation kits, manifolds and access kits
 - [Surgical](https://www.pulseio.in/surgical.html)
 - [Aesthetics](https://www.pulseio.in/aesthetics.html): Laser and aesthetic devices
 - [Mobility](https://pulsemotion.in/): Pulse Motion electric wheelchairs (separate store)
