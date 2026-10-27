@@ -498,52 +498,52 @@
     {
       "source": "/critical",
       "destination": "/critical-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/criticalcare",
       "destination": "/critical-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/critical-care",
       "destination": "/critical-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/renal",
       "destination": "/renal-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/renalcare",
       "destination": "/renal-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/renal-care",
       "destination": "/renal-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/cardiac",
       "destination": "/cardiac-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/cardiaccare",
       "destination": "/cardiac-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/cardiac-care",
       "destination": "/cardiac-care.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/aesthetics",
       "destination": "/aesthetics.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/rehabilitation",
@@ -553,52 +553,52 @@
     {
       "source": "/surgical",
       "destination": "/surgical.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/hospital",
       "destination": "/hospital-setup.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/hospital-setup",
       "destination": "/hospital-setup.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/about",
       "destination": "/about.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/quality",
       "destination": "/quality.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/articles",
       "destination": "/articles-blogs.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/article",
       "destination": "/articles-blogs.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/blog-circumease",
       "destination": "/blog-circumease.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/blog-ventilator",
       "destination": "/blog-ventilator.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/why-pulse",
       "destination": "/#why-pulse",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/why-pulse.html",
@@ -773,42 +773,42 @@
     {
       "source": "/service",
       "destination": "/service-support.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/innovation",
       "destination": "/innovation.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/life",
       "destination": "/life-at-pulse.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/privacy",
       "destination": "/privacy-policy.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/terms",
       "destination": "/terms-and-conditions.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/blogs",
       "destination": "/articles-blogs.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/blog",
       "destination": "/articles-blogs.html",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/contact",
-      "destination": "/",
-      "permanent": false
+      "destination": "/contact.html",
+      "permanent": true
     },
     {
       "source": "/products",
@@ -823,12 +823,12 @@
     {
       "source": "/ventilator",
       "destination": "/critical-care/icu-ventilator/",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/circumease",
       "destination": "/surgical-care/circumease-stapler/",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/pulse-sh320-icu-ventilator.html",

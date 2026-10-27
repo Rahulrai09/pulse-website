@@ -101,7 +101,7 @@ export function syncProduct(html, p) {
           if (a && !(k === "src" ? toPath(attr(mainImg, "src")) === toPath(v) : same(attr(mainImg, "alt"), v))) edit(a.startOffset, a.endOffset, `${k}="${escAttr(v)}"`);
         }
         // keep the Google product image in step with the main photo
-        const ld = els.find((e) => e.tagName === "script" && attr(e, "type") === "application/ld+json" && /"@type"\s*:\s*"Product"/.test(text(e)));
+        const ld = els.find((e) => e.tagName === "script" && attr(e, "type") === "application/ld+json" && /"@type"\s*:\s*"(Product|MedicalDevice)"/.test(text(e)));
         if (ld && toPath(attr(mainImg, "src")) !== toPath(imgs[0].image_url)) {
           const [a, b] = inner(ld), js = html.slice(a, b), abs = imgs[0].image_url.startsWith("http") ? imgs[0].image_url : SITE + encodeURI(toPath(imgs[0].image_url));
           const nj = js.replace(/("image"\s*:\s*)"[^"]*"/, `$1"${abs}"`); if (nj !== js) edit(a, b, nj);
