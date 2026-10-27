@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/aesthetics.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -377,7 +377,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -651,7 +651,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -753,7 +753,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care.html</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1027,7 +1027,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/ivd-diagnostics.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1361,5 +1361,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Baby%20Warmer%20Price%20inner%20banner.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-hospital-equipment-list-india.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
   </url>
 </urlset>
