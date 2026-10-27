@@ -148,7 +148,7 @@ window.allProducts = [
     "category": "VENTILATORS",
     "categoryUrl": "/critical-care.html",
     "type": "ventilator",
-    "image": "/image/PULSE Ventilator.png",
+    "image": "/image/pulse-ventilator.opt.webp",
     "description": "Versatile ICU ventilator for Adult, Pediatric & Neonatal patients. Turbine technology, 18.5-inch touchscreen, supports invasive, non-invasive, and high-flow oxygen therapy.",
     "tags": [
       "Adult / Pediatric / Neonatal",
@@ -225,7 +225,7 @@ window.allProducts = [
     "category": "PATIENT MONITORS",
     "categoryUrl": "/critical-care.html",
     "type": "monitor",
-    "image": "/image/Banner/Banner 5.png",
+    "image": "/image/Banner/banner-5.opt.webp",
     "description": "High-End Multi Para Monitor. 12.1\" colour TFT LCD, real-time S-T analysis, pacemaker detection, built-in rechargeable battery. For ICU, CCU, OT, Recovery & Emergency.",
     "tags": [
       "5 Para",
@@ -244,7 +244,7 @@ window.allProducts = [
     "category": "PATIENT MONITORS",
     "categoryUrl": "/critical-care.html",
     "type": "monitor",
-    "image": "/image/Banner/Banner 5.png",
+    "image": "/image/Banner/banner-5.opt.webp",
     "description": "12.1\" high-resolution TFT, heart rate 30–300 bpm, SpO2 0–100%, NIBP for Adult/Pediatric/Neonatal, audio-visual alarms, compact bedside design.",
     "tags": [
       "7 Para",
@@ -471,7 +471,7 @@ window.allProducts = [
     "category": "DIALYSIS MACHINES",
     "categoryUrl": "/renal-care.html",
     "type": "hd",
-    "image": "/image/Portfolio/renal care.jpg",
+    "image": "/image/Portfolio/renal-care.opt.webp",
     "description": "Engineered for reliable renal replacement therapy. ±1% ultrafiltration precision, Kt/V monitoring, blood leak detection, automated priming & disinfection, 30-min battery backup.",
     "tags": [
       "±1% UF Precision",

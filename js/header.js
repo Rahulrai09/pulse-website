@@ -378,23 +378,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <p class="col-label" id="mega-col-products-label">CRITICAL CARE</p>
 
-                <a href="/critical-care/icu-ventilator/" class="sub-product-link dropdown-product-link" data-image="/image/PULSE Ventilator.png" data-label="ICU Ventilator">&#8594; ICU Ventilator</a>
+                <a href="/critical-care/icu-ventilator/" class="sub-product-link dropdown-product-link" data-image="/image/pulse-ventilator.opt.webp" data-label="ICU Ventilator">&#8594; ICU Ventilator</a>
 
-                <a href="/critical-care/anesthesia-workstation/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/anesthesia-workstation-transparent.png" data-label="Anesthesia Workstation">&#8594; Anesthesia Workstation</a>
+                <a href="/critical-care/anesthesia-workstation/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/anesthesia-workstation-transparent.opt.webp" data-label="Anesthesia Workstation">&#8594; Anesthesia Workstation</a>
 
-                <a href="/critical-care/3-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/ecg-machine-3-channel-transparent.png" data-label="3-Channel ECG Machine">&#8594; 3-Channel ECG Machine</a>
+                <a href="/critical-care/3-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/ecg-machine-3-channel-transparent.opt.webp" data-label="3-Channel ECG Machine">&#8594; 3-Channel ECG Machine</a>
 
-                <a href="/critical-care/6-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/6-channel-ecg-machine-transparent.png" data-label="6-Channel ECG Machine">&#8594; 6-Channel ECG Machine</a>
+                <a href="/critical-care/6-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/6-channel-ecg-machine-transparent.opt.webp" data-label="6-Channel ECG Machine">&#8594; 6-Channel ECG Machine</a>
 
-                <a href="/critical-care/12-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/12-channel-ecg-machine-transparent.png" data-label="12-Channel ECG Machine">&#8594; 12-Channel ECG Machine</a>
+                <a href="/critical-care/12-channel-ecg-machine/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/12-channel-ecg-machine-transparent.opt.webp" data-label="12-Channel ECG Machine">&#8594; 12-Channel ECG Machine</a>
 
-                <a href="/critical-care/5-para-patient-monitor/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/patient-monitor-transparent.png" data-label="5-Para Patient Monitor">&#8594; 5-Para Patient Monitor</a>
+                <a href="/critical-care/5-para-patient-monitor/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/patient-monitor-transparent.opt.webp" data-label="5-Para Patient Monitor">&#8594; 5-Para Patient Monitor</a>
 
-                <a href="/critical-care/7-para-patient-monitor/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/7-para-patient-monitor-transparent.png" data-label="7-Para Patient Monitor">&#8594; 7-Para Patient Monitor</a>
+                <a href="/critical-care/7-para-patient-monitor/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/7-para-patient-monitor-transparent.opt.webp" data-label="7-Para Patient Monitor">&#8594; 7-Para Patient Monitor</a>
 
-                <a href="/critical-care/infusion-pump/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/infusion-pump-transparent.png" data-label="Infusion Pump">&#8594; Infusion Pump</a>
+                <a href="/critical-care/infusion-pump/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/infusion-pump-transparent.opt.webp" data-label="Infusion Pump">&#8594; Infusion Pump</a>
 
-                <a href="/critical-care/syringe-pump/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/syringe-pump-transparent.png" data-label="Syringe Pump">&#8594; Syringe Pump</a>
+                <a href="/critical-care/syringe-pump/" class="sub-product-link dropdown-product-link" data-image="/image/Critical%20care/syringe-pump-transparent.opt.webp" data-label="Syringe Pump">&#8594; Syringe Pump</a>
 
                 <a href="/critical-care.html" class="dropdown-more-btn">More &rarr;</a>
 
@@ -732,7 +732,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "ICU Ventilator",
 
-                                        "image": "/image/PULSE Ventilator.png",
+                                        "image": "/image/pulse-ventilator.opt.webp",
 
                                         "href": "/critical-care/icu-ventilator/"
 
@@ -742,7 +742,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Anesthesia Workstation",
 
-                                        "image": "/image/Critical%20care/anesthesia-workstation-transparent.png",
+                                        "image": "/image/Critical%20care/anesthesia-workstation-transparent.opt.webp",
 
                                         "href": "/critical-care/anesthesia-workstation/"
 
@@ -752,7 +752,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "3-Channel ECG Machine",
 
-                                        "image": "/image/Critical%20care/ecg-machine-3-channel-transparent.png",
+                                        "image": "/image/Critical%20care/ecg-machine-3-channel-transparent.opt.webp",
 
                                         "href": "/critical-care/3-channel-ecg-machine/"
 
@@ -762,7 +762,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "6-Channel ECG Machine",
 
-                                        "image": "/image/Critical%20care/6-channel-ecg-machine-transparent.png",
+                                        "image": "/image/Critical%20care/6-channel-ecg-machine-transparent.opt.webp",
 
                                         "href": "/critical-care/6-channel-ecg-machine/"
 
@@ -772,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "12-Channel ECG Machine",
 
-                                        "image": "/image/Critical%20care/12-channel-ecg-machine-transparent.png",
+                                        "image": "/image/Critical%20care/12-channel-ecg-machine-transparent.opt.webp",
 
                                         "href": "/critical-care/12-channel-ecg-machine/"
 
@@ -782,7 +782,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "5-Para Patient Monitor",
 
-                                        "image": "/image/Critical%20care/patient-monitor-transparent.png",
+                                        "image": "/image/Critical%20care/patient-monitor-transparent.opt.webp",
 
                                         "href": "/critical-care/5-para-patient-monitor/"
 
@@ -792,7 +792,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "7-Para Patient Monitor",
 
-                                        "image": "/image/Critical%20care/7-para-patient-monitor-transparent.png",
+                                        "image": "/image/Critical%20care/7-para-patient-monitor-transparent.opt.webp",
 
                                         "href": "/critical-care/7-para-patient-monitor/"
 
@@ -802,7 +802,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Infusion Pump",
 
-                                        "image": "/image/Critical%20care/infusion-pump-transparent.png",
+                                        "image": "/image/Critical%20care/infusion-pump-transparent.opt.webp",
 
                                         "href": "/critical-care/infusion-pump/"
 
@@ -812,7 +812,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Syringe Pump",
 
-                                        "image": "/image/Critical%20care/syringe-pump-transparent.png",
+                                        "image": "/image/Critical%20care/syringe-pump-transparent.opt.webp",
 
                                         "href": "/critical-care/syringe-pump/"
 
@@ -832,7 +832,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "PDM-6000",
 
-                                        "image": "/image/Renal%20care/pdm-6000-precision-haemodialysis-system-transparent.png",
+                                        "image": "/image/Renal%20care/pdm-6000-precision-haemodialysis-system-transparent.opt.webp",
 
                                         "href": "/renal-care/pdm-6000/"
 
@@ -842,7 +842,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "PD-Canova",
 
-                                        "image": "/image/Renal%20care/pd-canova-transparent.png",
+                                        "image": "/image/Renal%20care/pd-canova-transparent.opt.webp",
 
                                         "href": "/renal-care/pd-canova/"
 
@@ -852,7 +852,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "PD-Linepro",
 
-                                        "image": "/image/Renal%20care/pd-linepro-transparent.png",
+                                        "image": "/image/Renal%20care/pd-linepro-transparent.opt.webp",
 
                                         "href": "/renal-care/pd-linepro/"
 
@@ -862,7 +862,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Dialysers",
 
-                                        "image": "/image/Renal%20care/dialysers-transparent.png",
+                                        "image": "/image/Renal%20care/dialysers-transparent.opt.webp",
 
                                         "href": "/renal-care/dialysers/"
 
@@ -872,7 +872,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "PD-Cath",
 
-                                        "image": "/image/Renal%20care/pd-cath-transparent.png",
+                                        "image": "/image/Renal%20care/pd-cath-transparent.opt.webp",
 
                                         "href": "/renal-care/pd-cath/"
 
@@ -882,7 +882,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "PD-TP",
 
-                                        "image": "/image/Renal%20care/pd-tp-transparent.png",
+                                        "image": "/image/Renal%20care/pd-tp-transparent.opt.webp",
 
                                         "href": "/renal-care/pd-tp/"
 
@@ -902,7 +902,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Optima Inflation Device Kit",
 
-                                        "image": "/image/Cardiac%20care/Optima%20Inflation%20Device%20Kit.png",
+                                        "image": "/image/Cardiac%20care/optima-inflation-device-kit.opt.webp",
 
                                         "href": "/cardiac-care/optima-inflation-kit/"
 
@@ -912,7 +912,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Optima Manifolds",
 
-                                        "image": "/image/Cardiac%20care/Optima%20Manifolds.png",
+                                        "image": "/image/Cardiac%20care/optima-manifolds.opt.webp",
 
                                         "href": "/cardiac-care/optima-manifolds/"
 
@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "AcuSafe Blunt Needle System",
 
-                                        "image": "/image/Cardiac%20care/AcuSafe%20Blunt%20Needle%20Access%20System.png",
+                                        "image": "/image/Cardiac%20care/acusafe-blunt-needle-access-system.opt.webp",
 
                                         "href": "/cardiac-care/acusafe-blunt-needle/"
 
@@ -932,7 +932,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Sirova Sirolimus Stent",
 
-                                        "image": "/image/Cardiac%20care/Sirova%20Sirolimus%20Stent.png",
+                                        "image": "/image/Cardiac%20care/sirova-sirolimus-stent.opt.webp",
 
                                         "href": "/cardiac-care/sirova-stent/"
 
@@ -942,7 +942,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Evera Everolimus Stent",
 
-                                        "image": "/image/Cardiac%20care/Evera%20Everolimus%20Stent.png",
+                                        "image": "/image/Cardiac%20care/evera-everolimus-stent.opt.webp",
 
                                         "href": "/cardiac-care/evera-stent/"
 
@@ -952,7 +952,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "GuideX Guidewires",
 
-                                        "image": "/image/Cardiac%20care/GuideX%20Guidewires.png",
+                                        "image": "/image/Cardiac%20care/guidex-guidewires.opt.webp",
 
                                         "href": "/cardiac-care/guidex-guidewires/"
 
@@ -962,7 +962,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "AcuSafe Micro-Access Kits",
 
-                                        "image": "/image/Cardiac%20care/AcuSafe%20Micro-Access%20Introducer%20Kits.png",
+                                        "image": "/image/Cardiac%20care/acusafe-micro-access-introducer-kits.opt.webp",
 
                                         "href": "/cardiac-care/acusafe-micro-access/"
 
@@ -995,17 +995,17 @@ document.addEventListener('DOMContentLoaded', function() {
                   "IVD": {
           label: "IVD",
           products: [
-            { name: "Pulse ZT Smart SAA Biochemistry Analyzer", image: "/image/IVD/zt-smart-saa-biochemistry.png", href: "/ivd-diagnostics/zt-smart-saa-biochemistry/" },
-            { name: "Pulse ZT370 3-Part-Diff Hematology Analyzer", image: "/image/IVD/zt370-hematology-analyzer.png", href: "/ivd-diagnostics/zt370-hematology-analyzer/" },
-            { name: "Pulse ZT360 Auto Hematology Analyzer", image: "/image/IVD/zt360-hematology-analyzer.png", href: "/ivd-diagnostics/zt360-hematology-analyzer/" }
+            { name: "Pulse ZT Smart SAA Biochemistry Analyzer", image: "/image/IVD/zt-smart-saa-biochemistry.opt.webp", href: "/ivd-diagnostics/zt-smart-saa-biochemistry/" },
+            { name: "Pulse ZT370 3-Part-Diff Hematology Analyzer", image: "/image/IVD/zt370-hematology-analyzer.opt.webp", href: "/ivd-diagnostics/zt370-hematology-analyzer/" },
+            { name: "Pulse ZT360 Auto Hematology Analyzer", image: "/image/IVD/zt360-hematology-analyzer.opt.webp", href: "/ivd-diagnostics/zt360-hematology-analyzer/" }
           ]
         },
                 "IVD": {
           label: "IVD",
           products: [
-            { name: "Pulse ZT Smart SAA Biochemistry Analyzer", image: "/image/IVD/zt-smart-saa-biochemistry.png", href: "/ivd-diagnostics/zt-smart-saa-biochemistry/" },
-            { name: "Pulse ZT370 3-Part-Diff Hematology Analyzer", image: "/image/IVD/zt370-hematology-analyzer.png", href: "/ivd-diagnostics/zt370-hematology-analyzer/" },
-            { name: "Pulse ZT360 Auto Hematology Analyzer", image: "/image/IVD/zt360-hematology-analyzer.png", href: "/ivd-diagnostics/zt360-hematology-analyzer/" }
+            { name: "Pulse ZT Smart SAA Biochemistry Analyzer", image: "/image/IVD/zt-smart-saa-biochemistry.opt.webp", href: "/ivd-diagnostics/zt-smart-saa-biochemistry/" },
+            { name: "Pulse ZT370 3-Part-Diff Hematology Analyzer", image: "/image/IVD/zt370-hematology-analyzer.opt.webp", href: "/ivd-diagnostics/zt370-hematology-analyzer/" },
+            { name: "Pulse ZT360 Auto Hematology Analyzer", image: "/image/IVD/zt360-hematology-analyzer.opt.webp", href: "/ivd-diagnostics/zt360-hematology-analyzer/" }
           ]
         },
         "Aesthetics": {
@@ -1018,7 +1018,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Wavelength Pro X",
 
-                                        "image": "/image/Aesthetics%20images/wavelength-pro-x-transparent.png",
+                                        "image": "/image/Aesthetics%20images/wavelength-pro-x-transparent.opt.webp",
 
                                         "href": "/aesthetics/wavelength-pro-x/"
 
@@ -1028,7 +1028,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pi-Code",
 
-                                        "image": "/image/Aesthetics%20images/pi-code-transparent.png",
+                                        "image": "/image/Aesthetics%20images/pi-code-transparent.opt.webp",
 
                                         "href": "/aesthetics/pi-code/"
 
@@ -1038,7 +1038,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Code Factor",
 
-                                        "image": "/image/Aesthetics%20images/code-factor-transparent.png",
+                                        "image": "/image/Aesthetics%20images/code-factor-transparent.opt.webp",
 
                                         "href": "/aesthetics/code-factor/"
 
@@ -1048,7 +1048,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Nodd",
 
-                                        "image": "/image/Aesthetics%20images/nodd-transparent.png",
+                                        "image": "/image/Aesthetics%20images/nodd-transparent.opt.webp",
 
                                         "href": "/aesthetics/nodd/"
 
@@ -1058,7 +1058,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "HYDRAFRAC",
 
-                                        "image": "/image/Aesthetics%20images/hydrafrac-transparent.png",
+                                        "image": "/image/Aesthetics%20images/hydrafrac-transparent.opt.webp",
 
                                         "href": "/aesthetics/hydrafrac/"
 
@@ -1068,7 +1068,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Cool Shape",
 
-                                        "image": "/image/Aesthetics%20images/cool-shape-transparent.png",
+                                        "image": "/image/Aesthetics%20images/cool-shape-transparent.opt.webp",
 
                                         "href": "/aesthetics/cool-shape/"
 
@@ -1078,7 +1078,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Em Code",
 
-                                        "image": "/image/Aesthetics%20images/em-code-transparent.png",
+                                        "image": "/image/Aesthetics%20images/em-code-transparent.opt.webp",
 
                                         "href": "/aesthetics/em-code/"
 
@@ -1088,7 +1088,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Bbl Super IPL+DPL",
 
-                                        "image": "/image/Aesthetics%20images/bbl-super-ipl-dpl-transparent.png",
+                                        "image": "/image/Aesthetics%20images/bbl-super-ipl-dpl-transparent.opt.webp",
 
                                         "href": "/aesthetics/bbl-super-ipl-dpl/"
 
@@ -1098,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Visage",
 
-                                        "image": "/image/Aesthetics%20images/visage-transparent.png",
+                                        "image": "/image/Aesthetics%20images/visage-transparent.opt.webp",
 
                                         "href": "/aesthetics/visage/"
 
@@ -1108,7 +1108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Excimer",
 
-                                        "image": "/image/Aesthetics%20images/excimer-transparent.png",
+                                        "image": "/image/Aesthetics%20images/excimer-transparent.opt.webp",
 
                                         "href": "/aesthetics/excimer/"
 
@@ -1118,7 +1118,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Em-Ma",
 
-                                        "image": "/image/Aesthetics%20images/em-ma-transparent.png",
+                                        "image": "/image/Aesthetics%20images/em-ma-transparent.opt.webp",
 
                                         "href": "/aesthetics/em-ma/"
 
@@ -1128,7 +1128,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Skin Analyzer",
 
-                                        "image": "/image/Aesthetics%20images/skin-analyzer-transparent.png",
+                                        "image": "/image/Aesthetics%20images/skin-analyzer-transparent.opt.webp",
 
                                         "href": "/aesthetics/skin-analyzer/"
 
@@ -1148,7 +1148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse HeavyDuty Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/motion-pro-1-01.jpg",
+                                        "image": "/image/Rehabiliation/motion-pro-1-01.opt.webp",
 
                                         "href": "https://pulsemotion.in/products/pulse-heavyduty-electric-wheelchair"
 
@@ -1158,7 +1158,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse SlimFold Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/xtrion-01.png",
+                                        "image": "/image/Rehabiliation/xtrion-01.opt.webp",
 
                                         "href": "https://pulsemotion.in/products/pulse-slimfold-electric-wheelchair"
 
@@ -1168,7 +1168,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse ComfortRide Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/innovax-01.jpg",
+                                        "image": "/image/Rehabiliation/innovax-01.opt.webp",
 
                                         "href": "https://pulsemotion.in/products/pulse-comfortride-electric-wheelchair"
 
@@ -1178,7 +1178,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse Premium Comfort Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/aerodrive-1-01.jpg",
+                                        "image": "/image/Rehabiliation/aerodrive-1-01.opt.webp",
 
                                         "href": "https://pulsemotion.in/products/pulse-premium-comfort-electric-wheelchair"
 
@@ -1188,7 +1188,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse UltraLight Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/joylite-1-01.jpg",
+                                        "image": "/image/Rehabiliation/joylite-1-01.opt.webp",
 
                                         "href": "https://pulsemotion.in/products/pulse-ultralight-electric-wheelchair"
 
@@ -1198,7 +1198,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse MiniLite Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/joylite-2-01.jpg",
+                                        "image": "/image/Rehabiliation/joylite-2-01.opt.webp",
 
                                         "href": "https://pulsemotion.in/products/pulse-minilite-electric-wheelchair"
 
@@ -1208,7 +1208,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Pulse SmartFold Electric Wheelchair",
 
-                                        "image": "/image/Rehabiliation/smartride-2-01.jpg",
+                                        "image": "/image/Rehabiliation/smartride-2-01.opt.webp",
 
                                         "href": "https://pulsemotion.in/products/pulse-smartfold-electric-wheelchair"
 
@@ -1228,7 +1228,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "ICU Bed — Five Functional Electric",
 
-                                        "image": "/image/Hospital Furniture/ChatGPT Image May 28, 2026, 04_09_07 PM.png",
+                                        "image": "/image/Hospital Furniture/chatgpt-image-may-28-2026-04-09-07-pm.opt.webp",
 
                                         "href": "/hospital-setup/icu-bed-5func-electric-deluxe/"
 
@@ -1238,7 +1238,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Modular Operation Theatre",
 
-                                        "image": "/image/Hospital Furniture/Modular ot theatre.png",
+                                        "image": "/image/Hospital Furniture/modular-ot-theatre.opt.webp",
 
                                         "href": "/hospital-setup/modular-ot/"
 
@@ -1258,7 +1258,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "OT Light — Premium Globus Dome",
 
-                                        "image": "/image/Hospital Furniture/OT Light — Premium Globus Dome.png",
+                                        "image": "/image/Hospital Furniture/ot-light-premium-globus-dome.opt.webp",
 
                                         "href": "/hospital-setup/ot-light-globus-dome/"
 
@@ -1268,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "OT Examination Light",
 
-                                        "image": "/image/Hospital Furniture/OT Examination Light.png",
+                                        "image": "/image/Hospital Furniture/ot-examination-light.opt.webp",
 
                                         "href": "/hospital-setup/ot-examination-light/"
 
@@ -1278,7 +1278,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "Medical Gas Pipeline System",
 
-                                        "image": "/image/Hospital Furniture/ChatGPT Image May 28, 2026, 04_10_39 PM.png",
+                                        "image": "/image/Hospital Furniture/chatgpt-image-may-28-2026-04-10-39-pm.opt.webp",
 
                                         "href": "/hospital-setup/medical-gas-pipeline/"
 
