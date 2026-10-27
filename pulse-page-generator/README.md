@@ -1,3 +1,9 @@
+> **Update (Oct 2026):** you no longer need to run this by hand. In the admin panel, tick
+> **Create a page on the website** on an Active product and click **Publish to website**.
+> `scripts/admin-publish/newpages.mjs` uses `template.html` from this folder to build the page and
+> also adds it to the category page, header menu, site search, sitemap.xml and vercel.json.
+> Keep `template.html` here: the publish step reads it.
+
 # Pulse Page Generator
 
 Turns a product row in your Supabase database into a real, styled product

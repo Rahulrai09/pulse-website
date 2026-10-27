@@ -4,12 +4,15 @@
 //   1. <title>, meta description, Open Graph and Twitter tags on every page (Page SEO)
 //      and every product page (product SEO fields)
 //   2. product page content: summary, tags, brochure link, photo gallery, spec tables, key features
+//   2b. NEW products (Active + "Create a page on the website" ticked): a full page, plus category grid,
+//       menu, site search, sitemap and web address entries
 //   3. js/faq-data.js (site search + chatbot answers) from the FAQs table
 // It only edits values that changed, never blanks a field, and refuses to run if the data
 // looks incomplete. Usage: node scripts/admin-publish/publish.mjs [--dry-run]
 import fs from "node:fs";
 import path from "node:path";
 import { syncProduct } from "./products.mjs";
+import { placement, missing, buildPage, register, fullName } from "./newpages.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
 const SB_URL = "https://vyknmwrcvfnpbcrjugik.supabase.co";
@@ -110,11 +113,31 @@ for (const p of pages) {
 }
 
 /* ---------- 2. Product pages: content (summary, tags, brochure, photos, specs, features) + SEO ---------- */
-const products = await fetchAll("products", "select=slug,name,short_description,brochure_url,seo_title,seo_description,specifications,product_images(image_url,alt_text,display_order)&status=eq.active&order=slug");
+const products = await fetchAll("products", "select=slug,name,short_description,brochure_url,seo_title,seo_description,specifications,featured_image,create_page,categories(slug,name),product_images(image_url,alt_text,display_order)&status=eq.active&order=slug");
 if (products.length < 30) throw new Error(`Only ${products.length} products came back (expected 60+). Stopping.`);
+const TEMPLATE = fs.readFileSync(path.join(ROOT, "pulse-page-generator/template.html"), "utf8");
+const pageUrl = (p) => {
+  if (p.specifications?.page_url) return p.specifications.page_url;
+  const pl = placement(p);
+  return p.create_page && pl && fs.existsSync(path.join(ROOT, pl.file)) ? SITE + pl.url : null;
+};
+const firstImg = (p) => ([...(p.product_images || [])].sort((a, b) => (a.display_order ?? 0) - (b.display_order ?? 0))[0]?.image_url) || p.featured_image;
 for (const p of products) {
-  const url = p.specifications?.page_url;
-  if (!url) { warn.push(`Product "${p.name}" has no website page yet (new product), skipped`); continue; }
+  if (!pageUrl(p) && p.create_page) {
+    const miss = missing(p);
+    if (miss.length) { warn.push(`"${p.name}": website page not created yet. Still needed: ${miss.join("; ")}`); continue; }
+    const pl = placement(p);
+    const related = products.filter((o) => o !== p && o.categories?.slug === p.categories?.slug && pageUrl(o) && firstImg(o)).slice(0, 3)
+      .map((o) => ({ url: pageUrl(o).replace(SITE, ""), name: fullName(o), img: firstImg(o) }));
+    const html = buildPage(TEMPLATE, p, related);
+    if (DRY) { changed.add(pl.file); log.push(`NEW  ${pl.file}: page would be created (check only)`); continue; }
+    fs.writeFileSync(path.join(ROOT, pl.file), html);
+    const reg = register(ROOT, p, warn);
+    changed.add(pl.file); reg.forEach((r) => changed.add(r));
+    log.push(`NEW  ${pl.file}: page created${reg.length ? `, added to ${reg.join(", ")}` : ""}`);
+  }
+  const url = pageUrl(p);
+  if (!url) { warn.push(`Product "${p.name}" has no website page yet (new product): tick "Create a page on the website" to publish it`); continue; }
   const m = url.match(/^https:\/\/www\.pulseio\.in\/([a-z0-9-]+)\/([a-z0-9-]+)\/?$/);
   if (!m) { warn.push(`Product "${p.name}": unexpected page link ${url}, skipped`); continue; }
   const file = `${m[1]}/${m[2]}.html`, abs = path.join(ROOT, file);
@@ -161,7 +184,7 @@ if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `cha
 // GitHub annotations: the admin panel's Publish page reads these to show what happened.
 if (process.env.GITHUB_ACTIONS) {
   const clean = (t) => String(t).replace(/%/g, "%25").replace(/\r?\n/g, "%0A");
-  const what = log.map((l) => l.replace(/^(SEO|PAGE|FAQ)\s+/, "")).slice(0, 25).join("\n");
+  const what = log.map((l) => l.replace(/^(SEO|PAGE|FAQ|NEW)\s+/, "")).slice(0, 25).join("\n");
   console.log(`::notice title=Publish result::${clean((changed.size ? `${changed.size} file(s) updated${DRY ? " (check only, nothing saved)" : ""}` : "No changes needed") + (what ? "\n" + what : ""))}`);
   const useful = warn.filter((w) => !/characters \(Google|redirects elsewhere|has no website page yet/.test(w));
   if (useful.length) console.log(`::warning title=Publish notes::${clean(useful.slice(0, 25).join("\n"))}`);
