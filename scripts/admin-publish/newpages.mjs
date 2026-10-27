@@ -130,7 +130,7 @@ export function register(ROOT, p, notes) {
       const pills = [...t.matchAll(new RegExp(`<li><a href="/${pl.folder}/[a-z0-9-]+/" style="([^"]*)">[^<]*</a></li>`, "g"))];
       if (cards.length) {
         const last = cards[cards.length - 1]; const at = last.index + last[0].length;
-        t = t.slice(0, at) + `\n        <li class="cp-item"><a class="cp-card" href="${pl.url}"><span class="cp-thumb"><img src="${h(img)}" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">${h(shortName(p))}</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>` + t.slice(at);
+        t = t.slice(0, at) + `\n        <li class="cp-item"><a class="cp-card" href="${pl.url}"><span class="cp-thumb"><img src="${h(img)}" alt="${h(shortName(p))}" loading="lazy" width="60" height="60"></span><span class="cp-name">${h(shortName(p))}</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>` + t.slice(at);
         changedL = true;
       } else if (pills.length) { const last = pills[pills.length - 1]; const at = last.index + last[0].length; t = t.slice(0, at) + `\n        <li><a href="${pl.url}" style="${last[1]}">${h(shortName(p))}</a></li>` + t.slice(at); changedL = true; }
     }
