@@ -6,7 +6,7 @@
 import { parse } from "parse5";
 
 const SITE = "https://www.pulseio.in";
-const SKIP_H2 = /frequently asked|you may also|setting up a whole|got questions|related|talk to|get a quote|why pulse/i;
+const SKIP_H2 = /frequently asked|\bfaqs?\b|you may also|setting up a whole|got questions|related|talk to|get a quote|why pulse/i;
 
 /* ---------- tree helpers ---------- */
 function* walk(n) { yield n; for (const c of n.childNodes || []) yield* walk(c); if (n.content) yield* walk(n.content); }
