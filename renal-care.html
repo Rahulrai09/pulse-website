@@ -558,6 +558,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ]
   }
   </script>
+<style id="cat-sections-css">
+  .cp-wrap{max-width:1200px;margin:0 auto;padding:56px 5% 64px;}
+  .cp-eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#F07C2A;margin-bottom:10px;}
+  .cp-title{font-size:clamp(1.5rem,2.6vw,2.1rem);font-weight:800;color:#0a1e40;line-height:1.2;margin:0 0 12px;letter-spacing:-0.01em;}
+  .cp-lead{color:#4b5563;font-size:15.5px;line-height:1.7;max-width:820px;margin:0 0 26px;}
+  .cp-lead a{color:#1B2F6E;font-weight:700;}
+  .cp-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;}
+  .cp-chip{border:1px solid #d8deea;background:#fff;color:#1B2F6E;border-radius:999px;padding:8px 16px;font:600 13.5px/1 'Inter',sans-serif;cursor:pointer;transition:all .2s;}
+  .cp-chip:hover{border-color:#1B2F6E;}
+  .cp-chip.active{background:#1B2F6E;border-color:#1B2F6E;color:#fff;box-shadow:0 6px 16px rgba(27,47,110,.25);}
+  .cp-chip .n{opacity:.65;margin-left:6px;font-weight:500;}
+  .cp-group{margin:0 0 30px;}
+  .cp-group[hidden]{display:none;}
+  .cp-gtitle{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:#0a1e40;margin:0 0 14px;}
+  .cp-gtitle::before{content:"";width:4px;height:18px;border-radius:2px;background:#F07C2A;}
+  .cp-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;}
+  .cp-card{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid #e6ebf3;border-radius:14px;padding:12px 16px 12px 12px;text-decoration:none;color:#0a1e40;height:100%;transition:transform .2s,box-shadow .2s,border-color .2s;}
+  .cp-card:hover,.cp-card:focus-visible{transform:translateY(-3px);box-shadow:0 12px 28px rgba(10,30,64,.10);border-color:#c9d3ea;outline:none;}
+  .cp-thumb{flex:0 0 60px;width:60px;height:60px;border-radius:10px;background:#f2f5fa;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .cp-thumb img{width:100%;height:100%;object-fit:contain;transition:transform .3s;}
+  .cp-card:hover .cp-thumb img{transform:scale(1.08);}
+  .cp-thumb .ini{font-weight:800;color:#1B2F6E;font-size:18px;}
+  .cp-name{flex:1;font-size:14px;font-weight:600;line-height:1.35;}
+  .cp-go{flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:#eef2fa;color:#1B2F6E;display:flex;align-items:center;justify-content:center;font-size:15px;transition:all .2s;}
+  .cp-card:hover .cp-go{background:#F07C2A;color:#fff;transform:translateX(3px);}
+  .bg-wrap{background:linear-gradient(180deg,#f8f9fc 0%,#eef2f9 100%);border-top:1px solid #e6ebf3;}
+  .bg-inner{max-width:1200px;margin:0 auto;padding:60px 5% 72px;}
+  .bg-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;}
+  .bg-head .cp-title{margin:0;}
+  .bg-all{color:#1B2F6E;font-weight:700;text-decoration:none;font-size:14.5px;white-space:nowrap;}
+  .bg-all:hover{text-decoration:underline;}
+  .bg-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;}
+  .bg-card{position:relative;display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid #e3e8f2;border-radius:16px;padding:22px 22px 20px;text-decoration:none;color:#0a1e40;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;}
+  .bg-card::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:#F07C2A;transition:width .3s;}
+  .bg-card:hover,.bg-card:focus-visible{transform:translateY(-4px);box-shadow:0 16px 36px rgba(10,30,64,.12);border-color:#cfd8ec;outline:none;}
+  .bg-card:hover::after{width:100%;}
+  .bg-ic{width:42px;height:42px;border-radius:12px;background:#eef2fa;color:#1B2F6E;display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+  .bg-tag{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#F07C2A;margin-bottom:6px;}
+  .bg-t{font-size:16.5px;font-weight:700;line-height:1.35;margin:0 0 8px;}
+  .bg-d{font-size:14px;color:#5b6474;line-height:1.6;margin:0 0 16px;flex:1;}
+  .bg-more{font-size:14px;font-weight:700;color:#1B2F6E;display:inline-flex;align-items:center;gap:6px;}
+  .bg-more span{transition:transform .2s;}
+  .bg-card:hover .bg-more span{transform:translateX(4px);}
+  .bg-grid li.feat{grid-column:span 2;}
+  .bg-card.feat{background:linear-gradient(135deg,#13234f 0%,#1B2F6E 100%);border-color:#1B2F6E;color:#fff;}
+  .bg-card.feat .bg-ic{background:rgba(255,255,255,.12);color:#fff;}
+  .bg-card.feat .bg-d{color:#c9d3ee;}
+  .bg-card.feat .bg-more{color:#fff;}
+  .bg-card.feat .bg-t{font-size:20px;}
+  @media(max-width:640px){.cp-chips{flex-wrap:nowrap;overflow-x:auto;margin-left:-5%;margin-right:-5%;padding:0 5% 6px;scrollbar-width:none;}.cp-chip{flex:0 0 auto;}.bg-grid li.feat{grid-column:auto;}.cp-grid{grid-template-columns:1fr;}.cp-wrap{padding:40px 5% 48px;}}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -665,16 +716,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- ALL PRODUCTS (plain HTML links, readable without JavaScript) -->
-  <section style="max-width:1400px; margin:0 auto; padding:0 4% 40px;">
-    <h2 style="font-size:1.05rem; font-weight:700; color:#0f1f4b; margin:0 0 14px;">All Renal Care Products</h2>
-    <ul style="list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:10px;">
-        <li><a href="/renal-care/pdm-6000/" style="display:inline-block; padding:7px 14px; border:1px solid #e3e8f2; border-radius:20px; background:#fff; color:#1B2F6E; font-size:13.5px; font-weight:600; text-decoration:none;">PDM-6000</a></li>
-        <li><a href="/renal-care/pd-canova/" style="display:inline-block; padding:7px 14px; border:1px solid #e3e8f2; border-radius:20px; background:#fff; color:#1B2F6E; font-size:13.5px; font-weight:600; text-decoration:none;">PD-Canova</a></li>
-        <li><a href="/renal-care/pd-linepro/" style="display:inline-block; padding:7px 14px; border:1px solid #e3e8f2; border-radius:20px; background:#fff; color:#1B2F6E; font-size:13.5px; font-weight:600; text-decoration:none;">PD-Linepro</a></li>
-        <li><a href="/renal-care/dialysers/" style="display:inline-block; padding:7px 14px; border:1px solid #e3e8f2; border-radius:20px; background:#fff; color:#1B2F6E; font-size:13.5px; font-weight:600; text-decoration:none;">Dialysers</a></li>
-        <li><a href="/renal-care/pd-cath/" style="display:inline-block; padding:7px 14px; border:1px solid #e3e8f2; border-radius:20px; background:#fff; color:#1B2F6E; font-size:13.5px; font-weight:600; text-decoration:none;">PD-Cath</a></li>
-        <li><a href="/renal-care/pd-tp/" style="display:inline-block; padding:7px 14px; border:1px solid #e3e8f2; border-radius:20px; background:#fff; color:#1B2F6E; font-size:13.5px; font-weight:600; text-decoration:none;">PD-TP</a></li>
-    </ul>
+  <section class="cp-wrap" aria-labelledby="cp-title">
+    <span class="cp-eyebrow">Browse the range</span>
+    <h2 class="cp-title" id="cp-title">All Renal Care Products</h2>
+    <div class="cp-group" data-g="all-products">
+      <ul class="cp-grid">
+        <li class="cp-item"><a class="cp-card" href="/renal-care/pdm-6000/"><span class="cp-thumb"><img src="/image/Renal%20care/pdm-6000-precision-haemodialysis-system-transparent.png" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">PDM-6000</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/renal-care/pd-canova/"><span class="cp-thumb"><img src="/image/Renal%20care/pd-canova-transparent.png" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">PD-Canova</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/renal-care/pd-linepro/"><span class="cp-thumb"><img src="/image/Renal%20care/pd-linepro-transparent.png" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">PD-Linepro</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/renal-care/dialysers/"><span class="cp-thumb"><img src="/image/Renal%20care/dialysers-transparent.png" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">Dialysers</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/renal-care/pd-cath/"><span class="cp-thumb"><img src="/image/Renal%20care/pd-cath-transparent.png" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">PD-Cath</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/renal-care/pd-tp/"><span class="cp-thumb"><img src="/image/Renal%20care/pd-tp-transparent.png" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">PD-TP</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </div>
   </section>
 
     <section style="padding:48px 0; background:#fafafa; border-top:1px solid #eee;">
@@ -754,14 +808,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="cat-guides" style="max-width:1200px;margin:0 auto;padding:40px 5% 56px;">
-  <h2 style="font-size:24px;font-weight:700;color:#0a1e40;margin-bottom:14px;">Buying Guides</h2>
-  <ul style="margin:0 0 0 20px;line-height:2;">
-    <li><a href="/blog-dialysis-machine-price-india.html" style="color:#1B2F6E; font-weight:600;">Dialysis Machine Price in India</a></li>
-    <li><a href="/blog-dialysis-unit-setup-cost-india.html" style="color:#1B2F6E; font-weight:600;">Dialysis Unit Setup Cost in India</a></li>
-    <li><a href="/blog-how-dialysis-machine-works.html" style="color:#1B2F6E; font-weight:600;">How a Dialysis Machine Works</a></li>
-    <li><a href="/blog-hospital-equipment-list-india.html" style="color:#1B2F6E; font-weight:600;">Hospital Equipment List with Prices</a></li>
-  </ul>
+  <section class="cat-guides bg-wrap" aria-labelledby="bg-title">
+  <div class="bg-inner">
+    <div class="bg-head">
+      <div>
+        <span class="cp-eyebrow">Buying guides</span>
+        <h2 class="cp-title" id="bg-title">Prices, comparisons and what to check</h2>
+      </div>
+      <a class="bg-all" href="/articles-blogs.html">All articles &amp; guides &rarr;</a>
+    </div>
+    <ul class="bg-grid">
+      <li><a class="bg-card" href="/blog-dialysis-machine-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Dialysis Machine Price in India</span><span class="bg-d">Dialysis machine price in India (2026): Rs 5–25 lakh new, Rs 2–5 lakh refurbished. Per-session costs, running costs and a…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-dialysis-unit-setup-cost-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Dialysis Unit Setup Cost in India</span><span class="bg-d">Dialysis unit setup cost in India (2026): about Rs 37–49 lakh for a 4-machine unit. Machines, RO plant, power backup…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-how-dialysis-machine-works.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span><span class="bg-tag">Guide</span><span class="bg-t">How a Dialysis Machine Works</span><span class="bg-d">How does a dialysis machine work? A simple diagram and step-by-step guide: the blood pump, dialyser, dialysate, water…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li class="feat"><a class="bg-card feat" href="/blog-hospital-equipment-list-india.html"><span class="bg-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></svg></span><span class="bg-tag">Start here</span><span class="bg-t">Hospital Equipment List with Prices</span><span class="bg-d">Hospital equipment list for India by department: ICU, OT, dialysis, labour room, lab and wards, with typical 2026 price…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+    </ul>
+  </div>
 </section>
 
 <div id="global-footer"><nav class="static-site-links" aria-label="Site links" style="padding:24px 5%;font-size:14px;line-height:2;"><a href="/">Home</a> &middot; <a href="/about.html">About Pulse</a> &middot; <a href="/critical-care.html">Critical Care</a> &middot; <a href="/renal-care.html">Renal Care</a> &middot; <a href="/cardiac-care.html">Cardiac Care</a> &middot; <a href="/aesthetics.html">Aesthetics</a> &middot; <a href="/ivd-diagnostics.html">IVD Diagnostics</a> &middot; <a href="/hospital-setup.html">Hospital Setup</a> &middot; <a href="/surgical.html">Surgical</a> &middot; <a href="/quality.html">Quality &amp; Compliance</a> &middot; <a href="/service-support.html">Service &amp; Support</a> &middot; <a href="/innovation.html">Innovation</a> &middot; <a href="/life-at-pulse.html">Careers</a> &middot; <a href="/articles-blogs.html">Articles &amp; Blogs</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="/terms-and-conditions.html">Terms</a> &middot; <a href="/refund-return-policy.html">Refund Policy</a></nav></div>
@@ -1008,6 +1070,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script>
+(function(){document.querySelectorAll('.cp-chips').forEach(function(bar){var sec=bar.closest('.cp-wrap');bar.addEventListener('click',function(e){var b=e.target.closest('.cp-chip');if(!b)return;bar.querySelectorAll('.cp-chip').forEach(function(x){x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b);});var g=b.getAttribute('data-g');sec.querySelectorAll('.cp-group').forEach(function(el){el.hidden=!(g==='all'||el.getAttribute('data-g')===g);});});});})();
+</script>
 </body>
 </html>
 

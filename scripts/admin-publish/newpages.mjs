@@ -124,9 +124,15 @@ export function register(ROOT, p, notes) {
       if (m) { const at = t.indexOf(m[0]) + m[0].indexOf("}") + 1; t = t.slice(0, at) + obj + t.slice(at); changedL = true; }
       else notes.push(`${lf}: product grid not recognised, add "${name}" to it by hand`);
     }
-    if (!t.includes(`<li><a href="${pl.url}"`)) {
+    if (!t.includes(`href="${pl.url}"><span class="cp-thumb">`) && !t.includes(`<li><a href="${pl.url}"`)) {
+      // product cards ("Browse the range" section); falls back to the older pill list
+      const cards = [...t.matchAll(new RegExp(`<li class="cp-item"><a class="cp-card" href="/${pl.folder}/[a-z0-9-]+/">[\\s\\S]*?</a></li>`, "g"))];
       const pills = [...t.matchAll(new RegExp(`<li><a href="/${pl.folder}/[a-z0-9-]+/" style="([^"]*)">[^<]*</a></li>`, "g"))];
-      if (pills.length) { const last = pills[pills.length - 1]; const at = last.index + last[0].length; t = t.slice(0, at) + `\n        <li><a href="${pl.url}" style="${last[1]}">${h(shortName(p))}</a></li>` + t.slice(at); changedL = true; }
+      if (cards.length) {
+        const last = cards[cards.length - 1]; const at = last.index + last[0].length;
+        t = t.slice(0, at) + `\n        <li class="cp-item"><a class="cp-card" href="${pl.url}"><span class="cp-thumb"><img src="${h(img)}" alt="" loading="lazy" width="60" height="60"></span><span class="cp-name">${h(shortName(p))}</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>` + t.slice(at);
+        changedL = true;
+      } else if (pills.length) { const last = pills[pills.length - 1]; const at = last.index + last[0].length; t = t.slice(0, at) + `\n        <li><a href="${pl.url}" style="${last[1]}">${h(shortName(p))}</a></li>` + t.slice(at); changedL = true; }
     }
     if (changedL) { wr(lf, t); done.push(lf); }
   } else notes.push(`${lf}: category page not found`);
