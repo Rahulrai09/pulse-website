@@ -2257,6 +2257,96 @@
           "value": "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https:; frame-src 'self' https://www.google.com https://maps.google.com https://www.google.com/maps/ https://www.youtube-nocookie.com https://www.youtube.com; frame-ancestors 'self'"
         }
       ]
+    },
+    {
+      "source": "/image/Aesthetics(.*)images/pulse(.*)Aesthetic(.*)Machines_compressed.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/Aesthetics%20images/pulse%20Aesthetic%20%20Machines_compressed.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/Cardiac(.*)care/cardiac(.*)consumables_compressed.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/Cardiac%20care/cardiac%20consumables_compressed.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/Critical(.*)care/Pulse(.*)Ventilator_compressed.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/Critical%20care/Pulse%20Ventilator_compressed.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/Hospital(.*)Furniture/Pulse(.*)Hospital(.*)setup_compressed.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/Hospital%20Furniture/Pulse%20Hospital%20setup_compressed.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/IVD/ZT-Smart-SAA-Biochemistry-Brochure.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/IVD/ZT-Smart-SAA-Biochemistry-Brochure.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/IVD/ZT360-Brochure.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/IVD/ZT360-Brochure.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/IVD/ZT370-Brochure.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/IVD/ZT370-Brochure.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/Rehabiliation/wheelchair-catalog.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/Rehabiliation/wheelchair-catalog.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/Renal(.*)care/Renal(.*)care(.*)Print(.*)file_compressed.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/Renal%20care/Renal%20care%20Print%20file_compressed.pdf>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/image/Surgical/circumEase_stapler_Pulse_compressed.pdf",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://www.pulseio.in/image/Surgical/circumEase_stapler_Pulse_compressed.pdf>; rel=\"canonical\""
+        }
+      ]
     }
   ]
 }
