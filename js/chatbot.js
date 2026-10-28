@@ -15,6 +15,18 @@
     let userData = { name: '', role: '', category: '', contact: '', firstMessage: '' };
     let chatTranscript = [];
 
+    // FAQ answers (js/faq-data.js, ~190 KB) load only when the chat is used, not on every page view.
+    let faqLoading = null;
+    function loadFAQ() {
+      if (window.PulseFAQSearch) return Promise.resolve();
+      if (faqLoading) return faqLoading;
+      faqLoading = new Promise((resolve) => {
+        const add = (src, next) => { const s = document.createElement('script'); s.src = src; s.onload = next; s.onerror = next; document.head.appendChild(s); };
+        add('/js/faq-data.js', () => add('/js/faq-search.js', resolve));
+      });
+      return faqLoading;
+    }
+
     function looksLikeQuestion(text) {
       const t = text.trim();
       if (t.length > 300) return false;
@@ -281,7 +293,7 @@
       const existingActions = chatBody.querySelectorAll('.chat-quick-actions');
       existingActions.forEach(el => el.remove());
 
-      setTimeout(() => {
+      const go = () => setTimeout(() => {
         if (chatStep === -1) {
           userData.firstMessage = text;
           if (text === "Products") {
@@ -471,11 +483,13 @@
           }
         }
       }, 600);
+      if (window.PulseFAQSearch) go(); else loadFAQ().then(go);
     }
 
     if (chatBtn && chatWindow) {
-      chatBtn.addEventListener('click', () => { 
+      chatBtn.addEventListener('click', (e) => { 
         chatWindow.classList.add('open'); 
+        if (e && e.isTrusted) loadFAQ(); // real click only; the desktop auto-open should not pull 190 KB
         chatBtn.style.transform = 'scale(0)'; 
         var hiBubble = document.getElementById('chat-hi-bubble');
         if (hiBubble) hiBubble.classList.add('hidden');
@@ -547,6 +561,7 @@
         });
       }
 
+      chatInput.addEventListener('focus', loadFAQ);
       chatSend.addEventListener('click', () => {
         handleUserInput(chatInput.value);
         chatInput.value = '';
