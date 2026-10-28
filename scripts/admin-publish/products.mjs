@@ -119,7 +119,7 @@ export function syncProduct(html, p) {
   const h2s = els.filter((e) => e.tagName === "h2");
   const groups = []; const feats = []; // feats: { t, li }
   for (let i = 0; i < h2s.length; i++) {
-    const h2 = h2s[i]; if (SKIP_H2.test(tidy(text(h2)))) continue;
+    const h2 = h2s[i]; if (SKIP_H2.test(tidy(text(h2))) || attr(h2, "data-guide") !== undefined) continue; // data-guide = hand-written buyer guide, not admin specs
     const from = els.indexOf(h2), to = i + 1 < h2s.length ? els.indexOf(h2s[i + 1]) : els.length;
     let title = tidy(text(h2)), rows = [];
     for (let j = from + 1; j < to; j++) {
