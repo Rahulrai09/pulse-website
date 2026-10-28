@@ -370,10 +370,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.querySelector('.filter-sidebar');
     const catMain = document.querySelector('.cat-main');
     if (sidebar && catMain) {
-      const toggleBtn = document.createElement('button');
-      toggleBtn.className = 'mob-filter-toggle';
-      toggleBtn.innerHTML = 'âš™ Filters';
-      catMain.insertBefore(toggleBtn, sidebar);
+      let toggleBtn = catMain.querySelector('.mob-filter-toggle');
+      if (!toggleBtn) {
+        toggleBtn = document.createElement('button');
+        toggleBtn.type = 'button';
+        toggleBtn.className = 'mob-filter-toggle';
+        toggleBtn.textContent = '\u2699 Filters';
+        catMain.insertBefore(toggleBtn, sidebar);
+      }
       toggleBtn.addEventListener('click', () => {
         sidebar.classList.toggle('open');
       });

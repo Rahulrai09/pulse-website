@@ -331,3 +331,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
   .cd-grid { grid-template-columns: 1fr; }
 }
 
+} /* closes the @media (max-width: 1024px) block opened under RESPONSIVE FIXES (it was never closed) */
+
+/* Reserve the header's space before js/header.js fills it, so the page does not jump (CLS). */
+#global-header:empty { display: block; min-height: 101px; background: #1c2b5e; }

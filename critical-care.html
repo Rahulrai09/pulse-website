@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Critical Care Products | ICU Ventilators, Monitors | Pulse">
   <meta name="twitter:description" content="Pulse critical care equipment: ICU ventilators, 5 and 7-para patient monitors, ECG machines, infusion and syringe pumps, anesthesia workstations.">
-  <meta name="twitter:image" content="https://www.pulseio.in/image/Banner/banner-1.webp"> />
+  <meta name="twitter:image" content="https://www.pulseio.in/image/Banner/banner-1.webp">
   <title>Critical Care Products | ICU Ventilators, Monitors | Pulse</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -656,6 +656,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
   </script>
 <style id="faq-h-css">.faq-h{margin:0;padding:0;font:inherit;line-height:inherit;color:inherit;letter-spacing:inherit;text-transform:none;border:0}</style>
+<style id="grid-reserve">@media(max-width:767px){#productGrid:empty{min-height:536px}}</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -694,6 +695,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="cat-main">
 
     <!-- FILTER SIDEBAR -->
+    <button type="button" class="mob-filter-toggle">&#9881; Filters</button>
     <aside class="filter-sidebar">
       <h2>Filter Critical Care Products</h2>
 
@@ -757,143 +759,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </select>
       </div>
 
-      <div class="product-grid" id="productGrid">
-        <!-- Products injected by JS -->
-      </div>
+      <div class="product-grid" id="productGrid"></div>
 
       <div class="pagination" id="pagination"></div>
-    </div>
-  </div>
-
-  <!-- ALL PRODUCTS (plain HTML links, readable without JavaScript) -->
-  <section class="cp-wrap" aria-labelledby="cp-title">
-    <span class="cp-eyebrow">Browse the range</span>
-    <h2 class="cp-title" id="cp-title">All Critical Care Products</h2>
-    <div class="cp-group" data-g="all-products">
-      <ul class="cp-grid">
-        <li class="cp-item"><a class="cp-card" href="/critical-care/icu-ventilator/"><span class="cp-thumb"><img src="/image/pulse-ventilator.opt.webp" alt="ICU Ventilator" loading="lazy" width="60" height="60"></span><span class="cp-name">ICU Ventilator</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/anesthesia-workstation/"><span class="cp-thumb"><img src="/image/Critical%20care/anesthesia-workstation-transparent.opt.webp" alt="Anesthesia Workstation" loading="lazy" width="60" height="60"></span><span class="cp-name">Anesthesia Workstation</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/3-channel-ecg-machine/"><span class="cp-thumb"><img src="/image/Critical%20care/ecg-machine-3-channel-transparent.opt.webp" alt="3-Channel ECG Machine" loading="lazy" width="60" height="60"></span><span class="cp-name">3-Channel ECG Machine</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/6-channel-ecg-machine/"><span class="cp-thumb"><img src="/image/Critical%20care/6-channel-ecg-machine-transparent.opt.webp" alt="6-Channel ECG Machine" loading="lazy" width="60" height="60"></span><span class="cp-name">6-Channel ECG Machine</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/12-channel-ecg-machine/"><span class="cp-thumb"><img src="/image/Critical%20care/12-channel-ecg-machine-transparent.opt.webp" alt="12-Channel ECG Machine" loading="lazy" width="60" height="60"></span><span class="cp-name">12-Channel ECG Machine</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/5-para-patient-monitor/"><span class="cp-thumb"><img src="/image/Critical%20care/patient-monitor-transparent.opt.webp" alt="5-Para Patient Monitor" loading="lazy" width="60" height="60"></span><span class="cp-name">5-Para Patient Monitor</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/7-para-patient-monitor/"><span class="cp-thumb"><img src="/image/Critical%20care/7-para-patient-monitor-transparent.opt.webp" alt="7-Para Patient Monitor" loading="lazy" width="60" height="60"></span><span class="cp-name">7-Para Patient Monitor</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/infusion-pump/"><span class="cp-thumb"><img src="/image/Critical%20care/infusion-pump-transparent.opt.webp" alt="Infusion Pump" loading="lazy" width="60" height="60"></span><span class="cp-name">Infusion Pump</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-        <li class="cp-item"><a class="cp-card" href="/critical-care/syringe-pump/"><span class="cp-thumb"><img src="/image/Critical%20care/syringe-pump-transparent.opt.webp" alt="Syringe Pump" loading="lazy" width="60" height="60"></span><span class="cp-name">Syringe Pump</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
-      </ul>
-    </div>
-  </section>
-
-    <section style="padding:64px 0; background:#fafafa; border-top:1px solid #eee;">
-    <div class="faq-layout" style="max-width:1100px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:360px 1fr; gap:48px; align-items:start;">
-      <div>
-        <h2 style="font-size:1.6rem; font-weight:800; color:#0a1e40; line-height:1.2; margin-bottom:14px;">Built to Perform When the ICU Needs It</h2>
-        <p style="color:#555; line-height:1.7;">A ventilator or patient monitor does not get a second chance. It has to perform when a patient needs it, every time, which is why every device in this range is built and checked around that one requirement.</p>
-      </div>
-      <div style="display:grid; gap:18px;">
-        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
-          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
-          <p style="color:#444; line-height:1.6; margin:0;">ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps.</p>
-        </div>
-        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
-          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
-          <p style="color:#444; line-height:1.6; margin:0;">Every device is CDSCO cleared and CE marked, with ISO 13485 certification across the range.</p>
-        </div>
-        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
-          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
-          <p style="color:#444; line-height:1.6; margin:0;">PAN-India service &mdash; equipment hospitals run around the clock needs a service response that keeps up, wherever the hospital is.</p>
-        </div>
-        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
-          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
-          <p style="color:#444; line-height:1.6; margin:0;">Exact ventilation modes, monitoring parameters, and accuracy ranges listed on every product page &mdash; the numbers your biomedical engineering team needs before sign-off.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-
-  <!-- CATEGORY GUIDE -->
-  <section style="padding:64px 0; background:#fff; border-top:1px solid #eee;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:10px;">Plan by area</p>
-      <h2 style="font-size:clamp(26px,3vw,36px); font-weight:800; color:#0a1e40; line-height:1.2; margin:0 0 14px;">Critical Care Equipment by Hospital Area</h2>
-      <p style="color:#555; font-size:1.02rem; line-height:1.7; max-width:820px; margin-bottom:20px;">Each area of a hospital needs a different mix of critical care equipment. Use this table as a starting list, then adjust for your bed count and case mix.</p>
-      <div style="overflow-x:auto;"><table style="width:100%; border-collapse:collapse; min-width:620px;"><thead><tr><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Area</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Core equipment</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Pulse products</th></tr></thead><tbody><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">ICU</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Ventilator, multipara monitor, syringe and infusion pumps, ECG on call</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/icu-ventilator/" style="color:#E63946; font-weight:600;">ICU Ventilator</a>, <a href="/critical-care/7-para-patient-monitor/" style="color:#E63946; font-weight:600;">7-Para Monitor</a>, <a href="/critical-care/syringe-pump/" style="color:#E63946; font-weight:600;">Syringe Pump</a>, <a href="/critical-care/infusion-pump/" style="color:#E63946; font-weight:600;">Infusion Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">HDU and step-down</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Patient monitor, infusion pump</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a>, <a href="/critical-care/infusion-pump/" style="color:#E63946; font-weight:600;">Infusion Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Operation theatre</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Anaesthesia workstation, patient monitor, syringe pump</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/anesthesia-workstation/" style="color:#E63946; font-weight:600;">Anaesthesia Workstation</a>, <a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a>, <a href="/critical-care/syringe-pump/" style="color:#E63946; font-weight:600;">Syringe Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Emergency</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Patient monitor, ECG machine, infusion pump</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a>, <a href="/critical-care/12-channel-ecg-machine/" style="color:#E63946; font-weight:600;">12-Channel ECG</a>, <a href="/critical-care/infusion-pump/" style="color:#E63946; font-weight:600;">Infusion Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Wards and OPD</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">ECG machine, monitors for selected beds</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/3-channel-ecg-machine/" style="color:#E63946; font-weight:600;">3-Channel ECG</a>, <a href="/critical-care/6-channel-ecg-machine/" style="color:#E63946; font-weight:600;">6-Channel ECG</a>, <a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a></td></tr></tbody></table></div>
-      <p style="color:#555; font-size:1rem; line-height:1.7; margin-top:18px;">For beds, OT tables and lights to go with this equipment, see <a href="/hospital-setup.html" style="color:#E63946; font-weight:600;">Hospital Setup</a>, and the <a href="/blog-hospital-equipment-list-india.html" style="color:#E63946; font-weight:600;">hospital equipment list by department</a>. <a href="/request-a-quote.html" style="color:#E63946; font-weight:600;">Request a quote</a> for one area or the whole hospital.</p>
-    </div>
-  </section>
-
-  <section style="padding:72px 6%; background:#f8f9fc;">
-    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
-      <div>
-        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
-        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Critical Care Equipment FAQs</h2>
-      </div>
-      <div class="faq-accordion">
-        <div class="faq-item">
-          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
-            <span>What does Pulse's critical care range include?</span>
-            <span class="faq-icon">+</span>
-          </button></h3>
-          <div class="faq-a"><p>ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps.</p></div>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
-            <span>Are these products certified and cleared for use?</span>
-            <span class="faq-icon">+</span>
-          </button></h3>
-          <div class="faq-a"><p>Yes. Every device in this range is CDSCO cleared and CE marked, with ISO 13485 certification across the range.</p></div>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
-            <span>What kind of service support comes with critical care equipment?</span>
-            <span class="faq-icon">+</span>
-          </button></h3>
-          <div class="faq-a"><p>Pulse provides PAN-India service, because equipment hospitals run around the clock needs support that can respond just as fast, wherever the hospital is located.</p></div>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
-            <span>What should I check before ordering a ventilator, monitor, or ECG machine?</span>
-            <span class="faq-icon">+</span>
-          </button></h3>
-          <div class="faq-a"><p>Each product page lists the exact ventilation modes, monitoring parameters, and accuracy ranges your biomedical engineering team needs before sign-off, not just a marketing summary.</p></div>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
-            <span>How do I get pricing or place an order?</span>
-            <span class="faq-icon">+</span>
-          </button></h3>
-          <div class="faq-a"><p>Message Pulse on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer nofollow" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a>, or use the Get Quote button on any product on this page.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cat-guides bg-wrap" aria-labelledby="bg-title">
-  <div class="bg-inner">
-    <div class="bg-head">
-      <div>
-        <span class="cp-eyebrow">Buying guides</span>
-        <h2 class="cp-title" id="bg-title">Critical Care Buying Guides</h2>
-      </div>
-      <a class="bg-all" href="/articles-blogs.html">All articles &amp; guides &rarr;</a>
-    </div>
-    <ul class="bg-grid">
-      <li class="feat"><a class="bg-card feat" href="/blog-hospital-equipment-list-india.html"><span class="bg-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></svg></span><span class="bg-tag">Start here</span><span class="bg-t">Hospital Equipment List by Department, with Prices</span><span class="bg-d">Hospital equipment list for India by department: ICU, OT, dialysis, labour room, lab and wards, with typical 2026 price…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
-      <li><a class="bg-card" href="/blog-icu-ventilator-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">ICU Ventilator Price in India</span><span class="bg-d">From about Rs 7 lakh to Rs 22 lakh+. What drives the cost, hidden costs to plan…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
-      <li><a class="bg-card" href="/blog-patient-monitor-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Patient Monitor Price in India</span><span class="bg-d">5 para about Rs 19,000–40,000, 12-inch multipara Rs 40,000–75,000, ICU monitors Rs…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
-      <li><a class="bg-card" href="/blog-syringe-infusion-pump-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Syringe and Infusion Pump Price in India</span><span class="bg-d">About Rs 12,000–35,000 single channel. Infusion pumps Rs 22,000–96,000. Differences…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
-      <li><a class="bg-card" href="/blog-ecg-machine-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">ECG Machine Price in India</span><span class="bg-d">3 channel Rs 22,400–60,000, 6 channel Rs 25,000–64,500, 12 channel Rs 32,000–1.3 lakh+…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
-      <li><a class="bg-card" href="/blog-anaesthesia-machine-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Anaesthesia Machine Price in India</span><span class="bg-d">Basic Rs 3–6 lakh, mid-range workstations Rs 8–15 lakh, advanced Rs 18–40 lakh+…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
-      <li><a class="bg-card" href="/blog-types-of-ventilators.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span><span class="bg-tag">Guide</span><span class="bg-t">Types of Ventilators</span><span class="bg-d">The 6 main types of ventilators (ICU, transport, neonatal, high-frequency, NIV and home), what each is for, and how an ICU…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
-    </ul>
-  </div>
-</section>
-
-<div id="global-footer"><nav class="static-site-links" aria-label="Site links" style="padding:24px 5%;font-size:14px;line-height:2;"><a href="/">Home</a> &middot; <a href="/about.html">About Pulse</a> &middot; <a href="/critical-care.html">Critical Care</a> &middot; <a href="/renal-care.html">Renal Care</a> &middot; <a href="/cardiac-care.html">Cardiac Care</a> &middot; <a href="/aesthetics.html">Aesthetics</a> &middot; <a href="/ivd-diagnostics.html">IVD Diagnostics</a> &middot; <a href="/hospital-setup.html">Hospital Setup</a> &middot; <a href="/surgical.html">Surgical</a> &middot; <a href="/quality.html">Quality &amp; Compliance</a> &middot; <a href="/service-support.html">Service &amp; Support</a> &middot; <a href="/innovation.html">Innovation</a> &middot; <a href="/life-at-pulse.html">Careers</a> &middot; <a href="/articles-blogs.html">Articles &amp; Blogs</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/request-a-quote.html">Request a Quote</a> &middot; <a href="/brochures.html">Brochures</a> &middot; <a href="/where-to-buy.html">Where to Buy</a> &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="/terms-and-conditions.html">Terms</a> &middot; <a href="/refund-return-policy.html">Refund Policy</a></nav></div>
-
-  <script src="js/header.js"></script>
-  <script src="js/footer.js"></script>
   <script>
     // ── PRODUCT DATA ──
     const PRODUCTS = [
@@ -1135,6 +1003,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     renderProducts();
   </script>
+    </div>
+  </div>
+
+  <!-- ALL PRODUCTS (plain HTML links, readable without JavaScript) -->
+  <section class="cp-wrap" aria-labelledby="cp-title">
+    <span class="cp-eyebrow">Browse the range</span>
+    <h2 class="cp-title" id="cp-title">All Critical Care Products</h2>
+    <div class="cp-group" data-g="all-products">
+      <ul class="cp-grid">
+        <li class="cp-item"><a class="cp-card" href="/critical-care/icu-ventilator/"><span class="cp-thumb"><img src="/image/pulse-ventilator.opt.webp" alt="ICU Ventilator" loading="lazy" width="60" height="60"></span><span class="cp-name">ICU Ventilator</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/anesthesia-workstation/"><span class="cp-thumb"><img src="/image/Critical%20care/anesthesia-workstation-transparent.opt.webp" alt="Anesthesia Workstation" loading="lazy" width="60" height="60"></span><span class="cp-name">Anesthesia Workstation</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/3-channel-ecg-machine/"><span class="cp-thumb"><img src="/image/Critical%20care/ecg-machine-3-channel-transparent.opt.webp" alt="3-Channel ECG Machine" loading="lazy" width="60" height="60"></span><span class="cp-name">3-Channel ECG Machine</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/6-channel-ecg-machine/"><span class="cp-thumb"><img src="/image/Critical%20care/6-channel-ecg-machine-transparent.opt.webp" alt="6-Channel ECG Machine" loading="lazy" width="60" height="60"></span><span class="cp-name">6-Channel ECG Machine</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/12-channel-ecg-machine/"><span class="cp-thumb"><img src="/image/Critical%20care/12-channel-ecg-machine-transparent.opt.webp" alt="12-Channel ECG Machine" loading="lazy" width="60" height="60"></span><span class="cp-name">12-Channel ECG Machine</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/5-para-patient-monitor/"><span class="cp-thumb"><img src="/image/Critical%20care/patient-monitor-transparent.opt.webp" alt="5-Para Patient Monitor" loading="lazy" width="60" height="60"></span><span class="cp-name">5-Para Patient Monitor</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/7-para-patient-monitor/"><span class="cp-thumb"><img src="/image/Critical%20care/7-para-patient-monitor-transparent.opt.webp" alt="7-Para Patient Monitor" loading="lazy" width="60" height="60"></span><span class="cp-name">7-Para Patient Monitor</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/infusion-pump/"><span class="cp-thumb"><img src="/image/Critical%20care/infusion-pump-transparent.opt.webp" alt="Infusion Pump" loading="lazy" width="60" height="60"></span><span class="cp-name">Infusion Pump</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/critical-care/syringe-pump/"><span class="cp-thumb"><img src="/image/Critical%20care/syringe-pump-transparent.opt.webp" alt="Syringe Pump" loading="lazy" width="60" height="60"></span><span class="cp-name">Syringe Pump</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+    <section style="padding:64px 0; background:#fafafa; border-top:1px solid #eee;">
+    <div class="faq-layout" style="max-width:1100px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:360px 1fr; gap:48px; align-items:start;">
+      <div>
+        <h2 style="font-size:1.6rem; font-weight:800; color:#0a1e40; line-height:1.2; margin-bottom:14px;">Built to Perform When the ICU Needs It</h2>
+        <p style="color:#555; line-height:1.7;">A ventilator or patient monitor does not get a second chance. It has to perform when a patient needs it, every time, which is why every device in this range is built and checked around that one requirement.</p>
+      </div>
+      <div style="display:grid; gap:18px;">
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Every device is CDSCO cleared and CE marked, with ISO 13485 certification across the range.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">PAN-India service &mdash; equipment hospitals run around the clock needs a service response that keeps up, wherever the hospital is.</p>
+        </div>
+        <div style="display:flex; gap:14px; align-items:flex-start; background:#fff; border-radius:10px; padding:18px 20px; border:1px solid #eee;">
+          <span style="color:#E87722; font-weight:700; font-size:18px; flex-shrink:0;">&#10003;</span>
+          <p style="color:#444; line-height:1.6; margin:0;">Exact ventilation modes, monitoring parameters, and accuracy ranges listed on every product page &mdash; the numbers your biomedical engineering team needs before sign-off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- CATEGORY GUIDE -->
+  <section style="padding:64px 0; background:#fff; border-top:1px solid #eee;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
+      <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:10px;">Plan by area</p>
+      <h2 style="font-size:clamp(26px,3vw,36px); font-weight:800; color:#0a1e40; line-height:1.2; margin:0 0 14px;">Critical Care Equipment by Hospital Area</h2>
+      <p style="color:#555; font-size:1.02rem; line-height:1.7; max-width:820px; margin-bottom:20px;">Each area of a hospital needs a different mix of critical care equipment. Use this table as a starting list, then adjust for your bed count and case mix.</p>
+      <div style="overflow-x:auto;"><table style="width:100%; border-collapse:collapse; min-width:620px;"><thead><tr><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Area</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Core equipment</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Pulse products</th></tr></thead><tbody><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">ICU</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Ventilator, multipara monitor, syringe and infusion pumps, ECG on call</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/icu-ventilator/" style="color:#E63946; font-weight:600;">ICU Ventilator</a>, <a href="/critical-care/7-para-patient-monitor/" style="color:#E63946; font-weight:600;">7-Para Monitor</a>, <a href="/critical-care/syringe-pump/" style="color:#E63946; font-weight:600;">Syringe Pump</a>, <a href="/critical-care/infusion-pump/" style="color:#E63946; font-weight:600;">Infusion Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">HDU and step-down</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Patient monitor, infusion pump</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a>, <a href="/critical-care/infusion-pump/" style="color:#E63946; font-weight:600;">Infusion Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Operation theatre</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Anaesthesia workstation, patient monitor, syringe pump</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/anesthesia-workstation/" style="color:#E63946; font-weight:600;">Anaesthesia Workstation</a>, <a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a>, <a href="/critical-care/syringe-pump/" style="color:#E63946; font-weight:600;">Syringe Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Emergency</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Patient monitor, ECG machine, infusion pump</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a>, <a href="/critical-care/12-channel-ecg-machine/" style="color:#E63946; font-weight:600;">12-Channel ECG</a>, <a href="/critical-care/infusion-pump/" style="color:#E63946; font-weight:600;">Infusion Pump</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Wards and OPD</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">ECG machine, monitors for selected beds</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/critical-care/3-channel-ecg-machine/" style="color:#E63946; font-weight:600;">3-Channel ECG</a>, <a href="/critical-care/6-channel-ecg-machine/" style="color:#E63946; font-weight:600;">6-Channel ECG</a>, <a href="/critical-care/5-para-patient-monitor/" style="color:#E63946; font-weight:600;">5-Para Monitor</a></td></tr></tbody></table></div>
+      <p style="color:#555; font-size:1rem; line-height:1.7; margin-top:18px;">For beds, OT tables and lights to go with this equipment, see <a href="/hospital-setup.html" style="color:#E63946; font-weight:600;">Hospital Setup</a>, and the <a href="/blog-hospital-equipment-list-india.html" style="color:#E63946; font-weight:600;">hospital equipment list by department</a>. <a href="/request-a-quote.html" style="color:#E63946; font-weight:600;">Request a quote</a> for one area or the whole hospital.</p>
+    </div>
+  </section>
+
+  <section style="padding:72px 6%; background:#f8f9fc;">
+    <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
+      <div>
+        <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
+        <h2 style="font-size:clamp(30px,3.5vw,44px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Critical Care Equipment FAQs</h2>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+            <span>What does Pulse's critical care range include?</span>
+            <span class="faq-icon">+</span>
+          </button></h3>
+          <div class="faq-a"><p>ICU ventilators with turbine technology for neonatal through adult use, 5- and 7-parameter patient monitors, anaesthesia workstations, ECG machines in 3, 6, and 12-channel versions, and infusion and syringe pumps.</p></div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+            <span>Are these products certified and cleared for use?</span>
+            <span class="faq-icon">+</span>
+          </button></h3>
+          <div class="faq-a"><p>Yes. Every device in this range is CDSCO cleared and CE marked, with ISO 13485 certification across the range.</p></div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+            <span>What kind of service support comes with critical care equipment?</span>
+            <span class="faq-icon">+</span>
+          </button></h3>
+          <div class="faq-a"><p>Pulse provides PAN-India service, because equipment hospitals run around the clock needs support that can respond just as fast, wherever the hospital is located.</p></div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+            <span>What should I check before ordering a ventilator, monitor, or ECG machine?</span>
+            <span class="faq-icon">+</span>
+          </button></h3>
+          <div class="faq-a"><p>Each product page lists the exact ventilation modes, monitoring parameters, and accuracy ranges your biomedical engineering team needs before sign-off, not just a marketing summary.</p></div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+            <span>How do I get pricing or place an order?</span>
+            <span class="faq-icon">+</span>
+          </button></h3>
+          <div class="faq-a"><p>Message Pulse on WhatsApp at <a href="https://wa.me/919071101108" target="_blank" rel="noopener noreferrer nofollow" style="color:#1B2F6E; font-weight:700; text-decoration:underline;">+91 90711 01108</a>, or use the Get Quote button on any product on this page.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-guides bg-wrap" aria-labelledby="bg-title">
+  <div class="bg-inner">
+    <div class="bg-head">
+      <div>
+        <span class="cp-eyebrow">Buying guides</span>
+        <h2 class="cp-title" id="bg-title">Critical Care Buying Guides</h2>
+      </div>
+      <a class="bg-all" href="/articles-blogs.html">All articles &amp; guides &rarr;</a>
+    </div>
+    <ul class="bg-grid">
+      <li class="feat"><a class="bg-card feat" href="/blog-hospital-equipment-list-india.html"><span class="bg-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></svg></span><span class="bg-tag">Start here</span><span class="bg-t">Hospital Equipment List by Department, with Prices</span><span class="bg-d">Hospital equipment list for India by department: ICU, OT, dialysis, labour room, lab and wards, with typical 2026 price…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-icu-ventilator-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">ICU Ventilator Price in India</span><span class="bg-d">From about Rs 7 lakh to Rs 22 lakh+. What drives the cost, hidden costs to plan…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-patient-monitor-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Patient Monitor Price in India</span><span class="bg-d">5 para about Rs 19,000–40,000, 12-inch multipara Rs 40,000–75,000, ICU monitors Rs…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-syringe-infusion-pump-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Syringe and Infusion Pump Price in India</span><span class="bg-d">About Rs 12,000–35,000 single channel. Infusion pumps Rs 22,000–96,000. Differences…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-ecg-machine-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">ECG Machine Price in India</span><span class="bg-d">3 channel Rs 22,400–60,000, 6 channel Rs 25,000–64,500, 12 channel Rs 32,000–1.3 lakh+…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-anaesthesia-machine-price-india.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="bg-tag">Price guide</span><span class="bg-t">Anaesthesia Machine Price in India</span><span class="bg-d">Basic Rs 3–6 lakh, mid-range workstations Rs 8–15 lakh, advanced Rs 18–40 lakh+…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+      <li><a class="bg-card" href="/blog-types-of-ventilators.html"><span class="bg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span><span class="bg-tag">Guide</span><span class="bg-t">Types of Ventilators</span><span class="bg-d">The 6 main types of ventilators (ICU, transport, neonatal, high-frequency, NIV and home), what each is for, and how an ICU…</span><span class="bg-more">Read guide <span aria-hidden="true">&rarr;</span></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<div id="global-footer"><nav class="static-site-links" aria-label="Site links" style="padding:24px 5%;font-size:14px;line-height:2;"><a href="/">Home</a> &middot; <a href="/about.html">About Pulse</a> &middot; <a href="/critical-care.html">Critical Care</a> &middot; <a href="/renal-care.html">Renal Care</a> &middot; <a href="/cardiac-care.html">Cardiac Care</a> &middot; <a href="/aesthetics.html">Aesthetics</a> &middot; <a href="/ivd-diagnostics.html">IVD Diagnostics</a> &middot; <a href="/hospital-setup.html">Hospital Setup</a> &middot; <a href="/surgical.html">Surgical</a> &middot; <a href="/quality.html">Quality &amp; Compliance</a> &middot; <a href="/service-support.html">Service &amp; Support</a> &middot; <a href="/innovation.html">Innovation</a> &middot; <a href="/life-at-pulse.html">Careers</a> &middot; <a href="/articles-blogs.html">Articles &amp; Blogs</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/request-a-quote.html">Request a Quote</a> &middot; <a href="/brochures.html">Brochures</a> &middot; <a href="/where-to-buy.html">Where to Buy</a> &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="/terms-and-conditions.html">Terms</a> &middot; <a href="/refund-return-policy.html">Refund Policy</a></nav></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
 <!-- AI CHATBOT WIDGET -->
 <div class="chat-welcome-pill" id="chat-welcome-pill">Welcome to Pulse, How may I help you?</div>
 <div class="chat-hi-bubble" id="chat-hi-bubble"><span class="chat-hi-text">Hi!</span><span class="chat-hi-wave">👋</span></div>

@@ -40,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pulse: Medical Equipment Company in Bengaluru, India">
   <meta name="twitter:description" content="Pulse is a Bengaluru medical equipment company for clinics and hospitals across India: ICU, dialysis, cath lab, aesthetics, lab and complete hospital setup.">
-  <meta name="twitter:image" content="https://www.pulseio.in/image/Banner/banner-1.webp"> />
+  <meta name="twitter:image" content="https://www.pulseio.in/image/Banner/banner-1.webp">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pulse: Medical Equipment Company in Bengaluru, India</title>
 <meta name="description" content="Pulse is a Bengaluru medical equipment company for clinics and hospitals across India: ICU, dialysis, cath lab, aesthetics, lab and complete hospital setup.">
@@ -2877,11 +2877,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 
   // Run on load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initPillarsCarousel);
-  } else {
-    initPillarsCarousel();
-  }
+  initPillarsCarousel(); // markup is above this script, so build now (avoids a layout jump)
 
   // Also handle resize (in case user rotates device)
   window.addEventListener('resize', function() {
