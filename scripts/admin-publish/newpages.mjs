@@ -88,7 +88,7 @@ export function buildPage(tpl, p, related) {
     "{{PRODUCT_DESCRIPTION}}": h(p.short_description.trim()),
     "{{TAGS_HTML}}": tags.map((t) => `            <span style="background:#eef1f6; color:#333; padding:4px 12px; border-radius:20px; font-size:0.85rem; font-weight:500;">${h(t)}</span>`).join("\n"),
     "{{WHATSAPP_NUMBER}}": "919071101108",
-    "{{QUOTE_URL}}": `/request-a-quote.html?product=${encodeURIComponent(name)}`,
+    "{{QUOTE_URL}}": `/request-a-quote.html#${String(name).toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}`,
     "{{WHATSAPP_BROCHURE_TEXT}}": encodeURIComponent(`Hi, I would like to request the brochure for ${name}`),
     "{{FEATURES_HTML}}": feats.map((f) => `        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;"><span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>${h(f)}</li>`).join("\n"),
     "{{RELATED_PRODUCTS_HTML}}": rel,
