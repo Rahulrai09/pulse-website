@@ -154,6 +154,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<style id="blog-ux-css">
+  .bx-crumbs{background:none;padding:0;position:static;box-shadow:none;font-size:13px;color:#6b7280;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .bx-crumbs a{color:#1B2F6E;text-decoration:none;font-weight:600}.bx-crumbs a:hover{text-decoration:underline}
+  .bx-byline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5e9f2;border-bottom:1px solid #e5e9f2;padding:12px 0;margin:4px 0 26px}
+  .bx-by{display:flex;align-items:center;gap:10px;font-size:14px;color:#4b5563}
+  .bx-av{width:34px;height:34px;border-radius:50%;background:#1B2F6E;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .bx-by strong{color:#0a1e40}
+  .bx-share{display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7280}
+  .bx-share a,.bx-share button{width:34px;height:34px;border-radius:50%;border:1px solid #d8dfec;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#1B2F6E;cursor:pointer;padding:0}
+  .bx-share a:hover,.bx-share button:hover{background:#f0f3fa}
+  .bx-share svg{width:16px;height:16px}
+  .bx-toc{display:block;height:auto;position:static;box-shadow:none;background:#f7f9fc;border:1px solid #e5e9f2;border-radius:12px;padding:16px 20px;margin:22px 0 28px}
+  .bx-toc-t{font-weight:800;color:#0a1e40;font-size:15px;margin:0 0 8px}
+  .bx-toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  .bx-toc li{font-size:14.5px;line-height:1.55;margin:0 0 6px;break-inside:avoid}
+  .bx-toc a{color:#1B2F6E;text-decoration:none}.bx-toc a:hover{text-decoration:underline}
+  .bx-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(135deg,#16275c,#1B2F6E);color:#fff;border-radius:14px;padding:20px 22px;margin:30px 0}
+  .bx-mid p{margin:0;color:#dbe3f6;font-size:15px}.bx-mid strong{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+  .bx-mid .bx-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .bx-mid a{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;text-decoration:none}
+  .bx-mid a.q{background:#F07C2A;color:#fff}.bx-mid a.w{background:#25D366;color:#06341c}
+  .bx-rel{padding-left:0 !important;margin-left:0 !important;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:6px 0 10px;padding:0;list-style:none}
+  .bx-rel li{margin:0}
+  .bx-rel a{display:flex;flex-direction:column;border:1px solid #e5e9f2;border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;height:100%;transition:box-shadow .2s,transform .15s}
+  .bx-rel a:hover{box-shadow:0 12px 28px rgba(16,32,80,.1);transform:translateY(-2px)}
+  .bx-rel img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:#eef2f9}
+  .bx-rel span{display:block;padding:12px 14px;font-weight:700;color:#0a1e40;font-size:14.5px;line-height:1.4}
+  @media (max-width:640px){.bx-toc ol{columns:1}.bx-byline{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -161,13 +190,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="global-header"></div>
 
 <article class="blog-article">
-  <div class="blog-meta">September 26, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> IVD / Diagnostics <span class="dot">&bull;</span> 7 Min Read</div>
+  <div class="bx-crumbs" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/articles-blogs.html">Articles &amp; Blogs</a><span aria-hidden="true">›</span><a href="/ivd-diagnostics.html">IVD / Diagnostics</a></div>
+      <div class="blog-meta">September 26, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> IVD / Diagnostics <span class="dot">&bull;</span> 7 Min Read</div>
   <h1 class="blog-title">IVD Diagnostics Equipment Manufacturer in India: What Labs Should Know</h1>
   <p class="blog-deck">India's in-vitro diagnostics market is growing fast, and more labs are buying hematology and biochemistry analyzers from domestic manufacturers rather than importing. Here's what "IVD equipment" actually covers, how it's regulated, and what to verify before you buy.</p>
+      <div class="bx-byline"><div class="bx-by"><span class="bx-av" aria-hidden="true">P</span><span>By <strong>Pulse Team</strong> &middot; Updated October 15, 2026 &middot; 7 min read</span></div><div class="bx-share"><span>Share</span><a href="https://wa.me/?text=IVD%20Diagnostics%20Equipment%20Manufacturer%20in%20India%3A%20What%20Labs%20Should%20Know%20https%3A%2F%2Fwww.pulseio.in%2Fblog-ivd-diagnostics-equipment-manufacturer-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.pulseio.in%2Fblog-ivd-diagnostics-equipment-manufacturer-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pulseio.in%2Fblog-ivd-diagnostics-equipment-manufacturer-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-.9.6-1 1-1h3V2h-4c-3.3 0-4 2.4-4 4v3H7v4h3v9h4v-9h3.4l.6-4z"/></svg></a><button type="button" class="bx-copy" data-url="https://www.pulseio.in/blog-ivd-diagnostics-equipment-manufacturer-india.html" aria-label="Copy link" title="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button></div></div>
 
   <p class="snippet-answer"><strong>Who manufactures IVD diagnostics equipment in India?</strong> India's IVD equipment manufacturers include horizontal OEMs such as Pulse, producing hematology analyzers, biochemistry analyzers, and related laboratory instruments. Each manufacturer's specific product should be verified against its current CDSCO classification and licence before purchase.</p>
+  <div class="bx-toc" role="navigation" aria-label="In this guide"><p class="bx-toc-t">In this guide</p><ol><li><a href="#what-counts-as-ivd-equipment">What Counts as IVD Equipment</a></li><li><a href="#why-this-market-is-growing">Why This Market Is Growing</a></li><li><a href="#how-ivd-equipment-is-regulated-in-india">How IVD Equipment Is Regulated in India</a></li><li><a href="#what-to-check-before-buying">What to Check Before Buying</a></li><li><a href="#pulse-s-ivd-range">Pulse's IVD Range</a></li><li><a href="#ivd-diagnostics-equipment-manufacturer-in-india-key-facts">IVD Diagnostics Equipment Manufacturer in India: Key Facts</a></li><li><a href="#ivd-diagnostics-equipment-manufacturer-in-india-faqs">IVD Diagnostics Equipment Manufacturer in India: FAQs</a></li></ol></div>
 
-  <h2>What Counts as IVD Equipment</h2>
+
+  <h2 id="what-counts-as-ivd-equipment">What Counts as IVD Equipment</h2>
   <p>In-vitro diagnostics (IVD) covers any instrument or reagent used to test samples &mdash; blood, urine, tissue &mdash; outside the body to diagnose, monitor, or screen for disease. For a pathology lab or diagnostic centre, the equipment side of that usually means:</p>
   <ul>
     <li>Hematology analyzers (complete blood count / CBC instruments)</li>
@@ -179,10 +212,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </ul>
   <p>Each of these carries a different risk classification and a different buying checklist. A hematology analyzer and an immunoassay platform aren't evaluated the same way, so treat each product category on its own merits rather than assuming one manufacturer's certification covers everything they sell.</p>
 
-  <h2>Why This Market Is Growing</h2>
+  <h2 id="why-this-market-is-growing">Why This Market Is Growing</h2>
   <p>India's in-vitro diagnostics market was valued at roughly USD 5.6 billion in 2025 and is projected to reach about USD 10.6 billion by 2034, growing at a compound annual rate of around 6.6% over that period, according to IMARC Group's market analysis. That growth is a large part of why more Indian manufacturers &mdash; not just importers &mdash; now compete seriously in hematology and biochemistry analyzers, where equipment, reagent cost, and local service response all factor into a lab's buying decision.</p>
 
-  <h2>How IVD Equipment Is Regulated in India</h2>
+  <div class="bx-mid"><p><strong>Need a price for your hospital or clinic?</strong>Get a written quote, brochure or demo from the Pulse team.</p><div class="bx-btns"><a class="q" href="/request-a-quote.html">Get a Quote &rarr;</a><a class="w" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20read%20your%20guide%3A%20IVD%20Diagnostics%20Equipment%20Manufacturer%20in%20India%3A%20What%20Labs%20Should%20Know" target="_blank" rel="noopener noreferrer nofollow">WhatsApp</a></div></div>
+
+  <h2 id="how-ivd-equipment-is-regulated-in-india">How IVD Equipment Is Regulated in India</h2>
   <p>IVDs fall under the Medical Devices Rules, 2017, administered by India's Central Drugs Standard Control Organisation (CDSCO). A few points matter most for a buyer:</p>
   <ul>
     <li><strong>Risk-based classification.</strong> Devices are classified into Class A, B, C, or D based on intended use and risk, broadly harmonised with international (GHTF-based) frameworks. CDSCO describes its class-wise product list as "dynamic," meaning it is updated periodically &mdash; always check the current list rather than relying on an old PDF.</li>
@@ -192,7 +227,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </ul>
   <p>None of this is a substitute for asking the manufacturer directly for their current CDSCO licence and the specific device's classification &mdash; a credible manufacturer will produce this without hesitation.</p>
 
-  <h2>What to Check Before Buying</h2>
+  <h2 id="what-to-check-before-buying">What to Check Before Buying</h2>
   <p>Beyond regulatory paperwork, the practical buying decision comes down to matching the instrument to your actual lab, not the most feature-rich option on a brochure:</p>
   <ul>
     <li><strong>Daily sample volume and test menu.</strong> A clinic running a few dozen CBCs a day has very different throughput needs than a diagnostic chain running hundreds.</li>
@@ -204,7 +239,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <blockquote>Buy for the sample volume and test menu your lab actually runs today &mdash; not for a hypothetical caseload you may or may not grow into.</blockquote>
 
-  <h2>Pulse's IVD Range</h2>
+  <h2 id="pulse-s-ivd-range">Pulse's IVD Range</h2>
   <p>Pulse's current IVD portfolio:</p>
   <div class="table-scroll"><table class="spec-table">
     <thead><tr><th>Product</th><th>Type</th><th>Key Specs</th></tr></thead>
@@ -220,7 +255,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="/ivd-diagnostics.html">Explore IVD / Diagnostics Range &rarr;</a>
   </div>
 
-  <h2>IVD Diagnostics Equipment Manufacturer in India: Key Facts</h2>
+  <h2 id="ivd-diagnostics-equipment-manufacturer-in-india-key-facts">IVD Diagnostics Equipment Manufacturer in India: Key Facts</h2>
   <div class="key-facts">
     <ul>
       <li>IVD (in-vitro diagnostic) devices in India are regulated under the Medical Devices Rules, 2017.</li>
@@ -230,7 +265,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </ul>
   </div>
 
-  <h2>IVD Diagnostics Equipment Manufacturer in India: FAQs</h2>
+  <h2 id="ivd-diagnostics-equipment-manufacturer-in-india-faqs">IVD Diagnostics Equipment Manufacturer in India: FAQs</h2>
   <h3>Who manufactures IVD diagnostics equipment in India?</h3>
   <p>India's IVD equipment manufacturers include horizontal OEMs such as Pulse, producing hematology analyzers, biochemistry analyzers, and related laboratory instruments. Each manufacturer's specific product should be verified against its current CDSCO classification and licence before purchase.</p>
 
@@ -257,14 +292,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
   <p class="h2-like">Related Reading</p>
-  <ul>
-    <li><a href="/blog-biochemistry-analyzer-price-india.html" style="color:#E63946; font-weight:600;">Biochemistry Analyzer Price in India: Semi-Auto vs Fully Auto</a></li>
-    <li><a href="/blog-hematology-analyzer-price-india.html" style="color:#E63946; font-weight:600;">Hematology Analyzer Price in India: 3-Part and 5-Part Compared</a></li>
-    <li><a href="/blog-hematology-analyzer-3part-vs-5part.html" style="color:#E63946; font-weight:600;">3-Part vs 5-Part Hematology Analyzer: Which Does Your Lab Need?</a></li>
-    <li><a href="/blog-critical-care-equipment-manufacturer-india.html" style="color:#E63946; font-weight:600;">Critical Care Equipment Manufacturer in India</a></li>
-    <li><a href="/blog-cardiac-care-device-manufacturer-india.html" style="color:#E63946; font-weight:600;">Cardiac Care Device Manufacturer in India</a></li>
-    <li><a href="/blog-made-in-india-medical-devices-quality.html" style="color:#E63946; font-weight:600;">Made in India Medical Devices: Quality Perspective</a></li>
-  </ul>
+  <ul class="bx-rel"><li><a href="/blog-biochemistry-analyzer-price-india.html"><img src="/image/Blogs%20Banners/Biochemistry%20Analyzer%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Biochemistry Analyzer Price in India: Semi-Auto vs Fully Auto</span></a></li><li><a href="/blog-hematology-analyzer-price-india.html"><img src="/image/Blogs%20Banners/Hematology%20Analyzer%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Hematology Analyzer Price in India: 3-Part and 5-Part Compared</span></a></li><li><a href="/blog-hematology-analyzer-3part-vs-5part.html"><img src="/image/Blogs%20Banners/Hematology%20Analyzer%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>3-Part vs 5-Part Hematology Analyzer: Which Does Your Lab Need?</span></a></li><li><a href="/blog-critical-care-equipment-manufacturer-india.html"><img src="/image/Blogs%20Banners/critical-care-manufacturer-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Critical Care Equipment Manufacturer in India</span></a></li><li><a href="/blog-cardiac-care-device-manufacturer-india.html"><img src="/image/Blogs%20Banners/cardiac-care-manufacturer-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Cardiac Care Device Manufacturer in India</span></a></li><li><a href="/blog-made-in-india-medical-devices-quality.html"><img src="/image/Blogs%20Banners/complete-guide-inner-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Made in India Medical Devices: Quality Perspective</span></a></li></ul>
 </article>
 
 <div class="more-reading">
@@ -309,5 +337,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script id="blog-ux-js">document.addEventListener('click',function(e){var b=e.target.closest('.bx-copy');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.setAttribute('title','Link copied');b.style.background='#e7f8ee';setTimeout(function(){b.style.background='';b.setAttribute('title','Copy link')},1500)}).catch(function(){window.prompt('Copy this link',u)});});</script>
 </body>
 </html>

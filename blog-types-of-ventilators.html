@@ -323,6 +323,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<style id="blog-ux-css">
+  .bx-crumbs{background:none;padding:0;position:static;box-shadow:none;font-size:13px;color:#6b7280;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .bx-crumbs a{color:#1B2F6E;text-decoration:none;font-weight:600}.bx-crumbs a:hover{text-decoration:underline}
+  .bx-byline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5e9f2;border-bottom:1px solid #e5e9f2;padding:12px 0;margin:4px 0 26px}
+  .bx-by{display:flex;align-items:center;gap:10px;font-size:14px;color:#4b5563}
+  .bx-av{width:34px;height:34px;border-radius:50%;background:#1B2F6E;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .bx-by strong{color:#0a1e40}
+  .bx-share{display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7280}
+  .bx-share a,.bx-share button{width:34px;height:34px;border-radius:50%;border:1px solid #d8dfec;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#1B2F6E;cursor:pointer;padding:0}
+  .bx-share a:hover,.bx-share button:hover{background:#f0f3fa}
+  .bx-share svg{width:16px;height:16px}
+  .bx-toc{display:block;height:auto;position:static;box-shadow:none;background:#f7f9fc;border:1px solid #e5e9f2;border-radius:12px;padding:16px 20px;margin:22px 0 28px}
+  .bx-toc-t{font-weight:800;color:#0a1e40;font-size:15px;margin:0 0 8px}
+  .bx-toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  .bx-toc li{font-size:14.5px;line-height:1.55;margin:0 0 6px;break-inside:avoid}
+  .bx-toc a{color:#1B2F6E;text-decoration:none}.bx-toc a:hover{text-decoration:underline}
+  .bx-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(135deg,#16275c,#1B2F6E);color:#fff;border-radius:14px;padding:20px 22px;margin:30px 0}
+  .bx-mid p{margin:0;color:#dbe3f6;font-size:15px}.bx-mid strong{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+  .bx-mid .bx-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .bx-mid a{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;text-decoration:none}
+  .bx-mid a.q{background:#F07C2A;color:#fff}.bx-mid a.w{background:#25D366;color:#06341c}
+  .bx-rel{padding-left:0 !important;margin-left:0 !important;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:6px 0 10px;padding:0;list-style:none}
+  .bx-rel li{margin:0}
+  .bx-rel a{display:flex;flex-direction:column;border:1px solid #e5e9f2;border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;height:100%;transition:box-shadow .2s,transform .15s}
+  .bx-rel a:hover{box-shadow:0 12px 28px rgba(16,32,80,.1);transform:translateY(-2px)}
+  .bx-rel img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:#eef2f9}
+  .bx-rel span{display:block;padding:12px 14px;font-weight:700;color:#0a1e40;font-size:14.5px;line-height:1.4}
+  @media (max-width:640px){.bx-toc ol{columns:1}.bx-byline{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -338,7 +367,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <article class="blog-article">
 
-    <div class="blog-meta">
+    <div class="bx-crumbs" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/articles-blogs.html">Articles &amp; Blogs</a><span aria-hidden="true">›</span><span>Critical Care Guide</span></div>
+      <div class="blog-meta">
       CRITICAL CARE GUIDE <span class="dot">·</span>
       <span class="date">August 30, 2026</span> <span class="dot">·</span>
       <span style="color:#6b7280;">8 Min Read</span>
@@ -347,12 +377,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="blog-title">Types of Ventilators: ICU, Transport, Neonatal, Home and More</h1>
 
     <p class="blog-deck">When a patient cannot breathe on their own, every second counts. The right ventilator machine for a high-acuity ICU bed looks nothing like the one used to keep a patient stable during transport, or the one a family manages at home. This guide covers what a ventilator does, the major types used across Indian hospitals today, who typically needs one, and how a hospital ventilator differs from a home ventilator.</p>
+      <div class="bx-byline"><div class="bx-by"><span class="bx-av" aria-hidden="true">P</span><span>By <strong>Pulse Team</strong> &middot; Updated October 28, 2026 &middot; 8 min read</span></div><div class="bx-share"><span>Share</span><a href="https://wa.me/?text=Types%20of%20Ventilators%3A%20ICU%2C%20Transport%2C%20Neonatal%2C%20Home%20and%20More%20https%3A%2F%2Fwww.pulseio.in%2Fblog-types-of-ventilators.html" target="_blank" rel="nofollow noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.pulseio.in%2Fblog-types-of-ventilators.html" target="_blank" rel="nofollow noopener" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pulseio.in%2Fblog-types-of-ventilators.html" target="_blank" rel="nofollow noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-.9.6-1 1-1h3V2h-4c-3.3 0-4 2.4-4 4v3H7v4h3v9h4v-9h3.4l.6-4z"/></svg></a><button type="button" class="bx-copy" data-url="https://www.pulseio.in/blog-types-of-ventilators.html" aria-label="Copy link" title="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button></div></div>
 
     <div class="quick-answer">
       <p><strong>Quick answer:</strong> A ventilator is a machine that breathes for a patient who cannot breathe well enough alone. The main types are ICU (critical care) ventilators for the sickest patients, transport ventilators for moving patients, neonatal ventilators for newborns, high-frequency ventilators for special cases, non-invasive (mask) ventilators, and home ventilators for long-term care. Invasive ventilators use a breathing tube; non-invasive ones use a mask.</p>
     </div>
+  <div class="bx-toc" role="navigation" aria-label="In this guide"><p class="bx-toc-t">In this guide</p><ol><li><a href="#what-is-a-ventilator">What Is a Ventilator?</a></li><li><a href="#icu-vs-ventilator-what-is-the-difference">ICU vs Ventilator: What Is the Difference?</a></li><li><a href="#types-of-ventilators">Types of Ventilators</a></li><li><a href="#how-many-types-of-ventilators-are-there">How Many Types of Ventilators Are There?</a></li><li><a href="#who-needs-a-ventilator">Who Needs a Ventilator?</a></li><li><a href="#hospital-ventilator-vs-home-ventilator-what-s-the-difference">Hospital Ventilator vs. Home Ventilator: What's the Difference?</a></li><li><a href="#the-pulse-ventilator-one-machine-built-for-every-setting">The Pulse Ventilator: One Machine, Built for Every Setting</a></li><li><a href="#types-of-ventilators-key-facts">Types of Ventilators: Key Facts</a></li><li><a href="#types-of-ventilators-faqs">Types of Ventilators: FAQs</a></li></ol></div>
 
-    <h2>What Is a Ventilator?</h2>
+
+    <h2 id="what-is-a-ventilator">What Is a Ventilator?</h2>
 
     <p>A ventilator, sometimes called a ventilator machine or breathing machine, is a medical device that helps a patient breathe when they cannot do so well enough on their own. It works by mechanically moving air, often enriched with extra oxygen, into the lungs and letting it flow back out. This takes over some or all of the physical work of breathing.</p>
 
@@ -365,7 +398,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>Modern ventilators are software-driven, with sensors that continuously adjust pressure, volume, and breathing rate to match a patient's condition. This is a big leap from the manual resuscitation bags and iron lungs of the past.</p>
 
-    <h2>ICU vs Ventilator: What Is the Difference?</h2>
+    <h2 id="icu-vs-ventilator-what-is-the-difference">ICU vs Ventilator: What Is the Difference?</h2>
 
     <p>People often mix up the two words, but they are different things. An <strong>ICU</strong> is a place: the intensive care unit of a hospital. A <strong>ventilator</strong> is a machine that breathes for a patient. Many ICU patients are on a ventilator, but not all of them, and ventilators are also used outside the ICU.</p>
 
@@ -384,7 +417,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>So "ICU or ventilator" is not a choice between two treatments. A patient is admitted to the ICU, and the ICU team decides whether that patient also needs a ventilator.</p>
 
-    <h2>Types of Ventilators</h2>
+    <div class="bx-mid"><p><strong>Need a price for your hospital or clinic?</strong>Get a written quote, brochure or demo from the Pulse team.</p><div class="bx-btns"><a class="q" href="/request-a-quote.html">Get a Quote &rarr;</a><a class="w" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20read%20your%20guide%3A%20Types%20of%20Ventilators%3A%20ICU%2C%20Transport%2C%20Neonatal%2C%20Home%20and%20More" target="_blank" rel="noopener noreferrer nofollow">WhatsApp</a></div></div>
+
+  <h2 id="types-of-ventilators">Types of Ventilators</h2>
 
     <p>No single machine covers every clinical situation. Hospitals, ambulances, and homes each need a different type of ventilator, engineered for a very different environment.</p>
 
@@ -432,7 +467,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>For patients who need long-term ventilatory support after discharge, a home ventilator allows safe, monitored breathing support outside the hospital. These units are smaller, quieter, and simpler to operate than ICU equipment, while still meeting essential clinical safety standards. They are designed for a caregiver, not a trained ICU team, to manage day to day.</p>
     </div>
 
-    <h2>How Many Types of Ventilators Are There?</h2>
+    <h2 id="how-many-types-of-ventilators-are-there">How Many Types of Ventilators Are There?</h2>
 
     <p>There is no single official number. The answer depends on how you group them, which is why you will see "2 types", "3 types" and "6 types" in different places. Here are the common ways to group ventilators:</p>
 
@@ -451,7 +486,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>Ventilator <em>modes</em> are a different thing from ventilator <em>types</em>. A mode is a setting on the machine, such as volume control or pressure control. One ICU ventilator can run many modes. Read <a href="/blog-ventilator.html" style="color:#E63946;font-weight:600;">how ICU ventilators work</a> for the main modes explained simply.</p>
 
-    <h2>Who Needs a Ventilator?</h2>
+    <h2 id="who-needs-a-ventilator">Who Needs a Ventilator?</h2>
 
     <p>Ventilator support isn't reserved only for the most extreme emergencies — it's used across a wide range of clinical situations. Common reasons a patient may need a ventilator include:</p>
 
@@ -467,7 +502,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>In short: anyone whose body can't maintain safe oxygen levels or adequate breathing on its own — temporarily or long-term — may need ventilator support, always guided by a treating physician.</p>
 
-    <h2>Hospital Ventilator vs. Home Ventilator: What's the Difference?</h2>
+    <h2 id="hospital-ventilator-vs-home-ventilator-what-s-the-difference">Hospital Ventilator vs. Home Ventilator: What's the Difference?</h2>
 
     <p>A true hospital ventilator — particularly one deployed in an ICU or emergency department — needs to meet a far higher bar than a device meant for home use. Here's how the two compare:</p>
 
@@ -486,7 +521,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>Hospitals also look for a few non-negotiables in any ventilator brought into a critical care setting: multiple ventilation modes, real-time monitoring and alarms, reliability under continuous 24/7 use, and regulatory certification. That means ISO 13485, CE marking, and CDSCO approval in India, confirming the device meets clinical safety standards. This is why hospitals prefer manufacturers who can guarantee not just the machine, but consistent quality and fast after-sales support.</p>
 
-    <h2>The Pulse Ventilator: One Machine, Built for Every Setting</h2>
+    <h2 id="the-pulse-ventilator-one-machine-built-for-every-setting">The Pulse Ventilator: One Machine, Built for Every Setting</h2>
 
     <p>At Pulse, our ICU ventilator is designed to work as a genuinely universal ventilator — capable of supporting the full range of clinical needs a hospital actually faces, from high-acuity ICU cases to emergency and operation theatre use, without forcing hospitals to run multiple vendors and machines across departments.</p>
 
@@ -496,7 +531,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p><a href="/critical-care/icu-ventilator/" style="color:#E63946;font-weight:600;text-decoration:none;">See how Pulse's ventilators fit your ICU →</a></p>
 
-    <h2>Types of Ventilators: Key Facts</h2>
+    <h2 id="types-of-ventilators-key-facts">Types of Ventilators: Key Facts</h2>
     <div class="key-facts">
       <ul>
         <li>Invasive ventilation uses a tube in the airway, through the mouth or the neck (tracheostomy).</li>
@@ -507,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
     </div>
 
-    <h2>Types of Ventilators: FAQs</h2>
+    <h2 id="types-of-ventilators-faqs">Types of Ventilators: FAQs</h2>
     <h3>What are the main types of ventilators?</h3>
     <p>The main types are ICU (critical care) ventilators, transport ventilators, neonatal ventilators, high-frequency ventilators, non-invasive ventilators and home ventilators. Each is built for a different patient and setting.</p>
     <h3>What is the difference between invasive and non-invasive ventilation?</h3>
@@ -537,11 +572,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
   <p class="h2-like">Related Reading</p>
-  <ul>
-    <li><a href="/blog-critical-care-equipment-manufacturer-india.html" style="color:#E63946; font-weight:600;">Critical Care Equipment Manufacturer in India</a></li>
-    <li><a href="/blog-ventilator.html" style="color:#E63946; font-weight:600;">How ICU Ventilators Work: A Beginner's Guide</a></li>
-    <li><a href="/blog-icu-ventilator-price-india.html" style="color:#E63946; font-weight:600;">ICU Ventilator Price in India: What Drives the Cost</a></li>
-  </ul>
+  <ul class="bx-rel"><li><a href="/blog-critical-care-equipment-manufacturer-india.html"><img src="/image/Blogs%20Banners/critical-care-manufacturer-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Critical Care Equipment Manufacturer in India</span></a></li><li><a href="/blog-ventilator.html"><img src="/image/Blogs%20Banners/ventilator-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>How ICU Ventilators Work: A Beginner's Guide</span></a></li><li><a href="/blog-icu-ventilator-price-india.html"><img src="/image/Blogs%20Banners/ventilator-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>ICU Ventilator Price in India: What Drives the Cost</span></a></li></ul>
   </article>
 
 <div style="background:#f0f3fa;border-top:1px solid #dde3f0;
@@ -598,5 +629,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script id="blog-ux-js">document.addEventListener('click',function(e){var b=e.target.closest('.bx-copy');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.setAttribute('title','Link copied');b.style.background='#e7f8ee';setTimeout(function(){b.style.background='';b.setAttribute('title','Copy link')},1500)}).catch(function(){window.prompt('Copy this link',u)});});</script>
 </body>
 </html>

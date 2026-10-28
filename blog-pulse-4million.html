@@ -294,6 +294,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
   </script>
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<style id="blog-ux-css">
+  .bx-crumbs{background:none;padding:0;position:static;box-shadow:none;font-size:13px;color:#6b7280;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .bx-crumbs a{color:#1B2F6E;text-decoration:none;font-weight:600}.bx-crumbs a:hover{text-decoration:underline}
+  .bx-byline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5e9f2;border-bottom:1px solid #e5e9f2;padding:12px 0;margin:4px 0 26px}
+  .bx-by{display:flex;align-items:center;gap:10px;font-size:14px;color:#4b5563}
+  .bx-av{width:34px;height:34px;border-radius:50%;background:#1B2F6E;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .bx-by strong{color:#0a1e40}
+  .bx-share{display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7280}
+  .bx-share a,.bx-share button{width:34px;height:34px;border-radius:50%;border:1px solid #d8dfec;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#1B2F6E;cursor:pointer;padding:0}
+  .bx-share a:hover,.bx-share button:hover{background:#f0f3fa}
+  .bx-share svg{width:16px;height:16px}
+  .bx-toc{display:block;height:auto;position:static;box-shadow:none;background:#f7f9fc;border:1px solid #e5e9f2;border-radius:12px;padding:16px 20px;margin:22px 0 28px}
+  .bx-toc-t{font-weight:800;color:#0a1e40;font-size:15px;margin:0 0 8px}
+  .bx-toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  .bx-toc li{font-size:14.5px;line-height:1.55;margin:0 0 6px;break-inside:avoid}
+  .bx-toc a{color:#1B2F6E;text-decoration:none}.bx-toc a:hover{text-decoration:underline}
+  .bx-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(135deg,#16275c,#1B2F6E);color:#fff;border-radius:14px;padding:20px 22px;margin:30px 0}
+  .bx-mid p{margin:0;color:#dbe3f6;font-size:15px}.bx-mid strong{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+  .bx-mid .bx-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .bx-mid a{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;text-decoration:none}
+  .bx-mid a.q{background:#F07C2A;color:#fff}.bx-mid a.w{background:#25D366;color:#06341c}
+  .bx-rel{padding-left:0 !important;margin-left:0 !important;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:6px 0 10px;padding:0;list-style:none}
+  .bx-rel li{margin:0}
+  .bx-rel a{display:flex;flex-direction:column;border:1px solid #e5e9f2;border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;height:100%;transition:box-shadow .2s,transform .15s}
+  .bx-rel a:hover{box-shadow:0 12px 28px rgba(16,32,80,.1);transform:translateY(-2px)}
+  .bx-rel img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:#eef2f9}
+  .bx-rel span{display:block;padding:12px 14px;font-weight:700;color:#0a1e40;font-size:14.5px;line-height:1.4}
+  @media (max-width:640px){.bx-toc ol{columns:1}.bx-byline{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -309,7 +338,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <article class="blog-article">
 
-    <div class="blog-meta">
+    <div class="bx-crumbs" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/articles-blogs.html">Articles &amp; Blogs</a><span aria-hidden="true">›</span><span>News Release</span></div>
+      <div class="blog-meta">
       News Release <span class="dot">·</span>
       <span class="date">February 25, 2026</span> <span class="dot">·</span>
       <span style="color:#6b7280;">3 Min Read</span>
@@ -318,16 +348,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="blog-title">Pulse Raises $4 Million to Build a Full-Stack Medical Equipment Brand</h1>
 
     <p class="blog-deck">Bengaluru-based medical equipment startup Pulse has closed a $4 million seed round to build a full-stack, asset-light medtech manufacturing platform — designing, sourcing, and delivering affordable, globally compliant medical equipment from India at scale.</p>
+      <div class="bx-byline"><div class="bx-by"><span class="bx-av" aria-hidden="true">P</span><span>By <strong>Pulse Team</strong> &middot; Updated News Release &middot; 3 min read</span></div><div class="bx-share"><span>Share</span><a href="https://wa.me/?text=Pulse%20Raises%20%244%20Million%20to%20Build%20a%20Full-Stack%20Medical%20Equipment%20Brand%20https%3A%2F%2Fwww.pulseio.in%2Fblog-pulse-4million.html" target="_blank" rel="nofollow noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.pulseio.in%2Fblog-pulse-4million.html" target="_blank" rel="nofollow noopener" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pulseio.in%2Fblog-pulse-4million.html" target="_blank" rel="nofollow noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-.9.6-1 1-1h3V2h-4c-3.3 0-4 2.4-4 4v3H7v4h3v9h4v-9h3.4l.6-4z"/></svg></a><button type="button" class="bx-copy" data-url="https://www.pulseio.in/blog-pulse-4million.html" aria-label="Copy link" title="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button></div></div>
 
     <p>The round was led by 3one4 Capital, with participation from Incubate Fund Asia, Stride Ventures, and a group of angel investors that includes the founders of Blackbuck and Agrizy. The fresh capital will be used to set up a dedicated R&amp;D hub, accelerate product development across categories, secure regulatory certifications, and build out a pan-India distribution and service network.</p>
+  <div class="bx-toc" role="navigation" aria-label="In this guide"><p class="bx-toc-t">In this guide</p><ol><li><a href="#why-this-matters">Why this matters</a></li><li><a href="#how-pulse-works">How Pulse works</a></li><li><a href="#what-s-next">What's next</a></li><li><a href="#pulse-raises-4-million-to-build-a-full-stack-medical-faqs">Pulse Raises $4 Million to Build a Full-Stack Medical: FAQs</a></li></ol></div>
 
-    <h2>Why this matters</h2>
+
+    <h2 id="why-this-matters">Why this matters</h2>
 
     <p>India today imports close to 80% of its medical equipment despite operating one of the world's largest healthcare markets and possessing a deep MSME manufacturing base. The bottleneck, in Pulse's view, isn't manufacturing capability — it's the fragmentation across design standards, quality systems, regulatory compliance, branding, service infrastructure, and market access that prevents Indian manufacturers from competing with global incumbents.</p>
 
     <p>Hospitals and distributors are left with high costs, long lead times, and limited reliable alternatives. Meanwhile, MSME manufacturers struggle with under-utilised capacity, inconsistent quality, and unpredictable demand. Pulse is built to close that gap.</p>
 
-    <h2>How Pulse works</h2>
+    <h2 id="how-pulse-works">How Pulse works</h2>
 
     <p>Founded in 2025 by Anshul Sharma and Nishant Goel, Pulse aggregates manufacturing capacity from India's MSME ecosystem and layers on the things that turn raw production into a trusted hospital-grade product:</p>
 
@@ -345,13 +378,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <cite>— Akshay Sharma, Principal, 3one4 Capital</cite>
     </blockquote>
 
-    <h2>What's next</h2>
+    <div class="bx-mid"><p><strong>Need a price for your hospital or clinic?</strong>Get a written quote, brochure or demo from the Pulse team.</p><div class="bx-btns"><a class="q" href="/request-a-quote.html">Get a Quote &rarr;</a><a class="w" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20read%20your%20guide%3A%20Pulse%20Raises%20%244%20Million%20to%20Build%20a%20Full-Stack%20Medical%20Equipment%20Brand" target="_blank" rel="noopener noreferrer nofollow">WhatsApp</a></div></div>
+
+  <h2 id="what-s-next">What's next</h2>
 
     <p>The funds will go toward establishing a dedicated R&amp;D hub, expanding the engineering team, and pushing several products through regulatory certification over the coming year. Pulse currently operates with a 25-member team headquartered in Bengaluru and plans to scale its distribution footprint across India alongside its product pipeline.</p>
 
     <p>The global medical devices market is estimated at over $550 billion. Pulse is betting that the next decade of growth in this space will be driven not by where devices are made, but by who can integrate design, quality, regulation, and service into a single trusted brand — and do it from India.</p>
 
-    <h2>Pulse Raises $4 Million to Build a Full-Stack Medical: FAQs</h2>
+    <h2 id="pulse-raises-4-million-to-build-a-full-stack-medical-faqs">Pulse Raises $4 Million to Build a Full-Stack Medical: FAQs</h2>
     <h3>How much did Pulse raise in its seed round?</h3>
     <p>Pulse raised $4 million in a seed round announced on 25 February 2026. The round was led by 3one4 Capital.</p>
     <h3>Who invested in Pulse?</h3>
@@ -449,6 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script id="blog-ux-js">document.addEventListener('click',function(e){var b=e.target.closest('.bx-copy');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.setAttribute('title','Link copied');b.style.background='#e7f8ee';setTimeout(function(){b.style.background='';b.setAttribute('title','Copy link')},1500)}).catch(function(){window.prompt('Copy this link',u)});});</script>
 </body>
 </html>
 

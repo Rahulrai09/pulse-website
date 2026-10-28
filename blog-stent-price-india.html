@@ -158,6 +158,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<style id="blog-ux-css">
+  .bx-crumbs{background:none;padding:0;position:static;box-shadow:none;font-size:13px;color:#6b7280;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .bx-crumbs a{color:#1B2F6E;text-decoration:none;font-weight:600}.bx-crumbs a:hover{text-decoration:underline}
+  .bx-byline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5e9f2;border-bottom:1px solid #e5e9f2;padding:12px 0;margin:4px 0 26px}
+  .bx-by{display:flex;align-items:center;gap:10px;font-size:14px;color:#4b5563}
+  .bx-av{width:34px;height:34px;border-radius:50%;background:#1B2F6E;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .bx-by strong{color:#0a1e40}
+  .bx-share{display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7280}
+  .bx-share a,.bx-share button{width:34px;height:34px;border-radius:50%;border:1px solid #d8dfec;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#1B2F6E;cursor:pointer;padding:0}
+  .bx-share a:hover,.bx-share button:hover{background:#f0f3fa}
+  .bx-share svg{width:16px;height:16px}
+  .bx-toc{display:block;height:auto;position:static;box-shadow:none;background:#f7f9fc;border:1px solid #e5e9f2;border-radius:12px;padding:16px 20px;margin:22px 0 28px}
+  .bx-toc-t{font-weight:800;color:#0a1e40;font-size:15px;margin:0 0 8px}
+  .bx-toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  .bx-toc li{font-size:14.5px;line-height:1.55;margin:0 0 6px;break-inside:avoid}
+  .bx-toc a{color:#1B2F6E;text-decoration:none}.bx-toc a:hover{text-decoration:underline}
+  .bx-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(135deg,#16275c,#1B2F6E);color:#fff;border-radius:14px;padding:20px 22px;margin:30px 0}
+  .bx-mid p{margin:0;color:#dbe3f6;font-size:15px}.bx-mid strong{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+  .bx-mid .bx-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .bx-mid a{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;text-decoration:none}
+  .bx-mid a.q{background:#F07C2A;color:#fff}.bx-mid a.w{background:#25D366;color:#06341c}
+  .bx-rel{padding-left:0 !important;margin-left:0 !important;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:6px 0 10px;padding:0;list-style:none}
+  .bx-rel li{margin:0}
+  .bx-rel a{display:flex;flex-direction:column;border:1px solid #e5e9f2;border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;height:100%;transition:box-shadow .2s,transform .15s}
+  .bx-rel a:hover{box-shadow:0 12px 28px rgba(16,32,80,.1);transform:translateY(-2px)}
+  .bx-rel img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:#eef2f9}
+  .bx-rel span{display:block;padding:12px 14px;font-weight:700;color:#0a1e40;font-size:14.5px;line-height:1.4}
+  @media (max-width:640px){.bx-toc ol{columns:1}.bx-byline{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -165,15 +194,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="global-header"></div>
 
 <article class="blog-article">
-  <div class="blog-meta">September 29, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Cardiac Care <span class="dot">&bull;</span> 7 Min Read</div>
+  <div class="bx-crumbs" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/articles-blogs.html">Articles &amp; Blogs</a><span aria-hidden="true">›</span><a href="/cardiac-care.html">Cardiac Care</a></div>
+      <div class="blog-meta">September 29, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Cardiac Care <span class="dot">&bull;</span> 7 Min Read</div>
   <h1 class="blog-title">Stent Price in India 2026: What the Government Price Cap Means for You</h1>
   <p class="blog-deck">"How much will the stent cost?" is one of the first things a family asks before a heart procedure. In India, the answer is set by law. This guide explains the price limit in simple words, what it covers, what it does not cover, and how hospitals can choose between stents when the price is the same.</p>
+      <div class="bx-byline"><div class="bx-by"><span class="bx-av" aria-hidden="true">P</span><span>By <strong>Pulse Team</strong> &middot; Updated October 15, 2026 &middot; 7 min read</span></div><div class="bx-share"><span>Share</span><a href="https://wa.me/?text=Stent%20Price%20in%20India%202026%3A%20What%20the%20Government%20Price%20Cap%20Means%20for%20You%20https%3A%2F%2Fwww.pulseio.in%2Fblog-stent-price-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.pulseio.in%2Fblog-stent-price-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pulseio.in%2Fblog-stent-price-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-.9.6-1 1-1h3V2h-4c-3.3 0-4 2.4-4 4v3H7v4h3v9h4v-9h3.4l.6-4z"/></svg></a><button type="button" class="bx-copy" data-url="https://www.pulseio.in/blog-stent-price-india.html" aria-label="Copy link" title="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button></div></div>
 
   <div class="quick-answer">
     <p><strong>Quick answer:</strong> In India, the government sets the highest price a heart stent can be sold for. From 1 April 2026, a drug-eluting stent can cost at most Rs 39,186.03 and a bare metal stent Rs 10,762.15, plus GST. This limit covers only the stent, not the full angioplasty bill, so always ask the hospital for an itemised bill.</p>
   </div>
+  <div class="bx-toc" role="navigation" aria-label="In this guide"><p class="bx-toc-t">In this guide</p><ol><li><a href="#what-is-a-heart-stent">What Is a Heart Stent?</a></li><li><a href="#the-stent-price-limit-in-india-2026">The Stent Price Limit in India (2026)</a></li><li><a href="#why-is-there-a-price-limit">Why Is There a Price Limit?</a></li><li><a href="#what-the-price-limit-does-not-cover">What the Price Limit Does Not Cover</a></li><li><a href="#how-to-check-you-paid-the-right-price">How to Check You Paid the Right Price</a></li><li><a href="#for-hospitals-how-to-choose-a-stent-when-the-price-is-the-sa">For Hospitals: How to Choose a Stent When the Price Is the Same</a></li><li><a href="#pulse-coronary-stents-at-a-glance">Pulse Coronary Stents at a Glance</a></li><li><a href="#stent-price-in-india-2026-key-facts">Stent Price in India 2026: Key Facts</a></li><li><a href="#stent-price-in-india-2026-faqs">Stent Price in India 2026: FAQs</a></li></ol></div>
 
-  <h2>What Is a Heart Stent?</h2>
+
+  <h2 id="what-is-a-heart-stent">What Is a Heart Stent?</h2>
   <p>A stent is a tiny metal mesh tube. Doctors place it inside a narrow or blocked heart artery to hold it open, so blood can flow again. This is done during a procedure called angioplasty.</p>
   <p>There are two main kinds:</p>
   <ul>
@@ -181,7 +214,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li><strong>Drug-eluting stent (DES):</strong> a metal tube coated with a medicine. The medicine slowly comes out and helps stop the artery from getting narrow again. Most stents used in India today are drug-eluting stents.</li>
   </ul>
 
-  <h2>The Stent Price Limit in India (2026)</h2>
+  <h2 id="the-stent-price-limit-in-india-2026">The Stent Price Limit in India (2026)</h2>
   <p>The National Pharmaceutical Pricing Authority (NPPA) is the government body that sets the highest price a stent can be sold for. This is called the ceiling price. The latest prices started on 1 April 2026:</p>
   <table class="spec-table">
     <thead><tr><th>Type of stent</th><th>Highest price allowed (per stent)</th></tr></thead>
@@ -192,12 +225,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </table>
   <p>These prices do not include GST. GST can be added only if it has really been paid to the government. The new prices came from NPPA order S.O. 1587(E), which raised the old limits a little, in line with yearly inflation.</p>
 
-  <h2>Why Is There a Price Limit?</h2>
+  <div class="bx-mid"><p><strong>Need a price for your hospital or clinic?</strong>Get a written quote, brochure or demo from the Pulse team.</p><div class="bx-btns"><a class="q" href="/request-a-quote.html">Get a Quote &rarr;</a><a class="w" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20read%20your%20guide%3A%20Stent%20Price%20in%20India%202026%3A%20What%20the%20Government%20Price%20Cap%20Means%20for%20You" target="_blank" rel="noopener noreferrer nofollow">WhatsApp</a></div></div>
+
+  <h2 id="why-is-there-a-price-limit">Why Is There a Price Limit?</h2>
   <p>Before 2017, stent prices were very high. The government said the average drug-eluting stent cost about Rs 1.21 lakh, and an NPPA survey found some patients paid nearly Rs 2 lakh for one. In February 2017, the NPPA capped the price of a drug-eluting stent at Rs 29,600 and a bare metal stent at Rs 7,260. Since then, the limit has been raised a little each year with inflation, which is how it reached today's numbers.</p>
 
   <blockquote>The price cap is on the stent only. It is not a cap on the full cost of the heart procedure.</blockquote>
 
-  <h2>What the Price Limit Does Not Cover</h2>
+  <h2 id="what-the-price-limit-does-not-cover">What the Price Limit Does Not Cover</h2>
   <p>The stent is only one part of the hospital bill. An angioplasty bill can also include:</p>
   <ul>
     <li>The cath lab (the special room where the procedure is done)</li>
@@ -207,7 +242,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </ul>
   <p>So two hospitals can use stents at the same price and still send very different bills. Always ask for a full cost estimate before the procedure.</p>
 
-  <h2>How to Check You Paid the Right Price</h2>
+  <h2 id="how-to-check-you-paid-the-right-price">How to Check You Paid the Right Price</h2>
   <ol>
     <li><strong>Ask for an itemised bill.</strong> It should show the stent's cost, its brand name and who made it.</li>
     <li><strong>Compare the stent cost with the price limit.</strong> It should not be more than the ceiling price plus GST.</li>
@@ -215,7 +250,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li><strong>Complain if you were overcharged.</strong> You can complain to your State Drugs Control office.</li>
   </ol>
 
-  <h2>For Hospitals: How to Choose a Stent When the Price Is the Same</h2>
+  <h2 id="for-hospitals-how-to-choose-a-stent-when-the-price-is-the-sa">For Hospitals: How to Choose a Stent When the Price Is the Same</h2>
   <p>Because the top price is fixed, hospitals and cath labs choose stents on other things. For both small cath labs and large hospitals, these matter most:</p>
   <ul>
     <li><strong>Approval:</strong> the stent should have CDSCO approval to be sold in India.</li>
@@ -226,7 +261,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li><strong>Supply and support:</strong> the sizes you need should always be in stock, with quick delivery and help from the maker.</li>
   </ul>
 
-  <h2>Pulse Coronary Stents at a Glance</h2>
+  <h2 id="pulse-coronary-stents-at-a-glance">Pulse Coronary Stents at a Glance</h2>
   <p>Pulse makes two drug-eluting coronary stents. Both carry CDSCO clearance and CE marking, as stated on their product pages.</p>
   <table class="spec-table">
     <thead><tr><th>Feature</th><th><a href="/cardiac-care/evera-stent/" style="color:#fff; text-decoration:underline;">Evera</a></th><th><a href="/cardiac-care/sirova-stent/" style="color:#fff; text-decoration:underline;">Sirova</a></th></tr></thead>
@@ -240,7 +275,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </table>
   <p>Pulse also supplies the other tools used in the cath lab, such as <a href="/cardiac-care/guidex-guidewires/" style="color:#E63946; font-weight:600;">GuideX guidewires</a> and the <a href="/cardiac-care/optima-inflation-kit/" style="color:#E63946; font-weight:600;">Optima inflation kit</a>.</p>
 
-  <h2>Stent Price in India 2026: Key Facts</h2>
+  <h2 id="stent-price-in-india-2026-key-facts">Stent Price in India 2026: Key Facts</h2>
   <div class="key-facts">
     <ul>
       <li>From 1 April 2026, the NPPA ceiling price is Rs 39,186.03 for a drug-eluting stent and Rs 10,762.15 for a bare metal stent, plus GST.</li>
@@ -251,7 +286,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </ul>
   </div>
 
-  <h2>Stent Price in India 2026: FAQs</h2>
+  <h2 id="stent-price-in-india-2026-faqs">Stent Price in India 2026: FAQs</h2>
   <h3>What is the price of a stent in India in 2026?</h3>
   <p>From 1 April 2026, the highest price for a drug-eluting stent is Rs 39,186.03 and for a bare metal stent Rs 10,762.15, set by the NPPA. GST is extra.</p>
   <h3>Can a hospital charge more than the ceiling price for a stent?</h3>
@@ -278,12 +313,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <p><a href="/cardiac-care.html" style="color:#E63946; font-weight:600; text-decoration:none;">See all Pulse Cardiac Care products &rarr;</a></p>
 
   <p class="h2-like">Related Reading</p>
-  <ul>
-    <li><a href="/blog-medical-equipment-price-list-india-2026.html" style="color:#E63946; font-weight:600;">Medical Equipment Price List in India 2026</a></li>
-    <li><a href="/blog-cardiac-care-device-manufacturer-india.html" style="color:#E63946; font-weight:600;">Cardiac Care Device Manufacturer in India</a></li>
-    <li><a href="/blog-coronary-guidewire-selection.html" style="color:#E63946; font-weight:600;">Coronary Guidewire Selection: A Practical Guide for Cath Labs</a></li>
-    <li><a href="/blog-made-in-india-medical-devices-quality.html" style="color:#E63946; font-weight:600;">Make in India Medical Devices: Is the Quality Actually There?</a></li>
-  </ul>
+  <ul class="bx-rel"><li><a href="/blog-medical-equipment-price-list-india-2026.html"><img src="/image/Blogs%20Banners/Hospital%20Equipment%20List%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Medical Equipment Price List in India 2026</span></a></li><li><a href="/blog-cardiac-care-device-manufacturer-india.html"><img src="/image/Blogs%20Banners/cardiac-care-manufacturer-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Cardiac Care Device Manufacturer in India</span></a></li><li><a href="/blog-coronary-guidewire-selection.html"><img src="/image/Blogs%20Banners/cardiac-care-manufacturer-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Coronary Guidewire Selection: A Practical Guide for Cath Labs</span></a></li><li><a href="/blog-made-in-india-medical-devices-quality.html"><img src="/image/Blogs%20Banners/complete-guide-inner-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Make in India Medical Devices: Is the Quality Actually There?</span></a></li></ul>
 </article>
 
 <div class="more-reading">
@@ -328,5 +358,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script id="blog-ux-js">document.addEventListener('click',function(e){var b=e.target.closest('.bx-copy');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.setAttribute('title','Link copied');b.style.background='#e7f8ee';setTimeout(function(){b.style.background='';b.setAttribute('title','Copy link')},1500)}).catch(function(){window.prompt('Copy this link',u)});});</script>
 </body>
 </html>

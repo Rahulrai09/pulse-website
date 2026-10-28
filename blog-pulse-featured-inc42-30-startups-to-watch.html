@@ -177,6 +177,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<style id="blog-ux-css">
+  .bx-crumbs{background:none;padding:0;position:static;box-shadow:none;font-size:13px;color:#6b7280;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .bx-crumbs a{color:#1B2F6E;text-decoration:none;font-weight:600}.bx-crumbs a:hover{text-decoration:underline}
+  .bx-byline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5e9f2;border-bottom:1px solid #e5e9f2;padding:12px 0;margin:4px 0 26px}
+  .bx-by{display:flex;align-items:center;gap:10px;font-size:14px;color:#4b5563}
+  .bx-av{width:34px;height:34px;border-radius:50%;background:#1B2F6E;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .bx-by strong{color:#0a1e40}
+  .bx-share{display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7280}
+  .bx-share a,.bx-share button{width:34px;height:34px;border-radius:50%;border:1px solid #d8dfec;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#1B2F6E;cursor:pointer;padding:0}
+  .bx-share a:hover,.bx-share button:hover{background:#f0f3fa}
+  .bx-share svg{width:16px;height:16px}
+  .bx-toc{display:block;height:auto;position:static;box-shadow:none;background:#f7f9fc;border:1px solid #e5e9f2;border-radius:12px;padding:16px 20px;margin:22px 0 28px}
+  .bx-toc-t{font-weight:800;color:#0a1e40;font-size:15px;margin:0 0 8px}
+  .bx-toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  .bx-toc li{font-size:14.5px;line-height:1.55;margin:0 0 6px;break-inside:avoid}
+  .bx-toc a{color:#1B2F6E;text-decoration:none}.bx-toc a:hover{text-decoration:underline}
+  .bx-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(135deg,#16275c,#1B2F6E);color:#fff;border-radius:14px;padding:20px 22px;margin:30px 0}
+  .bx-mid p{margin:0;color:#dbe3f6;font-size:15px}.bx-mid strong{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+  .bx-mid .bx-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .bx-mid a{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;text-decoration:none}
+  .bx-mid a.q{background:#F07C2A;color:#fff}.bx-mid a.w{background:#25D366;color:#06341c}
+  .bx-rel{padding-left:0 !important;margin-left:0 !important;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:6px 0 10px;padding:0;list-style:none}
+  .bx-rel li{margin:0}
+  .bx-rel a{display:flex;flex-direction:column;border:1px solid #e5e9f2;border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;height:100%;transition:box-shadow .2s,transform .15s}
+  .bx-rel a:hover{box-shadow:0 12px 28px rgba(16,32,80,.1);transform:translateY(-2px)}
+  .bx-rel img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:#eef2f9}
+  .bx-rel span{display:block;padding:12px 14px;font-weight:700;color:#0a1e40;font-size:14.5px;line-height:1.4}
+  @media (max-width:640px){.bx-toc ol{columns:1}.bx-byline{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -188,26 +217,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 <article class="blog-article">
-  <div class="blog-meta">October 13, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Press <span class="dot">&bull;</span> 3 Min Read</div>
+  <div class="bx-crumbs" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/articles-blogs.html">Articles &amp; Blogs</a><span aria-hidden="true">›</span><span>Press</span></div>
+      <div class="blog-meta">October 13, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Press <span class="dot">&bull;</span> 3 Min Read</div>
   <h1 class="blog-title">Pulse Featured in Inc42's "30 Startups To Watch" (July 2026)</h1>
   <p class="blog-deck">Inc42, one of India's most-read startup and business media outlets, named Pulse in its July 2026 edition of "30 Startups To Watch." Here is what the feature actually says, where it came from, and the funding and R&amp;D context behind it.</p>
+      <div class="bx-byline"><div class="bx-by"><span class="bx-av" aria-hidden="true">P</span><span>By <strong>Pulse Team</strong> &middot; Updated October 13, 2026 &middot; 3 min read</span></div><div class="bx-share"><span>Share</span><a href="https://wa.me/?text=Pulse%20Featured%20in%20Inc42%27s%20%2230%20Startups%20To%20Watch%22%20%28July%202026%29%20https%3A%2F%2Fwww.pulseio.in%2Fblog-pulse-featured-inc42-30-startups-to-watch.html" target="_blank" rel="nofollow noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.pulseio.in%2Fblog-pulse-featured-inc42-30-startups-to-watch.html" target="_blank" rel="nofollow noopener" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pulseio.in%2Fblog-pulse-featured-inc42-30-startups-to-watch.html" target="_blank" rel="nofollow noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-.9.6-1 1-1h3V2h-4c-3.3 0-4 2.4-4 4v3H7v4h3v9h4v-9h3.4l.6-4z"/></svg></a><button type="button" class="bx-copy" data-url="https://www.pulseio.in/blog-pulse-featured-inc42-30-startups-to-watch.html" aria-label="Copy link" title="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button></div></div>
+  <div class="bx-toc" role="navigation" aria-label="In this guide"><p class="bx-toc-t">In this guide</p><ol><li><a href="#what-is-inc42-s-30-startups-to-watch">What Is Inc42's "30 Startups To Watch"?</a></li><li><a href="#what-inc42-said-about-pulse">What Inc42 Said About Pulse</a></li><li><a href="#the-funding-behind-the-feature">The Funding Behind the Feature</a></li><li><a href="#why-this-matters">Why This Matters</a></li><li><a href="#pulse-featured-in-inc42-s-30-startups-to-watch-july-faqs">Pulse Featured in Inc42's "30 Startups To Watch" (July: FAQs</a></li></ol></div>
 
-  <h2>What Is Inc42's "30 Startups To Watch"?</h2>
+
+  <h2 id="what-is-inc42-s-30-startups-to-watch">What Is Inc42's "30 Startups To Watch"?</h2>
   <p>"30 Startups To Watch" is a recurring monthly feature published by Inc42, curating early-stage Indian startups its editorial team considers worth following. The July 2026 edition &mdash; titled "30 Startups To Watch: Startups That Caught Our Eye In July 2026" &mdash; was published on <strong>3 August 2026</strong>, written by Akshit Pushkarna and Anjali Jain.</p>
 
-  <h2>What Inc42 Said About Pulse</h2>
+  <h2 id="what-inc42-said-about-pulse">What Inc42 Said About Pulse</h2>
   <p>The article describes Pulse as a Bengaluru-based, full-stack, asset-light medical equipment company, founded in 2025 by Anshul Sharma and Nishant Goel. Per Inc42's reporting, Pulse designs, sources, and supplies medical devices and consumables through partnerships with Indian MSME (micro, small, and medium enterprise) manufacturers, while handling product design, quality systems, regulatory compliance, and after-sales service directly.</p>
   <p>The piece places Pulse's work in the context of critical care, renal care, and cardiac care equipment, and cites the global medical devices market as valued at more than $600 billion. It also notes that Pulse works with close to 20 MSME partners across Delhi NCR, Gujarat, Kolkata, and Mumbai, and is setting up an R&amp;D centre in Visakhapatnam.</p>
 
-  <h2>The Funding Behind the Feature</h2>
+  <div class="bx-mid"><p><strong>Need a price for your hospital or clinic?</strong>Get a written quote, brochure or demo from the Pulse team.</p><div class="bx-btns"><a class="q" href="/request-a-quote.html">Get a Quote &rarr;</a><a class="w" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20read%20your%20guide%3A%20Pulse%20Featured%20in%20Inc42%27s%20%2230%20Startups%20To%20Watch%22%20%28July%202026%29" target="_blank" rel="noopener noreferrer nofollow">WhatsApp</a></div></div>
+
+  <h2 id="the-funding-behind-the-feature">The Funding Behind the Feature</h2>
   <p>Inc42 had separately reported on Pulse's funding in February 2026: a $4 million seed round led by 3one4 Capital, with participation from Incubate Fund Asia and Stride Ventures, along with angel investors. Reported use of funds includes an R&amp;D hub, faster product development, regulatory approvals, and expanded distribution across India.</p>
 
-  <h2>Why This Matters</h2>
+  <h2 id="why-this-matters">Why This Matters</h2>
   <p>Independent press coverage is a useful external check, not a substitute for a hospital's own due diligence. What a feature like this does confirm is that Pulse's manufacturer-first model, MSME network, and R&amp;D plans have been reported on and described consistently by an outside publication &mdash; not just stated by Pulse itself. Buyers evaluating Pulse should still verify product-specific certification and compliance directly, the same as with any equipment vendor.</p>
 
   <blockquote>Inc42 described Pulse as building toward "a full-stack, asset-light medical equipment" model &mdash; sourcing and engineering through a network of Indian MSME manufacturing partners, rather than a single factory.</blockquote>
 
-  <h2>Pulse Featured in Inc42's "30 Startups To Watch" (July: FAQs</h2>
+  <h2 id="pulse-featured-in-inc42-s-30-startups-to-watch-july-faqs">Pulse Featured in Inc42's "30 Startups To Watch" (July: FAQs</h2>
   <h3>What is Inc42's 30 Startups To Watch?</h3>
   <p>It is a recurring monthly feature published by Inc42, an Indian startup and business media outlet, highlighting early-stage Indian startups its editors consider worth watching. The July 2026 edition, where Pulse was featured, was published on 3 August 2026 by Akshit Pushkarna and Anjali Jain.</p>
   <h3>When was Pulse featured in Inc42?</h3>
@@ -231,12 +266,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
   <p class="h2-like">Related Reading</p>
-  <ul>
-    <li><a href="/blog-pulse-in-the-news-press-coverage-2026.html" style="color:#E63946; font-weight:600;">Pulse in the News: Every Story on Pulse in 2026</a></li>
-    <li><a href="/blog-about-pulse-manufacturer-first.html" style="color:#E63946; font-weight:600;">About Pulse: India's Manufacturer-First MedTech Brand</a></li>
-    <li><a href="/blog-pulse-4million.html" style="color:#E63946; font-weight:600;">Pulse Raises $4 Million Seed Round</a></li>
-    <li><a href="/blog-made-in-india-medical-devices-quality.html" style="color:#E63946; font-weight:600;">Make in India Medical Devices: Is the Quality Actually There?</a></li>
-  </ul>
+  <ul class="bx-rel"><li><a href="/blog-pulse-in-the-news-press-coverage-2026.html"><img src="/image/Blogs%20Banners/Pulse%20in%20the%20News%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Pulse in the News: Every Story on Pulse in 2026</span></a></li><li><a href="/blog-about-pulse-manufacturer-first.html"><img src="/image/Blogs%20Banners/about-pulse-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>About Pulse: India's Manufacturer-First MedTech Brand</span></a></li><li><a href="/blog-pulse-4million.html"><img src="/image/Banner/banner-1.webp" alt="" loading="lazy" width="1400" height="788"><span>Pulse Raises $4 Million Seed Round</span></a></li><li><a href="/blog-made-in-india-medical-devices-quality.html"><img src="/image/Blogs%20Banners/complete-guide-inner-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Make in India Medical Devices: Is the Quality Actually There?</span></a></li></ul>
 </article>
 
 <div class="more-reading">
@@ -281,5 +311,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script id="blog-ux-js">document.addEventListener('click',function(e){var b=e.target.closest('.bx-copy');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.setAttribute('title','Link copied');b.style.background='#e7f8ee';setTimeout(function(){b.style.background='';b.setAttribute('title','Copy link')},1500)}).catch(function(){window.prompt('Copy this link',u)});});</script>
 </body>
 </html>

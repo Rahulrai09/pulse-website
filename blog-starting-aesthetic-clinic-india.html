@@ -156,6 +156,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<style id="blog-ux-css">
+  .bx-crumbs{background:none;padding:0;position:static;box-shadow:none;font-size:13px;color:#6b7280;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .bx-crumbs a{color:#1B2F6E;text-decoration:none;font-weight:600}.bx-crumbs a:hover{text-decoration:underline}
+  .bx-byline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5e9f2;border-bottom:1px solid #e5e9f2;padding:12px 0;margin:4px 0 26px}
+  .bx-by{display:flex;align-items:center;gap:10px;font-size:14px;color:#4b5563}
+  .bx-av{width:34px;height:34px;border-radius:50%;background:#1B2F6E;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .bx-by strong{color:#0a1e40}
+  .bx-share{display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7280}
+  .bx-share a,.bx-share button{width:34px;height:34px;border-radius:50%;border:1px solid #d8dfec;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#1B2F6E;cursor:pointer;padding:0}
+  .bx-share a:hover,.bx-share button:hover{background:#f0f3fa}
+  .bx-share svg{width:16px;height:16px}
+  .bx-toc{display:block;height:auto;position:static;box-shadow:none;background:#f7f9fc;border:1px solid #e5e9f2;border-radius:12px;padding:16px 20px;margin:22px 0 28px}
+  .bx-toc-t{font-weight:800;color:#0a1e40;font-size:15px;margin:0 0 8px}
+  .bx-toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  .bx-toc li{font-size:14.5px;line-height:1.55;margin:0 0 6px;break-inside:avoid}
+  .bx-toc a{color:#1B2F6E;text-decoration:none}.bx-toc a:hover{text-decoration:underline}
+  .bx-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(135deg,#16275c,#1B2F6E);color:#fff;border-radius:14px;padding:20px 22px;margin:30px 0}
+  .bx-mid p{margin:0;color:#dbe3f6;font-size:15px}.bx-mid strong{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+  .bx-mid .bx-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .bx-mid a{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;text-decoration:none}
+  .bx-mid a.q{background:#F07C2A;color:#fff}.bx-mid a.w{background:#25D366;color:#06341c}
+  .bx-rel{padding-left:0 !important;margin-left:0 !important;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:6px 0 10px;padding:0;list-style:none}
+  .bx-rel li{margin:0}
+  .bx-rel a{display:flex;flex-direction:column;border:1px solid #e5e9f2;border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;height:100%;transition:box-shadow .2s,transform .15s}
+  .bx-rel a:hover{box-shadow:0 12px 28px rgba(16,32,80,.1);transform:translateY(-2px)}
+  .bx-rel img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:#eef2f9}
+  .bx-rel span{display:block;padding:12px 14px;font-weight:700;color:#0a1e40;font-size:14.5px;line-height:1.4}
+  @media (max-width:640px){.bx-toc ol{columns:1}.bx-byline{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -163,17 +192,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="global-header"></div>
 
 <article class="blog-article">
-  <div class="blog-meta">September 22, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Aesthetics <span class="dot">&bull;</span> 10 Min Read</div>
+  <div class="bx-crumbs" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/articles-blogs.html">Articles &amp; Blogs</a><span aria-hidden="true">›</span><a href="/aesthetics.html">Aesthetics</a></div>
+      <div class="blog-meta">September 22, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Aesthetics <span class="dot">&bull;</span> 10 Min Read</div>
   <h1 class="blog-title">Starting an Aesthetics Clinic in India: Equipment and Costs</h1>
   <p class="blog-deck">Opening an aesthetic clinic in India sits in a space most business plans get wrong &mdash; the equipment choices look technical, but they are really capital-allocation decisions dressed up in medical language. This is a phased, honest guide to what the first clinic actually needs, what the second phase adds, and what the full-service centre looks like on paper.</p>
+      <div class="bx-byline"><div class="bx-by"><span class="bx-av" aria-hidden="true">P</span><span>By <strong>Pulse Team</strong> &middot; Updated October 15, 2026 &middot; 10 min read</span></div><div class="bx-share"><span>Share</span><a href="https://wa.me/?text=Starting%20an%20Aesthetics%20Clinic%20in%20India%3A%20Equipment%20and%20Costs%20https%3A%2F%2Fwww.pulseio.in%2Fblog-starting-aesthetic-clinic-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.pulseio.in%2Fblog-starting-aesthetic-clinic-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pulseio.in%2Fblog-starting-aesthetic-clinic-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-.9.6-1 1-1h3V2h-4c-3.3 0-4 2.4-4 4v3H7v4h3v9h4v-9h3.4l.6-4z"/></svg></a><button type="button" class="bx-copy" data-url="https://www.pulseio.in/blog-starting-aesthetic-clinic-india.html" aria-label="Copy link" title="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button></div></div>
 
   <p class="snippet-answer"><strong>Short answer:</strong> A single-room starter clinic can open with INR 5-20 lakh in equipment, a 2-3 room clinic with INR 25-60 lakh, and a full-service multi-room centre upwards of INR 1 crore. The market itself is still growing &mdash; USD 650.7 million in 2025 projected to USD 1.33 billion by 2034, around 8% CAGR per IMARC Group. The real decision is not <em>whether</em> to enter but which tier to open at, since getting that wrong is where most clinics quietly bleed cash.</p>
+  <div class="bx-toc" role="navigation" aria-label="In this guide"><p class="bx-toc-t">In this guide</p><ol><li><a href="#market-context-why-this-space-still-makes-sense">Market Context: Why This Space Still Makes Sense</a></li><li><a href="#step-1-regulatory-baseline-before-any-equipment">Step 1: Regulatory Baseline (Before Any Equipment)</a></li><li><a href="#step-2-equipment-tiers-three-honest-starting-points">Step 2: Equipment Tiers — Three Honest Starting Points</a></li><li><a href="#step-3-beyond-equipment-what-setup-actually-costs">Step 3: Beyond Equipment — What Setup Actually Costs</a></li><li><a href="#step-4-staffing-minimum">Step 4: Staffing Minimum</a></li><li><a href="#step-5-common-mistakes-that-burn-cash">Step 5: Common Mistakes That Burn Cash</a></li><li><a href="#where-pulse-s-aesthetic-range-fits">Where Pulse's Aesthetic Range Fits</a></li><li><a href="#starting-a-medical-aesthetics-clinic-in-india-key-facts">Starting a Medical Aesthetics Clinic in India: Key Facts</a></li><li><a href="#starting-a-medical-aesthetics-clinic-in-india-faqs">Starting a Medical Aesthetics Clinic in India: FAQs</a></li></ol></div>
 
-  <h2>Market Context: Why This Space Still Makes Sense</h2>
+
+  <h2 id="market-context-why-this-space-still-makes-sense">Market Context: Why This Space Still Makes Sense</h2>
   <p>India's medical aesthetics market was valued at approximately USD 650.7 million in 2025 and is projected to roughly double to USD 1.33 billion by 2034, at a compound annual growth rate near 8%, according to IMARC Group. Growth is driven by rising disposable income, broader social acceptance of elective aesthetic procedures, and &mdash; critically &mdash; expansion beyond the top five metros into tier-2 cities where competition is still comparatively thin.</p>
   <p>Energy-based devices (lasers, RF, HIFEM) and injectables both hold significant market share, with body contouring and skin resurfacing currently the dominant procedure categories. Clinics and dedicated aesthetic centres are the dominant end-user segment &mdash; not hospitals &mdash; which means the opportunity is genuinely for stand-alone practice setups, not just hospital department add-ons.</p>
 
-  <h2>Step 1: Regulatory Baseline (Before Any Equipment)</h2>
+  <h2 id="step-1-regulatory-baseline-before-any-equipment">Step 1: Regulatory Baseline (Before Any Equipment)</h2>
   <p>None of this is optional, and skipping any item here is how a clinic gets shut down six months in. In rough order of what to pursue:</p>
   <ul>
     <li><strong>Qualified medical practitioner.</strong> The practising doctor must hold an appropriate recognised qualification (MBBS plus MD / DNB in Dermatology for most medical-aesthetics scope). Non-medically-qualified aestheticians cannot operate most energy-based devices unsupervised.</li>
@@ -186,7 +219,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li><strong>Patient consent protocols and clinical records.</strong> Not technically a licence, but Clinical Establishments Act compliance assumes they exist.</li>
   </ul>
 
-  <h2>Step 2: Equipment Tiers &mdash; Three Honest Starting Points</h2>
+  <div class="bx-mid"><p><strong>Need a price for your hospital or clinic?</strong>Get a written quote, brochure or demo from the Pulse team.</p><div class="bx-btns"><a class="q" href="/request-a-quote.html">Get a Quote &rarr;</a><a class="w" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20read%20your%20guide%3A%20Starting%20an%20Aesthetics%20Clinic%20in%20India%3A%20Equipment%20and%20Costs" target="_blank" rel="noopener noreferrer nofollow">WhatsApp</a></div></div>
+
+  <h2 id="step-2-equipment-tiers-three-honest-starting-points">Step 2: Equipment Tiers &mdash; Three Honest Starting Points</h2>
   <p>Treat these as discrete models, not points on a spectrum. Most clinics that fail did so because they chose a tier that didn't match their capital, pipeline, or operator capacity.</p>
 
   <h3>Tier A &mdash; The Starter Clinic (INR 5-20 lakh equipment)</h3>
@@ -225,7 +260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li>Separate laser safety signage, interlocks, and dedicated OT-grade room ventilation</li>
   </ul>
 
-  <h2>Step 3: Beyond Equipment &mdash; What Setup Actually Costs</h2>
+  <h2 id="step-3-beyond-equipment-what-setup-actually-costs">Step 3: Beyond Equipment &mdash; What Setup Actually Costs</h2>
   <p>The INR figures above are <em>only equipment and fit-out</em>. Realistic full-launch budget for each tier should also account for:</p>
   <div class="table-scroll"><table class="spec-table">
     <thead><tr><th>Line Item</th><th>Tier A (Starter)</th><th>Tier B (Established)</th><th>Tier C (Full-Service)</th></tr></thead>
@@ -241,7 +276,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <blockquote>Over-equipped is a worse failure mode than under-equipped. A machine on the shelf earning nothing is burning capital that would have paid two months of staff.</blockquote>
 
-  <h2>Step 4: Staffing Minimum</h2>
+  <h2 id="step-4-staffing-minimum">Step 4: Staffing Minimum</h2>
   <p>Smallest viable team per tier:</p>
   <ul>
     <li><strong>Tier A:</strong> One doctor (owner), one trained nurse / technician, one receptionist (part-time acceptable).</li>
@@ -250,7 +285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </ul>
   <p>Operator training on every energy device matters more than headcount &mdash; a single technician trained to competency on one laser is worth more than two under-trained ones.</p>
 
-  <h2>Step 5: Common Mistakes That Burn Cash</h2>
+  <h2 id="step-5-common-mistakes-that-burn-cash">Step 5: Common Mistakes That Burn Cash</h2>
   <ul>
     <li><strong>Buying the most impressive machine first.</strong> A picosecond laser at Tier A sits idle most days. Buy for pipeline you have, not pipeline you hope for.</li>
     <li><strong>Underestimating consumables.</strong> Needles, cartridges, gel, consent forms, biomedical waste disposal fees &mdash; these are not small line items at volume.</li>
@@ -259,7 +294,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li><strong>No service / supplier redundancy.</strong> If your single supplier's spare parts take six weeks, that is six weeks of a treatment room offline.</li>
   </ul>
 
-  <h2>Where Pulse's Aesthetic Range Fits</h2>
+  <h2 id="where-pulse-s-aesthetic-range-fits">Where Pulse's Aesthetic Range Fits</h2>
   <p>Pulse manufactures a 12-product aesthetic range covering most of the equipment categories named above, with the convenience of a single service and supply relationship across tiers. Mapped to the tier structure in this post:</p>
   <div class="table-scroll"><table class="spec-table">
     <thead><tr><th>Tier</th><th>Relevant Pulse Products</th></tr></thead>
@@ -275,7 +310,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="/aesthetics.html">Explore Pulse Aesthetics Range &rarr;</a>
   </div>
 
-  <h2>Starting a Medical Aesthetics Clinic in India: Key Facts</h2>
+  <h2 id="starting-a-medical-aesthetics-clinic-in-india-key-facts">Starting a Medical Aesthetics Clinic in India: Key Facts</h2>
   <div class="key-facts">
     <ul>
       <li>A single-room aesthetic clinic in India can start with about INR 5-20 lakh in equipment.</li>
@@ -286,7 +321,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </ul>
   </div>
 
-  <h2>Starting a Medical Aesthetics Clinic in India: FAQs</h2>
+  <h2 id="starting-a-medical-aesthetics-clinic-in-india-faqs">Starting a Medical Aesthetics Clinic in India: FAQs</h2>
   <h3>How much does it cost to start an aesthetic clinic in India?</h3>
   <p>A modest single-room clinic can start from roughly INR 5-20 lakh in equipment and setup costs. A 2-3 room clinic with laser, RF, and skin-analysis capability typically runs INR 25-60 lakh. A full-service multi-room centre with hair removal, pigmentation, body contouring, and injectable rooms can cross INR 1 crore. These are equipment and fit-out figures only &mdash; rent, deposit, staff, and marketing are additional.</p>
 
@@ -312,19 +347,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
   <p class="h2-like">Related Reading</p>
-  <ul>
-    <li><a href="/blog-rf-microneedling-machine-price-india.html" style="color:#E63946; font-weight:600;">RF Microneedling Machine Price in India: A Clinic Buyer's Guide</a></li>
-    <li><a href="/blog-picosecond-laser-price-india.html" style="color:#E63946; font-weight:600;">Picosecond Laser Machine Price in India: Pico vs Q-Switched Nd:YAG</a></li>
-    <li><a href="/blog-hydrafacial-machine-price-india.html" style="color:#E63946; font-weight:600;">Hydrafacial Machine Price in India: A Clinic Buyer's Guide</a></li>
-    <li><a href="/blog-laser-hair-removal-machine-price-india.html" style="color:#E63946; font-weight:600;">Laser Hair Removal Machine Price in India: A Clinic Buyer's Guide</a></li>
-    <li><a href="/blog-cryolipolysis-vs-hifem-research.html" style="color:#E63946; font-weight:600;">Cryolipolysis vs HIFEM: What New Research Shows</a></li>
-    <li><a href="/blog-laser-hair-removal-machine-indian-skin.html" style="color:#E63946; font-weight:600;">Best Laser Hair Removal Machine for Indian Skin: Diode vs Nd:YAG vs Alexandrite vs IPL</a></li>
-    <li><a href="/blog-co2-fractional-laser-machine-price-india.html" style="color:#E63946; font-weight:600;">CO2 Fractional Laser Machine Price in India: A Simple Buyer&#39;s Guide</a></li>
-    <li><a href="/blog-aesthetic-machine-manufacturer-india.html" style="color:#E63946; font-weight:600;">Aesthetic Machine Manufacturer in India: What Clinics Should Know</a></li>
-    <li><a href="/blog-buying-medical-equipment-india.html" style="color:#E63946; font-weight:600;">Complete Guide to Buying Medical Equipment in India</a></li>
-    <li><a href="/blog-after-sales-service-medical-equipment.html" style="color:#E63946; font-weight:600;">Why After-Sales Service Matters in Medical Equipment Purchasing</a></li>
-    <li><a href="/blog-circumcision-stapler-vs-traditional-evidence.html" style="color:#E63946; font-weight:600;">Disposable Circumcision Stapler vs Traditional: 2024 Evidence</a></li>
-  </ul>
+  <ul class="bx-rel"><li><a href="/blog-rf-microneedling-machine-price-india.html"><img src="/image/Blogs%20Banners/RF%20Microneedling%20Machine%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>RF Microneedling Machine Price in India: A Clinic Buyer's Guide</span></a></li><li><a href="/blog-picosecond-laser-price-india.html"><img src="/image/Blogs%20Banners/Picosecond%20Laser%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Picosecond Laser Machine Price in India: Pico vs Q-Switched Nd:YAG</span></a></li><li><a href="/blog-hydrafacial-machine-price-india.html"><img src="/image/Blogs%20Banners/Hydrafacial%20Machine%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Hydrafacial Machine Price in India: A Clinic Buyer's Guide</span></a></li><li><a href="/blog-laser-hair-removal-machine-price-india.html"><img src="/image/Blogs%20Banners/Laser%20Hair%20Removal%20Machine%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Laser Hair Removal Machine Price in India: A Clinic Buyer's Guide</span></a></li><li><a href="/blog-cryolipolysis-vs-hifem-research.html"><img src="/image/Blogs%20Banners/RF%20Microneedling%20Machine%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Cryolipolysis vs HIFEM: What New Research Shows</span></a></li><li><a href="/blog-laser-hair-removal-machine-indian-skin.html"><img src="/image/Blogs%20Banners/Laser%20Hair%20Removal%20Machine%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Best Laser Hair Removal Machine for Indian Skin: Diode vs Nd:YAG vs Alexandrite vs IPL</span></a></li><li><a href="/blog-co2-fractional-laser-machine-price-india.html"><img src="/image/Blogs%20Banners/RF%20Microneedling%20Machine%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>CO2 Fractional Laser Machine Price in India: A Simple Buyer&#39;s Guide</span></a></li><li><a href="/blog-aesthetic-machine-manufacturer-india.html"><img src="/image/Blogs%20Banners/aesthetic-manufacturer-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Aesthetic Machine Manufacturer in India: What Clinics Should Know</span></a></li><li><a href="/blog-buying-medical-equipment-india.html"><img src="/image/Blogs%20Banners/complete-guide-inner-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Complete Guide to Buying Medical Equipment in India</span></a></li><li><a href="/blog-after-sales-service-medical-equipment.html"><img src="/image/Blogs%20Banners/after-sales-services-inner-blog-page-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Why After-Sales Service Matters in Medical Equipment Purchasing</span></a></li><li><a href="/blog-circumcision-stapler-vs-traditional-evidence.html"><img src="/image/Blogs%20Banners/circumease-blog-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Disposable Circumcision Stapler vs Traditional: 2024 Evidence</span></a></li></ul>
 </article>
 
 <div class="more-reading">
@@ -369,5 +392,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script id="blog-ux-js">document.addEventListener('click',function(e){var b=e.target.closest('.bx-copy');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.setAttribute('title','Link copied');b.style.background='#e7f8ee';setTimeout(function(){b.style.background='';b.setAttribute('title','Copy link')},1500)}).catch(function(){window.prompt('Copy this link',u)});});</script>
 </body>
 </html>

@@ -156,6 +156,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<style id="blog-ux-css">
+  .bx-crumbs{background:none;padding:0;position:static;box-shadow:none;font-size:13px;color:#6b7280;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .bx-crumbs a{color:#1B2F6E;text-decoration:none;font-weight:600}.bx-crumbs a:hover{text-decoration:underline}
+  .bx-byline{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e5e9f2;border-bottom:1px solid #e5e9f2;padding:12px 0;margin:4px 0 26px}
+  .bx-by{display:flex;align-items:center;gap:10px;font-size:14px;color:#4b5563}
+  .bx-av{width:34px;height:34px;border-radius:50%;background:#1B2F6E;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+  .bx-by strong{color:#0a1e40}
+  .bx-share{display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7280}
+  .bx-share a,.bx-share button{width:34px;height:34px;border-radius:50%;border:1px solid #d8dfec;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:#1B2F6E;cursor:pointer;padding:0}
+  .bx-share a:hover,.bx-share button:hover{background:#f0f3fa}
+  .bx-share svg{width:16px;height:16px}
+  .bx-toc{display:block;height:auto;position:static;box-shadow:none;background:#f7f9fc;border:1px solid #e5e9f2;border-radius:12px;padding:16px 20px;margin:22px 0 28px}
+  .bx-toc-t{font-weight:800;color:#0a1e40;font-size:15px;margin:0 0 8px}
+  .bx-toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+  .bx-toc li{font-size:14.5px;line-height:1.55;margin:0 0 6px;break-inside:avoid}
+  .bx-toc a{color:#1B2F6E;text-decoration:none}.bx-toc a:hover{text-decoration:underline}
+  .bx-mid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(135deg,#16275c,#1B2F6E);color:#fff;border-radius:14px;padding:20px 22px;margin:30px 0}
+  .bx-mid p{margin:0;color:#dbe3f6;font-size:15px}.bx-mid strong{display:block;color:#fff;font-size:17px;margin-bottom:2px}
+  .bx-mid .bx-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .bx-mid a{display:inline-flex;align-items:center;gap:6px;border-radius:9px;padding:10px 16px;font-weight:700;font-size:14px;text-decoration:none}
+  .bx-mid a.q{background:#F07C2A;color:#fff}.bx-mid a.w{background:#25D366;color:#06341c}
+  .bx-rel{padding-left:0 !important;margin-left:0 !important;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:6px 0 10px;padding:0;list-style:none}
+  .bx-rel li{margin:0}
+  .bx-rel a{display:flex;flex-direction:column;border:1px solid #e5e9f2;border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;height:100%;transition:box-shadow .2s,transform .15s}
+  .bx-rel a:hover{box-shadow:0 12px 28px rgba(16,32,80,.1);transform:translateY(-2px)}
+  .bx-rel img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;background:#eef2f9}
+  .bx-rel span{display:block;padding:12px 14px;font-weight:700;color:#0a1e40;font-size:14.5px;line-height:1.4}
+  @media (max-width:640px){.bx-toc ol{columns:1}.bx-byline{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5DZWPXR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -163,13 +192,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="global-header"></div>
 
 <article class="blog-article">
-  <div class="blog-meta">September 24, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Hospital Setup <span class="dot">&bull;</span> 12 Min Read</div>
+  <div class="bx-crumbs" role="navigation" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">›</span><a href="/articles-blogs.html">Articles &amp; Blogs</a><span aria-hidden="true">›</span><a href="/hospital-setup.html">Hospital Setup</a></div>
+      <div class="blog-meta">September 24, 2026 <span class="dot">&bull;</span> Blog <span class="dot">&bull;</span> Hospital Setup <span class="dot">&bull;</span> 12 Min Read</div>
   <h1 class="blog-title">Modular OT Setup Cost in India and How NABH Specs Drive It</h1>
   <p class="blog-deck">The number most hospital projects start with for a modular OT budget is wrong. Not because the vendor quoted badly, but because the quote covered a smaller slice of what "operating theatre" actually means than the hospital assumed. This is a plain breakdown of the real cost layers, grounded in current NABH HVAC guidelines and published design references.</p>
+      <div class="bx-byline"><div class="bx-by"><span class="bx-av" aria-hidden="true">P</span><span>By <strong>Pulse Team</strong> &middot; Updated October 17, 2026 &middot; 12 min read</span></div><div class="bx-share"><span>Share</span><a href="https://wa.me/?text=Modular%20OT%20Setup%20Cost%20in%20India%20and%20How%20NABH%20Specs%20Drive%20It%20https%3A%2F%2Fwww.pulseio.in%2Fblog-modular-ot-setup-cost-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.pulseio.in%2Fblog-modular-ot-setup-cost-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pulseio.in%2Fblog-modular-ot-setup-cost-india.html" target="_blank" rel="nofollow noopener" aria-label="Share on Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-.9.6-1 1-1h3V2h-4c-3.3 0-4 2.4-4 4v3H7v4h3v9h4v-9h3.4l.6-4z"/></svg></a><button type="button" class="bx-copy" data-url="https://www.pulseio.in/blog-modular-ot-setup-cost-india.html" aria-label="Copy link" title="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button></div></div>
 
   <p class="snippet-answer"><strong>Short answer:</strong> A properly specified 36 m&sup2; (~388 sq ft) modular OT typically runs <strong>INR 70 lakh to INR 1.05 crore</strong> for the room itself (civil shell + modular panels + HVAC + flooring + lighting), and another <strong>INR 40-80 lakh</strong> for equipment (OT table, lights, pendants, anaesthesia machine). Realistic all-in <strong>INR 1.1-1.85 crore per fully equipped OT</strong>, before medical gas pipeline, ancillary rooms, and the consumables float. For a 4-OT cluster, expect <strong>600-800 m&sup2;</strong> of total suite space including shared ancillary areas.</p>
+  <div class="bx-toc" role="navigation" aria-label="In this guide"><p class="bx-toc-t">In this guide</p><ol><li><a href="#why-the-per-ot-number-is-misleading-on-its-own">Why the "Per OT" Number Is Misleading on Its Own</a></li><li><a href="#what-nabh-actually-requires-and-why-this-drives-cost">What NABH Actually Requires (and Why This Drives Cost)</a></li><li><a href="#room-sizes-by-ot-type">Room Sizes by OT Type</a></li><li><a href="#ancillary-rooms-the-area-most-projects-underestimate">Ancillary Rooms — The Area Most Projects Underestimate</a></li><li><a href="#cost-build-up-what-a-single-major-ot-actually-costs">Cost Build-Up: What a Single Major OT Actually Costs</a></li><li><a href="#what-s-still-not-in-that-number">What's Still NOT in That Number</a></li><li><a href="#three-realistic-project-shapes">Three Realistic Project Shapes</a></li><li><a href="#questions-to-ask-every-vendor-before-signing">Questions to Ask Every Vendor Before Signing</a></li><li><a href="#where-pulse-fits-the-whole-ot-not-just-the-equipment">Where Pulse Fits: The Whole OT, Not Just the Equipment</a></li><li><a href="#modular-ot-setup-cost-in-india-key-facts">Modular OT Setup Cost in India: Key Facts</a></li><li><a href="#modular-ot-setup-cost-in-india-faqs">Modular OT Setup Cost in India: FAQs</a></li></ol></div>
 
-  <h2>Why the "Per OT" Number Is Misleading on Its Own</h2>
+
+  <h2 id="why-the-per-ot-number-is-misleading-on-its-own">Why the "Per OT" Number Is Misleading on Its Own</h2>
   <p>Hospital planning teams routinely ask vendors "what does an OT cost" and compare quotes side by side. The problem: different vendors answer slightly different versions of that question. One quote includes HVAC and HEPA, another excludes them. One includes the pendant system, another counts it as equipment. One assumes you already have the civil shell, another prices the entire build from empty floor. The number is useless without knowing which layers it covers.</p>
   <p>The cleanest way to compare is to break the cost into four separate layers:</p>
   <ol>
@@ -180,7 +213,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </ol>
   <p>When you compare quotes layer-by-layer rather than as a lump sum, the actual spread between vendors becomes clear.</p>
 
-  <h2>What NABH Actually Requires (and Why This Drives Cost)</h2>
+  <h2 id="what-nabh-actually-requires-and-why-this-drives-cost">What NABH Actually Requires (and Why This Drives Cost)</h2>
   <p>NABH's 2018 revised guidelines for OT air conditioning are the single biggest cost driver for the modular + HVAC layers. The specifications are not optional for NABH-accredited hospitals, and they shape nearly every design choice downstream:</p>
 
   <div class="table-scroll"><table class="spec-table">
@@ -206,7 +239,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li>The ban on window/split ACs eliminates every low-cost retrofit shortcut. The AHU and ducting are not negotiable.</li>
   </ul>
 
-  <h2>Room Sizes by OT Type</h2>
+  <div class="bx-mid"><p><strong>Need a price for your hospital or clinic?</strong>Get a written quote, brochure or demo from the Pulse team.</p><div class="bx-btns"><a class="q" href="/request-a-quote.html">Get a Quote &rarr;</a><a class="w" href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20read%20your%20guide%3A%20Modular%20OT%20Setup%20Cost%20in%20India%20and%20How%20NABH%20Specs%20Drive%20It" target="_blank" rel="noopener noreferrer nofollow">WhatsApp</a></div></div>
+
+  <h2 id="room-sizes-by-ot-type">Room Sizes by OT Type</h2>
   <p>Sizing drives nearly every downstream cost (floor area, HVAC load, lighting, flooring). NABH's preferred major-general OT is 36 m&sup2;, but specialty requirements push this up quickly:</p>
   <div class="table-scroll"><table class="spec-table">
     <thead><tr><th>OT Type</th><th>Typical Room Size</th><th>Notes</th></tr></thead>
@@ -224,7 +259,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </table></div>
   <p>A square 6&times;6 m or 8&times;8 m plan, or a rectangular 6&times;7 to 7&times;9 m plan, is the usual starting shape for a major general OT.</p>
 
-  <h2>Ancillary Rooms &mdash; The Area Most Projects Underestimate</h2>
+  <h2 id="ancillary-rooms-the-area-most-projects-underestimate">Ancillary Rooms &mdash; The Area Most Projects Underestimate</h2>
   <p>An OT doesn't exist in isolation. The ancillary rooms around it typically add 60-80% more floor area to the suite:</p>
   <ul>
     <li><strong>Scrub:</strong> one station per surgeon per OT (~2.5 m&sup2; each)</li>
@@ -237,7 +272,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </ul>
   <p><strong>Realistic total suite area:</strong> ~180-220 m&sup2; for one OT; ~600-800 m&sup2; for a 4-OT cluster. For 4 or more OTs, a two-corridor (clean + dirty) layout is standard; for 1-3 OTs, a single corridor with pass-through boxes suffices.</p>
 
-  <h2>Cost Build-Up: What a Single Major OT Actually Costs</h2>
+  <h2 id="cost-build-up-what-a-single-major-ot-actually-costs">Cost Build-Up: What a Single Major OT Actually Costs</h2>
 
   <div class="table-scroll"><table class="spec-table">
     <thead><tr><th>Cost Layer</th><th>Typical Range (36 m&sup2; Type B / general OT)</th><th>Notes</th></tr></thead>
@@ -258,7 +293,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </tbody>
   </table></div>
 
-  <h2>What's Still NOT in That Number</h2>
+  <h2 id="what-s-still-not-in-that-number">What's Still NOT in That Number</h2>
   <ul>
     <li><strong>Medical Gas Pipeline System (MGPS)</strong> &mdash; oxygen x2, N2O x1, air x2, vacuum x3, scavenging x1 per OT, plus central gas plant / manifolds. Add INR 8-20 lakh for the per-OT plumbing, more if the plant doesn't exist yet.</li>
     <li><strong>Ancillary room build-out</strong> &mdash; scrub, pre-op, PACU, stores. For a 4-OT cluster this adds roughly 400-600 m&sup2; of built space at a lower rate than the OTs themselves (perhaps INR 8,000-12,000 per sq ft), so another INR 35-70 lakh total.</li>
@@ -270,7 +305,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <blockquote>The vendor quote and the actual spend diverge not because anyone is being dishonest, but because the quote covers a defined scope and the hospital's budget needs to cover everything the quote excludes. Insist on the exclusions list in writing before signing.</blockquote>
 
-  <h2>Three Realistic Project Shapes</h2>
+  <h2 id="three-realistic-project-shapes">Three Realistic Project Shapes</h2>
 
   <h3>Small Hospital, Single OT (30-50 bed facility)</h3>
   <ul>
@@ -296,7 +331,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li>All-in budget estimate: <strong>INR 7-11 crore</strong></li>
   </ul>
 
-  <h2>Questions to Ask Every Vendor Before Signing</h2>
+  <h2 id="questions-to-ask-every-vendor-before-signing">Questions to Ask Every Vendor Before Signing</h2>
   <ul>
     <li>Which NABH guideline revision is your HVAC design certified against? (2018 is current.)</li>
     <li>Is terminal HEPA included for the Type A OT, or at AHU level only?</li>
@@ -310,7 +345,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li>What's the lead time from PO to commissioning? What delays the schedule most often?</li>
   </ul>
 
-  <h2>Where Pulse Fits: The Whole OT, Not Just the Equipment</h2>
+  <h2 id="where-pulse-fits-the-whole-ot-not-just-the-equipment">Where Pulse Fits: The Whole OT, Not Just the Equipment</h2>
   <p>Pulse builds modular OTs as a full turnkey job, from 0 to 100: wall and ceiling panels, laminar flow ceiling, HVAC, hermetic doors, pass boxes, scrub sinks and surgeon control panels, the medical gas pipeline, and all the equipment inside the room. You deal with one team from planning to handover, and the same team handles service after the OT opens. The equipment Pulse supplies includes:</p>
   <div class="table-scroll"><table class="spec-table">
     <thead><tr><th>Equipment</th><th>Pulse Product</th></tr></thead>
@@ -331,7 +366,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="/hospital-setup.html">Explore Pulse Hospital Setup Range &rarr;</a>
   </div>
 
-  <h2>Modular OT Setup Cost in India: Key Facts</h2>
+  <h2 id="modular-ot-setup-cost-in-india-key-facts">Modular OT Setup Cost in India: Key Facts</h2>
   <div class="key-facts">
     <ul>
       <li>A fully equipped modular OT in India costs roughly INR 1.1 crore to INR 1.85 crore.</li>
@@ -342,7 +377,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </ul>
   </div>
 
-  <h2>Modular OT Setup Cost in India: FAQs</h2>
+  <h2 id="modular-ot-setup-cost-in-india-faqs">Modular OT Setup Cost in India: FAQs</h2>
   <h3>What does a single modular OT cost to set up in India?</h3>
   <p>A properly specified 36 m&sup2; modular OT typically runs INR 70 lakh to INR 1.05 crore for civil + modular panels + HVAC + flooring + lighting (excluding surgical equipment). Equipment &mdash; OT table, lights, pendants, anaesthesia machine, electrosurgical unit &mdash; adds another INR 40 to 80 lakh. Realistic all-in cost per fully equipped OT: INR 1.1 crore to INR 1.85 crore, before considering medical gas pipeline, ancillary rooms, and the surgical consumables float.</p>
 
@@ -368,17 +403,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
   <p class="h2-like">Related Reading</p>
-  <ul>
-    <li><a href="/blog-medical-gas-pipeline-cost-india.html" style="color:#E63946; font-weight:600;">Medical Gas Pipeline Cost in India: Per Bed, Per OT and Per Hospital</a></li>
-    <li><a href="/blog-hospital-equipment-list-india.html" style="color:#E63946; font-weight:600;">Hospital Equipment List by Department, with Prices in India</a></li>
-    <li><a href="/blog-ot-light-price-india.html" style="color:#E63946; font-weight:600;">OT Light Price in India: Single Dome, Double Dome and Examination Lights</a></li>
-    <li><a href="/blog-ot-table-price-india.html" style="color:#E63946; font-weight:600;">OT Table Price in India: Manual, Hydraulic, Electric and C-Arm</a></li>
-    <li><a href="/blog-anaesthesia-machine-price-india.html" style="color:#E63946; font-weight:600;">Anaesthesia Machine and Workstation Price in India</a></li>
-    <li><a href="/blog-hospital-setup-checklist.html" style="color:#E63946; font-weight:600;">Complete Hospital Setup Checklist for New Hospitals</a></li>
-    <li><a href="/blog-buying-medical-equipment-india.html" style="color:#E63946; font-weight:600;">Complete Guide to Buying Medical Equipment in India</a></li>
-    <li><a href="/blog-starting-aesthetic-clinic-india.html" style="color:#E63946; font-weight:600;">Starting a Medical Aesthetics Clinic in India</a></li>
-    <li><a href="/blog-after-sales-service-medical-equipment.html" style="color:#E63946; font-weight:600;">Why After-Sales Service Matters in Medical Equipment Purchasing</a></li>
-  </ul>
+  <ul class="bx-rel"><li><a href="/blog-medical-gas-pipeline-cost-india.html"><img src="/image/Blogs%20Banners/Medical%20Gas%20Pipeline%20Cost%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Medical Gas Pipeline Cost in India: Per Bed, Per OT and Per Hospital</span></a></li><li><a href="/blog-hospital-equipment-list-india.html"><img src="/image/Blogs%20Banners/Hospital%20Equipment%20List%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Hospital Equipment List by Department, with Prices in India</span></a></li><li><a href="/blog-ot-light-price-india.html"><img src="/image/Blogs%20Banners/OT%20Light%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>OT Light Price in India: Single Dome, Double Dome and Examination Lights</span></a></li><li><a href="/blog-ot-table-price-india.html"><img src="/image/Blogs%20Banners/OT%20Table%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>OT Table Price in India: Manual, Hydraulic, Electric and C-Arm</span></a></li><li><a href="/blog-anaesthesia-machine-price-india.html"><img src="/image/Blogs%20Banners/Anaesthesia%20Workstation%20Price%20banner.webp" alt="" loading="lazy" width="1600" height="900"><span>Anaesthesia Machine and Workstation Price in India</span></a></li><li><a href="/blog-hospital-setup-checklist.html"><img src="/image/Blogs%20Banners/hospital-setup-blog.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Complete Hospital Setup Checklist for New Hospitals</span></a></li><li><a href="/blog-buying-medical-equipment-india.html"><img src="/image/Blogs%20Banners/complete-guide-inner-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Complete Guide to Buying Medical Equipment in India</span></a></li><li><a href="/blog-starting-aesthetic-clinic-india.html"><img src="/image/Banner/banner-1.webp" alt="" loading="lazy" width="1400" height="788"><span>Starting a Medical Aesthetics Clinic in India</span></a></li><li><a href="/blog-after-sales-service-medical-equipment.html"><img src="/image/Blogs%20Banners/after-sales-services-inner-blog-page-banner.opt.webp" alt="" loading="lazy" width="1600" height="900"><span>Why After-Sales Service Matters in Medical Equipment Purchasing</span></a></li></ul>
 </article>
 
 <div class="more-reading">
@@ -423,5 +448,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/js/chatbot.js" defer></script>
 <!-- AI CHATBOT WIDGET END -->
 
+<script id="blog-ux-js">document.addEventListener('click',function(e){var b=e.target.closest('.bx-copy');if(!b)return;var u=b.getAttribute('data-url');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.setAttribute('title','Link copied');b.style.background='#e7f8ee';setTimeout(function(){b.style.background='';b.setAttribute('title','Copy link')},1500)}).catch(function(){window.prompt('Copy this link',u)});});</script>
 </body>
 </html>
