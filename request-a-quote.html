@@ -499,7 +499,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   var f=document.getElementById('rq-form'), m=document.getElementById('q-msg'), waBtn=document.getElementById('q-wa');
   var pre=new URLSearchParams(location.search).get('product');
-  if(pre){ var s=f.product; for(var i=0;i<s.options.length;i++){ if(s.options[i].text.toLowerCase()===pre.toLowerCase()){ s.selectedIndex=i; break; } } }
+  if(pre){ var s=f.product, hit=false; for(var i=0;i<s.options.length;i++){ if(s.options[i].text.toLowerCase()===pre.toLowerCase()){ s.selectedIndex=i; hit=true; break; } } if(!hit){ var o=document.createElement('option'); o.text=pre.slice(0,80); s.insertBefore(o,s.firstChild); s.selectedIndex=0; } }
   function summary(){ return 'Product: '+f.product.value+' | Qty: '+(f.qty.value.trim()||'-')+' | For: '+f.ftype.value+' | When: '+f.when.value+(f.query.value.trim()?' | Notes: '+f.query.value.trim():''); }
   function upd(){ var t='Hi Pulse, I would like a quote. '+summary()+(f.city.value.trim()?' | City: '+f.city.value.trim():''); waBtn.href='https://wa.me/919071101108?text='+encodeURIComponent(t); }
   f.addEventListener('input',upd); f.addEventListener('change',upd); upd();

@@ -195,6 +195,7 @@ async function main() {
     '{{PRODUCT_DESCRIPTION}}': esc(product.short_description || product.description || ''),
     '{{TAGS_HTML}}': buildTagsHtml(tags),
     '{{WHATSAPP_NUMBER}}': WHATSAPP_NUMBER,
+    '{{QUOTE_URL}}': '/request-a-quote.html?product=' + encodeURIComponent(productNameFull),
     '{{WHATSAPP_BROCHURE_TEXT}}': brochureText,
     '{{FEATURES_HTML}}': buildFeaturesHtml(features),
     '{{SPECS_TABLE_HTML}}': buildSpecsTableHtml(specs),
