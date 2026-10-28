@@ -1964,6 +1964,46 @@
       "source": "/image/Rehabiliation/wheelchair-catalog.pdf",
       "destination": "https://pulsemotion.in/",
       "permanent": true
+    },
+    {
+      "source": "/request-a-quote",
+      "destination": "/request-a-quote.html",
+      "permanent": true
+    },
+    {
+      "source": "/quote",
+      "destination": "/request-a-quote.html",
+      "permanent": true
+    },
+    {
+      "source": "/get-a-quote",
+      "destination": "/request-a-quote.html",
+      "permanent": true
+    },
+    {
+      "source": "/brochures",
+      "destination": "/brochures.html",
+      "permanent": true
+    },
+    {
+      "source": "/brochure",
+      "destination": "/brochures.html",
+      "permanent": true
+    },
+    {
+      "source": "/downloads",
+      "destination": "/brochures.html",
+      "permanent": true
+    },
+    {
+      "source": "/where-to-buy",
+      "destination": "/where-to-buy.html",
+      "permanent": true
+    },
+    {
+      "source": "/buy",
+      "destination": "/where-to-buy.html",
+      "permanent": true
     }
   ],
   "rewrites": [

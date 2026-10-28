@@ -1268,4 +1268,23 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/RF%20Microneedling%20Machine%20Price%20inner%20banner.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.pulseio.in/request-a-quote.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/brochures.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/brochures/hospital-setup-brochure.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/where-to-buy.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

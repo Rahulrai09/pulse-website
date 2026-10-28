@@ -61,7 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5>SUPPORT</h5>
             <ul>
               <li><a href="#" onclick="document.getElementById('demo-modal-overlay').classList.add('open'); return false;">Request Demo</a></li>
-              <li><a href="#" onclick="document.getElementById('quote-modal-overlay').classList.add('open'); return false;">Get a Quote</a></li>
+              <li><a href="/request-a-quote.html">Request a Quote</a></li>
+              <li><a href="/brochures.html">Brochures</a></li>
+              <li><a href="/where-to-buy.html">Where to Buy</a></li>
               <li><a href="/service-support.html">Service Support</a></li>
               <li><a href="#" onclick="openCareerModal(); return false;">Career</a></li>
             </ul>
