@@ -142,5 +142,14 @@
     );
   }
 
-  window.PulsePublic = { submitDemo, submitQuote, submitForm, submitJob, submitChat };
+  // Header "Contact Us" pop-up (name + phone or email). The pop-up still posts to its own Google Sheet; this adds the admin copy.
+  async function submitContact(data) {
+    const c = String(data.contact || '').trim(), isMail = c.indexOf('@') > 0;
+    return saveToAdmin('enquiries', {
+      name: data.name || 'Website visitor', phone: isMail ? null : c, email: isMail ? c : null,
+      message: 'Product / page: ' + (data.product || '') + '\n\nPage: ' + page(), source: 'contact-us', status: 'new'
+    });
+  }
+
+  window.PulsePublic = { submitDemo, submitQuote, submitForm, submitJob, submitChat, submitContact };
 })();

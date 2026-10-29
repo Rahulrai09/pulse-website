@@ -451,3 +451,17 @@ function closeGallery() {
   var overlay = document.getElementById('pg-lightbox-overlay');
   if (overlay) overlay.classList.remove('open');
 }
+// Open the site quote form (saves to the admin panel), optionally pre-filling the query. Used by "Request Brochure" buttons.
+window.pulseQuote = function (query) {
+  var m = document.getElementById('quote-modal-overlay'), q = document.getElementById('quote-query');
+  if (!m) { location.href = '/request-a-quote.html'; return false; }
+  if (q && query) q.value = query;
+  m.classList.add('open');
+  return false;
+};
+window.pulseContact = function () {
+  var m = document.getElementById('contact-modal-overlay');
+  if (!m) return true;
+  m.classList.add('open');
+  return false;
+};

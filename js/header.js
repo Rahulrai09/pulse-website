@@ -2613,6 +2613,7 @@ if (mobSearchInput) {
             const pageProduct = document.title.replace(' | Pulse','').replace(' | Pulse Medical','').trim();
             const formData2 = new FormData();
             formData2.append('payload', JSON.stringify({ formType: 'contact', name: name, contact: contact, product: pageProduct, source: 'Contact Us Form' }));
+            if (window.PulsePublic && window.PulsePublic.submitContact) window.PulsePublic.submitContact({ name: name, contact: contact, product: pageProduct });
 
 
 
