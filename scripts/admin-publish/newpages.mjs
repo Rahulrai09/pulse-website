@@ -10,6 +10,7 @@ const SITE = "https://www.pulseio.in";
 // category slug in the database -> folder and listing page on the website
 const FOLDER = { "critical-care": "critical-care", "renal-care": "renal-care", "cardiac-care": "cardiac-care", aesthetics: "aesthetics", "ivd-diagnostics": "ivd-diagnostics", "hospital-setup": "hospital-setup", surgical: "surgical-care" };
 const LISTING = { surgical: "surgical.html" };
+const LLMS_HEAD = { "critical-care": "Critical Care", "renal-care": "Renal Care", "cardiac-care": "Cardiac Care", "ivd-diagnostics": "IVD Diagnostics", surgical: "Surgical", aesthetics: "Aesthetics", "hospital-setup": "Hospital Setup" };
 const MENU_KEY = { "critical-care": "Critical Care", "renal-care": "Renal Care", "cardiac-care": "Cardiac Care", surgical: "Surgical", "hospital-setup": "Hospital Setup" };
 
 const h = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -176,5 +177,30 @@ export function register(ROOT, p, notes) {
   v.rewrites = v.rewrites || [];
   if (!v.rewrites.some((r) => r.source === pl.url)) { v.rewrites.push({ source: pl.url, destination: `/${pl.file}` }); vc = true; }
   if (vc) { wr("vercel.json", JSON.stringify(v, null, 2) + "\n"); done.push("web address"); }
+
+  // 5. llms.txt (summary file for AI tools): add the page under its category in "## Products"
+  if (fs.existsSync(path.join(ROOT, "llms.txt"))) {
+    let lt = rd("llms.txt");
+    if (!lt.includes(`(${SITE}${pl.url})`)) {
+      const head = `### ${LLMS_HEAD[pl.cat] || pl.catName}`;
+      const desc = String(p.seo_description || p.short_description || "").replace(/\s+/g, " ").trim();
+      const line = `- [${name}](${SITE}${pl.url}): ${desc}`;
+      const ps = lt.indexOf("\n## Products");
+      if (ps < 0) notes.push(`llms.txt: no "## Products" section, add "${name}" by hand`);
+      else {
+        const pe = (() => { const i = lt.indexOf("\n## ", ps + 5); return i < 0 ? lt.length : i; })();
+        const hs = lt.indexOf(`\n${head}\n`, ps);
+        if (hs > 0 && hs < pe) {
+          // end of this category's list = next blank line or next heading
+          let at = lt.indexOf("\n", hs + 1) + 1;
+          while (at < pe && lt.startsWith("- ", at)) at = lt.indexOf("\n", at) + 1;
+          lt = lt.slice(0, at) + line + "\n" + lt.slice(at);
+        } else {
+          lt = lt.slice(0, pe) + `\n${head}\n${line}\n` + lt.slice(pe);
+        }
+        wr("llms.txt", lt); done.push("llms.txt");
+      }
+    }
+  }
   return done;
 }

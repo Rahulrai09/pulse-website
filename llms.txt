@@ -69,12 +69,12 @@ Every Pulse product page, by category. Each page has specifications, a buyer gui
 - [Pulse Syringe Pump](https://www.pulseio.in/critical-care/syringe-pump/): Pulse Syringe Pump — 3.8" touch display, fits 5-50ml syringes, ±2% accuracy, 8+ hour battery life. Precision medication delivery for critical care.
 
 ### Renal Care
-- [Pulse Dialysers  High-Efficiency Toxin Removal](https://www.pulseio.in/renal-care/dialysers/): High-efficiency haemodialysis dialyser (the artificial kidney filter) for steady removal of waste and extra fluid, for standard dialysis machines. Get a quote.
-- [Pulse PD-Canova  AV Fistula Needles — Safe and Reliable Vascular Access](https://www.pulseio.in/renal-care/pd-canova/): Pulse PD-Canova AV fistula needle twin sets in 15G, 16G and 17G with colour-coded wings, sterilised by gamma or ETO. Get pricing and a demo.
-- [Pulse PD-Cath  Haemodialysis Catheters](https://www.pulseio.in/renal-care/pd-cath/): Pulse PD-Cath haemodialysis catheters in single, double and triple lumen for acute, short-term access. MRI compatible. Get pricing and a demo.
-- [Pulse PD-Linepro  Blood Tubing Set](https://www.pulseio.in/renal-care/pd-linepro/): Pulse PD-Linepro blood tubing set with air removal chambers, kink-resistant tubing and a secure dialyser connection. Get pricing and a demo.
-- [Pulse PDM-6000  Precision Haemodialysis System](https://www.pulseio.in/renal-care/pdm-6000/): Pulse PDM-6000 haemodialysis machine with +/-1% ultrafiltration accuracy, Kt/V monitoring and 30-minute battery backup. Get pricing and a demo.
-- [Pulse PD-TP  Transducer Protectors — Pressure Monitoring Safety](https://www.pulseio.in/renal-care/pd-tp/): Pulse PD-TP single-use transducer protector for dialysis pressure lines. Prevents contamination, keeps readings accurate. Get pricing and a demo.
+- [Pulse Dialysers High-Efficiency Toxin Removal](https://www.pulseio.in/renal-care/dialysers/): High-efficiency haemodialysis dialyser (the artificial kidney filter) for steady removal of waste and extra fluid, for standard dialysis machines. Get a quote.
+- [Pulse PD-Canova AV Fistula Needles — Safe and Reliable Vascular Access](https://www.pulseio.in/renal-care/pd-canova/): Pulse PD-Canova AV fistula needle twin sets in 15G, 16G and 17G with colour-coded wings, sterilised by gamma or ETO. Get pricing and a demo.
+- [Pulse PD-Cath Haemodialysis Catheters](https://www.pulseio.in/renal-care/pd-cath/): Pulse PD-Cath haemodialysis catheters in single, double and triple lumen for acute, short-term access. MRI compatible. Get pricing and a demo.
+- [Pulse PD-Linepro Blood Tubing Set](https://www.pulseio.in/renal-care/pd-linepro/): Pulse PD-Linepro blood tubing set with air removal chambers, kink-resistant tubing and a secure dialyser connection. Get pricing and a demo.
+- [Pulse PDM-6000 Precision Haemodialysis System](https://www.pulseio.in/renal-care/pdm-6000/): Pulse PDM-6000 haemodialysis machine with +/-1% ultrafiltration accuracy, Kt/V monitoring and 30-minute battery backup. Get pricing and a demo.
+- [Pulse PD-TP Transducer Protectors — Pressure Monitoring Safety](https://www.pulseio.in/renal-care/pd-tp/): Pulse PD-TP single-use transducer protector for dialysis pressure lines. Prevents contamination, keeps readings accurate. Get pricing and a demo.
 
 ### Cardiac Care
 - [Pulse AcuSafe Blunt Needle Access System](https://www.pulseio.in/cardiac-care/acusafe-blunt-needle/): Pulse AcuSafe blunt needle system with sharp and blunt stylet needles for controlled access in percutaneous drainage. Get pricing and a demo.
