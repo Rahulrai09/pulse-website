@@ -465,3 +465,20 @@ window.pulseContact = function () {
   m.classList.add('open');
   return false;
 };
+
+// Every link to the Request a Quote page (Get a Quote, Request a Quote, Buy Direct...) opens the quote pop-up instead,
+// pre-filled with the product on product pages. The pop-up saves to the admin panel. The link still works without JS,
+// with modifier keys (open in new tab), and on the Request a Quote page itself.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="request-a-quote.html"], [data-quote]');
+  if (!a || e.defaultPrevented || e.button > 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  if (/request-a-quote\.html$/.test(location.pathname)) return;
+  if (!document.getElementById('quote-modal-overlay')) return;
+  e.preventDefault();
+  var q = a.getAttribute('data-quote') || '';
+  if (!q && document.body.hasAttribute('data-product-page')) {
+    var h1 = document.querySelector('h1');
+    if (h1) q = 'Quote for: ' + h1.textContent.replace(/\s+/g, ' ').trim();
+  }
+  window.pulseQuote(q);
+});
