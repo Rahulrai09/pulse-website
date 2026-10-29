@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5>SUPPORT</h5>
             <ul>
               <li><a href="#" onclick="document.getElementById('demo-modal-overlay').classList.add('open'); return false;">Request Demo</a></li>
-              <li><a href="/request-a-quote.html">Request a Quote</a></li>
+              <li><a href="/request-a-quote.html" data-page>Pricing &amp; Quotes</a></li>
               <li><a href="/brochures.html">Brochures</a></li>
               <li><a href="/where-to-buy.html">Where to Buy</a></li>
               <li><a href="/service-support.html">Service Support</a></li>
@@ -470,7 +470,7 @@ window.pulseContact = function () {
 // pre-filled with the product on product pages. The pop-up saves to the admin panel. The link still works without JS,
 // with modifier keys (open in new tab), and on the Request a Quote page itself.
 document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('a[href*="request-a-quote.html"], [data-quote]');
+  var a = e.target.closest && e.target.closest('a[href*="request-a-quote.html"]:not([data-page]), [data-quote]'); // data-page = plain page link (footer)
   if (!a || e.defaultPrevented || e.button > 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
   if (/request-a-quote\.html$/.test(location.pathname)) return;
   if (!document.getElementById('quote-modal-overlay')) return;
