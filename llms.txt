@@ -1,6 +1,6 @@
 # Pulse Medical
 
-> Pulse is a horizontal MedTech OEM brand headquartered in HSR Layout, Bengaluru, India. Pulse engineers, manufactures and services medical equipment across Critical Care, Renal Care, Cardiac Care, Surgical, Aesthetics, Rehabilitation and Hospital Setup, bringing quality, service, speed and value into one accountable partnership.
+> Pulse (Zuvio Technologies Private Limited) is a Bengaluru medical equipment company founded in 2025, headquartered in HSR Layout, Bengaluru, India. Pulse designs, quality-assures, supplies and services medical equipment made with Indian MSME manufacturing partners, across Critical Care, Renal Care, Cardiac Care, IVD Diagnostics, Surgical, Aesthetics, Rehabilitation and complete Hospital Setup. Backed by 3one4 Capital, Incubate Fund Asia and Stride Ventures.
 
 Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 
@@ -53,6 +53,136 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 - [Medical Gas Pipeline Cost in India: Per Bed, Per OT and Per Hospital](https://www.pulseio.in/blog-medical-gas-pipeline-cost-india.html)
 - [Hospital Bed Price in India: Semi Fowler, Fowler and ICU Beds Compared](https://www.pulseio.in/blog-hospital-bed-price-india.html)
 - [All articles](https://www.pulseio.in/articles-blogs.html)
+
+## Products
+Every Pulse product page, by category. Each page has specifications, a buyer guide and FAQs.
+
+### Critical Care
+- [Pulse Anesthesia Workstation](https://www.pulseio.in/critical-care/anesthesia-workstation/): Pulse anesthesia workstation for adult and pediatric use: 20-1500 ml tidal volume, closed and semi-closed modes, CE. Get pricing and a demo.
+- [Pulse ICU Ventilator](https://www.pulseio.in/critical-care/icu-ventilator/): Pulse ICU ventilator for neonatal, pediatric and adult care: turbine technology, 18.5-inch touchscreen, invasive and NIV. Get pricing and a demo.
+- [Pulse 12-Channel ECG Machine](https://www.pulseio.in/critical-care/12-channel-ecg-machine/): Pulse 12-channel ECG machine with 1000-case internal storage, full keyboard, lithium battery and ECG data transfer to PC. Get pricing and a demo.
+- [Pulse 3-Channel ECG Machine](https://www.pulseio.in/critical-care/3-channel-ecg-machine/): 3 channel 12-lead ECG machine with auto interpretation, 7-inch touchscreen and Li-ion battery. Compare price ranges and get a quote.
+- [Pulse 6-Channel ECG Machine](https://www.pulseio.in/critical-care/6-channel-ecg-machine/): 6 channel 12-lead ECG machine with automatic interpretation, defibrillator protection, 7-inch touchscreen and Li-ion battery. See price ranges and get a quote.
+- [Pulse Infusion Pump](https://www.pulseio.in/critical-care/infusion-pump/): Pulse infusion pump with 4.3-inch touchscreen, about 5-hour battery, 0.1-1500 ml/h flow and audible and visual alarms. Get pricing and a demo.
+- [Pulse 5-Para Patient Monitor](https://www.pulseio.in/critical-care/5-para-patient-monitor/): 5 para monitor parameters: ECG (3/5 lead), SpO2, NIBP, pulse rate, respiration and temperature. 12.1" display, ST analysis, battery. Get the price.
+- [Pulse 7-Para Patient Monitor](https://www.pulseio.in/critical-care/7-para-patient-monitor/): 7 parameter patient monitor with EtCO2 and cardiac output, NIBP for adult, paediatric and neonatal patients, 12.1" display and battery. Get the price.
+- [Pulse Syringe Pump](https://www.pulseio.in/critical-care/syringe-pump/): Pulse Syringe Pump — 3.8" touch display, fits 5-50ml syringes, ±2% accuracy, 8+ hour battery life. Precision medication delivery for critical care.
+
+### Renal Care
+- [Pulse Dialysers  High-Efficiency Toxin Removal](https://www.pulseio.in/renal-care/dialysers/): High-efficiency haemodialysis dialyser (the artificial kidney filter) for steady removal of waste and extra fluid, for standard dialysis machines. Get a quote.
+- [Pulse PD-Canova  AV Fistula Needles — Safe and Reliable Vascular Access](https://www.pulseio.in/renal-care/pd-canova/): Pulse PD-Canova AV fistula needle twin sets in 15G, 16G and 17G with colour-coded wings, sterilised by gamma or ETO. Get pricing and a demo.
+- [Pulse PD-Cath  Haemodialysis Catheters](https://www.pulseio.in/renal-care/pd-cath/): Pulse PD-Cath haemodialysis catheters in single, double and triple lumen for acute, short-term access. MRI compatible. Get pricing and a demo.
+- [Pulse PD-Linepro  Blood Tubing Set](https://www.pulseio.in/renal-care/pd-linepro/): Pulse PD-Linepro blood tubing set with air removal chambers, kink-resistant tubing and a secure dialyser connection. Get pricing and a demo.
+- [Pulse PDM-6000  Precision Haemodialysis System](https://www.pulseio.in/renal-care/pdm-6000/): Pulse PDM-6000 haemodialysis machine with +/-1% ultrafiltration accuracy, Kt/V monitoring and 30-minute battery backup. Get pricing and a demo.
+- [Pulse PD-TP  Transducer Protectors — Pressure Monitoring Safety](https://www.pulseio.in/renal-care/pd-tp/): Pulse PD-TP single-use transducer protector for dialysis pressure lines. Prevents contamination, keeps readings accurate. Get pricing and a demo.
+
+### Cardiac Care
+- [Pulse AcuSafe Blunt Needle Access System](https://www.pulseio.in/cardiac-care/acusafe-blunt-needle/): Pulse AcuSafe blunt needle system with sharp and blunt stylet needles for controlled access in percutaneous drainage. Get pricing and a demo.
+- [Pulse AcuSafe Introducer Kits for Venous Access](https://www.pulseio.in/cardiac-care/acusafe-introducer-kits/): Pulse AcuSafe introducer kits with high-performance sheaths and dilators for controlled central venous catheterization. Get pricing and a demo.
+- [Pulse AcuSafe Micro-Access Introducer Kits](https://www.pulseio.in/cardiac-care/acusafe-micro-access/): Pulse AcuSafe micro-access introducer kits in 5F and 6F with guidewire and access needle, for controlled vascular access. Get pricing and a demo.
+- [Pulse Evera Everolimus Stent](https://www.pulseio.in/cardiac-care/evera-stent/): Pulse Evera everolimus-eluting coronary stent with high dislodgement resistance for crimp integrity in tortuous vessels. Get pricing and a demo.
+- [Pulse Optima Inflation Device Kit](https://www.pulseio.in/cardiac-care/optima-inflation-kit/): Pulse Optima PTCA balloon inflation kit with hemostasis valve, guidewire insertion tool and torque device in each kit. Get pricing and a demo.
+- [Pulse Sirova Sirolimus Stent](https://www.pulseio.in/cardiac-care/sirova-stent/): Pulse Sirova sirolimus-eluting coronary stent with a flexible cell design for navigating tortuous coronary arteries. Get pricing and a demo.
+- [Pulse GuideX Coronary Guidewires](https://www.pulseio.in/cardiac-care/guidex-guidewires/): Pulse GuideX Amplatz guidewire with the stiffness, durability and rail support for atraumatic catheter navigation in cath labs. Get pricing and a demo.
+- [Pulse Optima Manifolds](https://www.pulseio.in/cardiac-care/optima-manifolds/): Pulse Optima high-pressure angiography manifold with a 2.3mm lumen for cath lab procedures. Sterile, latex-free, 3-port. Get pricing and a demo.
+
+### IVD Diagnostics
+- [Pulse ZT Smart SAA Biochemistry Analyzer](https://www.pulseio.in/ivd-diagnostics/zt-smart-saa-biochemistry/): Pulse ZT Smart SAA clinical chemistry analyzer with an 8-position filter wheel and multiple assay types for routine labs. Get pricing and a demo.
+- [Pulse ZT360 Auto Hematology Analyzer](https://www.pulseio.in/ivd-diagnostics/zt360-hematology-analyzer/): Pulse ZT360 fully automatic 3-part hematology analyzer: 60 samples/hr, 10.4-inch touchscreen, 100,000+ patient records. Get pricing and a demo.
+- [Pulse ZT370 3-Part-Diff Hematology Analyzer](https://www.pulseio.in/ivd-diagnostics/zt370-hematology-analyzer/): Pulse ZT370 compact 3-part diff hematology analyzer: 72 tests per hour, 22 parameters and a simple 2-reagent system. Get pricing and a demo.
+
+### Surgical
+- [Pulse CircumEase Disposable Circumcision Stapler](https://www.pulseio.in/surgical-care/circumease-stapler/): Pulse CircumEase disposable circumcision stapler: shorter operating time and less bleeding than traditional surgery (2024 study), 8 sizes, sterile single use.
+
+### Aesthetics
+- [Pulse Bbl Super IPL+DPL](https://www.pulseio.in/aesthetics/bbl-super-ipl-dpl/): Pulse BBL Super IPL + DPL machine for pigmentation, vascular lesions, photoaging and hair removal, with 11 light filters. Get pricing and a demo.
+- [Pulse Code Factor](https://www.pulseio.in/aesthetics/code-factor/): Pulse Code Factor 40W CO2 fractional laser for acne scars, stretch marks and fine lines, with a dedicated vaginal mode. Get pricing and a demo.
+- [Pulse Cool Shape](https://www.pulseio.in/aesthetics/cool-shape/): Pulse Cool Shape 360-degree cryolipolysis machine for non-invasive fat reduction, with medical-grade silicone applicators. Get pricing and a demo.
+- [Pulse Em Code](https://www.pulseio.in/aesthetics/em-code/): Pulse Em Code HIFEM body sculpting machine: up to 20,000 contractions per session for muscle toning and fat reduction. Get pricing and a demo.
+- [Pulse Em-Ma](https://www.pulseio.in/aesthetics/em-ma/): Pulse Em-Ma HIFEM device for pelvic floor strengthening and urinary incontinence in women and men, done fully clothed. Get pricing and a demo.
+- [Pulse Excimer](https://www.pulseio.in/aesthetics/excimer/): Excimer 308nm handheld UVB phototherapy for vitiligo, psoriasis and alopecia. 16 cm² spot, adjustable dose, no consumables. Get the price and a demo.
+- [Pulse HYDRAFRAC](https://www.pulseio.in/aesthetics/hydrafrac/): Pulse Hydrafrac hydra facial machine for deep cleansing and hydration: aqua peel, ultrasound, RF and electro-ion in one. Get pricing and a demo.
+- [Pulse Nodd](https://www.pulseio.in/aesthetics/nodd/): Pulse Nodd fractional RF microneedling device for collagen remodeling and skin tightening, with gold-plated needles. Get pricing and a demo.
+- [Pulse Pi-Code](https://www.pulseio.in/aesthetics/pi-code/): Pulse Pi-Code Nd:YAG picosecond laser for tattoo removal, pigmentation and skin rejuvenation, for all skin types in India. Get pricing and a demo.
+- [Pulse Skin Analyzer](https://www.pulseio.in/aesthetics/skin-analyzer/): Skin analysis machine with a 36MP camera and spectral imaging to map sebum, fine lines, hydration, pigmentation and sun damage. Get the price and a demo.
+- [Pulse Visage](https://www.pulseio.in/aesthetics/visage/): Pulse Visage needle-free facial lifting and muscle toning device for anti-aging, with 20-minute sessions and no downtime. Get pricing and a demo.
+- [Pulse Wavelength Pro X](https://www.pulseio.in/aesthetics/wavelength-pro-x/): Pulse Wavelength Pro X diode laser hair removal machine with four wavelengths and continuous cooling, all skin types. Get pricing and a demo.
+
+### Hospital Setup
+- [Pulse Autoclaves & Sterilizers](https://www.pulseio.in/hospital-setup/autoclaves-sterilizers/): Portable, vertical, horizontal and dental autoclaves from 12 L to 180 L, in stainless steel or aluminium, electric and non-electric. Get a quote.
+- [Pulse Baby Warmer Range](https://www.pulseio.in/hospital-setup/baby-warmer/): Infant radiant warmers from Regular to Premium N-400, with air and skin servo control, alarms, self-test and LED phototherapy option. Get a quote.
+- [Pulse Crash Cart with Drawers](https://www.pulseio.in/hospital-setup/crash-cart/): Emergency crash cart with ABS or stainless steel drawers to keep resuscitation drugs and equipment ready at the point of care. Get a quote.
+- [Pulse Delivery Table — Electric & Manual](https://www.pulseio.in/hospital-setup/delivery-table-electric-manual/): Obstetric delivery table with electric height and back adjustment, three-section top with cushioned mattress and telescopic IV rod. Get a quote.
+- [Pulse Delivery Table — Hydraulic Deluxe](https://www.pulseio.in/hospital-setup/delivery-table-hydraulic/): Stainless steel delivery table with pneumatic Trendelenburg, U-cut middle section for leg slide and SS hand grips, for labour rooms. Get a quote.
+- [Pulse Emergency Patient Trolley (Hydraulic)](https://www.pulseio.in/hospital-setup/emergency-trolley-hydraulic/): Hydraulic emergency patient trolley for fast, safe patient transport in emergency and trauma departments. Get a quote.
+- [Pulse Fowler Bed Electric](https://www.pulseio.in/hospital-setup/fowler-bed-electric/): Electric Fowler bed with remote back-rest and knee-rest control, ABS panels, aluminium collapsible side rails and 4-inch castors. Get a quote.
+- [Pulse ICU Bed — Three Functional Electric](https://www.pulseio.in/hospital-setup/icu-bed-3func-electric/): Three-function electric ICU bed: back-rest, knee-rest and height, with ABS panels and rails and 5-inch castors with brakes. Get a quote.
+- [Pulse ICU Bed — Five Functional Electric (Deluxe)](https://www.pulseio.in/hospital-setup/icu-bed-5func-electric-deluxe/): Five-function electric ICU bed with Trendelenburg, reverse tilt and height, CRCA frame, ABS panels and safety rails. 220 x 100 cm. Get a quote.
+- [Pulse ICU Bed — Five Functional Electric (Premium)](https://www.pulseio.in/hospital-setup/icu-bed-5func-electric-premium/): Premium motorised five-function ICU bed with 4-section ABS rails, degree indicator, central-locking castors, CPR system and dual remotes.
+- [Pulse ICU Bed — Five Functional Manual (Deluxe)](https://www.pulseio.in/hospital-setup/icu-bed-5func-manual-deluxe/): Five-function manual ICU bed with crank mechanism, CRCA frame, ABS safety rails and SS IV rod. 220 x 100 cm, 60–80 cm height. Get a quote.
+- [Pulse Medical Gas Pipeline System](https://www.pulseio.in/hospital-setup/medical-gas-pipeline/): Medical gas pipeline systems: manifolds, bed head panels, power columns, pendants and vacuum regulators, planned and installed by Pulse.
+- [Pulse Modular Operation Theatre](https://www.pulseio.in/hospital-setup/modular-ot/): Modular OT construction with laminar ceiling, wall and ceiling systems, hermetic doors, pass boxes, scrub sinks, control panels and HVAC.
+- [Pulse OT Light — Premium Globus Dome](https://www.pulseio.in/hospital-setup/ot-light-globus-dome/): Ceiling-mounted premium globus dome OT light with 48 LEDs, 180,000 lux, adjustable focus and LED life over 50,000 hours. Get a quote.
+- [Pulse OT Light — Premium with Camera HD](https://www.pulseio.in/hospital-setup/ot-light-premium-camera/): Ceiling-mounted surgical light with integrated HD camera, 12–30 cm adjustable field and optional battery backup, for teaching and records.
+- [Pulse OT Table — C-Arm Hydraulic](https://www.pulseio.in/hospital-setup/ot-table-carm-hydraulic/): C-arm compatible OT table with hydraulic and mechanical operation, SS centric base, interchangeable head and leg sections and kidney bridge.
+- [Pulse OT Table — Electric + Manual Top Slide (Deluxe)](https://www.pulseio.in/hospital-setup/ot-table-electric-manual-deluxe/): Electric OT table with radiolucent five-section SS top, remote control, top slide with six functions and chair position. Get a quote.
+- [Pulse OT Table — General Hydraulic](https://www.pulseio.in/hospital-setup/ot-table-general-hydraulic/): Five-section stainless steel OT table with heavy-duty hydraulic pump, floor locking and eccentric top for C-arm access. Get a quote.
+- [Pulse Semi Fowler Bed Electric](https://www.pulseio.in/hospital-setup/semi-fowler-electric/): Electric semi Fowler bed with remote back-rest control and ABS moulded head and foot panels, 220 x 100 cm. Get a quote.
+- [Pulse SS Instrument Trolleys](https://www.pulseio.in/hospital-setup/ss-instrument-trolleys/): Stainless steel instrument trolleys in all-SS, three-shelf and box types, 457 x 609 x 762 mm, with custom sizes available. Get a quote.
+- [Pulse Stretcher Trolley MS & SS](https://www.pulseio.in/hospital-setup/stretcher-trolley-ms-ss/): Mild steel and stainless steel stretcher trolleys for moving patients safely between hospital departments. Get a quote.
+- [Pulse Wheelchair (Indian & Imported)](https://www.pulseio.in/hospital-setup/wheelchair/): Hospital wheelchairs in Indian and imported models for patient mobility across wards, OPD and transport. Get a quote.
+- [Pulse OT Examination Light](https://www.pulseio.in/hospital-setup/ot-examination-light/): Mobile LED examination light in 3 W, 7 W, 9 W and 18 W variants, 80–100 mm spot and about 50,000 hours LED life. Get a quote.
+- [Pulse OT Light — Four Reflector (Single/Double)](https://www.pulseio.in/hospital-setup/ot-light-four-reflector/): Economical four-reflector OT light with 78 LEDs, 180,000 lux, adjustable focus and 50,000+ hour LED life, in single or double dome.
+
+## More price guides
+- [Medical Equipment Price List India 2026](https://www.pulseio.in/blog-medical-equipment-price-list-india-2026.html): 2026 price list for medical equipment in India: ventilators, dialysis machines, stents, wheelchairs, CO2 lasers and real GeM tender prices.
+- [CO2 Fractional Laser Machine Price in India 2026](https://www.pulseio.in/blog-co2-fractional-laser-machine-price-india.html): CO2 fractional laser machine price in India is about Rs 2.5 lakh to Rs 12.5 lakh. See what changes the price, running costs and what to check first.
+- [Stent Price in India 2026: Government Price Cap](https://www.pulseio.in/blog-stent-price-india.html): Stent price in India is set by a government cap. From April 2026 a drug-eluting stent costs at most Rs 39,186 plus GST. See what it means for you.
+- [Dialysis Machine Price in India 2026: Rs 5–25 Lakh](https://www.pulseio.in/blog-dialysis-machine-price-india.html): Dialysis machine price in India (2026): Rs 5–25 lakh new, Rs 2–5 lakh refurbished. Per-session costs, running costs and a checklist before you buy.
+- [Electric Wheelchair Price in India: Pick by Budget](https://www.pulseio.in/blog-electric-wheelchair-price-india.html): Electric wheelchair price in India starts at about Rs 35,000 and can go past Rs 2.5 lakh. See what each budget buys and which model suits you.
+- [ICU Ventilator Price in India 2026: Rs 7–22 Lakh](https://www.pulseio.in/blog-icu-ventilator-price-india.html): ICU ventilator price in India (2026) ranges from about Rs 7 lakh to Rs 22 lakh+. What drives the cost, hidden costs to plan for and how to get a quote.
+- [Modular OT Setup Cost in India 2026: Breakdown](https://www.pulseio.in/blog-modular-ot-setup-cost-india.html): Modular OT setup cost in India: room size, HVAC, NABH rules and equipment. Pulse builds turnkey modular OTs, from planning to handover.
+
+## How-to guides and comparisons
+- [Cryolipolysis vs HIFEM: What New Research Shows](https://www.pulseio.in/blog-cryolipolysis-vs-hifem-research.html): Cryolipolysis vs HIFEM explained simply, using a 2025 review of 3,158 people and a 2026 review, plus what weight-loss injections mean for clinics.
+- [Best Laser Hair Removal Machine for Indian Skin](https://www.pulseio.in/blog-laser-hair-removal-machine-indian-skin.html): Diode, Nd:YAG, alexandrite or IPL? Compare hair removal machines for Indian skin types IV to VI, with research, a buying checklist and FAQs.
+- [How Does a Dialysis Machine Work? (Diagram)](https://www.pulseio.in/blog-how-dialysis-machine-works.html): How does a dialysis machine work? A simple diagram and step-by-step guide: the blood pump, dialyser, dialysate, water removal and safety alarms.
+- [CircumEase Disposable Circumcision Kit: A Guide](https://www.pulseio.in/blog-circumease.html): CircumEase is Pulse's disposable circumcision kit for safe, hygienic, standardized procedures — how it works and why hospitals are switching.
+- [How ICU Ventilators Work: A Beginner's Guide](https://www.pulseio.in/blog-ventilator.html): A beginner's guide to ICU ventilators: how they work, the main ventilation modes, and why choosing the right ventilator matters for patients.
+- [Complete Hospital Setup Checklist for New Hospitals](https://www.pulseio.in/blog-hospital-setup-checklist.html): Planning a new hospital? A phase-by-phase checklist covering feasibility, licences, equipment, staffing and NABH accreditation, step by step.
+- [3-Part vs 5-Part Hematology Analyzer Compared](https://www.pulseio.in/blog-hematology-analyzer-3part-vs-5part.html): 3-part vs 5-part hematology analyzer for labs in India: what each measures, when 5-part is worth the cost, and when 3-part is enough.
+- [IVD Diagnostics Equipment Manufacturer in India](https://www.pulseio.in/blog-ivd-diagnostics-equipment-manufacturer-india.html): Who makes IVD diagnostics equipment in India, how CDSCO regulates it, and what labs should check before buying an analyzer.
+- [Peritoneal Dialysis vs Hemodialysis: 2025 Evidence](https://www.pulseio.in/blog-pd-vs-hemodialysis-2025-evidence.html): Peritoneal dialysis vs hemodialysis: what a 2025 analysis of over 1 million patients found on survival, and what it means for clinics.
+- [Coronary Guidewire Selection Guide for Cath Labs](https://www.pulseio.in/blog-coronary-guidewire-selection.html): How cardiologists choose coronary guidewires: workhorse, stiff and specialty wires, tip load and coating, and when each is used.
+- [Circumcision Stapler vs Traditional: Evidence](https://www.pulseio.in/blog-circumcision-stapler-vs-traditional-evidence.html): Disposable circumcision stapler vs traditional surgery: what a 2024 study of 301 patients found on time, bleeding, healing and complications.
+- [Aesthetic Clinic Setup in India: Equipment & Costs](https://www.pulseio.in/blog-starting-aesthetic-clinic-india.html): How to start a medical aesthetics clinic in India: equipment tiers, licences, staffing and typical setup costs from solo to multi-room clinics.
+- [Manual vs Power Wheelchair: How to Choose One](https://www.pulseio.in/blog-manual-vs-power-wheelchair-selection.html): Manual or power wheelchair? Learn who each type suits, when to switch, and what shoulder-injury research says, for home users and hospitals.
+- [5-Para vs 7-Para Patient Monitor: Which to Buy](https://www.pulseio.in/blog-5para-vs-7para-patient-monitor.html): 5-para vs 7-para patient monitors: what each measures, when EtCO2 and IBP matter, and which ward needs which monitor in Indian hospitals.
+- [Guide to Buying Medical Equipment in India (2026)](https://www.pulseio.in/blog-buying-medical-equipment-india.html): A complete guide to buying medical equipment in India — regulatory, financial, and procurement guidance for clinics, hospitals, and dealers.
+- [Why Medical Equipment After-Sales Service Matters](https://www.pulseio.in/blog-after-sales-service-medical-equipment.html): Why after-sales service matters: the real cost of downtime, AMC vs CMC economics, and the questions to ask before you buy medical equipment.
+- [Types of Ventilators in ICU: 6 Main Types Explained](https://www.pulseio.in/blog-types-of-ventilators.html): The 6 main types of ventilators (ICU, transport, neonatal, high-frequency, NIV and home), what each is for, and how an ICU differs from a ventilator.
+- [Medical Equipment Suppliers in Bengaluru, Karnataka](https://www.pulseio.in/blog-medical-equipment-suppliers-bengaluru.html): A guide for hospitals choosing medical equipment suppliers and manufacturers in Bengaluru and Karnataka: compliance, tenders and after-sales.
+- [Single-Vendor Medical Equipment Partner: Benefits](https://www.pulseio.in/blog-single-vendor-medical-equipment-partner.html): Why more Indian hospitals are consolidating equipment purchasing with one manufacturer — cost, standardization, service, and trade-offs to weigh.
+- [HeavyDuty & DualDrive All-Terrain Wheelchairs](https://www.pulseio.in/blog-pulse-heavyduty-dualdrive-all-terrain-wheelchair.html): Pulse HeavyDuty and Pulse DualDrive heavy-duty power wheelchairs: who they suit, how to use them, and when to pick all-terrain over standard.
+- [Premium Comfort & TravelMate Power Wheelchairs](https://www.pulseio.in/blog-pulse-premium-comfort-travelmate-wheelchair.html): Pulse Premium Comfort and Pulse TravelMate lightweight power wheelchairs — who they're for, how to use them, and why choose lightweight over heavy-duty.
+- [UltraLight & MiniLite Foldable Wheelchairs, 19 kg](https://www.pulseio.in/blog-pulse-ultralight-minilite-lightweight-wheelchair.html): Pulse UltraLight and Pulse MiniLite: 19 kg foldable electric wheelchairs with puncture-free tyres, 120 kg capacity and 15 km range. See how they differ.
+- [ComfortRide Folding Power Wheelchair](https://www.pulseio.in/blog-pulse-comfortride-wheelchair.html): The Pulse ComfortRide folding power wheelchair: 27 kg aluminium frame, 120 kg capacity, one-click fold, 24V 12Ah battery and about 15 km of range.
+- [HomeCare Recliner Power Wheelchair: Who It Suits](https://www.pulseio.in/blog-pulse-homecare-recliner-wheelchair.html): Pulse HomeCare Recliner power wheelchair: who it suits, how the 160-degree electric recline works and when to choose a reclining model.
+- [SlimFold Compact Indoor-Outdoor Wheelchair](https://www.pulseio.in/blog-pulse-slimfold-compact-wheelchair.html): Pulse SlimFold compact electric wheelchair: who it is for, how to use it, and why its steel frame, puncture-free tyres and twin batteries suit daily use.
+- [Everyday & SmartFold Folding Wheelchairs, 22 kg](https://www.pulseio.in/blog-pulse-everyday-smartfold-folding-wheelchair.html): Pulse Everyday and 2 autofold electric wheelchairs: 22 kg aluminium frame, 120 kg capacity, 15 km range, IATA compliant for car and air travel.
+
+## Company news
+- [Pulse Raises $4 Million Seed Round Led by 3one4 Capital](https://www.pulseio.in/blog-pulse-4million.html): Pulse has raised a $4 million seed round led by 3one4 Capital to build a full-stack medical equipment manufacturing platform for Indian hospitals.
+- [Pulse Zuvio Inaugurates Critical Care Unit at AMTZ](https://www.pulseio.in/blog-zuvio-amtz.html): Pulse Zuvio opened a critical care manufacturing unit at AMTZ, Visakhapatnam, to grow India's own production of ICU and critical care devices.
+- [About Pulse: India's Manufacturer-First MedTech Brand](https://www.pulseio.in/blog-about-pulse-manufacturer-first.html): Who makes Pulse medical equipment, how its manufacturer-first model works, and what its product categories, MSME network and service include.
+- [Pulse Featured in Inc42's 30 Startups To Watch (July 2026)](https://www.pulseio.in/blog-pulse-featured-inc42-30-startups-to-watch.html): Inc42 named Pulse in its July 2026 30 Startups To Watch. What the feature says and what it means for Pulse’s manufacturer-first model.
+
+## Other pages
+- [Life at Pulse: Careers in Medical Devices, India](https://www.pulseio.in/life-at-pulse.html): What it is like to work at Pulse, a vision-driven team building India's medical device future. Explore our culture, values and open opportunities.
+- [Privacy Policy](https://www.pulseio.in/privacy-policy.html): How Pulse collects, uses and protects your personal data, including cookies and enquiry forms, as a medical equipment manufacturer in India.
+- [Refund, Return and Payment Policy for Hospitals](https://www.pulseio.in/refund-return-policy.html): Pulse payment terms, order cancellation, returns, warranty and refund policy for hospitals, clinics and distributors buying medical equipment.
+- [Terms and Conditions for Website and Purchases](https://www.pulseio.in/terms-and-conditions.html): The terms and conditions for using the Pulse website and buying medical equipment from Pulse, including orders, delivery, warranty and liability.
+- [Contact Pulse: Get a Quote for Medical Equipment](https://www.pulseio.in/contact.html): Get prices, quotes and demos from Pulse, or plan a full hospital setup. WhatsApp +91 90711 01108 or email info@pulseio.in. Bengaluru, India.
 
 ## Buying
 - [Request a Quote](https://www.pulseio.in/request-a-quote.html): quote form for any Pulse product or a complete hospital setup; pan-India supply
