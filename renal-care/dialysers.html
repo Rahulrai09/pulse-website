@@ -160,6 +160,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   </script><style id="img-dims">:where(img[data-sz]){height:auto}</style>
 <style id="faq-h-css">.faq-h{margin:0;padding:0;font:inherit;line-height:inherit;color:inherit;letter-spacing:inherit;text-transform:none;border:0}</style>
+<style id="pdx-css">
+.pdx{--n:#0f1f4b;--b:#1B2F6E;--o:#F07C2A;--m:#5b6478;--l:#e6e9f2;--s:#f6f8fc}
+.pdx-sec{padding:72px 0;background:#fff}.pdx-sec.alt{background:var(--s)}
+.pdx-w{max-width:1200px;margin:0 auto;padding:0 24px}
+.pdx-eb{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;color:var(--o);margin-bottom:12px}
+.pdx-eb::before{content:'';width:26px;height:2px;background:currentColor;border-radius:2px}
+.pdx h2{color:var(--n);font-size:clamp(24px,2.6vw,34px);font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:0 0 14px}
+.pdx-lead{color:var(--m);font-size:16.5px;line-height:1.75;max-width:720px;margin:0 0 32px}
+.pdx-lead a,.pdx-p a{color:var(--b);font-weight:600;text-decoration:underline;text-decoration-color:rgba(240,124,42,.55);text-underline-offset:3px}
+.pdx-feat{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.pdx-feat li{position:relative;background:#fff;border:1px solid var(--l);border-radius:16px;padding:22px 20px;color:var(--n);font-size:15.5px;font-weight:600;line-height:1.5;transition:transform .25s,box-shadow .25s,border-color .25s}
+.pdx-feat li:hover{transform:translateY(-3px);box-shadow:0 18px 36px -20px rgba(15,31,75,.3);border-color:#d3d9ea}
+.pdx-feat li>span{width:36px;height:36px;margin-bottom:14px;border-radius:10px;background:linear-gradient(135deg,#fff3ea,#ffe3cf);color:var(--o);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
+.pdx-two{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.pdx-p{color:#3d4658;font-size:16px;line-height:1.8;margin:0 0 14px}
+.pdx-flow{background:#fff;border:1px solid var(--l);border-radius:20px;padding:26px;box-shadow:0 24px 50px -30px rgba(15,31,75,.35)}
+.pdx-flow-t{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--m);margin:0 0 16px}
+.pdx-lane{display:flex;align-items:center;gap:12px;border-radius:12px;padding:14px 16px;font-size:14.5px;font-weight:600;margin-bottom:10px}
+.pdx-lane small{display:block;font-weight:500;font-size:12.5px;opacity:.8;margin-top:2px}
+.pdx-lane .ar{margin-left:auto;font-size:20px;font-weight:700}
+.pdx-lane.blood{background:#fdecec;color:#9b1c1c}.pdx-lane.dial{background:#e8f1fd;color:#1546a0}
+.pdx-mem{display:flex;gap:6px;justify-content:center;margin:2px 0 12px}
+.pdx-mem i{width:10px;height:10px;border-radius:50%;background:#c9d2e8;display:block}
+.pdx-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pdx-tags span{font-size:12.5px;font-weight:600;color:var(--b);background:var(--s);border:1px solid var(--l);border-radius:999px;padding:6px 12px}
+.pdx-checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;counter-reset:ck}
+.pdx-checks li{counter-increment:ck;background:#fff;border:1px solid var(--l);border-radius:16px;padding:22px 22px 22px 70px;position:relative;color:#3d4658;font-size:15px;line-height:1.65}
+.pdx-checks li::before{content:counter(ck,decimal-leading-zero);position:absolute;left:20px;top:20px;width:34px;height:34px;border-radius:50%;background:var(--b);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.pdx-checks strong{display:block;color:var(--n);font-size:16px;margin-bottom:4px}
+.pdx-range{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pdx-part{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid var(--l);border-radius:16px;padding:22px;text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s,border-color .25s}
+a.pdx-part:hover{transform:translateY(-3px);box-shadow:0 18px 36px -20px rgba(15,31,75,.3);border-color:var(--b)}
+.pdx-part .k{font-size:11.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--o)}
+.pdx-part b{color:var(--n);font-size:16.5px;line-height:1.3}
+.pdx-part span.d{color:var(--m);font-size:14.5px;line-height:1.6}
+.pdx-part .go{margin-top:auto;padding-top:6px;font-size:13px;font-weight:700;color:var(--b)}
+.pdx-part.here{background:linear-gradient(135deg,#1B2F6E,#24408f);border-color:transparent}
+.pdx-part.here b,.pdx-part.here span.d{color:#fff}.pdx-part.here .k{color:#ffb27a}.pdx-part.here .go{color:rgba(255,255,255,.75)}
+.pdx-cta{margin-top:36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;border-radius:20px;padding:28px 32px;color:#fff;background:radial-gradient(500px 220px at 95% 0%,rgba(240,124,42,.35),transparent 60%),linear-gradient(135deg,#101d48,#1B2F6E)}
+.pdx-cta p{margin:0;font-size:18px;font-weight:700;line-height:1.4}.pdx-cta p span{display:block;font-size:14.5px;font-weight:400;color:rgba(255,255,255,.75);margin-top:4px}
+.pdx-btns{display:flex;gap:12px;flex-wrap:wrap}
+.pdx-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:10px;font-weight:700;font-size:14.5px;text-decoration:none;border:1px solid transparent;transition:transform .2s,background .2s}
+.pdx-btn.pri{background:var(--o);color:#fff}.pdx-btn.pri:hover{background:#d9661a;transform:translateY(-2px)}
+.pdx-btn.gh{color:#fff;border-color:rgba(255,255,255,.35)}.pdx-btn.gh:hover{background:rgba(255,255,255,.1)}
+.pdx-rel{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pdx-rel a{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--l);border-radius:16px;padding:16px 18px;text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s,border-color .25s}
+.pdx-rel a:hover{transform:translateY(-3px);box-shadow:0 18px 36px -20px rgba(15,31,75,.3);border-color:var(--b)}
+.pdx-rel img{width:72px;height:72px;object-fit:contain;flex:0 0 72px;background:var(--s);border-radius:12px;padding:6px}
+.pdx-rel b{display:block;color:var(--n);font-size:15px;line-height:1.35}.pdx-rel small{color:var(--o);font-weight:700;font-size:13px}
+.pdx-guides{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.pdx-guides>span{font-weight:700;color:var(--n);font-size:14.5px;margin-right:4px}
+.pdx-guides a{font-size:14px;font-weight:600;color:var(--b);text-decoration:none;background:#fff;border:1px solid var(--l);border-radius:999px;padding:8px 14px;transition:border-color .2s,color .2s}
+.pdx-guides a:hover{border-color:var(--b);color:var(--o)}
+.pdx-back{display:inline-flex;margin-top:24px;color:var(--b);font-weight:600;text-decoration:none;font-size:14.5px}.pdx-back:hover{color:var(--o)}
+.pdx-faq{padding:80px 0;background:#fff}
+@media (max-width:1100px){.pdx-feat{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:900px){.pdx-two{grid-template-columns:1fr;gap:32px}.pdx-feat,.pdx-range,.pdx-rel{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.pdx-sec{padding:52px 0}.pdx-feat,.pdx-checks,.pdx-range,.pdx-rel{grid-template-columns:1fr}.pdx-cta{padding:24px 20px}.pdx-btn{flex:1;justify-content:center}.pdx-faq{padding:56px 0}}
+</style>
 </head>
 <body data-product-page="true">
 <!-- Google Tag Manager (noscript) -->
@@ -221,81 +280,102 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+<div class="pdx">
   <!-- KEY FEATURES -->
-  <section style="padding:48px 0; background:#fff;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <h2 style="color:#0f1f4b; font-size:1.6rem; margin-bottom:28px;">Key Features</h2>
-      <ul style="list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;"><span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Engineered for effective removal of metabolic waste and excess fluid</li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;"><span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Efficient toxin clearance</li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;"><span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Stable filtration performance</li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;"><span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Compatible with standard dialysis protocols</li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;"><span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>High-efficiency membrane technology</li>
+  <section class="pdx-sec">
+    <div class="pdx-w">
+      <span class="pdx-eb">Why these dialysers</span>
+      <h2>Key Features</h2>
+      <ul class="pdx-feat">
+        <li><span>✓</span>Engineered for effective removal of metabolic waste and excess fluid</li>
+        <li><span>✓</span>Efficient toxin clearance</li>
+        <li><span>✓</span>Stable filtration performance</li>
+        <li><span>✓</span>Compatible with standard dialysis protocols</li>
+        <li><span>✓</span>High-efficiency membrane technology</li>
       </ul>
     </div>
   </section>
 
   <!-- BUYER GUIDE -->
-  <section style="padding:48px 0; background:#fff;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <h2 data-guide style="color:#0f1f4b; font-size:1.6rem; margin:0 0 16px;">How a Dialyser Works During Haemodialysis</h2>
-      <p style="color:#444; font-size:1rem; line-height:1.8; margin-bottom:14px;">A dialyser is the filter at the heart of haemodialysis. Inside it are thousands of thin hollow fibres made of a semi-permeable membrane. Blood flows through the inside of the fibres, and dialysate (a clean, balanced fluid made by the machine) flows around the outside in the opposite direction.</p>
-      <p style="color:#444; font-size:1rem; line-height:1.8; margin-bottom:14px;">Waste such as urea and creatinine moves from the blood into the dialysate, because the dialysate has less of it. This is called diffusion. The machine also pulls extra water out of the blood across the same membrane. This is called ultrafiltration. Read <a href="/blog-how-dialysis-machine-works.html" style="color:#E63946; font-weight:600;">how a dialysis machine works</a> for a simple step-by-step guide.</p>
-      <h2 data-guide style="color:#0f1f4b; font-size:1.6rem; margin:32px 0 16px;">What to Check Before Ordering Dialysers</h2>
-      <ul style="color:#444; font-size:1rem; line-height:1.7; padding-left:20px;">
-        <li style="margin-bottom:8px;"><strong>Membrane surface area.</strong> Larger surface areas clear more waste per session. Match the size to your patients and prescribed treatment.</li>
-        <li style="margin-bottom:8px;"><strong>Low-flux or high-flux.</strong> High-flux membranes let larger molecules and more water pass. Your nephrologist decides which suits each patient.</li>
-        <li style="margin-bottom:8px;"><strong>Single use or reuse policy.</strong> Confirm the dialyser fits your unit's policy on reuse and reprocessing.</li>
-        <li style="margin-bottom:8px;"><strong>Connections.</strong> Check that the dialyser fits the blood lines and dialysate connectors used on your machines.</li>
-        <li style="margin-bottom:8px;"><strong>Sterilisation and shelf life.</strong> Note the sterilisation method and expiry date on each batch.</li>
-        <li style="margin-bottom:8px;"><strong>Supply.</strong> A busy unit uses at least one dialyser per session, so agree stock levels and delivery times with the supplier.</li>
+  <section class="pdx-sec alt">
+    <div class="pdx-w pdx-two">
+      <div>
+        <span class="pdx-eb">How it works</span>
+        <h2 data-guide>How a Dialyser Works During Haemodialysis</h2>
+        <p class="pdx-p">A dialyser is the filter at the heart of haemodialysis. Inside it are thousands of thin hollow fibres made of a semi-permeable membrane. Blood flows through the inside of the fibres, and dialysate (a clean, balanced fluid made by the machine) flows around the outside in the opposite direction.</p>
+        <p class="pdx-p">Waste such as urea and creatinine moves from the blood into the dialysate, because the dialysate has less of it. This is called diffusion. The machine also pulls extra water out of the blood across the same membrane. This is called ultrafiltration. Read <a href="/blog-how-dialysis-machine-works.html">how a dialysis machine works</a> for a simple step-by-step guide.</p>
+      </div>
+      <div class="pdx-flow" role="img" aria-label="Blood and dialysate flow in opposite directions on either side of the dialyser membrane">
+        <p class="pdx-flow-t">Inside the dialyser</p>
+        <div class="pdx-lane blood"><div>Blood<small>Inside the hollow fibres</small></div><span class="ar">&rarr;</span></div>
+        <div class="pdx-mem" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="pdx-lane dial"><span class="ar" style="margin-left:0">&larr;</span><div style="margin-left:auto;text-align:right">Dialysate<small>Around the fibres, opposite way</small></div></div>
+        <div class="pdx-tags"><span>Diffusion: waste out</span><span>Ultrafiltration: extra water out</span><span>Counter-current flow</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pdx-sec">
+    <div class="pdx-w">
+      <span class="pdx-eb">Buyer checklist</span>
+      <h2 data-guide>What to Check Before Ordering Dialysers</h2>
+      <p class="pdx-lead">Six things to confirm with your nephrologist and supplier before you place a dialyser order.</p>
+      <ul class="pdx-checks">
+        <li><strong>Membrane surface area</strong>Larger surface areas clear more waste per session. Match the size to your patients and prescribed treatment.</li>
+        <li><strong>Low-flux or high-flux</strong>High-flux membranes let larger molecules and more water pass. Your nephrologist decides which suits each patient.</li>
+        <li><strong>Single use or reuse policy</strong>Confirm the dialyser fits your unit's policy on reuse and reprocessing.</li>
+        <li><strong>Connections</strong>Check that the dialyser fits the blood lines and dialysate connectors used on your machines.</li>
+        <li><strong>Sterilisation and shelf life</strong>Note the sterilisation method and expiry date on each batch.</li>
+        <li><strong>Supply</strong>A busy unit uses at least one dialyser per session, so agree stock levels and delivery times with the supplier.</li>
       </ul>
-      <h2 data-guide style="color:#0f1f4b; font-size:1.6rem; margin:32px 0 16px;">Where Dialysers Fit in the Pulse Dialysis Range</h2>
-      <p style="color:#444; font-size:1rem; line-height:1.8; margin-bottom:14px;">Every haemodialysis session uses a machine plus a set of single-use parts. Pulse supplies the whole set, so one supplier answers for how the parts work together.</p>
-      <div style="overflow-x:auto; margin-top:8px;"><table style="width:100%; border-collapse:collapse; min-width:520px;"><thead><tr><th style="text-align:left; padding:12px; border:1px solid #eee; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Part</th><th style="text-align:left; padding:12px; border:1px solid #eee; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Job in the dialysis circuit</th></tr></thead><tbody><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/renal-care/pdm-6000/" style="color:#E63946; font-weight:600;">PDM-6000 haemodialysis machine</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Pumps blood, makes and warms dialysate, controls fluid removal and runs safety alarms</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><strong>Dialyser</strong> (this page)</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">The filter where waste and extra fluid pass from the blood into the dialysate</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/renal-care/pd-linepro/" style="color:#E63946; font-weight:600;">PD-Linepro blood tubing set</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Carries blood from the patient to the dialyser and back, and traps air bubbles</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/renal-care/pd-canova/" style="color:#E63946; font-weight:600;">PD-Canova AV fistula needles</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Connect a patient with a fistula or graft to the blood lines</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/renal-care/pd-cath/" style="color:#E63946; font-weight:600;">PD-Cath haemodialysis catheter</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Gives access for acute or short-term dialysis when there is no fistula yet</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/renal-care/pd-tp/" style="color:#E63946; font-weight:600;">PD-TP transducer protector</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Protects the machine pressure sensors from blood and fluid</td></tr></tbody></table></div>
-      <p style="color:#444; font-size:1rem; line-height:1.8; margin:16px 0 0;">Planning a new unit? See the <a href="/blog-dialysis-unit-setup-cost-india.html" style="color:#E63946; font-weight:600;">dialysis unit setup cost guide</a>, or <a href="/request-a-quote.html#pulse-dialysers" style="color:#E63946; font-weight:600;">request a quote</a> with your machine model and monthly session count.</p>
+    </div>
+  </section>
+
+  <section class="pdx-sec alt">
+    <div class="pdx-w">
+      <span class="pdx-eb">One supplier, full circuit</span>
+      <h2 data-guide>Where Dialysers Fit in the Pulse Dialysis Range</h2>
+      <p class="pdx-lead">Every haemodialysis session uses a machine plus a set of single-use parts. Pulse supplies the whole set, so one supplier answers for how the parts work together.</p>
+      <div class="pdx-range">
+        <a class="pdx-part" href="/renal-care/pdm-6000/"><span class="k">Machine</span><b>PDM-6000 haemodialysis machine</b><span class="d">Pumps blood, makes and warms dialysate, controls fluid removal and runs safety alarms</span><span class="go">View product &rarr;</span></a>
+        <div class="pdx-part here"><span class="k">Filter</span><b>Dialyser (this page)</b><span class="d">The filter where waste and extra fluid pass from the blood into the dialysate</span><span class="go">You are here</span></div>
+        <a class="pdx-part" href="/renal-care/pd-linepro/"><span class="k">Blood lines</span><b>PD-Linepro blood tubing set</b><span class="d">Carries blood from the patient to the dialyser and back, and traps air bubbles</span><span class="go">View product &rarr;</span></a>
+        <a class="pdx-part" href="/renal-care/pd-canova/"><span class="k">Access</span><b>PD-Canova AV fistula needles</b><span class="d">Connect a patient with a fistula or graft to the blood lines</span><span class="go">View product &rarr;</span></a>
+        <a class="pdx-part" href="/renal-care/pd-cath/"><span class="k">Access</span><b>PD-Cath haemodialysis catheter</b><span class="d">Gives access for acute or short-term dialysis when there is no fistula yet</span><span class="go">View product &rarr;</span></a>
+        <a class="pdx-part" href="/renal-care/pd-tp/"><span class="k">Protection</span><b>PD-TP transducer protector</b><span class="d">Protects the machine pressure sensors from blood and fluid</span><span class="go">View product &rarr;</span></a>
+      </div>
+      <div class="pdx-cta">
+        <p>Planning a new dialysis unit?<span>Share your machine model and monthly session count for a dialyser quote.</span></p>
+        <div class="pdx-btns">
+          <a class="pdx-btn pri" href="/request-a-quote.html#pulse-dialysers">Request a Quote &rarr;</a>
+          <a class="pdx-btn gh" href="/blog-dialysis-unit-setup-cost-india.html">Unit setup cost guide</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- RELATED PRODUCTS -->
-  <section style="padding:48px 0; background:#f7f9fc;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <p style="font-size:1.4rem; font-weight:700; color:#0f1f4b; margin-bottom:28px;">You May Also Need</p>
-      <div style="display:flex; gap:20px; flex-wrap:wrap;">
-    <a href="/renal-care/pdm-6000/" style="display:flex; flex-direction:column; align-items:center; text-align:center; background:#fff; border:1px solid #eee; border-radius:12px; padding:20px 16px; text-decoration:none; color:inherit; transition:box-shadow 0.2s; flex:1; min-width:180px; max-width:220px;">
-      <img src="/image/Renal%20care/pdm-6000-precision-haemodialysis-system-transparent.opt.webp" alt="PDM-6000 Haemodialysis Machine" style="width:100px; height:100px; object-fit:contain; margin-bottom:12px;" width="1254" height="1254" data-sz>
-      <span style="font-size:0.9rem; font-weight:600; color:#0f1f4b; line-height:1.3;">PDM-6000 Haemodialysis Machine</span>
-      <span style="font-size:0.8rem; color:#F07C2A; margin-top:8px; font-weight:500;">View Product →</span>
-    </a>
-    <a href="/renal-care/pd-linepro/" style="display:flex; flex-direction:column; align-items:center; text-align:center; background:#fff; border:1px solid #eee; border-radius:12px; padding:20px 16px; text-decoration:none; color:inherit; transition:box-shadow 0.2s; flex:1; min-width:180px; max-width:220px;">
-      <img src="/image/Renal%20care/pd-linepro-transparent.opt.webp" alt="PD-Linepro Blood Tubing Set" style="width:100px; height:100px; object-fit:contain; margin-bottom:12px;" width="1000" height="1000" data-sz>
-      <span style="font-size:0.9rem; font-weight:600; color:#0f1f4b; line-height:1.3;">PD-Linepro Blood Tubing Set</span>
-      <span style="font-size:0.8rem; color:#F07C2A; margin-top:8px; font-weight:500;">View Product →</span>
-    </a>
-    <a href="/renal-care/pd-cath/" style="display:flex; flex-direction:column; align-items:center; text-align:center; background:#fff; border:1px solid #eee; border-radius:12px; padding:20px 16px; text-decoration:none; color:inherit; transition:box-shadow 0.2s; flex:1; min-width:180px; max-width:220px;">
-      <img src="/image/Renal%20care/pd-cath-transparent.opt.webp" alt="PD-Cath Haemodialysis Catheter" style="width:100px; height:100px; object-fit:contain; margin-bottom:12px;" width="1000" height="1000" data-sz>
-      <span style="font-size:0.9rem; font-weight:600; color:#0f1f4b; line-height:1.3;">PD-Cath Haemodialysis Catheter</span>
-      <span style="font-size:0.8rem; color:#F07C2A; margin-top:8px; font-weight:500;">View Product →</span>
-    </a>
+  <section class="pdx-sec">
+    <div class="pdx-w">
+      <p class="pdx-eb" style="margin-bottom:8px">Complete the setup</p>
+      <p style="color:var(--n);font-size:clamp(22px,2.2vw,28px);font-weight:800;letter-spacing:-.01em;margin:0 0 24px">You May Also Need</p>
+      <div class="pdx-rel">
+        <a href="/renal-care/pdm-6000/"><img src="/image/Renal%20care/pdm-6000-precision-haemodialysis-system-transparent.opt.webp" alt="PDM-6000 Haemodialysis Machine" width="1254" height="1254" loading="lazy" decoding="async"><span><b>PDM-6000 Haemodialysis Machine</b><small>View product &rarr;</small></span></a>
+        <a href="/renal-care/pd-linepro/"><img src="/image/Renal%20care/pd-linepro-transparent.opt.webp" alt="PD-Linepro Blood Tubing Set" width="1000" height="1000" loading="lazy" decoding="async"><span><b>PD-Linepro Blood Tubing Set</b><small>View product &rarr;</small></span></a>
+        <a href="/renal-care/pd-cath/"><img src="/image/Renal%20care/pd-cath-transparent.opt.webp" alt="PD-Cath Haemodialysis Catheter" width="1000" height="1000" loading="lazy" decoding="async"><span><b>PD-Cath Haemodialysis Catheter</b><small>View product &rarr;</small></span></a>
       </div>
+      <!-- RELATED GUIDES -->
+      <div class="pdx-guides"><span>Related guides:</span><a href="/blog-how-dialysis-machine-works.html">How a Dialysis Machine Works: A Simple Step-by-Step Guide</a><a href="/blog-renal-care-dialysis-equipment-manufacturer-india.html">Renal Care / Dialysis Equipment Manufacturer in India</a><a href="/blog-dialysis-unit-setup-cost-india.html">Dialysis Unit Setup Cost in India</a><a href="/blog-dialyser-price-india.html">Dialyser Price in India and Dialysis Consumables Cost per Session</a></div>
+      <a class="pdx-back" href="/renal-care.html">&larr; Back to Renal Care</a>
     </div>
   </section>
-  <!-- RELATED GUIDES -->
-  <div style="max-width:1200px; margin:0 auto; padding:0 24px 20px; color:#444; font-size:15px; line-height:1.8;">
-    <span style="color:#0f1f4b; font-weight:700;">Related guides:</span> <a href="/blog-how-dialysis-machine-works.html" style="color:#1B2F6E; font-weight:600;">How a Dialysis Machine Works: A Simple Step-by-Step Guide</a> <span style="color:#c3cad8;">·</span> <a href="/blog-renal-care-dialysis-equipment-manufacturer-india.html" style="color:#1B2F6E; font-weight:600;">Renal Care / Dialysis Equipment Manufacturer in India</a> <span style="color:#c3cad8;">·</span> <a href="/blog-dialysis-unit-setup-cost-india.html" style="color:#1B2F6E; font-weight:600;">Dialysis Unit Setup Cost in India</a> <span style="color:#c3cad8;">·</span> <a href="/blog-dialyser-price-india.html" style="color:#1B2F6E; font-weight:600;">Dialyser Price in India and Dialysis Consumables Cost per Session</a>
-  </div>
-  <!-- BACK LINK -->
-  <div style="max-width:1200px; margin:0 auto; padding:0 24px 60px;">
-    <a href="/renal-care.html" style="color:#1B2F6E; font-weight:600; text-decoration:none;">
-      ← Back to Renal Care
-    </a>
-  </div>
+</div>
 
-  <section style="padding:72px 6%; background:#f8f9fc;">
+  <section class="pdx-faq" style="padding-left:6%; padding-right:6%;">
     <div class="faq-layout" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:360px 1fr; gap:60px; align-items:start;">
       <div>
         <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:16px;">Got Questions?</p>
-        <h2 style="font-size:clamp(24px,2.4vw,32px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">DialysersHigh-Efficiency Toxin Removal FAQs</h2>
+        <h2 style="font-size:clamp(24px,2.4vw,32px); font-weight:800; color:#0a1e40; line-height:1.15; margin:0;">Dialysers: FAQs</h2>
       </div>
       <div class="faq-accordion">
         <div class="faq-item">
