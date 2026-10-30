@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://www.pulseio.in/service-support.html"
+  <link rel="canonical" href="https://www.pulseio.in/service-support.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Pulse">
   <meta property="og:title" content="Service & Support: Manufacturing, R&D, Training | Pulse">
@@ -41,220 +41,93 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="/css/chatbot-widget.css">
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; color: #0a1e40; background: #ffffff; overflow-x: hidden; }
-
-    /* HERO */
-    .cat-hero {
-      background: #1B2F6E;
-      color: #fff;
-      padding: 120px 6% 80px;
-      position: relative;
-      overflow: hidden;
-    }
-    .cat-hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(27,47,110,0.95), rgba(232,119,34,0.3));
-      z-index: 0;
-    }
-    .cat-hero-content { position: relative; z-index: 1; max-width: 800px; }
-    
-    .cat-breadcrumb {
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .cat-breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
-    .cat-breadcrumb a:hover { color: #fff; }
-    .cat-breadcrumb span { color: rgba(255,255,255,0.3); }
-    
-    .cat-hero h1 {
-      font-size: clamp(36px, 4.5vw, 56px);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin-bottom: 20px;
-    }
-    .cat-hero p {
-      font-size: 18px;
-      line-height: 1.6;
-      opacity: 0.85;
-      max-width: 640px;
-    }
-
-    /* SECTION ANCHOR NAV */
-    .anchor-nav-wrapper {
-      background: #ffffff;
-      border-bottom: 1px solid #e4e7f2;
-      position: sticky;
-      top: 72px;
-      z-index: 99;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    }
-    .anchor-nav {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 4%;
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      align-items: center;
-      height: 64px;
-      gap: 0;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-      scrollbar-width: none;
-    }
-    .anchor-nav::-webkit-scrollbar {
-      display: none;
-    }
-    .anchor-link {
-      color: #4a4f70;
-      flex: 0 0 auto;
-      white-space: nowrap;
-      padding: 12px 20px;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      border-bottom: 2px solid transparent;
-      transition: all 0.3s ease;
-    }
-    .anchor-link:hover, .anchor-link.active {
-      border-bottom: 2px solid #1B2F6E;
-      color: #1B2F6E;
-    }
-
-    /* SECTIONS */
-    .support-section {
-      padding: 100px 6%;
-      position: relative;
-    }
-    .support-section:nth-of-type(even) {
-      background: #f8f9fc;
-    }
-    .support-section-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .section-header {
-      margin-bottom: 48px;
-    }
-    .section-label {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #E87722;
-      letter-spacing: 1.5px;
-      margin-bottom: 12px;
-      display: block;
-    }
-    .section-title {
-      font-size: clamp(26px, 3vw, 36px);
-      font-weight: 800;
-      color: #0a1e40;
-      letter-spacing: -0.02em;
-    }
-
-    /* CARDS GRID */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 28px;
-    }
-    .service-card {
-      background: #ffffff;
-      border: 1.5px solid #e4e7f2;
-      border-radius: 12px;
-      padding: 32px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-    }
-    .support-section:nth-of-type(even) .service-card {
-      background: #ffffff;
-    }
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(27,47,110,0.08);
-      border-color: #1B2F6E;
-    }
-    .card-num {
-      font-size: 48px;
-      font-weight: 800;
-      color: rgba(27,47,110,0.05);
-      position: absolute;
-      top: 16px;
-      right: 24px;
-      user-select: none;
-      transition: color 0.3s ease;
-    }
-    .service-card:hover .card-num {
-      color: rgba(232,119,34,0.1);
-    }
-    .card-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 10px;
-      background: rgba(27,47,110,0.05);
-      color: #1B2F6E;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 24px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .service-card:hover .card-icon {
-      background: #1B2F6E;
-      color: #ffffff;
-    }
-    .card-icon svg {
-      width: 24px;
-      height: 24px;
-    }
-    .card-title {
-      font-size: 18px;
-      font-weight: 700;
-      color: #0a1e40;
-      margin-bottom: 12px;
-      line-height: 1.35;
-      max-width: 80%;
-    }
-    .card-desc {
-      font-size: 14.5px;
-      color: #4a4f70;
-      line-height: 1.6;
-    }
-
-    /* Floating / Extra elements styling from main site */
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (max-width: 768px) {
-      .anchor-nav-wrapper { top: 60px; }
-      .support-section { padding: 60px 5%; }
-      .cards-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/corp-premium.css">
 <style id="img-dims">:where(img[data-sz]){height:auto}</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.pulseio.in/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Service & Support",
+     "item": "https://www.pulseio.in/service-support.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What services does Pulse offer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pulse covers the full life of a medical device. We design it, make it with trusted partner factories in India, help with approval paperwork, then deliver, install, train your staff and keep it running with AMC and CMC plans."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Pulse install the equipment it sells?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Our engineers install each device at your site, check that it works as it should, and show your staff how to use it safely."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between an AMC and a CMC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An AMC (annual maintenance contract) covers planned check-ups and the labour for repairs. A CMC (comprehensive maintenance contract) also covers most spare parts. Consumables are usually not part of either. Exact terms depend on the device, so ask us for the plan that fits yours."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you train doctors, nurses and technicians?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Hands-on training is part of every installation, for doctors, nurses and biomedical technicians. Refresher sessions can be added with a service plan."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Pulse make devices for other brands (OEM or ODM)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We take on OEM and ODM work, from custom design and samples to first batches and large orders, made with our partner factories in India. Share your needs through the quote form."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can Pulse help with CDSCO, ISO or CE paperwork?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We help prepare the technical papers and support certificates such as ISO 13485, CE and GMP. The approval itself is given by the regulator or the certifying body. See our quality and compliance page for more."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I ask for service or a repair?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Call +91 90711 01108, email info@pulseio.in, or use the Talk to Our Team form on this site. Share the device name, its serial number and what went wrong, and we will get back to you within one working day."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -264,283 +137,208 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div id="global-header"></div>
 
-  <!-- HERO -->
-  <section class="cat-hero">
-    <div class="cat-hero-content">
-      <div class="cat-breadcrumb">
-        <a href="/">Home</a>
-        <span>&rsaquo;</span>
-        Support
+  <section class="cp-hero">
+    <div class="cp-wrap cp-hero-grid">
+      <div>
+        <div class="cp-crumb"><a href="/">Home</a><span>&rsaquo;</span>Service &amp; Support</div>
+        <span class="cp-eyebrow">Service &amp; Support</span>
+        <h1 style="margin-top:18px">Our Services: From Design to <em>After&#8209;Sales Care</em></h1>
+        <p class="cp-hero-lead">We help at every step of a medical device's life. We design it, make it, test it, install it and look after it in your hospital.</p>
+        <div class="cp-hero-ctas">
+          <a href="/request-a-quote.html" class="cp-btn cp-btn-primary" data-quote="Service enquiry">Get a Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="/contact.html" class="cp-btn cp-btn-ghost" onclick="return pulseContact()">Talk to Our Team</a>
+        </div>
+        <ul class="cp-chips"><li>Made in India</li><li>Installation &amp; training</li><li>AMC &amp; CMC plans</li><li>OEM &amp; ODM</li></ul>
       </div>
-      <h1>Our Services: From Design to After-Sales Care</h1>
-      <p>We help at every step of a medical device's life. We design it, make it, test it, install it and look after it in your hospital.</p>
+      <div class="cp-hero-media">
+        <img src="image/Design to delivery/after-sales-service.webp" alt="Pulse service engineer checking a medical device at a clinic" width="1011" height="564" fetchpriority="high" data-sz>
+        <div class="cp-hero-badge"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></i><div><b>One partner, one contact</b><span>From the first design to service years later.</span></div></div>
+      </div>
     </div>
   </section>
 
-  <!-- SECTION ANCHOR NAV -->
-  <div class="anchor-nav-wrapper">
-    <div class="anchor-nav">
-      <a href="#manufacturing" class="anchor-link active">Making the Devices</a>
-      <a href="#research" class="anchor-link">Design and New Ideas</a>
-      <a href="#regulatory" class="anchor-link">Rules and Quality</a>
-      <a href="#customer" class="anchor-link">Support and Training</a>
+  <section class="cp-steps-sec">
+    <div class="cp-wrap">
+      <div class="cp-steps-head reveal">
+        <div><span class="cp-eyebrow">How we work</span><h2 class="cp-h2">One partner for the whole life of a device</h2></div>
+        <p class="cp-lead">No need to deal with a maker, a dealer and a separate repair firm. Pulse handles each step and stays accountable for the device.</p>
+      </div>
+      <ol class="cp-steps" style="--n:5">
+        <li class="reveal"><a href="#research"><div class="cp-step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><small></small><h3>Design</h3><p>We shape the device around how your team works.</p></a></li>
+        <li class="reveal"><a href="#manufacturing"><div class="cp-step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M20 20V8l-6 4V8l-6 4V4L2 8v12"/></svg></div><small></small><h3>Make</h3><p>Built with trusted partner factories in India.</p></a></li>
+        <li class="reveal"><a href="#regulatory"><div class="cp-step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><small></small><h3>Check</h3><p>Tested and backed by the right papers.</p></a></li>
+        <li class="reveal"><a href="#customer"><div class="cp-step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><small></small><h3>Install & train</h3><p>Set up at your site, with hands-on training.</p></a></li>
+        <li class="reveal"><a href="#customer"><div class="cp-step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><small></small><h3>Service</h3><p>AMC and CMC plans keep it running for years.</p></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="cp-anchor">
+    <div class="cp-anchor-in" role="navigation" aria-label="On this page">
+      <a href="#manufacturing">Making the Devices</a>
+      <a href="#research">Design and New Ideas</a>
+      <a href="#regulatory">Rules and Quality</a>
+      <a href="#customer">Support and Training</a>
+      <a href="#faqs">FAQs</a>
     </div>
   </div>
 
-  <!-- SECTION 1 — MANUFACTURING & PRODUCTION -->
-  <section class="support-section" id="manufacturing">
-    <div class="support-section-inner">
-      <div class="section-header reveal">
-        <span class="section-label">Section 1</span>
-        <h2 class="section-title">Making the Devices</h2>
+  <section class="cp-block" id="manufacturing">
+    <div class="cp-wrap cp-block-grid">
+      <div class="cp-block-side reveal">
+        <div class="cp-block-num">01</div>
+        <span class="cp-eyebrow">Production</span>
+        <h2 class="cp-h2">Making the Devices</h2>
+        <p class="cp-text">We make devices with a network of trusted partner factories in India. You get one point of contact, from the first sample to large orders.</p>
+          <figure><img src="image/Design to delivery/manufacturing.webp" alt="Medical devices being assembled on a production line in India" width="960" height="536" loading="lazy" decoding="async" data-sz></figure>
       </div>
-
-      <div class="cards-grid">
-        <!-- Card 1 -->
-        <div class="service-card reveal">
-          <div class="card-num">01</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 20h20M20 20V8l-6 4V8l-6 4V4L2 8v12"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Full Device Production</h3>
-          <p class="card-desc">Well-made devices for care where every detail counts.</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="service-card reveal">
-          <div class="card-num">02</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
-              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
-          </div>
-          <h3 class="card-title">OEM and ODM Contract Work</h3>
-          <p class="card-desc">We make custom devices for other brands at a fair cost.</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="service-card reveal">
-          <div class="card-num">03</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Custom Design</h3>
-          <p class="card-desc">We shape a product to fit what your hospital or clinic needs.</p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="service-card reveal">
-          <div class="card-num">04</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-              <line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Samples and First Batches</h3>
-          <p class="card-desc">We turn an idea into a working sample, then get it ready to make in large numbers.</p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="service-card reveal">
-          <div class="card-num">05</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Sterile, Safe Packing</h3>
-          <p class="card-desc">Packing that keeps each device safe, clean and in date.</p>
+      <div>
+        <div class="cp-cards">
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M2 20h20M20 20V8l-6 4V8l-6 4V4L2 8v12"/> </svg></div><h3>Full Device Production</h3><p>Well-made devices for care where every detail counts.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/> <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/> </svg></div><h3>OEM and ODM Contract Work</h3><p>We make custom devices for other brands at a fair cost.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/> </svg></div><h3>Custom Design</h3><p>We shape a product to fit what your hospital or clinic needs.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/> <polyline points="3.27 6.96 12 12.01 20.73 6.96"/> <line x1="12" y1="22.08" x2="12" y2="12"/> </svg></div><h3>Samples and First Batches</h3><p>We turn an idea into a working sample, then get it ready to make in large numbers.</p></div>
+          <div class="cp-card reveal wide"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/> </svg></div><h3>Sterile, Safe Packing</h3><p>Packing that keeps each device safe, clean and in date.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 2 — RESEARCH & INNOVATION -->
-  <section class="support-section" id="research">
-    <div class="support-section-inner">
-      <div class="section-header reveal">
-        <span class="section-label">Section 2</span>
-        <h2 class="section-title">Design and New Ideas</h2>
+  <section class="cp-block" id="research">
+    <div class="cp-wrap cp-block-grid">
+      <div class="cp-block-side reveal">
+        <div class="cp-block-num">02</div>
+        <span class="cp-eyebrow">Design</span>
+        <h2 class="cp-h2">Design and New Ideas</h2>
+        <p class="cp-text">Our design team, with our R&amp;D hub at AMTZ, Visakhapatnam, improves proven devices so they suit Indian hospitals and budgets. <a href="/innovation.html">See how we innovate</a>.</p>
       </div>
-
-      <div class="cards-grid">
-        <!-- Card 1 -->
-        <div class="service-card reveal">
-          <div class="card-num">01</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="4" width="16" height="16" rx="2"/>
-              <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Devices That Fit In</h3>
-          <p class="card-desc">We design devices that work smoothly with the systems your hospital already uses.</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="service-card reveal">
-          <div class="card-num">02</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16.3 11c.9-1.2 1.4-2.7 1.4-4.3c0-3.7-3-6.7-6.7-6.7S4.3 3 4.3 6.7c0 1.6.5 3.1 1.4 4.3l-2.4 8.2c-.3.9.4 1.8 1.4 1.8h14.6c1 0 1.7-.9 1.4-1.8l-2.4-8.2z"/>
-              <path d="M8.3 6.7c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7S12.5 9.4 11 9.4s-2.7-1.2-2.7-2.7z"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Research With Partners</h3>
-          <p class="card-desc">We work with hospitals and research groups to build new tools together.</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="service-card reveal">
-          <div class="card-num">03</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 20a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-              <path d="M9 9l6 6M18 14v6M15 17h6"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Smart and Connected Devices</h3>
-          <p class="card-desc">Devices that share data and use AI to help staff.</p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="service-card reveal">
-          <div class="card-num">04</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Testing in Real Use</h3>
-          <p class="card-desc">We check that each device is safe, exact and meets the rules at each step.</p>
+      <div>
+        <div class="cp-cards">
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="4" y="4" width="16" height="16" rx="2"/> <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/> </svg></div><h3>Devices That Fit In</h3><p>We design devices that work smoothly with the systems your hospital already uses.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M16.3 11c.9-1.2 1.4-2.7 1.4-4.3c0-3.7-3-6.7-6.7-6.7S4.3 3 4.3 6.7c0 1.6.5 3.1 1.4 4.3l-2.4 8.2c-.3.9.4 1.8 1.4 1.8h14.6c1 0 1.7-.9 1.4-1.8l-2.4-8.2z"/> <path d="M8.3 6.7c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7S12.5 9.4 11 9.4s-2.7-1.2-2.7-2.7z"/> </svg></div><h3>Research With Partners</h3><p>We work with hospitals and research groups to build new tools together.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M18 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 20a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> <path d="M9 9l6 6M18 14v6M15 17h6"/> </svg></div><h3>Smart and Connected Devices</h3><p>Devices that share data and use AI to help staff.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M22 12h-4l-3 9L9 3l-3 9H2"/> </svg></div><h3>Testing in Real Use</h3><p>We check that each device is safe, exact and meets the rules at each step.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 3 — REGULATORY & QUALITY ASSURANCE -->
-  <section class="support-section" id="regulatory">
-    <div class="support-section-inner">
-      <div class="section-header reveal">
-        <span class="section-label">Section 3</span>
-        <h2 class="section-title">Rules and Quality</h2>
+  <section class="cp-block" id="regulatory">
+    <div class="cp-wrap cp-block-grid">
+      <div class="cp-block-side reveal">
+        <div class="cp-block-num">03</div>
+        <span class="cp-eyebrow">Compliance</span>
+        <h2 class="cp-h2">Rules and Quality</h2>
+        <p class="cp-text">Every device needs the right papers before it can be sold. We help prepare them and check each batch. <a href="/quality.html">Read about our quality checks</a>.</p>
       </div>
-
-      <div class="cards-grid">
-        <!-- Card 1 -->
-        <div class="service-card reveal">
-          <div class="card-num">01</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <polyline points="10 9 9 9 8 9"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Paperwork for Approval</h3>
-          <p class="card-desc">We prepare the papers needed to sell in India and abroad.</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="service-card reveal">
-          <div class="card-num">02</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="8" r="7"/>
-              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Help With Certificates</h3>
-          <p class="card-desc">Help to get ISO, CE and GMP approvals.</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="service-card reveal">
-          <div class="card-num">03</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <circle cx="12" cy="11" r="3"/>
-              <path d="M12 2v3M12 17v3M5 12h3M16 12h3"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Safety Checks</h3>
-          <p class="card-desc">Strict safety checks, and tuning so readings stay right.</p>
+      <div>
+        <div class="cp-cards">
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/> <polyline points="14 2 14 8 20 8"/> <line x1="16" y1="13" x2="8" y2="13"/> <line x1="16" y1="17" x2="8" y2="17"/> <polyline points="10 9 9 9 8 9"/> </svg></div><h3>Paperwork for Approval</h3><p>We prepare the papers needed to sell in India and abroad.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="8" r="7"/> <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/> </svg></div><h3>Help With Certificates</h3><p>Help to get ISO, CE and GMP approvals.</p></div>
+          <div class="cp-card reveal wide"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/> <circle cx="12" cy="11" r="3"/> <path d="M12 2v3M12 17v3M5 12h3M16 12h3"/> </svg></div><h3>Safety Checks</h3><p>Strict safety checks, and tuning so readings stay right.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 4 — CUSTOMER SUPPORT & TRAINING -->
-  <section class="support-section" id="customer">
-    <div class="support-section-inner">
-      <div class="section-header reveal">
-        <span class="section-label">Section 4</span>
-        <h2 class="section-title">Support and Training</h2>
+  <section class="cp-block" id="customer">
+    <div class="cp-wrap cp-block-grid">
+      <div class="cp-block-side reveal">
+        <div class="cp-block-num">04</div>
+        <span class="cp-eyebrow">After-sales</span>
+        <h2 class="cp-h2">Support and Training</h2>
+        <p class="cp-text">Buying a device is only the start. We install it, train your staff and keep it running. <a href="/blog-after-sales-service-medical-equipment.html">What good after-sales service looks like</a>.</p>
+          <figure><img src="image/Design to delivery/delivery-installation.webp" alt="Pulse engineers installing a ventilator in a hospital ward" width="860" height="480" loading="lazy" decoding="async" data-sz></figure>
       </div>
-
-      <div class="cards-grid">
-        <!-- Card 1 -->
-        <div class="service-card reveal">
-          <div class="card-num">01</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Setup at Your Site</h3>
-          <p class="card-desc">We install each device and get it running.</p>
+      <div>
+        <div class="cp-cards">
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/> </svg></div><h3>Setup at Your Site</h3><p>We install each device and get it running.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1H20v21H6.5"/> </svg></div><h3>Staff Training</h3><p>Hands-on training for doctors, nurses and technicians.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/> <line x1="16" y1="2" x2="16" y2="6"/> <line x1="8" y1="2" x2="8" y2="6"/> <line x1="3" y1="10" x2="21" y2="10"/> <path d="m9 16 2 2 4-4"/> </svg></div><h3>Yearly Service Plans</h3><p>AMC and CMC plans keep devices working well for years.</p></div>
+          <div class="cp-card reveal"><div class="cp-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/> <path d="M12 7v5l3 3"/> </svg></div><h3>Help On Site or by Phone</h3><p>Fast service, repairs and spare parts.</p></div>
         </div>
-
-        <!-- Card 2 -->
-        <div class="service-card reveal">
-          <div class="card-num">02</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1H20v21H6.5"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Staff Training</h3>
-          <p class="card-desc">Hands-on training for doctors, nurses and technicians.</p>
+        <div class="cp-table-wrap reveal">
+          <h3>AMC vs CMC: what each plan covers</h3>
+          <p>A simple guide. Exact terms depend on the device and the contract.</p>
+          <table class="cp-table">
+            <thead><tr><th>What is covered</th><th>AMC</th><th>CMC</th></tr></thead>
+            <tbody>
+              <tr><td>Planned check-ups</td><td class="cp-yes">Included</td><td class="cp-yes">Included</td></tr>
+              <tr><td>Labour for repairs</td><td class="cp-yes">Included</td><td class="cp-yes">Included</td></tr>
+              <tr><td>Spare parts</td><td>Paid separately</td><td class="cp-yes">Most parts included</td></tr>
+              <tr><td>Consumables</td><td>Not included</td><td>Usually not included</td></tr>
+              <tr><td>Best for</td><td>Newer devices</td><td>Older or heavily used devices</td></tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Card 3 -->
-        <div class="service-card reveal">
-          <div class="card-num">03</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-              <line x1="16" y1="2" x2="16" y2="6"/>
-              <line x1="8" y1="2" x2="8" y2="6"/>
-              <line x1="3" y1="10" x2="21" y2="10"/>
-              <path d="m9 16 2 2 4-4"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Yearly Service Plans</h3>
-          <p class="card-desc">AMC and CMC plans keep devices working well for years.</p>
+  <section class="cp-faq" id="faqs">
+    <div class="cp-wrap faq-layout">
+      <div class="faq-side reveal">
+        <span class="cp-eyebrow">FAQs</span>
+        <h2 class="cp-h2">Service and support questions</h2>
+        <p class="cp-text">Quick answers about installation, training, service plans and OEM work.</p>
+        <div class="faq-help">
+          <b>Still have a question?</b>
+          <p>Our team replies within one working day.</p>
+          <a href="tel:+919071101108">+91 90711 01108</a>
+          <a href="mailto:info@pulseio.in">info@pulseio.in</a>
+          <a href="/contact.html" onclick="return pulseContact()">Talk to Our Team &rarr;</a>
         </div>
-
-        <!-- Card 4 -->
-        <div class="service-card reveal">
-          <div class="card-num">04</div>
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              <path d="M12 7v5l3 3"/>
-            </svg>
-          </div>
-          <h3 class="card-title">Help On Site or by Phone</h3>
-          <p class="card-desc">Fast service, repairs and spare parts.</p>
-        </div>
+      </div>
+      <div class="faq-accordion reveal">
+      <div class="faq-item">
+        <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+          <span>What services does Pulse offer?</span>
+          <span class="faq-icon">+</span>
+        </button></h3>
+        <div class="faq-a"><p>Pulse covers the full life of a medical device. We design it, make it with trusted partner factories in India, help with approval paperwork, then deliver, install, train your staff and keep it running with AMC and CMC plans.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+          <span>Does Pulse install the equipment it sells?</span>
+          <span class="faq-icon">+</span>
+        </button></h3>
+        <div class="faq-a"><p>Yes. Our engineers install each device at your site, check that it works as it should, and show your staff how to use it safely.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+          <span>What is the difference between an AMC and a CMC?</span>
+          <span class="faq-icon">+</span>
+        </button></h3>
+        <div class="faq-a"><p>An AMC (annual maintenance contract) covers planned check-ups and the labour for repairs. A CMC (comprehensive maintenance contract) also covers most spare parts. Consumables are usually not part of either. Exact terms depend on the device, so ask us for the plan that fits yours.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+          <span>Do you train doctors, nurses and technicians?</span>
+          <span class="faq-icon">+</span>
+        </button></h3>
+        <div class="faq-a"><p>Yes. Hands-on training is part of every installation, for doctors, nurses and biomedical technicians. Refresher sessions can be added with a service plan.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+          <span>Does Pulse make devices for other brands (OEM or ODM)?</span>
+          <span class="faq-icon">+</span>
+        </button></h3>
+        <div class="faq-a"><p>Yes. We take on OEM and ODM work, from custom design and samples to first batches and large orders, made with our partner factories in India. Share your needs through the <a href="/request-a-quote.html">quote form</a>.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+          <span>Can Pulse help with CDSCO, ISO or CE paperwork?</span>
+          <span class="faq-icon">+</span>
+        </button></h3>
+        <div class="faq-a"><p>Yes. We help prepare the technical papers and support certificates such as ISO 13485, CE and GMP. The approval itself is given by the regulator or the certifying body. See our <a href="/quality.html">quality and compliance</a> page for more.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">
+          <span>How do I ask for service or a repair?</span>
+          <span class="faq-icon">+</span>
+        </button></h3>
+        <div class="faq-a"><p>Call +91 90711 01108, email info@pulseio.in, or use the Talk to Our Team form on this site. Share the device name, its serial number and what went wrong, and we will get back to you within one working day.</p></div>
+      </div>
       </div>
     </div>
   </section>
@@ -550,55 +348,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
-
   <script>
-    // Robust Scroll Reveal
-    document.addEventListener('DOMContentLoaded', () => {
-      const reveals = document.querySelectorAll('.reveal');
-      
-      if (!('IntersectionObserver' in window)) {
-        reveals.forEach(el => el.classList.add('visible'));
-        return;
-      }
-
-      const revealObs = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            revealObs.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.1 });
-
-      reveals.forEach(el => revealObs.observe(el));
-
-      // Scroll Spy for Anchor Navigation
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.anchor-link');
-
-      const handleScrollSpy = () => {
-        let current = '';
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop - 160; // offset for sticky nav + header
-          if (scrollPosition >= sectionTop) {
-            current = section.getAttribute('id');
-          }
-        });
-
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-          }
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('visible'); }); }
+    else {
+      var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }); }, { threshold: 0.08 });
+      els.forEach(function (e) { io.observe(e); });
+    }
+    var links = document.querySelectorAll('.cp-anchor a');
+    if (links.length) {
+      var secs = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute('href')); });
+      var spy = function () {
+        var y = window.pageYOffset + 170, cur = -1;
+        secs.forEach(function (s, i) { if (s && s.offsetTop <= y) cur = i; });
+        links.forEach(function (a, i) { a.classList.toggle('active', i === cur); });
       };
-
-      window.addEventListener('scroll', handleScrollSpy);
-      handleScrollSpy(); // Initial call
-    });
+      window.addEventListener('scroll', spy, { passive: true }); spy();
+    }
+  });
   </script>
+
 <!-- AI CHATBOT WIDGET -->
 <div class="chat-welcome-pill" id="chat-welcome-pill">Welcome to Pulse, How may I help you?</div>
 <div class="chat-hi-bubble" id="chat-hi-bubble"><span class="chat-hi-text">Hi!</span><span class="chat-hi-wave">👋</span></div>
