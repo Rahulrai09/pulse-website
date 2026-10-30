@@ -326,6 +326,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     transition: color 0.2s;
   }
   .logo-placeholder:hover { color: var(--accent); }
+  a.logo-link { display:inline-flex; align-items:center; border-radius:8px; transition: transform .2s, opacity .2s; }
+  a.logo-link img { transition: transform .2s; }
+  a.logo-link:hover img { transform: translateY(-2px) scale(1.04); }
+  a.logo-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
   /* ── SHARED SECTION ── */
   section { padding: 100px 60px; }
@@ -2559,15 +2563,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "funder": [
     {
       "@type": "Organization",
-      "name": "3one4 Capital"
+      "name": "3one4 Capital",
+      "url": "https://www.3one4capital.com/"
     },
     {
       "@type": "Organization",
-      "name": "Incubate Fund Asia"
+      "name": "Incubate Fund Asia",
+      "url": "https://incubatefund.in/"
     },
     {
       "@type": "Organization",
-      "name": "Stride Ventures"
+      "name": "Stride Ventures",
+      "url": "https://strideventures.in/"
     }
   ]
 }
@@ -2720,9 +2727,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="logos-strip reveal">
   <span class="logos-strip-label">Backed by</span>
   <div class="logo-items">
-    <span class="logo-placeholder"><img src="image/3ONE4 CAPITAL.png" alt="3ONE4 Capital" style="max-height: 32px; width: auto;" width="291" height="84" data-sz></span>
-    <span class="logo-placeholder"><img src="image/INCUBATE FUND.png" alt="Incubate Fund Asia" style="max-height: 32px; width: auto;" width="333" height="83" data-sz></span>
-    <span class="logo-placeholder"><img src="image/stride-ventures.opt.webp" alt="Stride Ventures" style="max-height: 32px; width: auto;" width="357" height="110" data-sz></span>
+    <a class="logo-placeholder logo-link" href="https://www.3one4capital.com/blogs/pulse-raises-4-million-building-a-tech-enabled-full-stack-horizontal-medical-equipment-oem-brand" target="_blank" rel="noopener" title="Read 3one4 Capital’s post on investing in Pulse" aria-label="Read 3one4 Capital’s post on investing in Pulse (opens in a new tab)"><img src="image/3ONE4 CAPITAL.png" alt="3ONE4 Capital" style="max-height: 32px; width: auto;" width="291" height="84" data-sz></a>
+    <a class="logo-placeholder logo-link" href="https://incubatefund.in/news/medical-equipment-startup-pulse-raises-4-million-in-round-led-by-3one4-capital/" target="_blank" rel="noopener" title="Read Incubate Fund’s news on Pulse" aria-label="Read Incubate Fund’s news on Pulse (opens in a new tab)"><img src="image/INCUBATE FUND.png" alt="Incubate Fund Asia" style="max-height: 32px; width: auto;" width="333" height="83" data-sz></a>
+    <a class="logo-placeholder logo-link" href="https://inc42.com/buzz/pulse-raises-4-mn-to-build-full-stack-medical-equipment-manufacturing-brand/" target="_blank" rel="noopener" title="Read the Inc42 story on Pulse’s funding with Stride Ventures" aria-label="Read the Inc42 story on Pulse’s funding with Stride Ventures (opens in a new tab)"><img src="image/stride-ventures.opt.webp" alt="Stride Ventures" style="max-height: 32px; width: auto;" width="357" height="110" data-sz></a>
   </div>
 </div>
 
