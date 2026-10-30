@@ -2398,5 +2398,15 @@
         }
       ]
     }
-  ]
+  ],
+  "proxy": {
+    "entrypoint": "proxy.js",
+    "matcher": [
+      "/prizes/:path+",
+      "/products/:path+",
+      "/shop/:path+",
+      "/toyu/:path+",
+      "/event/:path+"
+    ]
+  }
 }
