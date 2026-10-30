@@ -208,3 +208,6 @@ Every Pulse product page, by category. Each page has specifications, a buyer gui
 
 ## Press
 - [Pulse in the News: every story on Pulse in 2026](https://www.pulseio.in/blog-pulse-in-the-news-press-coverage-2026.html): press coverage roundup (ET, Inc42, BioSpectrum, Entrackr, Entrepreneur India, BioVoice, Venture Intelligence)
+- [Pulse at WHX Dubai 2026: Made-in-India Medical Equipment on the World Stage](https://www.pulseio.in/blog-pulse-whx-dubai-2026.html)
+- [Pulse at MedExpo Africa 2026: Opening Doors in East Africa](https://www.pulseio.in/blog-pulse-medexpo-africa-2026.html)
+- [Pulse in Japan: Building Bridges at 3one4 Emergent Japan](https://www.pulseio.in/blog-pulse-3one4-emergent-japan-2026.html)

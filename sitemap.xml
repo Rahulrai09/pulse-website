@@ -1392,4 +1392,25 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Balloon%20Inflation%20Device%20Price%20inner%20banner.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-pulse-whx-dubai-2026.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Events/pulse-whx-dubai-2026-dubai-exhibition-centre.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-pulse-medexpo-africa-2026.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Events/pulse-medexpo-africa-2026-booth.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-pulse-3one4-emergent-japan-2026.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Events/pulse-3one4-emergent-japan-2026.webp</image:loc></image:image>
+  </url>
 </urlset>
