@@ -66,18 +66,19 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:#0a1e
 .cp-steps p{font-size:14.5px;color:var(--muted);line-height:1.55}
 
 /* Sticky anchor nav */
-.cp-anchor{position:sticky;top:72px;z-index:99;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.cp-anchor{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
 .cp-anchor-in{display:flex;gap:6px;justify-content:center;padding:12px 5%;overflow-x:auto;scrollbar-width:none}
 .cp-anchor-in::-webkit-scrollbar{display:none}
-.cp-anchor a{white-space:nowrap;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;padding:9px 16px;border-radius:999px;transition:all .2s}
-.cp-anchor a:hover{color:var(--navy);background:var(--soft)}
+.cp-anchor a{white-space:nowrap;font-size:14px;font-weight:600;color:var(--navy);text-decoration:none;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;transition:all .2s}
+.cp-anchor a:hover{border-color:var(--navy);background:var(--soft)}
+.cp-anchor a.active{border-color:var(--navy)}
 .cp-anchor a.active{color:#fff;background:var(--navy)}
 
 /* Service blocks */
-.cp-block{padding:100px 0;scroll-margin-top:130px}
+.cp-block{padding:100px 0;scroll-margin-top:66px}
 .cp-block:nth-of-type(even){background:var(--soft)}
 .cp-block-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
-.cp-block-side{position:sticky;top:150px}
+.cp-block-side{position:sticky;top:96px}
 .cp-block-num{font-size:84px;font-weight:800;line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px #cdd4e8;margin-bottom:8px}
 .cp-block-side .cp-text{font-size:16.5px;color:var(--muted);margin-bottom:26px}
 .cp-block-side figure img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:16px;box-shadow:0 24px 48px -24px rgba(10,30,64,.4)}
@@ -128,9 +129,9 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:#0a1e
 .cp-area:hover h3{color:#fff}.cp-area:hover p{color:rgba(255,255,255,.75)}
 
 /* FAQ */
-.cp-faq{padding:100px 0;scroll-margin-top:130px}
+.cp-faq{padding:100px 0;scroll-margin-top:66px}
 .faq-layout{display:grid;grid-template-columns:380px 1fr;gap:72px;align-items:start}
-.faq-side{position:sticky;top:150px}
+.faq-side{position:sticky;top:96px}
 .faq-side .cp-text{color:var(--muted);font-size:16px;margin-bottom:24px}
 .faq-help{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--soft)}
 .faq-help b{display:block;font-size:15px;margin-bottom:4px}
@@ -171,7 +172,6 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:#0a1e
   .cp-areas{grid-template-columns:repeat(2,1fr)}
   .cp-steps{grid-template-columns:repeat(2,1fr);row-gap:32px}
   .cp-steps::before{display:none}
-  .cp-anchor{top:60px}
   .cp-steps-head{grid-template-columns:1fr;gap:16px}
 }
 @media (max-width:640px){
