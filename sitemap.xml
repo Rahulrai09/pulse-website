@@ -1471,4 +1471,11 @@
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pathology%20Lab%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-cath-lab-setup-cost-india.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Cath%20Lab%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
+  </url>
 </urlset>
