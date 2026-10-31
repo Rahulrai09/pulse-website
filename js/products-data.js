@@ -41,6 +41,82 @@ window.allProducts = [
     }
   },
   {
+    "id": "evrosure-stent",
+    "name": "Pulse EvroSure Everolimus Stent",
+    "category": "DRUG ELUTING STENTS",
+    "categoryUrl": "/cardiac-care.html",
+    "type": "stent",
+    "image": "/image/Portfolio/cardiac-care.webp",
+    "description": "Cobalt chromium everolimus-eluting coronary stent with thin 59 µm struts, a hybrid cell design and a biodegradable polymer that fully breaks down in 6 to 7 weeks.",
+    "tags": [
+      "59µm Strut",
+      "Everolimus",
+      "Cobalt Chromium"
+    ],
+    "specs": {
+      "Feature 1": "59µm Strut",
+      "Feature 2": "Everolimus",
+      "Feature 3": "Cobalt Chromium"
+    }
+  },
+  {
+    "id": "medsure-stent",
+    "name": "Pulse MedSure Sirolimus Stent",
+    "category": "DRUG ELUTING STENTS",
+    "categoryUrl": "/cardiac-care.html",
+    "type": "stent",
+    "image": "/image/Portfolio/cardiac-care.webp",
+    "description": "Cobalt chromium sirolimus-eluting coronary stent with 59 µm struts and open mid-segment cells for easier side-branch access.",
+    "tags": [
+      "59µm Strut",
+      "Sirolimus",
+      "Side-Branch Access"
+    ],
+    "specs": {
+      "Feature 1": "59µm Strut",
+      "Feature 2": "Sirolimus",
+      "Feature 3": "Side-Branch Access"
+    }
+  },
+  {
+    "id": "mamba-drug-coated-balloon",
+    "name": "Pulse Mamba Drug-Coated Balloon",
+    "category": "PTCA BALLOONS",
+    "categoryUrl": "/cardiac-care.html",
+    "type": "balloon",
+    "image": "/image/Portfolio/cardiac-care.webp",
+    "description": "Sirolimus-coated PTCA balloon catheter (2.75 µg/mm²) that delivers the drug into the artery wall without leaving a stent behind.",
+    "tags": [
+      "Sirolimus DCB",
+      "Semi-Compliant",
+      "1.5–4.0 mm"
+    ],
+    "specs": {
+      "Feature 1": "Sirolimus DCB",
+      "Feature 2": "Semi-Compliant",
+      "Feature 3": "1.5–4.0 mm"
+    }
+  },
+  {
+    "id": "glider-ptca-balloon",
+    "name": "Pulse Glider PTCA Balloons",
+    "category": "PTCA BALLOONS",
+    "categoryUrl": "/cardiac-care.html",
+    "type": "balloon",
+    "image": "/image/Portfolio/cardiac-care.webp",
+    "description": "Rapid exchange PTCA balloon dilatation catheter in semi-compliant (SC), non-compliant (NC) and CTO versions, from 1.00 to 4.00 mm.",
+    "tags": [
+      "SC / NC / CTO",
+      "Nylon Balloon",
+      "1.0–4.0 mm"
+    ],
+    "specs": {
+      "Feature 1": "SC / NC / CTO",
+      "Feature 2": "Nylon Balloon",
+      "Feature 3": "1.0–4.0 mm"
+    }
+  },
+  {
     "id": "evera-everolimus-eluting-stent",
     "name": "Pulse EVERA Everolimus Eluting Stent",
     "category": "DRUG ELUTING STENTS",

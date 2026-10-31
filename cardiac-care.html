@@ -471,7 +471,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "name": "What does Pulse offer in its cardiac care range?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pulse supplies cath lab consumables for interventional cardiology, including drug-eluting stents (sirolimus and everolimus), PTCA balloon accessories, guidewires, introducer sheaths, and manifolds."
+          "text": "Pulse supplies cath lab consumables for interventional cardiology, including drug-eluting stents (sirolimus and everolimus), PTCA balloons (SC, NC, CTO and drug-coated), PTCA balloon accessories, guidewires, introducer sheaths, and manifolds."
         }
       },
       {
@@ -624,6 +624,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "position": 8,
         "name": "Pulse Sirova Sirolimus Stent",
         "url": "https://www.pulseio.in/cardiac-care/sirova-stent/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Pulse EvroSure Everolimus Stent",
+        "url": "https://www.pulseio.in/cardiac-care/evrosure-stent/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Pulse MedSure Sirolimus Stent",
+        "url": "https://www.pulseio.in/cardiac-care/medsure-stent/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "Pulse Mamba Drug-Coated Balloon",
+        "url": "https://www.pulseio.in/cardiac-care/mamba-drug-coated-balloon/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "name": "Pulse Glider PTCA Balloon (SC, NC, CTO)",
+        "url": "https://www.pulseio.in/cardiac-care/glider-ptca-balloon/"
       }
     ]
   }
@@ -671,7 +695,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Cardiac Care
       </div>
       <h1>Cardiac Care</h1>
-      <p>Cath lab consumables for interventional cardiology. We supply drug-eluting stents, PTCA inflation kits, guidewires, introducer and micro-access kits, and manifolds.</p>
+      <p>Cath lab consumables for interventional cardiology. We supply drug-eluting stents, PTCA balloons (SC, NC, CTO and drug-coated), PTCA inflation kits, guidewires, introducer and micro-access kits, and manifolds.</p>
       <div class="cat-hero-stats">
         <div class="cat-stat">
           <strong>ISO</strong>
@@ -700,6 +724,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <label class="filter-option"><input type="checkbox" value="AcuSafe Blunt Needle System"> AcuSafe Blunt Needle System</label>
         <label class="filter-option"><input type="checkbox" value="Sirova Sirolimus Stent"> Sirova Sirolimus Stent</label>
         <label class="filter-option"><input type="checkbox" value="Evera Everolimus Stent"> Evera Everolimus Stent</label>
+        <label class="filter-option"><input type="checkbox" value="EvroSure Everolimus Stent"> EvroSure Everolimus Stent</label>
+        <label class="filter-option"><input type="checkbox" value="MedSure Sirolimus Stent"> MedSure Sirolimus Stent</label>
+        <label class="filter-option"><input type="checkbox" value="Mamba Drug-Coated Balloon"> Mamba Drug-Coated Balloon</label>
+        <label class="filter-option"><input type="checkbox" value="Glider PTCA Balloons"> Glider PTCA Balloons</label>
         <label class="filter-option"><input type="checkbox" value="GuideX Guidewires"> GuideX Guidewires</label>
         <label class="filter-option"><input type="checkbox" value="AcuSafe Micro-Access Kits"> AcuSafe Micro-Access Kits</label>
       </div>
@@ -757,6 +785,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>
     // ── PRODUCT DATA ──
     const PRODUCTS = [
+      {
+        name: "Pulse EvroSure Everolimus Stent",
+        slug: "/cardiac-care/evrosure-stent/",
+        category: "DRUG ELUTING STENTS",
+        type: "stent",
+        app: "cathlab",
+        cert: ["iso", "ce"],
+        tag: "Coronary Stent",
+        tagColor: "orange",
+        desc: "Cobalt chromium everolimus-eluting coronary stent with thin 59 µm struts, a hybrid cell design and a biodegradable polymer that fully breaks down in 6 to 7 weeks.",
+        specs: ["59µm Strut", "Everolimus", "Cobalt Chromium"],
+        img: "image/Cardiac%20care/evrosure-everolimus-stent-banner.opt.webp"
+      },
+      {
+        name: "Pulse MedSure Sirolimus Stent",
+        slug: "/cardiac-care/medsure-stent/",
+        category: "DRUG ELUTING STENTS",
+        type: "stent",
+        app: "cathlab",
+        cert: ["iso", "ce"],
+        tag: "Coronary Stent",
+        tagColor: "orange",
+        desc: "Cobalt chromium sirolimus-eluting coronary stent with 59 µm struts and open mid-segment cells for easier side-branch access.",
+        specs: ["59µm Strut", "Sirolimus", "Side-Branch Access"],
+        img: "image/Cardiac%20care/medsure-sirolimus-stent-banner.opt.webp"
+      },
+      {
+        name: "Pulse Mamba Drug-Coated Balloon",
+        slug: "/cardiac-care/mamba-drug-coated-balloon/",
+        category: "PTCA BALLOONS",
+        type: "balloon",
+        app: "cathlab",
+        cert: ["iso", "ce"],
+        tag: "Drug-Coated Balloon",
+        tagColor: "orange",
+        desc: "Sirolimus-coated PTCA balloon catheter (2.75 µg/mm²) that delivers the drug into the artery wall without leaving a stent behind.",
+        specs: ["Sirolimus DCB", "Semi-Compliant", "1.5–4.0 mm"],
+        img: "image/Cardiac%20care/mamba-drug-coated-balloon-banner.opt.webp"
+      },
+      {
+        name: "Pulse Glider PTCA Balloons",
+        slug: "/cardiac-care/glider-ptca-balloon/",
+        category: "PTCA BALLOONS",
+        type: "balloon",
+        app: "cathlab",
+        cert: ["iso", "ce"],
+        tag: "PTCA Balloon",
+        tagColor: "",
+        desc: "Rapid exchange PTCA balloon dilatation catheter in semi-compliant (SC), non-compliant (NC) and CTO versions, from 1.00 to 4.00 mm.",
+        specs: ["SC / NC / CTO", "Nylon Balloon", "1.0–4.0 mm"],
+        img: "image/Cardiac%20care/glider-ptca-balloon-banner.opt.webp"
+      },
       {
         name: "Pulse Optima Inflation Device Kit",
         slug: "/cardiac-care/optima-inflation-kit/",
@@ -995,6 +1075,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li class="cp-item"><a class="cp-card" href="/cardiac-care/optima-inflation-kit/"><span class="cp-thumb"><img src="/image/Cardiac%20care/optima-inflation-device-kit.opt.webp" alt="Optima Inflation Device Kit" loading="lazy" width="60" height="60"></span><span class="cp-name">Optima Inflation Device Kit</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
         <li class="cp-item"><a class="cp-card" href="/cardiac-care/optima-manifolds/"><span class="cp-thumb"><img src="/image/Cardiac%20care/optima-manifolds.opt.webp" alt="Optima Manifolds" loading="lazy" width="60" height="60"></span><span class="cp-name">Optima Manifolds</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
         <li class="cp-item"><a class="cp-card" href="/cardiac-care/acusafe-blunt-needle/"><span class="cp-thumb"><img src="/image/Cardiac%20care/acusafe-blunt-needle-access-system.opt.webp" alt="AcuSafe Blunt Needle System" loading="lazy" width="60" height="60"></span><span class="cp-name">AcuSafe Blunt Needle System</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/cardiac-care/evrosure-stent/"><span class="cp-thumb"><img src="/image/Cardiac%20care/evrosure-everolimus-stent.opt.webp" alt="EvroSure Everolimus Stent" loading="lazy" width="60" height="60"></span><span class="cp-name">EvroSure Everolimus Stent</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/cardiac-care/medsure-stent/"><span class="cp-thumb"><img src="/image/Cardiac%20care/medsure-sirolimus-stent.opt.webp" alt="MedSure Sirolimus Stent" loading="lazy" width="60" height="60"></span><span class="cp-name">MedSure Sirolimus Stent</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/cardiac-care/mamba-drug-coated-balloon/"><span class="cp-thumb"><img src="/image/Cardiac%20care/mamba-drug-coated-balloon.opt.webp" alt="Mamba Drug-Coated Balloon" loading="lazy" width="60" height="60"></span><span class="cp-name">Mamba Drug-Coated Balloon</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
+        <li class="cp-item"><a class="cp-card" href="/cardiac-care/glider-ptca-balloon/"><span class="cp-thumb"><img src="/image/Cardiac%20care/glider-ptca-balloon.opt.webp" alt="Glider PTCA Balloons" loading="lazy" width="60" height="60"></span><span class="cp-name">Glider PTCA Balloons</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
         <li class="cp-item"><a class="cp-card" href="/cardiac-care/sirova-stent/"><span class="cp-thumb"><img src="/image/Cardiac%20care/sirova-sirolimus-stent.opt.webp" alt="Sirova Sirolimus Stent" loading="lazy" width="60" height="60"></span><span class="cp-name">Sirova Sirolimus Stent</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
         <li class="cp-item"><a class="cp-card" href="/cardiac-care/evera-stent/"><span class="cp-thumb"><img src="/image/Cardiac%20care/evera-everolimus-stent.opt.webp" alt="Evera Everolimus Stent" loading="lazy" width="60" height="60"></span><span class="cp-name">Evera Everolimus Stent</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
         <li class="cp-item"><a class="cp-card" href="/cardiac-care/guidex-guidewires/"><span class="cp-thumb"><img src="/image/Cardiac%20care/guidex-guidewires.opt.webp" alt="GuideX Guidewires" loading="lazy" width="60" height="60"></span><span class="cp-name">GuideX Guidewires</span><span class="cp-go" aria-hidden="true">&rarr;</span></a></li>
@@ -1039,7 +1123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#E87722; margin-bottom:10px;">Plan cath lab stock</p>
       <h2 style="font-size:clamp(26px,3vw,36px); font-weight:800; color:#0a1e40; line-height:1.2; margin:0 0 14px;">Cath Lab Consumables for Each Procedure</h2>
       <p style="color:#555; font-size:1.02rem; line-height:1.7; max-width:820px; margin-bottom:20px;">Most angioplasty (PCI) cases use the same chain of single-use items. Planning stock around this chain helps a cath lab avoid running short mid-case.</p>
-      <div style="overflow-x:auto;"><table style="width:100%; border-collapse:collapse; min-width:620px;"><thead><tr><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Step</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">What is used</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Pulse product</th></tr></thead><tbody><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">1. Access</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Needle, guidewire and sheath into the artery or vein</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/acusafe-micro-access/" style="color:#E63946; font-weight:600;">AcuSafe Micro-Access Kits</a>, <a href="/cardiac-care/acusafe-introducer-kits/" style="color:#E63946; font-weight:600;">AcuSafe Introducer Kits</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">2. Guiding</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Wires to place and exchange catheters</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/guidex-guidewires/" style="color:#E63946; font-weight:600;">GuideX Guidewires</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">3. Contrast and pressure</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Manifold for contrast, flush and pressure lines</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/optima-manifolds/" style="color:#E63946; font-weight:600;">Optima Manifolds</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">4. Balloon and stent inflation</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Inflation device, haemostasis valve, torque device</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/optima-inflation-kit/" style="color:#E63946; font-weight:600;">Optima Inflation Device Kit</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">5. Stent</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Drug-eluting coronary stent</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/evera-stent/" style="color:#E63946; font-weight:600;">Evera (everolimus)</a>, <a href="/cardiac-care/sirova-stent/" style="color:#E63946; font-weight:600;">Sirova (sirolimus)</a></td></tr></tbody></table></div>
+      <div style="overflow-x:auto;"><table style="width:100%; border-collapse:collapse; min-width:620px;"><thead><tr><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Step</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">What is used</th><th style="text-align:left; padding:12px 14px; border:1px solid #e5e9f2; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Pulse product</th></tr></thead><tbody><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">1. Access</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Needle, guidewire and sheath into the artery or vein</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/acusafe-micro-access/" style="color:#E63946; font-weight:600;">AcuSafe Micro-Access Kits</a>, <a href="/cardiac-care/acusafe-introducer-kits/" style="color:#E63946; font-weight:600;">AcuSafe Introducer Kits</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">2. Guiding</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Wires to place and exchange catheters</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/guidex-guidewires/" style="color:#E63946; font-weight:600;">GuideX Guidewires</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">3. Contrast and pressure</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Manifold for contrast, flush and pressure lines</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/optima-manifolds/" style="color:#E63946; font-weight:600;">Optima Manifolds</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">4. Balloon and stent inflation</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Inflation device, haemostasis valve, torque device</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/optima-inflation-kit/" style="color:#E63946; font-weight:600;">Optima Inflation Device Kit</a>, <a href="/cardiac-care/glider-ptca-balloon/" style="color:#E63946; font-weight:600;">Glider SC, NC and CTO balloons</a>, <a href="/cardiac-care/mamba-drug-coated-balloon/" style="color:#E63946; font-weight:600;">Mamba drug-coated balloon</a></td></tr><tr><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">5. Stent</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;">Drug-eluting coronary stent</td><td style="padding:12px 14px; border:1px solid #e5e9f2; color:#444; font-size:0.95rem; vertical-align:top; background:#fff;"><a href="/cardiac-care/evera-stent/" style="color:#E63946; font-weight:600;">Evera (everolimus)</a>, <a href="/cardiac-care/sirova-stent/" style="color:#E63946; font-weight:600;">Sirova (sirolimus)</a>, <a href="/cardiac-care/evrosure-stent/" style="color:#E63946; font-weight:600;">EvroSure (everolimus)</a>, <a href="/cardiac-care/medsure-stent/" style="color:#E63946; font-weight:600;">MedSure (sirolimus)</a></td></tr></tbody></table></div>
       <p style="color:#555; font-size:1rem; line-height:1.7; margin-top:18px;">Drug-eluting stent prices in India are capped by the NPPA; see the <a href="/blog-stent-price-india.html" style="color:#E63946; font-weight:600;">stent price guide</a>. <a href="/request-a-quote.html" style="color:#E63946; font-weight:600;">Request a quote</a> with your sizes and monthly case volume.</p>
     </div>
   </section>
@@ -1056,7 +1140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span>What does Pulse offer in its cardiac care range?</span>
             <span class="faq-icon">+</span>
           </button></h3>
-          <div class="faq-a"><p>Pulse supplies cath lab consumables for interventional cardiology &mdash; drug-eluting stents (sirolimus and everolimus), PTCA balloon accessories, guidewires, introducer sheaths, and manifolds.</p></div>
+          <div class="faq-a"><p>Pulse supplies cath lab consumables for interventional cardiology &mdash; drug-eluting stents (sirolimus and everolimus), PTCA balloons (SC, NC, CTO and drug-coated), PTCA balloon accessories, guidewires, introducer sheaths, and manifolds.</p></div>
         </div>
         <div class="faq-item">
           <h3 class="faq-h"><button class="faq-q" aria-expanded="false" onclick="var i=this.closest('.faq-item');i.classList.toggle('open');this.setAttribute('aria-expanded',i.classList.contains('open'))">

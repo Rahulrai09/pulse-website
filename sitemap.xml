@@ -1422,4 +1422,32 @@
     <image:image><image:loc>https://www.pulseio.in/image/Events/pulse-emergent-japan-podium.webp</image:loc></image:image>
     <image:image><image:loc>https://www.pulseio.in/image/Events/pulse-emergent-japan-group-photo.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.pulseio.in/cardiac-care/evrosure-stent/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/evrosure-everolimus-stent.opt.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/cardiac-care/medsure-stent/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/medsure-sirolimus-stent.opt.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/cardiac-care/mamba-drug-coated-balloon/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/mamba-drug-coated-balloon.opt.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/cardiac-care/glider-ptca-balloon/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/glider-ptca-balloon.opt.webp</image:loc></image:image>
+  </url>
 </urlset>

@@ -950,6 +950,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
                               {
 
+                                        "name": "EvroSure Everolimus Stent",
+
+                                        "image": "/image/Cardiac%20care/evrosure-everolimus-stent.opt.webp",
+
+                                        "href": "/cardiac-care/evrosure-stent/"
+
+                              },
+
+                              {
+
+                                        "name": "MedSure Sirolimus Stent",
+
+                                        "image": "/image/Cardiac%20care/medsure-sirolimus-stent.opt.webp",
+
+                                        "href": "/cardiac-care/medsure-stent/"
+
+                              },
+
+                              {
+
+                                        "name": "Mamba Drug-Coated Balloon",
+
+                                        "image": "/image/Cardiac%20care/mamba-drug-coated-balloon.opt.webp",
+
+                                        "href": "/cardiac-care/mamba-drug-coated-balloon/"
+
+                              },
+
+                              {
+
+                                        "name": "Glider PTCA Balloons",
+
+                                        "image": "/image/Cardiac%20care/glider-ptca-balloon.opt.webp",
+
+                                        "href": "/cardiac-care/glider-ptca-balloon/"
+
+                              },
+
+                              {
+
                                         "name": "GuideX Guidewires",
 
                                         "image": "/image/Cardiac%20care/guidex-guidewires.opt.webp",
@@ -1612,6 +1652,14 @@ var searchMap = [
 
   { keywords: ['evera','everolimus stent','everolimus eluting stent'], url: '/cardiac-care/evera-stent/' },
 
+  { keywords: ['evrosure','evro sure','cobalt chromium everolimus stent'], url: '/cardiac-care/evrosure-stent/' },
+
+  { keywords: ['medsure','med sure','side branch stent','bifurcation stent'], url: '/cardiac-care/medsure-stent/' },
+
+  { keywords: ['mamba','drug coated balloon','drug-coated balloon','dcb','sirolimus balloon','sirolimus coated balloon'], url: '/cardiac-care/mamba-drug-coated-balloon/' },
+
+  { keywords: ['glider','sc balloon','nc balloon','cto balloon','non compliant balloon','semi compliant balloon','ptca balloon','angioplasty balloon','balloon catheter'], url: '/cardiac-care/glider-ptca-balloon/' },
+
   { keywords: ['guidex','guidex guidewire','coronary guidewire'], url: '/cardiac-care/guidex-guidewires/' },
 
   { keywords: ['optima inflation','inflation kit','inflation device kit','optima inflation kit'], url: '/cardiac-care/optima-inflation-kit/' },
@@ -1857,10 +1905,6 @@ var searchMap = [
       'cardiac','cardiac care','heart','cardiology',
 
       'stent','drug eluting stent','des','coronary stent',
-
-      'ptca','ptca balloon','angioplasty balloon',
-
-      'balloon catheter','sc balloon','nc balloon','cto balloon',
 
       'guidewire','coronary guidewire',
 

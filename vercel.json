@@ -2014,6 +2014,46 @@
       "source": "/buy",
       "destination": "/where-to-buy.html",
       "permanent": true
+    },
+    {
+      "source": "/cardiac-care/evrosure-stent",
+      "destination": "/cardiac-care/evrosure-stent/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-care/evrosure-stent.html",
+      "destination": "/cardiac-care/evrosure-stent/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-care/medsure-stent",
+      "destination": "/cardiac-care/medsure-stent/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-care/medsure-stent.html",
+      "destination": "/cardiac-care/medsure-stent/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-care/mamba-drug-coated-balloon",
+      "destination": "/cardiac-care/mamba-drug-coated-balloon/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-care/mamba-drug-coated-balloon.html",
+      "destination": "/cardiac-care/mamba-drug-coated-balloon/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-care/glider-ptca-balloon",
+      "destination": "/cardiac-care/glider-ptca-balloon/",
+      "permanent": true
+    },
+    {
+      "source": "/cardiac-care/glider-ptca-balloon.html",
+      "destination": "/cardiac-care/glider-ptca-balloon/",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -2280,6 +2320,22 @@
     {
       "source": "/ivd-diagnostics/zt360-hematology-analyzer/",
       "destination": "/ivd-diagnostics/zt360-hematology-analyzer.html"
+    },
+    {
+      "source": "/cardiac-care/evrosure-stent/",
+      "destination": "/cardiac-care/evrosure-stent.html"
+    },
+    {
+      "source": "/cardiac-care/medsure-stent/",
+      "destination": "/cardiac-care/medsure-stent.html"
+    },
+    {
+      "source": "/cardiac-care/mamba-drug-coated-balloon/",
+      "destination": "/cardiac-care/mamba-drug-coated-balloon.html"
+    },
+    {
+      "source": "/cardiac-care/glider-ptca-balloon/",
+      "destination": "/cardiac-care/glider-ptca-balloon.html"
     }
   ],
   "headers": [
