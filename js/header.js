@@ -1022,7 +1022,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "CircumEase Stapler",
 
-                                        "image": "/image/Surgical/circumease-3.opt.webp",
+                                        "image": "/image/Surgical/circumease-1.opt.webp",
 
                                         "href": "/surgical-care/circumease-stapler/"
 

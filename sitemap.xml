@@ -869,7 +869,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/surgical.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   
@@ -877,13 +877,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/surgical-care/circumease-stapler/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
     <image:image><image:loc>https://www.pulseio.in/image/Surgical/CircumEase%201.png</image:loc></image:image>
-    <image:image><image:loc>https://www.pulseio.in/image/Surgical/CircumEase%202.png</image:loc></image:image>
-    <image:image><image:loc>https://www.pulseio.in/image/Surgical/circumease-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Surgical/circumease-2.opt.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/guidex-guidewires/</loc>
