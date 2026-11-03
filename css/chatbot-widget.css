@@ -108,6 +108,8 @@
   transform: translateX(0);
   opacity: 1;
 }
+.chat-welcome-pill.pill-on { display: block; }
+.chat-welcome-pill:not(.show) { pointer-events: none; }
 .chat-welcome-pill::after {
   content: "";
   position: absolute;

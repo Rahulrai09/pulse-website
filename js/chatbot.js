@@ -501,13 +501,17 @@
 
       // Auto-open AI chat widget after 1 second
       setTimeout(function() {
-        if (window.innerWidth <= 767) {
-          // On mobile: show sliding welcome pill instead of full chat
+        // Full chat auto-opens only on the desktop home page.
+        // Mobile, and every other page on desktop, get the sliding welcome pill.
+        var isHome = /^\/(index\.html)?$/.test(location.pathname);
+        if (window.innerWidth <= 767 || !isHome) {
           var pill = document.getElementById('chat-welcome-pill');
           var hiBubbleMob = document.getElementById('chat-hi-bubble');
           if (pill) {
             // Hide Hi bubble, show pill
             if (hiBubbleMob) hiBubbleMob.classList.add('hidden');
+            pill.classList.add('pill-on');
+            void pill.offsetWidth; // let display:block apply so the slide-in animates
             pill.classList.add('show');
             // After 5s hide pill, show Hi bubble again
             setTimeout(function() {
@@ -523,7 +527,7 @@
             });
           }
         } else {
-          // On desktop: open chat normally
+          // Desktop home page: open chat normally
           if (chatBtn && !chatWindow.classList.contains('open')) {
             chatBtn.click();
           }
