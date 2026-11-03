@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/articles-blogs.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -485,7 +485,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/emergency-trolley-hydraulic/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -609,7 +609,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/stretcher-trolley-ms-ss/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -705,7 +705,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pd-canova/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -727,7 +727,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pd-linepro/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1164,7 +1164,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-unit-setup-cost-india.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Unit%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1185,7 +1185,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-icu-bed-price-india.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/ICU%20Bed%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1241,7 +1241,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-equipment-list-india.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
@@ -1295,7 +1295,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialyser-price-india.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialyser%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1309,7 +1309,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-bed-price-india.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Bed%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1351,7 +1351,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-crash-cart-price-india.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Crash%20Cart%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1365,7 +1365,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hemodialysis-catheter-price-india.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hemodialysis%20Catheter%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1490,5 +1490,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/OT%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-stretcher-trolley-price-india.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-av-fistula-needle-price-india.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
