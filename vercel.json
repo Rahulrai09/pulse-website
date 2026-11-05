@@ -1996,6 +1996,11 @@
       "permanent": true
     },
     {
+      "source": "/price-index",
+      "destination": "/medical-equipment-price-index.html",
+      "permanent": true
+    },
+    {
       "source": "/brochure",
       "destination": "/brochures.html",
       "permanent": true

@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-medical-equipment-price-list-india-2026.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -1241,7 +1241,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-equipment-list-india.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
@@ -1279,6 +1279,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://www.pulseio.in/image/brochures/hospital-setup-brochure.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/medical-equipment-price-index.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.pulseio.in/where-to-buy.html</loc>
