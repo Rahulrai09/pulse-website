@@ -216,6 +216,7 @@ Every Pulse product page, by category. Each page has specifications, a buyer gui
 ## Buying
 - [Request a Quote](https://www.pulseio.in/request-a-quote.html): quote form for any Pulse product or a complete hospital setup; pan-India supply
 - [Brochures](https://www.pulseio.in/brochures.html): free PDF brochures for hospital setup, ICU ventilator, renal care, cardiac consumables, IVD analyzers, aesthetics, CircumEase and wheelchairs
+- [Medical Equipment Glossary](https://www.pulseio.in/medical-equipment-glossary.html): 68 hospital equipment terms (ICU, OT, dialysis, cardiac, lab, aesthetics, buying rules) explained in plain words, each linked to a Pulse buying guide
 - [Medical Equipment Price Index India 2026](https://www.pulseio.in/medical-equipment-price-index.html): free table of 78 market price ranges for medical equipment in India, each with a dated source; monthly updates; CSV download (CC BY 4.0)
 - [Where to Buy](https://www.pulseio.in/where-to-buy.html): buy direct from Pulse, on IndiaMART (Zuvio Technologies Private Limited: https://www.indiamart.com/zuvio-technologies/), or wheelchairs at https://pulsemotion.in/
 
