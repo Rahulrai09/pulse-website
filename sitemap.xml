@@ -601,7 +601,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/ss-instrument-trolleys/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1531,6 +1531,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-emergency-department-setup-cost-india.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-instrument-trolley-price-india.html</loc>
     <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
