@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/articles-blogs.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -727,7 +727,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pd-linepro/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -749,7 +749,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pd-tp/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1164,7 +1164,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-unit-setup-cost-india.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Unit%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1301,7 +1301,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialyser-price-india.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialyser%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1506,7 +1506,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-av-fistula-needle-price-india.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/AV%20Fistula%20Needle%20Price%20banner.webp</image:loc></image:image>
@@ -1514,6 +1514,12 @@
   <url>
     <loc>https://www.pulseio.in/blog-labour-room-setup-cost-india.html</loc>
     <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-blood-tubing-set-price-india.html</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
