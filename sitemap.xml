@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/articles-blogs.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -210,7 +210,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-stent-price-india.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -294,7 +294,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -302,7 +302,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/evera-stent/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -324,7 +324,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/sirova-stent/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1435,14 +1435,14 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/evrosure-stent/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/evrosure-everolimus-stent.opt.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/medsure-stent/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/medsure-sirolimus-stent.opt.webp</image:loc></image:image>
@@ -1456,14 +1456,14 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/glider-ptca-balloon/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/glider-ptca-balloon.opt.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-ptca-balloon-price-india.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/PTCA%20Balloon%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1484,7 +1484,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-cath-lab-setup-cost-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Cath%20Lab%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1562,6 +1562,12 @@
   <url>
     <loc>https://www.pulseio.in/blog-blood-donor-chair-price-india.html</loc>
     <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-angioplasty-cost-india.html</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
