@@ -2786,3 +2786,22 @@ if (mobSearchInput) {
   setupSuggestions(document.getElementById('mob-search-input'));
 });
 
+
+/* Lead click tracking (GA4): WhatsApp, phone and email links anywhere on the site.
+   Mark whatsapp_click, phone_click and email_click as key events in GA4 > Admin > Events. */
+(function () {
+  if (window.__pulseLeadTracking) return;
+  window.__pulseLeadTracking = true;
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !window.gtag) return;
+    var href = a.getAttribute('href') || '';
+    var name = null;
+    if (/wa\.me|api\.whatsapp\.com|whatsapp:\/\//i.test(href)) name = 'whatsapp_click';
+    else if (/^tel:/i.test(href)) name = 'phone_click';
+    else if (/^mailto:/i.test(href)) name = 'email_click';
+    if (!name) return;
+    var label = (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80);
+    gtag('event', name, { page_path: location.pathname, link_text: label, link_url: href.slice(0, 200) });
+  }, true);
+})();
