@@ -938,7 +938,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/ivd-diagnostics/zt-smart-saa-biochemistry/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1300,7 +1300,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-biochemistry-analyzer-price-india.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Biochemistry%20Analyzer%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1705,6 +1705,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-cbc-test-price-india.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-lft-kft-test-price-india.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
