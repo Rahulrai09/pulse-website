@@ -461,7 +461,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/crash-cart/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -601,7 +601,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/ss-instrument-trolleys/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1241,7 +1241,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-equipment-list-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
@@ -1363,7 +1363,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-crash-cart-price-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Crash%20Cart%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1543,7 +1543,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-instrument-trolley-price-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1669,6 +1669,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-bed-for-home-india.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-medicine-trolley-price-india.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
