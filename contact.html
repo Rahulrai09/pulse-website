@@ -543,7 +543,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var d={fullName:name, mobile:mob, email:f.email.value.trim(), city:f.city.value.trim(), query:'['+sel.value+'] '+f.query.value.trim()};
     var r=(window.PulsePublic && window.PulsePublic.submitQuote) ? await window.PulsePublic.submitQuote(d) : {success:false};
     btn.disabled=false;
-    if(r.success){ f.style.display='none'; document.getElementById('q-ok').classList.add('show'); if(window.gtag) gtag('event','generate_lead',{form:'contact_quote', need:sel.value}); }
+    if(r.success){ f.style.display='none'; document.getElementById('q-ok').classList.add('show'); }
     else { m.style.color='#b91c1c'; m.innerHTML='Sorry, that did not send. Please <a href="https://wa.me/919071101108?text=Hi%20Pulse%2C%20I%20would%20like%20a%20quote" target="_blank" rel="noopener noreferrer nofollow">message us on WhatsApp</a>.'; }
   });
   var io='IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } }); },{threshold:.12}) : null;

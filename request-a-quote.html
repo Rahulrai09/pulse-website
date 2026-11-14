@@ -506,7 +506,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function summary(){ return 'Product: '+f.product.value+' | Qty: '+(f.qty.value.trim()||'-')+' | For: '+f.ftype.value+' | When: '+f.when.value+(f.query.value.trim()?' | Notes: '+f.query.value.trim():''); }
   function upd(){ var t='Hi Pulse, I would like a quote. '+summary()+(f.city.value.trim()?' | City: '+f.city.value.trim():''); waBtn.href='https://wa.me/919071101108?text='+encodeURIComponent(t); }
   f.addEventListener('input',upd); f.addEventListener('change',upd); upd();
-  waBtn.addEventListener('click',function(){ if(window.gtag) gtag('event','generate_lead',{form:'request_quote_whatsapp', product:f.product.value}); });
   f.addEventListener('submit', async function(e){
     e.preventDefault();
     var name=f.fullName.value.trim(), mob=f.mobile.value.trim(), city=f.city.value.trim();
@@ -517,7 +516,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var d={fullName:name, mobile:mob, email:f.email.value.trim(), city:city, query:'[Quote] '+summary()};
     var r=(window.PulsePublic && window.PulsePublic.submitQuote) ? await window.PulsePublic.submitQuote(d) : {success:false};
     btn.disabled=false;
-    if(r.success){ f.style.display='none'; document.getElementById('q-ok').classList.add('show'); if(window.gtag) gtag('event','generate_lead',{form:'request_quote', product:f.product.value}); }
+    if(r.success){ f.style.display='none'; document.getElementById('q-ok').classList.add('show'); }
     else { m.style.color='#b91c1c'; m.innerHTML='Sorry, that did not send. Please use the WhatsApp button instead.'; }
   });
 

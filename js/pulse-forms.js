@@ -151,5 +151,26 @@
     });
   }
 
-  window.PulsePublic = { submitDemo, submitQuote, submitForm, submitJob, submitChat, submitContact };
+  // GA4: one 'generate_lead' event for every enquiry saved, whichever form sent it (mark it as a key event in GA4).
+  function tracked(fn, form) {
+    return async function (data) {
+      const r = await fn(data);
+      try {
+        if (r && r.success && window.gtag) {
+          const f = typeof form === 'function' ? form(data) : form;
+          gtag('event', 'generate_lead', { form: f, page_path: location.pathname });
+        }
+      } catch (e) {}
+      return r;
+    };
+  }
+
+  window.PulsePublic = {
+    submitDemo: tracked(submitDemo, 'demo'),
+    submitQuote: tracked(submitQuote, 'quote'),
+    submitForm: tracked(submitForm, function (p) { return 'form-' + ((p && p.form_type) || 'contact'); }),
+    submitJob,
+    submitChat: tracked(submitChat, 'chatbot'),
+    submitContact: tracked(submitContact, 'contact-popup')
+  };
 })();
