@@ -294,7 +294,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -313,7 +313,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/optima-inflation-kit/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -897,7 +897,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/optima-manifolds/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   
@@ -1391,14 +1391,14 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-introducer-sheath-price-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Introducer%20Sheath%20Price%20inner%20banner.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-balloon-inflation-device-price-india.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Balloon%20Inflation%20Device%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1484,7 +1484,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-cath-lab-setup-cost-india.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Cath%20Lab%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1681,6 +1681,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-transducer-protector-price-india.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-cath-lab-manifold-pressure-line-price-india.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
