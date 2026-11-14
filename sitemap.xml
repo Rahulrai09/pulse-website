@@ -369,7 +369,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care/12-channel-ecg-machine/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -380,7 +380,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care/3-channel-ecg-machine/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -391,7 +391,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care/6-channel-ecg-machine/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1477,7 +1477,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-pathology-lab-setup-cost-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pathology%20Lab%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1567,7 +1567,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-angioplasty-cost-india.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1693,6 +1693,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-icu-charges-per-day-india.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-ecg-test-price-india.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
