@@ -335,3 +335,14 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
 
 /* Reserve the header's space before js/header.js fills it, so the page does not jump (CLS). */
 #global-header:empty { display: block; min-height: 101px; background: #1c2b5e; }
+
+/* Keep menu items on one line when the bar is tight (added with Who We Serve link) */
+.nav-links a, .nav-links .mega-trigger, .nav-cta { white-space: nowrap; }
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .nav-logo { width: auto; }
+  .nav-links { gap: 24px; }
+}
+@media (max-width: 1180px) and (min-width: 1025px) {
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 0.82rem; }
+}

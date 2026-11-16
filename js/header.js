@@ -291,6 +291,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <li><a href="/about.html">About Us</a></li>
 
+        <li><a href="/who-we-serve.html">Who We Serve</a></li>
+
         <li><a href="/#why-pulse">Why Pulse</a></li>
 
         <li><a href="/#excellence">How It Works</a></li>
@@ -553,6 +555,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
 
         <a href="/about.html">About Us</a>
+
+        <a href="/who-we-serve.html">Who We Serve</a>
 
         <a href="/#why-pulse">Why Pulse</a>
 

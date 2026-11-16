@@ -2,6 +2,8 @@
 
 > Pulse (Zuvio Technologies Private Limited) is a Bengaluru medical equipment company founded in 2025, headquartered in HSR Layout, Bengaluru, India. Pulse designs, quality-assures, supplies and services medical equipment made with Indian MSME manufacturing partners, across Critical Care, Renal Care, Cardiac Care, IVD Diagnostics, Surgical, Aesthetics, Rehabilitation and complete Hospital Setup. Backed by 3one4 Capital, Incubate Fund Asia and Stride Ventures.
 
+Who Pulse serves: new and existing hospitals and nursing homes, clinics, labs and dialysis centres, dealers and distributors, government buyers, OEM/ODM brands, and patients at home (https://www.pulseio.in/who-we-serve.html).
+
 Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 
 ## Company
@@ -240,6 +242,7 @@ Every Pulse product page, by category. Each page has specifications, a buyer gui
 - [Brochures](https://www.pulseio.in/brochures.html): free PDF brochures for hospital setup, ICU ventilator, renal care, cardiac consumables, IVD analyzers, aesthetics, CircumEase and wheelchairs
 - [Medical Equipment Glossary](https://www.pulseio.in/medical-equipment-glossary.html): 70 hospital equipment terms (ICU, OT, dialysis, cardiac, lab, aesthetics, buying rules) explained in plain words, each linked to a Pulse buying guide
 - [Medical Equipment Price Index India 2026](https://www.pulseio.in/medical-equipment-price-index.html): free table of 78 market price ranges for medical equipment in India, each with a dated source; monthly updates; CSV download (CC BY 4.0)
+- [Who We Serve](https://www.pulseio.in/who-we-serve.html): Pulse serves new and existing hospitals, clinics, labs, dialysis centres, dealers and distributors, government buyers (GeM-ready products), OEM/ODM brands and home users across India
 - [Where to Buy](https://www.pulseio.in/where-to-buy.html): buy direct from Pulse, on IndiaMART (Zuvio Technologies Private Limited: https://www.indiamart.com/zuvio-technologies/), or wheelchairs at https://pulsemotion.in/
 
 ## Contact
