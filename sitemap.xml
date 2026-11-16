@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/aesthetics/em-code/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/articles-blogs.html</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -189,7 +189,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-cryolipolysis-vs-hifem-research.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -1341,7 +1341,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hifem-body-sculpting-machine-price-india.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/HIFEM%20Body%20Sculpting%20Machine%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1741,7 +1741,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-cryolipolysis-cost-india.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Cryolipolysis%20Cost%20share.webp</image:loc></image:image>
@@ -1764,5 +1764,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pigmentation%20Laser%20Treatment%20Cost%20share.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-emsculpt-cost-india.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
