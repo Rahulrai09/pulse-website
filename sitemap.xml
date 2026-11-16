@@ -930,7 +930,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/ivd-diagnostics.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1821,6 +1821,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-why-medical-devices-cost-so-much-india.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-hba1c-test-price-india.html</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
