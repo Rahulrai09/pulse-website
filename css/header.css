@@ -346,3 +346,12 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
   .nav-links { gap: 16px; }
   .nav-links a { font-size: 0.82rem; }
 }
+/* Desktop: the (empty) mobile button wrapper after the menu should not take free space, so the menu sits at the right edge */
+@media (min-width: 1025px) {
+  #main-nav > .nav-links + div { margin-left: 0 !important; }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #main-nav .nav-item-mega { position: static; }
+  #main-nav .mega-menu { left: auto; right: 24px; transform: translateY(10px); }
+  #main-nav .nav-item-mega.open .mega-menu { transform: translateY(0); }
+}
