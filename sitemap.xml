@@ -493,7 +493,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/fowler-bed-electric/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -533,7 +533,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/medical-gas-pipeline/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -790,7 +790,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-setup-checklist.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -1476,7 +1476,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-icu-setup-cost-india.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/ICU%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1537,7 +1537,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-day-care-surgery-centre-setup-cost-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1785,6 +1785,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-gst-on-medical-equipment-india.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-nursing-home-setup-cost-india.html</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
