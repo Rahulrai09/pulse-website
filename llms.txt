@@ -106,6 +106,7 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 - [Patient Monitor Readings Explained: Normal Values for Adults](https://www.pulseio.in/blog-patient-monitor-normal-values.html)
 - [How Often Is Dialysis Needed? Sessions per Week, Kt/V and URR](https://www.pulseio.in/blog-dialysis-sessions-per-week-adequacy.html)
 - [What Is EtCO2? Capnography Explained, With Normal Range](https://www.pulseio.in/blog-etco2-capnography-explained.html)
+- [12-Lead ECG Electrode Placement: V1 to V6 and Limb Leads](https://www.pulseio.in/blog-12-lead-ecg-electrode-placement.html)
 - [Lipid Profile Test Price in India: Cost by City, CGHS Rate and Fasting](https://www.pulseio.in/blog-lipid-profile-test-price-india.html)
 - [Single-Use Medical Device Reuse Ban in India: What Hospitals Must Do](https://www.pulseio.in/blog-single-use-medical-device-reuse-ban-india.html)
 - [GST on Medical Equipment in India: 5% or 18%, with HSN Codes](https://www.pulseio.in/blog-gst-on-medical-equipment-india.html)
