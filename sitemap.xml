@@ -1282,15 +1282,17 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/medical-equipment-glossary.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Medical%20Equipment%20Glossary%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/medical-equipment-price-index.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Medical%20Equipment%20Price%20Index%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/who-we-serve.html</loc>
@@ -1717,9 +1719,10 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-lft-kft-test-price-india.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/LFT%20and%20KFT%20Test%20Price%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-coronary-angiography-cost-india.html</loc>
@@ -1839,33 +1842,38 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-blood-sugar-test-price-india.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Blood%20Sugar%20Test%20Price%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-pulse-electric-wheelchair-models-compared.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pulse%20Electric%20Wheelchair%20Models%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-excimer-vitiligo-treatment-cost-india.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Excimer%20Vitiligo%20Treatment%20Cost%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-normal-delivery-c-section-cost-india.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Delivery%20Cost%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-tattoo-removal-cost-india.html</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Tattoo%20Removal%20Cost%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-ipl-photofacial-cost-india.html</loc>
@@ -1878,6 +1886,7 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Non-Surgical%20Face%20Lift%20Cost%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-how-autoclave-works.html</loc>
