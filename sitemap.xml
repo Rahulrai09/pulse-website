@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/aesthetics.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -116,7 +116,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/aesthetics/pi-code/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/articles-blogs.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1255,7 +1255,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-picosecond-laser-price-india.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Picosecond%20Laser%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1729,7 +1729,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-laser-hair-removal-cost-india.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1760,7 +1760,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-pigmentation-laser-treatment-cost-india.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pigmentation%20Laser%20Treatment%20Cost%20share.webp</image:loc></image:image>
@@ -1858,6 +1858,12 @@
   <url>
     <loc>https://www.pulseio.in/blog-normal-delivery-c-section-cost-india.html</loc>
     <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-tattoo-removal-cost-india.html</loc>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
