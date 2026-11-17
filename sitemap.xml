@@ -217,7 +217,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-how-dialysis-machine-works.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -686,7 +686,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -705,7 +705,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pd-canova/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -716,7 +716,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pd-cath/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1383,7 +1383,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hemodialysis-catheter-price-india.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hemodialysis%20Catheter%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1518,7 +1518,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-av-fistula-needle-price-india.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/AV%20Fistula%20Needle%20Price%20banner.webp</image:loc></image:image>
@@ -1881,6 +1881,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-how-autoclave-works.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-av-fistula-vs-catheter-dialysis.html</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
