@@ -446,7 +446,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/autoclaves-sterilizers/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -593,7 +593,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -847,7 +847,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-modular-ot-setup-cost-india.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -1227,7 +1227,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-autoclave-price-india.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Autoclave%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1241,7 +1241,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-equipment-list-india.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
@@ -1504,7 +1504,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-operation-theatre-equipment-list.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/OT%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
@@ -1875,6 +1875,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-non-surgical-face-lift-cost-india.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-how-autoclave-works.html</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
