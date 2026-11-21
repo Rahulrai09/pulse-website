@@ -2047,14 +2047,16 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-cleaning-disinfecting-medical-equipment.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Cleaning%20and%20Disinfecting%20Medical%20Equipment%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-blood-collection-tube-order-of-draw.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Blood%20Tube%20Order%20of%20Draw%20share.webp</image:loc></image:image>
   </url>
 </urlset>
