@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           <a href="/blog-pulse-4million.html"
 
-             style="color:#E87722;font-weight:700;
+             style="color:#F59A4C;font-weight:700;
 
                     text-decoration:none;">
 
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <a href="/" class="nav-logo">
 
-        <img src="/image/pulse-logo.png" alt="Pulse">
+        <img src="/image/pulse-logo.png" alt="Pulse" width="2007" height="646">
 
       </a>
 

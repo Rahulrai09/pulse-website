@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <!-- Col 1 -->
           <div class="pf-col pf-brand-col">
             <a href="/" class="pf-logo">
-              <img src="/image/pulse-logo-PNG-W.png" alt="Pulse" style="height:44px; width:auto; object-fit:contain; filter:brightness(10);">
+              <img src="/image/pulse-logo-PNG-W.png" alt="Pulse" width="2007" height="646" style="height:44px; width:auto; object-fit:contain; filter:brightness(10);">
             </a>
             <div class="pf-socials">
               <a href="https://www.linkedin.com/company/pulseiomed/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <a href="https://www.youtube.com/@Pulse_medtech_manufacturing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
               <a href="https://www.instagram.com/pulse_medtechmanufacturing/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
             </div>
-            <iframe src="https://maps.google.com/maps?q=12.916265,77.651869&z=16&output=embed" width="100%" height="160" style="border:0;border-radius:8px;margin-top:16px;display:block;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe title="Pulse office location on Google Maps, HSR Layout, Bengaluru" src="https://maps.google.com/maps?q=12.916265,77.651869&z=16&output=embed" width="100%" height="160" style="border:0;border-radius:8px;margin-top:16px;display:block;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
           <!-- Col 2 -->
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     };
 
-function initContactTrigger() { var modal = document.getElementById('contact-modal-overlay'); if (!modal) { setTimeout(initContactTrigger, 500); return; } document.querySelectorAll('a').forEach(function(btn) { var text = btn.textContent.trim(); if (text === 'Contact Us' || text === 'Contact us') { if (btn.closest('footer')) return; if (btn.closest('nav')) return; if (btn.id === 'nav-contact-btn') return; btn.removeAttribute('href'); btn.removeAttribute('target'); btn.removeAttribute('rel'); btn.style.cursor = 'pointer'; btn.onclick = function(e) { e.preventDefault(); e.stopPropagation(); modal.classList.add('open'); return false; }; } }); } setTimeout(initContactTrigger, 1500);
+function initContactTrigger() { var modal = document.getElementById('contact-modal-overlay'); if (!modal) { setTimeout(initContactTrigger, 500); return; } document.querySelectorAll('a').forEach(function(btn) { var text = btn.textContent.trim(); if (text === 'Contact Us' || text === 'Contact us') { if (btn.closest('footer')) return; if (btn.closest('nav')) return; if (btn.id === 'nav-contact-btn') return; btn.removeAttribute('target'); btn.removeAttribute('rel'); btn.style.cursor = 'pointer'; btn.onclick = function(e) { e.preventDefault(); e.stopPropagation(); modal.classList.add('open'); return false; }; } }); } setTimeout(initContactTrigger, 1500);
 
 // Product gallery: swap main image when a thumbnail is clicked
 function pgSetMain(el){
