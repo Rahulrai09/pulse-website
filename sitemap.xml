@@ -1908,9 +1908,10 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-sessions-per-week-adequacy.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Adequacy%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-etco2-capnography-explained.html</loc>
@@ -1923,30 +1924,35 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/12-Lead%20ECG%20Electrode%20Placement%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-machine-alarms-explained.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Machine%20Alarms%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-catheter-care-infection-prevention.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Catheter%20Care%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-infusion-pump-safety-errors.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Infusion%20Pump%20Safety%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-ventilator-alarms-explained.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Ventilator%20Alarms%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-low-blood-pressure-cramps-during-dialysis.html</loc>
