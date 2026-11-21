@@ -446,7 +446,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/autoclaves-sterilizers/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -789,7 +789,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-setup-checklist.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -1226,7 +1226,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-autoclave-price-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Autoclave%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1899,7 +1899,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-how-autoclave-works.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2041,6 +2041,18 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-ecg-normal-values-pr-qrs-qt.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-cleaning-disinfecting-medical-equipment.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-blood-collection-tube-order-of-draw.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
