@@ -938,7 +938,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/ivd-diagnostics/zt-smart-saa-biochemistry/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1308,7 +1308,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-biochemistry-analyzer-price-india.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Biochemistry%20Analyzer%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1485,7 +1485,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-pathology-lab-setup-cost-india.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pathology%20Lab%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1719,7 +1719,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-lft-kft-test-price-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/LFT%20and%20KFT%20Test%20Price%20share.webp</image:loc></image:image>
@@ -1836,13 +1836,14 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-how-infusion-pump-works.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/How%20Infusion%20Pump%20Works%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-blood-sugar-test-price-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Blood%20Sugar%20Test%20Price%20share.webp</image:loc></image:image>
@@ -1880,6 +1881,7 @@
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/IPL%20Photofacial%20Cost%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-non-surgical-face-lift-cost-india.html</loc>
@@ -1980,6 +1982,18 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-bedsore-prevention-hospital.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-lab-quality-control-westgard-rules.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-how-biochemistry-analyzer-works.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
