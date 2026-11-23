@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/articles-blogs.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -283,7 +283,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/acusafe-micro-access/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -294,7 +294,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -493,7 +493,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/fowler-bed-electric/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -509,7 +509,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/icu-bed-5func-electric-deluxe/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -585,7 +585,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/semi-fowler-electric/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -593,7 +593,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -885,7 +885,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/guidex-guidewires/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   
@@ -896,7 +896,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/optima-manifolds/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   
@@ -1184,7 +1184,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-icu-bed-price-india.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/ICU%20Bed%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1328,7 +1328,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-bed-price-india.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Bed%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1491,7 +1491,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-cath-lab-setup-cost-india.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Cath%20Lab%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1676,7 +1676,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-bed-for-home-india.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1725,7 +1725,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-coronary-angiography-cost-india.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1979,7 +1979,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-radial-vs-femoral-access-angiography.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2060,5 +2060,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Blood%20Tube%20Order%20of%20Draw%20share.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-fowler-position-hospital-bed.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-coronary-angiography-what-to-expect.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
