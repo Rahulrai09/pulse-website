@@ -2064,6 +2064,16 @@
       "source": "/cardiac-care/glider-ptca-balloon.html",
       "destination": "/cardiac-care/glider-ptca-balloon/",
       "permanent": true
+    },
+    {
+      "source": "/careers",
+      "destination": "/life-at-pulse.html",
+      "permanent": true
+    },
+    {
+      "source": "/investor-relations",
+      "destination": "/about.html",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -2352,13 +2362,19 @@
     {
       "source": "/image/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
       ]
     },
     {
       "source": "/(css|js)/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=604800"
+        }
       ]
     },
     {
