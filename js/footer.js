@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
               <li><a href="/about.html">About Us</a></li>
 
               <li><a href="/articles-blogs.html">Articles & Blogs</a></li>
+                        <li><a href="/medical-equipment-price-index.html">Price Index 2026</a></li>
+                        <li><a href="/medical-equipment-glossary.html">Medical Glossary</a></li>
               <li><a href="/innovation.html">Innovation & R&D</a></li>
               <li><a href="/life-at-pulse.html">Life at Pulse</a></li>
             </ul>
@@ -87,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="pf-bottom">
         <div class="pf-bottom-inner">
           <div class="pf-bottom-left">
-            <p>&copy; 2025 Pulse. All rights reserved.</p>
+            <p>&copy; 2026 Pulse. All rights reserved.</p>
           </div>
 
           <div class="pf-bottom-right">
