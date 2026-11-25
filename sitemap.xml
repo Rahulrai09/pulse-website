@@ -354,7 +354,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care/icu-ventilator/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1801,7 +1801,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-gst-on-medical-equipment-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/GST%20on%20Medical%20Equipment%20share.webp</image:loc></image:image>
@@ -1822,7 +1822,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-medical-equipment-loan-emi-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Medical%20Equipment%20Loan%20and%20EMI%20share.webp</image:loc></image:image>
@@ -1836,7 +1836,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-refurbished-vs-new-medical-equipment-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Refurbished%20vs%20New%20Medical%20Equipment%20share.webp</image:loc></image:image>
@@ -1965,7 +1965,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-infusion-pump-safety-errors.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Infusion%20Pump%20Safety%20share.webp</image:loc></image:image>
@@ -2091,7 +2091,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-biomedical-waste-colour-coding.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Biomedical%20Waste%20Colour%20Coding%20share.webp</image:loc></image:image>
@@ -2138,6 +2138,24 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-preventive-maintenance-schedule-medical-equipment.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-condemnation-of-medical-equipment.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-electrical-safety-testing-medical-equipment.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-depreciation-rate-medical-equipment-income-tax.html</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
