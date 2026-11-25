@@ -217,7 +217,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-how-dialysis-machine-works.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -229,7 +229,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-electric-wheelchair-price-india.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -593,7 +593,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -686,7 +686,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -738,7 +738,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pdm-6000/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -839,7 +839,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-manual-vs-power-wheelchair-selection.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -921,7 +921,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-after-sales-service-medical-equipment.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   
@@ -1163,7 +1163,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-unit-setup-cost-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Unit%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1240,7 +1240,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-hospital-equipment-list-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Hospital%20Equipment%20List%20inner%20banner.webp</image:loc></image:image>
@@ -1569,7 +1569,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-nabh-medical-equipment-requirements.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/NABH%20Medical%20Equipment%20Requirements%20share.webp</image:loc></image:image>
@@ -1871,7 +1871,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-pulse-electric-wheelchair-models-compared.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Pulse%20Electric%20Wheelchair%20Models%20share.webp</image:loc></image:image>
@@ -1951,7 +1951,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-machine-alarms-explained.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Machine%20Alarms%20share.webp</image:loc></image:image>
@@ -2123,5 +2123,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/How%20Anaesthesia%20Machine%20Works%20share.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-wheelchair-size-guide-measure.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-dialysis-water-treatment-ro-plant.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-preventive-maintenance-schedule-medical-equipment.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
