@@ -1272,7 +1272,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                         "name": "ICU Bed — Five Functional Electric",
 
-                                        "image": "/image/Hospital Furniture/chatgpt-image-may-28-2026-04-09-07-pm.opt.webp",
+                                        "image": "/image/Hospital Furniture/icu-bed-5-function-electric-premium.opt.webp",
 
                                         "href": "/hospital-setup/icu-bed-5func-electric-deluxe/"
 

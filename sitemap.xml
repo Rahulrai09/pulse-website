@@ -465,7 +465,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_10_22%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/crash-cart-with-drawers.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/delivery-table-electric-manual/</loc>
@@ -473,7 +473,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_38%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/delivery-table-electric-manual.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/delivery-table-hydraulic/</loc>
@@ -481,7 +481,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_34%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/delivery-table-hydraulic.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/emergency-trolley-hydraulic/</loc>
@@ -489,7 +489,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_10_13%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/emergency-patient-trolley-hydraulic.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/fowler-bed-electric/</loc>
@@ -497,7 +497,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_24%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/fowler-bed-electric.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/icu-bed-3func-electric/</loc>
@@ -505,7 +505,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_19%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/icu-bed-3-function-electric.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/icu-bed-5func-electric-deluxe/</loc>
@@ -513,7 +513,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_09%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/icu-bed-5-function-electric-deluxe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/icu-bed-5func-electric-premium/</loc>
@@ -521,7 +521,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_07%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/icu-bed-5-function-electric-premium.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/icu-bed-5func-manual-deluxe/</loc>
@@ -529,7 +529,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_14%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/icu-bed-5-function-manual-deluxe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/medical-gas-pipeline/</loc>
@@ -551,6 +551,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
+  
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ot-light-globus-dome.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/ot-light-premium-camera/</loc>
@@ -565,7 +567,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_31%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ot-table-c-arm-hydraulic.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/ot-table-electric-manual-deluxe/</loc>
@@ -573,7 +575,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_28%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ot-table-electric-deluxe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/ot-table-general-hydraulic/</loc>
@@ -581,7 +583,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_29%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ot-table-general-hydraulic.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/semi-fowler-electric/</loc>
@@ -605,7 +607,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_10_25%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ss-instrument-trolley.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/stretcher-trolley-ms-ss/</loc>
@@ -613,7 +615,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_09_46%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/stretcher-trolley-ms-ss.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/hospital-setup/wheelchair/</loc>
@@ -621,7 +623,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
-    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ChatGPT%20Image%20May%2028%2C%202026%2C%2004_10_16%20PM.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/hospital-wheelchair.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/</loc>
@@ -918,6 +920,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   
+  
+    <image:image><image:loc>https://www.pulseio.in/image/Hospital%20Furniture/ot-light-four-reflector.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-after-sales-service-medical-equipment.html</loc>
