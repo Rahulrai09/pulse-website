@@ -2123,14 +2123,16 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-ventilator-modes-explained.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Ventilator%20Modes%20Explained%20share.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-angiogram-vs-angioplasty.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Angiogram%20vs%20Angioplasty%20share.webp</image:loc></image:image>
   </url>
 </urlset>
