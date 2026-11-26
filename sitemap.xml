@@ -294,7 +294,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1443,7 +1443,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/cardiac-care/evrosure-stent/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Cardiac%20care/evrosure-everolimus-stent.opt.webp</image:loc></image:image>
@@ -2000,7 +2000,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-recovery-after-angioplasty-stent.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Angioplasty%20Recovery%20share.webp</image:loc></image:image>
@@ -2035,7 +2035,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-coronary-angiography-what-to-expect.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Coronary%20Angiography%20Guide%20share.webp</image:loc></image:image>
@@ -2119,6 +2119,12 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-ventilator-modes-explained.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-angiogram-vs-angioplasty.html</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
