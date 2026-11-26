@@ -107,6 +107,7 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 - [How Often Is Dialysis Needed? Sessions per Week, Kt/V and URR](https://www.pulseio.in/blog-dialysis-sessions-per-week-adequacy.html)
 - [What Is EtCO2? Capnography Explained, With Normal Range](https://www.pulseio.in/blog-etco2-capnography-explained.html)
 - [12-Lead ECG Electrode Placement: V1 to V6 and Limb Leads](https://www.pulseio.in/blog-12-lead-ecg-electrode-placement.html)
+- [Ventilator Modes Explained: AC, SIMV, PSV, PRVC and More](https://www.pulseio.in/blog-ventilator-modes-explained.html)
 - [Condemnation of Medical Equipment: When and How to Write Off](https://www.pulseio.in/blog-condemnation-of-medical-equipment.html)
 - [Electrical Safety Testing of Medical Equipment (IEC 62353)](https://www.pulseio.in/blog-electrical-safety-testing-medical-equipment.html)
 - [Depreciation Rate on Medical Equipment Under Income Tax (2026)](https://www.pulseio.in/blog-depreciation-rate-medical-equipment-income-tax.html)
