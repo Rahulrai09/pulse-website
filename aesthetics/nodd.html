@@ -174,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- NODD REDESIGN (bright) -->
 <style>
-.nx{--gold:#c9923f;--gold2:#e9bf7a;--cream:#fffaf3;--navy:#0f1f4b;--ink:#0a1e40;--mute:#5f6b85;--line:#ece7dd;--orange:#F07C2A;--sky:#f3f6fc;color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+.nx{--gold:#c9923f;--gold2:#e9bf7a;--cream:#ffffff;--navy:#0f1f4b;--ink:#0a1e40;--mute:#5f6b85;--line:#e6eaf2;--orange:#F07C2A;--sky:#f3f6fc;color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
 .nx *{box-sizing:border-box}
 .nx .w{max-width:1200px;margin:0 auto;padding:0 24px}
 .nx .serif{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500}
@@ -195,11 +195,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .btn-l{background:#fff;color:var(--navy);border:1.5px solid #d9dfec}
 
 /* hero */
-.nx .hero{position:relative;padding:40px 0 80px;background:radial-gradient(700px 420px at 85% 30%,rgba(233,191,122,.35),transparent 65%),radial-gradient(600px 400px at 0% 100%,rgba(240,124,42,.12),transparent 60%),linear-gradient(180deg,#fff,var(--cream))}
+.nx .hero{position:relative;padding:40px 0 80px;background:#fff}
 .nx .hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
 .nx .crumb{font-size:13px;color:#8a93a8;margin:0 0 24px}
 .nx .crumb a{color:#8a93a8;text-decoration:none}
-.nx .kick{display:inline-flex;font-size:12px;letter-spacing:3px;font-weight:700;color:#9a6a22;text-transform:uppercase;border:1px solid rgba(201,146,63,.45);padding:8px 14px;border-radius:999px;background:rgba(233,191,122,.15)}
+.nx .kick{display:inline-flex;font-size:12px;letter-spacing:3px;font-weight:700;color:#1B2F6E;text-transform:uppercase;border:1px solid #dfe4ef;padding:8px 14px;border-radius:999px;background:#f5f7fb}
 .nx h1{font-size:clamp(40px,5.4vw,74px);line-height:1;margin:20px 0 18px;font-weight:800;letter-spacing:-.03em;color:var(--navy)}
 .nx h1 .serif{display:block;background:linear-gradient(90deg,#b07a2c,var(--gold2),#c9923f,#e8c48a,#b07a2c);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:300% 100%;animation:nxshine 7s linear infinite;padding-bottom:6px}
 @keyframes nxshine{to{background-position:300% 0}}
@@ -212,14 +212,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .chip{font-size:13px;font-weight:600;padding:9px 14px;border-radius:12px;background:#fff;border:1px solid var(--line);color:#3a4766;box-shadow:0 4px 12px rgba(15,31,75,.04)}
 .nx .chip b{color:#a5701f}
 .nx .stage{position:relative;height:600px;perspective:1200px}
-.nx .halo{position:absolute;inset:6% 4%;border-radius:50%;background:radial-gradient(circle,rgba(233,191,122,.45),rgba(255,255,255,0) 65%);animation:nxbreathe 5s ease-in-out infinite}
+.nx .halo{position:absolute;inset:10% 8%;border-radius:50%;background:radial-gradient(circle,#f1f4fa 0%,#f7f9fc 45%,rgba(255,255,255,0) 70%);animation:nxbreathe 5s ease-in-out infinite}
 @keyframes nxbreathe{50%{transform:scale(1.07);opacity:.75}}
-.nx .ring{position:absolute;left:50%;top:50%;width:92%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px dashed rgba(201,146,63,.45);animation:nxspin 70s linear infinite}
-.nx .ring.r2{width:74%;animation-duration:100s;animation-direction:reverse;border-style:solid;border-color:rgba(201,146,63,.22)}
+.nx .ring{position:absolute;left:50%;top:50%;width:92%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px dashed #dde3ee;animation:nxspin 70s linear infinite}
+.nx .ring.r2{width:74%;animation-duration:100s;animation-direction:reverse;border-style:solid;border-color:#eef1f6}
 @keyframes nxspin{to{transform:translate(-50%,-50%) rotate(360deg)}}
-.nx .card3d{position:absolute;left:50%;top:50%;width:78%;aspect-ratio:1;transform:translate(-50%,-50%);transform-style:preserve-3d;transition:transform .2s ease-out}
-.nx .card3d .ph{position:absolute;inset:0;border-radius:32px;overflow:hidden;box-shadow:0 40px 80px rgba(15,31,75,.28),0 0 0 6px #fff,0 0 0 7px rgba(201,146,63,.35);animation:nxfloat 6s ease-in-out infinite}
-.nx .card3d img{width:100%;height:100%;object-fit:cover;display:block}
+.nx .card3d{position:absolute;left:50%;top:50%;width:62%;height:94%;transform:translate(-50%,-50%);transform-style:preserve-3d;transition:transform .2s ease-out}
+.nx .floor{position:absolute;left:50%;bottom:3%;width:46%;height:26px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse,rgba(15,31,75,.22),rgba(15,31,75,0) 70%);animation:nxshadow 6s ease-in-out infinite}
+@keyframes nxshadow{50%{transform:translateX(-50%) scale(.9);opacity:.7}}
+.nx .card3d .ph{position:absolute;inset:0;animation:nxfloat 6s ease-in-out infinite}
+.nx .card3d img{width:100%;height:100%;object-fit:contain;display:block;filter:drop-shadow(0 24px 30px rgba(15,31,75,.18))}
 @keyframes nxfloat{50%{transform:translateY(-12px)}}
 .nx .hot{position:absolute;z-index:3}
 .nx .hot i{display:block;width:16px;height:16px;border-radius:50%;background:var(--gold2);border:3px solid #fff;box-shadow:0 0 0 0 rgba(201,146,63,.7);animation:nxping 2s infinite;cursor:pointer}
@@ -240,7 +242,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .feats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
 .nx .feat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;transition:.3s}
 .nx .feat:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(15,31,75,.08);border-color:#e8d3ac}
-.nx .feat .ic{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#fff3df,#fde6c6);display:grid;place-items:center;color:#a5701f;font-size:20px;margin-bottom:12px}
+.nx .feat .ic{width:44px;height:44px;border-radius:14px;background:#eef2fa;display:grid;place-items:center;color:#1B2F6E;font-size:20px;margin-bottom:12px}
 .nx .feat b{font-size:15px;color:var(--navy)}
 @media(max-width:900px){.nx .feats{grid-template-columns:1fr 1fr}}
 
@@ -257,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .modes{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
 .nx .mode{flex:1;min-width:150px;border:1.5px solid var(--line);border-radius:16px;padding:14px 16px;cursor:pointer;background:#fff;font:inherit;text-align:left;transition:.25s;color:inherit}
 .nx .mode b{display:block;font-size:15px;color:var(--navy)}.nx .mode small{color:var(--mute)}
-.nx .mode.on{border-color:var(--gold);background:#fffaf1;box-shadow:0 10px 24px rgba(201,146,63,.18)}
+.nx .mode.on{border-color:var(--gold);background:#fff;box-shadow:0 10px 24px rgba(201,146,63,.18)}
 @media(max-width:900px){.nx .depth{grid-template-columns:1fr}}
 
 /* closeups */
@@ -273,7 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .cap span{color:#d3d9ea;font-size:14px;line-height:1.55}
 .nx .s67{display:flex;align-items:flex-end;gap:6px;margin-bottom:6px}
 .nx .s67 b{font-size:60px;line-height:.9;color:var(--gold2)}
-.nx .note-tile{background:linear-gradient(135deg,#fff,#fff6e8);border:1px solid var(--line);box-shadow:none;display:flex;align-items:center;padding:30px;min-height:0}
+.nx .note-tile{background:#fff;border:1px solid var(--line);box-shadow:none;display:flex;align-items:center;padding:30px;min-height:0}
 .nx .note-tile h3{font-size:22px;margin:10px 0 10px;color:var(--navy)}
 .nx .note-tile p{margin:0;color:#465270;line-height:1.7}
 .nx .lens{position:absolute;width:150px;height:150px;border-radius:50%;border:3px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.4),0 0 0 4px var(--gold2);pointer-events:none;opacity:0;transition:opacity .2s;background-repeat:no-repeat;z-index:3}
@@ -289,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .tip svg{width:60px;height:60px}
 .nx .tip b{display:block;margin-top:8px;color:var(--navy)}
 .nx .tip.on{border-color:var(--gold);box-shadow:0 14px 30px rgba(201,146,63,.2);transform:translateY(-4px)}
-.nx .tipinfo{background:radial-gradient(400px 220px at 100% 0%,rgba(233,191,122,.35),transparent 60%),linear-gradient(135deg,#fff,#fff7ea);border:1px solid var(--line);border-radius:26px;padding:34px;min-height:260px}
+.nx .tipinfo{background:#fff;border:1px solid var(--line);border-radius:26px;padding:34px;min-height:260px}
 .nx .tipinfo h3{font-size:28px;margin:8px 0 10px;color:var(--navy)}
 .nx .tipinfo p{color:#465270;line-height:1.7;margin:0 0 10px}
 @media(max-width:900px){.nx .tipwrap{grid-template-columns:1fr}.nx .tips{grid-template-columns:repeat(2,1fr)}}
@@ -303,11 +305,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .spec em{font-style:normal;font-size:15px;color:var(--mute);font-weight:600}
 .nx .stable{width:100%;border-collapse:collapse;font-size:15px;margin-top:20px;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
 .nx .stable th,.nx .stable td{padding:14px 20px;border-bottom:1px solid var(--line);text-align:left}
-.nx .stable th{color:var(--mute);font-weight:600;width:38%;background:#fcfbf8}
+.nx .stable th{color:var(--mute);font-weight:600;width:38%;background:#f7f9fc}
 @media(max-width:900px){.nx .specs{grid-template-columns:1fr 1fr}}
 
 /* concerns */
-.nx .warm{background:linear-gradient(180deg,var(--cream),#fff)}
+.nx .warm{background:#fff}
 .nx .cps{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 18px}
 .nx .cp{border:1.5px solid var(--line);background:#fff;color:#3a4766;border-radius:999px;padding:11px 18px;font:inherit;font-weight:600;font-size:14px;cursor:pointer;transition:.25s}
 .nx .cp.on{background:var(--navy);border-color:var(--navy);color:#fff}
@@ -325,7 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .nx .fit{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
 .nx .steps{display:grid;grid-template-columns:1fr 1fr;gap:14px;counter-reset:s;margin:0;padding:0;list-style:none}
 .nx .steps li{counter-increment:s;border:1px solid var(--line);border-radius:18px;padding:20px 64px 20px 22px;background:#fff;position:relative;color:#465270;line-height:1.6;font-size:14.5px}
-.nx .steps li:before{content:counter(s,decimal-leading-zero);font-size:38px;font-weight:800;color:#f3e4c8;position:absolute;right:16px;top:8px}
+.nx .steps li:before{content:counter(s,decimal-leading-zero);font-size:38px;font-weight:800;color:#e6ebf5;position:absolute;right:16px;top:8px}
 .nx .steps li strong{display:block;font-size:16px;color:var(--navy);margin-bottom:4px}
 .nx .fitcard{background:linear-gradient(135deg,var(--navy),#1d3a8a);color:#fff;border-radius:26px;padding:34px;position:sticky;top:110px}
 .nx .fitcard p{color:#d3d9ea;line-height:1.75}
@@ -333,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 @media(max-width:900px){.nx .fit{grid-template-columns:1fr}.nx .steps{grid-template-columns:1fr}.nx .fitcard{position:static}}
 
 /* sticky bar */
-.nx-bar{position:fixed;left:50%;bottom:18px;transform:translate(-50%,180%);z-index:900;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border:1px solid #ece7dd;border-radius:999px;padding:8px 8px 8px 10px;transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 20px 40px rgba(15,31,75,.18);font-family:Inter,system-ui,sans-serif}
+.nx-bar{position:fixed;left:50%;bottom:18px;transform:translate(-50%,180%);z-index:900;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border:1px solid #e6eaf2;border-radius:999px;padding:8px 8px 8px 10px;transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 20px 40px rgba(15,31,75,.18);font-family:Inter,system-ui,sans-serif}
 .nx-bar.show{transform:translate(-50%,0)}
 .nx-bar img{width:42px;height:42px;border-radius:50%;object-fit:cover}
 .nx-bar b{font-size:14px;color:#0f1f4b}.nx-bar small{display:block;color:#5f6b85;font-size:12px}
@@ -359,13 +361,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="stage" id="nxStage">
         <div class="halo"></div><div class="ring"></div><div class="ring r2"></div>
-        <div class="card3d" id="nxCard"><div class="ph"><img src="/image/Aesthetics%20images/Nodd.webp" alt="Pulse Nodd RF microneedling machine" width="900" height="900" fetchpriority="high"></div>
-          <div class="hot" style="top:24%;left:30%"><i></i><span>Dual handle: fractional RF + microneedle RF</span></div>
-          <div class="hot" style="top:34%;left:62%"><i></i><span>Single and auto working modes</span></div>
-          <div class="hot" style="top:62%;left:44%"><i></i><span>Max 50 W, 2 MHz RF</span></div>
+        <div class="floor"></div>
+        <div class="card3d" id="nxCard"><div class="ph"><img src="/image/Aesthetics%20images/nodd-cutout.webp" alt="Pulse Nodd RF microneedling machine" width="400" height="771" fetchpriority="high"></div>
+          <div class="hot" style="top:8%;left:22%"><i></i><span>Dual handle: fractional RF + microneedle RF</span></div>
+          <div class="hot" style="top:20%;left:66%"><i></i><span>Single and auto working modes</span></div>
+          <div class="hot" style="top:48%;left:46%"><i></i><span>Max 50 W, 2 MHz RF</span></div>
         </div>
         <div class="badge-float" style="left:0;bottom:16%"><b>0.4–4 mm</b>adjustable depth</div>
-        <div class="badge-float" style="right:0;top:12%;animation-delay:1.5s"><b>67%</b>deeper serum uptake</div>
+        <div class="badge-float" style="right:0;top:44%;animation-delay:1.5s"><b>67%</b>deeper serum uptake</div>
       </div>
     </div>
   </section>
@@ -532,7 +535,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 </div>
 
-<div class="nx-bar" id="nxBar"><img src="/image/Aesthetics%20images/Nodd.webp" alt="" width="42" height="42"><div><b>Pulse Nodd</b><small>RF microneedling</small></div><a href="/request-a-quote.html#pulse-nodd" data-quote="Quote for: Pulse Nodd RF Microneedling Machine">Get a quote</a></div>
+<div class="nx-bar" id="nxBar"><img style="object-fit:contain;background:#f5f7fb" src="/image/Aesthetics%20images/nodd-cutout.webp" alt="" width="42" height="42"><div><b>Pulse Nodd</b><small>RF microneedling</small></div><a href="/request-a-quote.html#pulse-nodd" data-quote="Quote for: Pulse Nodd RF Microneedling Machine">Get a quote</a></div>
 
 <script>
 (function(){
