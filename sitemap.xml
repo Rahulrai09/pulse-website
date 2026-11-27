@@ -1907,7 +1907,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-catheter-care-infection-prevention.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Catheter%20Care%20share.webp</image:loc></image:image>
@@ -1928,7 +1928,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-low-blood-pressure-cramps-during-dialysis.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Low%20BP%20and%20Cramps%20During%20Dialysis%20share.webp</image:loc></image:image>
@@ -2156,5 +2156,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Cost%20per%20Session%20share.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-abnormal-ecg-report-meaning.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-is-dialysis-painful-side-effects.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
