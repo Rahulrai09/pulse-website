@@ -167,7 +167,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/articles-blogs.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -217,7 +217,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-how-dialysis-machine-works.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -346,7 +346,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -370,7 +370,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care/12-channel-ecg-machine/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -381,7 +381,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care/3-channel-ecg-machine/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -392,7 +392,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/critical-care/6-channel-ecg-machine/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -689,7 +689,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care.html</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -697,7 +697,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/dialysers/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -741,7 +741,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/renal-care/pdm-6000/</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   
@@ -1168,7 +1168,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-unit-setup-cost-india.html</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Unit%20Setup%20Cost%20inner%20banner.webp</image:loc></image:image>
@@ -1320,7 +1320,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialyser-price-india.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialyser%20Price%20inner%20banner.webp</image:loc></image:image>
@@ -1658,7 +1658,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-ecg-test-price-india.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/ECG%20Test%20Price%20share.webp</image:loc></image:image>
@@ -1879,7 +1879,7 @@
   </url>
   <url>
     <loc>https://www.pulseio.in/blog-dialysis-sessions-per-week-adequacy.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Dialysis%20Adequacy%20share.webp</image:loc></image:image>
@@ -2135,5 +2135,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.pulseio.in/image/Blogs%20Banners/Angiogram%20vs%20Angioplasty%20share.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-ecg-vs-echo.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-when-is-dialysis-needed.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pulseio.in/blog-dialysis-cost-per-session-india.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
