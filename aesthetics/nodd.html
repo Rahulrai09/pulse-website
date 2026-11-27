@@ -161,6 +161,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script><style id="img-dims">:where(img[data-sz]){height:auto}</style>
 <style id="faq-h-css">.faq-h{margin:0;padding:0;font:inherit;line-height:inherit;color:inherit;letter-spacing:inherit;text-transform:none;border:0}</style>
 <link rel="stylesheet" href="/css/product-related.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body data-product-page="true">
 <!-- Google Tag Manager (noscript) -->
@@ -170,183 +172,423 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div id="global-header"></div>
 
-  <!-- HERO SECTION -->
-  <section class="pg-hero-section" style="background:#f7f9fc; padding:60px 0 0;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
+  <!-- NODD REDESIGN (bright) -->
+<style>
+.nx{--gold:#c9923f;--gold2:#e9bf7a;--cream:#fffaf3;--navy:#0f1f4b;--ink:#0a1e40;--mute:#5f6b85;--line:#ece7dd;--orange:#F07C2A;--sky:#f3f6fc;color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+.nx *{box-sizing:border-box}
+.nx .w{max-width:1200px;margin:0 auto;padding:0 24px}
+.nx .serif{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500}
+.nx .eb{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--orange)}
+.nx h2{font-size:clamp(28px,3.4vw,44px);letter-spacing:-.02em;line-height:1.1;margin:12px 0 14px;color:var(--navy);font-weight:800}
+.nx h2 .serif{color:var(--gold)}
+.nx .lead{color:var(--mute);font-size:17px;line-height:1.75;max-width:640px;margin:0}
+.nx section{padding:90px 0}
+.nx .rv{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.nx .rv.in{opacity:1;transform:none}
+.nx .d1{transition-delay:.1s}.nx .d2{transition-delay:.2s}.nx .d3{transition-delay:.3s}
+.nx .btn{display:inline-flex;gap:10px;align-items:center;border-radius:999px;padding:15px 26px;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;border:0;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden;font-family:inherit}
+.nx .btn:hover{transform:translateY(-2px)}
+.nx .btn-o{background:var(--orange);color:#fff;box-shadow:0 14px 30px rgba(240,124,42,.3)}
+.nx .btn-o:before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:nxsweep 3.2s ease-in-out infinite}
+@keyframes nxsweep{60%,100%{left:130%}}
+.nx .btn-n{background:var(--navy);color:#fff}
+.nx .btn-l{background:#fff;color:var(--navy);border:1.5px solid #d9dfec}
 
-      <!-- Breadcrumb -->
-      <p style="font-size:13px; color:#888; margin-bottom:32px;">
-        <a href="/" style="color:#888; text-decoration:none;">HOME</a> ›
-        <a href="/aesthetics.html" style="color:#888; text-decoration:none;">Aesthetics</a> ›
-        Pulse Nodd RF Skin Tightening Device
-      </p>
+/* hero */
+.nx .hero{position:relative;padding:40px 0 80px;background:radial-gradient(700px 420px at 85% 30%,rgba(233,191,122,.35),transparent 65%),radial-gradient(600px 400px at 0% 100%,rgba(240,124,42,.12),transparent 60%),linear-gradient(180deg,#fff,var(--cream))}
+.nx .hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.nx .crumb{font-size:13px;color:#8a93a8;margin:0 0 24px}
+.nx .crumb a{color:#8a93a8;text-decoration:none}
+.nx .kick{display:inline-flex;font-size:12px;letter-spacing:3px;font-weight:700;color:#9a6a22;text-transform:uppercase;border:1px solid rgba(201,146,63,.45);padding:8px 14px;border-radius:999px;background:rgba(233,191,122,.15)}
+.nx h1{font-size:clamp(40px,5.4vw,74px);line-height:1;margin:20px 0 18px;font-weight:800;letter-spacing:-.03em;color:var(--navy)}
+.nx h1 .serif{display:block;background:linear-gradient(90deg,#b07a2c,var(--gold2),#c9923f,#e8c48a,#b07a2c);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:300% 100%;animation:nxshine 7s linear infinite;padding-bottom:6px}
+@keyframes nxshine{to{background-position:300% 0}}
+.nx .split>span{display:inline-block;opacity:0;transform:translateY(36px);animation:nxup .9s cubic-bezier(.2,.8,.2,1) forwards}
+.nx .split>span.serif{display:block;animation:nxup .9s cubic-bezier(.2,.8,.2,1) .45s forwards,nxshine 7s linear infinite}
+@keyframes nxup{to{opacity:1;transform:none}}
+.nx .hero p.intro{font-size:17px;line-height:1.75;color:#465270;max-width:560px;margin:0 0 26px}
+.nx .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.nx .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.nx .chip{font-size:13px;font-weight:600;padding:9px 14px;border-radius:12px;background:#fff;border:1px solid var(--line);color:#3a4766;box-shadow:0 4px 12px rgba(15,31,75,.04)}
+.nx .chip b{color:#a5701f}
+.nx .stage{position:relative;height:600px;perspective:1200px}
+.nx .halo{position:absolute;inset:6% 4%;border-radius:50%;background:radial-gradient(circle,rgba(233,191,122,.45),rgba(255,255,255,0) 65%);animation:nxbreathe 5s ease-in-out infinite}
+@keyframes nxbreathe{50%{transform:scale(1.07);opacity:.75}}
+.nx .ring{position:absolute;left:50%;top:50%;width:92%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px dashed rgba(201,146,63,.45);animation:nxspin 70s linear infinite}
+.nx .ring.r2{width:74%;animation-duration:100s;animation-direction:reverse;border-style:solid;border-color:rgba(201,146,63,.22)}
+@keyframes nxspin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.nx .card3d{position:absolute;left:50%;top:50%;width:78%;aspect-ratio:1;transform:translate(-50%,-50%);transform-style:preserve-3d;transition:transform .2s ease-out}
+.nx .card3d .ph{position:absolute;inset:0;border-radius:32px;overflow:hidden;box-shadow:0 40px 80px rgba(15,31,75,.28),0 0 0 6px #fff,0 0 0 7px rgba(201,146,63,.35);animation:nxfloat 6s ease-in-out infinite}
+.nx .card3d img{width:100%;height:100%;object-fit:cover;display:block}
+@keyframes nxfloat{50%{transform:translateY(-12px)}}
+.nx .hot{position:absolute;z-index:3}
+.nx .hot i{display:block;width:16px;height:16px;border-radius:50%;background:var(--gold2);border:3px solid #fff;box-shadow:0 0 0 0 rgba(201,146,63,.7);animation:nxping 2s infinite;cursor:pointer}
+@keyframes nxping{70%{box-shadow:0 0 0 16px rgba(201,146,63,0)}100%{box-shadow:0 0 0 0 rgba(201,146,63,0)}}
+.nx .hot span{position:absolute;left:24px;top:-9px;white-space:nowrap;background:#fff;color:var(--navy);border:1px solid var(--line);padding:7px 12px;border-radius:10px;font-size:13px;font-weight:600;box-shadow:0 10px 24px rgba(15,31,75,.12);opacity:0;transform:translateX(-6px);transition:.3s;pointer-events:none}
+.nx .hot:hover span,.nx .hot.show span{opacity:1;transform:none}
+.nx .badge-float{position:absolute;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 18px 40px rgba(15,31,75,.14);font-size:13px;color:var(--mute);animation:nxfloat 7s ease-in-out infinite;z-index:4}
+.nx .badge-float b{display:block;font-size:20px;color:var(--navy)}
+@media(max-width:900px){.nx .hero .w{grid-template-columns:1fr}.nx .stage{height:420px}.nx .badge-float{display:none}.nx .hot span{display:none}}
 
-      <div class="pg-hero-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:60px; align-items:start; padding-bottom:60px;">
+/* marquee */
+.nx .mq{background:var(--navy);color:#e9eefb;overflow:hidden}
+.nx .track{display:flex;gap:46px;padding:16px 0;white-space:nowrap;width:max-content;animation:nxmq 32s linear infinite;font-weight:600;font-size:15px}
+.nx .track span:before{content:"✦";color:var(--gold2);margin-right:14px}
+@keyframes nxmq{to{transform:translateX(-50%)}}
 
-        <!-- Left: Product Image -->
-        <div class="pg-gallery">
-          <div class="pg-thumbs">
-            <img src="/image/Aesthetics%20images/Nodd.webp" alt="Pulse Nodd RF microneedling machine" class="active" onclick="pgSetMain(this)" width="1000" height="1000" data-sz>
-            <img src="/image/Aesthetics%20images/Nodd%20Needle.webp" alt="Nodd Gold-Plated Needle Detail" onclick="pgSetMain(this)" width="1000" height="1000" data-sz>
-            <img src="/image/Aesthetics%20images/Nodd%20Parts.webp" alt="Nodd Applicator Parts" onclick="pgSetMain(this)" width="1000" height="1000" data-sz>
-          </div>
-          <div class="pg-main">
-            <img src="/image/Aesthetics%20images/Nodd.webp" alt="Pulse Nodd RF microneedling machine" width="1000" height="1000" data-sz>
-          </div>
+/* features */
+.nx .feats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
+.nx .feat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;transition:.3s}
+.nx .feat:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(15,31,75,.08);border-color:#e8d3ac}
+.nx .feat .ic{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#fff3df,#fde6c6);display:grid;place-items:center;color:#a5701f;font-size:20px;margin-bottom:12px}
+.nx .feat b{font-size:15px;color:var(--navy)}
+@media(max-width:900px){.nx .feats{grid-template-columns:1fr 1fr}}
+
+/* depth */
+.nx .depth{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.nx .skin{border-radius:26px;overflow:hidden;background:#fff;box-shadow:0 30px 60px rgba(15,31,75,.1);border:1px solid var(--line)}
+.nx .skin svg{display:block;width:100%;height:auto}
+.nx .dval{font-size:68px;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--navy);margin-top:14px}
+.nx .dval small{font-size:22px;color:var(--mute);font-weight:600}
+.nx input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:99px;background:linear-gradient(90deg,var(--gold) var(--p,30%),#eceef4 var(--p,30%));outline:0;margin:22px 0 10px}
+.nx input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;border:6px solid var(--gold);box-shadow:0 6px 16px rgba(201,146,63,.45);cursor:grab}
+.nx input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#fff;border:6px solid var(--gold);cursor:grab}
+.nx .tk{display:flex;justify-content:space-between;color:var(--mute);font-size:12px}
+.nx .modes{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.nx .mode{flex:1;min-width:150px;border:1.5px solid var(--line);border-radius:16px;padding:14px 16px;cursor:pointer;background:#fff;font:inherit;text-align:left;transition:.25s;color:inherit}
+.nx .mode b{display:block;font-size:15px;color:var(--navy)}.nx .mode small{color:var(--mute)}
+.nx .mode.on{border-color:var(--gold);background:#fffaf1;box-shadow:0 10px 24px rgba(201,146,63,.18)}
+@media(max-width:900px){.nx .depth{grid-template-columns:1fr}}
+
+/* closeups */
+.nx .soft{background:var(--sky)}
+.nx .close{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:38px}
+.nx .tile{position:relative;border-radius:26px;overflow:hidden;min-height:300px;background:#0b1a45;box-shadow:0 24px 50px rgba(15,31,75,.14)}
+.nx .tile img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1);display:block}
+.nx .tile:hover img{transform:scale(1.07)}
+.nx .tile.tall{grid-row:span 2}
+.nx .cap{position:absolute;left:0;right:0;bottom:0;padding:26px;background:linear-gradient(transparent,rgba(6,13,38,.92));color:#fff}
+.nx .cap.top{top:0;bottom:auto;background:linear-gradient(rgba(6,13,38,.92) 40%,transparent)}
+.nx .cap b{display:block;font-size:21px;margin-bottom:6px}
+.nx .cap span{color:#d3d9ea;font-size:14px;line-height:1.55}
+.nx .s67{display:flex;align-items:flex-end;gap:6px;margin-bottom:6px}
+.nx .s67 b{font-size:60px;line-height:.9;color:var(--gold2)}
+.nx .note-tile{background:linear-gradient(135deg,#fff,#fff6e8);border:1px solid var(--line);box-shadow:none;display:flex;align-items:center;padding:30px;min-height:0}
+.nx .note-tile h3{font-size:22px;margin:10px 0 10px;color:var(--navy)}
+.nx .note-tile p{margin:0;color:#465270;line-height:1.7}
+.nx .lens{position:absolute;width:150px;height:150px;border-radius:50%;border:3px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.4),0 0 0 4px var(--gold2);pointer-events:none;opacity:0;transition:opacity .2s;background-repeat:no-repeat;z-index:3}
+@media(max-width:900px){.nx .close{grid-template-columns:1fr}.nx .tile.tall{grid-row:auto}}
+
+/* tips */
+.nx .tipwrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center;margin-top:30px}
+.nx .seg{display:inline-flex;background:#f1f3f8;border-radius:999px;padding:5px;gap:4px}
+.nx .seg button{border:0;background:none;font:inherit;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;cursor:pointer;color:var(--mute);transition:.25s}
+.nx .seg button.on{background:var(--navy);color:#fff}
+.nx .tips{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+.nx .tip{border:1.5px solid var(--line);border-radius:18px;padding:16px 10px;text-align:center;cursor:pointer;transition:.25s;background:#fff;font:inherit;color:inherit}
+.nx .tip svg{width:60px;height:60px}
+.nx .tip b{display:block;margin-top:8px;color:var(--navy)}
+.nx .tip.on{border-color:var(--gold);box-shadow:0 14px 30px rgba(201,146,63,.2);transform:translateY(-4px)}
+.nx .tipinfo{background:radial-gradient(400px 220px at 100% 0%,rgba(233,191,122,.35),transparent 60%),linear-gradient(135deg,#fff,#fff7ea);border:1px solid var(--line);border-radius:26px;padding:34px;min-height:260px}
+.nx .tipinfo h3{font-size:28px;margin:8px 0 10px;color:var(--navy)}
+.nx .tipinfo p{color:#465270;line-height:1.7;margin:0 0 10px}
+@media(max-width:900px){.nx .tipwrap{grid-template-columns:1fr}.nx .tips{grid-template-columns:repeat(2,1fr)}}
+
+/* specs */
+.nx .specs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.nx .spec{border:1px solid var(--line);border-radius:20px;padding:24px;background:#fff;transition:.3s}
+.nx .spec:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(15,31,75,.08);border-color:#e8d3ac}
+.nx .spec small{color:var(--mute);font-weight:600;font-size:13px}
+.nx .spec strong{display:block;font-size:28px;margin-top:8px;letter-spacing:-.02em;color:var(--navy)}
+.nx .spec em{font-style:normal;font-size:15px;color:var(--mute);font-weight:600}
+.nx .stable{width:100%;border-collapse:collapse;font-size:15px;margin-top:20px;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.nx .stable th,.nx .stable td{padding:14px 20px;border-bottom:1px solid var(--line);text-align:left}
+.nx .stable th{color:var(--mute);font-weight:600;width:38%;background:#fcfbf8}
+@media(max-width:900px){.nx .specs{grid-template-columns:1fr 1fr}}
+
+/* concerns */
+.nx .warm{background:linear-gradient(180deg,var(--cream),#fff)}
+.nx .cps{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 18px}
+.nx .cp{border:1.5px solid var(--line);background:#fff;color:#3a4766;border-radius:999px;padding:11px 18px;font:inherit;font-weight:600;font-size:14px;cursor:pointer;transition:.25s}
+.nx .cp.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.nx .ans{display:none;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 20px 40px rgba(15,31,75,.06)}
+.nx .ans.on{display:flex;animation:nxin .35s ease-out}
+@keyframes nxin{from{opacity:0;transform:translateY(10px)}}
+.nx .ans .t{color:#a5701f;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.nx .ans .big{font-size:24px;font-weight:800;color:var(--navy);margin-top:4px}
+.nx .ans .big a{color:var(--navy)}
+.nx .ans .tech{color:var(--mute);margin-top:6px}
+.nx .ans .btn{margin-left:auto}
+@media(max-width:700px){.nx .ans.on{flex-direction:column;align-items:flex-start}.nx .ans .btn{margin-left:0}}
+
+/* fit + checklist */
+.nx .fit{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.nx .steps{display:grid;grid-template-columns:1fr 1fr;gap:14px;counter-reset:s;margin:0;padding:0;list-style:none}
+.nx .steps li{counter-increment:s;border:1px solid var(--line);border-radius:18px;padding:20px 64px 20px 22px;background:#fff;position:relative;color:#465270;line-height:1.6;font-size:14.5px}
+.nx .steps li:before{content:counter(s,decimal-leading-zero);font-size:38px;font-weight:800;color:#f3e4c8;position:absolute;right:16px;top:8px}
+.nx .steps li strong{display:block;font-size:16px;color:var(--navy);margin-bottom:4px}
+.nx .fitcard{background:linear-gradient(135deg,var(--navy),#1d3a8a);color:#fff;border-radius:26px;padding:34px;position:sticky;top:110px}
+.nx .fitcard p{color:#d3d9ea;line-height:1.75}
+.nx .fitcard a{color:var(--gold2);font-weight:700}
+@media(max-width:900px){.nx .fit{grid-template-columns:1fr}.nx .steps{grid-template-columns:1fr}.nx .fitcard{position:static}}
+
+/* sticky bar */
+.nx-bar{position:fixed;left:50%;bottom:18px;transform:translate(-50%,180%);z-index:900;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border:1px solid #ece7dd;border-radius:999px;padding:8px 8px 8px 10px;transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 20px 40px rgba(15,31,75,.18);font-family:Inter,system-ui,sans-serif}
+.nx-bar.show{transform:translate(-50%,0)}
+.nx-bar img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.nx-bar b{font-size:14px;color:#0f1f4b}.nx-bar small{display:block;color:#5f6b85;font-size:12px}
+.nx-bar a{background:#F07C2A;color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px}
+@media(max-width:600px){.nx-bar{left:12px;transform:translateY(180%);right:90px}.nx-bar.show{transform:none}.nx-bar small{display:none}}
+@media(prefers-reduced-motion:reduce){.nx *,.nx *:before{animation:none!important;transition:none!important}.nx .rv,.nx .split>span{opacity:1;transform:none}}
+</style>
+
+<div class="nx">
+  <section class="hero" id="top">
+    <div class="w">
+      <div>
+        <p class="crumb"><a href="/">Home</a> › <a href="/aesthetics.html">Aesthetics</a> › Pulse Nodd RF Skin Tightening Device</p>
+        <span class="kick">RF microneedle · Collagen remodeling</span>
+        <h1 class="split"><span>Pulse</span> <span>Nodd</span> <span class="serif">RF Microneedling Machine</span></h1>
+        <p class="intro">Nodd pairs microneedling with radiofrequency energy (MNRF) to tighten and resurface skin with far less downtime than fully ablative treatments. Gold-plated needles deliver RF energy at an adjustable depth to target fine lines and acne scars, and a dual air-chamber design in the handpiece helps topical serums penetrate up to 67% deeper into the dermis right after treatment. Two applicator sizes cover small and large treatment areas, and the precision of the microneedle channels carries a much lower risk of burns or hyperpigmentation than optical treatments like IPL or laser.</p>
+        <div class="ctas">
+          <a class="btn btn-o" href="/request-a-quote.html#pulse-nodd" data-quote="Quote for: Pulse Nodd RF Microneedling Machine">Get a Quote →</a>
+          <a class="btn btn-n" rel="noopener noreferrer nofollow" href="https://wa.me/919071101108" target="_blank" onclick="return pulseContact()">Contact Us</a>
+          <a class="btn btn-l" href="/image/Aesthetics images/pulse Aesthetic  Machines_compressed.pdf" target="_blank" rel="noopener noreferrer" download>⤓ Download Brochure</a>
         </div>
-
-        <!-- Right: Product Info -->
-        <div>
-          <p style="color:#F07C2A; font-size:12px; font-weight:700; letter-spacing:2px; margin-bottom:8px; text-transform:uppercase;">
-            RF MICRONEEDLE | COLLAGEN REMODELING
-          </p>
-          <h1 style="font-size:2rem; color:#0f1f4b; line-height:1.2; margin-bottom:16px;">
-            Pulse Nodd RF Microneedling Machine
-          </h1>
-          <p style="color:#555; font-size:1rem; line-height:1.8; margin-bottom:24px;">
-            Nodd pairs microneedling with radiofrequency energy (MNRF) to tighten and resurface skin with far less downtime than fully ablative treatments. Gold-plated needles deliver RF energy at an adjustable depth to target fine lines and acne scars, and a dual air-chamber design in the handpiece helps topical serums penetrate up to 67% deeper into the dermis right after treatment. Two applicator sizes cover small and large treatment areas, and the precision of the microneedle channels carries a much lower risk of burns or hyperpigmentation than optical treatments like IPL or laser.
-          </p>
-
-          <!-- Feature Tags -->
-          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px;">
-            <span style="background:#eef1f6; color:#333; padding:4px 12px; border-radius:20px; font-size:0.85rem; font-weight:500;">Gold-Plated Needles</span>
-            <span style="background:#eef1f6; color:#333; padding:4px 12px; border-radius:20px; font-size:0.85rem; font-weight:500;">Mono &amp; Bipolar</span>
-            <span style="background:#eef1f6; color:#333; padding:4px 12px; border-radius:20px; font-size:0.85rem; font-weight:500;">0.4–4mm Depth</span>
-            <span style="background:#eef1f6; color:#333; padding:4px 12px; border-radius:20px; font-size:0.85rem; font-weight:500;">Dual Handle</span>
-          </div>
-
-          <!-- CTA Buttons -->
-          <div style="display:flex; gap:16px; flex-wrap:wrap;">
-            <a href="/request-a-quote.html#pulse-nodd" style="background:#F07C2A; color:#fff; padding:14px 32px; border-radius:6px; font-weight:600; text-decoration:none; font-size:15px;">
-              Get a Quote
-            </a>
-            <a rel="noopener noreferrer nofollow" href="https://wa.me/919071101108" target="_blank" style="background:#1B2F6E; color:#fff; padding:14px 32px; border-radius:6px; font-weight:600; text-decoration:none; font-size:15px;" onclick="return pulseContact()">
-              Contact Us
-            </a>
-            <a href="/image/Aesthetics images/pulse Aesthetic  Machines_compressed.pdf" target="_blank" rel="noopener noreferrer" download style="border:2px solid #1B2F6E; color:#1B2F6E; padding:14px 32px; border-radius:6px; font-weight:600; text-decoration:none; font-size:15px;">
-              Download Brochure
-            </a>
-          </div>
+        <div class="chips"><span class="chip"><b>Gold-plated</b> needles</span><span class="chip"><b>Mono &amp; bipolar</b></span><span class="chip"><b>0.4–4 mm</b> depth</span><span class="chip"><b>Dual</b> handle</span></div>
+      </div>
+      <div class="stage" id="nxStage">
+        <div class="halo"></div><div class="ring"></div><div class="ring r2"></div>
+        <div class="card3d" id="nxCard"><div class="ph"><img src="/image/Aesthetics%20images/Nodd.webp" alt="Pulse Nodd RF microneedling machine" width="900" height="900" fetchpriority="high"></div>
+          <div class="hot" style="top:24%;left:30%"><i></i><span>Dual handle: fractional RF + microneedle RF</span></div>
+          <div class="hot" style="top:34%;left:62%"><i></i><span>Single and auto working modes</span></div>
+          <div class="hot" style="top:62%;left:44%"><i></i><span>Max 50 W, 2 MHz RF</span></div>
         </div>
+        <div class="badge-float" style="left:0;bottom:16%"><b>0.4–4 mm</b>adjustable depth</div>
+        <div class="badge-float" style="right:0;top:12%;animation-delay:1.5s"><b>67%</b>deeper serum uptake</div>
       </div>
     </div>
   </section>
 
-  <!-- KEY FEATURES -->
-  <section style="padding:48px 0; background:#fff;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <h2 style="color:#0f1f4b; font-size:1.6rem; margin-bottom:28px;">Key Features</h2>
-      <ul style="list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;">
-          <span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Stepping motor type
-        </li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;">
-          <span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Gold-plated needling
-        </li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;">
-          <span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Mono-polar &amp; bi-polar modes
-        </li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;">
-          <span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>All body treatment
-        </li>
-        <li style="padding:12px 16px; background:#f7f9fc; border-radius:8px; color:#444; font-size:0.95rem; display:flex; align-items:flex-start; gap:10px;">
-          <span style="color:#E87722; font-weight:700; flex-shrink:0;">✓</span>Dual handle: Fractional RF + Micro Needle RF
-        </li>
-      </ul>
+  <div class="mq"><div class="track" id="nxTrack"><span>Gold-plated needles</span><span>Mono &amp; bipolar modes</span><span>0.4–4 mm adjustable depth</span><span>Stepping motor</span><span>Dual handle</span><span>Up to 67% deeper serum penetration</span><span>All body treatment</span><span>Pulse duration 10–900 ms</span></div></div>
+
+  <section id="features">
+    <div class="w">
+      <div class="rv"><span class="eb">Key features</span><h2>Built for <span class="serif">precise results.</span></h2></div>
+      <div class="feats">
+        <div class="feat rv"><div class="ic">⚙</div><b>Stepping motor type</b></div>
+        <div class="feat rv d1"><div class="ic">✦</div><b>Gold-plated needling</b></div>
+        <div class="feat rv d2"><div class="ic">⇄</div><b>Mono-polar &amp; bi-polar modes</b></div>
+        <div class="feat rv d3"><div class="ic">◎</div><b>All body treatment</b></div>
+        <div class="feat rv d3"><div class="ic">✌</div><b>Dual handle: Fractional RF + Micro Needle RF</b></div>
+      </div>
     </div>
   </section>
 
-  <!-- SPECIFICATIONS TABLE -->
-  <section style="padding:60px 0; background:#fff;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <h2 style="color:#0f1f4b; font-size:1.6rem; margin-bottom:32px;">
-        Technical Specifications
-      </h2>
-      <table style="width:100%; border-collapse:collapse; font-size:15px; border:1px solid #eee;">
-        <tbody>
-          <tr style="background:#f9f9f9;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555; width:40%;">Power</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">Max 50 watts</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Handle</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">Fractional RF handle / Micro needle RF handle</td>
-          </tr>
-          <tr style="background:#f9f9f9;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Frequency</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">2MHz</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Energy</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">1–10 Level</td>
-          </tr>
-          <tr style="background:#f9f9f9;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Pulse Duration</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">10–900ms</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Needle Depths</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">0.4–4mm Adjustable</td>
-          </tr>
-          <tr style="background:#f9f9f9;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Pressure Level</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">1–4</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Working Mode</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">Single / Auto</td>
-          </tr>
-          <tr style="background:#f9f9f9;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Mode</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">Mono &amp; Bipolar</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Cooling</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">1–3 Level</td>
-          </tr>
-          <tr style="background:#f9f9f9;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Invasive Tips</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">M-18, M-25, M-49, M-81</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:16px; border:1px solid #eee; font-weight:500; color:#555;">Non-Invasive Tips</td>
-            <td style="padding:16px; border:1px solid #eee; color:#333;">F-3×3, F-5×5, F-9×9</td>
-          </tr>
-        </tbody>
-      </table>
+  <section id="tech" class="soft">
+    <div class="w depth">
+      <div class="rv">
+        <span class="eb">Try it</span>
+        <h2>Set the depth, <span class="serif">see the reach.</span></h2>
+        <p class="lead">Drag the slider to change needle depth across the machine's 0.4 to 4 mm range, and switch between mono and bipolar modes.</p>
+        <div class="dval"><span id="nxDv">1.5</span> <small>mm</small></div>
+        <input type="range" id="nxDepth" min="0.4" max="4" step="0.1" value="1.5" aria-label="Needle depth in mm">
+        <div class="tk"><span>0.4 mm</span><span>2 mm</span><span>4 mm</span></div>
+        <div class="modes" id="nxModes">
+          <button class="mode on" data-m="mono" type="button"><b>Monopolar</b><small>Mono mode</small></button>
+          <button class="mode" data-m="bi" type="button"><b>Bipolar</b><small>Bi mode</small></button>
+        </div>
+        <p style="color:var(--mute);font-size:13px;margin-top:14px">Illustration only, not to scale. Your trainer sets depth and energy for each skin type and area.</p>
+      </div>
+      <div class="skin rv d2">
+        <svg viewBox="0 0 520 460" role="img" aria-label="Illustration of Nodd needles entering skin layers">
+          <defs>
+            <linearGradient id="nxep" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f6d8c4"/><stop offset="1" stop-color="#efc3a8"/></linearGradient>
+            <linearGradient id="nxde" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f1b9a6"/><stop offset="1" stop-color="#e59c8a"/></linearGradient>
+            <linearGradient id="nxsc" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fbe7b5"/><stop offset="1" stop-color="#f5d892"/></linearGradient>
+            <linearGradient id="nxnd" x1="0" x2="1"><stop offset="0" stop-color="#b9892f"/><stop offset=".5" stop-color="#ffe3a3"/><stop offset="1" stop-color="#b9892f"/></linearGradient>
+            <radialGradient id="nxheat"><stop offset="0" stop-color="#ffb35c" stop-opacity=".95"/><stop offset="1" stop-color="#ff7a2a" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect x="0" y="120" width="520" height="40" fill="url(#nxep)"/><rect x="0" y="160" width="520" height="170" fill="url(#nxde)"/><rect x="0" y="330" width="520" height="130" fill="url(#nxsc)"/>
+          <g opacity=".35" fill="#fff"><circle cx="60" cy="380" r="22"/><circle cx="120" cy="400" r="26"/><circle cx="190" cy="375" r="20"/><circle cx="260" cy="405" r="25"/><circle cx="330" cy="378" r="22"/><circle cx="400" cy="402" r="26"/><circle cx="470" cy="380" r="21"/></g>
+          <g stroke="#d98b78" stroke-width="2" fill="none" opacity=".6"><path d="M0 220 C80 200 160 240 260 215 S440 200 520 225"/><path d="M0 270 C90 255 180 290 280 265 S450 255 520 275"/></g>
+          <text x="16" y="146" font-size="13" fill="#8a5a44" font-weight="600">Epidermis</text><text x="16" y="186" font-size="13" fill="#7a3f33" font-weight="600">Dermis</text><text x="16" y="356" font-size="13" fill="#8a6a24" font-weight="600">Subcutaneous fat</text>
+          <g id="nxHeats"></g><g id="nxNeedles"></g>
+          <rect x="140" y="20" width="240" height="70" rx="16" fill="#0f1f4b"/><rect x="160" y="80" width="200" height="22" rx="6" fill="#1d3376"/>
+          <text x="260" y="62" font-size="15" fill="#f3d39b" text-anchor="middle" font-weight="700">NODD HANDPIECE</text>
+        </svg>
+      </div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section style="padding:0 0 48px; background:#fff;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <h2 style="color:#0f1f4b; font-size:1.6rem; margin-bottom:20px;">A Safer Option Across Skin Tones</h2>
-      <p style="color:#555; font-size:1rem; line-height:1.8;">
-        Because Nodd delivers energy directly through microneedle channels rather than broad optical light, it carries less risk of triggering hyperpigmentation in darker skin tones — a common limitation with laser or IPL-based resurfacing. That makes it a versatile choice for clinics serving a diverse client base who want visible improvement in scarring, texture, and fine lines without excluding any skin type from treatment.
-      </p>
+  <section id="closeups">
+    <div class="w">
+      <div class="rv"><span class="eb">Up close</span><h2>Engineered at the <span class="serif">tip.</span></h2>
+      <p class="lead">Hover over the photos to zoom in. Gold-plated needles deliver RF energy through tiny channels, and a dual air-chamber handpiece helps serums go deeper straight after treatment.</p></div>
+      <div class="close">
+        <div class="tile tall rv d1" data-lens><img src="/image/Aesthetics%20images/Nodd%20Needle.webp" alt="Nodd dual air-chamber handpiece" width="900" height="900" loading="lazy"><div class="cap"><div class="s67"><b data-count="67">67</b><span style="font-size:24px;font-weight:800;color:#e9bf7a">%</span></div><b>Dual air-chamber handpiece</b><span>Up to 67% deeper serum penetration into the dermis straight after treatment.</span></div></div>
+        <div class="tile rv d2" data-lens><img src="/image/Aesthetics%20images/Nodd%20Parts.webp" alt="Nodd gold-plated needle cartridge" width="765" height="765" loading="lazy"><div class="cap top"><b>Gold-plated needle cartridge</b><span>Fine needles deliver RF energy at the depth you set, from 0.4 to 4 mm.</span></div></div>
+        <div class="tile note-tile rv d3"><div><span class="eb">A safer option across skin tones</span>
+          <h3>Lower risk of hyperpigmentation</h3>
+          <p>Because Nodd delivers energy directly through microneedle channels rather than broad optical light, it carries less risk of triggering hyperpigmentation in darker skin tones, a common limitation with laser or IPL-based resurfacing. That makes it a versatile choice for clinics serving a diverse client base who want visible improvement in scarring, texture and fine lines without excluding any skin type from treatment.</p></div></div>
+      </div>
     </div>
   </section>
-  <!-- BUYER GUIDE -->
-  <section style="padding:48px 0; background:#fff;">
-    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
-      <h2 data-guide style="color:#0f1f4b; font-size:1.6rem; margin:0 0 16px;">Which Pulse Machine Treats Which Concern</h2>
-      <p style="color:#444; font-size:1rem; line-height:1.8; margin-bottom:14px;">Clinics usually build their treatment menu around patient concerns. This table shows which Pulse machine covers each one.</p>
-      <div style="overflow-x:auto; margin:8px 0 6px;"><table style="width:100%; border-collapse:collapse; min-width:560px;"><thead><tr><th style="text-align:left; padding:12px; border:1px solid #eee; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Concern</th><th style="text-align:left; padding:12px; border:1px solid #eee; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Pulse machine</th><th style="text-align:left; padding:12px; border:1px solid #eee; background:#f0f3fa; color:#1B2F6E; font-size:0.85rem;">Technology</th></tr></thead><tbody><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Hair removal</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/wavelength-pro-x/" style="color:#E63946; font-weight:600;">Wavelength Pro X</a>, <a href="/aesthetics/bbl-super-ipl-dpl/" style="color:#E63946; font-weight:600;">Bbl Super IPL+DPL</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Diode laser (4 wavelengths) or IPL</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Tattoos and pigmentation</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/pi-code/" style="color:#E63946; font-weight:600;">Pi-Code</a>, <a href="/aesthetics/bbl-super-ipl-dpl/" style="color:#E63946; font-weight:600;">Bbl Super IPL+DPL</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Picosecond Nd:YAG laser or IPL</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Acne scars, fine lines, skin texture</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><strong>Nodd</strong> (this page), <a href="/aesthetics/code-factor/" style="color:#E63946; font-weight:600;">Code Factor</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">RF microneedling or CO₂ fractional laser</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Facial lifting and toning</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/visage/" style="color:#E63946; font-weight:600;">Visage</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">HIFES with RF</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Fat reduction and body contouring</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/cool-shape/" style="color:#E63946; font-weight:600;">Cool Shape</a>, <a href="/aesthetics/em-code/" style="color:#E63946; font-weight:600;">Em Code</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Cryolipolysis, or HIFEM with RF</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Pelvic floor weakness</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/em-ma/" style="color:#E63946; font-weight:600;">Em-Ma</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">HIFEM</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Vitiligo, psoriasis, alopecia patches</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/excimer/" style="color:#E63946; font-weight:600;">Excimer</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">308 nm UVB phototherapy</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Facials, hydration, pore cleansing</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/hydrafrac/" style="color:#E63946; font-weight:600;">Hydrafrac</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Multi-step facial platform</td></tr><tr><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">Consultation and progress tracking</td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;"><a href="/aesthetics/skin-analyzer/" style="color:#E63946; font-weight:600;">Skin Analyzer</a></td><td style="padding:12px; border:1px solid #eee; color:#444; font-size:0.95rem; vertical-align:top;">36 MP camera with spectral imaging</td></tr></tbody></table></div>
-      <h2 data-guide style="color:#0f1f4b; font-size:1.6rem; margin:32px 0 16px;">How Nodd Fits Your Clinic</h2>
-      <p style="color:#444; font-size:1rem; line-height:1.8; margin-bottom:14px;">RF microneedling treats acne scars, fine lines and loose skin with less downtime than a CO₂ laser, and with a lower risk of pigment changes than many light-based treatments. That makes it popular in Indian clinics. Two applicator sizes cover face and body.</p>
-      <h2 data-guide style="color:#0f1f4b; font-size:1.6rem; margin:32px 0 16px;">What to Check Before Buying</h2>
-      <ul style="color:#444; font-size:1rem; line-height:1.7; padding-left:20px;">
-        <li style="margin-bottom:8px;"><strong>Needle tips.</strong> Price the disposable tips per session.</li>
-        <li style="margin-bottom:8px;"><strong>Depth range.</strong> Check the 0.4–4 mm depth covers the areas you plan to treat.</li>
-        <li style="margin-bottom:8px;"><strong>Training.</strong> Ask what operator training is included and whether it covers settings for Indian skin types.</li>
-        <li style="margin-bottom:8px;"><strong>Certifications and documents.</strong> Ask for the certificates and import documents for the exact model you buy.</li>
-        <li style="margin-bottom:8px;"><strong>Running costs.</strong> List every consumable, tip, lamp or handpiece that wears out, with prices.</li>
-        <li style="margin-bottom:8px;"><strong>Warranty and service.</strong> Confirm what the warranty covers, especially handpieces, and how fast an engineer reaches your clinic.</li>
-        <li style="margin-bottom:8px;"><strong>Space and power.</strong> Check room size, power supply and any cooling or ventilation needs.</li>
-      </ul>
-      <p style="color:#444; font-size:1rem; line-height:1.8; margin:16px 0 0;">Typical prices are in our <a href="/blog-rf-microneedling-machine-price-india.html" style="color:#E63946; font-weight:600;">RF microneedling machine price guide</a>. Share your clinic city and the treatments you plan to offer, and <a href="/request-a-quote.html#pulse-nodd" style="color:#E63946; font-weight:600;">request a quote</a>.</p>
+
+  <section id="tips" class="soft">
+    <div class="w">
+      <div class="rv"><span class="eb">Two handles, seven tips</span><h2>Choose the right <span class="serif">tip.</span></h2>
+      <p class="lead">The microneedle RF handle uses invasive M tips. The fractional RF handle uses non-invasive F tips.</p></div>
+      <div class="tipwrap">
+        <div class="rv d1">
+          <div class="seg" id="nxTipSeg"><button class="on" data-t="m" type="button">Invasive (M)</button><button data-t="f" type="button">Non-invasive (F)</button></div>
+          <div class="tips" id="nxTipGrid"></div>
+        </div>
+        <div class="tipinfo rv d2" id="nxTipInfo"><span class="eb">Invasive tips</span><h3>Microneedle RF handle</h3><p>Invasive tips: M-18, M-25, M-49, M-81. Non-invasive tips: F-3×3, F-5×5, F-9×9.</p></div>
+      </div>
     </div>
   </section>
+
+  <section id="specs">
+    <div class="w">
+      <div class="rv"><span class="eb">Technical specifications</span><h2>The numbers your <span class="serif">team needs.</span></h2></div>
+      <div class="specs">
+        <div class="spec rv"><small>Power</small><strong>Max <span data-count="50">50</span> <em>W</em></strong></div>
+        <div class="spec rv d1"><small>Frequency</small><strong><span data-count="2">2</span> <em>MHz</em></strong></div>
+        <div class="spec rv d2"><small>Needle depth</small><strong>0.4–<span data-count="4">4</span> <em>mm</em></strong></div>
+        <div class="spec rv d3"><small>Pulse duration</small><strong>10–<span data-count="900">900</span> <em>ms</em></strong></div>
+        <div class="spec rv"><small>Energy</small><strong>1–<span data-count="10">10</span> <em>level</em></strong></div>
+        <div class="spec rv d1"><small>Pressure level</small><strong>1–<span data-count="4">4</span></strong></div>
+        <div class="spec rv d2"><small>Cooling</small><strong>1–<span data-count="3">3</span> <em>level</em></strong></div>
+        <div class="spec rv d3"><small>Working mode</small><strong style="font-size:22px">Single / Auto</strong></div>
+      </div>
+      <table class="stable rv"><tbody>
+        <tr><th>Power</th><td>Max 50 watts</td></tr>
+        <tr><th>Handle</th><td>Fractional RF handle / Micro needle RF handle</td></tr>
+        <tr><th>Frequency</th><td>2MHz</td></tr>
+        <tr><th>Energy</th><td>1–10 Level</td></tr>
+        <tr><th>Pulse Duration</th><td>10–900ms</td></tr>
+        <tr><th>Needle Depths</th><td>0.4–4mm Adjustable</td></tr>
+        <tr><th>Pressure Level</th><td>1–4</td></tr>
+        <tr><th>Working Mode</th><td>Single / Auto</td></tr>
+        <tr><th>Mode</th><td>Mono &amp; Bipolar</td></tr>
+        <tr><th>Cooling</th><td>1–3 Level</td></tr>
+        <tr><th>Invasive Tips</th><td>M-18, M-25, M-49, M-81</td></tr>
+        <tr><th>Non-Invasive Tips</th><td>F-3×3, F-5×5, F-9×9</td></tr>
+      </tbody></table>
+    </div>
+  </section>
+
+  <section id="concerns" class="warm">
+    <div class="w">
+      <div class="rv"><span class="eb">Build your menu</span><h2 data-guide>Which Pulse Machine Treats <span class="serif">Which Concern</span></h2>
+      <p class="lead">Clinics usually build their treatment menu around patient concerns. Tap a concern to see which Pulse machine covers it.</p></div>
+      <div class="cps rv" id="nxCps">
+        <button class="cp on" type="button" data-i="0">Acne scars, fine lines, skin texture</button>
+        <button class="cp" type="button" data-i="1">Hair removal</button>
+        <button class="cp" type="button" data-i="2">Tattoos and pigmentation</button>
+        <button class="cp" type="button" data-i="3">Facial lifting and toning</button>
+        <button class="cp" type="button" data-i="4">Fat reduction and body contouring</button>
+        <button class="cp" type="button" data-i="5">Pelvic floor weakness</button>
+        <button class="cp" type="button" data-i="6">Vitiligo, psoriasis, alopecia patches</button>
+        <button class="cp" type="button" data-i="7">Facials, hydration, pore cleansing</button>
+        <button class="cp" type="button" data-i="8">Consultation and progress tracking</button>
+      </div>
+      <div id="nxAns">
+        <div class="ans on"><div><div class="t">Acne scars, fine lines, skin texture</div><div class="big">Nodd (this page), <a href="/aesthetics/code-factor/">Code Factor</a></div><div class="tech">RF microneedling or CO₂ fractional laser</div></div><a class="btn btn-o" href="/aesthetics/code-factor/">View Code Factor →</a></div>
+        <div class="ans"><div><div class="t">Hair removal</div><div class="big"><a href="/aesthetics/wavelength-pro-x/">Wavelength Pro X</a>, <a href="/aesthetics/bbl-super-ipl-dpl/">Bbl Super IPL+DPL</a></div><div class="tech">Diode laser (4 wavelengths) or IPL</div></div><a class="btn btn-o" href="/aesthetics/wavelength-pro-x/">View machine →</a></div>
+        <div class="ans"><div><div class="t">Tattoos and pigmentation</div><div class="big"><a href="/aesthetics/pi-code/">Pi-Code</a>, <a href="/aesthetics/bbl-super-ipl-dpl/">Bbl Super IPL+DPL</a></div><div class="tech">Picosecond Nd:YAG laser or IPL</div></div><a class="btn btn-o" href="/aesthetics/pi-code/">View machine →</a></div>
+        <div class="ans"><div><div class="t">Facial lifting and toning</div><div class="big"><a href="/aesthetics/visage/">Visage</a></div><div class="tech">HIFES with RF</div></div><a class="btn btn-o" href="/aesthetics/visage/">View machine →</a></div>
+        <div class="ans"><div><div class="t">Fat reduction and body contouring</div><div class="big"><a href="/aesthetics/cool-shape/">Cool Shape</a>, <a href="/aesthetics/em-code/">Em Code</a></div><div class="tech">Cryolipolysis, or HIFEM with RF</div></div><a class="btn btn-o" href="/aesthetics/cool-shape/">View machine →</a></div>
+        <div class="ans"><div><div class="t">Pelvic floor weakness</div><div class="big"><a href="/aesthetics/em-ma/">Em-Ma</a></div><div class="tech">HIFEM</div></div><a class="btn btn-o" href="/aesthetics/em-ma/">View machine →</a></div>
+        <div class="ans"><div><div class="t">Vitiligo, psoriasis, alopecia patches</div><div class="big"><a href="/aesthetics/excimer/">Excimer</a></div><div class="tech">308 nm UVB phototherapy</div></div><a class="btn btn-o" href="/aesthetics/excimer/">View machine →</a></div>
+        <div class="ans"><div><div class="t">Facials, hydration, pore cleansing</div><div class="big"><a href="/aesthetics/hydrafrac/">Hydrafrac</a></div><div class="tech">Multi-step facial platform</div></div><a class="btn btn-o" href="/aesthetics/hydrafrac/">View machine →</a></div>
+        <div class="ans"><div><div class="t">Consultation and progress tracking</div><div class="big"><a href="/aesthetics/skin-analyzer/">Skin Analyzer</a></div><div class="tech">36 MP camera with spectral imaging</div></div><a class="btn btn-o" href="/aesthetics/skin-analyzer/">View machine →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy">
+    <div class="w fit">
+      <div class="fitcard rv">
+        <span class="eb" style="color:#e9bf7a">For your clinic</span>
+        <h2 data-guide style="color:#fff">How Nodd Fits <span class="serif" style="color:#e9bf7a">Your Clinic</span></h2>
+        <p>RF microneedling treats acne scars, fine lines and loose skin with less downtime than a CO₂ laser, and with a lower risk of pigment changes than many light-based treatments. That makes it popular in Indian clinics. Two applicator sizes cover face and body.</p>
+        <p>Typical prices are in our <a href="/blog-rf-microneedling-machine-price-india.html">RF microneedling machine price guide</a>. Share your clinic city and the treatments you plan to offer, and <a href="/request-a-quote.html#pulse-nodd" data-quote="Quote for: Pulse Nodd RF Microneedling Machine">request a quote</a>.</p>
+      </div>
+      <div>
+        <div class="rv"><span class="eb">Before you buy</span><h2 data-guide>What to Check <span class="serif">Before Buying</span></h2></div>
+        <ul class="steps">
+          <li class="rv"><strong>Needle tips</strong>Price the disposable tips per session.</li>
+          <li class="rv d1"><strong>Depth range</strong>Check the 0.4–4 mm depth covers the areas you plan to treat.</li>
+          <li class="rv"><strong>Training</strong>Ask what operator training is included and whether it covers settings for Indian skin types.</li>
+          <li class="rv d1"><strong>Certifications and documents</strong>Ask for the certificates and import documents for the exact model you buy.</li>
+          <li class="rv"><strong>Running costs</strong>List every consumable, tip, lamp or handpiece that wears out, with prices.</li>
+          <li class="rv d1"><strong>Warranty and service</strong>Confirm what the warranty covers, especially handpieces, and how fast an engineer reaches your clinic.</li>
+          <li class="rv"><strong>Space and power</strong>Check room size, power supply and any cooling or ventilation needs.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="nx-bar" id="nxBar"><img src="/image/Aesthetics%20images/Nodd.webp" alt="" width="42" height="42"><div><b>Pulse Nodd</b><small>RF microneedling</small></div><a href="/request-a-quote.html#pulse-nodd" data-quote="Quote for: Pulse Nodd RF Microneedling Machine">Get a quote</a></div>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+$$('.nx .split>span').forEach(function(s,i){if(!s.classList.contains('serif'))s.style.animationDelay=(0.1+i*0.1)+'s'});
+var tr=$('#nxTrack');tr.innerHTML+=tr.innerHTML;
+/* tilt */
+var st=$('#nxStage'),cd=$('#nxCard');
+if(!RM&&matchMedia('(hover:hover)').matches){$('.nx .hero').addEventListener('mousemove',function(e){var r=st.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;cd.style.transform='translate(-50%,-50%) rotateY('+(x*12)+'deg) rotateX('+(-y*9)+'deg)'});
+$('.nx .hero').addEventListener('mouseleave',function(){cd.style.transform='translate(-50%,-50%)'})}
+var hi=0,hs=$$('.nx .hot');setInterval(function(){hs.forEach(function(h){h.classList.remove('show')});hs[hi%hs.length].classList.add('show');hi++},2600);
+/* reveal + counters */
+if('IntersectionObserver' in window){
+ var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
+ $$('.nx .rv').forEach(function(el){io.observe(el)});
+ var co=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;var el=en.target,t=+el.getAttribute('data-count'),s0=null;
+  function step(ts){s0=s0||ts;var p=Math.min((ts-s0)/1300,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)}if(!RM)requestAnimationFrame(step);co.unobserve(el)})},{threshold:.6});
+ $$('.nx [data-count]').forEach(function(el){co.observe(el)});
+}else{$$('.nx .rv').forEach(function(el){el.classList.add('in')})}
+/* sticky bar */
+var bar=$('#nxBar'),foot=document.getElementById('global-footer');
+addEventListener('scroll',function(){var y=scrollY,fy=foot?foot.getBoundingClientRect().top:9e9;bar.classList.toggle('show',y>innerHeight*.9&&fy>innerHeight)},{passive:true});
+/* depth demo */
+var mode='mono';
+function draw(){var d=+$('#nxDepth').value;$('#nxDv').textContent=d.toFixed(1);$('#nxDepth').style.setProperty('--p',((d-.4)/3.6*100)+'%');
+ var len=20+(d-.4)/3.6*250,xs=[190,215,240,265,290,315,340],n='',h='';
+ xs.forEach(function(x,i){n+='<rect x="'+(x-2.5)+'" y="102" width="5" height="'+(18+len)+'" rx="2.5" fill="url(#nxnd)"/>';
+  if(mode==='mono')h+='<circle cx="'+x+'" cy="'+(120+len)+'" r="16" fill="url(#nxheat)"><animate attributeName="r" values="10;18;10" dur="1.6s" begin="'+(i*.12)+'s" repeatCount="indefinite"/></circle>'});
+ if(mode==='bi'){for(var i=0;i<xs.length-1;i++){var y=120+len-4;h+='<path d="M'+xs[i]+' '+y+' Q '+((xs[i]+xs[i+1])/2)+' '+(y+16)+' '+xs[i+1]+' '+y+'" stroke="#ff8a3a" stroke-width="5" fill="none" opacity=".8" stroke-linecap="round"><animate attributeName="opacity" values=".3;.9;.3" dur="1.2s" begin="'+(i*.1)+'s" repeatCount="indefinite"/></path>'}}
+ $('#nxNeedles').innerHTML=n;$('#nxHeats').innerHTML=h}
+$('#nxDepth').addEventListener('input',draw);
+$('#nxModes').addEventListener('click',function(e){var b=e.target.closest('.mode');if(!b)return;mode=b.getAttribute('data-m');$$('#nxModes .mode').forEach(function(x){x.classList.toggle('on',x===b)});draw()});
+draw();
+/* lens */
+if(matchMedia('(hover:hover)').matches)$$('.nx [data-lens]').forEach(function(t){var img=t.querySelector('img'),L=document.createElement('div');L.className='lens';t.appendChild(L);
+ t.addEventListener('mousemove',function(e){var r=t.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,z=2.4;L.style.opacity=1;L.style.left=(x-75)+'px';L.style.top=(y-75)+'px';
+  L.style.backgroundImage='url("'+img.currentSrc+'")';L.style.backgroundSize=(r.width*z)+'px '+(r.height*z)+'px';L.style.backgroundPosition=(-x*z+75)+'px '+(-y*z+75)+'px'});
+ t.addEventListener('mouseleave',function(){L.style.opacity=0})});
+/* tips */
+var TIPS={m:[['M-18',18],['M-25',25],['M-49',49],['M-81',81]],f:[['F-3×3',9],['F-5×5',25],['F-9×9',81]]};
+var TXT={m:['Microneedle RF handle','Invasive M tips go into the skin to the depth you set (0.4–4 mm) and deliver RF energy through gold-plated needles, for fine lines, acne scars and skin tightening.'],
+ f:['Fractional RF handle','Non-invasive F tips deliver fractional RF without needles entering the skin, for non-invasive skin tightening.']};
+var ts='m',tsel=0;
+function dots(n){var c=Math.ceil(Math.sqrt(n)),s=56/c,o='';for(var i=0;i<n;i++){o+='<circle cx="'+(4+(i%c)*s+s/2)+'" cy="'+(4+Math.floor(i/c)*s+s/2)+'" r="'+Math.max(1.6,s*.28)+'" fill="'+(ts==='m'?'#c9923f':'#5c7bd8')+'"/>'}return '<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="1" y="1" width="62" height="62" rx="12" fill="#f6f7fb" stroke="#ece7dd"/>'+o+'</svg>'}
+function rt(){var L=TIPS[ts];$('#nxTipGrid').innerHTML=L.map(function(t,i){return '<button type="button" class="tip'+(i===tsel?' on':'')+'" data-i="'+i+'">'+dots(t[1])+'<b>'+t[0]+'</b></button>'}).join('');
+ $('#nxTipInfo').innerHTML='<span class="eb">'+(ts==='m'?'Invasive':'Non-invasive')+' · '+L[tsel][0]+'</span><h3>'+TXT[ts][0]+'</h3><p>'+TXT[ts][1]+'</p><p style="font-size:13px;color:#8a93a8">Tip patterns shown are illustrative. Ask us for the tip guide and per-session tip cost.</p>';
+ $$('#nxTipSeg button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-t')===ts)})}
+$('#nxTipSeg').addEventListener('click',function(e){var t=e.target.getAttribute('data-t');if(!t)return;ts=t;tsel=0;rt()});
+$('#nxTipGrid').addEventListener('click',function(e){var b=e.target.closest('.tip');if(!b)return;tsel=+b.getAttribute('data-i');rt()});rt();
+/* concerns */
+var ans=$$('#nxAns .ans');
+$('#nxCps').addEventListener('click',function(e){var b=e.target.closest('.cp');if(!b)return;var i=+b.getAttribute('data-i');$$('#nxCps .cp').forEach(function(x){x.classList.toggle('on',x===b)});ans.forEach(function(a,j){a.classList.toggle('on',j===i)})});
+})();
+</script>
+  <!-- /NODD REDESIGN -->
 
   <!-- RELATED PRODUCTS -->
   <section class="prx">
