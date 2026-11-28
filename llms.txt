@@ -45,7 +45,7 @@ Certifications stated on the site: ISO 13485, CE, CDSCO, MD13.
 - [OT Table Price in India: Manual, Hydraulic, Electric and C-Arm](https://www.pulseio.in/blog-ot-table-price-india.html)
 - [OT Light Price in India: Single Dome, Double Dome and Examination Lights](https://www.pulseio.in/blog-ot-light-price-india.html)
 - [Autoclave Price in India: Portable, Vertical, Horizontal and Class B](https://www.pulseio.in/blog-autoclave-price-india.html)
-- [Baby Warmer Price in India: Infant Radiant Warmers Compared](https://www.pulseio.in/blog-baby-warmer-price-india.html)
+- [Radiant Warmer Price in India: Baby Warmer Machines Compared](https://www.pulseio.in/blog-baby-warmer-price-india.html)
 - [Hospital Equipment List by Department, with Prices in India](https://www.pulseio.in/blog-hospital-equipment-list-india.html)
 - [Hydrafacial Machine Price in India: A Clinic Buyer's Guide](https://www.pulseio.in/blog-hydrafacial-machine-price-india.html)
 - [Picosecond Laser Machine Price in India: Pico vs Q-Switched Nd:YAG](https://www.pulseio.in/blog-picosecond-laser-price-india.html)
@@ -259,7 +259,7 @@ Every Pulse product page, by category. Each page has specifications, a buyer gui
 - [Electric Wheelchair Price in India: Pick by Budget](https://www.pulseio.in/blog-electric-wheelchair-price-india.html): Electric wheelchair price in India starts at about Rs 35,000 and can go past Rs 2.5 lakh. See what each budget buys and which model suits you.
 - [ICU Ventilator Price in India 2026: Rs 7–22 Lakh](https://www.pulseio.in/blog-icu-ventilator-price-india.html): ICU ventilator price in India (2026) ranges from about Rs 7 lakh to Rs 22 lakh+. What drives the cost, hidden costs to plan for and how to get a quote.
 - [ICU Setup Cost in India: Equipment Budget for a 10-Bed ICU](https://www.pulseio.in/blog-icu-setup-cost-india.html)
-- [Modular OT Setup Cost in India 2026: Breakdown](https://www.pulseio.in/blog-modular-ot-setup-cost-india.html): Modular OT setup cost in India: room size, HVAC, NABH rules and equipment. Pulse builds turnkey modular OTs, from planning to handover.
+- [Modular OT in India: Meaning, Design, Layout, Cost](https://www.pulseio.in/blog-modular-ot-setup-cost-india.html): What a modular OT is, OT zones and layout, design parts, NABH specs and setup cost in India.
 
 ## How-to guides and comparisons
 - [Cryolipolysis vs HIFEM: What New Research Shows](https://www.pulseio.in/blog-cryolipolysis-vs-hifem-research.html): Cryolipolysis vs HIFEM explained simply, using a 2025 review of 3,158 people and a 2026 review, plus what weight-loss injections mean for clinics.
