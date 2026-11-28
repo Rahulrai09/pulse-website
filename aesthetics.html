@@ -460,7 +460,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media (max-width: 900px) {
       .faq-layout { grid-template-columns: 1fr !important; gap: 24px !important; }
     }
-  </style>
+  
+    /* Light hero with machines banner (28 Nov 2026) */
+    .cat-hero { background: #fff; color: #0a1e40; min-height: clamp(420px, 31.4vw, 600px); display: flex; align-items: center; }
+    .cat-hero::after { background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.92) 34%, rgba(255,255,255,0) 55%); }
+    .cat-hero-img { opacity: 1; object-fit: contain; object-position: right center; }
+    .cat-hero p { max-width: 450px; }
+    .cat-breadcrumb, .cat-breadcrumb a { color: #6b7280; }
+    .cat-breadcrumb a:hover { color: #1B2F6E; }
+    .cat-breadcrumb span { color: #c0c6d2; }
+    .cat-hero h1 { color: #0a1e40; }
+    .cat-hero p { color: #3d4a63; opacity: 1; }
+    .cat-stat span { color: #6b7280; }
+    @media (max-width: 768px) {
+      .cat-hero { height: auto; min-height: 0; flex-direction: column; align-items: stretch; padding: 28px 6% 8px; }
+      .cat-hero::after { display: none; }
+      .cat-hero-img { position: static; width: 100%; height: auto; order: 2; margin-top: 14px; }
+      .cat-hero-content { order: 1; }
+      .cat-hero picture { order: 2; display: block; }
+    }
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -685,7 +704,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- HERO -->
   <section class="cat-hero">
-    <img class="cat-hero-img" src="image/Portfolio/aesthetics.webp" alt="Aesthetics" width="1000" height="1000" data-sz>
+    <picture><source media="(max-width: 768px)" srcset="/image/Aesthetics%20images/aesthetics-machines-banner-mobile.webp" width="800" height="398"><img class="cat-hero-img" src="/image/Aesthetics%20images/aesthetics-machines-banner-1898.webp" srcset="/image/Aesthetics%20images/aesthetics-machines-banner-1200.webp 1200w, /image/Aesthetics%20images/aesthetics-machines-banner-1898.webp 1898w" sizes="100vw" alt="Pulse aesthetic machines for clinics in India: skin analyzer, laser hair removal, IPL, RF microneedling, body sculpting and hydra facial machines" width="1898" height="596" fetchpriority="high" decoding="async"></picture>
     <div class="cat-hero-content">
       <div class="cat-breadcrumb">
         <a href="/">Home</a>
