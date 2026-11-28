@@ -559,6 +559,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="ps-progress"><div class="ps-progress-bar" id="psProgressBar"></div></div>
     <div class="ps-counter"><span id="psCounter">01</span><span class="ps-counter-total">/04</span></div>
   </div>
+  <style>
+  @media (min-width:641px){
+    .process-showcase .ps-controls{display:flex!important;position:absolute!important;left:5%!important;bottom:36px!important;transform:none!important;width:auto!important;margin:0!important;gap:12px!important;z-index:5}
+    .process-showcase .ps-progress{display:none}
+    .process-showcase .ps-arrow{width:48px;height:48px;font-size:20px;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.55)}
+    .process-showcase .ps-arrow:hover{background:#fff;color:#0a1e40;border-color:#fff}
+    .process-showcase .ps-arrow:focus-visible{outline:2px solid #fff;outline-offset:3px}
+    .process-showcase .ps-counter{font-size:24px;margin-left:8px}
+    .process-showcase .ps-counter-total{font-size:14px}
+  }
+  </style>
 
 </section>
 
@@ -1432,11 +1443,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     setTimeout(() => { transitioning = false; }, 750);
   };
 
+  let hovering = false;
   const restart = () => {
     clearInterval(timer);
+    if (hovering) return;
     timer = setInterval(() => advance('forward'), 4000);
   };
 
+  const showcase = document.querySelector('.process-showcase');
+  if (showcase && window.matchMedia('(min-width:641px)').matches) {
+    showcase.addEventListener('mouseenter', () => { hovering = true; clearInterval(timer); });
+    showcase.addEventListener('mouseleave', () => { hovering = false; restart(); });
+  }
   prev.addEventListener('click', () => { advance('backward'); restart(); });
   next.addEventListener('click', () => { advance('forward'); restart(); });
   cards.forEach((c, i) => c.addEventListener('click', () => {
