@@ -1,3 +1,4 @@
 .mingit
 *.ps1
 .github
+_src

@@ -1,0 +1,281 @@
+!(function () {
+  var t = function (t) {
+      return document.querySelector(t);
+    },
+    e = function (t) {
+      return Array.prototype.slice.call(document.querySelectorAll(t));
+    },
+    n =
+      window.matchMedia &&
+      matchMedia("(prefers-reduced-motion: reduce)").matches;
+  e(".nx .split>span").forEach(function (t, e) {
+    t.classList.contains("serif") ||
+      (t.style.animationDelay = 0.1 + 0.1 * e + "s");
+  });
+  var i = t("#nxTrack");
+  i.innerHTML += i.innerHTML;
+  var a = t("#nxStage"),
+    r = t("#nxCard");
+  !n &&
+    matchMedia("(hover:hover)").matches &&
+    (t(".nx .hero").addEventListener("mousemove", function (t) {
+      var e = a.getBoundingClientRect(),
+        n = (t.clientX - e.left) / e.width - 0.5,
+        i = (t.clientY - e.top) / e.height - 0.5;
+      r.style.transform =
+        "translate(-50%,-50%) rotateY(" +
+        12 * n +
+        "deg) rotateX(" +
+        9 * -i +
+        "deg)";
+    }),
+    t(".nx .hero").addEventListener("mouseleave", function () {
+      r.style.transform = "translate(-50%,-50%)";
+    }));
+  var o = 0,
+    s = e(".nx .hot");
+  if (
+    (setInterval(function () {
+      (s.forEach(function (t) {
+        t.classList.remove("show");
+      }),
+        s[o % s.length].classList.add("show"),
+        o++);
+    }, 2600),
+    "IntersectionObserver" in window)
+  ) {
+    var c = new IntersectionObserver(
+      function (t) {
+        t.forEach(function (t) {
+          t.isIntersecting &&
+            (t.target.classList.add("in"), c.unobserve(t.target));
+        });
+      },
+      { threshold: 0.12 },
+    );
+    e(".nx .rv").forEach(function (t) {
+      c.observe(t);
+    });
+    var l = new IntersectionObserver(
+      function (t) {
+        t.forEach(function (t) {
+          if (t.isIntersecting) {
+            var e = t.target,
+              i = +e.getAttribute("data-count"),
+              a = null;
+            (n ||
+              requestAnimationFrame(function t(n) {
+                a = a || n;
+                var r = Math.min((n - a) / 1300, 1);
+                ((e.textContent = Math.round(i * (1 - Math.pow(1 - r, 3)))),
+                  r < 1 && requestAnimationFrame(t));
+              }),
+              l.unobserve(e));
+          }
+        });
+      },
+      { threshold: 0.6 },
+    );
+    e(".nx [data-count]").forEach(function (t) {
+      l.observe(t);
+    });
+  } else
+    e(".nx .rv").forEach(function (t) {
+      t.classList.add("in");
+    });
+  var d = t("#nxBar"),
+    u = document.getElementById("global-footer");
+  addEventListener(
+    "scroll",
+    function () {
+      var t = scrollY,
+        e = u ? u.getBoundingClientRect().top : 9e9;
+      d.classList.toggle("show", t > 0.9 * innerHeight && e > innerHeight);
+    },
+    { passive: !0 },
+  );
+  var f = "mono";
+  function h() {
+    var e = +t("#nxDepth").value;
+    ((t("#nxDv").textContent = e.toFixed(1)),
+      t("#nxDepth").style.setProperty("--p", ((e - 0.4) / 3.6) * 100 + "%"));
+    var n = 20 + ((e - 0.4) / 3.6) * 250,
+      i = [190, 215, 240, 265, 290, 315, 340],
+      a = "",
+      r = "";
+    if (
+      (i.forEach(function (t, e) {
+        ((a +=
+          '<rect x="' +
+          (t - 2.5) +
+          '" y="102" width="5" height="' +
+          (18 + n) +
+          '" rx="2.5" fill="url(#nxnd)"/>'),
+          "mono" === f &&
+            (r +=
+              '<circle cx="' +
+              t +
+              '" cy="' +
+              (120 + n) +
+              '" r="16" fill="url(#nxheat)"><animate attributeName="r" values="10;18;10" dur="1.6s" begin="' +
+              0.12 * e +
+              's" repeatCount="indefinite"/></circle>'));
+      }),
+      "bi" === f)
+    )
+      for (var o = 0; o < i.length - 1; o++) {
+        var s = 120 + n - 4;
+        r +=
+          '<path d="M' +
+          i[o] +
+          " " +
+          s +
+          " Q " +
+          (i[o] + i[o + 1]) / 2 +
+          " " +
+          (s + 16) +
+          " " +
+          i[o + 1] +
+          " " +
+          s +
+          '" stroke="#ff8a3a" stroke-width="5" fill="none" opacity=".8" stroke-linecap="round"><animate attributeName="opacity" values=".3;.9;.3" dur="1.2s" begin="' +
+          0.1 * o +
+          's" repeatCount="indefinite"/></path>';
+      }
+    ((t("#nxNeedles").innerHTML = a), (t("#nxHeats").innerHTML = r));
+  }
+  (t("#nxDepth").addEventListener("input", h),
+    t("#nxModes").addEventListener("click", function (t) {
+      var n = t.target.closest(".mode");
+      n &&
+        ((f = n.getAttribute("data-m")),
+        e("#nxModes .mode").forEach(function (t) {
+          t.classList.toggle("on", t === n);
+        }),
+        h());
+    }),
+    h(),
+    matchMedia("(hover:hover)").matches &&
+      e(".nx [data-lens]").forEach(function (t) {
+        var e = t.querySelector("img"),
+          n = document.createElement("div");
+        ((n.className = "lens"),
+          t.appendChild(n),
+          t.addEventListener("mousemove", function (i) {
+            var a = t.getBoundingClientRect(),
+              r = i.clientX - a.left,
+              o = i.clientY - a.top,
+              s = 2.4;
+            ((n.style.opacity = 1),
+              (n.style.left = r - 75 + "px"),
+              (n.style.top = o - 75 + "px"),
+              (n.style.backgroundImage = 'url("' + e.currentSrc + '")'),
+              (n.style.backgroundSize =
+                a.width * s + "px " + a.height * s + "px"),
+              (n.style.backgroundPosition =
+                -r * s + 75 + "px " + (-o * s + 75) + "px"));
+          }),
+          t.addEventListener("mouseleave", function () {
+            n.style.opacity = 0;
+          }));
+      }));
+  var v = {
+      m: [
+        ["M-18", 18],
+        ["M-25", 25],
+        ["M-49", 49],
+        ["M-81", 81],
+      ],
+      f: [
+        ["F-3×3", 9],
+        ["F-5×5", 25],
+        ["F-9×9", 81],
+      ],
+    },
+    g = {
+      m: [
+        "Microneedle RF handle",
+        "Invasive M tips go into the skin to the depth you set (0.4–4 mm) and deliver RF energy through gold-plated needles, for fine lines, acne scars and skin tightening.",
+      ],
+      f: [
+        "Fractional RF handle",
+        "Non-invasive F tips deliver fractional RF without needles entering the skin, for non-invasive skin tightening.",
+      ],
+    },
+    p = "m",
+    m = 0;
+  function x() {
+    var n = v[p];
+    ((t("#nxTipGrid").innerHTML = n
+      .map(function (t, e) {
+        return (
+          '<button type="button" class="tip' +
+          (e === m ? " on" : "") +
+          '" data-i="' +
+          e +
+          '">' +
+          (function (t) {
+            for (
+              var e = Math.ceil(Math.sqrt(t)), n = 56 / e, i = "", a = 0;
+              a < t;
+              a++
+            )
+              i +=
+                '<circle cx="' +
+                (4 + (a % e) * n + n / 2) +
+                '" cy="' +
+                (4 + Math.floor(a / e) * n + n / 2) +
+                '" r="' +
+                Math.max(1.6, 0.28 * n) +
+                '" fill="' +
+                ("m" === p ? "#c9923f" : "#5c7bd8") +
+                '"/>';
+            return (
+              '<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="1" y="1" width="62" height="62" rx="12" fill="#f6f7fb" stroke="#ece7dd"/>' +
+              i +
+              "</svg>"
+            );
+          })(t[1]) +
+          "<b>" +
+          t[0] +
+          "</b></button>"
+        );
+      })
+      .join("")),
+      (t("#nxTipInfo").innerHTML =
+        '<span class="eb">' +
+        ("m" === p ? "Invasive" : "Non-invasive") +
+        " · " +
+        n[m][0] +
+        "</span><h3>" +
+        g[p][0] +
+        "</h3><p>" +
+        g[p][1] +
+        '</p><p style="font-size:13px;color:#8a93a8">Tip patterns shown are illustrative. Ask us for the tip guide and per-session tip cost.</p>'),
+      e("#nxTipSeg button").forEach(function (t) {
+        t.classList.toggle("on", t.getAttribute("data-t") === p);
+      }));
+  }
+  (t("#nxTipSeg").addEventListener("click", function (t) {
+    var e = t.target.getAttribute("data-t");
+    e && ((p = e), (m = 0), x());
+  }),
+    t("#nxTipGrid").addEventListener("click", function (t) {
+      var e = t.target.closest(".tip");
+      e && ((m = +e.getAttribute("data-i")), x());
+    }),
+    x());
+  var b = e("#nxAns .ans");
+  t("#nxCps").addEventListener("click", function (t) {
+    var n = t.target.closest(".cp");
+    if (n) {
+      var i = +n.getAttribute("data-i");
+      (e("#nxCps .cp").forEach(function (t) {
+        t.classList.toggle("on", t === n);
+      }),
+        b.forEach(function (t, e) {
+          t.classList.toggle("on", e === i);
+        }));
+    }
+  });
+})();
