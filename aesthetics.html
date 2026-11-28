@@ -476,8 +476,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .cat-hero { height: auto; min-height: 0; flex-direction: column; align-items: stretch; padding: 28px 6% 8px; }
       .cat-hero::after { display: none; }
       .cat-hero-img { position: static; width: 100%; height: auto; order: 2; margin-top: 14px; }
-      .cat-hero-content { order: 1; }
+      .cat-hero-content { display: contents; }
+      .cat-hero .cat-breadcrumb { order: 1; }
+      .cat-hero h1 { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
       .cat-hero picture { order: 2; display: block; }
+      .cat-hero-stats { order: 3; align-self: flex-start; justify-content: flex-start; margin: 6px 0 10px; }
     }
 </style>
   <script type="application/ld+json">
